@@ -1,6 +1,7 @@
 # HANDOFF — 지금 상태
 
 마지막 업데이트: 2026-10-24 · 작성: Claude Code
+마지막 확인: `npm test`(21개), `npm run lint`, `npm run build` 모두 통과. 커밋 안 된 변경 없음(`.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음)
 
 ## 현재 브랜치
 `docs/design-exploration` (← `feat/trip-store` ← `feat/place-data`). 모두 GitHub에 올림(push). main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). 마지막 브랜치가 앞의 것을 모두 포함하므로 PR은 `docs/design-exploration` → main 하나면 된다.
@@ -18,7 +19,7 @@
 - 홈 화면 디자인 시안 탐색 → 기록 `docs/design/README.md`(좋았던 것·싫었던 것), 확정 항목은 DECISIONS "디자인". **사용자가 디자인을 나중에 다시 잡기로 함**
 
 ## 하다 만 것
-- 디자인: 컨셉(핀 조명)·글꼴·홈 지도 인터랙션만 확정. 색·간격 최종값은 다시 잡을 때 정함. `src/styles/tokens.css`는 아직 예전 임시 값(청록 포인트) — 디자인 확정 때 바꾼다
+- 디자인: 컨셉(핀 조명)·글꼴·홈 지도 인터랙션만 확정. 색·간격 최종값은 다시 잡을 때 정함. `src/styles/tokens.css`는 아직 예전 임시 값(청록 포인트, 기기 기본 글꼴) — 디자인 확정 때 바꾼다. 확정 글꼴(Wanted Sans, Pretendard)도 아직 프로젝트에 안 넣음
 - 임시 홈(`src/app/page.tsx`)은 홈 화면 작업 때 교체
 - 실내/야외 예외 장소 확인은 날씨 대안 작업 때 (`docs/분류표.md` 확인 후보 목록)
 
@@ -41,5 +42,6 @@
 - 공공데이터포털 키는 Decoding 키. 호출 주소는 `URLSearchParams`로 만들어 한 번만 인코딩할 것(이중 인코딩하면 인증 오류).
 - 공공데이터포털은 가끔 `APPLICATION_ERROR`를 돌려준다. 다시 시도하면 된다(`fetch-places.mjs`의 `getJson` 참고).
 - 사진 공공누리 3유형(변경금지)이 190곳. 자르거나 덧칠 금지.
+- 지역(구·군)으로 거를 때는 `region` 값을 정확히 같은지 비교할 것. `endsWith("서구")`는 강서구까지 걸린다.
 - 디자인: 와이어프레임은 배치만 따르고, 색·글꼴은 tokens.css 이름만 쓴다. 화면 작업마다 390px·데스크톱 모습을 사용자에게 확인받을 것. 사용자가 싫어하는 것(구분선 남발, 둥근 모서리, 형광펜, 영문 모노 라벨 등)은 `docs/design/README.md` 표 참고.
 - `npm run dev`가 AGENTS.md 맨 아래 Next.js 안내 블록을 자동으로 다시 쓴다. 이미 커밋돼 있으니 지우지 말 것.
