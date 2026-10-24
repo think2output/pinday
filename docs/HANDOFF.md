@@ -4,7 +4,7 @@
 마지막 확인: 내 여행 카드 표시·기간/지역/후보/일정 요약·초기화 취소/실행·10초 되돌리기·기간 축소 연동을 Chrome 개발/배포용 서버의 390px·1440px에서 확인. 다른 탭의 변경 반영과 이전 되돌리기 무효화도 확인. `npm test` 85개·린트·빌드 통과. 기존 홈 동작 점검을 포함한 자세한 결과는 `docs/HOME_QA.md`. 수정 후 사용자 화면 확인은 대기. 이전 날씨 API 실제 확인은 `docs/WEATHER_API.md`. `.vscode/`는 개인 설정으로 커밋하지 않음.
 
 ## 현재 브랜치
-`feat/home-trip-card` (← `fix/home-interactions` ← `feat/home-design`). 사용자 승인 후 내 여행 카드 작업으로 분기. 이전 홈 동작 수정 `c180eaf`·공통 헤더 수정 `16d6066` 포함. 2026-10-24 `git fetch origin` 확인 결과 원격 main `8f98ab8`은 PR #6을 병합했지만 부모가 `7d7ea37`이라 시안까지만 포함. 디자인 값·글꼴 `6c789f4`, 홈 구현 `54ccf09`, 문서 `84551eb`·`dd2253d`는 main에 없었음. 이번 변경은 로컬 커밋하며, push·main 병합은 하지 않음.
+`feat/home-trip-card` (← `fix/home-interactions` ← `feat/home-design`). 사용자 승인 후 내 여행 카드 작업으로 분기. 이전 홈 동작 수정 `c180eaf`·공통 헤더 수정 `16d6066` 포함. 2026-10-24 `git fetch origin` 확인 결과 원격 main `8f98ab8`은 PR #6을 병합했지만 부모가 `7d7ea37`이라 시안까지만 포함. 디자인 값·글꼴 `6c789f4`, 홈 구현 `54ccf09`, 문서 `84551eb`·`dd2253d`는 main에 없었음. 2026-10-25 사용자 요청으로 이 브랜치의 구현·문서 커밋을 원격에 push. 홈 동작 수정과 내 여행 카드까지 모두 포함하므로 main 병합은 이 브랜치로 PR을 만들면 됨. main 병합은 아직 하지 않음.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
