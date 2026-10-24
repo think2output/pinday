@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "placeId": "1942337",
+  "placeName": "168계단",
+  "status": "ai-draft",
+  "humanReview": "pending",
+  "publishable": false,
+  "generatedAt": "2026-10-24T18:28:06.846Z",
+  "model": "gpt-6-luna",
+  "promptVersion": "docent-draft-v1",
+  "review": {
+    "file": "data/docent/reviews/representative-2026-10-24.json",
+    "reviewedOn": "2026-10-24",
+    "reviewer": "Codex (AI 1차 검수)",
+    "draftingScope": "산복도로와 부산항을 잇는 계단 동선. 현재 탑승시설·운영시간은 제외.",
+    "notes": [
+      "우물의 현재 상태 및 시설 이용 조건은 현행 안내 확인 전 확정하지 않는다."
+    ]
+  },
+  "sources": [
+    {
+      "n": 1,
+      "sourceId": "tourapi:1942337",
+      "provider": "tourapi",
+      "title": "168계단",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1942337&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "license": null,
+      "text": "산복도로에서 부산항까지 가장 빨리 내려갈 수 있는 지름길이다. 산복도로의 대표적인 특징 중 하나인 세로로 난 지상 6층 높이의 아찔한 계단이다.",
+      "originalTextSha256": "b1fbf504a2f360dfb8930b7cc6eee1cf6c1d46972bf52e2740a090c577165f89"
+    }
+  ],
+  "draft": {
+    "summary": [
+      {
+        "text": "168계단은 산복도로에서 부산항까지 내려가는 지름길이에요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "history": [],
+    "neighborhood": [
+      {
+        "text": "세로로 난 6층 높이의 계단은 산복도로의 대표적인 특징 중 하나예요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "beforeVisit": [],
+    "points": [
+      {
+        "title": "168계단",
+        "sentences": [
+          {
+            "text": "산복도로에서 부산항까지 이어지는 세로로 난 계단이에요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "narration": "168계단은 산복도로에서 부산항까지 내려가는 지름길이에요. 세로로 난 6층 높이의 계단은 산복도로의 대표적인 특징 중 하나예요. 산복도로에서 부산항까지 이어지는 세로로 난 계단이에요."
+  },
+  "checks": {
+    "issues": []
+  },
+  "usage": {
+    "inputTokens": 676,
+    "outputTokens": 380,
+    "estimatedUsd": 0.000258
+  }
+}
