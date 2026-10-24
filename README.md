@@ -10,4 +10,4 @@ cp .env.example .env   # 값 채우기
 npm run dev            # http://localhost:3000
 ```
 
-확인: `npm run lint`, `npm run build`
+확인: `npm test`, `npm run lint`, `npm run build`

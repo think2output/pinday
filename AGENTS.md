@@ -18,7 +18,7 @@ PinDay: 부산 여행을 계획하는 사람이 지도에서 장소를 모아 �
 - `src/lib/server/` — 서버 전용 코드(외부 API 호출, 키 읽기). 파일 맨 위에 `import "server-only"`
 - `src/styles/tokens.css` — 디자인 값(색·글꼴·둥글기). 화면 코드에 색 코드를 직접 쓰지 않고 이 이름만 쓴다
 - `data/` — 미리 만든 장소 목록·도슨트 해설 JSON, `scripts/` — 그것을 만드는 로컬 스크립트
-- 확인 명령: `npm run lint`, `npm run build`
+- 확인 명령: `npm test`, `npm run lint`, `npm run build`
 
 ## 세션 시작할 때
 - 위 기준 문서를 읽고, `git status`와 최근 커밋 5개를 확인한다.

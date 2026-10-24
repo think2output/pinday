@@ -3,8 +3,8 @@
 마지막 업데이트: 2026-10-24 · 작성: Claude Code
 
 ## 현재 브랜치
-`feat/place-data` — 기술 스택·기본 구조·장소 데이터 작업이 모두 들어 있음. GitHub에 올림(push), main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨).
-- `docs/tech-stack`, `feat/project-setup`은 `feat/place-data`에 포함된 이전 단계 브랜치(로컬에만 있음)
+`feat/trip-store` (← `feat/place-data`). 둘 다 GitHub에 올림(push). main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). `feat/trip-store`가 `feat/place-data`를 포함하므로 PR은 `feat/trip-store` → main 하나면 된다.
+- `docs/tech-stack`, `feat/project-setup`은 이전 단계 브랜치(로컬에만 있음, 위 브랜치에 포함)
 
 ## 끝낸 것
 - 기획서·와이어프레임·에이전트 규칙, 기술 스택 결정(Next.js + TypeScript + Tailwind + Vercel, DB 없이 JSON 파일)
@@ -14,6 +14,7 @@
 - 분류표 확정 `docs/분류표.md` (취향 유형 → 분류, 실내/야외, DECISIONS "장소 분류")
 - 서비스용 장소 목록 `scripts/build-places.mjs` → `data/places/places.json` (408곳: 관광지 345 + 문화시설 63, 취향·실내 태그 포함)
 - 기상청 API허브 단기예보 활용신청 완료, 키 확인 정상
+- 내 여행 정보 저장소 `src/lib/trip/` (사용법은 그 폴더 README). 규칙 테스트 21개 `npm test` 통과. 화면에 붙여 브라우저에서 확인하는 건 아직(홈·어디 갈까? 작업 때)
 
 ## 하다 만 것
 - 임시 홈(`src/app/page.tsx`)은 홈 화면 작업 때 교체
@@ -21,8 +22,8 @@
 
 ## 다음 할 일 (순서대로)
 1. 디자인 기준 정하기. 사용자가 참고 사이트를 찾는 중. 시각 예시 2~3개로 비교해서 고르게 할 것. 정하면 DECISIONS 기록 + `src/styles/tokens.css` 값만 바꾼다
-2. 내 여행 정보 저장소 `src/lib/trip/` (지역·기간, 취향, 후보함, 일정 + 초기화·되돌리기 + 기간 변경 규칙). 디자인과 상관없어서 디자인 결정을 기다리는 동안 먼저 해도 됨
-3. 이후 기획서 12장 개발 순서대로 (홈 → 어디 갈까? → …)
+2. 공통 화면 조각(메뉴바, 여행 조건 줄 등)과 홈 화면 (기획서 6-1). 디자인 기준이 정해진 뒤 시작
+3. 이후 기획서 12장 개발 순서대로 (어디 갈까? → 언제 갈까? → 도슨트 해설 미리 만들기 …)
 
 ## 사용자가 해둔 것
 - 공공데이터포털 승인: 한국관광공사 국문 관광정보(TourAPI), 부산테마여행정보, 관광 빅데이터 지역별 방문자수
