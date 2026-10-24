@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTrip } from "@/lib/trip/store";
 
 // 상단 메뉴 (기획서 4장). 휴대폰은 옆으로 밀어 보는 한 줄, 현재 위치는 굵은 글자로만 표시.
 const MENU = [
@@ -17,10 +16,7 @@ const MENU = [
 /** tone="room": 어두운 전시실 영역 위에 놓일 때 */
 export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
   const pathname = usePathname();
-  const { trip } = useTrip();
   const onRoom = tone === "room";
-  // 이동 규칙 1: 후보함이 비었으면 어디 갈까?, 하나라도 있으면 언제 갈까?
-  const myTripHref = trip.candidates.length > 0 ? "/schedule" : "/explore";
   const isCurrent = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   return (
@@ -34,7 +30,8 @@ export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
           <span aria-hidden="true" className="size-1.5 rounded-full bg-light shadow-glow" />
         </Link>
         <Link
-          href={myTripHref}
+          href="/trip"
+          aria-current={pathname === "/trip" ? "page" : undefined}
           className={`flex min-h-tap min-w-tap shrink-0 items-center px-0.5 text-sm font-semibold lg:hidden ${onRoom ? "text-on-room" : "text-ink"}`}
         >
           내 여행
@@ -59,7 +56,8 @@ export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
         })}
       </nav>
       <Link
-        href={myTripHref}
+        href="/trip"
+        aria-current={pathname === "/trip" ? "page" : undefined}
         className={`hidden min-h-tap min-w-tap shrink-0 items-center px-0.5 text-[15px] font-semibold lg:flex ${onRoom ? "text-on-room" : "text-ink"}`}
       >
         내 여행
