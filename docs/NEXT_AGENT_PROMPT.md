@@ -8,10 +8,10 @@ PinDay 작업을 이어받아줘.
 - docs/design/README.md
 - docs/SCHEDULE_QA.md (가장 최근 작업)
 
-git status·최근 커밋 5개와 원격 main의 병합 상태를 확인해줘. 언제 갈까?(/schedule)는 feat/schedule 브랜치에 구현돼 있어. fetch 후 이 브랜치가 main에 병합됐으면 최신 origin/main, 아직이면 origin/feat/schedule을 기준으로 새 작업 브랜치를 만들어. 로컬 main이 최신이라고 가정하지 마.
+git status·최근 커밋 5개와 원격 main의 병합 상태를 확인해줘. 언제 갈까?(/schedule)는 PR #10으로 main에 병합됐고, 근처 추천은 feat/schedule-nearby 브랜치에 있어. fetch 후 이 브랜치가 main에 병합됐으면 최신 origin/main, 아직이면 origin/feat/schedule-nearby를 기준으로 새 작업 브랜치를 만들어. 로컬 main이 최신이라고 가정하지 마.
 
 현재 상태:
-- 홈·탐색(/explore)·일정(/schedule)·내 여행(/trip) 기능 완료. 마지막 검증은 테스트 98개·린트·빌드 통과.
+- 홈·탐색(/explore)·일정(/schedule)·내 여행(/trip) 기능 완료(일정 화면의 근처 추천 포함). 마지막 검증은 테스트 102개·린트·빌드 통과.
 - /schedule 디자인은 아직 사용자 검토 전이야. 기능 완료와 디자인 확정을 구분해줘.
 - 홈의 큰 흰 내 여행 카드는 다시 넣지 마. 여행 요약·초기화는 /trip.
 - 실제 지도 확인은 http://localhost:3000 으로 해줘.
