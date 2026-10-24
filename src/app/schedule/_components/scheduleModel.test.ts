@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dayWeather, issuedLabel, mapStops, shortDate, unmappedNumbers, weatherRequest, type WeatherState } from "./scheduleModel";
+import { dayWeather, distanceKm, distanceLabel, issuedLabel, mapStops, nearbySuggestions, nearestAnchor, shortDate, sortByCloseness, unmappedNumbers, weatherRequest, type WeatherState } from "./scheduleModel";
 
 const place = (id: string, lat: number, lng: number) => ({ id, name: id, region: "부산광역시 수영구", category: "해수욕장", lat, lng });
 const places = {
@@ -57,6 +57,35 @@ describe("날짜 탭 강수 표시", () => {
   });
   it("지난 날짜는 예보가 없다고 표시한다", () => {
     expect(dayWeather("2026-10-24", today, ready([{}])).text).toBe("지난 날짜");
+  });
+});
+
+describe("근처 추천", () => {
+  // 개금벚꽃길 실제 좌표 기준. 가야공원 약 1.05km, 구덕문화공원 약 2.4km
+  const near = {
+    gaegeum: place("gaegeum", 35.146244, 129.016413),
+    gaya: place("gaya", 35.1557, 129.0185),
+    gudeok: place("gudeok", 35.1252, 129.0128),
+    banbong: places.banbong,
+    picked: place("picked", 35.1500, 129.0170),
+  };
+  it("직선 2km 안에서 아직 담지 않은 곳만 가까운 순으로", () => {
+    const result = nearbySuggestions(["gaegeum"], new Set(["gaegeum", "picked"]), near);
+    expect(result.map((entry) => entry.place.id)).toEqual(["gaya"]);
+    expect(result[0].anchor.id).toBe("gaegeum");
+  });
+  it("좌표가 잘못된 장소는 기준으로도 추천으로도 쓰지 않는다", () => {
+    expect(nearbySuggestions(["banbong"], new Set(["banbong"]), near)).toEqual([]);
+    expect(nearestAnchor(near.banbong, ["gaegeum"], near)).toBeNull();
+  });
+  it("날짜 없는 곳은 그날 장소와 가까운 곳을 앞으로", () => {
+    expect(sortByCloseness(["gudeok", "banbong", "gaya"], ["gaegeum"], near).map((entry) => entry.id)).toEqual(["gaya", "gudeok", "banbong"]);
+  });
+  it("거리 표시", () => {
+    expect(distanceLabel(0.04)).toBe("약 100m");
+    expect(distanceLabel(0.84)).toBe("약 800m");
+    expect(distanceLabel(1.46)).toBe("약 1.5km");
+    expect(distanceKm(near.gaegeum, near.gaya)).toBeGreaterThan(1);
   });
 });
 

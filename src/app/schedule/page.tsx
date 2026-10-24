@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { listPlaces } from "@/lib/server/places";
+import { listDocents } from "@/lib/server/docent";
 import { ScheduleView } from "./_components/ScheduleView";
 import type { SchedulePlace } from "./_components/scheduleModel";
 
@@ -13,7 +14,7 @@ export default function SchedulePage() {
   }]));
   return (
     <Suspense fallback={<div className="min-h-180 bg-bg" />}>
-      <ScheduleView places={places} />
+      <ScheduleView places={places} stories={listDocents().map((docent) => docent.placeId)} />
     </Suspense>
   );
 }

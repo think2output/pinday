@@ -14,7 +14,7 @@ type ScheduleMapInstance = MapInstance & { setCenter(point: LatLng): void };
 
 type Stop = { no: number; place: SchedulePlace };
 
-export function ScheduleMap({ stops, label }: { stops: Stop[]; label: string }) {
+export function ScheduleMap({ stops, nearby, label }: { stops: Stop[]; nearby: { place: SchedulePlace }[]; label: string }) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<ScheduleMapInstance | null>(null);
   const api = useRef<ScheduleMaps | null>(null);
@@ -62,14 +62,21 @@ export function ScheduleMap({ stops, label }: { stops: Stop[]; label: string }) 
       pin.title = `${stop.no}. ${stop.place.name}`;
       return new maps.CustomOverlay({ position: points[index], content: pin, xAnchor: 0.5, yAnchor: 0.5, zIndex: 2 });
     });
+    nearby.forEach(({ place }) => {
+      const dot = document.createElement("span");
+      dot.className = "block size-4 rounded-full bg-bg shadow-paper ring-2 ring-ink-muted";
+      dot.title = `근처 추천: ${place.name}`;
+      overlays.push(new maps.CustomOverlay({ position: new maps.LatLng(place.lat, place.lng), content: dot, xAnchor: 0.5, yAnchor: 0.5, zIndex: 1 }));
+    });
     if (points.length > 1) {
       overlays.unshift(new maps.Polyline({ path: points, strokeWeight: 2, strokeColor: color, strokeOpacity: 0.8, strokeStyle: "shortdash" }));
     }
     overlays.forEach((overlay) => overlay.setMap(instance));
-    if (points.length > 1) {
+    const framed = points.length ? [...points, ...nearby.map(({ place }) => new maps.LatLng(place.lat, place.lng))] : [];
+    if (framed.length > 1) {
       const bounds = new maps.LatLngBounds();
-      points.forEach((point) => bounds.extend(point));
-      instance.setBounds(bounds, 48, 48, 48, 48);
+      framed.forEach((point) => bounds.extend(point));
+      instance.setBounds(bounds, 40, 72, 40, 40);
     } else if (points.length === 1) {
       instance.setLevel(5);
       instance.setCenter(points[0]);
@@ -78,7 +85,7 @@ export function ScheduleMap({ stops, label }: { stops: Stop[]; label: string }) 
       instance.setCenter(new maps.LatLng(35.18, 129.07));
     }
     return () => overlays.forEach((overlay) => overlay.setMap(null));
-  }, [stops, status, readyVersion]);
+  }, [stops, nearby, status, readyVersion]);
 
   return (
     <>

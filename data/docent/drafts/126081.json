@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "placeId": "126081",
+  "placeName": "해운대해수욕장",
+  "status": "ai-draft",
+  "humanReview": {
+    "status": "not-published",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": "해설이 한 문장뿐이라 이번에는 공개하지 않음"
+  },
+  "publishable": false,
+  "generatedAt": "2026-10-24T18:28:09.226Z",
+  "model": "gpt-6-luna",
+  "promptVersion": "docent-draft-v1",
+  "review": {
+    "file": "data/docent/reviews/representative-2026-10-24.json",
+    "reviewedOn": "2026-10-24",
+    "reviewer": "Codex (AI 1차 검수)",
+    "draftingScope": "해운대해수욕장의 해변 풍경과 도시 분위기에 한정한 짧은 소개. 풍부한 역사 해설은 추가 수집 필요.",
+    "notes": [
+      "TourAPI의 수심·물결 묘사를 수영 안전 보장으로 쓰지 않는다.",
+      "개장기간·축제·주변 장소 거리·최대 인파 표현은 최신 확인 전 제외.",
+      "한국관광 100선 선정은 2023~2024 기간 정보이며 현재 선정으로 표현하지 않는다."
+    ]
+  },
+  "sources": [
+    {
+      "n": 1,
+      "sourceId": "busan-theme:1408",
+      "provider": "busan-theme",
+      "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1408&pageNo=1&numOfRows=1&resultType=json",
+      "license": null,
+      "text": "부산하면 가장 먼저 떠오르는 것, 바다! 그중에서도 부산 바다의 정석으로 불리는 곳은 단연 해운대해수욕장이다. 여름은 물론이요, 사시사철 부산을 찾는 관광객들의 발걸음이 한 번쯤은 머무르다 가는 곳, 해운대 해수욕장은 다른 어떤 곳보다 다이내믹한 부산의 분위기를 느낄 수 있는 장소다.",
+      "originalTextSha256": "9c69e1adfa342614f4008eea1c99a03653476b146be4bb50fc2dba9db936b2be"
+    }
+  ],
+  "draft": {
+    "summary": [
+      {
+        "text": "해운대해수욕장에서는 부산 바다의 풍경과 다이내믹한 도시 분위기를 느낄 수 있어요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "history": [],
+    "neighborhood": [],
+    "beforeVisit": [],
+    "points": [],
+    "narration": "해운대해수욕장에서는 부산 바다의 풍경과 다이내믹한 도시 분위기를 느낄 수 있어요."
+  },
+  "checks": {
+    "issues": []
+  },
+  "usage": {
+    "inputTokens": 809,
+    "outputTokens": 102,
+    "estimatedUsd": 0.000132
+  },
+  "display": {
+    "notes": [
+      "2023~2024년 소개 글 기준이라 지금과 다를 수 있어요"
+    ]
+  }
+}

@@ -11,7 +11,7 @@ import { ConditionsEditor } from "../../explore/_components/ConditionsEditor";
 import { DayList } from "./DayList";
 import { PlaceActions } from "./PlaceActions";
 import { ScheduleMap } from "./ScheduleMap";
-import { dayWeather, issuedLabel, mapStops, shortDate, tripDates, unmappedNumbers, type SchedulePlace } from "./scheduleModel";
+import { dayWeather, distanceLabel, issuedLabel, mapStops, nearbySuggestions, NEARBY_KM, shortDate, sortByCloseness, tripDates, unmappedNumbers, type SchedulePlace } from "./scheduleModel";
 import { useScheduleWeather } from "./useScheduleWeather";
 
 const subscribeMounted = () => () => {};
@@ -24,7 +24,7 @@ function withObject(name: string) {
   return `${name}${code % 28 ? "을" : "를"}`;
 }
 
-export function ScheduleView({ places }: { places: Record<string, SchedulePlace> }) {
+export function ScheduleView({ places, stories }: { places: Record<string, SchedulePlace>; stories: string[] }) {
   const { trip, saved } = useTrip();
   const mounted = useSyncExternalStore(subscribeMounted, () => true, () => false);
   const [selectedDay, setSelectedDay] = useState(1);
@@ -42,9 +42,10 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
   const day = Math.min(selectedDay, total);
   const dayLost = selectedDay > total;
   const ids = trip.days[day - 1] ?? NO_PLACES;
-  const left = unscheduled(trip);
+  const left = sortByCloseness(unscheduled(trip), ids, places);
   const dates = tripDates(trip.startDate, total);
   const stops = useMemo(() => mapStops(ids, places), [ids, places]);
+  const suggestions = useMemo(() => nearbySuggestions(ids, new Set([...trip.candidates, ...trip.days.flat()]), places), [ids, trip.candidates, trip.days, places]);
   const unmapped = unmappedNumbers(ids, places);
   const weather = useScheduleWeather(trip.startDate, trip.endDate, today, mounted && trip.candidates.length > 0);
   const nameOf = (id: string) => places[id]?.name ?? "목록에 없는 장소";
@@ -67,10 +68,15 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
     if (mode === "sheet") requestAnimationFrame(() => sheet.current?.showModal());
   };
 
+  const addSuggestion = (id: string) => {
+    tripActions.addToDay(id, day);
+    setNotice(`${withObject(nameOf(id))} 후보함에 담고 ${day}일차 ${ids.length + 1}번째로 넣었어요`);
+    focusDayHeading();
+  };
   const addToDay = (id: string, index: number) => {
     tripActions.addToDay(id, day);
     setNotice(`${withObject(nameOf(id))} ${day}일차 ${ids.length + 1}번째로 넣었어요`);
-    const next = left[index + 1] ?? left[index - 1];
+    const next = left[index + 1]?.id ?? left[index - 1]?.id;
     requestAnimationFrame(() => (next ? addButtons.current.get(next)?.focus() : dayHeading.current?.focus()));
   };
   const moveDay = (id: string, to: number) => {
@@ -100,7 +106,7 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
   };
 
   const actionsFor = (id: string, index: number, variant: "inline" | "sheet") => (
-    <PlaceActions day={day} dayTotal={total} index={index} count={ids.length} variant={variant}
+    <PlaceActions placeId={id} hasStory={stories.includes(id)} day={day} dayTotal={total} index={index} count={ids.length} variant={variant}
       onMoveDay={(to) => moveDay(id, to)} onRemove={() => removeFromSchedule(id)}
       onShift={(to) => { reorder(id, to); closeMenu(); }} />
   );
@@ -177,7 +183,7 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
             <section aria-labelledby="map-title" className="min-w-0 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:self-start">
               <h2 id="map-title" className="font-display text-base font-bold">{day}일차 지도</h2>
               <div className="relative mt-2 h-52 overflow-hidden bg-line lg:h-95">
-                <ScheduleMap stops={stops} label={`${day}일차 지도. 순서 번호와 점선으로 방문 순서를 보여줘요. 같은 내용을 목록에서도 볼 수 있어요`} />
+                <ScheduleMap stops={stops} nearby={suggestions} label={`${day}일차 지도. 순서 번호와 점선으로 방문 순서를 보여줘요. 같은 내용을 목록에서도 볼 수 있어요`} />
                 {stops.length === 0 && (
                   <p className="pointer-events-none absolute right-3 bottom-3 left-3 z-10 bg-bg p-3 text-xs text-ink-muted shadow-paper">
                     {ids.length ? "이 날 장소는 지도 위치를 확인할 수 없어 목록에만 있어요" : "이 날 장소를 넣으면 순서대로 번호가 표시돼요"}
@@ -185,7 +191,7 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
                 )}
               </div>
               <p className="mt-2 text-xs leading-relaxed text-ink-subtle">
-                점선은 방문 순서를 이은 선이에요. 실제 이동 경로가 아니에요.
+                점선은 방문 순서를 이은 선이에요. 실제 이동 경로가 아니에요.{suggestions.length > 0 && " 흰 동그라미는 근처 추천 장소예요."}
                 {unmapped.length > 0 && ` ${unmapped.join(", ")}번 장소는 지도 위치를 확인할 수 없어 지도에서 뺐어요.`}
               </p>
               <div className="mt-4 grid grid-cols-2 gap-2 lg:grid-cols-1">
@@ -212,6 +218,26 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
                   {ids.length > 1 && <p id="reorder-help" className="mt-2 text-xs text-ink-subtle">⋮⋮를 끌어서 순서를 바꿀 수 있어요. 키보드는 ⋮⋮를 선택한 뒤 위·아래 화살표 키를 눌러요.</p>}
                 </div>
               )}
+              {suggestions.length > 0 && (
+                <div aria-labelledby="nearby-title" role="group" className="mt-8">
+                  <h3 id="nearby-title" className="flex items-center gap-2 font-display text-base font-bold">
+                    <span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />근처에 이런 곳도 있어요
+                  </h3>
+                  <p className="mt-1 text-xs text-ink-muted">{day}일차 장소에서 직선거리 {NEARBY_KM}km 안, 아직 담지 않은 곳이에요. 실제 이동 거리는 다를 수 있어요.</p>
+                  <ul className="mt-2">
+                    {suggestions.map(({ place, anchor, km }) => (
+                      <li key={place.id} className="flex items-center justify-between gap-3 py-2">
+                        <span className="min-w-0">
+                          <span className="block text-sm font-semibold break-words">{place.name}</span>
+                          <span className="block text-xs text-ink-muted">{anchor.name}에서 {distanceLabel(km)} · {place.category.split(" > ").at(-1)}</span>
+                        </span>
+                        <button type="button" onClick={() => addSuggestion(place.id)} aria-label={`${place.name} 후보함에 담고 ${day}일차에 넣기`}
+                          className="min-h-tap shrink-0 bg-room px-3 text-sm font-semibold whitespace-nowrap text-on-room">+ {day}일차에 넣기</button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </section>
 
             <section aria-labelledby="left-title" className="min-w-0 pt-2 lg:col-start-1">
@@ -220,11 +246,13 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
                 <p className="mt-2 text-sm text-ink-muted">모든 후보를 날짜에 넣었어요 · <Link href="/explore" className="inline-flex min-h-tap items-center font-semibold text-ink">어디 갈까?에서 더 모으기</Link></p>
               ) : (
                 <ul className="mt-2 grid grid-cols-1 gap-x-6 sm:grid-cols-2">
-                  {left.map((id, index) => (
+                  {left.map(({ id, near }, index) => (
                     <li key={id} className="flex items-center justify-between gap-3 py-2">
                       <span className="min-w-0">
                         <span className="block text-sm font-semibold break-words">{nameOf(id)}</span>
-                        {places[id] && <span className="block text-xs text-ink-muted">{regionName(places[id].region)}</span>}
+                        {near ? (
+                          <span className="block text-xs font-semibold text-ink">{day}일차 {near.anchor.name}에서 {distanceLabel(near.km)}</span>
+                        ) : places[id] && <span className="block text-xs text-ink-muted">{regionName(places[id].region)}</span>}
                       </span>
                       <button type="button" ref={(node) => { if (node) addButtons.current.set(id, node); else addButtons.current.delete(id); }}
                         onClick={() => addToDay(id, index)} aria-label={`${nameOf(id)} ${day}일차에 넣기`}

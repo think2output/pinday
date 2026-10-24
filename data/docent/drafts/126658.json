@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "placeId": "126658",
+  "placeName": "태종대",
+  "status": "approved",
+  "humanReview": {
+    "status": "approved",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": ""
+  },
+  "publishable": true,
+  "generatedAt": "2026-10-24T18:28:13.160Z",
+  "model": "gpt-6-luna",
+  "promptVersion": "docent-draft-v1",
+  "review": {
+    "file": "data/docent/reviews/representative-2026-10-24.json",
+    "reviewedOn": "2026-10-24",
+    "reviewer": "Codex (AI 1차 검수)",
+    "draftingScope": "태종대의 숲·바위해안·바다 경관. 이름 유래·열차 운행 정보는 추가 확인 전 제외.",
+    "notes": [
+      "2023~2024 관광지 선정 제목을 현재 선정 사실로 쓰지 않는다.",
+      "다누비열차 운행·요금과 상업시설 상태는 원문만으로 현재 운영을 단정하지 않는다."
+    ]
+  },
+  "sources": [
+    {
+      "n": 1,
+      "sourceId": "busan-theme:1408",
+      "provider": "busan-theme",
+      "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1408&pageNo=1&numOfRows=1&resultType=json",
+      "license": null,
+      "text": "초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는 곳. 오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳. 부산 영도 남쪽 끝에 자리하고 있는 태종대의 이야기다. 태종대는 바다를 조망할 수 있는 전망 포인트뿐만 아니라 해안 자갈마당과 이어지는 계단오솔길도 잘 조성되어 있다. 발걸음을 옮기는 곳마다 새로워지는 풍경에 여행자의 마음이 절로 설렌다. 도시와 얼마 떨어지지 않은 곳이건만 이곳만큼은 세상의 때가 덜 닿은 듯하다.",
+      "originalTextSha256": "9c69e1adfa342614f4008eea1c99a03653476b146be4bb50fc2dba9db936b2be"
+    }
+  ],
+  "draft": {
+    "summary": [
+      {
+        "text": "태종대에서는 숲길과 바위해안, 푸른 바다의 경관을 만날 수 있어요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "history": [],
+    "neighborhood": [],
+    "beforeVisit": [],
+    "points": [
+      {
+        "title": "숲길과 바다",
+        "sentences": [
+          {
+            "text": "초록으로 우거진 숲길을 거닐며 푸른 바다를 바라볼 수 있어요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "title": "바위해안",
+        "sentences": [
+          {
+            "text": "오랜 세월 파도에 깎인 바위해안은 다양한 모습을 보여줘요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "title": "해안으로 이어지는 길",
+        "sentences": [
+          {
+            "text": "해안 자갈마당으로 이어지는 계단오솔길이 조성되어 있어요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "narration": "태종대에서는 숲길과 바위해안, 푸른 바다의 경관을 만날 수 있어요. 초록으로 우거진 숲길을 거닐며 푸른 바다를 바라볼 수 있어요. 오랜 세월 파도에 깎인 바위해안은 다양한 모습을 보여줘요. 해안 자갈마당으로 이어지는 계단오솔길이 조성되어 있어요."
+  },
+  "checks": {
+    "issues": []
+  },
+  "usage": {
+    "inputTokens": 855,
+    "outputTokens": 376,
+    "estimatedUsd": 0.000273
+  },
+  "display": {
+    "notes": [
+      "2023~2024년 소개 글 기준이라 지금과 다를 수 있어요"
+    ]
+  }
+}

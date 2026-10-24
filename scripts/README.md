@@ -4,3 +4,5 @@
 결과는 `data/`에 저장한다. 키는 `.env`에서 읽는다.
 
 도슨트 근거 수집: `node scripts/probe-heritage.mjs`로 소량 시험한 뒤 `node scripts/collect-docent-evidence.mjs`를 실행한다. 옵션·분류 기준·실제 API 확인 기록은 `data/docent/README.md` 참고.
+
+도슨트 해설 초안: `node scripts/generate-docent-drafts.mjs`로 미리보기(비용 없음), `--run`으로 OpenAI 호출(`.env`의 `OPENAI_API_KEY`). 대상·검사·비용은 `data/docent/README.md` "해설 초안".

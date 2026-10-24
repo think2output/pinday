@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "placeId": "1997221",
+  "placeName": "부산 감천문화마을",
+  "status": "approved",
+  "humanReview": {
+    "status": "approved",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": ""
+  },
+  "publishable": true,
+  "generatedAt": "2026-10-24T18:28:01.332Z",
+  "model": "gpt-6-luna",
+  "promptVersion": "docent-draft-v1",
+  "review": {
+    "file": "data/docent/reviews/representative-2026-10-24.json",
+    "reviewedOn": "2026-10-24",
+    "reviewer": "Codex (AI 1차 검수)",
+    "draftingScope": "산비탈의 계단식 주거·골목·벽화라는 경관. 형성사는 태극도 신도와 피란민 양쪽을 추가 확인한 뒤 작성.",
+    "notes": [
+      "TourAPI 연간 방문객 수는 기준 연도가 없어 제외.",
+      "피란민만으로 마을 형성을 설명하면 사하구 공식 설명의 태극도 신앙촌 맥락이 빠진다."
+    ]
+  },
+  "sources": [
+    {
+      "n": 1,
+      "sourceId": "busan-theme:1199",
+      "provider": "busan-theme",
+      "title": "코카앤버터의 Street of fun in Busan",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1199&pageNo=1&numOfRows=1&resultType=json",
+      "license": null,
+      "text": "산비탈을 따라 빼곡하게 들어찬 알록달록한 집, 미로처럼 이어진 골목, 그 길을 따라 예쁘게 그려진 벽화. 부산의 옛 모습과 현대적인 예술이 어우러진 색다른 감성골목, 많은 사람들이 부산 여행지 원픽으로 꼽는 감천문화마을이다.",
+      "originalTextSha256": "8e0994f6efbe49c3c5495c0b3ed3a1af7e24dd41c01e36c75e043afb8b8ea6d7"
+    }
+  ],
+  "draft": {
+    "summary": [
+      {
+        "text": "감천문화마을에는 산비탈을 따라 알록달록한 집들이 빼곡히 들어서 있고, 골목과 벽화가 이어져 있어요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "history": [],
+    "neighborhood": [
+      {
+        "text": "미로처럼 이어진 골목을 따라 벽화가 그려져 있어요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "beforeVisit": [],
+    "points": [
+      {
+        "title": "산비탈의 집들",
+        "sentences": [
+          {
+            "text": "산비탈을 따라 알록달록한 집들이 빼곡히 들어서 있어요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "title": "골목과 벽화",
+        "sentences": [
+          {
+            "text": "미로처럼 이어진 골목을 따라 벽화가 그려져 있어요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "narration": "감천문화마을에는 산비탈을 따라 알록달록한 집들이 빼곡히 들어서 있어요. 미로처럼 이어진 골목을 따라 벽화가 그려져 있어요."
+  },
+  "checks": {
+    "issues": []
+  },
+  "usage": {
+    "inputTokens": 757,
+    "outputTokens": 365,
+    "estimatedUsd": 0.000258
+  },
+  "display": {
+    "notes": []
+  }
+}

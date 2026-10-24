@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "placeId": "126148",
+  "placeName": "범어사(부산)",
+  "status": "approved",
+  "humanReview": {
+    "status": "approved",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": ""
+  },
+  "publishable": true,
+  "generatedAt": "2026-10-24T18:27:55.734Z",
+  "model": "gpt-6-luna",
+  "promptVersion": "docent-draft-v1",
+  "review": {
+    "file": "data/docent/reviews/representative-2026-10-24.json",
+    "reviewedOn": "2026-10-24",
+    "reviewer": "Codex (AI 1차 검수)",
+    "draftingScope": "범어사 경내 조계문을 관람하는 포인트. 사찰 전체 건립 연혁과 개별 전각 연혁을 혼동하지 않는다.",
+    "notes": [
+      "선별한 유산은 기존 relation=nearby-only를 유지한다. 조계문에 관한 문단만 범어사 경내 개별 관람 대상으로 수동 범위 지정.",
+      "추정 건립연도는 확정 사실로 바꾸지 않는다."
+    ]
+  },
+  "sources": [
+    {
+      "n": 1,
+      "sourceId": "heritage:12-21-0014610000000",
+      "provider": "heritage",
+      "title": "부산 범어사 조계문",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=12&ccbaCtcd=21&ccbaAsno=0014610000000",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "text": "앞면 3칸 규모이며 지붕은 옆면에서 볼 때 사람 인(人)자 모양을 한 맞배지붕으로 꾸몄다.\n지붕 처마를 받치기 위해 장식한 공포는 기둥 위와 기둥 사이에도 있는 다포 양식이다.\n기둥은 높은 돌 위에 짧은 기둥을 세운 것이 특이하며 모든 나무재료들은 단청을 하였다. 부산 범어사 조계문은 모든 법이 하나로 통한다는 법리를 담고 있어 삼해탈문이라고도 부른다.\n부산 범어사 조계문은 사찰의 일주문이 가지는 기능적인 건물로서의 가치와 함께 모든 구성 부재들의 적절한 배치와 결구를 통한 구조적인 합리성 등이 시각적으로 안정된 조형 및 의장성을 돋보이게 한다. 한국전통 건축의 구조미를 잘 표현하여 우리나라 일주문 중에서 걸작품으로 평가할 수 있다.",
+      "originalTextSha256": "0e46b286d69b8df36d26e03eed24038463333bb68cce20fdcaddb752aaa3489f"
+    }
+  ],
+  "draft": {
+    "summary": [
+      {
+        "text": "범어사 조계문은 사찰의 일주문 기능을 하는 건물로, 삼해탈문이라고도 불려요.",
+        "sources": [
+          1
+        ]
+      }
+    ],
+    "history": [],
+    "neighborhood": [],
+    "beforeVisit": [],
+    "points": [
+      {
+        "title": "조계문",
+        "sentences": [
+          {
+            "text": "앞면은 3칸이고, 지붕은 옆에서 보면 사람 인(人)자 모양의 맞배지붕이에요.",
+            "sources": [
+              1
+            ]
+          },
+          {
+            "text": "지붕 처마를 받치는 공포는 기둥 위와 기둥 사이에 모두 놓인 다포 양식이에요.",
+            "sources": [
+              1
+            ]
+          },
+          {
+            "text": "기둥은 높은 돌 위에 짧게 세웠고, 나무 재료에는 단청을 했어요. 모든 법이 하나로 통한다는 법리를 담아 삼해탈문이라고도 불려요.",
+            "sources": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "narration": "범어사 조계문은 사찰의 일주문 기능을 하는 건물이에요. 삼해탈문이라고도 불려요. 앞면은 3칸이고, 지붕은 옆에서 보면 사람 인(人)자 모양의 맞배지붕이에요. 지붕 처마를 받치는 공포는 기둥 위와 기둥 사이에 모두 놓인 다포 양식이에요. 기둥은 높은 돌 위에 짧게 세웠고, 나무 재료에는 단청을 했어요. 모든 법이 하나로 통한다는 법리를 담고 있어요."
+  },
+  "checks": {
+    "issues": []
+  },
+  "usage": {
+    "inputTokens": 908,
+    "outputTokens": 352,
+    "estimatedUsd": 0.000267
+  },
+  "display": {
+    "notes": []
+  }
+}
