@@ -41,16 +41,54 @@ function RainBar({ timeline }: { timeline: RainTimeline }) {
   );
 }
 
+/** 대안 하나를 고르는 목록. tone="room"은 어두운 카드 위 */
+function AlternativePicker({ fromName, alternatives, chosen, onChoose, tone }: {
+  fromName: string; alternatives: Alternative[]; chosen: string; onChoose: (id: string) => void; tone: "plain" | "room";
+}) {
+  const room = tone === "room";
+  return (
+    <ul role="radiogroup" aria-label={`${fromName} 대신 갈 실내 장소`} className="flex flex-col gap-1.5">
+      {alternatives.map((alt) => {
+        const on = alt.place.id === chosen;
+        return (
+          <li key={alt.place.id} className="flex items-stretch gap-1">
+            <button type="button" role="radio" aria-checked={on} onClick={() => onChoose(alt.place.id)}
+              className={`flex min-h-14 flex-1 items-center gap-3 px-3 py-2 text-left ${
+                on ? (room ? "bg-on-room text-ink" : "bg-room text-on-room") : room ? "ring-1 ring-on-room-subtle/40 ring-inset" : "ring-1 ring-line ring-inset"}`}>
+              <span aria-hidden="true" className={`grid size-5 shrink-0 place-items-center text-xs font-bold ${on ? (room ? "bg-room text-on-room" : "bg-on-room text-ink") : "ring-1 ring-current ring-inset opacity-50"}`}>{on ? "✓" : ""}</span>
+              <span className="min-w-0 flex-1">
+                <span className="block text-sm font-semibold break-words">{alt.place.name}</span>
+                <span className={`block text-xs ${on ? (room ? "text-ink-muted" : "text-on-room-muted") : room ? "text-on-room-muted" : "text-ink-muted"}`}>
+                  직선 {distanceLabel(alt.km)} · {alt.place.category.split(" > ").at(-1)}{alt.story ? " · 이야기 있음" : ""}
+                </span>
+              </span>
+            </button>
+            {alt.story && (
+              <Link href={`/docent/${alt.place.id}`} aria-label={`${alt.place.name} 이야기 보기`}
+                className={`flex min-w-tap items-center justify-center text-sm font-semibold ${room ? "text-on-room" : "text-ink"}`}>▶</Link>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export function WeatherView({ places, stories }: { places: Record<string, WeatherPlace>; stories: string[] }) {
   const { trip, saved } = useTrip();
   const mounted = useSyncExternalStore(subscribeMounted, () => true, () => false);
-  const requestedDay = Number(useSearchParams().get("day"));
+  const params = useSearchParams();
+  const variant = params.get("v") === "b" ? "b" : "a";
+  const requestedDay = Number(params.get("day"));
   const [pickedDay, setPickedDay] = useState<number | null>(Number.isInteger(requestedDay) && requestedDay > 0 ? requestedDay : null);
   const [notice, setNotice] = useState<string | null>(null);
   const [editing, setEditing] = useState(false);
-  const [moreOpen, setMoreOpen] = useState<string | null>(null);
+  const [choices, setChoices] = useState<Record<string, string>>({});
+  const [focusId, setFocusId] = useState<string | null>(null);
+  const [sheetId, setSheetId] = useState<string | null>(null);
+  const sheet = useRef<HTMLDialogElement>(null);
+  const sheetTrigger = useRef<HTMLButtonElement | null>(null);
   const tabs = useRef(new Map<number, HTMLButtonElement>());
-  const dayHeading = useRef<HTMLHeadingElement>(null);
   const storySet = useMemo(() => new Set(stories), [stories]);
 
   const today = mounted ? todayLocal() : trip.startDate;
@@ -77,8 +115,11 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
   const isKept = (id: string) => kept.some((entry) => entry.day === day && entry.placeId === id);
   const toDecide = card.rain ? ids.filter((id) => isOutdoor(id) && !swapOf(id)) : [];
   const undecided = toDecide.filter((id) => !isKept(id));
+  const altsOf = (id: string) => indoorAlternatives(places[id], places, scheduled, storySet);
+  const choiceOf = (id: string, alternatives: Alternative[]) => alternatives.find((alt) => alt.place.id === choices[id])?.place.id ?? alternatives[0].place.id;
+  const current = focusId && undecided.includes(focusId) ? focusId : undecided[0] ?? null;
 
-  const pickDay = (n: number) => { setPickedDay(n); setNotice(null); setMoreOpen(null); };
+  const pickDay = (n: number) => { setPickedDay(n); setNotice(null); setFocusId(null); };
   const onTabKey = (event: KeyboardEvent<HTMLButtonElement>) => {
     const next = { ArrowRight: day + 1, ArrowLeft: day - 1, Home: 1, End: total }[event.key];
     if (next === undefined) return;
@@ -87,16 +128,30 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     pickDay(target);
     tabs.current.get(target)?.focus();
   };
-  const focusHeading = () => requestAnimationFrame(() => dayHeading.current?.focus());
+
+  const openSheet = (id: string, trigger: HTMLButtonElement) => {
+    sheetTrigger.current = trigger;
+    setSheetId(id);
+    requestAnimationFrame(() => sheet.current?.showModal());
+  };
+  const closeSheet = () => {
+    if (sheet.current?.open) sheet.current.close();
+    setSheetId(null);
+    requestAnimationFrame(() => sheetTrigger.current?.focus());
+  };
 
   const swap = (fromId: string, toId: string) => {
     const index = ids.indexOf(fromId);
     const addedCandidate = !trip.candidates.includes(toId);
     tripActions.replaceInDay(day, fromId, toId);
     rememberSwap({ day, fromId, toId, addedCandidate });
-    setMoreOpen(null);
-    setNotice(`${nameOf(fromId)} 대신 ${withObject(nameOf(toId))} ${day}일차 ${index + 1}번째에 넣었어요. 날짜와 순서는 그대로예요`);
-    focusHeading();
+    setFocusId(null);
+    setNotice(`${nameOf(fromId)} 대신 ${withObject(nameOf(toId))} ${day}일차 ${index + 1}번째에 넣었어요`);
+  };
+  const keep = (id: string) => {
+    keepPlace({ day, placeId: id });
+    setFocusId(null);
+    setNotice(`${withObject(nameOf(id))} 그대로 두기로 했어요`);
   };
   const undo = (entry: Swap) => {
     const elsewhere = dayOf(trip, entry.fromId);
@@ -108,12 +163,10 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     if (entry.addedCandidate) tripActions.removeCandidate(entry.toId);
     forgetSwap(entry);
     setNotice(`${nameOf(entry.fromId)}(으)로 되돌렸어요`);
-    focusHeading();
   };
-  const keep = (id: string) => {
-    keepPlace({ day, placeId: id });
-    setMoreOpen(null);
-    setNotice(`${withObject(nameOf(id))} 그대로 두기로 했어요`);
+  const reopen = (id: string) => {
+    unkeepPlace({ day, placeId: id });
+    setFocusId(id);
   };
 
   const weatherCaption = () => {
@@ -132,91 +185,82 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     );
   };
 
-  const altMeta = (alt: Alternative) => `직선 ${distanceLabel(alt.km)} · ${alt.place.category.split(" > ").at(-1)}${alt.story ? " · 이야기 있음" : ""}`;
-
-  const decision = (id: string) => {
-    const alternatives = indoorAlternatives(places[id], places, scheduled, storySet);
-    if (alternatives === null) return <p className="mt-2 text-xs text-ink-muted">지도 위치를 확인할 수 없는 장소라 가까운 실내 장소를 찾지 못했어요.</p>;
-    if (alternatives.length === 0) return <p className="mt-2 text-xs text-ink-muted">바꿀 수 있는 실내 장소가 없어요. 실내 장소가 모두 일정에 들어 있어요.</p>;
-    const [best, ...rest] = alternatives;
-    const open = moreOpen === id;
-    return (
-      <div role="group" aria-label={`${nameOf(id)} 대신 갈 실내 장소`} className="mt-3">
-        <p className="flex items-center gap-2 text-xs font-semibold text-ink-muted">
-          <span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />대신 여기 어때요?
-        </p>
-        <div className="mt-1.5 flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
-          <span className="min-w-0 flex-1 basis-56">
-            <span className="block font-display text-lg font-bold break-words">{best.place.name}</span>
-            <span className="block text-xs text-ink-muted">{nameOf(id)}에서 {altMeta(best)}</span>
-          </span>
-          {best.story && <Link href={`/docent/${best.place.id}`} className="inline-flex min-h-tap items-center text-sm font-semibold">▶ 이야기</Link>}
-        </div>
-        <div className="mt-3 grid grid-cols-2 gap-2 sm:flex">
-          <button type="button" onClick={() => swap(id, best.place.id)} aria-label={`${nameOf(id)} 대신 ${best.place.name}(으)로 바꾸기`}
-            className="min-h-12 bg-room px-4 text-sm font-semibold text-on-room">이 장소로 바꾸기</button>
-          <button type="button" onClick={() => keep(id)} aria-label={`${nameOf(id)} 그대로 가기`}
-            className="min-h-12 px-4 text-sm font-semibold ring-1 ring-line ring-inset">그대로 갈게요</button>
-        </div>
-        {rest.length > 0 && (
-          <>
-            <button type="button" aria-expanded={open} onClick={() => setMoreOpen(open ? null : id)}
-              className="mt-1 inline-flex min-h-tap items-center text-sm text-ink-muted">
-              다른 실내 장소 {rest.length}곳 {open ? "접기 ▴" : "보기 ▾"}
-            </button>
-            {open && (
-              <ul>
-                {rest.map((alt) => (
-                  <li key={alt.place.id} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 py-1.5">
-                    <span className="min-w-0 flex-1 basis-48">
-                      <span className="block text-sm font-semibold break-words">{alt.place.name}</span>
-                      <span className="block text-xs text-ink-muted">{altMeta(alt)}</span>
-                    </span>
-                    <span className="flex shrink-0 items-center gap-1">
-                      {alt.story && <Link href={`/docent/${alt.place.id}`} className="inline-flex min-h-tap items-center px-2 text-sm font-semibold">▶ 이야기</Link>}
-                      <button type="button" onClick={() => swap(id, alt.place.id)} aria-label={`${nameOf(id)} 대신 ${alt.place.name}(으)로 바꾸기`}
-                        className="min-h-tap px-3 text-sm font-semibold ring-1 ring-line ring-inset">바꾸기</button>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </>
-        )}
-      </div>
-    );
-  };
-
+  /** 일정 한 줄. 장소가 많아져도 한 줄씩만 차지한다 */
   const row = (id: string, index: number) => {
     const place = places[id];
     const swapped = swapOf(id);
     const outdoor = isOutdoor(id);
     const deciding = card.rain && outdoor && !swapped && !isKept(id);
-    const status = swapped ? `실내 · 바꾼 장소 · 원래 ${nameOf(swapped.fromId)}`
-      : !place ? "실내·야외 확인 불가"
-      : card.rain && outdoor ? (isKept(id) ? "야외 · 그대로 가기로 했어요" : "야외 · 비 예보")
-      : card.rain ? "실내 · 비 와도 괜찮아요"
-      : `${outdoor ? "야외" : "실내"} · ${regionName(place.region)} · ${place.category.split(" > ").at(-1)}`;
+    const active = variant === "b" && deciding && id === current;
+    const tag = swapped ? "실내로 바꿈" : !place ? "확인 불가" : outdoor ? (card.rain ? (isKept(id) ? "야외 · 그대로" : active ? "위에서 정하는 중" : "☂ 야외") : "야외") : "실내";
+    const sub = swapped ? `원래 ${nameOf(swapped.fromId)}` : place ? `${regionName(place.region)} · ${place.category.split(" > ").at(-1)}` : "";
     return (
-      <li key={id} className={deciding ? "py-4" : "py-2"}>
-        <div className="flex items-center gap-3">
-          <span aria-hidden="true" className={`grid size-8 shrink-0 place-items-center font-display text-sm font-bold ${deciding ? "bg-room text-on-room" : "text-ink-muted ring-1 ring-line ring-inset"}`}>{index + 1}</span>
-          <div className="min-w-0 flex-1">
-            <strong className={`block font-display break-words ${deciding ? "text-lg font-bold" : "text-base font-semibold"}`}>{nameOf(id)}</strong>
-            <span className={`block text-xs ${deciding || swapped ? "font-semibold text-ink" : "text-ink-muted"}`}>{status}</span>
-          </div>
-          {swapped && (
-            <button type="button" onClick={() => undo(swapped)} aria-label={`${nameOf(id)}을(를) ${nameOf(swapped.fromId)}(으)로 되돌리기`}
-              className="min-h-tap shrink-0 px-3 text-sm font-semibold ring-1 ring-line ring-inset">되돌리기</button>
-          )}
-          {card.rain && isKept(id) && (
-            <button type="button" onClick={() => unkeepPlace({ day, placeId: id })} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted">대안 다시 보기</button>
-          )}
-        </div>
-        {deciding && <div className="pl-11">{decision(id)}</div>}
+      <li key={id} className="flex min-h-14 items-center gap-3 py-1.5">
+        <span aria-hidden="true" className={`grid size-7 shrink-0 place-items-center font-display text-sm font-bold ${deciding ? "bg-room text-on-room" : "text-ink-muted ring-1 ring-line ring-inset"}`}>{index + 1}</span>
+        <span className="min-w-0 flex-1">
+          <span className="block truncate text-[15px] font-semibold">{nameOf(id)}</span>
+          <span className="block truncate text-xs text-ink-muted">{sub}</span>
+        </span>
+        <span className={`shrink-0 text-xs ${deciding ? "font-bold text-ink" : swapped ? "font-semibold text-ink" : "text-ink-muted"}`}>{tag}</span>
+        {swapped ? (
+          <button type="button" onClick={() => undo(swapped)} aria-label={`${nameOf(id)}을(를) ${nameOf(swapped.fromId)}(으)로 되돌리기`}
+            className="min-h-tap shrink-0 px-2 text-sm font-semibold underline underline-offset-4">되돌리기</button>
+        ) : card.rain && outdoor && isKept(id) ? (
+          <button type="button" onClick={() => reopen(id)} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted underline underline-offset-4">다시 정하기</button>
+        ) : deciding && variant === "a" ? (
+          <button type="button" onClick={(event) => openSheet(id, event.currentTarget)} aria-haspopup="dialog"
+            className="min-h-tap shrink-0 px-3 text-sm font-semibold ring-1 ring-ink ring-inset">바꾸기</button>
+        ) : deciding && variant === "b" && !active ? (
+          <button type="button" onClick={() => setFocusId(id)} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted underline underline-offset-4">정하기</button>
+        ) : null}
       </li>
     );
   };
+
+  /** B안: 정할 장소를 하나씩 보여주는 어두운 카드 */
+  const stepCard = () => {
+    if (!card.rain || toDecide.length === 0) return null;
+    if (!current) {
+      return (
+        <div className="mt-6 flex items-center gap-3 bg-room px-4 py-4 text-on-room lg:max-w-160">
+          <span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />
+          <p className="text-sm font-semibold">{day}일차 야외 장소를 모두 정했어요</p>
+        </div>
+      );
+    }
+    const alternatives = altsOf(current);
+    const position = toDecide.indexOf(current) + 1;
+    const decidedCount = toDecide.length - undecided.length;
+    const next = undecided[(undecided.indexOf(current) + 1) % undecided.length];
+    return (
+      <section aria-label="비 오는 날 바꿀지 정하기" className="mt-6 bg-room px-4 py-5 text-on-room lg:max-w-160 lg:px-6">
+        <div className="flex items-center justify-between gap-3 text-xs text-on-room-muted">
+          <span>정할 곳 {decidedCount + 1} / {toDecide.length}</span>
+          {undecided.length > 1 && <button type="button" onClick={() => setFocusId(next)} className="min-h-tap px-1 text-sm text-on-room">나중에 · 다음 장소 ›</button>}
+        </div>
+        <p className="mt-1 font-display text-xl font-extrabold">{nameOf(current)}</p>
+        <p className="text-xs text-on-room-muted">{position}번째 장소 · 야외{timeline ? ` · ${timeline.summary.split(".")[0]}` : ""}</p>
+        {alternatives === null || alternatives.length === 0 ? (
+          <>
+            <p className="mt-4 text-sm text-on-room-muted">{alternatives === null ? "지도 위치를 확인할 수 없는 장소라 가까운 실내 장소를 찾지 못했어요." : "바꿀 수 있는 실내 장소가 없어요."}</p>
+            <button type="button" onClick={() => keep(current)} className="mt-3 min-h-12 w-full px-4 text-sm font-semibold ring-1 ring-on-room-subtle/60 ring-inset sm:w-auto">그대로 갈게요</button>
+          </>
+        ) : (
+          <>
+            <p className="mt-4 mb-2 flex items-center gap-2 text-sm font-semibold"><span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />대신 갈 실내 장소</p>
+            <AlternativePicker fromName={nameOf(current)} alternatives={alternatives} chosen={choiceOf(current, alternatives)}
+              onChoose={(altId) => setChoices((value) => ({ ...value, [current]: altId }))} tone="room" />
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <button type="button" onClick={() => swap(current, choiceOf(current, alternatives))} className="min-h-12 bg-on-room px-4 text-sm font-bold text-ink shadow-glow-soft">이 장소로 바꾸기</button>
+              <button type="button" onClick={() => keep(current)} className="min-h-12 px-4 text-sm font-semibold ring-1 ring-on-room-subtle/60 ring-inset">그대로 갈게요</button>
+            </div>
+          </>
+        )}
+      </section>
+    );
+  };
+
+  const sheetAlternatives = sheetId ? altsOf(sheetId) : null;
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-page flex-col px-gutter lg:max-w-[calc(var(--container-page)+2*var(--spacing-gutter-wide))] lg:px-gutter-wide">
@@ -243,7 +287,6 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
               </p>
               {summary.body && <p className={`mt-1.5 text-sm text-ink-muted ${summary.rain ? "pl-5.5" : ""}`}>{summary.body}</p>}
             </section>
-            <p role="status" className={notice ? "mt-4 text-sm font-semibold text-ink" : "sr-only"}>{notice}</p>
 
             <div role="tablist" aria-label="날짜별 날씨" className="no-scrollbar -mx-gutter mt-6 flex gap-2 overflow-x-auto px-gutter lg:mx-0 lg:flex-wrap lg:px-0">
               {dates.map((date, index) => {
@@ -277,33 +320,26 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
               </section>
             ) : (
               <section id="weather-panel" role="tabpanel" aria-labelledby={`weather-tab-${day}`} className="mt-8">
-                <h2 ref={dayHeading} tabIndex={-1} className="font-display text-xl font-extrabold tracking-tight outline-offset-4 lg:text-2xl">
-                  {day}일차 · {shortDate(dates[day - 1])}
-                </h2>
-                <p className="mt-1 text-sm text-ink-muted">
-                  {card.icon} {card.label}{card.detail ? ` · ${card.detail}` : ""}
-                </p>
-                {timeline ? (
-                  <div className="mt-4 lg:max-w-160"><RainBar timeline={timeline} /></div>
-                ) : (
-                  <p className="mt-3 text-sm text-ink">{card.note}</p>
-                )}
+                <h2 className="font-display text-xl font-extrabold tracking-tight lg:text-2xl">{day}일차 · {shortDate(dates[day - 1])}</h2>
+                <p className="mt-1 text-sm text-ink-muted">{card.icon} {card.label}{card.detail ? ` · ${card.detail}` : ""}</p>
+                {timeline ? <div className="mt-4 lg:max-w-160"><RainBar timeline={timeline} /></div> : <p className="mt-3 text-sm text-ink">{card.note}</p>}
+
+                <p role="status" className={notice ? "mt-4 text-sm font-semibold text-ink" : "sr-only"}>{notice}</p>
+                {variant === "b" && stepCard()}
 
                 {ids.length === 0 ? (
                   <p className="mt-6 text-sm text-ink-muted">
-                    이 날은 아직 일정이 없어요 · <Link href={`/schedule`} className="inline-flex min-h-tap items-center font-semibold text-ink">언제 갈까?에서 넣기</Link>
+                    이 날은 아직 일정이 없어요 · <Link href="/schedule" className="inline-flex min-h-tap items-center font-semibold text-ink">언제 갈까?에서 넣기</Link>
                   </p>
                 ) : (
                   <>
                     <h3 className="mt-8 flex flex-wrap items-baseline gap-x-2 font-display text-base font-bold">
                       그날 일정 {ids.length}곳
                       {toDecide.length > 0 && (
-                        <span className="text-sm font-semibold text-ink-muted">
-                          {undecided.length === 0 ? "· 모두 정했어요" : `· 정할 곳 ${undecided.length}곳`}
-                        </span>
+                        <span className="text-sm font-semibold text-ink-muted">{undecided.length === 0 ? "· 모두 정했어요" : `· 비 맞는 야외 ${undecided.length}곳`}</span>
                       )}
                     </h3>
-                    <ol aria-label={`${day}일차 장소`} className="mt-2 lg:max-w-160">{ids.map(row)}</ol>
+                    <ol aria-label={`${day}일차 장소`} className="mt-1 lg:max-w-160">{ids.map(row)}</ol>
                   </>
                 )}
                 <p className="mt-6 text-xs text-ink-subtle">바꾼 장소는 날짜와 순서를 그대로 유지해요. ‘바꾼 장소’ 표시와 되돌리기는 이 창을 닫으면 사라지고, 바뀐 일정은 남아요.</p>
@@ -313,7 +349,34 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
         )}
         <footer className="pt-10 pb-6 text-xs text-ink-subtle">장소 정보 한국관광공사 TourAPI · 날씨 기상청 단기예보</footer>
       </main>
+
       {editing && <ConditionsEditor trip={trip} onClose={() => setEditing(false)} onNotice={setNotice} />}
+      <dialog ref={sheet} onClose={() => setSheetId(null)} aria-labelledby="swap-title"
+        className="fixed inset-x-0 top-auto bottom-0 m-0 max-h-[85dvh] w-full max-w-none overflow-y-auto bg-bg p-4 pb-[calc(env(safe-area-inset-bottom)+16px)] text-ink backdrop:bg-room/60 lg:inset-0 lg:m-auto lg:h-fit lg:max-w-120 lg:p-6">
+        {sheetId && (
+          <div className="flex flex-col">
+            <p className="text-xs text-ink-muted">{day}일차 {ids.indexOf(sheetId) + 1}번째 · 야외{timeline ? ` · ${timeline.summary.split(".")[0]}` : ""}</p>
+            <h2 id="swap-title" className="mt-0.5 font-display text-lg font-bold">{nameOf(sheetId)} 대신 어디 갈까요?</h2>
+            {sheetAlternatives === null || sheetAlternatives.length === 0 ? (
+              <p className="mt-4 text-sm text-ink-muted">{sheetAlternatives === null ? "지도 위치를 확인할 수 없는 장소라 가까운 실내 장소를 찾지 못했어요." : "바꿀 수 있는 실내 장소가 없어요."}</p>
+            ) : (
+              <>
+                <div className="mt-4">
+                  <AlternativePicker fromName={nameOf(sheetId)} alternatives={sheetAlternatives} chosen={choiceOf(sheetId, sheetAlternatives)}
+                    onChoose={(altId) => setChoices((value) => ({ ...value, [sheetId]: altId }))} tone="plain" />
+                </div>
+                <button type="button" onClick={() => { swap(sheetId, choiceOf(sheetId, sheetAlternatives)); closeSheet(); }}
+                  className="mt-4 min-h-12 bg-room px-4 text-sm font-bold text-on-room">이 장소로 바꾸기</button>
+              </>
+            )}
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <button type="button" onClick={() => { keep(sheetId); closeSheet(); }} className="min-h-12 text-sm font-semibold ring-1 ring-line ring-inset">그대로 갈게요</button>
+              <button type="button" autoFocus onClick={closeSheet} className="min-h-12 text-sm">닫기</button>
+            </div>
+            <p className="mt-3 text-xs text-ink-subtle">직선거리라 실제 이동 거리는 달라요. 날짜와 순서는 그대로예요.</p>
+          </div>
+        )}
+      </dialog>
     </div>
   );
 }
