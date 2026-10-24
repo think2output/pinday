@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { tripActions, useTrip } from "@/lib/trip/store";
@@ -164,12 +165,12 @@ export function ExploreView({ categories, names }: { categories: Category[]; nam
           <aside aria-labelledby="candidate-title" className="hidden min-h-0 flex-col lg:flex">
             <h2 id="candidate-title" className="py-3 font-display text-lg font-bold">후보함 <span className="text-ink-muted">{trip.candidates.length}곳</span></h2>
             <div className="mt-3 min-h-0 flex-1 overflow-y-auto">{candidateList()}</div>
-            <button type="button" disabled className="mt-5 min-h-tap bg-room px-3 text-sm font-semibold text-on-room opacity-50">날짜에 배치하기 · 준비 중</button>
+            <Link href="/schedule" className="mt-5 flex min-h-tap items-center justify-center bg-room px-3 text-sm font-semibold text-on-room">날짜에 배치하기 →</Link>
           </aside>
         </div>
         <div className="fixed right-0 bottom-0 left-0 z-30 flex min-h-18 items-center justify-between gap-3 bg-bg px-gutter pb-[env(safe-area-inset-bottom)] lg:hidden">
           <button type="button" onClick={() => setShowCandidates(true)} className="min-h-tap text-sm font-bold">후보 {trip.candidates.length}곳 보기</button>
-          <button type="button" disabled className="min-h-tap bg-room px-3 text-sm font-semibold text-on-room opacity-50">날짜에 배치하기 · 준비 중</button>
+          <Link href="/schedule" className="flex min-h-tap items-center bg-room px-3 text-sm font-semibold text-on-room">날짜에 배치하기 →</Link>
         </div>
         <footer className="pt-6 pb-24 text-xs text-ink-subtle lg:pb-6">장소 정보 한국관광공사 TourAPI · 지도 카카오</footer>
       </main>
