@@ -794,7 +794,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/17/3397217_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/17/3397217_image3_1.jpg",
@@ -1412,7 +1412,7 @@
     "category": "산업관광 > 기타산업관광지",
     "categoryCode": "EX061000",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/22/3337322_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/22/3337322_image3_1.jpg",
@@ -1581,7 +1581,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/80/3038580_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/80/3038580_image3_1.JPG",
@@ -2523,7 +2523,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/00/3521300_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/00/3521300_image3_1.jpg",
@@ -2611,7 +2611,7 @@
     "tastes": [
       "alley"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/42/3008042_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/42/3008042_image3_1.JPG",
@@ -2634,7 +2634,7 @@
       "alley",
       "history"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/14/4003214_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/14/4003214_image3_1.jpg",
@@ -2654,7 +2654,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/45/4097445_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/45/4097445_image3_1.jpg",
@@ -2804,7 +2804,7 @@
     "tastes": [
       "sunset"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "http://tong.visitkorea.or.kr/cms/resource/47/3498447_image2_1.jpg",
       "thumb": "http://tong.visitkorea.or.kr/cms/resource/47/3498447_image3_1.jpg",
@@ -3058,7 +3058,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/32/3083432_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/32/3083432_image3_1.jpg",
@@ -3208,7 +3208,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/81/3544081_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/81/3544081_image3_1.jpg",
@@ -3445,7 +3445,7 @@
     "category": "산업관광 > 기타산업관광지",
     "categoryCode": "EX061000",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "http://tong.visitkorea.or.kr/cms/resource/52/3035052_image2_1.jpg",
       "thumb": "http://tong.visitkorea.or.kr/cms/resource/52/3035052_image3_1.jpg",
@@ -3611,7 +3611,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/78/3015978_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/78/3015978_image3_1.JPG",
@@ -3631,7 +3631,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/36/3070636_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/36/3070636_image3_1.JPG",
@@ -3711,7 +3711,7 @@
     "category": "산업관광 > 친환경/신재생에너지",
     "categoryCode": "EX060900",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "http://tong.visitkorea.or.kr/cms/resource/07/3442507_image2_1.jpeg",
       "thumb": "http://tong.visitkorea.or.kr/cms/resource/07/3442507_image3_1.jpeg",
@@ -3939,7 +3939,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/16/3350316_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/16/3350316_image3_1.jpg",
@@ -4003,7 +4003,7 @@
     "category": "산업관광 > 기타산업관광지",
     "categoryCode": "EX061000",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "http://tong.visitkorea.or.kr/cms/resource/19/3539019_image2_1.jpg",
       "thumb": "http://tong.visitkorea.or.kr/cms/resource/19/3539019_image3_1.jpg",
@@ -4535,7 +4535,7 @@
     "category": "산업관광 > 기타산업관광지",
     "categoryCode": "EX061000",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/64/3399264_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/64/3399264_image3_1.jpg",
@@ -4853,7 +4853,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/85/3589785_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/85/3589785_image3_1.jpg",
@@ -5021,7 +5021,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/04/4095804_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/04/4095804_image3_1.jpg",
@@ -5184,7 +5184,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": null,
     "tel": null,
     "modifiedAt": "20260706094004"
@@ -6180,7 +6180,7 @@
     "tastes": [
       "history"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/85/3496885_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/85/3496885_image3_1.jpg",
@@ -6244,7 +6244,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/86/3350186_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/86/3350186_image3_1.jpg",
@@ -7411,7 +7411,7 @@
     "category": "테마공원 > 워터파크",
     "categoryCode": "VE020200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/83/3488983_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/83/3488983_image3_1.jpg",
@@ -7431,7 +7431,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/86/3060786_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/86/3060786_image3_1.JPG",
@@ -7451,7 +7451,7 @@
     "category": "기타체험 > 기타체험관광",
     "categoryCode": "EX070200",
     "tastes": [],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/33/3526933_image2_1.jpg",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/33/3526933_image3_1.jpg",
@@ -7820,7 +7820,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": null,
     "tel": null,
     "modifiedAt": "20251230172635"
@@ -8406,7 +8406,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": null,
     "tel": null,
     "modifiedAt": "20250814171424"
@@ -8486,7 +8486,7 @@
     "tastes": [
       "wave"
     ],
-    "indoor": false,
+    "indoor": true,
     "image": {
       "url": "https://tong.visitkorea.or.kr/cms/resource/33/3015533_image2_1.JPG",
       "thumb": "https://tong.visitkorea.or.kr/cms/resource/33/3015533_image3_1.JPG",
