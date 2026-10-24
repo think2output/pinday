@@ -1,10 +1,10 @@
 # HANDOFF — 지금 상태
 
 마지막 업데이트: 2026-10-25 · 작성: Codex (어디 갈까? 구현)
-마지막 확인: /explore 장소 API·카카오 실제 지도·검색/분류·여행 조건 창·후보함·휴대폰 서랍 구현. Chrome 390px·1440px에서 홈 시작 연결, 저장/새로고침, 내 여행 반영, 지도 핀/묶음 핀/이동, 오류 재시도, 키보드/터치 확인. 테스트 88개·린트·빌드 통과. 자세한 결과와 원본 반송공원 좌표 주의는 docs/EXPLORE_QA.md. 최종 사용자 시각 확인은 대기. .vscode/는 개인 설정으로 커밋하지 않음.
+마지막 확인: /explore 장소 API·카카오 실제 지도·검색/분류·여행 조건 창·후보함·휴대폰 서랍 구현. Chrome 390px·1440px에서 홈 시작 연결, 저장/새로고침, 내 여행 반영, 지도 핀/묶음 핀/이동, 오류 재시도, 키보드/터치 확인. 테스트 88개·린트·빌드 통과. 자세한 결과와 원본 반송공원 좌표 주의는 docs/EXPLORE_QA.md. 탐색 화면 디자인은 기능 연결을 위한 초안이며 최종 확정 아님. 사용자의 디자인 검토를 먼저 받고 다음 기능 진행. 최종 사용자 시각 확인은 대기. .vscode/는 개인 설정으로 커밋하지 않음.
 
 ## 현재 브랜치
-`feat/explore` (← `fix/trip-page` ← `feat/home-trip-card` ← `fix/home-interactions` ← `feat/home-design`). 사용자 승인 후 탐색 화면 작업으로 분기. 홈 카드 제거·별도 /trip·헤더 연결 수정 ff0441f·7f9feeb까지 포함함. 현재 작업과 /trip 분리 수정은 로컬 커밋이며 아직 push하지 않음. 원격은 feat/home-trip-card의 ed5794a까지 올라가 있음. 2026-10-25 fetch 결과 원격 main은 여전히 8f98ab8(PR #6, 시안 커밋 7d7ea37까지)이므로 현재 브랜치가 후속 구현 전체를 포함한다.
+`feat/explore` (← `fix/trip-page` ← `feat/home-trip-card` ← `fix/home-interactions` ← `feat/home-design`). 사용자 승인 후 탐색 화면 작업으로 분기. 홈 카드 제거·별도 /trip·헤더 연결 수정 ff0441f·7f9feeb까지 포함함. 2026-10-25 사용자 요청으로 현재 feat/explore 브랜치를 원격에 push. /trip 분리·헤더 연결과 탐색 구현까지 모두 포함. main 병합은 하지 않음. 2026-10-25 fetch 결과 원격 main은 여전히 8f98ab8(PR #6, 시안 커밋 7d7ea37까지)이므로 현재 브랜치가 후속 구현 전체를 포함한다.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
@@ -46,7 +46,7 @@
 
 ## 다음 할 일
 1. (끝남) tokens.css·글꼴 반영, 홈 구현. 디자인 값 이름은 `src/styles/tokens.css` 맨 위 설명 참고. 화면 코드에 색 코드 직접 쓰지 말 것.
-2. /explore 구현 완료. 사용자 시각 확인 후 다음은 /schedule(언제 갈까?): 날짜 탭·그날 일정·아직 날짜 없는 곳·그날 지도 구현 및 후보를 날짜에 배치하기 연결. 공통 파일 수정 전 사용자 확인. API 계약 docs/PLACE_API.md·docs/WEATHER_API.md. 탐색 확인 기록 docs/EXPLORE_QA.md.
+2. /explore 기능 구현 완료, 디자인은 미확정 초안. 사용자에게 휴대폰·데스크톱의 배치·밀도·지도/목록 비율을 확인받고 조정한 뒤 다음은 /schedule(언제 갈까?): 날짜 탭·그날 일정·아직 날짜 없는 곳·그날 지도 구현 및 후보를 날짜에 배치하기 연결. 공통 파일 수정 전 사용자 확인. API 계약 docs/PLACE_API.md·docs/WEATHER_API.md. 탐색 확인 기록 docs/EXPLORE_QA.md.
 3. 나머지 13칸 지도 선 그림, 홈 첫 문구(사용자가 다시 쓰기로 함)는 홈 구현 중이나 후에.
 4. 도슨트는 별도 후속: 대표 검수의 선택 문단·제한을 사용자에게 확인받고, OpenAI 키 준비 후 소수 장소부터 해설 시험 생성·검수. 생성기는 선택 문단·제외/재검수/미검수 상태·출처 해시를 반드시 적용해야 함. 자동 충분 후보 83곳을 공개 가능한 이야기로 취급하지 않는다. 백제병원 연혁·석당박물관 연결 자료의 상세 검수와 부산근현대역사관 아카이브 승인 후 보완은 아직.
 5. 이후 기획서 12장의 개발 순서·QA 기준대로 진행.
