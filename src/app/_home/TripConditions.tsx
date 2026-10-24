@@ -21,10 +21,10 @@ const nightsLabel = (days: number) => (days === 1 ? "당일" : `${days - 1}박 $
 const noop = () => () => {};
 const useMounted = () => useSyncExternalStore(noop, () => true, () => false);
 
-type Props = { trip: Trip; saved: boolean; onRemoveRegion: (region: string) => void };
+type Props = { trip: Trip; saved: boolean; onRemoveRegion: (region: string) => void; onReset: () => void };
 
 // 홈 여행 조건: 어디·언제 + 시작 버튼 (기획서 6-1). 기간은 화면을 떠나지 않고 그 자리의 작은 창에서 바꾼다(4장 이동 규칙 4).
-export function TripConditions({ trip, saved, onRemoveRegion }: Props) {
+export function TripConditions({ trip, saved, onRemoveRegion, onReset }: Props) {
   const mounted = useMounted();
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState({ start: "", end: "" });
@@ -60,7 +60,7 @@ export function TripConditions({ trip, saved, onRemoveRegion }: Props) {
                 type="button"
                 onClick={() => onRemoveRegion(region)}
                 aria-label={`${regionName(region)} 선택 해제`}
-                className={`flex min-h-tap items-center gap-1.25 ${value}`}
+                className={`flex min-h-tap min-w-tap items-center gap-1.25 ${value}`}
               >
                 {regionName(region)}
                 <span aria-hidden="true" className="font-sans text-[11px] font-medium text-on-room-subtle">✕</span>
@@ -119,6 +119,11 @@ export function TripConditions({ trip, saved, onRemoveRegion }: Props) {
               이 기간으로
             </button>
           </div>
+          {saved && (
+            <button type="button" onClick={onReset} className="min-h-tap self-start text-sm text-on-room-muted">
+              새 여행 시작하기
+            </button>
+          )}
         </div>
       )}
       {message && (

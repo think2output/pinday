@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import type { StoryCard } from "@/lib/server/home";
 import { tripActions, useTrip } from "@/lib/trip/store";
 import { BusanMap } from "./BusanMap";
 import { StoryShelf } from "./StoryShelf";
 import { TripConditions } from "./TripConditions";
+import { TripCard } from "./TripCard";
+import { TripReset } from "./TripReset";
 import { regionName } from "./regions";
 
 type Props = {
@@ -18,6 +21,8 @@ type Props = {
 // 홈 (기획서 6-1, 시안 C "어두운 전시실"): 메뉴 → 첫 문구 → 여행 조건(지도·어디·언제·시작) → 이야기 → 취향 테스트·랜덤 뽑기 → 출처
 export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
   const { trip, saved } = useTrip();
+  const [resetOpen, setResetOpen] = useState(false);
+  const [conditionsVersion, setConditionsVersion] = useState(0);
   const selected = trip.regions;
 
   const toggleRegion = (region: string) =>
@@ -38,6 +43,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
       <div className={`overflow-x-clip transition-colors duration-500 ${selected.length > 0 ? "bg-room-dim" : "bg-room"}`}>
         <div className="mx-auto max-w-page px-gutter pb-8 lg:box-content lg:px-gutter-wide lg:pb-22">
           <SiteHeader tone="room" />
+          {saved && <TripCard trip={trip} onReset={() => setResetOpen(true)} />}
           {/* 휴대폰: 첫 문구 → 지도 → 어디·언제 / 데스크톱: 왼쪽 첫 문구·어디·언제, 오른쪽 지도 */}
           <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] lg:items-start lg:gap-x-16 lg:pt-18">
             <div className="pt-12 lg:col-start-1 lg:row-start-1 lg:pt-0">
@@ -52,7 +58,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
               <BusanMap selected={selected} counts={regionCounts} onToggle={toggleRegion} onClear={() => tripActions.setRegions([])} />
             </div>
             <div className="pt-1 lg:col-start-1 lg:row-start-2 lg:pt-16">
-              <TripConditions trip={trip} saved={saved} onRemoveRegion={removeRegion} />
+              <TripConditions key={conditionsVersion} trip={trip} saved={saved} onRemoveRegion={removeRegion} onReset={() => setResetOpen(true)} />
             </div>
           </div>
         </div>
@@ -97,6 +103,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
           </p>
         </footer>
       </div>
+      <TripReset trip={trip} saved={saved} open={resetOpen} onClose={() => setResetOpen(false)} onResetDone={() => setConditionsVersion((version) => version + 1)} />
     </main>
   );
 }
