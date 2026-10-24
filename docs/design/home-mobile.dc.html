@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 홈 · 휴대폰</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:"Wanted Sans";src:url("/_blob/14b47b330baea6bb2b86cef6ef6acde4") format("woff2");font-weight:100 950;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("/_blob/0f602563788cb5bddc41adc62a7b8a07") format("woff2");font-weight:45 920;font-display:swap}
+body{margin:0;background:#FFFFFF}
+a{color:#111214}a:hover{color:#000}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid #111214;outline-offset:2px}
+.pd-scroll{scrollbar-width:none}.pd-scroll::-webkit-scrollbar{display:none}
+@keyframes pd-ignite{0%{opacity:0;transform:scale(.55)}35%{opacity:1;transform:scale(1.12)}100%{opacity:1;transform:scale(1)}}
+@keyframes pd-flick{0%{filter:brightness(.9)}30%{filter:brightness(1.15)}45%{filter:brightness(.97)}60%{filter:brightness(1.08)}100%{filter:brightness(1)}}
+.pd-spot{animation:pd-ignite .55s cubic-bezier(.2,.8,.2,1) both}
+.pd-lit{animation:pd-flick .6s ease-out both}
+@media (prefers-reduced-motion: reduce){.pd-spot,.pd-lit{animation:none}}
+</style>
+</helmet>
+
+<div style="width: 390px; min-height: 2120px; background: #FFFFFF; color: #111214; font-family: 'Pretendard', system-ui, sans-serif; box-sizing: border-box; display: flex; flex-direction: column;">
+
+  <header style="padding: 6px 16px 0; display: flex; flex-direction: column;">
+    <div style="height: 52px; display: flex; align-items: center; justify-content: space-between;">
+      <a href="#" style="display: flex; align-items: center; gap: 5px; text-decoration: none; font-family: 'Wanted Sans', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: -0.045em;">
+        PinDay
+        <span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: {{pin}}; box-shadow: 0 0 12px 3px {{pinGlow}};"></span>
+      </a>
+      <button type="button" style="height: 44px; padding: 0 14px; border: 1px solid #111214; background: #FFFFFF; color: #111214; font-weight: 600; font-size: 14px;">내 여행</button>
+    </div>
+    <nav class="pd-scroll" aria-label="주요 메뉴" style="display: flex; gap: 18px; overflow-x: auto; white-space: nowrap;">
+      <a href="#" aria-current="page" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 800; text-decoration: none;">홈</a>
+      <a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; color: #6B6F76; text-decoration: none;">어디 갈까?</a>
+      <a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; color: #6B6F76; text-decoration: none;">언제 갈까?</a>
+      <a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; color: #6B6F76; text-decoration: none;">어떻게 갈까?</a>
+      <a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; color: #6B6F76; text-decoration: none;">날씨 대안</a>
+      <a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; color: #6B6F76; text-decoration: none;">AI 도슨트</a>
+    </nav>
+  </header>
+
+  <section style="padding: 36px 16px 0; display: flex; flex-direction: column; gap: 12px;">
+    <h1 style="margin: 0; font-family: 'Wanted Sans', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.16; letter-spacing: -0.05em; white-space: pre-line;">핀을 꽂으면,
+이야기가 켜져요</h1>
+    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #50545B;">부산 어디에 조명을 비춰볼까요?</p>
+  </section>
+
+  <section style="padding: 28px 16px 0; display: flex; flex-direction: column; gap: 10px;">
+    <div onPointerMove="{{move}}" onPointerDown="{{move}}" onPointerLeave="{{leave}}" style="position: relative; padding: 10px; background: radial-gradient(circle {{lightR}}px at {{lx}}px {{ly}}px, {{light}} 0%, transparent 100%), {{wall}}; transition: background-color .4s; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(5, 64px); gap: 4px;">
+      <sc-for list="{{cells}}" as="c" hint-placeholder-count="16">
+        <div style="position: relative; grid-column: {{c.col}}; grid-row: {{c.row}};">
+          <sc-if value="{{c.on}}" hint-placeholder-val="{{false}}">
+            <div class="pd-spot" aria-hidden="true" style="position: absolute; inset: -24px; border-radius: 50%; background: radial-gradient(closest-side, {{spotGlow}}, transparent 100%); pointer-events: none;"></div>
+          </sc-if>
+          <button type="button" onClick="{{c.toggle}}" onPointerEnter="{{c.enter}}" aria-pressed="{{c.pressed}}" aria-label="{{c.label}}" class="{{c.cls}}" style="position: relative; width: 100%; height: 100%; padding: 8px; border: 1px solid {{c.border}}; background: {{c.bg}}; box-shadow: {{c.shadow}}; color: #111214; text-align: left; display: flex; flex-direction: column; justify-content: space-between; transition: background .25s, box-shadow .25s;">
+            <span style="font-family: 'Wanted Sans', sans-serif; font-size: 14px; font-weight: {{c.weight}}; letter-spacing: -0.03em; color: {{c.nameColor}};">{{c.name}}</span>
+            <span style="font-size: 10px; line-height: 1.25; color: {{c.spotColor}};">{{c.spot}}</span>
+            <sc-if value="{{c.on}}" hint-placeholder-val="{{false}}">
+              <svg width="11" height="15" viewBox="0 0 14 18" aria-hidden="true" style="position: absolute; top: 7px; right: 7px;"><path d="M7 1C3.7 1 1 3.6 1 6.9 1 11.2 7 17 7 17s6-5.8 6-10.1C13 3.6 10.3 1 7 1z" fill="{{pin}}" stroke="#111214" stroke-width="1.4"></path><circle cx="7" cy="7" r="2.2" fill="#111214"></circle></svg>
+            </sc-if>
+          </button>
+        </div>
+      </sc-for>
+    </div>
+    <p aria-live="polite" style="margin: 0; min-height: 18px; font-size: 12px; color: #50545B;">{{status}}</p>
+  </section>
+
+  <section style="padding: 22px 16px 0; display: flex; flex-direction: column; gap: 4px;">
+    <div style="display: flex; align-items: baseline; gap: 14px; min-height: 44px;">
+      <span style="flex: none; width: 34px; font-size: 13px; color: #6B6F76;">어디</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline;">
+        <sc-if value="{{noneSelected}}" hint-placeholder-val="{{true}}">
+          <span style="font-family: 'Wanted Sans', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.045em;">부산 전체</span>
+        </sc-if>
+        <sc-for list="{{tags}}" as="t" hint-placeholder-count="0">
+          <button type="button" onClick="{{t.remove}}" aria-label="{{t.label}}" style="min-height: 36px; padding: 0; border: none; background: none; color: #111214; font-family: 'Wanted Sans', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.045em; display: flex; align-items: baseline; gap: 3px;">{{t.name}}<span aria-hidden="true" style="font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: 500; color: #8A8E95;">✕</span></button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 14px; min-height: 44px;">
+      <span style="flex: none; width: 34px; font-size: 13px; color: #6B6F76;">언제</span>
+      <button type="button" aria-label="여행 기간 바꾸기, 지금 10월 25일부터 27일까지 2박 3일" style="padding: 0; border: none; background: none; color: #111214; text-align: left; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;">
+        <span style="font-family: 'Wanted Sans', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.045em;">10.25 — 10.27</span>
+        <span style="font-size: 13px; color: #50545B;">2박 3일 · 자동으로 정했어요 <span aria-hidden="true">›</span></span>
+      </button>
+    </div>
+  </section>
+
+  <div style="padding: 18px 16px 0;">
+    <button type="button" style="width: 100%; height: 56px; border: none; background: #111214; color: #FFFFFF; font-family: 'Wanted Sans', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: -0.02em; display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+      {{startLabel}}
+      <span aria-hidden="true" style="font-size: 20px;">→</span>
+    </button>
+  </div>
+
+  <section style="padding: 56px 0 0; display: flex; flex-direction: column; gap: 12px;">
+    <div style="padding: 0 16px; display: flex; align-items: center; justify-content: space-between;">
+      <h2 style="margin: 0; font-family: 'Wanted Sans', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.045em;">{{storyHeading}}</h2>
+      <a href="#" style="font-size: 13px; font-weight: 600; min-height: 44px; display: flex; align-items: center;">전체 보기</a>
+    </div>
+    <div style="position: relative; background: #ECEEF1;">
+      <div class="pd-scroll" style="display: flex; overflow-x: auto; padding: 18px 0 28px; scroll-snap-type: x mandatory;">
+        <sc-for list="{{stories}}" as="s" hint-placeholder-count="3">
+          <article style="flex: none; width: 300px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; scroll-snap-align: center;">
+            <div style="position: relative; width: 264px; height: 250px;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(closest-side, #FFFDF6 0%, #FFF7E2 70%, rgba(255,247,226,0) 100%);"></div>
+              <div aria-hidden="true" style="position: absolute; left: 160px; top: 30px; width: 74px; height: 74px; background: {{s.toneB}}; transform: rotate(9deg); filter: blur(1.2px); opacity: 0.85;"></div>
+              <div style="position: absolute; left: 56px; top: 44px; width: 116px; height: 148px; background: {{s.toneA}}; transform: rotate(-5deg); display: flex; align-items: flex-end; padding: 10px; box-sizing: border-box; font-size: 10px; color: rgba(255,255,255,0.9); box-shadow: 0 14px 28px -12px rgba(17,18,20,0.45);">사진</div>
+              <div style="position: absolute; left: 150px; top: 124px; width: 78px; height: 78px; background: #FFFFFF; transform: rotate(-4deg); box-shadow: 0 12px 24px -10px rgba(17,18,20,0.35); display: flex; align-items: center; justify-content: center;">
+                <svg width="56" height="56" viewBox="0 0 50 50" aria-hidden="true"><path d="M6 40 C14 34 12 22 22 20 S34 12 42 8" fill="none" stroke="#111214" stroke-width="2.4" stroke-dasharray="1 4.5" stroke-linecap="round"></path><path d="M42 3C39.2 3 37 5.2 37 7.9 37 11.6 42 16 42 16s5-4.4 5-8.1C47 5.2 44.8 3 42 3z" fill="{{pin}}" stroke="#111214" stroke-width="1.3"></path></svg>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0 22px;">
+              <span style="font-size: 12px; color: #50545B;">{{s.gu}} · {{s.kind}}</span>
+              <h3 style="margin: 0; font-family: 'Wanted Sans', sans-serif; font-size: 20px; font-weight: 700; line-height: 1.22; letter-spacing: -0.04em;">{{s.title}}</h3>
+              <p style="margin: 0; font-size: 14px; line-height: 1.65; color: #50545B; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">{{s.pre}}<span style="color: #111214; font-weight: 700;">{{s.hl}}</span>{{s.post}}</p>
+              <button type="button" style="margin-top: 2px; min-height: 44px; padding: 0; border: none; background: none; color: #111214; font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: {{pin}}; box-shadow: 0 0 8px 2px {{pinGlow}};"></span>이야기 듣기</button>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 40px 16px 0; display: flex; flex-direction: column; gap: 8px;">
+    <a href="#" style="position: relative; min-height: 132px; padding: 22px 20px; background: #111214; color: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; text-decoration: none; overflow: hidden;">
+      <span aria-hidden="true" style="position: absolute; right: -40px; top: -40px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(closest-side, {{pinGlow}}, transparent 100%);"></span>
+      <span style="position: relative; display: flex; flex-direction: column; gap: 6px;">
+        <span style="font-size: 12px; color: #B9BDC4;">취향 테스트 · 1분</span>
+        <span style="font-family: 'Wanted Sans', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.045em; line-height: 1.2; color: #FFFFFF;">나는 어떤 부산 여행자일까?</span>
+      </span>
+      <span style="position: relative; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #D5D8DD;">골목 · 노을 · 시간 · 파도<span aria-hidden="true" style="font-size: 22px; color: #FFFFFF;">→</span></span>
+    </a>
+    <a href="#" style="position: relative; min-height: 132px; padding: 22px 20px; background: #ECEEF1; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; text-decoration: none; overflow: hidden;">
+      <span aria-hidden="true" style="position: absolute; right: 26px; top: 18px; width: 54px; height: 68px; background: linear-gradient(160deg, #C9B39A, #8E7560); transform: rotate(10deg); box-shadow: 0 8px 16px -8px rgba(17,18,20,0.4);"></span>
+      <span aria-hidden="true" style="position: absolute; right: 58px; top: 30px; width: 54px; height: 68px; background: linear-gradient(160deg, #A9BCCB, #6F8798); transform: rotate(-8deg); box-shadow: 0 8px 16px -8px rgba(17,18,20,0.4);"></span>
+      <span style="position: relative; display: flex; flex-direction: column; gap: 6px;">
+        <span style="font-size: 12px; color: #50545B;">랜덤 뽑기 · 기회 3번</span>
+        <span style="font-family: 'Wanted Sans', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.045em; line-height: 1.2;">오늘의 핀 뽑기</span>
+      </span>
+      <span style="position: relative; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #50545B;">이야기 있는 장소 하나에 조명을<span aria-hidden="true" style="font-size: 22px; color: #111214;">→</span></span>
+    </a>
+  </section>
+
+  <footer style="margin-top: auto; padding: 48px 16px 32px;">
+    <p style="margin: 0; font-size: 11px; line-height: 1.7; color: #6B6F76;">장소 정보 한국관광공사 TourAPI · 이야기 부산광역시 부산테마여행정보 · 지도 카카오</p>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"light":{"editor":"color","default":"#FFF6D2","options":["#FFF6D2","#FFFFFF","#FFEFB8"],"section":"조명"},"pin":{"editor":"color","default":"#FFB800","options":["#FFB800","#FF6A3D","#0F7C86"],"section":"조명"},"$preview":{"width":390,"height":2120}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { selected: [], lx: 185, ly: 170, lightOn: false, hover: null };
+  }
+  renderVals() {
+    const GU = [
+      { id: 'gangseo', name: '강서구', spot: '가덕도', count: 33, col: '1', row: '2 / span 2' },
+      { id: 'buk', name: '북구', spot: '화명수목원', count: 10, col: '2', row: '1' },
+      { id: 'geumjeong', name: '금정구', spot: '범어사', count: 22, col: '3', row: '1' },
+      { id: 'gijang', name: '기장군', spot: '해동용궁사', count: 49, col: '4', row: '1' },
+      { id: 'sasang', name: '사상구', spot: '삼락생태공원', count: 6, col: '2', row: '2' },
+      { id: 'dongnae', name: '동래구', spot: '동래읍성지', count: 19, col: '3', row: '2' },
+      { id: 'haeundae', name: '해운대구', spot: '해운대해수욕장', count: 49, col: '4', row: '2' },
+      { id: 'busanjin', name: '부산진구', spot: '부산시민공원', count: 26, col: '2', row: '3' },
+      { id: 'yeonje', name: '연제구', spot: '온천천시민공원', count: 7, col: '3', row: '3' },
+      { id: 'suyeong', name: '수영구', spot: '광안리해수욕장', count: 18, col: '4', row: '3' },
+      { id: 'saha', name: '사하구', spot: '감천문화마을', count: 26, col: '1', row: '4 / span 2' },
+      { id: 'seo', name: '서구', spot: '송도해수욕장', count: 18, col: '2', row: '4' },
+      { id: 'dong', name: '동구', spot: '168계단', count: 33, col: '3', row: '4' },
+      { id: 'nam', name: '남구', spot: '이기대', count: 29, col: '4', row: '4' },
+      { id: 'jung', name: '중구', spot: '보수동책방골목', count: 25, col: '2', row: '5' },
+      { id: 'yeongdo', name: '영도구', spot: '태종대', count: 38, col: '3', row: '5' }
+    ];
+    const STORY = {
+      gangseo: ['가덕도해안산책로', '도보여행', '영도의 태종대 해안과 절영산책로, 서구의 암남공원 해안길… 부산에는 바다 비경을 간직한 산책로들이 많다.'],
+      buk: ['구포무장애숲길', '도보여행', '구포무장애숲길은 구포 한가운데 솟아 낙동강이 한눈에 내려다보이는 산책로다.'],
+      geumjeong: ['갈맷길 7,8,9코스', '도보여행', '어린이대공원 내 성지곡수원지에서 시작해 금정산을 넘어 부산에서 가장 큰 저수지인 회동수원지를 거쳐…'],
+      gijang: ['기장해안산책로', '도보여행', '부산의 유명 관광지를 이미 섭렵한 여행자라면, 부산 기장군으로 떠나보는 건 어떨까?'],
+      sasang: ['사상근린공원', '도보여행', '아이들이 마음 놓고 뛰어놀 수 있는 장소는 없을까 고민 중이라면 딱 맞춤형 사상근린공원으로 가보실까요?'],
+      dongnae: ['동래역사여행', '이색여행', '삼국시대부터 지금의 이름으로 불린 동래 지역은 오랜 시간만큼 부산의 역사를 담고 있다.'],
+      haeundae: ['달맞이길/문탠로드', '도보여행', '해운대 삼포 길의 시작점인 달맞이길을 해운대구가 2008년 4월 문탠 로드라는 이름을 내걸고 걷기 코스로 조성하였다.'],
+      busanjin: ['화지산 치유숲길', '도보여행', '어린이대공원에서 출발하여 화지산 치유숲을 거쳐 부산 시민공원까지, 초록의 자연을 눈에 담으며…'],
+      yeonje: ['배산숲길', '도보여행', '등산 초보인 사람 다 모여라~!'],
+      suyeong: ['황령산둘레길', '도보여행', '황령산 허리를 따라 전체 구간을 한 바퀴 도는 자연길, 도심 속에서 삼림욕을 즐길 수 있는 훌륭한 코스다.'],
+      saha: ['남파랑길', '도보여행', '누구에게나 문제없는 날은 없고 고민 없는 날도 없다.'],
+      seo: ['피란수도길', '도보여행', '1950년 6월 25일 새벽, 기습남침으로 시작된 전쟁.'],
+      dong: ['초량이바구길', '도보여행', '부산항을 기준으로 근처에 보이는 산 중턱마다 죄다 빽빽하게 들어서 있는 주택들.'],
+      nam: ['이기대해안산책로', '도보여행', '이기대는 남구 용호동의 장산봉 자락 동쪽 바다, 아름다운 해안 암반의 다른 이름이다.'],
+      jung: ['남포동 체류기', '이색여행', '평일이건 주말이건 발 디딜 틈 없는 남포동, 이른 아침부터 활력이 넘치는 부산을 제대로 느껴본다.'],
+      yeongdo: ['절영해안산책로', '도보여행', '부산하면 떠오르는 바다!']
+    };
+    // 문장 속 강조 단어: 굵기만 바꾼다
+    const HL = {
+      gangseo: '바다 비경', buk: '낙동강이 한눈에', geumjeong: '회동수원지', gijang: '기장군으로',
+      sasang: '마음 놓고 뛰어놀 수 있는', dongnae: '삼국시대부터', haeundae: '문탠 로드', busanjin: '화지산 치유숲',
+      yeonje: '등산 초보', suyeong: '도심 속에서 삼림욕', saha: '고민 없는 날', seo: '1950년 6월 25일 새벽',
+      dong: '산 중턱마다', nam: '해안 암반', jung: '발 디딜 틈 없는', yeongdo: '바다'
+    };
+    // 사진 자리 색조 (실제 사진이 들어가기 전 분위기용)
+    const TONES = [
+      ['linear-gradient(160deg, #A9BCCB, #6F8798)', '#D8CBB8'],
+      ['linear-gradient(160deg, #C9B39A, #8E7560)', '#B7C7D2'],
+      ['linear-gradient(160deg, #A8B99C, #6E8360)', '#D9C9B4']
+    ];
+    const pin = this.props.pin ?? '#FFB800';
+    const glow = (hex, a) => {
+      const n = parseInt(String(hex).replace('#', ''), 16);
+      return 'rgba(' + ((n >> 16) & 255) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')';
+    };
+    const sel = this.state.selected;
+    const pinned = sel.length > 0;
+    const byId = Object.fromEntries(GU.map((g) => [g.id, g]));
+    const toggle = (id) => this.setState((s) => ({ selected: s.selected.includes(id) ? s.selected.filter((x) => x !== id) : [...s.selected, id] }));
+
+    const cells = GU.map((g) => {
+      const on = sel.includes(g.id);
+      return {
+        ...g,
+        on,
+        pressed: on ? 'true' : 'false',
+        label: g.name + ', ' + g.spot + ', 관광지 ' + g.count + '곳',
+        cls: on ? 'pd-lit' : '',
+        bg: on ? '#FFFFFF' : 'rgba(255,255,255,0.45)',
+        border: on ? '#111214' : 'rgba(17,18,20,0.06)',
+        shadow: on ? '0 0 26px 6px ' + glow(pin, 0.45) + ', 0 8px 16px -10px rgba(17,18,20,0.4)' : 'none',
+        weight: on ? '800' : '600',
+        nameColor: on ? '#111214' : '#3F4247',
+        spotColor: on ? '#50545B' : '#62666D',
+        toggle: () => toggle(g.id),
+        enter: () => this.setState({ hover: g.id })
+      };
+    });
+
+    const hovered = this.state.hover ? byId[this.state.hover] : null;
+    let status = '구를 눌러 조명을 켜보세요';
+    if (hovered) status = hovered.name + ' — ' + hovered.spot + ' 외 관광지 ' + hovered.count + '곳';
+    else if (pinned) status = '조명 켜진 곳 ' + sel.length + ' · ' + sel.map((id) => byId[id].name).join(', ');
+
+    const storyIds = pinned ? sel.slice(0, 4) : ['dong', 'seo', 'nam'];
+    const stories = storyIds.map((id, i) => {
+      const text = STORY[id][2];
+      const at = text.indexOf(HL[id]);
+      const tone = TONES[i % TONES.length];
+      return {
+        gu: byId[id].name, title: STORY[id][0], kind: STORY[id][1],
+        pre: at < 0 ? text : text.slice(0, at),
+        hl: at < 0 ? '' : HL[id],
+        post: at < 0 ? '' : text.slice(at + HL[id].length),
+        toneA: tone[0], toneB: tone[1]
+      };
+    });
+
+    return {
+      pin,
+      pinGlow: glow(pin, 0.6),
+      spotGlow: glow(pin, 0.35),
+      light: this.props.light ?? '#FFF6D2',
+      lx: Math.round(this.state.lx),
+      ly: Math.round(this.state.ly),
+      lightR: this.state.lightOn ? 140 : 200,
+      wall: pinned ? '#DFE2E6' : '#ECEEF1',
+      cells,
+      status,
+      noneSelected: !pinned,
+      tags: sel.map((id) => ({ name: byId[id].name, label: byId[id].name + ' 선택 해제', remove: () => toggle(id) })),
+      startLabel: pinned ? '선택한 ' + sel.length + '곳으로 시작하기' : '부산 전체로 시작하기',
+      storyHeading: !pinned ? '이번 주 부산 이야기' : sel.length === 1 ? byId[sel[0]].name + '의 이야기' : '조명 켜진 곳의 이야기',
+      stories,
+      move: (e) => {
+        const el = e.currentTarget;
+        const r = el.getBoundingClientRect();
+        const scale = r.width / el.offsetWidth || 1;
+        this.setState({ lx: (e.clientX - r.left) / scale, ly: (e.clientY - r.top) / scale, lightOn: true });
+      },
+      leave: () => this.setState({ lightOn: false, hover: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

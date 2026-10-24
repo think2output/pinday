@@ -3,7 +3,7 @@
 마지막 업데이트: 2026-10-24 · 작성: Claude Code
 
 ## 현재 브랜치
-`feat/trip-store` (← `feat/place-data`). 둘 다 GitHub에 올림(push). main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). `feat/trip-store`가 `feat/place-data`를 포함하므로 PR은 `feat/trip-store` → main 하나면 된다.
+`docs/design-exploration` (← `feat/trip-store` ← `feat/place-data`). 모두 GitHub에 올림(push). main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). 마지막 브랜치가 앞의 것을 모두 포함하므로 PR은 `docs/design-exploration` → main 하나면 된다.
 - `docs/tech-stack`, `feat/project-setup`은 이전 단계 브랜치(로컬에만 있음, 위 브랜치에 포함)
 
 ## 끝낸 것
@@ -15,15 +15,18 @@
 - 서비스용 장소 목록 `scripts/build-places.mjs` → `data/places/places.json` (408곳: 관광지 345 + 문화시설 63, 취향·실내 태그 포함)
 - 기상청 API허브 단기예보 활용신청 완료, 키 확인 정상
 - 내 여행 정보 저장소 `src/lib/trip/` (사용법은 그 폴더 README). 규칙 테스트 21개 `npm test` 통과. 화면에 붙여 브라우저에서 확인하는 건 아직(홈·어디 갈까? 작업 때)
+- 홈 화면 디자인 시안 탐색 → 기록 `docs/design/README.md`(좋았던 것·싫었던 것), 확정 항목은 DECISIONS "디자인". **사용자가 디자인을 나중에 다시 잡기로 함**
 
 ## 하다 만 것
+- 디자인: 컨셉(핀 조명)·글꼴·홈 지도 인터랙션만 확정. 색·간격 최종값은 다시 잡을 때 정함. `src/styles/tokens.css`는 아직 예전 임시 값(청록 포인트) — 디자인 확정 때 바꾼다
 - 임시 홈(`src/app/page.tsx`)은 홈 화면 작업 때 교체
 - 실내/야외 예외 장소 확인은 날씨 대안 작업 때 (`docs/분류표.md` 확인 후보 목록)
 
-## 다음 할 일 (순서대로)
-1. 디자인 기준 정하기. 사용자가 참고 사이트를 찾는 중. 시각 예시 2~3개로 비교해서 고르게 할 것. 정하면 DECISIONS 기록 + `src/styles/tokens.css` 값만 바꾼다
-2. 공통 화면 조각(메뉴바, 여행 조건 줄 등)과 홈 화면 (기획서 6-1). 디자인 기준이 정해진 뒤 시작
-3. 이후 기획서 12장 개발 순서대로 (어디 갈까? → 언제 갈까? → 도슨트 해설 미리 만들기 …)
+## 다음 할 일 (디자인과 상관없는 것부터)
+1. 도슨트 근거 모으기 스크립트 (기획서 8장 1단계): 장소별 TourAPI 상세 설명(`detailCommon2`), 국가유산청 근처 유산(반경 1km, XML), 부산테마여행 이야기 연결 → `data/docent/evidence/`. 해설 생성(2단계)은 OpenAI 키가 생긴 뒤
+2. 서버 API: 장소 목록·상세(`data/places/places.json` 제공), 날씨(기상청 API허브 단기예보 + 짧은 캐시)
+3. 디자인 다시 잡기 (`docs/design/README.md`의 "다시 잡을 때 할 일" 따를 것) → 공통 화면 조각·홈 화면
+4. 이후 기획서 12장 개발 순서대로 (어디 갈까? → 언제 갈까? → 도슨트 목록·상세 …)
 
 ## 사용자가 해둔 것
 - 공공데이터포털 승인: 한국관광공사 국문 관광정보(TourAPI), 부산테마여행정보, 관광 빅데이터 지역별 방문자수
@@ -38,5 +41,5 @@
 - 공공데이터포털 키는 Decoding 키. 호출 주소는 `URLSearchParams`로 만들어 한 번만 인코딩할 것(이중 인코딩하면 인증 오류).
 - 공공데이터포털은 가끔 `APPLICATION_ERROR`를 돌려준다. 다시 시도하면 된다(`fetch-places.mjs`의 `getJson` 참고).
 - 사진 공공누리 3유형(변경금지)이 190곳. 자르거나 덧칠 금지.
-- 디자인: 와이어프레임은 배치만 따르고, 색·글꼴은 tokens.css 이름만 쓴다. 화면 작업마다 390px·데스크톱 모습을 사용자에게 확인받을 것.
+- 디자인: 와이어프레임은 배치만 따르고, 색·글꼴은 tokens.css 이름만 쓴다. 화면 작업마다 390px·데스크톱 모습을 사용자에게 확인받을 것. 사용자가 싫어하는 것(구분선 남발, 둥근 모서리, 형광펜, 영문 모노 라벨 등)은 `docs/design/README.md` 표 참고.
 - `npm run dev`가 AGENTS.md 맨 아래 Next.js 안내 블록을 자동으로 다시 쓴다. 이미 커밋돼 있으니 지우지 말 것.
