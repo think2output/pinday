@@ -72,6 +72,55 @@ export function issuedLabel(issuedAt: string): string {
   return `${issuedAt.slice(5, 7)}.${issuedAt.slice(8, 10)} ${Number(issuedAt.slice(11, 13))}시 발표`;
 }
 
+export const NEARBY_KM = 2;
+
+/** 두 좌표의 직선거리(km). 길찾기 거리가 아니다 */
+export function distanceKm(a: { lat: number; lng: number }, b: { lat: number; lng: number }): number {
+  const rad = Math.PI / 180;
+  const h = Math.sin(((b.lat - a.lat) * rad) / 2) ** 2 +
+    Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(((b.lng - a.lng) * rad) / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(h));
+}
+
+/** "약 800m" / "약 1.4km" */
+export function distanceLabel(km: number): string {
+  return km < 1 ? `약 ${Math.max(100, Math.round(km * 10) * 100)}m` : `약 ${km.toFixed(1)}km`;
+}
+
+/** 그날 장소 중 가장 가까운 곳과 거리. 좌표가 잘못된 곳은 기준으로 쓰지 않는다 */
+export function nearestAnchor(target: SchedulePlace | undefined, dayIds: string[], places: Record<string, SchedulePlace>) {
+  if (!target || !canMapPlace(target)) return null;
+  let best: { anchor: SchedulePlace; km: number } | null = null;
+  for (const id of dayIds) {
+    const anchor = places[id];
+    if (!anchor || anchor.id === target.id || !canMapPlace(anchor)) continue;
+    const km = distanceKm(anchor, target);
+    if (!best || km < best.km) best = { anchor, km };
+  }
+  return best;
+}
+
+/** 아직 담지 않은 곳 중 그날 장소에서 직선 NEARBY_KM 안의 가까운 순 */
+export function nearbySuggestions(dayIds: string[], taken: Set<string>, places: Record<string, SchedulePlace>, limit = 3) {
+  return Object.values(places)
+    .filter((place) => !taken.has(place.id))
+    .flatMap((place) => {
+      const near = nearestAnchor(place, dayIds, places);
+      return near && near.km <= NEARBY_KM ? [{ place, ...near }] : [];
+    })
+    .sort((a, b) => a.km - b.km)
+    .slice(0, limit);
+}
+
+/** 날짜 없는 곳: 그날 장소와 가까운 곳을 앞으로, 나머지는 담은 순서 그대로 */
+export function sortByCloseness(ids: string[], dayIds: string[], places: Record<string, SchedulePlace>) {
+  const entries = ids.map((id, order) => {
+    const near = nearestAnchor(places[id], dayIds, places);
+    return { id, order, near: near && near.km <= NEARBY_KM ? near : null };
+  });
+  return entries.sort((a, b) => (a.near && b.near ? a.near.km - b.near.km : a.near ? -1 : b.near ? 1 : a.order - b.order));
+}
+
 /** 탭 날짜 목록: n일차 → 날짜 */
 export function tripDates(startDate: string, days: number): string[] {
   return Array.from({ length: days }, (_, index) => addDays(startDate, index));
