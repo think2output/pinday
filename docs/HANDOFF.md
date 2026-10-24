@@ -1,10 +1,10 @@
 # HANDOFF — 지금 상태
 
 마지막 업데이트: 2026-10-25 · 작성: Codex (탐색 핀·페이지 스크롤 피드백 반영)
-마지막 확인: 사용자 피드백으로 단일 장소의 점 표시를 지도 핀으로 교체하고 /explore 고정 화면 높이를 해제해 페이지 스크롤 제공. 지도 위 휠은 페이지 스크롤, 지도 확대·축소는 +/− 버튼 제공. 390px·1440px 실제 휠·터치·하단 접근·핀 클릭·후보 담기·가로 넘침 확인. 테스트 88개·린트·빌드 통과. 세부 기록 docs/EXPLORE_QA.md. 탐색 디자인은 검토 중인 초안, 수정 화면 사용자 확인 대기. .vscode/는 개인 설정으로 제외.
+마지막 확인: 사용자 피드백으로 단일 장소의 점 표시를 지도 핀으로 교체하고 /explore 고정 화면 높이를 해제해 페이지 스크롤 제공. 지도 위 휠은 페이지 스크롤, 지도 확대·축소는 +/− 버튼 제공. 390px·1440px 실제 휠·터치·하단 접근·핀 클릭·후보 담기·가로 넘침 확인. 테스트 88개·린트·빌드 통과. 세부 기록 docs/EXPLORE_QA.md. 사용자가 수정 화면을 보고 대체로 괜찮다는 반응과 커밋·push를 요청함. 탐색 디자인 전체의 최종 확정으로 간주하지는 않음. .vscode/는 개인 설정으로 제외.
 
 ## 현재 브랜치
-`fix/explore-map-scroll` (← `feat/explore` ← `fix/trip-page` ← `feat/home-trip-card` ← `fix/home-interactions` ← `feat/home-design`). 사용자 탐색 화면 피드백 반영. 이 수정은 로컬 커밋, 아직 push하지 않음. 이전 feat/explore는 97bee25까지 원격에 push됨(홈 카드 제거·/trip·탐색 모두 포함). 원격 main은 마지막 확인 8f98ab8, main 병합은 하지 않음.
+`fix/explore-map-scroll` (← `feat/explore` ← `fix/trip-page` ← `feat/home-trip-card` ← `fix/home-interactions` ← `feat/home-design`). 사용자 탐색 화면 피드백 반영. 2026-10-25 사용자 확인 후 이 수정 브랜치를 원격에 push. 탐색 구현과 앞선 /trip 분리까지 모두 포함하므로 PR은 현재 브랜치 기준으로 만들 수 있음. 이전 feat/explore는 97bee25까지 원격에 push됨(홈 카드 제거·/trip·탐색 모두 포함). 원격 main은 마지막 확인 8f98ab8, main 병합은 하지 않음.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
