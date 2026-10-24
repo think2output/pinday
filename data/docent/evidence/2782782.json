@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2782782",
+    "name": "해운대수목원",
+    "lat": 35.2304001053,
+    "lng": 129.1325958245
+  },
+  "collectedAt": "2026-10-24T09:57:15.645Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2782782",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "해운대수목원",
+      "relation": "same-place",
+      "originalText": "1987년부터 1993년까지 석대 쓰레기 매립장으로 이용되던 시설을 수목원으로 재개발한 곳이다. 수목유전자원의 보전·증식 및 전시, 산림 치유 및 휴양을 통해 자연친화적인 국내 최대 공립수목원으로 조성했다. 다양한 식물과 자연요소를 만날 수 있는 생명의 숲, 당나귀와 타조를 만날 수 있는 초식동물원, 동식물이 자연스럽게 어우러지는 생태습지원 등 다양한 주제원을 가지고 있다. 어린이들이 마음껏 뛰어놀 수 있는 푸른 잔디광장도 조성되어 있어 온 가족이 함께하기 좋은 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2782782&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:27.231Z",
+      "modifiedAt": "20260921141037"
+    }
+  ],
+  "errors": []
+}

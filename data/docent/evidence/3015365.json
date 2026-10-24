@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3015365",
+    "name": "가덕도외양포전망대",
+    "lat": 34.989746769,
+    "lng": 128.8289033948
+  },
+  "collectedAt": "2026-10-24T09:57:12.925Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3015365",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "가덕도외양포전망대",
+      "relation": "same-place",
+      "originalText": "가덕도 외양포전망대는 가덕도 가장 안쪽 끝자락 마을인 외양포마을로 들어가는 언덕길에 조성된 전망대이다. 외양포전망대는 주차장이 구비되어 있으며 주차장이 전망대를 겸하고 있는 곳으로 외양포항과 외양포 앞바다를 바라볼 수 있고 거제도로 가는 거가대교와 거제도를 조망할 수 있는 곳에 자리 잡고 있어 풍광이 아름다운 곳이다. 바로 아래에는 외양포 야생화단지가 조성되어 있으며 야생화단지에는 다양한 종류의 야생화가 심어져 있고 특히 수국을 많이 심어놓은 곳으로 수국이 피는 시기에는 많은 사람들이 찾는 곳이다. 전망대 인근에 일본군이 구축한 외양포 포진지도 있어 역사의 아픔을 느껴보는 시간도 가져보면 좋은 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3015365&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:30.249Z",
+      "modifiedAt": "20261008160914"
+    },
+    {
+      "id": "heritage:21-21-0000500000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "가덕도 등대",
+      "relation": "nearby-only",
+      "distanceMeters": 11,
+      "coordinates": {
+        "lat": 34.989716641366,
+        "lng": 128.829015778742
+      },
+      "originalText": "가덕도 등대는 근대 서구 건축의 양식·건축재료·의장수법 등이 최초로 사용되었던 건물 중의 하나로서, 당시에 건립된 여러 등대들이 대부분 원형이 크게 훼손된 데 비해 가덕도 등대는 상당 부분 원형을 간직하고 있다는 점에서 역사적, 건축사적으로 문화유산적 가치가 돋보인다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000500000000",
+      "fetchedAt": "2026-10-24T09:52:30.453Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2556598",
+    "name": "정관박물관",
+    "lat": 35.3269,
+    "lng": 129.1826
+  },
+  "collectedAt": "2026-10-24T09:57:15.190Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2556598",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "정관박물관",
+      "relation": "same-place",
+      "originalText": "정관박물관은 정관신도시 조성사업으로 인해 사라지게 될 국가유산에 대한 보존 및 활용방안으로 건립된 박물관이다. 상설전시는 기장 지역의 삼국시대 마을 유적에서 발굴된 생활유물을 전시한 ‘소두방의 생활’, 신도시 개발로 인해 마을을 떠날 수밖에 없었던 옛 주민의 이야기와 기증품에 담긴 소중한 마음, 그리고 정관박물관의 발자취가 담긴 ‘소두방의 기억’, 삼국시대 마을을 재현하여 당시의 정취를 느낄 수 있는 야외전시공원으로 구성되어 있다. 더불어 놀이체험을 통해 역사학습의 즐거움을 경험할 수 있는 부산지역 박물관 최초 ‘어린이 체험실’도 마련되어 있다. 이외에도 특별기획전시와 교육프로그램을 통해 역사문화와 관련된 다양한 볼거리와 체험활동을 관람객에게 제공한다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2556598&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:12.118Z",
+      "modifiedAt": "20261008103441"
+    }
+  ],
+  "errors": []
+}

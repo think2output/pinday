@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3060803",
+    "name": "키위키즈랜드",
+    "lat": 35.32126709863031,
+    "lng": 129.2356423343507
+  },
+  "collectedAt": "2026-10-24T09:57:15.424Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3060803",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "키위키즈랜드",
+      "relation": "same-place",
+      "originalText": "기장군 장안읍 힐탑프리미엄 아울렛 안에 위치한 키위키즈랜드는 신개념 대규모 실내 어린이 놀이시설이다. 쾌적한 환경과 다양한 놀이기구에서 시간 가는 줄 모르고 놀 수 있는 키즈카페이다. 키위키즈랜드는 튜브 썰매장, 레이싱카, 에어바운스, 트램펄린, 범퍼카, 정글짐, 편백존, 게임존, 미끄럼틀, 영화관, 볼풀존, 맥스라이더, 쉼터 및 만화방, 영유아존 등 다양한 기구들을 구비해 풍부한 놀이 환경을 제공한다. 또, 식당, 매점, 휴게시설, 화장실 등 편의시설이 있어 아이가 놀 동안 어른들이 기다리기에도 편하다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3060803&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:20.125Z",
+      "modifiedAt": "20260406094649"
+    }
+  ],
+  "errors": []
+}

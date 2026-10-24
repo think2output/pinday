@@ -1,0 +1,2873 @@
+{
+  "generatedAt": "2026-10-24T09:57:12.816Z",
+  "scope": 408,
+  "counts": {
+    "sufficient-candidate": 191,
+    "introduction-only": 216,
+    "no-direct-evidence": 1,
+    "failed": 0
+  },
+  "sourceCounts": {
+    "tourapi": 407,
+    "heritage": 243,
+    "busan-theme": 187
+  },
+  "places": [
+    {
+      "id": "3421778",
+      "name": "[부산 갈맷길] 5코스",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1942337",
+      "name": "168계단",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3487362",
+      "name": "1934 기차 동래역",
+      "status": "introduction-only",
+      "evidenceCount": 14,
+      "errors": 0
+    },
+    {
+      "id": "126814",
+      "name": "25의용단",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "128698",
+      "name": "40계단 문화관광테마거리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "130663",
+      "name": "40계단문화관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "252564",
+      "name": "75광장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2715601",
+      "name": "가덕도",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "129156",
+      "name": "가덕도 등대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2726843",
+      "name": "가덕도 연대봉",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3015365",
+      "name": "가덕도외양포전망대",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2788410",
+      "name": "가야공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1935608",
+      "name": "가톨릭 특성화 거리",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2788422",
+      "name": "감만시민부두",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3008288",
+      "name": "감만창의 문화촌",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2785289",
+      "name": "감지해변",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "4039289",
+      "name": "감천문화마을 어린왕자 전시관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "294452",
+      "name": "감천사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "3015292",
+      "name": "강서체육공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3032396",
+      "name": "개금벚꽃길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2834026",
+      "name": "갤러리이알디 부산",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2714515",
+      "name": "거가대교 홍보전시관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "129631",
+      "name": "경상좌수영성지",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "1607203",
+      "name": "경성대학교 조류관",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3015385",
+      "name": "경전철 홍보관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3015483",
+      "name": "고리원자력홍보관",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3028653",
+      "name": "고은사진미술관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3027738",
+      "name": "고흐의 길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2782765",
+      "name": "곰내연밭",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "128610",
+      "name": "공수어촌체험마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1942348",
+      "name": "관수옥과 초량왜관 터",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2785265",
+      "name": "관음사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "126857",
+      "name": "광복로패션거리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "128164",
+      "name": "광안대교",
+      "status": "sufficient-candidate",
+      "evidenceCount": 48,
+      "errors": 0
+    },
+    {
+      "id": "127925",
+      "name": "광안리해변 테마거리",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "126078",
+      "name": "광안리해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 27,
+      "errors": 0
+    },
+    {
+      "id": "2744597",
+      "name": "구덕문화공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2614712",
+      "name": "구상반려암 (부산 국가지질공원)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2755676",
+      "name": "구포 어린이교통공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2662991",
+      "name": "구포만세거리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2606230",
+      "name": "국립달음산자연휴양림",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2385666",
+      "name": "국립부산과학관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "130606",
+      "name": "국립수산과학관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2551424",
+      "name": "국립일제강제동원역사관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3336060",
+      "name": "국립청소년생태센터",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1825843",
+      "name": "국립해양박물관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "1018702",
+      "name": "국제시장 먹자골목",
+      "status": "introduction-only",
+      "evidenceCount": 33,
+      "errors": 0
+    },
+    {
+      "id": "298099",
+      "name": "국청사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "3421909",
+      "name": "그런고로",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "127445",
+      "name": "금강공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 18,
+      "errors": 0
+    },
+    {
+      "id": "1607440",
+      "name": "금강사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 13,
+      "errors": 0
+    },
+    {
+      "id": "128830",
+      "name": "금강식물원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 16,
+      "errors": 0
+    },
+    {
+      "id": "1607163",
+      "name": "금강암(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 56,
+      "errors": 0
+    },
+    {
+      "id": "3414171",
+      "name": "금곡동 율리 바위그늘유적",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "129140",
+      "name": "금련산",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3545436",
+      "name": "금빛노을브릿지",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "298111",
+      "name": "금수사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "298112",
+      "name": "금용암(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "126028",
+      "name": "금정산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "126196",
+      "name": "금정산성",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "3027098",
+      "name": "금정산성 동문",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2789678",
+      "name": "금정산성 막걸리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2643873",
+      "name": "금정산성마을 먹거리촌",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "1953936",
+      "name": "기장향교",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1942245",
+      "name": "김민부전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2554070",
+      "name": "깡깡이 예술마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2783344",
+      "name": "낙동강 생태탐방선",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2554141",
+      "name": "낙동강문화관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2614714",
+      "name": "낙동강하구 (부산 국가지질공원)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 26,
+      "errors": 0
+    },
+    {
+      "id": "630874",
+      "name": "낙동강하구에코센터",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "3027444",
+      "name": "낙조정",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1846830",
+      "name": "남도해양열차 에스트레인(S-train)",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2944336",
+      "name": "남부산교회",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1942299",
+      "name": "남선창고터",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "777057",
+      "name": "내원정사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "3038622",
+      "name": "노리클럽",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2867934",
+      "name": "녹산고향동산",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2788424",
+      "name": "누리바라기전망대",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "769761",
+      "name": "다대포 꿈의 낙조분수",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "3027228",
+      "name": "다대포생태탐방로",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2784328",
+      "name": "다대포항",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "126079",
+      "name": "다대포해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 37,
+      "errors": 0
+    },
+    {
+      "id": "2760704",
+      "name": "닥밭골 벽화마을",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2875837",
+      "name": "달맞이동산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1942331",
+      "name": "당산",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1942233",
+      "name": "대각사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3015416",
+      "name": "대룡마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "129092",
+      "name": "대변마을",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2783380",
+      "name": "대연수목전시원",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2487925",
+      "name": "대저생태공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "2748838",
+      "name": "대저수문 생태공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2875849",
+      "name": "대천공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "127891",
+      "name": "대천천",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "128564",
+      "name": "대항 어촌체험 휴양마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2785960",
+      "name": "대항선착장",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2744553",
+      "name": "대항전망대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2350092",
+      "name": "더베이101",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2822334",
+      "name": "동래온천길(온천천 카페거리)",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "128706",
+      "name": "동래온천노천족욕탕",
+      "status": "introduction-only",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "3017112",
+      "name": "동래읍성 임진왜란 역사관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "2654613",
+      "name": "동래읍성지",
+      "status": "sufficient-candidate",
+      "evidenceCount": 13,
+      "errors": 0
+    },
+    {
+      "id": "1607360",
+      "name": "동래향교",
+      "status": "sufficient-candidate",
+      "evidenceCount": 13,
+      "errors": 0
+    },
+    {
+      "id": "128810",
+      "name": "동백공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "130774",
+      "name": "동삼동패총전시관",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "130521",
+      "name": "동아대학교 석당박물관",
+      "status": "introduction-only",
+      "evidenceCount": 28,
+      "errors": 0
+    },
+    {
+      "id": "2614716",
+      "name": "두도",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3015247",
+      "name": "두루팜",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2675011",
+      "name": "땅뫼산",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3545977",
+      "name": "라보드 우든보트",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "4085879",
+      "name": "러블리가든(사계, 나를심다)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2456224",
+      "name": "렛츠런파크 부산경남",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2815627",
+      "name": "롯데월드 어드벤처 부산",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2617724",
+      "name": "마린시티",
+      "status": "sufficient-candidate",
+      "evidenceCount": 25,
+      "errors": 0
+    },
+    {
+      "id": "304695",
+      "name": "마하사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3033472",
+      "name": "망미단길",
+      "status": "introduction-only",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "250424",
+      "name": "망산도·유주암",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3017067",
+      "name": "망양로 산복도로전시관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2487927",
+      "name": "맥도생태공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "4083886",
+      "name": "명란브랜드연구소",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2789340",
+      "name": "명지동근린공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3038572",
+      "name": "몬스터파크 부산명지점",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2614721",
+      "name": "몰운대(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2776386",
+      "name": "묘관음사",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "304811",
+      "name": "묘심사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3011182",
+      "name": "문화골목",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "1607286",
+      "name": "문화공감 수정(부산 수정동 일본식 가옥)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2732397",
+      "name": "물빛색스튜디오",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2650801",
+      "name": "뮤지엄 원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "309293",
+      "name": "미륵사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "985921",
+      "name": "미술의거리",
+      "status": "introduction-only",
+      "evidenceCount": 33,
+      "errors": 0
+    },
+    {
+      "id": "2784330",
+      "name": "미포항",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "126799",
+      "name": "민락수변공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "3014437",
+      "name": "민락해변공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "127149",
+      "name": "민주공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 38,
+      "errors": 0
+    },
+    {
+      "id": "2862152",
+      "name": "밀락더마켓",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2823059",
+      "name": "박태준기념관",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2907087",
+      "name": "반송공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "130153",
+      "name": "백산기념관",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2614723",
+      "name": "백양산 (부산 국가지질공원)",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2677748",
+      "name": "백양산 웰빙숲",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "3060966",
+      "name": "백운포체육공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2554111",
+      "name": "범어사 성보박물관",
+      "status": "introduction-only",
+      "evidenceCount": 55,
+      "errors": 0
+    },
+    {
+      "id": "126148",
+      "name": "범어사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 60,
+      "errors": 0
+    },
+    {
+      "id": "2708108",
+      "name": "범일 이중섭거리",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "309338",
+      "name": "법륜사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 18,
+      "errors": 0
+    },
+    {
+      "id": "3083429",
+      "name": "벡스코 상상체험 키즈월드",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1607242",
+      "name": "보광사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2789334",
+      "name": "보람공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1608633",
+      "name": "보수동책방골목",
+      "status": "sufficient-candidate",
+      "evidenceCount": 43,
+      "errors": 0
+    },
+    {
+      "id": "130145",
+      "name": "복천박물관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 20,
+      "errors": 0
+    },
+    {
+      "id": "3017395",
+      "name": "복천사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "252563",
+      "name": "봉래산(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "3544138",
+      "name": "부네치아 선셋 전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1997221",
+      "name": "부산 감천문화마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 23,
+      "errors": 0
+    },
+    {
+      "id": "1942237",
+      "name": "부산 구 백제병원",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "231945",
+      "name": "부산 복천동 고분군",
+      "status": "sufficient-candidate",
+      "evidenceCount": 21,
+      "errors": 0
+    },
+    {
+      "id": "2504464",
+      "name": "부산 송도해상케이블카",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "126122",
+      "name": "부산 송도해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 23,
+      "errors": 0
+    },
+    {
+      "id": "128829",
+      "name": "부산 암남공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 18,
+      "errors": 0
+    },
+    {
+      "id": "126119",
+      "name": "부산 어린이대공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "126120",
+      "name": "부산 에덴공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3017254",
+      "name": "부산 연산동 고분군",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2946508",
+      "name": "부산 영화의 거리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "2456837",
+      "name": "부산 영화의 전당",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "128828",
+      "name": "부산 올림픽동산",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "4093705",
+      "name": "부산 우암동 소막마을 주택",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1960620",
+      "name": "부산 자갈치 양곱창 골목",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "126856",
+      "name": "부산 중앙공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "127151",
+      "name": "부산 차이나타운(상해문,상해거리)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2660770",
+      "name": "부산 치유의 숲",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "130622",
+      "name": "부산공간화랑",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3016002",
+      "name": "부산과학체험관",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "3070686",
+      "name": "부산광역시 119안전체험관",
+      "status": "introduction-only",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3545737",
+      "name": "부산교육역사관",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2784363",
+      "name": "부산근현대역사관 별관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3083767",
+      "name": "부산근현대역사관 본관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3442423",
+      "name": "부산기후변화체험교육관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2784333",
+      "name": "부산남항",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "252562",
+      "name": "부산대교",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1607138",
+      "name": "부산대학교 박물관",
+      "status": "introduction-only",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "126147",
+      "name": "부산동명불원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "129783",
+      "name": "부산박물관",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "3426656",
+      "name": "부산북항 친수공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "130166",
+      "name": "부산시립미술관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "3027953",
+      "name": "부산시립미술관별관 이우환공간",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2663341",
+      "name": "부산시민공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 19,
+      "errors": 0
+    },
+    {
+      "id": "1243628",
+      "name": "부산어촌민속관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2668973",
+      "name": "부산엑스더스카이",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "129816",
+      "name": "부산여자대학교 차박물관",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3016808",
+      "name": "부산역 풍물거리",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2554068",
+      "name": "부산영화체험박물관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "2381553",
+      "name": "부산영화촬영스튜디오",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3015226",
+      "name": "부산자연곤충마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2764008",
+      "name": "부산자원순환협력센터",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "130737",
+      "name": "부산자유회관(부산통일관)",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "3112467",
+      "name": "부산정중앙공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3093625",
+      "name": "부산진 별빛산책길",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1608662",
+      "name": "부산진성",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "126830",
+      "name": "부산진성공원",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "1608673",
+      "name": "부산진일신여학교",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "1277679",
+      "name": "부산타워",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2785271",
+      "name": "부산항 영도 크루즈터미널",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "130252",
+      "name": "부산해양자연사박물관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "2605688",
+      "name": "부산현대미술관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "1960614",
+      "name": "부평족발골목",
+      "status": "introduction-only",
+      "evidenceCount": 34,
+      "errors": 0
+    },
+    {
+      "id": "2643387",
+      "name": "북맛골",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2825252",
+      "name": "브릭캠퍼스 부산",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2760699",
+      "name": "비석문화마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 32,
+      "errors": 0
+    },
+    {
+      "id": "3033447",
+      "name": "빵천동",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2785762",
+      "name": "사상근린공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3017191",
+      "name": "사상생활사박물관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2650232",
+      "name": "산복도로",
+      "status": "sufficient-candidate",
+      "evidenceCount": 32,
+      "errors": 0
+    },
+    {
+      "id": "127150",
+      "name": "삼광사",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1338947",
+      "name": "삼락생태공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 16,
+      "errors": 0
+    },
+    {
+      "id": "2782626",
+      "name": "삼익비치수변공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2470024",
+      "name": "삼진어묵 체험·역사과학관",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3064931",
+      "name": "색채마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 32,
+      "errors": 0
+    },
+    {
+      "id": "1046349",
+      "name": "서면1번가",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "3014435",
+      "name": "서면먹자골목",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2776998",
+      "name": "석탑사",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "128053",
+      "name": "선암사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "319563",
+      "name": "성암사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2718728",
+      "name": "성지곡수원지",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "2782682",
+      "name": "센텀 APEC나루공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "702551",
+      "name": "센텀시티 스파랜드",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2758469",
+      "name": "소두방공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1607335",
+      "name": "소림사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3545373",
+      "name": "소망계단 모노레일",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "129093",
+      "name": "송도마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2614725",
+      "name": "송도반도 (부산 국가지질공원)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2994364",
+      "name": "송도스카이파크",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2684738",
+      "name": "송도용궁구름다리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3027780",
+      "name": "송림공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2760809",
+      "name": "송상현광장",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "126080",
+      "name": "송정해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 20,
+      "errors": 0
+    },
+    {
+      "id": "1942253",
+      "name": "수리조선소길",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "127771",
+      "name": "수영사적공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "128108",
+      "name": "스포원파크",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "1082315",
+      "name": "스포원파크재난안전체험관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2674974",
+      "name": "승학산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1940193",
+      "name": "신선대(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2758477",
+      "name": "신평소공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2788828",
+      "name": "신호공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "229912",
+      "name": "씨라이프부산아쿠아리움",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3410658",
+      "name": "아르떼뮤지엄 부산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2661446",
+      "name": "아미르공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2733473",
+      "name": "아미산 전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2385686",
+      "name": "아홉산숲",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2661452",
+      "name": "안데르센 동화마을",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "337415",
+      "name": "안적사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "337435",
+      "name": "약수암(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3526092",
+      "name": "에스엠비 웰니스 센터",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2791383",
+      "name": "에코델타시티 전망대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2669544",
+      "name": "역사의 디오라마",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "337442",
+      "name": "연등사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "129157",
+      "name": "영도 등대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2736377",
+      "name": "영도 조내기 고구마 역사기념관",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2740063",
+      "name": "영도 하늘전망대",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2606221",
+      "name": "영도 흰여울해안터널",
+      "status": "introduction-only",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "129197",
+      "name": "영도대교",
+      "status": "sufficient-candidate",
+      "evidenceCount": 17,
+      "errors": 0
+    },
+    {
+      "id": "3017488",
+      "name": "영도어울림문화공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3017282",
+      "name": "영도해녀문화전시관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "337532",
+      "name": "영주암(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2721157",
+      "name": "영주하늘눈전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "3454074",
+      "name": "영화의전당 라이브러리 자료실",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "126088",
+      "name": "오륙도 (부산 국가지질공원)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "129155",
+      "name": "오륙도 등대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1940208",
+      "name": "오륙도 스카이워크",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2870289",
+      "name": "오륙도해맞이공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2763832",
+      "name": "오륜대전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2997123",
+      "name": "오방맛길",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2782658",
+      "name": "오시리아 해안산책로",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "128134",
+      "name": "옥련선원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2776276",
+      "name": "옥정사",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1608716",
+      "name": "온정개건비",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "2789280",
+      "name": "온천천시민공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "2605602",
+      "name": "외양포 포진지",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2788826",
+      "name": "외양포항",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1940880",
+      "name": "요산김정한문학관",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1957694",
+      "name": "용두산 자갈치 관광특구",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "126121",
+      "name": "용두산공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 23,
+      "errors": 0
+    },
+    {
+      "id": "2729918",
+      "name": "용소웰빙공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2822240",
+      "name": "용호별빛공원",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2675047",
+      "name": "우암동 도시숲",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "1608725",
+      "name": "우장춘기념관",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "346661",
+      "name": "운수사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2788827",
+      "name": "울림공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "347229",
+      "name": "월명사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2789668",
+      "name": "월전장어구이촌",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2715652",
+      "name": "월전포구(월전방파제)",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3015937",
+      "name": "윗골공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "126195",
+      "name": "유엔기념공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 17,
+      "errors": 0
+    },
+    {
+      "id": "2558329",
+      "name": "유엔평화기념관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "1945300",
+      "name": "유치환 우체통 전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2758498",
+      "name": "은진사",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "127974",
+      "name": "을숙도 공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3350219",
+      "name": "을숙도 들락날락",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1945309",
+      "name": "이기대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3008128",
+      "name": "이기대공원 동생말전망대",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1942314",
+      "name": "이바구공작소",
+      "status": "sufficient-candidate",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "3017319",
+      "name": "이송도전망대",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "3028565",
+      "name": "이중섭전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "126098",
+      "name": "일광해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "1939570",
+      "name": "임랑해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "1608530",
+      "name": "임시수도기념관",
+      "status": "sufficient-candidate",
+      "evidenceCount": 36,
+      "errors": 0
+    },
+    {
+      "id": "3064821",
+      "name": "자갈치 크루즈",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "1945293",
+      "name": "장기려기념 더 나눔센터",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2606204",
+      "name": "장림포구",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2755657",
+      "name": "장미원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2614727",
+      "name": "장산 (부산 국가지질공원)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "126831",
+      "name": "장안사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2758489",
+      "name": "장안사계곡",
+      "status": "introduction-only",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2944033",
+      "name": "전포 삼거리",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2994179",
+      "name": "전포공구길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "1805965",
+      "name": "전포카페거리",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "252561",
+      "name": "절영해안산책로",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "3015202",
+      "name": "정거마을 문화거리",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2556598",
+      "name": "정관박물관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3083341",
+      "name": "정관온천",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2775577",
+      "name": "젖병등대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "662756",
+      "name": "조방해수탕",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1756065",
+      "name": "조선통신사역사관",
+      "status": "introduction-only",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "130642",
+      "name": "조현화랑",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "129597",
+      "name": "죽도공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2663155",
+      "name": "죽성드림세트장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2715654",
+      "name": "죽성항",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3017435",
+      "name": "중리노을전망대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3017467",
+      "name": "중리항 방파제 등대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "662862",
+      "name": "중앙해수랜드",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "3016775",
+      "name": "증산공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "4063161",
+      "name": "지그재그아트센터",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3028538",
+      "name": "책마루전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "482063",
+      "name": "척판암(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2721158",
+      "name": "천마산하늘전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2744560",
+      "name": "천성항 방파제등대",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "482123",
+      "name": "청량사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "129602",
+      "name": "청사포",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3027700",
+      "name": "청사포 기찻길",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2607943",
+      "name": "청사포 다릿돌전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "3027575",
+      "name": "청사포 횟집촌",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2675032",
+      "name": "청학배수지 전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2736392",
+      "name": "청학수변공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2605916",
+      "name": "초량 이바구길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "1942239",
+      "name": "초량교회",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "3544248",
+      "name": "추억보물섬",
+      "status": "sufficient-candidate",
+      "evidenceCount": 35,
+      "errors": 0
+    },
+    {
+      "id": "126194",
+      "name": "충렬사(부산)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 16,
+      "errors": 0
+    },
+    {
+      "id": "1607389",
+      "name": "충렬탑(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 14,
+      "errors": 0
+    },
+    {
+      "id": "2656194",
+      "name": "친환경 스카이웨이 전망대(이바구길)",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    },
+    {
+      "id": "2775570",
+      "name": "칠암항",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3015906",
+      "name": "카덴96",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3452166",
+      "name": "커넥트현대",
+      "status": "introduction-only",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "2994680",
+      "name": "클럽디 오아시스",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "3060803",
+      "name": "키위키즈랜드",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2496023",
+      "name": "키자니아 부산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "1940446",
+      "name": "킴스아트필드미술관",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "126658",
+      "name": "태종대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "3375297",
+      "name": "태종대 오션플라잉 테마파크",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "127752",
+      "name": "태종대온천찜질방",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "1608751",
+      "name": "태종사",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "3466755",
+      "name": "테이블플라워",
+      "status": "introduction-only",
+      "evidenceCount": 8,
+      "errors": 0
+    },
+    {
+      "id": "2867579",
+      "name": "통일아시아드 공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "128055",
+      "name": "평화공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "4068714",
+      "name": "포디움다이브",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "2999905",
+      "name": "플루니티",
+      "status": "introduction-only",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2787164",
+      "name": "하리선착장(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "4041429",
+      "name": "하버요가&무브먼트",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2775565",
+      "name": "학리항(학리방파제)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2550799",
+      "name": "한국기독교선교박물관",
+      "status": "introduction-only",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "2788392",
+      "name": "한국신발관",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3083459",
+      "name": "할매탕",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2775559",
+      "name": "해광사",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3017347",
+      "name": "해돋이전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 9,
+      "errors": 0
+    },
+    {
+      "id": "2775495",
+      "name": "해동성취사",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "126848",
+      "name": "해동용궁사",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2783306",
+      "name": "해리단길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "3451794",
+      "name": "해성아트베이",
+      "status": "no-direct-evidence",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2019594",
+      "name": "해양환경공단 해양환경교육원(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "127004",
+      "name": "해운대 관광특구",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2822343",
+      "name": "해운대 그린레일웨이 (미포~송정 구간)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "126674",
+      "name": "해운대 달맞이길",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "987810",
+      "name": "해운대 동백섬",
+      "status": "sufficient-candidate",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2672393",
+      "name": "해운대 블루라인파크",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2705325",
+      "name": "해운대리버크루즈",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2782782",
+      "name": "해운대수목원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "126108",
+      "name": "해운대온천센터",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "126081",
+      "name": "해운대해수욕장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 30,
+      "errors": 0
+    },
+    {
+      "id": "3353856",
+      "name": "해월전망대",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "1608812",
+      "name": "해월정",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3489545",
+      "name": "해파랑길 관광안내소",
+      "status": "introduction-only",
+      "evidenceCount": 2,
+      "errors": 0
+    },
+    {
+      "id": "127419",
+      "name": "허심청",
+      "status": "introduction-only",
+      "evidenceCount": 11,
+      "errors": 0
+    },
+    {
+      "id": "486553",
+      "name": "혜원정사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2662531",
+      "name": "호천마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 6,
+      "errors": 0
+    },
+    {
+      "id": "128886",
+      "name": "홍법사(부산)",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2758652",
+      "name": "홍연폭포",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "3033280",
+      "name": "홍티예술촌",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "2487931",
+      "name": "화명생태공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 12,
+      "errors": 0
+    },
+    {
+      "id": "2756696",
+      "name": "화명수목원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 5,
+      "errors": 0
+    },
+    {
+      "id": "2791357",
+      "name": "화전공원",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "128290",
+      "name": "황령산",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2733472",
+      "name": "황령산 전망대",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "3014406",
+      "name": "황령산레포츠공원",
+      "status": "sufficient-candidate",
+      "evidenceCount": 3,
+      "errors": 0
+    },
+    {
+      "id": "2661475",
+      "name": "회동수원지(회동수원지 둘레길)",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2684712",
+      "name": "흰여울문화마을",
+      "status": "sufficient-candidate",
+      "evidenceCount": 26,
+      "errors": 0
+    },
+    {
+      "id": "3015559",
+      "name": "히어로테마파크 정관점",
+      "status": "introduction-only",
+      "evidenceCount": 1,
+      "errors": 0
+    },
+    {
+      "id": "127488",
+      "name": "BIFF 광장",
+      "status": "sufficient-candidate",
+      "evidenceCount": 10,
+      "errors": 0
+    },
+    {
+      "id": "2456767",
+      "name": "F1963",
+      "status": "sufficient-candidate",
+      "evidenceCount": 15,
+      "errors": 0
+    },
+    {
+      "id": "2679008",
+      "name": "KT&G 상상마당 부산",
+      "status": "introduction-only",
+      "evidenceCount": 4,
+      "errors": 0
+    },
+    {
+      "id": "2945389",
+      "name": "UN조각공원",
+      "status": "introduction-only",
+      "evidenceCount": 7,
+      "errors": 0
+    }
+  ]
+}

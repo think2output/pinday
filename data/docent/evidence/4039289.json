@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "4039289",
+    "name": "감천문화마을 어린왕자 전시관",
+    "lat": 35.0962593359206,
+    "lng": 129.009426440728
+  },
+  "collectedAt": "2026-10-24T09:57:12.978Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:4039289",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "감천문화마을 어린왕자 전시관",
+      "relation": "same-place",
+      "originalText": "부산 사하구 감천문화마을에 위치한 어린왕자 전시관은 생텍쥐페리의 후손(재단이사장)이자 어린왕자 재단의 공식 인정을 받은 파트너사가 개관하는 전시관으로, 감천문화마을과 어린왕자가 협력한 '국내 유일의 어린왕자 전시관'이다. 어린왕자 전시관은 단순 관람을 넘어 생텍쥐페리의 철학을 입체적으로 체험하는 공간 구성과 콘텐츠들로 구성되어있으며, 생텍쥐페리의 전시품 및 장미 등을 테마로한 다양한 포토존과 체험 공간으로 구성되어있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=4039289&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:33.790Z",
+      "modifiedAt": "20260311100340"
+    }
+  ],
+  "errors": []
+}

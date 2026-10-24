@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2675047",
+    "name": "우암동 도시숲",
+    "lat": 35.1274527698591,
+    "lng": 129.072607055839
+  },
+  "collectedAt": "2026-10-24T09:57:14.946Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:999",
+      "busan-theme:1181",
+      "busan-theme:1317"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2675047",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "우암동 도시숲",
+      "relation": "same-place",
+      "originalText": "우암동 도시숲에서 내려다보는 전경은 동항성당의 예수상을 배경으로 브라질 리우데자네이루 예수상처럼 보이는 게 아주 이국적이다. 또한 도시숲에서 보는 야경은 영도바다와 부산항대교가 한눈에 보이며, 보름달 설치물을 배경으로 야경사진을 찍으면 아름다운 실루엣 사진을 찍을 수 있고 달과 함께 찍힌 부산이 아주 매력적인 곳이다. 규모는 작지만 초록의 숲이 싱그러운 공원을 만들어 주고나무데크 산책로를 따라 울창한 숲길을 내려오면 만나게 되는 소박한 골목길 끝에 또 다른 포토존이 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2675047&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:00.629Z",
+      "modifiedAt": "20260211081009"
+    },
+    {
+      "id": "heritage:79-21-0007150000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 우암동 소막마을 주택",
+      "relation": "nearby-only",
+      "distanceMeters": 327,
+      "coordinates": {
+        "lat": 35.125612,
+        "lng": 129.069796
+      },
+      "originalText": "해방 이후 귀환 동포와 한국전쟁 중 부산으로 밀려드는 피란민들의 거주 공간 확보를 위해 ‘소(牛) 막사(幕舍)’를 주거시설로 변용(變容)한 것으로 당시 피난민의 삶을 잘 보여주고 있다. 또한, 산업화 시기 인근 지역에 조성된 공장, 항만 등으로 인해 이곳으로 유입된 노동자들의 생활공간으로서 오늘날까지도 그 기능을 유지해 오고 있다는 점에서 근대문화유산으로서의 의미를 부여할 수 있다.\n일제강점기 일본인들은 오늘날 부산시 우암동 일대의 바다를 매립하여 산업시설과 함께 우리나라의 소를 일본으로 반출하기 위한 위생검역소 및 소막사 등의 시설을 조성. ‘우암동’이라는 지명은 오래전부터 이곳에 소(牛)의 형상을 한 바위가 있어서 붙여진 명칭이라 전해져 오고 있으나, 바다를 매립하는 과정에서 지형 변화로 인해 현재는 그 모습을 찾아볼 수 없음. \n기록에 의하면, 당시 건립된 우막사는 모두 19동으로 알려져 있으며  ‘우암동 소막사’ 역시 그 중 한 곳임.\n‘우암동 소막사’는 일제강점기 소(牛)들이 머물던 막사의 기능과 함께 해방 후 및 한국전쟁 당시에는 피난민들의 주거공간으로 사용되었으며, 그 후 산업화로 인해 도시로 몰려든 영세한 노동자들의 생활공간으로서 오늘날까지도 그 역할을 수행해 오고 있는 등 특수한 역사적 배경을 간직하고 있음.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0007150000000",
+      "fetchedAt": "2026-10-24T09:54:27.022Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:999",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "가을 감성 가득한 부산의 노을과 야경",
+      "relation": "same-place",
+      "match": {
+        "field": "MAIN_PLACE",
+        "method": "exact-name",
+        "placeName": "우암동 도시숲",
+        "review": "pending"
+      },
+      "originalText": "문득 불어오는 바람이 선선합니다. 기분 좋게 올려다 본 하늘은 까마득히 높고 청명합니다. 외출하기 참 좋은 날씨지만 요즘 같은 코로나 상황에선 조심스러워질 수 밖에 없죠. 해가 지고 어둠이 깔리면 슬금슬금 올라오는 질주본능 달래며 잠시 드라이브 다녀오는 건 어떨까요? 가을 감성 자극하는 멋진 노을과 화려한 야경이 부산에 있답니다.\n<p class=\"font-size20 colorDarkBlue bold\">몰운대-인생노을</p>낙동강 하구와 바다가 만나는 다대포해수욕장 옆 작은 섬 하나, 바로 몰운대랍니다. 이곳은 다대포와 함께 부산에서 가장 아름다운 일몰을 감상할 수 있는 곳입니다. 울퉁불퉁 기암괴석으로 이루어진 해안절벽을 따라 데크산책로가 조성되어 있습니다. 그 길 어느 곳에서든 붉게 타오르는 서쪽 하늘, 그 황홀경에 흠뻑 빠질 수가 있답니다. 잔잔한 바다와 낙조의 조화는 언제 보아도 한 폭의 그림처럼 아름답습니다. 시시각각 변해가는 석양의 하늘이 마치 딴 세상에 온 듯 눈을 뗄 수 없게 만들어요.\n멋진 둘레길 코스도 가지고 있는 몰운대는 울창한 해송군락 속 탁 트인 전망대에서도 바다풍경을 한 눈에 담을 수 있습니다. 싱그러운 향기 가득한 솔숲에서 한가로이 거닐다 해질녘에 맞춰 해안산책로로 나와 보세요. 붉은 노을에 비친 기암괴석과 해송의 실루엣이 검푸른 바다와 함께 어우러져 환상의 세계를 보여줍니다. 넓게 펼쳐진 다대포의 고운 백사장과 광활한 바다 위로 빨갛게 타 들어가는 노을이 바쁜 일상에 여유를 선물합니다. \n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">영도 청학배수지 전망대-야경드라이브</p>마천루가 뿜어내는 화려한 조명, 주황빛 부산항, 반짝이는 다리, 그리고 도심의 야경을 겹겹이 감싸 안은 산봉우리가 부산의 아름다운 밤을 만들어냅니다. 부산항대교의 아름다운 야경을 아낌없이 내어주는 이곳은 영도에 위치한 청학배수지 전망대랍니다. 탁 트인 시원한 전망에 작지만 아기자기한 잔디광장, 야간 조명도 설치되어 있어 짧은 산책도 가능한 곳이에요. 로맨틱 야경드라이브 코스를 찾고 있다면 영도 청학배수지 전망대가 제격이죠.\n밤이 깊어갈수록 부산항대교는 그 화려함을 더합니다.  빠르게 옷을 갈아입는 경관조명이 매우 역동적입니다. 사계절의 변화를 모두 담아낸 부산항대교의 빛줄기가 분주하게 움직이며 시선을 사로잡습니다. 신선대 부두의 환한 오렌지 빛이 낭만적인 항구의 분위기도 자아내고 있어요. 차가운 듯 따뜻한 부산항의 야경을 마음 가득 담아가세요.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">우암동 도시숲-부산의 라라랜드</p>멋진 밤, 반짝이는 도시의 야경을 배경으로 남녀주인공이 높은 언덕에서 사랑스런 춤을 추는 영화 '라라랜드'. 영화 속 촬영장을 꼭 닮은 뜻밖의 장소가 부산에 있다면?\n‘부산의 라라랜드’로 불리는 우암동 도시숲은 저 멀리 빛나는 도심을 배경 삼아 조용히 머무르기 좋은 공원으로 라라랜드 속 연출된 장면과 유사한 풍광을 선사합니다. 높은 곳에 자리 잡은 우암동 도시숲은 부산항대교를 포함한 산복도로의 오색빛깔 야경과 함께 휘영청 떠 있는 보름달 포토존이 무척 낭만적인 곳이랍니다. \n촬영하는 각도에 따라 조금씩 다른 색과 모양을 보여주는 보름달은 우암동 도시숲의 상징이기도 합니다. 연인, 가족, 친구와 함께, 또는 혼자라도 전혀 어색하지 않은 보름달 인증샷을 찍을 수 있답니다. 보름달에 비친 실루엣 사진, 나만의 감성을 담아 특별한 포즈를 연출해 보세요.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=999&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1181",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Our History",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "우암동 도시숲",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자. \n\n\n<p class=\"font-size28 colorDarkBlue medium\">Our History</p>부산의 이야기를 찾아 떠나는 시간여행\n\n한국전쟁을 겪으면서 임시수도 역할을 맡아야했던 부산. 전쟁을 피해 남쪽 끝 부산까지 떠밀려온 피란민들을 보듬었던 부산은 갖가지 사연과 아픔, 애환이 뒤섞여 어느 도시도 갖지 못한 역사적 유산을 얻게 됐다. 부산에 담긴 이야기들을 찾아 떠나는 여행은 곧 부산의 정체성을 찾아 떠나는 여행이다. 피란민들이 판자집을 짓고 살았던 감천문화마을을 비롯해 임시정부 대통령 관저로 사용됐던 임시수도기념관. 전쟁 이후 산업화 과정에서 겪었던 부산 사람들의 고단한 삶을 보여주는 40계단과 168계단. 우리나라 조선산업의 산실이었던 깡깡이예술마을 등 밤을 새어도 모자랄 부산의 숨은 이야기 속으로 들어가 보자. \n\n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">부산의 이야기를 찾아 떠나는 시간여행</p></div><ul class=\"course1\"><li><span>감천문화마을(루카 : 더 비기닝, 2021 / 감쪽같은 그녀, 2019)</span></li><li><span>임시수도기념관</span></li><li><span>국제시장(국제시장, 2014)</span></li><li><span>깡깡이예술마을(마이 네임, 2021)</span></li><li><span>흰여울문화마을(비와 당신의 이야기, 2021 / 변호인, 2013)</span></li><li><span>40계단 문화관광테마거리(더 킹 : 영원의 군주, 2020)</span></li><li><span>168계단</span></li><li><span>UN기념공원</span></li><li><span>우암동 도시숲(감쪽같은 그녀, 2019)</span></li></ul></div>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">감천문화마을</p>한국전쟁 당시 피란민들이 산꼭대기까지 집을 짓고 살았던 부산의 주거문화를 지금껏 간직하고 있는 곳. 알록달록 다양한 색깔로 칠해진 집들이 산자락을 따라 계단식으로 자리한 모습이 이국적 풍경을 보여준다.\n\n위치\n부산광역시 사하구 감내2로 203 / (구)감정초등학교 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">루카 : 더 비기닝(2021) <span style=\"font-size: 18px;color: #000;\">김래원, 이다희 주연</span></p><p>특별한 능력을 가진 주인공이 거대한 음모에 맞서 싸우는 스펙터클 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">감쪽같은 그녀(2019) <span style=\"font-size: 18px;color: #000;\">나문희, 김수안 주연</span></p>꽃청춘 할머니와 애어른 손녀의 티격태격 동거생활을 코믹하게 그린 가족영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임시수도기념관</p>일제강점기에 지어진 경남지사 관사는 서양식과 일본식을 혼합해 지은 독특한 근대건축물로 한국전쟁 때 임시정부 대통령 관저로 사용되다 지금은 임수수도 기념관으로 탈바꿈했다. 한국 근대 역사의 현장으로 또 부산의 이야기가 담긴 장소로 가치가 높다. \n\n위치\n부산광역시 서구 임시수도기념로 45 / 임시수도기념관 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">국제시장</p>외국에서 온 신기한 물건들이 가득했던 국제시장. 부산을 대표하는 전통시장으로 먹자골목, 팥빙수골목, 화장품골목, 구제골목 등 다양한 볼거리와 즐길거리 먹을거리가 지금도 넘쳐난다. 좁은 골목길에서 마주하는 세월의 흔적은 국제시장의 역사를 고스란히 보여준다. \n\n위치\n부산광역시 중구 신창동 / 국제시장로1구간 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">국제시장(2014) <span style=\"font-size: 18px;color: #000;\">황정민, 김윤진 주연</span></p>가난하고 힘들었던 피란시절, 가족을 위해 평생을 희생한 아버지, 어머니의 이야기를 그린 휴먼영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">깡깡이예술마을</p>우리나라 근대 조선의 산실인 영도구 대평동 일대는 지금도 배를 수리하는 공장들이 빼곡하게 들어서 있다. 녹이 슨 배의 표면을 망치로 두들겨서 벗겨내는 소리가 사방에서 ‘깡깡’ 울려 퍼진다. 삭막했던 마을 골목이 예술과 만나면서 부산이 아니면 보기 힘든 관광 명소로 탈바꿈했다. \n\n위치\n부산광역시 영도구 대평북로 36\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">흰여울문화마을</p>해안 절벽을 따라 알록달록한 집들이 옹기종기 모여 있다. 커다란 외항선들이 마을 앞바다에 정박해 있는 모습을 보고 있으면 마치 외국의 어느 섬에 와 있는 듯한 착각마저 드는 곳.\n\n위치\n부산광역시 영도구 절영로 194 / 신선3동공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 되어준 두 주인공이 그려가는 아날로그 감성 영화</p>\n<p class=\"font-size25 colorDarkBlue medium\">변호인(2013) <span style=\"font-size: 18px;color: #000;\">송강호 주연</span></p>부산의 한 변호사가 모두 회피하는 사건의 변호를 맡으며 경험하는 불평등한 사법구조를 고발하는 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">40계단 문화관광테마거리</p>전쟁으로 고향을 떠나 생존에 몸부림치던 민초들의 고단함이 거리 곳곳에 배어 있다. 마치 타임머신을 타고 그 때로 돌아간 듯, 나무로 만든 전신주와 기찻길 등이 부산의 옛 모습을 실감나게 보여준다.\n\n위치\n부산광역시 중구 중앙동 / 유창빌딩앞 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">168계단</p>숨이 턱 막힐 정도로 가파른 168개의 계단을 쉼 없이 오르내려야 했던 할매, 할배들의 이바구(이야기) 속에 피란민들의 아픔이 생생하게 묻어 있다. 가쁜 숨을 내쉬며 마지막 계단에 오르면 발 아래로 부산항 풍경이 시원스럽게 펼쳐진다. \n\n위치\n부산광역시 동구 초량동 / 초량2동공영주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">UN기념공원</p>한국전쟁에 참전했다가 목숨을 잃은 유엔군 전사자들의 유해가 안장된 곳. 묘역과 녹지구역으로 나눠 성스럽고 엄숙하지만 평화롭고 따뜻한 분위기가 느껴진다. \n\n위치\n부산광역시 남구 유엔평화로 93 / UN기념공원 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">우암동 도시숲</p>부산의 ‘라라랜드’로 불릴 만큼 탁월한 전망을 자랑하는 곳. 부두에 정박한 컨테이너선들과 바다를 가로지르는 부산항대교, 영도가 어우러져 환상의 야경을 선사한다. 보름달을 배경으로 인생샷을 찍기 위해 젊은 커플들이 몰려드는 핫 스폿.\n\n위치\n부산광역시 남구 우암동\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">감쪽같은 그녀(2019) <span style=\"font-size: 18px;color: #000;\">나문희, 김수안</span></p>꽃청춘 할머니와 애어른 손녀의 티격태격 동거생활을 코믹하게 그린 가족영화\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1181&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1317",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "숨은 달빛 한 조각, 부산 달캉스 명소 4  ",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "우암동 도시숲",
+        "review": "pending"
+      },
+      "originalText": "무더운 여름이 끝나고 점점 더 선선해지는 날씨와 함께 가을이 다가오고 있습니다. 가을 하면 떠오르는 것이 바로추석! 가족과 함께 시간을 보내고, 달을 보며 소원을 빌기도 하는 것이 바로 추석 명절의 매력이죠? 그래서 준비한 부산 달캉스 명소 4곳! 밤이 되면 아름다운 달을 만날 수 있는 부산 달캉스 명소에서 좋은 추억을 만들어 보세요.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길 해월정</p>‘은은한 달빛을 받으며 걷는 길’이라는 달맞이길은 해운대 바다에서부터 시작하여 산책하기 좋은 길입니다. 여름을 맞아 푸릇푸릇함이 가득한데, 키 큰 나무들이 만들어주는 그늘 아래를 걸으며 언덕길을 오를 수 있습니다.\n특히 달맞이길 언덕에 있는 ‘해월정’에서는 탁 트인 전망을 감상할 수 있는 것은 물론, 달 조형물과 사진 찍기에도 좋고 그늘에서 쉬어가기도 좋답니다. 해월정에서 내려다보는 풍경이 아름다우니 달맞이길을 산책하신다면 해월정도 꼭 한번 들러보시면 좋을 것 같아요. \n해월정 앞에 있는 예쁜 달 조형물과 함께 인증사진을 남겨봅니다. 밤에는 달 조형물에 빛이 들어오기 때문에 더욱 아름다운 모습을 감상할 수 있습니다.\n해월정에서 전망대 방향으로 이어지는 나무데크 산책로도 아름다워서 직접 걸어보는 것을 추천합니다. 빼곡한 초록숲 사이로 불어오는 해풍이 싱그러운 기운을 선사합니다. 달맞이길 입구에 위치한 전망대에서 광안대교와 해운대 해수욕장의 시원한 풍경을 감상하며 달맞이길 산책을 마무리하면 어떨까요?\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해상케이블카 스카이파크</p>부산 송도엔 해수욕장, 케이블카는 물론 암남공원과 스카이파크도 있어서 볼거리가 많습니다. 스카이파크로 가는 방법에는 두 가지 방법이 있는데 송도해수욕장에서 케이블카를 타거나 직접 스카이파크까지 이동할 수 있습니다.\n암남공원에 위치한 송도해상케이블카의 정류장에는 푸릇푸릇한 숲과 잘 어울리는 공원, 스카이파크를 조성해놓았습니다. 아이들이 좋아할만한 조형물들이 가득합니다. 인증사진 찍기 좋은 예쁜 달 조형물을 비롯해 노란 색감과 디자인이 돋보이는 달팽이가든 등은 스카이파크의 볼거리입니다.\n또한 본관 건물 2층과 3층에는 오션뷰 테라스와 스카이하버 전망대가 마련되어 있습니다. 광활하게 펼쳐진 멋진 바다 전망을 배경으로 다양한 포토존이 꾸며져 있어요. 3층 전망대에 있는 달 조형물은 그냥 지나칠 수 없는 포토존입니다. 달과 함께 다양한 포즈를 연출해 보세요. 이외에 어린왕자 등 예쁜 포토존이 많으니 찬찬히 둘러보면 좋을 것 같아요. 스카이파크를 둘러본 다음에는 바로 근처에 있는 송도 용궁구름다리도 산책하기 좋습니다. 멀리 묘박지의 신기한 풍경도 즐기고, 발아래 스릴 가득 짜릿한 바다도 느껴보세요.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포 해수욕장</p>부산 일몰 명소로 알려진 다대포 해수욕장에는 사진 찍기 좋은 포토존도 여럿 마련되어 있어서 바다를 따라 산책하며 사진 찍기 좋습니다. 바다와 갈대를 동시에 만나볼 수 있는 고우니 생태길은 다대포 해수욕장을 방문했다면 꼭 한 번쯤 걸어보기 좋은 길입니다.\n다대포 바다와 하늘, 건너편 해안선의 실루엣마저 아름다운 이곳에 예쁜 달 조형물이 자리 잡고 있습니다. 낮에도 사진 찍기 좋지만 달빛처럼 환한 조명이 들어오는 밤에는 더욱 운치 있는 곳이에요. 이곳에서 예쁜 인증사진 남기는 것도 잊지 마세요. 달 조형물 이외에도 나만의 인생샷을 업데이트할 수 있는 스폿이 많으니 일몰을 감상하며 여유 있게 돌아보세요.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">우암동 도시숲</p>영도 바다와 부산항대교까지 한눈에 들어오는 우암동 도시숲, 이곳의 일몰과 야경 풍경이 아름다워 ‘부산의 라라랜드’라는 별명이 붙여졌습니다.\n규모는 작지만 한층 짙어진 초록의 숲이 싱그러운 공원을 만들어 줍니다. 공원 언덕에는 아름다운 보름달 조형물이 설치되어 있는데 이곳이 인증사진 스폿으로 많은 사랑을 받고 있습니다. 보름달 뒤로는 부산항대교와 봉래산이 보입니다. 예쁜 인증사진과 함께 멋진 전망도 감상할 수 있어요.\n나무데크 산책로를 따라 울창한 숲길을 내려오면 만나게 되는 소박한 골목길, 그 끝에 놓칠 수 없는 또 다른 포토존이 있습니다. 동항성당의 예수상과 함께 부산항과 부산항대교가 그림처럼 펼쳐지는 전망대는 이국적인 포토존으로 유명합니다.  낮과 밤이 다른 반전 매력을 느낄 수 있는 우암동 도시숲에서 아름다운 추억을 만드세요.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1317&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

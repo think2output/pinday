@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2756696",
+    "name": "화명수목원",
+    "lat": 35.2510535364,
+    "lng": 129.0426767218
+  },
+  "collectedAt": "2026-10-24T09:57:15.738Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:786",
+      "busan-theme:1146",
+      "busan-theme:1334"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2756696",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "화명수목원",
+      "relation": "same-place",
+      "originalText": "화명수목원은 금정산 자락에 위치한 부산 최초 공립수목원으로, 수목유전자원의 보존과 증식 및 전시를 통해 지역 생태계를 보전하고 있다. 계절의 변화에 따라 다채롭고 매력적인 자연경관과 생물다양성 관찰 기회를 제공하고 있으며, 숲에 대한 올바른 가치관 확립을 위해 다양한 체험 프로그램 운영되고 있다. 9개의 주제원과 숲전시실, 전시온실, 숲속쉼터 등 관람시설이 조성되어 있으며, 화장실, 주차장 등 편의시설이 설치되어 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2756696&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:30.007Z",
+      "modifiedAt": "20250702091241"
+    },
+    {
+      "id": "busan-theme:786",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 도심 속 공원의 재발견",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "화명수목원",
+        "review": "pending"
+      },
+      "originalText": "초록의 싱그러움이 가득한 6월, 때 이른 더위와 뜨거운 햇살로 인해 시원한 곳으로 떠나고 싶은 마음 가득 안고 초록과 그늘이 있는 도심 속 공원으로의 여행을 시작해본다. 부산의 대표적인 도심 속 공원들을 여행작가의 눈으로 재발견해보자.\n<p class=\"font-size28 colorDarkBlue medium\">부산의 전경이 한눈에 내려다보이는 민주공원</p>서울토박이인 내가 &lt;봄에 꼭 가야할 곳&gt;으로 적어두는 부산의 한 공원이 있다. 바로 겹벚꽃 맛집인 부산 중구 영주동의 민주공원이다. 아담한 공원 규모에 비해 제법 큰 겹벚꽃 동산이 있는  이곳은 4월이면 숨은 인생샷 명소로 사람들의 발길을 이끈다. 그렇다면 초여름의 민주공원의 모습은 어떨까?\n\n화창했던 6월의 어느 날. 민주공원은 무척이나 한가로웠다. 푸릇푸릇한 나무들은 커다란 그늘을 만들어 주었고, 곳곳에 다양한 꽃과 수목이 피어나 눈을 즐겁게 해준다. 부산의 전경이 한눈에 내려다 보일 만큼 높은 언덕에 자리 잡아서인지 선선한 바람도 불어주어, 걷는 내내 상쾌하기까지 하다.  \n\n민주공원은 전시실과 극장, 전망대가 있는 민주항쟁기념관을 중심으로 잔디가 펼쳐진 장승터와 민주항쟁기념관을 둘러싸고 있는 산책로를 이른다. 걷다 보니 공원의 한가운데에 위치한 민주항쟁기념관이다. 아쉽게도 방문했던 날이 휴관이라 전시를 볼 수는 없었지만, 기념관의 규모와 시설만 보아도 그 숭고한 가치를 짐작해볼 수 있었다. \n\n민주공원의 뒷편 산책로에는 작은 메타세콰이어 숲 길이 있다. 작은 규모지만 큼직큼직한 나무 사이를 걷다 보면 제주도 사려니숲 못지 않은 울창한 숲에 온 듯한 기분이 든다. 중간중간 놓인 벤치에 앉아 마음껏 푸른 기운을 받아가도록 하자. \n\n<p class=\"font-size20 colorDarkBlue medium\">주소</p>지도에 민주공원 또는 민주항쟁기념관 검색\n<p class=\"font-size20 colorDarkBlue medium\">Tip</p>민주공원 진입 전 중앙공원 공영주차장 10분에 200원, \n민주공원 내 주차장 2시간 무료 이용가능\n잔디밭에서 돗자리에 피크닉 가능하지만 취사는 절대 금지. 화장실 있음.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">편백나무숲과 저수지를 품은 대신공원</p>민주공원에서 가까운 거리에 있는 (구)대신공원. 이곳도 역시 정식 명칭은 중앙공원이지만 아직까지 시민들에게는 대신공원으로 불리고 있는 근린공원이다. 입구부터 편백나무의 향이 그윽하게 퍼지는 대신공원의 편백숲은 아름다운 숲 전국대회에서 상을 받기도 했다. 원래는 수원지 보호를 위해 통제 되었으나 지금은 누구나 방문할 수 있는 공원으로 개방되어 언제든 삼림욕을 즐길 수 있다. \n\n대신공원을 걷다 보면, 이곳이 한국이 맞나 싶을 정도로 반짝거리는 저수지를 볼 수 있다. 대신공원 내에는 총 두개의 저수지가 있는데, 입구에서 가까운 제1저수지 주위로 쉴 수 있는 곳들이 무척 많다. 벤치에 앉아 햇살에 반짝이는 물을 보다 보면, 어느새 복잡한 마음을 정리해 나가는 나를 발견할 수 있다. 가끔 분수도 볼 수 있으니, 천천히 산책길을 둘러보며 공원을 누려보자. \n\n<p class=\"font-size20 colorDarkBlue medium\">주소</p>지도에 대신공원 검색\n<p class=\"font-size20 colorDarkBlue medium\">Tip</p>공원 초입 외부에 공영주차장 10분에 200원, \n벤치나 정자가 많아 간단한 간식은 먹어도 좋으나 머물다 간 자리는 확실하게 정리하자.\n식수, 화장실, 매점 있음.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">동화 속 풍경을 담은 화명수목원</p>부산 최초의 공립수목원인 화명수목원은 다양한 숲체험프로그램을 운영하고, 수목전시를 통한 생태체험 교육의 장으로 다양한 식물자원을 보유하고 있다. 주차장에 차를 대고, 입구에 들어서자마자 나도 모르게 탄성이 나왔다. 어쩜 이렇게 동화 속 한 장면 같은 걸까? 입구의 다리가 알록달록해서 마치 저 다리를 건너면 미지의 세계로 들어갈 것만 같았다. 얼핏 안쪽을 보기만 하였는데도, 그 큰 규모에 깜짝 놀랄 수 밖에 없었다. \n\n화명수목원은 숲으로의 초대, 깨어나는 숲의 생명력, 위기의 숲, 살아 숨쉬는 미래 환경 등 여섯 개의 주제로 구성된 숲 전시실, 유리온실, 침엽수원, 활엽수원, 화목원, 수서생태원등의 시설로 구성되어 있다. 사진찍기 좋다는 유리 온실은 코로나로 인해 출입금지여서 너무 안타까웠지만, 좋은 날씨에 다양하게 피어난 야생화들을 보다 보니 그 아쉬움이 절로 달래졌다. \n\n금정산 고당봉을 뒤로 하고 맑은 대천천이 흐르고 있어, 공기는 맑았고 귓가에는 물소리로 가득했다. 6월이 이렇게 꽃이 많이 피어나는 시기였나. 세상의 야생화들은 이곳에 다 모아둔 것 같았다. 야생화들을 배경으로 사진을 찍는 시민분들을 보니, 나 역시 그냥 지나칠 수 없어 혼자 셀프카메라를 담아 본다.\n아무래도 산 중턱에 자리잡은 수목원인지라 해가 빨리 떨어지는 편이다. 생각보다 금방 어두워지니, 꽃과 함께 사진을 담고 싶다면 조금 서둘러 방문하도록 하자.  \n\n<p class=\"font-size20 colorDarkBlue medium\">주소</p>지도에 화명수목원 검색\n<p class=\"font-size20 colorDarkBlue medium\">Tip</p>화장실, 음료자판기 있음.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=786&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1146",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "피톤치드샤워 숲속 드라이브",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "화명수목원",
+        "review": "pending"
+      },
+      "originalText": "연인, 가족은 물론 혼자 찾아가도 손색없는 드라이브 코스가 있다. 바로 금정산성 산성로 입구에서 동문 입구를 지나 만나는 산성 마을부터 금정산성 다목적 광장, 화명수목원까지 이어지는 숲길이다. 향긋한 피톤치드가 가득한 숲속에서 드라이브를 즐기다 보면 일상의 피곤함이 단숨에 씻겨 내려가는 듯한 상쾌한 기분이 들 것이다. 가을 하늘처럼 탁 트인 풍경 속, 푸른 소나무의 싱그러움을 만끽할 수 있는 이곳에서 힐링 가득한 숲속 드라이브를 즐겨보자. \n\n\n<p class=\"font-size28 colorDarkBlue medium\">산성마을 </p>금정산은 숲속의 / 은은한 솔바람 소리에 / 그대를 향한 / 사람의 언어 키워 봅니다. / 파랗게 발돋움하는 / 가을 하늘처럼 먼 이상을........\n\n김영준 시인의 \"금정산을 사랑하는 까닭을\"의 시에서 알 수 있듯 가을의 정취를 느긋하게 즐길 수 있는 금정산. 이러한 금정산 능선을 병풍처럼 둘러싸고 있는 금성동 산성마을은 공기 좋고 물 맑은 수려한 자연환경을 지니고 있다. 90% 이상 녹지로 구성되어 있어 마음의 평화를 찾으려는 사람들이 찾기에 더할 나위 없이 좋은 드라이브 코스다. \n울긋불긋 가을의 정취를 보며 느긋하게 걸을 수 있는 이곳 드라이브 코스는 휴일이면 등산객의 발길이 끊이지 않는다. 살랑살랑~ 가을바람이 지나가는 소리에 귀를 기울이면 어지러웠던 마음에 안정이 찾아오고 계절이 머무는 풍경을 보다 보면 산성 마을의 새로운 매력에 매료될 것이다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">금정산성 다목적 광장 </p>숲속 드라이브 코스 중 하나로 쉬어가기 좋은 금정산성 다목적 광장은 금정산성역사문화축제 등 다양한 문화행사가 열리는 곳이다. 특히 드넓은 들판을 자랑하는 이곳은 무인비행장치(드론) 시험 비행장의 역할을 톡톡히 하고 있으며 푸른 잔디가 깔려있어 아이들이 뛰어놀기에도 손색없다. 입구에 놓인 ‘금정산성’ 글씨 조형물은 연인, 친구들과 함께 찾은 관광객들의 포토존으로 제격이다. \n금정산으로 둘러싸여 있어 그린뷰를 한눈에 감상할 수 있고 피톤치드 향기를 맡으며 산책하기에도 좋다. 산책보다 더 좋은 건 피크닉! 예쁜 돗자리를 준비해 달콤한 낮잠을 자기에도 좋은 곳이다. 무엇보다 이곳 주변으로 오리고기 맛집과 예쁜 카페가 많아 드라이브 중 잠시 쉬어가기에도 좋다. \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">화명수목원</p>숲속 드라이브의 마지막 코스는 바로 화명수목원! 졸졸~ 맑은 대천천이 흐르고 금정산 고당봉을 뒤로한 천혜의 자연환경을 지닌 화명수목원은 2011년 개원한 부산 최초의 공립수목원이다. 숲 전시실과 전시온실 등으로 구성되어 약 1.300여 종의 다양한 식물 자원을 볼 수 있는 이곳은 가족은 물론 친구, 연인들이 찾기에 좋은 데이트 코스로 손꼽힌다. 생기 가득한 자연의 활력을 가까이에서 지켜보면 힐링은 저절로 찾아오지 않을까? \n특히 이곳엔 숲속 도서관이 있는데 도서관에서 책을 고른 후 야외 벤치나 정자에 앉아 읽을 수 있다. 가을은 독서의 계절이라고 하지 않았던가? 울긋불긋 물드는 가을 풍경을 바라보면서 여유와 함께 마음의 양식을 쌓을 수 있을 것이다. 피톤치드를 마시며 힐링 드라이브를 할 수 있는 금정산성과 화명 수목원 코스는 버스 203번을 타면 쉽게 찾을 수 있다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1146&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1208",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산에도 봄이 왔나봄! ",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "화명수목원",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"> <table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694727344.jpg\" alt=\"부산에도 봄이 왔나봄! 부산으로 봄캉스 떠나요\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732233.jpg\" alt=\"꽃바람이 흩날리는 부산 꽃 명소\"></td></tr><tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1205&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732532.jpg\" alt=\"부산은 벌써 봄! 매화 여행지로 떠나요~ 이른 봄의 향기를 느끼며 매화의 아름다움을 느낄 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=307&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732942.jpg\" alt=\"부산 유채꽃 명소 추천, 노란 꽃들의 절정 커피 한 잔과 함께 여유로운 힐링을 느낄 수 있는 곳\"></a></td> </tr> <tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=306&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733341.jpg\" alt=\"부산 곳곳, 벚꽃이어라 부산 곳곳에 숨겨진 푸르고, 붉고, 청량한 자연을 만날 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=521&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733692.jpg\" alt=\"부산 곳곳에 숨어 있는 장미 명소를 찾아 노을과 트레킹, 카페, 야경까지 예쁜 포인트가 모여 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734088.jpg\" alt=\"따스한 햇살 품은 봄 힐링 산책 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=761&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734451.jpg\" alt=\"나의 힐링 버킷리스트, 허브랑힐링숲 바쁜 일상 속 여유로운 오후 힐링타임을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734761.jpg\" alt=\"철새와 함께하는 아름다운 문화의 향연, 을숙도 문화의 향기를 느끼며 조용히 산책을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=1079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694735074.jpg\" alt=\"기장의 숨은 산책길, 신평소공원 시원하게 펼쳐진 푸른바다를 보며 산책할 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846152.jpg\" alt=\"두근두근 설레이는 봄 나들이 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846560.jpg\" alt=\"봄, 여름, 가을, 겨울이 다 달라 삼락생태공원 삼락생태공원의 매력을 찾아서 유유히 흘러가는 낙동강 줄기 옆으로 삼락동 둔치에 넓게 자리 잡은 삼락생태공원. 계절마다 각기 다른 매력을 뽐낸다.\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=786&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846953.jpg\" alt=\"동화 속 풍경을 담은 화명수목원 부산 도심 속 공원의 재발견 금정산 고당봉을 뒤로하고 맑은 대천천이 흐르고 있어, 공기는 맑았고 귓가에는 물소리로 가득했다.\"></a></td> </tr> </table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1208&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1334",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜정국편＞",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "화명수목원",
+        "review": "pending"
+      },
+      "originalText": "방탄소년단이 2030부산세계박람회 유치를 기원하는 콘서트를 부산에서 개최했습니다. 방탄소년단 멤버 정국과 지민은 부산이 고향인지라 이번 콘서트는 방탄소년단에게도, 그리고 팬들에게도 뜻깊은 시간이 되었는데요, 정국과 지민의 추억이 담긴 장소를 부산여행 코스로 정해 다녀오면 어떨까요? \n\n<p class=\"font-size28 colorDarkBlue medium\">정국코스</p><p class=\"font-size20 medium\">백양초등학교 – 백양중학교 – 만덕레고마을 – 석불사 – 만덕 고개 누리길 전망데크 – 화명수목원 – 화명생태공원 - 감천문화마을</p>\n정국이 어린 시절 다녔던 모교, 백양초등학교와 백양중학교는 팬들의 성지순례 명소로 떠오른 곳들입니다. 백양초는 만덕역 1번 출구에서 도보로 10분 거리에 있습니다. 정국이 어린 시절을 보냈던 동네를 여기저기 둘러보며 산책하는 기분으로 걸어봅니다. 평화롭고 조용한 만덕동은 어딘가 친근하고 정겨운 분위기입니다. \n백양초등학교, 그리고 백양중학교와 가깝게 붙어있는 만덕 레고마을은 높은 곳에서 내려다보면 알록달록한 지붕 색깔이 장난감 블록 레고를 연상시킵니다. 1986년 세워진 공동주택 54세대가 사이좋게 모여있습니다. 백양초등학교에서 만덕 레고마을과 백양중학교를 향해 걸어가는 길도 정말 예뻐서 사진찍기 좋았습니다. 정국이 어린 시절에 예쁜 동네에 살았구나 하는 생각을 하며 산책했어요.\n\n백양초등학교\n부산광역시 북구 상리로18번길 12\n도시철도 3호선 만덕역 3번 출구 → 만덕역 정류장 마을버스 북구9 환승 → 굿모닝힐304동 정류장 하차 도보 1분\n\n백양중학교 / 만덕레고마을\n부산광역시 북구 상리로 70 / 부산광역시 북구 은행나무로23번길 40\n도시철도 3호선 만덕역 3번 출구 → 만덕역 정류장 마을버스 북구9, 북구8 환승 → 백양상가 정류장 하차 도보 9분 / 도보 5분\n\n\n\n\n정국이 다녔던 백양중학교도 살짝 둘러본 다음 푸릇푸릇 한 산 속에 위치한 병풍암 석불사를 향해 걸어갑니다. 석불사는 백양중학교에서 약 1.7km 떨어져 있는데 가는 길이 아름다워서 30분 정도 느긋하게 걷기 좋습니다. 석불사로 걸어가는 길에 감성 있고 전망 좋은 카페들과 우거진 숲길을 만나게 됩니다. 산책로와 차도가 나란히 있고 공영 주차장도 마련되어 있어서 걸어가기에도 좋고 차로 가기에도 좋습니다.\n웅장한 절벽이 마치 병풍처럼 사찰을 감싼 모습 때문에 병풍암 석불사라는 이름이 붙여졌습니다. 특색 있는 사찰의 모습뿐만 아니라 만덕동 일대가 한눈에 내려다보이는 전망도 놓치지 말아야 할 볼거리입니다. 정국의 추억을 따라 산책하다 보면 어느새 도심을 벗어나 아름다운 자연 속 힐링이 가능한 정국 코스, 부산여행을 하는 BTS 팬이라면 한 번쯤 따라가 볼 만한 코스입니다.\n\n석불사\n부산광역시 북구 만덕고개길 143-79\n도시철도 3호선 만덕역 1번 출구 택시 이용 10분\n주차 석불사 주차장\n\n\n\n정국의 고향 만덕동과 가까운 거리에 부산의 숨은 매력을 만끽할 수 있는 다른 여행지도 있으니 한번 방문해 보세요.\n차를 타고 이동하기를 추천드리는 만덕고개 누리길 전망데크는 해 질 녘이면 조금씩 어둠이 스며들며 반짝반짝 아름답게 빛이 납니다. 해운대 장산에서 마린시티, 황령산까지 어우러진 풍광이 한눈에 내려다보이는 특별한 공간, 주변이 금방 어둑해지고 곧이어 펼쳐지는 도시의 아름다운 밤 풍경이 부산여행을 더욱 특별하게 만들어줄 거에요.\n\n만덕고개 누리길 전망데크\n부산광역시 동래구 온천동 산153-8\n도시철도 4호선 미남역 11번 출구 → 택시 이용 12분\n주차 전망대 앞 갓길\n\n\n\n가을 단풍 명소 화명수목원이 빠지면 아쉽죠. 나무들과 꽃들 그리고 조경이 멋지게 가꾸어져 있어서 붉게 물들어가는 식물을 보면 절로 힐링이 되는 곳입니다. 상쾌한 공기 마시며 피톤치드 가득한 숲속에서 휴식이나 사색을 즐겨도 좋을 같습니다. 전시온실에서 자라는 신기한 식물도 관찰하고 미로원에서 ‘나 찾아 봐라~’ 놀이도 하며 저마다의 즐거운 시간을 만들어 보세요. 날씨가 서늘해지고 울긋불긋 단풍이 필 때쯤 진정한 부산 단풍 명소로 거듭나는 화명수목원에서 가족, 연인, 아이와 함께 특별한 데이트를 즐기세요!\n\n화명수목원\n부산광역시 북구 산성로 299\n도시철도 2호선 화명역 6번 출구 → 마을버스 금정구1 환승 → 화명수목원 하차\n주차 화명수목원 주차장\n\n\n\n코스모스 가득 피어 있는 화명생태공원으로 가을 정취 만끽하러 오세요! \n화명생태공원 P3 주차장 근처에는 노란색의 황화 코스모스가 피고, P4 주차장 근처 연꽃단지에는 분홍색 코스모스가 군락을 이루고 있습니다. 꽤 넓은 화명생태공원을 즐기는 방법으로 시원한 강바람 즐기며 천천히 산책하거나, 자전거를 대여해 한 바퀴 둘러보는 코스를 추천합니다. 낭만적인 가로수길이 길게 이어져 걷거나 자전거를 타고 이동하기 너무 좋은 길이랍니다. 돗자리와 간식, 음료를 챙겨 낙동강변 풍경을 즐기며 피크닉을 즐겨봐도 좋을 것 같아요.\n\n화명생태공원\n부산광역시 북구 화명동 1718-17\n도시철도 2호선 화명역 1번 출구 도보 10분\n주차 화명생태공원 공영주차장\n\n\n\n\n사하구에 위치한 감천문화마을은 골목마다 알록달록 벽화가 그려져 있어 마치 동화 속 세상에 온 것 같은 느낌을 주는 부산의 유명 관광지인데요, 이곳 건물들 중 한쪽 벽면에는 SNS에 올리기 딱- 좋은 정국 & 지민의 벽화가 그려져 있어서 인증샷 명소로 더 사람들이 많이 찾는 곳이랍니다!\n형형색색의 건물 곳곳에 카페, 기념품샵, 식당들이 즐비해서 쉬엄쉬엄 걸어보기 좋은 감천문화마을은 사진스폿이 여럿이라 카메라 셔터를 쉴 새 없이 누르게 되는데요, 벽화의 색감과 느낌 모두 너무 예뻐서 제대로 눈 호강 할 수 있어요! 부산즈 케미 지민 & 정국을 떠올리며 치미, 쿠키와 함께 감천문화마을의 분위기를 느껴보세요.\n\n감천문화마을\n도시철도1호선 토성역 6번 출구 → 마을버스 환승 사하1-1, 서구2, 서구2-2 → 감정초등학교 하차 도보 5분\n주차  감천2공영주차장\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1334&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

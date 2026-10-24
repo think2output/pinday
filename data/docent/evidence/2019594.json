@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2019594",
+    "name": "해양환경공단 해양환경교육원(부산)",
+    "lat": 35.0801862079,
+    "lng": 129.0779134245
+  },
+  "collectedAt": "2026-10-24T09:57:15.586Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2019594",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "해양환경공단 해양환경교육원(부산)",
+      "relation": "same-place",
+      "originalText": "부산 영도구 해양환경교육원은 해양 환경 보호와 교육을 위한 중요한 공간이다. 이곳은 해양 생태계의 중요성과 보호 필요성을 알리기 위해 다양한 전시와 체험 프로그램을 제공한다. 교육원 내부에는 해양 생물과 관련된 전시물들이 마련되어 있으며, 실습과 체험을 통해 방문객들이 직접 해양 환경을 이해할 수 있다. 또한, 다양한 해양 교육 프로그램이 운영되어 어린이부터 성인까지 폭넓은 대상이 참여할 수 있다. 해양환경교육원은 부산의 해양 문화와 환경에 대한 인식을 높이고, 지속 가능한 해양 보호 활동을 촉진하는 중요한 역할을 한다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2019594&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:25.739Z",
+      "modifiedAt": "20261008141549"
+    }
+  ],
+  "errors": []
+}

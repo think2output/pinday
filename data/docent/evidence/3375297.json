@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3375297",
+    "name": "태종대 오션플라잉 테마파크",
+    "lat": 35.06083536151677,
+    "lng": 129.07854368510672
+  },
+  "collectedAt": "2026-10-24T09:57:15.450Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3375297",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "태종대 오션플라잉 테마파크",
+      "relation": "same-place",
+      "originalText": "태종대 오션플라잉 테마파크는 스릴만점 집라인부터 인터랙티브 미디어아트, 오션뷰 전망카페까지 아우르는 부산 관광의 새로운 랜드마크이다. 이곳은 태종대의 아름다운 바다와 경치를 배경으로 다양한 해양 관련 체험과 놀이시설을 제공한다. 특히, 집라인은 653m의 거리를 빠른 속도로 단숨에 내려가 하늘을 나는 듯한 기분을 느낄 수 있어 방문객들에게 큰 인기를 끌고 있다.  MOEI는 안으로 발을 딛는 순간 살아 숨 쉬는 듯한 자연과 예술의 공간으로 데려가는 몰입형 미디어아트이며, 전망카페 스릴온더머그는 통창으로 보이는 푸른 부산 바다 풍경과 함께 한 잔의 커피를 즐길 수 있다. 다양한 볼거리와 휴식공간이 마련되어 있어 가족 단위 방문객들에게 적합하다. 바다와 하늘을 동시에 느낄 수 있는 이곳은 부산을 찾은 여행객들에게 필수 방문지로 추천된다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3375297&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:20.977Z",
+      "modifiedAt": "20260402110909"
+    }
+  ],
+  "errors": []
+}

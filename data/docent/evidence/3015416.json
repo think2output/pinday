@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3015416",
+    "name": "대룡마을",
+    "lat": 35.37084904277479,
+    "lng": 129.26348291402041
+  },
+  "collectedAt": "2026-10-24T09:57:13.553Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3015416",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "대룡마을",
+      "relation": "same-place",
+      "originalText": "장안읍 오리에 위치하고 있는 대룡마을은 예술가들이 모여사는 마을로 알려져 있으며 2007년부터 시작된 좋은 마을 만들기 프로젝트에서부터 시작하여 현재까지 많은 사랑을 받고 있는 예술마을이다. 마을 동쪽의 큰 바위가 용처럼 생겨 대룡마을이라 이름하였다는 설과 마을 앞쪽 계곡에 큰 용이 승천하였다고 해서 대룡마을이라고 했다는 여러 설이 있는 곳으로 최근 예술촌이 형성되면서 젊은 예술가들이 모여 작품 활동을 하는 예술 문화마을로 재탄생 한 곳이다. 대룡마을에서 가장 유명한 아트인 오리는 복합체험공간으로 오리 공작소와 장작 화덕피자, 그리고 소면과 음료를 판매하는 공작소 면 집이 모여 있으며 주말이나 공휴일에는 여러 가지 잡화들을 판매하고 있는 플리마켓이 열리기도 한다. 주민들의 쉼터인 쌈지공원도 조성되어 있고 건물에 그려 놓은 벽화도 감상할 수 있는 곳으로 도심에서 벗어나 가족단위로 둘러보기 좋은 예술마을이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3015416&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:53:56.676Z",
+      "modifiedAt": "20260427092710"
+    }
+  ],
+  "errors": []
+}

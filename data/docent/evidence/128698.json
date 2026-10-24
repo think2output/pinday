@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "128698",
+    "name": "40계단 문화관광테마거리",
+    "lat": 35.104,
+    "lng": 129.0347
+  },
+  "collectedAt": "2026-10-24T09:57:12.879Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:1181",
+      "busan-theme:1182"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:128698",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "40계단 문화관광테마거리",
+      "relation": "same-place",
+      "originalText": "부산 중구에 자리한 40계단은 부산의 역사적인 명소로 한국 전쟁 후 재건의 상징적인 장소이다. 이 계단은 1950년대 부산의 경제·사회적 변화를 체험할 수 있는 중요한 역사적 배경을 지닌 곳이다. 40 계단은 당시 피난민들이 힘겹게 오르내리던 계단으로 지금은 부산을 대표하는 관광지로 자리 잡고 있다. 계단을 오르면 부산의 오래된 거리 풍경과 함께 40계단 문화관, 다양한 전시물들을 만날 수 있다. 이곳은 부산의 역사를 배우고 지역 주민들의 삶을 느낄 수 있는 특별한 장소이다. 또한 영화나 드라마의 촬영지로 유명하며 관광객들에게 깊은 인상을 남긴다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=128698&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:25.866Z",
+      "modifiedAt": "20260305113750"
+    },
+    {
+      "id": "heritage:23-21-0000510000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산지방기상청",
+      "relation": "nearby-only",
+      "distanceMeters": 242,
+      "coordinates": {
+        "lat": 35.1046988030425,
+        "lng": 129.032177235974
+      },
+      "originalText": "기상청이 생긴 지 100년에 가깝다는 사실만으로도 충분히 기념적 가치 이상의 역사성을 내포하고 있으며, 건축물의 내·외부가 거의 온전히 보존되어 있고, 건축 외관의 형태를 배모양으로 고안하기 위해 수평적 가로줄을 많이 강조했기 때문에 르네상스적 기풍이 보이고 있다. \n 건물 전체를 콘크리트 거푸집으로 시공한 흔적이 보이며, 전면의 타일은 뒤에 다시 시공한 것으로 짐작된다. 특히 내부 수직창의 기술적 여닫이 처리와 천장 몰딩 문양의 거푸집처리는 이 건물의 돋보이는 특징으로 문화유산으로서의 가치가 있는 건물이다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000510000000",
+      "fetchedAt": "2026-10-24T09:52:26.070Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:31-21-0000700000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "구 한국은행 부산본부",
+      "relation": "nearby-only",
+      "distanceMeters": 284,
+      "coordinates": {
+        "lat": 35.1025083657799,
+        "lng": 129.032160387012
+      },
+      "originalText": "구)한국은행 부산본부는 1909년 7월 공포한 대한제국의 「한국은행조례」에 의해 설립된 국책은행인 한국은행 부산지점(일제강점기 조선은행 부산지점)이 있었던 곳이다. 일제강점기에 현 부지에 있었던 조선은행 부산지점 건물은 경성(서울)의 본점과 함께 르네상스 스타일의 외관을 가진 건물로 타츠노카사이 설계사무실에서 설계하여 준공하였으나, 해방 이후인 1963년 옛 건물을 철거하고 지금의 근대식 건축물을 신축하여 사용하였다. \n구)한국은행 부산본부가 위치한 곳은 조선시대 초량왜관 경내에 해당하는 곳이며, 일제강점기 동양척식주식회사 부산지점(현, 부산근대역사관), 식산은행 부산지점, 경남무진주식회사를 비롯한 각종 금융기관과 한국 최초의 공설시장이었던 부평정시장(현,부평시장) 등이 들어서면서 부산의 중심 시가지가 된 대청로에 자리 잡고 있다는 역사성을 가지고 있으며, 대청로 일대에 남아 있는 각종 유․무형의 자산들은 근대도시 부산을 설명할 때 빼놓을 수 없는 매우 귀중한 자산들이다.\n한국전쟁 기간 동안 우리 정부는 두 번의 화폐개혁을 실시하였는데, 모두 한국은행 부산지점에서 시행되었다는 사실에서 한국은행은 물론이고 한국 경제와 한국금융사에서 ‘한국은행 부산본부’가 가지고 있는 역사적 중요성을 확인할 수 있다.\n또한 개항도시인 부산 지역 금융산업을 대표하였던 조선은행 부산지점 건물이 존재했던 장소에 1963년 새롭게 건축된 한국은행 부산지점 건물은 한국건축가 1세대인 이천승 선생이 설계한 건물로 금융건축의 전형적인 평면형식을 갖고 있으며, 근대적 조형과 기능성이 돋보이는 대표적인 금융건물이다. \n이처럼 1963년 건립된 구)한국은행 부산본부 건물 및 부지가 가지고 있는 역사적, 지역적, 경제사적 가치와 의미가 매우 크고 중요할 뿐 아니라 특히, 1963년 당시 건축계에 도입된 선진적인 건축기법이 적용되어 건축사적 가치 또한 매우 높은 건물로  평가된다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000700000000",
+      "fetchedAt": "2026-10-24T09:52:26.524Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0003270000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 복병산배수지",
+      "relation": "nearby-only",
+      "distanceMeters": 287,
+      "coordinates": {
+        "lat": 35.1057012154713,
+        "lng": 129.032321303711
+      },
+      "originalText": "이 시설물은 성지곡수원지 물을 각 가정에 공급하기 위해 건립하였다. 배수지는 모두 3동으로 구성되어 있으며, 정면 왼쪽 저수 시설 2동은 1910년에 건립하였고, 오른쪽 1동은 1922년에 증축하였다. 1910년의 여과 시설 벽체는 붉은 벽돌로 쌓고 상부는 석재로 마감하였으며, 아치 형태의 석조 문틀로 된 입구 위에는 ‘선경(仙境)의 물처럼 마르지 말라’라는 뜻의 ‘요지무진(瑤池無盡)’이라는 현판이 남아 있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003270000000",
+      "fetchedAt": "2026-10-24T09:52:26.966Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:23-21-0000490000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "구 동양척식주식회사 부산지점",
+      "relation": "nearby-only",
+      "distanceMeters": 346,
+      "coordinates": {
+        "lat": 35.1026406945268,
+        "lng": 129.031276352942
+      },
+      "originalText": "일제시대 일본이 우리나라에 경제적인 수탈을 하기 위해 만든 동양척식주식회사 건물로서 부산지역의 경제수탈에 앞장섰던 본거지였다. 동양척식주식회사는 선진 농법을 전해주고 국토의 효율적으로 이용하여 더욱 잘 살게 해주겠다는 허울좋은 명분 아래 설립된 회사였으나 사실은 조선의 토지를 비롯한 노동력을 착취하기 위한 것이었다. \n 동양척식주식회사 부산지점으로 사용되었던 이 건물은 해방 이후에는 부산에 진주한 미군들의 숙소로 이용되다가 1949년 미문화원으로 개원하였고 1999년에야 비로소 반환되었다. 1920년대에 세워진 이 건물은 철근콘크리트조 건물로 서구양식이 도입될 당시의 건축 경향을 살필 수 있는 몇 남지 않은 자료이다. 또한 처음 지어졌을 당시부터 1999년 반환될 때까지 외세지배의 상징적 의미를 지니고 있는 한국 근대사에서 중요한 역사적 의미를 지닌 건축물이기도 하다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000490000000",
+      "fetchedAt": "2026-10-24T09:52:27.424Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0005730000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "대한성공회 부산주교좌성당",
+      "relation": "nearby-only",
+      "distanceMeters": 375,
+      "coordinates": {
+        "lat": 35.1034413299715,
+        "lng": 129.030631578583
+      },
+      "originalText": "대한성공회 부산주교좌성당은 1924년에 지어진 로마네스크양식의 벽돌조 건물로 최초 내부 평면은 1랑식 장방형 평면으로 구성되어 있었으나 1964년 측랑이 증축되어 변형된 2랑식 평면구성을 갖고 있다.\n종탑부의 지붕처마 및 버트레스 상부의 석재장식, 제단 아치의 석재장식 등이 뛰어나며, 종탑의 첨탑형태와 제단 앱스 천장의 석조리브는 국내에서는 매우 드문 사례다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0005730000000",
+      "fetchedAt": "2026-10-24T09:52:27.863Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:23-21-0000560000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "영도대교",
+      "relation": "nearby-only",
+      "distanceMeters": 953,
+      "coordinates": {
+        "lat": 35.0955502464534,
+        "lng": 129.036466414641
+      },
+      "originalText": "영도와 부산을 잇는 연육교인 영도대교는 1932년 3월에 착공하여 1934년 11월에 개통된 길이 214.7m, 폭 18.3m의 우리나라 최초의 연육교이다. 하루 총 6회씩 도개하여 부산의 명물로 자리하였고 1966년 9월 증가하는 차량 통행으로 인하여 도개 기능이 멈추게 되었으나, 2013년 11월 27일에 기존 4차선을 6차선으로 복원․개통하여 매일 오후 2시에 도개를 하고 있으며, 부산의 명소로 옛 명성을 다시 찾고 있다.\n 일제강점기부터 부산시민과 애환을 함께 해 온 영도대교는 8.15해방과 6.25전쟁 이후 생활고에 지친 피난민들이 애환과 망향의 슬픔을 달랬었던 장소였다. 전쟁 당시 영도대교에 가면 친인척을 찾을 수 있을 것이라는 막연한 기대로 영도대교 인근은 피난민으로 가득 메웠고, 이들의 사연을 듣고 상담하는 점집들이 성업하는 등 우리나라 근대사와 함께 해온 구조물인 동시에 근대 부산의 상징적 의미를 갖고 있는 다리이다.\n영도대교의 건설은 부산항 물류장 확충과 간선도로의 개설과 함께 근대 부산의도시발달에서 중요한 사업이었다. 특히 영도는 영도대교의 건설로 인하여 부산 도심과 육로로 연결되고 전차가 개통되는 등 도시 성장의 기폭제가 되었다는 점에서 영도구의 도시 발달사를 증언하는 중요한 역사적 장소이다. \n영도대교는 교량 뿐 아니라 영도대교를 구성하는 건축물들도 건축적인 가치를 보여주고 있다. 교대의 경우 정교하게 다듬어진 화강석으로 바른 층 쌓기를 하여 교대를 형성하고 모서리 돌은 직사각형 화강석으로 모접기 등을 하는 등 정교한 디테일을 갖고 있다. 아울러 교대 좌우측의 화강석 계단, 교량 입구의 교문주와 난간 등은 영도대교의 구성미를 더욱 돋보이게 하고 있으며, 교량 입구 광장인 다리목광장은 영도대교의 얼굴에 해당하는 공간으로 근대 교량의 형식적 특징을 잘 보여주고 있는 부분이다.\n영도대교는 현재 우리나라에 잔존하는 유일한 단엽식 도개교(bascule bridge)로 희소가치가 매우 높은 교량이다. 또한 일반적인 도개교와는 달리 안벽부에 도개장치를 설치하고 있는 등 도개교량의 형식에서도 특이성이 인정되는 등 한국 교량사(토목)에 있어서도 유례가 없어 근대 교량사를 연구하는 데에 대단히 중요한 교량으로 그 보존가치가 매우 높다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000560000000",
+      "fetchedAt": "2026-10-24T09:52:28.275Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:1181",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Our History",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "40계단 문화관광테마거리",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자. \n\n\n<p class=\"font-size28 colorDarkBlue medium\">Our History</p>부산의 이야기를 찾아 떠나는 시간여행\n\n한국전쟁을 겪으면서 임시수도 역할을 맡아야했던 부산. 전쟁을 피해 남쪽 끝 부산까지 떠밀려온 피란민들을 보듬었던 부산은 갖가지 사연과 아픔, 애환이 뒤섞여 어느 도시도 갖지 못한 역사적 유산을 얻게 됐다. 부산에 담긴 이야기들을 찾아 떠나는 여행은 곧 부산의 정체성을 찾아 떠나는 여행이다. 피란민들이 판자집을 짓고 살았던 감천문화마을을 비롯해 임시정부 대통령 관저로 사용됐던 임시수도기념관. 전쟁 이후 산업화 과정에서 겪었던 부산 사람들의 고단한 삶을 보여주는 40계단과 168계단. 우리나라 조선산업의 산실이었던 깡깡이예술마을 등 밤을 새어도 모자랄 부산의 숨은 이야기 속으로 들어가 보자. \n\n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">부산의 이야기를 찾아 떠나는 시간여행</p></div><ul class=\"course1\"><li><span>감천문화마을(루카 : 더 비기닝, 2021 / 감쪽같은 그녀, 2019)</span></li><li><span>임시수도기념관</span></li><li><span>국제시장(국제시장, 2014)</span></li><li><span>깡깡이예술마을(마이 네임, 2021)</span></li><li><span>흰여울문화마을(비와 당신의 이야기, 2021 / 변호인, 2013)</span></li><li><span>40계단 문화관광테마거리(더 킹 : 영원의 군주, 2020)</span></li><li><span>168계단</span></li><li><span>UN기념공원</span></li><li><span>우암동 도시숲(감쪽같은 그녀, 2019)</span></li></ul></div>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">감천문화마을</p>한국전쟁 당시 피란민들이 산꼭대기까지 집을 짓고 살았던 부산의 주거문화를 지금껏 간직하고 있는 곳. 알록달록 다양한 색깔로 칠해진 집들이 산자락을 따라 계단식으로 자리한 모습이 이국적 풍경을 보여준다.\n\n위치\n부산광역시 사하구 감내2로 203 / (구)감정초등학교 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">루카 : 더 비기닝(2021) <span style=\"font-size: 18px;color: #000;\">김래원, 이다희 주연</span></p><p>특별한 능력을 가진 주인공이 거대한 음모에 맞서 싸우는 스펙터클 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">감쪽같은 그녀(2019) <span style=\"font-size: 18px;color: #000;\">나문희, 김수안 주연</span></p>꽃청춘 할머니와 애어른 손녀의 티격태격 동거생활을 코믹하게 그린 가족영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임시수도기념관</p>일제강점기에 지어진 경남지사 관사는 서양식과 일본식을 혼합해 지은 독특한 근대건축물로 한국전쟁 때 임시정부 대통령 관저로 사용되다 지금은 임수수도 기념관으로 탈바꿈했다. 한국 근대 역사의 현장으로 또 부산의 이야기가 담긴 장소로 가치가 높다. \n\n위치\n부산광역시 서구 임시수도기념로 45 / 임시수도기념관 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">국제시장</p>외국에서 온 신기한 물건들이 가득했던 국제시장. 부산을 대표하는 전통시장으로 먹자골목, 팥빙수골목, 화장품골목, 구제골목 등 다양한 볼거리와 즐길거리 먹을거리가 지금도 넘쳐난다. 좁은 골목길에서 마주하는 세월의 흔적은 국제시장의 역사를 고스란히 보여준다. \n\n위치\n부산광역시 중구 신창동 / 국제시장로1구간 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">국제시장(2014) <span style=\"font-size: 18px;color: #000;\">황정민, 김윤진 주연</span></p>가난하고 힘들었던 피란시절, 가족을 위해 평생을 희생한 아버지, 어머니의 이야기를 그린 휴먼영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">깡깡이예술마을</p>우리나라 근대 조선의 산실인 영도구 대평동 일대는 지금도 배를 수리하는 공장들이 빼곡하게 들어서 있다. 녹이 슨 배의 표면을 망치로 두들겨서 벗겨내는 소리가 사방에서 ‘깡깡’ 울려 퍼진다. 삭막했던 마을 골목이 예술과 만나면서 부산이 아니면 보기 힘든 관광 명소로 탈바꿈했다. \n\n위치\n부산광역시 영도구 대평북로 36\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">흰여울문화마을</p>해안 절벽을 따라 알록달록한 집들이 옹기종기 모여 있다. 커다란 외항선들이 마을 앞바다에 정박해 있는 모습을 보고 있으면 마치 외국의 어느 섬에 와 있는 듯한 착각마저 드는 곳.\n\n위치\n부산광역시 영도구 절영로 194 / 신선3동공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 되어준 두 주인공이 그려가는 아날로그 감성 영화</p>\n<p class=\"font-size25 colorDarkBlue medium\">변호인(2013) <span style=\"font-size: 18px;color: #000;\">송강호 주연</span></p>부산의 한 변호사가 모두 회피하는 사건의 변호를 맡으며 경험하는 불평등한 사법구조를 고발하는 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">40계단 문화관광테마거리</p>전쟁으로 고향을 떠나 생존에 몸부림치던 민초들의 고단함이 거리 곳곳에 배어 있다. 마치 타임머신을 타고 그 때로 돌아간 듯, 나무로 만든 전신주와 기찻길 등이 부산의 옛 모습을 실감나게 보여준다.\n\n위치\n부산광역시 중구 중앙동 / 유창빌딩앞 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">168계단</p>숨이 턱 막힐 정도로 가파른 168개의 계단을 쉼 없이 오르내려야 했던 할매, 할배들의 이바구(이야기) 속에 피란민들의 아픔이 생생하게 묻어 있다. 가쁜 숨을 내쉬며 마지막 계단에 오르면 발 아래로 부산항 풍경이 시원스럽게 펼쳐진다. \n\n위치\n부산광역시 동구 초량동 / 초량2동공영주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">UN기념공원</p>한국전쟁에 참전했다가 목숨을 잃은 유엔군 전사자들의 유해가 안장된 곳. 묘역과 녹지구역으로 나눠 성스럽고 엄숙하지만 평화롭고 따뜻한 분위기가 느껴진다. \n\n위치\n부산광역시 남구 유엔평화로 93 / UN기념공원 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">우암동 도시숲</p>부산의 ‘라라랜드’로 불릴 만큼 탁월한 전망을 자랑하는 곳. 부두에 정박한 컨테이너선들과 바다를 가로지르는 부산항대교, 영도가 어우러져 환상의 야경을 선사한다. 보름달을 배경으로 인생샷을 찍기 위해 젊은 커플들이 몰려드는 핫 스폿.\n\n위치\n부산광역시 남구 우암동\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">감쪽같은 그녀(2019) <span style=\"font-size: 18px;color: #000;\">나문희, 김수안</span></p>꽃청춘 할머니와 애어른 손녀의 티격태격 동거생활을 코믹하게 그린 가족영화\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1181&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1182",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Visit Taste",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "40계단 문화관광테마거리",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">Visit Taste</p>영화처럼 맛있게! 부산 미식여행\n\n바다를 끼고 있어서 식재료가 풍부한 부산. 여기에 부산 특유의 음식문화가 더해져 오직 부산에서만 즐길 수 있는 식도락 여행이 탄생했다. 돼지국밥과 곰장어는 기본. 맛 좋고 분위기 좋은 부산 대표 음식점들을 한 자리에 모았다. 영화 속 주인공들이 맛깔스럽게 먹던 그 음식들을 찾아 얼른 떠나보자.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">사상꼬리집</p>저렴한 가격에 맛도 좋다. 평소 먹기 힘든 돼지꼬리가 대표 메뉴다. 쫄깃하면서도 고소하고 담백한 돼지꼬리 맛이 반하면 자꾸만 부산으로 달려가게 될지도.  \n\n위치\n부산광역시 사상구 사상로233번길 34 / 사상서부터미널 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹(2016) <span style=\"font-size: 18px;color: #000;\">조인성, 정우성 주연</span></p><p>출세가도를 달리던 부패한 정치검사들을 그린 블랙코미디 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">1987(2017) <span style=\"font-size: 18px;color: #000;\">김윤석, 하정우, 김태리 주연</span></p><p>1987년 대학생 경찰고문치사 사건으로 일어난 국민들의 항쟁을 다룬 영화</p>\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">삼락생태공원</span> <a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">대저생태공원</span> <a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1149&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">중앙돼지집</p>부산 사람들의 소울 푸드인 돼지국밥. 30년 넘게 매일 돼지국밥을 끓여온 중앙돼지집은 푸짐하면서도 깔끔한 국밥을 내놓는다. 갖은 재료를 넣고 손수 만드는 순대는 절대 놓치지 말 것!\n\n위치\n부산광역시 중구 충장대로5번길 50 / 동구공영주차빌딩\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">보안관(2017) <span style=\"font-size: 18px;color: #000;\">이성민, 조진웅 주연</span></p>낙향한 전직형사가 고향마을을 지키기 위해 고군분투하는 활약상을 코믹하게 그린 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">40계단 문화관광테마거리</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=364&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">국제시장</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201003001000&uc_seq=399&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">손목서가</p>영도 흰여울마을에서 가장 돋보이는 카페. 이름에서도 알 수 있듯 책을 읽을 수 있는 공간이다. 바다가 내려다보이는 마당에 앉아 향긋한 커피를 마시고 있으면 세상 시름이 싹 잊힌다. \n\n위치\n부산광역시 영도구 흰여울길 307 / 신선3동 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 되어준 두 주인공이 그려가는 아날로그 감성 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">영도대교</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=369&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">흰여울문화마을</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=255&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">장성향</p>영화 ‘올드보이’에서 오대수가 무려 15년 동안이나 먹었던 군만두. 일반 만두의 2~3배는 되어 보이는 큼직한 만두를 한 입 베어 물면 육즙을 머금은 담백한 고기소가 입안에 가득 찬다. 매일 먹으라고 해도 먹을 수 있는 맛!\n\n위치\n부산광역시 동구 대영로243번길 29 / 차이나타운 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">올드보이(2003) <span style=\"font-size: 18px;color: #000;\">최민식, 유지태, 강혜정 주연</span></p>어느 날 납치되어 15년 동안 감금되었던 평범한 샐러리맨의 복수를 다룬 미스터리 스릴러 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">이바구길사진관</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=513&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">차이나타운</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=415&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">초량1941</p>부산역 뒤편 산복도로에 자리한 초량1941. 적산가옥을 개조해 1940년대로 되돌아간 듯 복고풍 분위기가 물씬 풍긴다. 다양한 맛을 담은 초량우유는 타지에서도 주문할 정도로 인기다.\n\n위치\n부산광역시 동구 망양로 533-5 / 초량1941 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">그냥 사랑하는 사이(2017) <span style=\"font-size: 18px;color: #000;\">이준호, 원진아 주연</span></p><p>붕괴사고에서 극적으로 살아남은 두 남녀가 서로의 상처를 보듬어가는 과정을 그린 멜로드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">심야카페 시즌1 : 비긴즈(2020) <span style=\"font-size: 18px;color: #000;\">신주환, 송원엽, 박시우 주연</span></p><p>밤 12시부터 해 뜰 때까지 운영하는 독특한 심야카페 이야기를 그린 웹드라마</p>\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">168계단 모노레일</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=975&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">이바구공작소</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=58&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">원조할매낙지</p>낙지, 곱창, 새우 그리고 당면과 갖은 채소를 넣고 매콤한 양념에 한소끔 끓여낸 낙곱새. 잘 졸여진 양념에 부추를 얹어 흰밥에 슥슥 비벼 먹으면 두 세 그릇은 뚝딱 없어진다. \n\n위치\n부산광역시 부산진구 골드테마길 10 / 골드테마거리 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">배틀 트립(2020) <span style=\"font-size: 18px;color: #000;\">SF9 인성, 다원, 찬희 출연</span></p>특정 주제로 여행을 다니면서 실속 있는 여행정보와 꿀팁을 알려주는 예능 프로그램\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">부산시민공원</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=354&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">서면 젊음의거리</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201003001000&uc_seq=460&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">칠백장 장인국밥</p>영화 ‘택시운전사’의 배경이었던 칠백장. 자리에 앉자마자 불판에 양념고기를 얹어 지글지글 구워준다. 저렴하면서도 맛깔난 음식에 기사식당 특유의 서민적 분위기가 눈길을 끄는 곳. \n\n위치\n부산광역시 동래구 미남로 67 /칠백장 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">택시운전사(2017) <span style=\"font-size: 18px;color: #000;\">송강호, 유해진, 류준열 주연</span></p>1980년 5월 18일, 군부세력에 맞서 저항하는 광주 시민군들의 민주화운동을 다룬 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">금강공원</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">동래읍성</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=409&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">칠성식당</p>문현동 곱창거리의 터주대감인 철성식당. 아직도 옛 건물을 그대로 사용하는 1호점은 70~80년대 분위기가 여전히 느껴진다. 쫄깃한 식감의 곱창과 매콤 달콤한 양념의 조화가 찰떡이다. \n\n위치\n부산광역시 남구 지게골로 7 / 칠성식당 본점 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">친구(2001) <span style=\"font-size: 18px;color: #000;\">유오성, 장동건 주연</span></p>세월의 흐름과 함께 변해버린 네 사람의 우정과 삶을 그린 범죄 액션영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">신선대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=279&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">이기대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=323&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대포장마차</p>고층 건물과 바다 사이에 줄지어 선 노란색 포장마차. 낭만적인 분위기에 저절로 발걸음을 멈추게 된다. 랍스터 한 마리를 다양하게 요리해 싱싱한 해산물과 함께 내는 랍스터 코스가 별미다.  \n\n위치\n부산광역시 해운대구 해운대해변로 236 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">어서와~한국은 처음이지?(2019) <span style=\"font-size: 18px;color: #000;\">핀란드 친구 빌푸, 빌레, 사미 출연</span></p>한국 거주 외국인이 자신의 모국 친구들과 함께 한국을 여행하는 예능프로그램\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">해운대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">동백섬</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=284&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">원조짚불곰장어 기장외가집</p>짚에 불을 붙여 1500도 고온에서 순식간에 구워낸 덕에 담백하고 부드럽다. 코끝으로 번지는 은은한 짚불향이 식욕을 돋운다. 기장 앞바다에서 잡아 올린 싱싱한 곰장어를 가장 특별하게 먹는 법.\n\n위치\n부산광역시 기장군 기장읍 공수2길 5-1 / 원조짚불곰장어기장외가집 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">식샤를 합시다 3 : 비긴즈(2018) <span style=\"font-size: 18px;color: #000;\">윤두준, 백진희 주연</span></p>주인공이 친구와 재회한 후 스무 살 그 시절의 음식과 추억을 공유하며 상처를 극복하는 드라마\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">아난티타운</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=281&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">해동용궁사</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1182&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "337415",
+    "name": "안적사(부산)",
+    "lat": 35.2142766822,
+    "lng": 129.169888882
+  },
+  "collectedAt": "2026-10-24T09:57:14.704Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:337415",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "안적사(부산)",
+      "relation": "same-place",
+      "originalText": "부산광역시 기장군 기장읍에 있는 사찰로 대한불교조계종 제14교구 본사 범어사의 말사이다. 원효와 의상스님의 수행설화가 함께 전해져 내려온 안적사는 예부터 기장현의 4대 명찰로 기록되어 왔으며 신라의 원효대사가 창건하였다. 광복 이후까지 소실 또는 폐사되었다가 중창되어 현재에 이르고 있다. 대웅전을 중심으로 삼성각, 설현당, 보림원 등 10동의 건물이 있다. 대웅전은 정면 3칸, 측면 3칸의 다포식 팔작지붕 건물이다. 1990년 무렵 지어졌으며, 아미타여래 좌상과 관음보살·대세지보살이 모셔져 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=337415&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:49.358Z",
+      "modifiedAt": "20251104144016"
+    },
+    {
+      "id": "heritage:31-21-0000290000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "안적사지장시왕도",
+      "relation": "nearby-only",
+      "distanceMeters": 15,
+      "coordinates": {
+        "lat": 35.2141431,
+        "lng": 129.1699083
+      },
+      "originalText": "안적사 지장시왕도는 면바탕에 채색으로 그린 불화로, 화면 중앙의 연화좌 위에 결가부좌한 지장보살을 중심으로, 좌우하단에 도명존자와 무독귀왕을 비롯한 시왕(十王)을 5위씩 배치하고, 상단에는 판관과 동녀, 선악동자와 사자, 우두귀졸·마두귀졸, 신장상 등을 배치한 군집도이다.\n  화면하단 중앙에 묵서된 화기를 통해 1919년에 제작되었음을 알 수 있는 본 작품은 인물의 얼굴 표현에 바림을 이용한 음영법이 많이 사용되고 있을 뿐 아니라, 바탕의 재질이나 채색을 통해 시대상을 느낄 수 있다\n본 작품은 근대에 만들어진 작품이기는 하나 독특한 표현기법과 섬세하고 화려함 이 돋보이는 보기 드문 작품으로 주목되는 문화유산자료이다",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000290000000",
+      "fetchedAt": "2026-10-24T09:54:49.563Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:31-21-0000300000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "안적사아미타극락회상도",
+      "relation": "nearby-only",
+      "distanceMeters": 15,
+      "coordinates": {
+        "lat": 35.2141431,
+        "lng": 129.1699083
+      },
+      "originalText": "1874년 제작된 이 작품은 조선후기 불화에서 근대불화로 전환되는 과도기적인 작품이다.\n 모두 11존으로 구성되어 있으며 아미타불을 중심으로 관음보살과 대세지보살이 좌우에 배치되어 있다. 문수보살과 보현동자가 그 앞에 배치되어 반원형 구도를 이루고 있으며, 뒤로는 6명의 나한들이 그려져 있다.\n 전면의 5존이 조선후기불화의 전통을 따르고 있는데 반해 나한상 6위는 근대불화의 성격을 엿볼 수 있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000300000000",
+      "fetchedAt": "2026-10-24T09:54:50.016Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    }
+  ],
+  "errors": []
+}

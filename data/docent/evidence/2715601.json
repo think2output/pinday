@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2715601",
+    "name": "가덕도",
+    "lat": 35.03987343745961,
+    "lng": 128.82839001873035
+  },
+  "collectedAt": "2026-10-24T09:57:12.899Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2715601",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "가덕도",
+      "relation": "same-place",
+      "originalText": "가덕도는 보개산이 바다 가운데 침몰되었다가 다시 솟아서 이루어졌다는 전설이 있는 부산 최대의 섬이다. 섬에는 해안선을 따라 동북쪽으로 눌차, 동선 사이를 이어주는 주변 백사장과 바닷가의 경관을 볼 수 있다. 또한 동남 쪽으로 대항 새바지의 넓은 자갈밭과 용두암을 시작으로 펼쳐지는 동백숲과 아동섬일대와 동두말, 가덕도 등대 주위의 깎아지른 듯한 기암괴석, 그리고 서남쪽으로 돌아 외양포 해수욕장, 두문의 길게 뻗은 솔섬, 천수말 코바위 등 가덕도는 해금강 절경을 방불케 한다. 가덕도는 역사의 섬이다. 선사시대부터 사람이 살기 시작하였고, 국토의 최남단에 위치하여 일본의 침략이 잦았던 곳으로 조선시대에는 군사기지와 곳곳에 성을 축조하였으며 병기를 만들던 곳집이 있었다고 한다. 일제강점기에 왜군이 외양포에 만든 군사기지와 인공동굴 등 아픈 역사의 현장을 남기고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2715601&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:29.181Z",
+      "modifiedAt": "20260309093631"
+    }
+  ],
+  "errors": []
+}

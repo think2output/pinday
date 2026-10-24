@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2605916",
+    "name": "초량 이바구길",
+    "lat": 35.1169,
+    "lng": 129.0367
+  },
+  "collectedAt": "2026-10-24T09:57:15.363Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:58",
+      "busan-theme:309",
+      "busan-theme:452",
+      "busan-theme:513",
+      "busan-theme:787",
+      "busan-theme:1414",
+      "busan-theme:2101",
+      "busan-theme:2869"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2605916",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "초량 이바구길",
+      "relation": "same-place",
+      "originalText": "부산시 동구의 초량 이바구길은 부산의 역사와 문화를 담고 있는 테마 거리이다. 이곳은 일제강점기 부산항 개항을 시작으로 해방 후 피난민의 생활터였던 1950~60년대, 산업 부흥기였던 1970~80년대 부산의 모습을 고스란히 담고 있는 이야기의 보고다. 이바구길은 부산역 건너편에 자리한 부산 최초 물류창고인 남선창고 터에서 출발해 옛 백제병원 건물, 초량초등학교 담장에 설치된 이바구 갤러리, 우물터, 168 계단, 김민부 전망대, 당산, 망양로까지 이어져 있다. 이 중 김민부 시인의 전망대는 부산항을 조망하기 더없이 좋은 장소로 경치가 아름답기로 유명하다. 이바구길의 끝자락에 위치한 지상 2층 규모의 이바구공작소는 지역의 역사관 역할을 하며, 마을 자료관, 전망 데크 등을 운영하고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2605916&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:17.980Z",
+      "modifiedAt": "20260311100340"
+    },
+    {
+      "id": "heritage:79-21-0006470000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 구 백제병원",
+      "relation": "nearby-only",
+      "distanceMeters": 231,
+      "coordinates": {
+        "lat": 35.116353,
+        "lng": 129.039152
+      },
+      "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
+      "fetchedAt": "2026-10-24T09:52:07.235Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0003490000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 초량동 일본식 가옥",
+      "relation": "nearby-only",
+      "distanceMeters": 727,
+      "coordinates": {
+        "lat": 35.121881,
+        "lng": 129.041874
+      },
+      "originalText": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003490000000",
+      "fetchedAt": "2026-10-24T09:52:07.691Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:58",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "이야기로 피어난 어제의 기억 초량이바구길",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "부산항을 기준으로 근처에 보이는 산 중턱마다 죄다 빽빽하게 들어서 있는 주택들.\n정든 고향 남겨두고 부산으로 피난 온 사람들이 산으로 올라가 일군 마을. 일감만 있다면 부두로, 역으로, 국제시장으로 하루에도 수십 번을 오르내렸을 168계단.\n경상도 사투리도 모르던 사람들이 피워낸 이야기 길, 초량이바구길을 만나러 가자. \n\n<p class=\"font-size28 colorDarkBlue medium\">초량이바구길</p><p class=\"font-size20 medium\">옛백제병원 - 남선창고터 - 초량교회 - 168계단 -김민부 전망대 - 이바구공작소 - 장기려더나눔센터 - 유치환우체통 전망대</p>\n부산역을 빠져나오면 부산의 특별한 이야기가 시작된다. 부산역사 길 건너 좁은 골목길에서 만나는 옛백제병원과 남선창고터가 초량이바구길의 출발점이다. 웅장한 백제병원과 벽만 남은 남선창고터의 적벽돌에 세월의 흔적이 고스란히 묻어난다. 1920년대에 가장 화려하게 빛을 발했던 두 곳의 당시 상황이 머릿속에 그려지는 듯하다.\n\n\n\n외국인 선교사에 의해 최초로 세워진 초량교회를 찾아간다. 항일운동을 전개하고 신사참배에 반대하던 사람들의 집결지였다고 한다. 초량초등학교 담장을 따라가는 좁은 골목길에는 세월의 흔적이 가득 묻어난다. 저마다의 사진 속에 피난민의 희로애락이 비춰진다.\n\n\n\n도로도 없던 까꼬막 판자촌에 상수도가 있었을 리 없다. 168계단을 뛰어내려와 양동이에 물을 길어 끝이 없을 것 같은 계단을 다시 올라야 했겠지. \n터만 남은 우물과 긴 계단은 속절없이 흘러버린 세월의 무정함을 느끼게 한다.\n\n\n\n부산 출신의 천재시인 김민부를 기리는 김민부 전망대에서 잠시 숨을 돌리고 이바구공작소로 향한다. 이바구공작소는 초량 산복도로의 소소한 이야기를 전시하는 공간이다. 하늘과 맞닿을 듯 자리한 산복도로 마을에는 집집마다 사연이 많다. 거친 삶의 흔적을 담담히 전해주는 곳이다.\n\n\n\n평생 자신의 집 한 칸 마련하지 않고 가난한 피난민을 무료로 진료한 외과의사 장기려 박사. 의술이 아닌 인술을 베푼 그의 행적을 기리는 장기려더나눔센터에서 자발적 가난의 숭고함을 배운다. 시내버스가 다니는 산복도로를 만나는 지점 끝에 자리한 유치환우체통전망대에서 부산항을 조망하며 초량이바구길의 여정을 마감한다.\n\n세월이 느껴지는 골목마다 저마다의 이야기를 꽃피운다. 이야기를 따라가다 보니 이제 ‘이바구’가 이야기라는 걸, ‘까꼬막’이 오르기 힘든 고갯길이라는 걸 알게 된다.\n초량이바구길은 피난민들이 그러했듯, 멈추지 않고 계속되는 우리네 삶의 여정이다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=58&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:309",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "이야기가 있는 알짜배기 여행, 부산원도심 스토리투어",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "여행에도 다양한 테마가 있다. \n맛집을 찾아 떠나는 식도락 여행, 다양한 경험을 위한 체험여행 등 그런데 이 모든 것을 아우르는 여행지가 있다. 바로 부산원도심 스토리투어인데 여기에는 먹거리, 볼거리뿐만 아니라 부산의 옛 이야기가 구석구석 숨어있다. 투어는 중구, 서구, 동구, 영도구 일대를 탐방하는 코스로 구성돼 있다. 오랜 시간 해당 지역에서 살아온 어르신들의 생생한 해설을 들을 수 있다는 독특한 장점도 있다. \n원도심에 추억이 있는 분들에게는 옛 향수를, 자라나는 아이들에겐 새로운 경험을 선사해 줄 이야기가 있는 여행을 만나보자.\n<p class=\"font-size20 colorDarkBlue bold\">초량이바구길</p>\n부산 동구에 위치한 이바구길에서는 근대 부산의 흔적을 살펴볼 수 있다. 과거 개항 중심지였던 옛 영광을 드러내듯, 분위기 있는 카페로 변모한 옛 백제병원과 초량교회는 근대건축 양식을 그대로 간직하고 있다. 김민부전망대나 유치환우체통에서 내려다보는 부산항의 풍경은 갑갑했던 가슴을 한 번에 탁 트이게 할 만큼 시원하다. 산복도로 위아래를 연결하는 168계단은 옛 동네의 정감 있는 분위기를 그대로 간직하고 있다. 가파른 계단을 수도 없이 오르내리는 주민들을 위해 개통된 모노레일은 이곳을 찾는 이들에게 이바구길만의 특색 있는 체험거리를 제공한다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">감천문화마을/피란수도길</p>\n부산 사하구와 서구는 한국전쟁이 남긴 흔적 중 피란민의 삶을 피부로 느낄 수 있는 곳이다. 꼬불꼬불한 골목을 걸으며 다양한 벽화를 즐길 수 있는 곳으로 잘 알려진 감천문화마을은 원래 한국전쟁 당시 피란민이 산 능성에 다닥다닥 집을 짓고 살면서 생겨났다. 아픈 흔적만 남아있던 동네가 주민들과 예술가들의 노력으로 예술이 넘쳐나는 감성골목으로 변모하였다. 무덤 위라도 땅만 있으면 집을 짓고 살아야했던 비석문화마을도, 자갈치 막노동의 삶을 사진에 담은 최민식작가의 갤러리도, 그리고 대통령의 관저였던 임시수도기념관도 이제는 모두 피란수도 부산의 소중한 유산이 되었다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">용두산길/국제시장길</p>\n중구는 한마디로 부산의 과거와 현재가 공존하는 공간이다. 개항시기 세워진 초량왜관을 비롯해 일제 영향을 받은 부산데파트, 근대 부산의 모습을 생생히 느낄 수 있는 부산근대역사관과 대각사까지, 중구만큼 근대 부산의 역사를 잘 보여주는 곳도 없어 보인다. 여기저기 돌아다니다 시장기가 느껴지면 곧장 국제시장으로 가보자. 피란민의 생업 전선이기도 했던 시장 여기저기에는 요기하기 좋은 음식이 가득하다. 그 먹거리 하나하나에도 애달프고 서글픈 사연이 서려 있는 것만 같다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">영도다리길/흰여울마을길</p>\n배를 든든히 채웠다면 부산의 또 하나의 상징 영도다리로 가보자. 중구와 영도구를 잇는 영도다리는 전국 최초 도개교로 피란민의 상봉장소이기도 했다. 과거에는 배를 수리하던 곳이 많았는데 이곳에서 ‘깡깡’ 소리가 난다고 해 ‘깡깡이길’이라 부르기도 했다. \n영도 해안절벽을 따라 형성된 흰여울마을길은 단골 영화촬영 장소로 이미 입소문이 나 있어 사계절 내내 방문객이 끊이지 않는 곳이다. 마을 아래 해안산책로 걸으면 바로 앞 영도 앞바다가 품속으로 밀려들어올 것만 같다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=309&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:452",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "남파랑길 부산구간 1~5코스",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "부산 오륙도에서 전남 해남 땅끝마을까지 이어지는 남파랑길은 총길이 1,463km로 남해안 장거리 탐방로이다. 이 중 부산의 자연과 도심을 가로지르는 남파랑길 부산구간에서는 바닷길과 숲길, 강길과 도심길 그리고 마을길로 이어지는 아름다운 부산의 길을 만나볼 수 있다.\n\n<p class=\"font-size28 colorDarkBlue medium\">남파랑길 부산구간</p>\n<p class=\"font-size20 colorDarkBlue medium\">1코스(23.2km)</p><p class=\"font-size20 medium\">오륙도해맞이공원 - 신선대 - 웹툰이바구길 -유치환우체통 - 초량이바구길 - 상해거리</p>\n<p class=\"font-size20 colorDarkBlue medium\">2코스(19.5km)</p><p class=\"font-size20 medium\">태종대 - 감지해변 - 절영해안산책로 - 깡깡이예술마을 - 영도대교 - 자갈치시장</p>\n<p class=\"font-size20 colorDarkBlue medium\">3코스(17.1km)</p><p class=\"font-size20 medium\">송도해수욕장 - 송도해안볼레길 - 암남공원</p>\n<p class=\"font-size20 colorDarkBlue medium\">4코스(21.0km)</p><p class=\"font-size20 medium\">몰운대 - 다대포해수욕장 - 고우니생태길 - 장림포구</p>\n<p class=\"font-size20 colorDarkBlue medium\">5코스(18.7km)</p><p class=\"font-size20 medium\">을숙도 - 명지오션시티 - 신호공원 - 신호항</p>\n남파랑길 부산구간 제 1코스는 깎아지는 해안절벽과 바다에 줄지어 서있는 오륙도를 한 눈에 담을 수 있는 ‘오륙도 해맞이공원’부터 시작한다. 항구의 컨테이너 박스가 레고 블록처럼 내려다보이는 ‘신선대’를 지나 다양한 만화 캐릭터를 만날 수 있는 ‘웹툰이바구길’에 이른다. 계단 사이로 낯익은 소 그림이 보인다면 부산에서 마지막 시간을 보낸 화가 이중섭을 기리는 ‘이중섭 거리’에 닿았다는 뜻이다. 산복도로 중간에서 만나는 신사와 빨간 우체통, 편지를 우체통에 넣으면 1년 후에 도착하는 ‘유치환우체통’이다. 산복도로에서 바라보이는 부산항과 영도바다가 아름다운 곳이다. 모노레일이 깜직한 ‘168계단’을 내려와 이어지는 길에 고소한 만두냄새가 여행자를 유혹한다. 홍등이 고운 부산 속 작은 중국 ‘상해거리’에 도착한다.\n\n※ 168모노레일 정비로 인한 운행중지 2023.3.11.~완료시\n\n\n제 2코스는 영도를 관통한다. 천혜의 자연 환경 ‘태종대’를 돌아 몽돌자갈이 곱게 깔린 ‘감지해변’을 지난다. 저 멀리 큼직한 배가 둥실둥실 떠있는 영도 바다를 배경으로 인생샷을 건질 수 있는 ‘절영해안산책로’에서 잠시 쉬어가도 좋겠다. 자갈치 시장이 가까워 보일 무렵 영도의 고된 역사를 품은 ‘깡깡이예술마을’이 나타난다. 우리나라의 근대 조선업의 역사를 담은 이 곳을 거쳐 피란민의 사연을 고스란히 간직한 ‘영도다리’를 건넌다.\n제 3코스의 시작 ‘송도해수욕장.’ 아찔한 바다 위 절경을 선사하는 스카이워크와 케이블카로 다시 태어났다. 구름산책로에서 송도 해변을 가로질러 ‘송도해안볼레길’로 접어들면 해안절벽을 따라 이어진 붉은색 철제계단이 여행자를 부른다. 발을 디딜 때마다 나는 ‘탕탕’ 철소리가 해안에 부서지는 파도소리와 절묘한 조화를 이룬다. 계단은 녹음이 우거진 ‘암남공원’까지 이어진다.\n제 4코스는 넓고 고운 백사장을 자랑하는 ‘다대포해수욕장’, 그리고 그 해변의 끝에 자리한 ‘몰운대’가 출발점이다. 끝없이 펼쳐진 바다를 한없이 바라보고 있으면 마치 무인도에 온 느낌마저 주는 이곳은 자연이 선사하는 경이로움에 감사의 마음이 절로 이는 곳이기도 하다. ‘고우니생태길’의 갈대소리 들으며 해안산책로로 접어든다. 노을 진 하늘 아래 알록달록 ‘장림포구’가 아름답게 빛나고 있다.\n제 5코스는 낙동강 사이를 지키는 ‘을숙도’에서 출발한다. 네모반듯하게 자리 잡고 있는 ‘을숙도 낙동강 에코센터’에서 을숙도의 이모저모를 알아볼 수 있으니 이곳을 먼저 들러보자. 을숙도에는 습지부터 분홍분홍한 핑크뮬리, 부산현대미술관까지 볼거리가 가득하다. 을숙도에서 명지오션시티로 이어지는 코스는 신호항에서 마무리된다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=452&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:513",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "역동의 초량, 그 이야기를 담다",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "부산! 명소가 많아도 너무 많다. 고민할 거 없이 부산의 관문 부산역에서 여정을 시작해 보자. 역을 빠져나와 곧장 길을 건너면 차이나타운과 텍사스 거리가 눈길을 끈다. 현대사를 관통하는 부산의 역사가 살아 숨 쉬는 초량이바구길의 시작이 여기서 멀지 않다. 길은 꼬불꼬불 미로처럼 엮인 달동네를 가로지르며 부산의 과거 속으로 여행자를 안내한다.\n이바구길은 부산의 역사와 전통 그리고 잔잔한 부산 시민들의 삶이 한데 어우러진 더없이 좋은 도심 하이킹 코스다. 2km 남짓한 길은 (옛)백제병원부터 이바구공작소가 있는 까꼬막까지 이어진다. 이바구는 이야기를 뜻하는 경상도 사투리인데 이런 이름을 붙여 놓은 걸 보니 길 위에 깃든 스토리가 하나둘이 아닌 듯하다.\n시작은 (옛)백제병원부터다. 한눈에 봐도 족히 60~70년은 돼 보이는 건물은 과거 일본군과 미군 등이 사용하던 곳이었다. 현재는 개성 넘치는 디자인 숍과 아담한 갤러리 등이 들어서 있다. 건물 바로 옆에는 예전 경원선(서울~원산)이 개통되기 전 함경도산 명태를 보관하던 남선창고의 흔적이 남아 있다.\n길은 서서히 고개를 들며 좁다란 골목으로 이어지고 담장갤러리가 있는 비탈로 연결된다. 전시된 사진과 시구를 보고 있으면 과거 피난민과 노동자들이 집과 일터를 오고 가며 하루를 시작하고 끝마쳤을 모습이 자연스레 연상된다. 빛바랜 흑백 사진은 두려움에 떨었을 피난과 고단했을 삶을 오롯이 증거하며 과거로의 여행을 돕는다.\n동구 인물사 담장 앞, 길을 사이에 두고 피난시절 이승만 전 대통령이 예배를 보던 초량교회가 긴 시간의 터널을 지나 당당히 그 모습을 유지하고 있다. 특히 이 교회는 1892년 한강 이남에 최초로 세워진 교회로 3.1 운동 당시 부산지역에서 큰 역할을 한 것으로 잘 알려져 있다.\n여기서부터 이바구길은 본격적으로 달동네 여행을 시작한다. 시간의 흐름과는 무관해 보이는 좁은 골목이 얽히고설킨 동네 풍경은 마치 영화 세트장을 재현한 듯 복고적이다. 서민들의 가슴 시린 애환이 배어 있는 주변 풍경은 70~80년대 정취를 물씬 풍긴다. 이바구길을 따라가다 보면 한국 전쟁 당시 몰려든 피난민들이 산기슭에 집을 지은 역사부터 부둣가 노동자가 늘면서 따닥따닥 붙은 집들이 늘어난 현장까지 우리 현대사의 애환을 고스란히 목격할 수 있다.\n멀리서 봐도 수직에 가까운 위험천만해 보이는 계단이 눈에 들어온다. 168계단이다. 아직도 이런 풍경이 남아 있었나 하고 놀라움과 감탄 섞인 숨소리가 터져 나온다. 계단 바로 아래에는 과거 400여 명의 주민들이 공동으로 이용했다는 우물이 여태 마르지 않고 남아 있다. 어깨를 촘촘히 붙이고 작은 집들에 살던 우리의 할아버지, 아버지들은 멀리 뱃고동 소리가 나면 절벽처럼 보이는 이 계단을 단숨에 뛰어내려왔다고 한다. 배가 입항을 해야 일거리가 생겼기 때문이다. \n\n\n\n\n이제 이바구길은 김민부 전망대, 당산을 지나 산복도로와 합류한다. 산허리를 부드럽게 감싸며 돌아 나가는 길을 따라 걷기 편한 데크가 마련돼 있다. 부산항의 아름다움을 만끽하며 걸을 수 있는 코스여서 발걸음이 절로 가벼워진다. 여기서 이바구길은 전망 좋기로 유명한 유치환우체통으로 향한다. 1년 뒤 도착하는 느린 우체통 앞에 서면 발아래 펼쳐진 부산항 풍광과 병풍을 친 것 같은 산세의 조화 앞에 자연스레 탄성을 내뱉게 된다.\n\n어느새 시간은 전쟁의 아픔을 딛고 경제개발의 고단함을 넘어 역사와 문화가 역동하는 새로운 부산을 이렇듯 멋지게 만들어 놓았다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=513&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:787",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "6.25전쟁 70주년 ‘기억 함께 평화’",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "<p class=\"font-size23 colorDarkBlue bold\">6.25전쟁, 잊을 수 없는 상처</p>일제강점기를 오롯이 버텨낸 우리 민족은 광복의 기쁨을 충분히 만끽하지도 못한 채 6.25라는 비극적인 전쟁에 맞닥뜨리게 됩니다. 70년이나 지난 일이지만, 1950년 6월 25일의 그 새벽이 어제 일처럼 생생한 분들에겐 아직도 현재진행형인 역사의 한 자락이겠지요.\n북한군의 기습남침으로 6.25전쟁이 시작되었고 우리 국군과 유엔군은 물론 어린 학도병까지 총을 메고 전쟁터로 나가야했습니다. 전쟁 발발 3일 만에 서울이 함락되었고 북한군은 남쪽으로 진격을 계속해 낙동강 부근까지 점령하게 됩니다. 인천상륙작전의 성공으로 서울수복과 압록강 진격의 기쁨도 맛보았지만, 중국군의 개입으로 한국국과 유엔군은 흥남철수작전과 1.4후퇴로 다시 38선 이남으로 물러나야 했습니다.\n3년간 지속된 한국전쟁 기간 동안 부산은 대한민국의 임시수도가 되었고 사람들의 긴 피란행렬은 끝도 없이 이어졌습니다. 가족들의 생사도 모른 채 뿔뿔이 흩어져 살아 온 피란민의 숨결이 고스란히 남겨진 이곳, 바로 부산입니다.\n<p class=\"font-size23 colorDarkBlue bold\">피란수도 부산</p>피란수도 부산을 상징하는 임시수도기념관은 한국전쟁 당시 대통령관저로 사용된 건물이었습니다. 붉은 벽돌로 지어진 2층 서양식 건물로 응접실과 집무실 등 당시 실내구조를 그대로 재현하고 있습니다. 당시 대통령과 비서진들은 이곳에서 국내외 업무를 담당하며 혼란스러운 현실을 추스르려 노력했겠지요. 전시관에는 1023일간의 임시수도 당시 부산의 정치, 경제, 그리고 실생활을 엿볼 수 있는 많은 자료들이 전시되어 있습니다. 관저 내 근무하던 사람들이 모이는 곳이었던 거실에는 피란수도 부산에서 척박한 삶을 꾸려나간 피란민들의 삶이 전시되어 있습니다. 판자촌에 살며 생계를 위해 이것저것 닥치는 대로 일할 수밖에 없었던 삶은 그들의 또 다른 전쟁터가 아니었을까요.\n\n<p class=\"font-size20 colorDarkBlue medium\">임시수도기념관</p>전화 051-244-6345\n주소 부산광역시 서구 임시수도기념로 45\n이용시간 09:00 ~ 18:00 \n휴무일 1월 1일, 매주 월요일\n\n\n\n<p class=\"font-size23 colorDarkBlue bold\">초량이바구길 168계단</p>피란민들이 한꺼번에 부산으로 몰려들자 부산의 인구는 포화상태가 될 수밖에 없었다고 해요. 한국전쟁 전 28만이던 인구가 전쟁 후 거의 100만에 가까웠다니 그 많은 사람들이 터를 잡고 살 만한 땅은 당연히 모자랄 수밖에 없었겠지요. 도심의 산 중턱 비탈을 따라 판자로 이은 집이 다닥다닥 수도 없이 생겨났고, 그 중 제일 인구가 많았던 곳 중의 하나가 초량이바구길 입니다. 올려다보기만 해도 아찔한 168계단이 보이네요. 일감을 구하기 위해 하루에도 열 두 번씩 이 계단을 오르내려야 했던 피란민들의 삶은 그렇게 고되게 이어졌습니다. 고단한 하루 일과를 끝내고 집으로 향하는 길, 뽀얀 막걸리 한잔이 피란민들에게는 큰 위로가 되었을 겁니다. 계단 끝에서 만나는 막걸리 가게가 참으로 반갑습니다.\n\n\n\n\n<p class=\"font-size23 colorDarkBlue bold\">워커하우스/유엔기념공원</p>워커하우스는 미8군 사령관이었던 워커 장군이 연합군의 작전을 지휘하며 임시사령부 건물로 사용했던 집입니다. 북한군의 맹렬한 공격에 낙동강까지 밀려내려 온 한국군과 연합군에게 낙동강 방어선을 지키는 것만큼 중요한 일은 없었습니다. 워커 장군의 진두지휘 아래 낙동강전선을 지켜냄으로써 인천상륙작전이 성공할 수 있었던 것이죠. 부경대학교 내 워커하우스에서 그동안 많이 알려지지 않았던 한국전쟁의 주역 워커 장군의 생애와 정신을 만날 수 있어요.\n6.25전쟁 70주년을 맞아 세계 각국 참전용사들의 영혼이 잠들어 있는 유엔기념공원을 방문해 보는 것도 그 의미가 남다를 것 같습니다. 워커하우스에서 걸어서 15분 정도의 거리에 위치해 있어 편리한 접근이 가능합니다. 국군 전사자 묘역을 포함하여 캐나다, 미국 등 7개국의 묘역이 있고 위령탑, 기념비, 기념관 등이 있습니다. 대한민국을 수호하기 위해 고귀한 생명을 바친 모든 희생자를 추모하며 경건한 자세로 감사의 마음을 전해보는 건 어떨까요?\n\n<p class=\"font-size20 colorDarkBlue medium\">부경대학교 워커하우스</p>부산광역시 남구 용소로 45\n<p class=\"font-size20 colorDarkBlue medium\">유엔기념공원</p>부산광역시 남구 유엔평화로 93\n\n3년이란 시간동안 한반도를 폐허로 만들고 남북한 모두에게 잊을 수 없는 상처를 남긴 6.25전쟁. 조국을 지키겠다는 굳은 의지로 두려움에 맞서 용감히 싸운 국군과 한 번도 들어본 적 없는 나라의 국민을 지키기 위해 기꺼이 참전한 유엔군의 희생과 헌신에 감사드립니다.\n숭고한 그 정신을 ‘기억’하고 ‘함께’하며 덕분에 누리는 이 ‘평화’를 끝까지 지켜나가겠습니다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=787&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1414",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "드라마 촬영지 순례(ft.재벌집 막내아들)",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "영화나 드라마에서 부산의 풍경을 발견하는 건 이제 너무나 흔한 일이 됐습니다. 바다와 항구, 골목길, 산복도로 등 부산에서만 만날 수 있는 독특한 장면과 분위기는 영화보다 더 영화 같고 드라마보다 더 드라마 같으니까요.\n\n인기리에 방영된 드라마 '재벌집 막내아들'에도 부산이 등장합니다.  칸 국제영화에서 감독상을 받은 박찬욱 감독의 영화 '헤어질 결심'에도 부산이 등장하지요. 오늘은 이처럼 영화나 드라마에 등장한 부산을 소개합니다. 마치 영상 속 주인공처럼 부산을 누비며 부산의 매력에 흠뻑 취해보시기 바랍니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘재벌집 막내아들’ 정심재</p>20%가 넘는 시청률을 기록하며 주말 안방을 사로잡은 드라마 '재벌집 막내아들'. 실제 우리나라에서 있었던 굵직한 경제 사건들을 배경으로 진행되는 재벌가의 암투가 손에 땀을 쥐게 할 만큼 흥미진진합니다. 특히 주인공 진양철 회장 역할을 맡은 이성민 배우의 카리스마 넘치는 연기가 회를 거듭할수록 드라마에 빠져들게 합니다.\n\n진양철 회장이 살고 있는 '정심재'란 집도 눈길을 끌었습니다. 넓은 마당에 단아하면서도 기품 있는 2층 양옥집이 진짜 재벌이 사는 저택처럼 보였기 때문인데요. 부산에 실제 건물이 있습니다. 바로 남천동 KBS 뒤편에 있는 부산시장 옛 관사인데요, 보통의 집과 달리 입구에서 산책로를 따라 제법 걸어 올라가야 건물이 나타날 만큼 부지가 상당히 넓습니다. 2만 그루가 넘는 나무들이 심어져 있어서 집이라기보다 수목원 같은 느낌도 듭니다. 정원 한편에 마련된 전망대에 서면 해운대 마린시티와 광안대교도 내려다보입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘헤어질 결심’ 초원아파트</p>제75회 칸 영화제에서 감독상을 수상한 박찬욱 감독의 영화 '헤어질 결심'은 부산을 주 무대로 촬영됐습니다. 워낙 많은 장소가 영화에 등장하기 때문에 일일이 다 열거하기도 쉽지 않은데요. 그 중에서도 추격신에 등장했던 수많은 계단과 좁은 골목길은 부산에서만 만날 수 있는 독특한 풍경이라 관객들의 눈길을 끌었습니다. 지금은 많은 여행자들에게 알려진 초량 이바구길인데요. 한국전쟁 때 많은 피란민들이 부산으로 모여들면서 자연스럽게 만들어진 산복도로 문화가 고스란히 남아 있는 곳입니다.\n\n초량이바구길과 망양로 사이에 있는 초원아파트 주변은 추격신의 하이라이트였죠. 너무 힘들어 널브러질 수밖에 없는 긴 계단과 벽화가 그려진 골목길, 형사가 결국 용의자를 체포하는 옥상까지. 모두가 부산이기에 가능했던 장면이었습니다. 마치 80년대로 되돌아간 듯한 풍경들이 아직도 많이 남아 있는데다 부산항이 한눈에 내려다보이는 옥상에 차를 주차시켜 놓은 진귀한 모습까지 만날 수 있는, 부산여행의 보물과도 같은 장소입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘파친코’ 태종대</p>애플티브이 오리지널 드라마 '파친코'는 4대에 걸친 재일조선인 가족들의 이야기를 통해 격동의 시대를 생생하게 보여주었습니다. 주인공인 '선자'의 고향이 부산으로 그려지면서 부산 곳곳이 드라마에 등장했었는데요. 드라마 첫 회에 등장했던 선자의 고향 바다는 바로 영도에 있는 태종대입니다. 어린 선자가 물질을 하던 곳은 태종대 내에 있는 태원자갈마당이란 곳인데, 자갈밭과 암벽, 울창한 숲과 푸른 바다가 어우러진 장소로 지금도 많은 관광객들이 찾는 곳입니다.\n\n할머니가 된 선자가 아들과 함께 고향으로 돌아와 달려간 곳은 감지해변입니다. 고향에 대한 그리움이 담긴 이 장면 속에 등장한 조개구이촌은 감지해변의 명물이지요. 싱싱한 해산물을 파도소리를 들으며 먹을 수 있어서 부산 사람들도 즐겨 찾는 곳입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘커튼콜’ 죽성드림세트장</p>시한부 할머니의 행복한 여생을 위해 비밀 연극을 펼치는 이야기 '커튼콜'도 요즘 핫한 드라마죠. 주인공인 자금순(고두심) 할머니의 손녀로 등장하는 세연(하지원)이 이복 사촌 동생(강하늘)을 데리고 개인 화실로 가는 장면이 있는데요. 푸른 바다를 배경으로 서 있는 이국적인 건물이 무척 인상적이었죠? 바로 기장에 있는 죽성드림성당입니다.\n\n2009년 드라마 '드림' 촬영을 위해 만든 세트장이었지만 해안 절벽 위에 서 있는 예쁜 성당 건물이 너무나도 예뻐서 지금까지 관광객들의 사랑을 듬뿍 받고 있습니다. 로맨틱한 성당 뒤로 붉은 태양이 불쑥 솟아오르는 아침 풍경은 흡사 멜로 영화의 한 장면과도 같습니다. 구름 없는 맑은 밤에는 초롱초롱한 별들도 볼 수 있어서 밤낮을 가리지 않고 관광객들이 찾는 기장의 대표 명소입니다.﻿\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1414&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2101",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "여기 가려고 기차 예매함",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_01.jpg\" alt=\"기다림X 여행O 자투리 시간까지 남김없이 Get! 여기 가려고 기차 예매함\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_02.jpg\" alt=\"Theme. 과거+미래. 도보 15분내로 끝내는 부산역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1900&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_03.jpg\" alt=\"여행객들을 위한 원데이클래스가 있다?.부산 트래블라운지 원데이 클래스. 부산역 1번출구 > 도보 7분. 부산 트래블라운지가 말아주는 알찬 클래스로 기다리는 지루함 완전 타파!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=415&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_04.jpg\" alt=\"아아...보인다, 부산의 역사가 보인다! 차이나타운. 부산역 1번출구 > 도보 7분. 한국의 역사와 이국적 풍경을 모두 느낄 수 있는 부산 속 중국. 그 오묘한 분위기에 풍덩!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_05.jpg\" alt=\"추억을 찍어드려요. 이바구길 사진관. 부산역 3번출구 > 도보 5분. 과거의 향수가 잔뜩 묻어나는 사진관에서 부산여행 추억 한 컷 찰칵!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=58&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_06.jpg\" alt=\"엄마, 길이 말을 해요! 초량 이바구길. 부산역 1번 출구 > 도보 12분. 쌓여가는 세월 속 불어난 이야기보따리! 이바구길로 만나보는 생생한 근대사\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2082&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_07.jpg\" alt=\"오션부까지 신경 쓴 홍보관, 본 적 있어? 북항재개발 홍보관. 부산역 9번출구 > 도보 12분. 깔끔한 홍보관에서 부산항의 역사와 미래 비전을 한 번에. 부산의 미래? 완벽하게 이해 완료!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2086&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_08.jpg\" alt=\"도서관이 이렇게 예뻐도 되나요? 북두칠성 도서관. 부산역 9번 출구>도보 10분 예쁜 인테리어와 편안한 분위기로 북항의 랜드마크가 된 도서관 & 문화복합공간\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2081&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_09.jpg\" alt=\"화려한 조명에 흠뻑. 북항 친수공원. 부산역 9번출구 > 도보 9분. 밤이 깊을수록 더 빛이 나는 풍경! 심야 열차 타기 전 경치 감상하며 산책 한 바퀴\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_10.jpg\" alt=\"Theme. 자연+예술. 도보 15분 내로 끝내는 구포역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=2080&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_11.jpg\" alt=\"국수 만들기가 이렇게 재밌다니! 구포국수체험관. 구포역>도보 2분. 아이들이 좋아하는 오감만족 촉감놀이, 제면체험 등 다양한 놀이로 즐겨보자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2085&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_12.jpg\" alt=\"여기서는 우리 모두가 예술가. 문화예술플랫폼. 구포역 > 도보3분. 언제든지 만나볼 수 있는 가장 가까운 문화예술. 일상 속 예술 경험을 원한다면 방문 필수!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=363&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_13.jpg\" alt=\"없는 거 빼고는 다 있어! 구포시장. 구포역 > 도보 13분. 없는 게 없는 이곳. 전국 최대 오일장의 명성을 잇는 풍성한 즐길 거리!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1676&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_14.jpg\" alt=\"부산은 리버 뷰도 엄청나잖아? 금빛노을브릿지. 구포역>도보 15분 부산에서 즐기는 최적의 리버 뷰 최고의 일몰과 야경을 한 번에 즐기자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1434&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_15.jpg\" alt=\"상쾌하게 리프레시 완료! 화명생태공원.구포역 > 도보 15분. 낙동강변 딸 ㅏ조성된 깔끔한 산책로에서 자연과 함께 마음껏 힐링 산책\"></a></td></tr></table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2101&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2869",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 산복도로 명소탐방, 이색 코스 ‘아트 앤 네이처로드’",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "초량 이바구길",
+        "review": "pending"
+      },
+      "originalText": "<p class=\"font-size20 colorGray medium\">글, 사진 : 고부기 크리에이터 6기 김용범</p>\n\n여러분에게 부산은 어떤 도시인가요? 부산은 바다의 아름다움이 잘 알려진 도시이지만 그에 못지 않게 산과 함께하는 도시의 풍경도 아름다운 곳입니다.\n\n이번에 그 아름다움을 알려드리기 위해 산복도로 명소를 소개해드리려 합니다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 코스 소개</p>\n오늘의 산복도로 여행은 대티역에서 시작해 <사계의 거리 - 아미드림 도서관 - 감천문화마을 - 카페만디 – 무지개산책로>에서 마무리하는 코스에요. 이름하여 아트 앤 네이처로드 산복도로 여행입니다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 대티역 사계의거리</p>\n대티역4번 출구에서 우측방향으로 가시다 보면 굴다리가 나옵니다. 평범했던 굴다리가 생생한 벽화로 어우러져 이제는 걷고 싶은 주민 친화적인 공으로 바뀌었어요. 여기가 오늘 여행의 시작점입니다.\n\n\n<h5 class=\"tit_con\">운영안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>위치</p><span>부산광역시 사하구 괴정동 1238-277</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 서구 아미드림도서관</p>\n대티역에서 사하구 14번 마을버스를 타고 산복도로를 올라 부산 아미드림 도서관에 도착할 수 있어요. 산복도로를 걷기 전 잠시 머물며 쉬어가기 좋은 곳이에요!\n<p class=\"colorGray\" style=\"font-size: 16px; text-align: right;\">(사진 6 출처 : 고부기 6기 김현경)</p>\n\n아미드림도서관은 개관한지 1년 정도 된 신생 문화공간으로 남녀노소 모두 방문하여 쉬어가기 좋은데요. 특히 2,3층 야외 도서관이 아름다운 곳으로 산복도로의 풍경을 한눈에 바라보며 쉴 수 있어요.\n\n\n<h5 class=\"tit_con\">운영안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>위치</p><span>부산 서구 까치고개로80번길 10</span></li><li><p>운영시간</p><span>화~금 09:00~22:00 / 토 09:00~18:00 / 일 09:00~17:00\n※ 매주 월요일 및 법정공휴일 휴관</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 감천문화마을</p>\n아미드림도서관으로부터 도보 20분이면 감천 문화마을에 도착할 수 있어요. 이 곳은 부산을 대표하는 관광지 중 한 곳으로 내외국인에게 인기 많은 곳으로 관광객들의 발길이 끊이지 않는 곳이죠!\n유명한 관광지인 만큼 마을 골목 곳곳마다 숨겨진 포토존들과 다양한 상점과 먹거리, 볼거리로 시선을 사로잡아요.\n\n\n<h5 class=\"tit_con\">운영안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>위치</p><span>부산광역시 사하구 감내2로 203 감천문화마을안내센터</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 리틀프린스하우스</p>\n\n감천문화마을에는 어린왕자와 관련된 전시관이 하나 있는데요! 바로 리틀 프린스 하우스랍니다.\n1층부터 옥상까지 되어 있는 구조로 층마다 각기 다른 컨셉의 어린왕자 전시를 만날 수 있는 곳이에요. 어린왕자 관련 기념품샵도 운영중이라 함께 방문하여 구경하기에도 좋답니다.\n\n\n<h5 class=\"tit_con\">운영안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>위치</p><span>부산 사하구 감내1로 200</span></li><li><p>운영시간</p><span>매일 9:30 – 18:30 (입장마감 18:00)</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 카페 만디</p>\n<p class=\"colorGray\" style=\"font-size: 16px; text-align: right;\">(사진 18 출처 : 부산관광아카이브)</p>\n\n다음으로 가볼 곳은 이름부터 그 높이가 느껴지는, 카페 만디입니다. ‘만디’는 부산 경상도의 방언으로 산꼭대기를 산만디라고 부르는데요. 높은 언덕에 위치한 카페라는 의미를 가지고 있어요.\n카페 만디는 감천문화마을로부터 대중교통으로 25분정도면 도착할 수 있답니다.\n<p class=\"colorGray\" style=\"font-size: 16px; text-align: right;\">(사진 19, 20 출처 : 부산관광아카이브)</p>\n\n카페 만디의 매력은 바로 이 마운틴뷰입니다. 큰 통창 앞으로 산이 배치해 있어 개방적인 시야가 매력적인 카페예요. 특히 야외자리도 있어서 가을의 정취를 느끼기 좋은 곳이랍니다.\n물론 커피 맛도 좋습니다. 카페만디의 시그니처 '만디라떼'를 맛보시며 잠시 여행의 여유를 즐겨보는 건 어떠실까요?\n\n\n<h5 class=\"tit_con\">운영안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>위치</p><span>부산 사하구 오작로 104-7 1, 2층</span></li><li><p>운영시간</p><span>12:00 – 21:30 (라스트오더 21:00) / 매주 수요일 정기휴무</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">- 무지개 산책로</p>\n산복도로 탐방의 마지막 장소는 카페 만디의 뒤쪽으로 펼쳐진 무지개 산책로예요.\n\n한쪽으로는 형형색색의 무지개 산책로가, 맞은 편으로는 아름다운 해바라기 벽화가 그려져 있어 산책을 즐기며 여행을 마무리하기 좋아요!\n\n골목골목 매력이 가득 담겨있던 부산 산복도로 여행! 여러분들도 이번 부산여행에서는 산복도로의 다양한 명소들을 함꼐 즐겨보시는 건 어떨까요?\n\n\n<p class=\"font-size20 colorBlack medium\">Q&A</p>\n<span class=\"colorBlack medium\">Q. 부산 산복도로 탐방할 때 팁 알려주세요!</span>\n\nA. 산복도로 탐방시에는 많이 걸을 수 있고 언덕과 골목이 많기 때문에 편한 신발을 신고 방문하시는 것을 추천드립니다. 추가로 지금 알려드린 코스 외에도 아미비석문화마을, 초량 이바구길, 민주공원 등 산복도로의 다양한 여행지도 여행 코스로 추가하여 더 풍부한 구도심 여행을 즐겨보세요!\n&nbsp;\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2869&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2456837",
+    "name": "부산 영화의 전당",
+    "lat": 35.170794647,
+    "lng": 129.1270576924
+  },
+  "collectedAt": "2026-10-24T09:57:14.101Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:382",
+      "busan-theme:417",
+      "busan-theme:1015",
+      "busan-theme:1180",
+      "busan-theme:1190",
+      "busan-theme:1198",
+      "busan-theme:1200",
+      "busan-theme:1372",
+      "busan-theme:2601",
+      "busan-theme:2617",
+      "busan-theme:2790",
+      "busan-theme:2856"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2456837",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "부산 영화의 전당",
+      "relation": "same-place",
+      "originalText": "영화의 전당은 다양한 장르의 영화와 품격 있는 공연을 감상할 수 있는 곳으로, 부산을 대표하는 영상복합문화공간이다. 2011년 개관 이후 유네스코 영화 창의도시 최고 등급 획득, 영화관 최초 ‘실내공기 우수시설’ 인증, 4회 연속 코리아유니크베뉴 선정 등을 통해 국내를 대표하는 문화예술 기관으로 자리매김했다. 부산국제영화제 개·폐막식이 열리는 4000석 규모의 야외극장을 포함하여 하늘연극장, 중극장, 소극장, 시네마테크, 인디플러스, 영화도서관 등의 다양한 규모의 극장을 갖추고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2456837&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:26.364Z",
+      "modifiedAt": "20251023173241"
+    },
+    {
+      "id": "heritage:31-21-0000070000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "마애지장보살좌상",
+      "relation": "nearby-only",
+      "distanceMeters": 924,
+      "coordinates": {
+        "lat": 35.1625916606683,
+        "lng": 129.125461861544
+      },
+      "originalText": "옥련선원 내 삼성각(三聖閣) 뒷산에는 예로부터 인근 주민의 신앙대상으로 전해 오는 관덕암(觀德巖)이라는 바위군이 있는데, 이 바위군에서 벼락 때문에 떨어져 나온 바위면에 보살좌상 1구가 새겨져 있다. 보살좌상이 새겨진 바위는 거대한 바위 둘이 맞붙어 있었던 것인데 벼락을 맞아 깨어지면서 거꾸로 박혀있기 때문에 보살좌상은 아래위가 거꾸로 되어 있다.\n얕게 조각되었던 보살좌상은 근래에는 붉고 푸른 페인트가 칠해졌던 모습이 뚜렷한데, 바위가 떨어지면서 \n깨어졌는지 이후에 인위적으로 훼손을 했는지는 알 수 없으 나 거의 대부분 훼손되어 윤곽만 남아 있으나, 다행히 선각된 두광(頭光)과 신광(身光)은 남아 있어 성격 파악에 단서를 제공하고 있다.\n이 보살좌상은 상호(相好, 부처나 보살의 얼굴부분)와 머리 부분을 음각으로 표현하였는데, 머리 위에는 육계의 흔적이 전혀 보이지 않고 이마 윗 부분에 두건대(頭巾帶)가 뚜렷하여 머리에 두건을 쓰고 있음이 분명한 점으로 보아 지장보살상으로 보여진다. \n또한 상호와 머리 부분을 음각으로 표현한 이외에는 두광·신광과 동체의 각부, 연화좌 등 모든 부분을 양각으로 표현은 하였으나, 그 조각이 얕아서 암각화와도 같은 인상을 준다는 점에서 불화의 맥락에서 고찰해야 할 필요가 있는데, 광배의 처리를 볼 때 조선후기인 17∼18세기에 조성된 불화 광배에서 이 보살좌상의 광배에서 볼 수 있는 방사선 무늬의 표현을 볼 수 있어 이 마애지장보살좌상이 조선후기인 17∼18세기에 조성된 것으로 추정하게 한다. \n옥련선원이 위치한 백산은 경상좌수영이 있었고, 백산의 정상부에 첨이대가 있는 등 남해를 지키는 군사적 요충지일 뿐 아니라 임진왜란을 겪으면서 사명대사와도 관련이 깊은 곳이라는 역사적 배경을 가지고 있어 옥련선원이 「마애지장보살좌상」은 해난구제와 수군의 귀의불(歸依彿)로서 역사적 의의가 깊다고 하겠다. 아울러 부산지역에서는 흔히 볼 수 없는 마애불인 동시에 상호와 머리 부분을 음각으로 표현하고 다른 부분은 양각으로 표현하고 있는 점 등은 조선시대 뿐 아니라 우리나라 조각사 연구에 귀중한 자료라는 점에서 문화유산적 가치가 크게 평가된다고 하겠다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000070000000",
+      "fetchedAt": "2026-10-24T09:52:43.625Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:382",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "유니크베뉴_이벤트‧문화시설",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "독특한 콘셉트로 회의, 관광, 컨벤션, 이벤트. 전시 등을 포괄하는 여행지들이 인기를 끌고 있다. 부산에서 만나는 즐겁고 새로운 MICE 장소, 유니크베뉴 4 여긴 어떨까?\n<p class=\"font-size20 colorDarkBlue bold\">빅루프 아래 문화의 향연, 영화의 전당</p>\n주소 : 부산광역시 해운대구 수영강변대로 120\n전화 : 051-780-6000\n홈페이지 <a href=\" http://www.dureraum.org\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.dureraum.org</a>\n\n영화의 도시 부산을 대표하는 랜드마크 영화의 전당은 영화 관람은 물론 영화 관련 다양한 자료를 수집하여 시민들에게 공개하고 있다. 또한 각종 공연, 기획전시, 그리고 영화예술인 인재 양성을 위한 아카데미 프로그램도 운영하고 있다. 영화제 기간에는 부산국제영화제 개‧폐막식 등 중요 행사가 진행되고, 평상시에는 영화와 공연을 즐길 수 있는 복합문화공간이 된다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산 영상‧문화산업의 중심, 부산문화콘텐츠콤플렉스</p>\n주소 : 부산광역시 해운대구 수영강변대로 140\n전화 : 051-749-9157\n홈페이지 <a href=\" http://www.busanit.or.kr/bcc/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.busanit.or.kr/bcc/</a>\n\n부산문화콘텐츠콤플렉스는 문화콘텐츠 분야에서 기술력과 열정을 갖춘 중소기업을 발굴하여 지원하는 기관이다. 8~12인실 회의실과 프리젠테이션실, 그리고 어린이들을 위한 오감체험 디지털 감성놀이터를 제공하며 특히, 부산경남 지역 만화가들의 창작과 협업을 지원하는 복합공간 부산글로벌웹툰센터에서는 매년 부산웹툰페스티벌이 열린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">시민들을 위한 놀이터, 렛츠런파크부산경남</p>\n주소 : 부산광역시 강서구 가락대로 929\n전화 : 1566-3333\n홈페이지 <a href=\" http://park.kra.co.kr/busan_main.do\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://park.kra.co.kr/busan_main.do</a>\n\n렛츠런파크부산경남은 다양한 편의시설을 갖추고 있는 대표적인 가족테마공원이다. 어린이들을 위한 놀이시설과 생태탐방시설, 축제 그리고 승마체험 등이 있어 온 가족이 함께 즐거운 시간을 보낼 수 있는 곳으로 사랑받고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">국제 수준의 어쿠스틱 연주홀, 글로빌아트홀</p>\n주소 : 부산광역시 동래구 사직북로48번길 162\n전화 : 051-505-5995\n홈페이지 <a href=\"https://glovilarthall.modoo.at/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://glovilarthall.modoo.at/</a>\n\n어쿠스틱 전문 음향홀로서 200석의 쾌적한 객석을 갖춘 글로빌아트홀은 음악회와 콩쿨, 실기평가를 위한 장소로 사용되며 각종 행사 대관도 가능하다. 악기 교실과 노래교실 그리고 댄스 스포츠 교실 등 취미로 음악과 춤을 배울 수 있는 평생교육 프로그램도 운영한다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=382&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:417",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산인문학여행",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "부산이라는 도시가 가진 인문학적 가치를 찾아 떠나는 여행, 부산은 어떤 도시일까?\n\n<p class=\"font-size20 colorDarkBlue bold\">복천동 고분군 / 복천박물관 / 동래읍성임진왜란역사관</p>첫 여행지는 역사적 장소와 유물이 많은 동래다.\n가야시대 지배계층의 무덤이 발견된 복천동 고분군은 고대문화를 이해할 수 있는 중요한 유적이다. 고분에서 출토된 많은 유물을 전시하고 있는 복천박물관에서는 가야의 뛰어난 철기문화와 더불어 고대 무덤 형식의 변천과정을 상세히 알 수 있다.\n땅만 파면 유물이 나온다는 동래지역이다 보니 2005년에는 지하철 공사 도중 임진왜란의 참상이 그대로 묻힌 동래읍성 해자가 발굴되었다. 전쟁 통에 죽임을 당한 민관군의 유골과 유물이 수 백 년의 세월을 지나 세상 밖으로 나온 것이다. 발굴 당시의 처참함을 그대로 복원한 동래읍성임진왜란 역사관이 도시철도 수안역사 내 건립되었다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산박물관 / 부산근대역사관 / 국립일제강제동원역사관</p>선사시대부터 근‧현대까지, 부산 역사의 모든 것을 알 수 있는 부산박물관에서 부산이 가진 역사의 무게를 경험하며, 격동의 시기를 헤쳐 온 부산을 만나는 두 번째 인문학여행을 시작한다.\n일제의 수탈기구 동양척식주식회사 부산본점으로 지어진 부산근대역사관은 광복 후 미문화원으로 50년 간 무단 사용된 건물로, 부산의 아픔과 설움의 시간을 고스란히 간직하고 있다.\n국립일제강제동원역사관은 조선의 모든 것을 앗아가 버렸던 일제의 잔혹함을 피부로 느낄 수 있는 곳이다. 끝나지 않는 고통 속에서 고된 삶을 이어가야 했던 조선인 탄광노무자. 군인, 여자근로정신대. 가슴 아픈 역사지만 일제강제동원의 역사적 진실을 함께 기억하고 널리 알려야 할 것이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">40계단문화관 / 보수동책방골목</p>한국전쟁은 부산에 많은 흔적을 남겼다. 부산항으로, 부산역으로, 하루에도 수십 번 씩 40계단을 오르내리며 일거리를 찾아 헤매던 당시 피란민의 일상이 40계단문화관에 생생이 기록되어 있다.\n모든 것이 부족했던 어려운 시절, 책이라고 부족하지 않을 리가 없었다. 여기저기서 모은 헌책들을 노상에 펼쳐놓고 팔던 그 자리 그대로 보수동책방골목을 이루었다. 필요한 책을 찾아 보물찾기하듯 골목을 헤매는 사람들의 모습에서 그 시절의 향수가 겹쳐진다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">최민식 갤러리 / 요산문학관</p>그때 그 시절을 기억하게 해주는 사진과 글도 만날 수 있다. 가난한 피란민의 생활상을 꾸밈없이 카메라에 담았던 최민식 작가의 삶과 작품을 엿볼 수 있는 최민식 갤러리, 혼돈의 시대를 틈타 권력에 빌붙는 사람들을 글로 응징한 소설가 김정한 선생의 작품세계를 알 수 있는 요산문학관으로 발걸음을 돌린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">영화의 전당 / 부산시립미술관 / 국립부산과학관</p>과거의 아픔을 뛰어넘어 문화가 흐르는 도시가 된 부산. 10월이면 부산국제영화제로 물드는 영화의 전당과 1998년 개관하여 20년이 넘는 시간동안 지역 미술의 활성화와 시민들을 위한 감성문화를 만들어가고 있는 부산시립미술관, 그리고 모두를 과학과 상상의 세계로 떠나게 해주는 국립부산과학관까지, 아팠던 시절엔 생각지도 못한 다양한 문화가 부산에 넘실거리고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">이터널저니 / F1963</p>그뿐만이 아니다. 북큐레이션이라는 테마로 이색적인 문화공간의 역할을 하는 서점 이터널저니, 과거의 와이어공장이 복합문화공간으로 다시 태어난 F1963 등 현재의 도시 부산은 풍요로운 문화예술의 향기로 가득하다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=417&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1015",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "야외 독서 명당",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "물들어가는 단풍과 기분 좋은 바람이 가슴을 두근거리게 하는 부산의 가을, 책 한 권만 있으면 야외 독서 명당이 되는 공원에서 소박한 북스테이(bookstay)를 계획해 보는 건 어떨까요? 멋들어진 서점이나 낭만적인 숙소는 없어도 하루 종일 책과 함께 하는 나만의 북스테이를 누릴 수 있다면 그곳이 바로 진짜 독서 명당! \n<p class=\"font-size28 colorDarkBlue medium\">부산시민공원</p>부산 도심의 중심에 위치해 접근성이 매우 뛰어난 부산시민공원이 대표적인 야외 독서 명당이랍니다. 평소에도 산책 겸 피크닉 겸, 자연과 함께 하고픈 사람들이 자주 찾는 곳이기도 하지요. 울긋불긋 단풍 옷 갈아입기 시작한 부산시민공원은 풍성한 갈대와 선명한 야생화 풍경까지 더해 최고의 가을 낭만을 보여주고 있습니다. \n넓은 잔디광장, 마음에 드는 파라솔 찾아 그 아래 피크닉 매트 하나 깔고 앉으면 책 읽을 준비 완료! 햇살도 좋고, 바람도 시원하고… 가을은 독서의 계절이 맞습니다^^\n자연의 소리 벗 삼아 빠져드는 독서 삼매경, 자족하는 행복한 일상이 이곳에 있습니다.\n실내에서 조용히 책 읽는 시간을 보내고 싶다면 공원 내 숲 속 북 카페에 들러보세요. 예쁜 기와지붕 아래 통 유리창이 돋보이는 아늑한 공간입니다. 책장에는 다양한 종류의 책들이 가득 채워져 있답니다. 시민공원이 한눈에 들어오는 창가에 앉아 읽고 싶은 책 마음껏 골라 읽기도 가능해요! \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">APEC나루공원</p>해운대 영화의전당 건너편에도 야외 독서 명당이 있습니다. 산책, 조깅, 자전거 타기 등 다양한 취미활동을 즐길 수 있는 APEC나루공원인데요, 수영강을 따라 길게 조성된 넓고 깔끔한 공원이랍니다. 다양한 수목들 사이로 아름다운 산책로가 이어져 있고, 공원 곳곳에 조각 작품을 전시해 두어 자연과 예술의 조화를 만끽할 수 있는 곳이에요.\n수영강이 바라보이는 곳에 배치된 피크닉 테이블이 바로 독서 최적지랍니다. 따가운 가을 햇살 차단해주는 대형 파라솔 아래 가장 좋아하는 책 한 권! 한 줄 한 줄 읽어가다 보면 어느새 시간이 훌쩍 지나 있음을 느낍니다. 선선한 강바람이 기분 좋은 APEC나루공원, 알록달록 단풍을 즐기며 책과 함께 하는 시간을 마음껏 즐겨보세요.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">어린이대공원 숲속도서관</p>피톤치드 가득한 숲 속에 야외 도서관이 있다는 거 알고 계신가요? 부산어린이대공원 내에 위치한 숲속도서관인데요, 이곳이 바로 야외 독서를 위한 세 번째 명당입니다. 성지곡 수원지를 품은 부산어린이대공원은 빼어난 자연경관과 울창한 편백숲을 가지고 있습니다. 고즈넉한 호수를 중심으로 넓은 친수공간이 잘 조성되어 있고, 그 옆에 숲속도서관이 있답니다. 공원 내 산책로는 온통 편백향으로 가득해 걷는 내내 상쾌한 기분을 느낄 수 있어요.\n생각보다 아담한 숲속도서관은 말 그대로 숲에 둘러싸인 야외 도서관이랍니다. 산바람 솔솔 불어오는 곳에서 맑은 공기 마시며 책 읽을 수 있는 훌륭한 공간입니다. 편안한 자세로 앉을 수 있는 벤치에서 독서에 박차를 가해봅니다. 두 개의 빨간 공중전화 부스는 책을 보관해 놓은 미니 서고랍니다. 각각 어른을 위한 도서, 어린이를 위한 도서를 보관하고 있어요. 혼자서 독서 힐링을 즐겨도 좋겠고, 아이와 함께 책 읽는 즐거움을 나눠도 좋을 것 같아요. \n\n나만의 북스테이 인 부산, 야외 독서 명당을 찾으세요!\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1015&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1180",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n영상보러가기 <a href=\"https://youtu.be/R-U6-EIvKbs\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://youtu.be/R-U6-EIvKbs</a>\n<p class=\"font-size28 colorDarkBlue medium\">Move, Mile in Movie</p>영화보다 더 영화 같은 부산 드라이브\n\n산과 바다, 강이 함께 어우러지는 도시는 흔치 않다. 남해바다와 동해바다가 만나고 낙동강이 흐르며 금정산이 우뚝 솟은 부산이야 말로 천혜의 자연을 갖춘 도시다. 산과 바다, 강을 넘나들며 영화 속 감동을 차창 밖 와이드 스크린으로 다시 느껴볼 수 있는 4개의 드라이브 코스가 여기 있다. \n김해공항에서 강변을 따라 다대포해수욕장까지 이어지는 ‘강변드라이브’ 코스는 아직 개발의 손길이 닿지 않은 낙동강변의 아름다운 풍광을 만끽할 수 있다. 다대포에서 출발해 남항대교와 부산항대교, 광안대교를 잇따라 달리는 ‘브릿지드라이브’는 바다 위를 달리는 짜릿함와 바다 위에서 보는 부산 풍경이 압권이다. 해운대 마린시티를 지나 송정과 기장의 해안도로를 따라 임랑해수욕장까지 가는 ‘해안드라이브’는 부산 바다의 정수가 모두 담겨 있다. 장안사와 아홉산숲을 둘러보는 ‘숲드라이브’는 대도시의 번잡함을 떠나 힐링을 경험하는 비타민 같은 코스다. \n\n어떤 코스를 선택해도 좋다. 4개의 드라이브 코스는 유기적으로 연결되어 있어서 어느 방향으로든 이동할 수 있다. 자동차를 타고 달리면서 부산의 바다와 산, 강을 두루 둘러보는 것만으로도 부산이란 도시의 매력이 온 몸으로 느껴질 것이다. \n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">강변드라이브</p></div><ul class=\"course1\"><li><span>김해공항</span></li><li><span>낙동강하굿둑</span></li><li><span>장림포구</span></li><li><span>다대포해수욕장(더 킹 : 영원의 군주, 2020 / 마이 네임, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">브릿지드라이브</p></div><ul class=\"course1\"><li><span>남항대교</span></li><li><span>부산항대교(공작, 2018 / 마이 네임, 2021)</span></li><li><span>광안대교(DP, 2021 / 블랙 팬서, 2018)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">해안드라이브</p></div><ul class=\"course1\"><li><span>마린시티(발신제한, 2021 / 더 킹 : 영원의 군주, 2020)</span></li><li><span>해운대해수욕장(영화의 거리, 2021)</span></li><li><span>달맞이길(발신제한, 2021 / 버닝, 2018) </span></li><li><span>송정해수욕장(당신, 거기 있어줄래요, 2016 / 오케이 마담, 2020)</span></li><li><span>해동용궁사(마이 네임, 2021)</span></li><li><span>오랑대공원</span></li><li><span>연화리</span></li><li><span>대변항</span></li><li><span>죽성드림세트장(드림, 2009)</span></li><li><span>일광해수욕장</span></li><li><span>신평 소공원</span></li><li><span>임랑해수욕장(당신의 부탁, 2018 / 비와 당신의 이야기, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">숲드라이브</p></div><ul class=\"course1\"><li><span>장안사</span></li><li><span>아홉산숲(더 킹 : 영원의 군주, 2020 / 핸섬 가이즈, 2021)</span></li><li><span>영화의전당(더 킹 : 영원의 군주, 2020)</span></li></ul></div>\n\n<p class=\"font-size25 colorDarkBlue medium\">강변드라이브↔브릿지드라이브↔해안드라이브↔숲드라이브\n *양방향 소통 가능한 드라이브 코스입니다.</p>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장</p>부산에서 유일하게 남해바다를 끼고 있는 해수욕장이다. 수심이 얕고 모래사장이 넓어서 아이들과 물놀이를 하기에 안성맞춤이다. 바다 건너 서쪽 하늘로 해가 질 때는 해수욕장 전체가 오렌지빛으로 물들어 장관을 이룬다. \n\n위치\n부산광역시 사하구 다대동 / 다대포해수욕장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p><p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항대교</p>대형 컨테이너 선박이 정박해 있는 부산항을 가로지르는 다리다. 거대한 주탑에 화려한 조명이 켜지면 부산 사람들도 놀라는 ‘하버 뷰’가 완성된다. 자동차를 타고 달리면서 봐도 좋고 멀리서 바라봐도 좋다. \n\n위치\n부산광역시 남구 북항로 176\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">공작(2018) <span style=\"font-size: 18px;color: #000;\">황정민, 이성민, 조진웅, 주지훈 주연</span></p>주인공이 북의 고위층 내부로 잠입해 북핵의 실체를 캐기 위해 공작을 수행하는 영화\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안대교</p>광안리 앞바다를 지나는 해상교량으로 명실상부 부산의 랜드마크다. 광안대교를 빼놓고 부산야경을 말할 수 없을 만큼 낮보다 밤이 아름다운 다리다. 매년 가을 열리는 부산불꽃축제의 무대이기도 하다.\n\n위치\n부산광역시 수영구 남천동 / 민락해변공원 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">DP(2021) <span style=\"font-size: 18px;color: #000;\">정해인, 구교환, 김성균 주연</span></p><p>군무이탈 체포조(D.P.)가 탈영병을 쫓으며 알게 되는 이야기를 그린 드라마</p><p class=\"font-size25 colorDarkBlue medium\">블랙 팬서(2018) <span style=\"font-size: 18px;color: #000;\">채드윅 보스만, 마이클 B. 조던 주연</span></p><p>와칸다의 왕좌를 지키고자 적에게 맞서는 ‘블랙 팬서’의 활약상을 담은 SF 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">마린시티</p>대한민국의 초고층빌딩은 모두 여기에 모여 있다. 홍콩을 연상시키는 마천루의 향연은 건물들이 형형색색의 빛을 뿜는 밤에 절정을 이룬다. \n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p><p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대해수욕장</p>대한민국을 넘어 세계에서도 손꼽히는 해수욕장. 하와이 와이키키보다 더 번화한 도심과 맞닿은 해변은 이국적이면서도 세련미가 넘친다. 드넓은 백사장과 맑은 바닷물까지 갖춘 팔방미인.\n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">이완, 한선화 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길</p>해운대해수욕장 끝자락 미포에서 송정까지 이어지는 언덕길. 해운대 바다를 한눈에 내려다볼 수 있는 멋진 전망에 밤에는 달빛을 벗 삼아 걸을 수 있는 산책로도 잘 조성되어 있어서 부산 사람들도 즐겨 찾는 곳이다.\n\n위치\n부산광역시 해운대구 달맞이길 190 / 해월정 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화<p class=\"font-size25 colorDarkBlue medium\">버닝(2018) <span style=\"font-size: 18px;color: #000;\">유아인, 스티븐연, 전종서 주연</span></p>주인공이 어릴 적 친구를 우연히 만나면서 벌어지는 이야기를 그린 미스터리 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송정해수욕장</p>관광객들로 번잡한 해운대를 대신해 로컬들이 즐겨 찾는 해수욕장. 전국에서 사진가들이 찾아올 만큼 일출 명소로 유명하다. 최근에는 서핑 성지로도 각광받고 있다. \n\n위치\n부산광역시 해운대구 송정동 / 송정해수욕장 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">오케이 마담(2020) <span style=\"font-size: 18px;color: #000;\">엄정화, 박성웅 주연</span></p>한 부부가 비행기 납치 사건의 인질이 된 승객을 구하는 코미디액션 영화<p class=\"font-size25 colorDarkBlue medium\">당신, 거기 있어줄래요(2016) <span style=\"font-size: 18px;color: #000;\">김윤석, 변요한 주연</span></p>30년 전 자신과 만나게 된 한 남자의 시간여행을 그린 판타지 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해동용궁사</p>파도가 철썩이는 바닷가 바위 위에 세워진 사찰. 소박한 절집 건물과 바다 풍경의 조화가 이채롭다. 아침에는 마당에서 바다 위로 불쑥 솟아오르는 태양을 마주할 수 있다. \n\n위치\n부산광역시 기장군 기장읍 용궁길 86 / 해동용궁사 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">죽성드림세트장</p>SBS 드라마 ‘드림’ 촬영지로 짙푸른 바다와 예쁜 성당 건물이 영화보다 더 드라마틱한 풍경을 연출한다. 누구나 카메라만 들면 작품이 되는 공간이다.  \n\n위치\n부산광역시 기장군 기장읍 죽성리 134-7 / 죽성드림세트장 앞 공용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">드림(2009) <span style=\"font-size: 18px;color: #000;\">주진모, 김범, 손담비 주연</span></p>회사에서 버려진 남자가 우여곡절 끝에 성공과 사랑을 쟁취하는 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임랑해수욕장</p>부산에 있는 7개 해수욕장 중 가장 북단에 있다. 해운대나 광안리에 비하면 작고 소박한 해수욕장이지만 그래서 한적하고 여유롭다. 어선이 정박해 있는 포구와 물고기 모양의 등대도 볼거리.  \n\n위치\n부산광역시 기장군 장안읍 / 임랑해수욕장 주변 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 된 두 주인공이 그려가는 아날로그 감성 영화</p><p class=\"font-size25 colorDarkBlue medium\">당신의 부탁(2018) <span style=\"font-size: 18px;color: #000;\">임수정, 윤찬영 주연</span></p><p>주인공 앞에 나타난 의붓 아들. 남남인 두 사람이 진정한 가족이 되는 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">아홉산숲</p>오래도록 그린벨트와 상수원보호구역으로 지정되어 있던 덕에 울창한 숲을 만날 수 있다. 특히 영화나 드라마 촬영지로 자주 활용된 대나무숲이 인기다. 도심의 번잡함을 벗어나 잠시 여유를 가질 수 있는 힐링 스폿이다. \n\n위치\n부산광역시 기장군 철마면 미동길 37-1 / 아홉산숲 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">핸섬 가이즈(2021) <span style=\"font-size: 18px;color: #000;\">이성민, 이희준 주연</span></p>산장으로 이사 온 두 남자가 그곳에 얽힌 전설을 알게 되면서 전개되는 코미디영화<p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의전당</p>부산국제영화제의 무대인 영화의 전당. 건물 형태도 독특하지만 LED 패널로 덮인 지붕이 밤마다 멋진 야경을 연출한다. 수영강의 아름다운 풍경과도 잘 어울린다.\n\n위치\n부산광역시 해운대구 수영강변대로 120 / 영화의전당 주차장 \n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1180&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1190",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "SEE네마 부산! 영화의 도시를 엿보다",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "부산하면 가장 먼저 떠오르는 것이 흔히 ‘바다’일지도 모른다. 물론 부산의 바다도 아름답지만 부산은 오래 전부터 한국 영화의 발상지로서 ‘영화의 도시’로도 유명하다. 세계적으로 그 명성을 인정받아 올해로 26회를 맞이한 부산국제영화제를 비롯하여 많은 영화나 드라마들이 부산을 배경으로 촬영되곤 한다. 최근 방영 중인 인기 드라마 ＜지금, 헤어지는 중입니다＞, 넷플릭스에서 큰 인기를 얻은 ＜승리호＞ 또한 부산에서 촬영되었다. K-컬처를 선도하는 영화의 도시 부산, 스크린 속 그 장면으로 지금 떠나 보자!\n<p class=\"font-size28 colorDarkBlue medium\">보고, 느끼고, 즐기는 부산영화체험박물관</p>남포동과 중앙동은 영화를 추억하는 부산 여행의 출발점이다. 1937년에 문을 연 부산극장이 오랜 시간 그 명성을 유지해 왔던 곳이고, 영화 ＜친구＞와 ＜국제시장＞ 등 많은 영화가 이 일대에서 촬영되면서 여전히 많은 관광객들로 유명세를 치르고 있다. 한국 영화의 역사가 깃든 이곳에는 그 유명세를 반영하듯 영화 속 부산을 조금 더 가까이 마주할 수 있는 곳이 있다. 바로 ‘부산영화체험박물관’이다.\n국내 최초의 영화 전시체험 시설인 부산영화체험박물관은 영화의 모든 것을 보고, 느끼고, 즐길 수 있는 공간이다. 부산 영화의 발자취를 따라 걷는 ‘영화역사의 거리’ 체험존부터 영화 기획과 촬영, 편집 등 영화제작 과정을 알 수 있는 ‘시네마 아카데미’, 나만의 영화예고편을 만들어 볼 수 있는 ‘시네마 스튜디오’까지! 이것저것 체험하다 보면 나도 모르게 영화의 새로운 매력에 흠뻑 빠져버릴지도 모른다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화 속 부산의 모습, 흰여울문화마을 영화기록관</p>흰 눈이 내리는 듯 빠른 물살이 굽이쳐 흐르는 흰여울문화마을, 한국전쟁의 피난민들이 만들어 낸 아픔의 공간인 이곳에서 부산의 영화는 피어났다. 다닥다닥 붙어 있는 집들과 한, 두 사람이 겨우 지나갈법한 좁은 골목길은 어디서도 볼 수 없는 향수를 불러일으킨다. 영화 ＜범죄와의 전쟁＞, ＜변호인＞은 그런 아픔을 배경으로 한다.\n흰여울문화마을 안내센터 1층에 위치한 ‘영화기록관’에는 영도를 배경으로 한 영화들을 만나 볼 수 있다. 마치 영화 속 주인공이 된 것처럼 영화 ＜범죄와의 전쟁＞ 의상을 직접 입고 포토부스에서 사진 촬영도 가능하다. \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화 축제의 장으로! 영화의전당</p>영화 속 부산의 모습을 감상했다면 이제 영화 축제의 장으로 떠나 보자. 매년 10월이면 전 세계인의 관심이 집중되는 부산국제영화제가 이곳, ‘영화의전당’에서 열린다. 명실상부 부산 영화의 랜드마크가 된 영화의전당은 영화제가 없을 때에도 현재 개봉중인 상업영화부터 독립영화, 영화 관련 전시 등 다양한 프로그램을 관람할 수 있다. 부산 영화의 중심인 영화의 전당에서 오늘 영화 한 편 관람해 보는 건 어떨까? \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">야경과 함께 거닐어보는 영화의거리</p>해운대 바다와 아름다운 광안대교가 보이는 곳, 해운대 외곽에는 ‘영화의거리’가 조성돼 있다. 이름 그대로 이 거리에는 걷기 좋은 나무데크를 따라 부산을 배경으로 촬영한 영화 포스터와 다채로운 영화 조각상들을 감상할 수 있다. 해질 무렵이 되면 이곳의 풍경은 조금 달라진다. 서서히 붉게 타들어가는 노을을 배경으로 조각상들이 마치 영화필름 속 한 장면처럼 살아 움직이는 듯하다. 해가 저무는 하루의 끝, 이 시간 이 거리에서만 만날 수 있는 ‘밤의 영화’를 감상해 보자.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1190&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1198",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "SF9 찬희 ♡ 채연의 부산 잠입 작전!",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "부산은 도시와 자연을 한꺼번에 경험할 수 있는 흔치 않은 여행지다. 테마도 다양하다. 자연, 역사, 영화, 액티비티, 미식 등 어떤 것이라도 부산에선 이 모든 것을 누릴 수 있다. 그래서일까? 한 번의 여행만으론 아쉬움이 남는 여행지가 부산이기도 하다. 하지만 떠오르는 핫플레이스는 따로 있다. 해시태그 부산여행만 검색해도 수두룩하게 나오는 그 곳! 부산에서도 찐 부산 바이브를 느낄 수 있는 핫플레이스를 지금 소개한다.\n\nSF9 찬희♡채연의 부산 잠입 작전! 과연 미션 성공?!｜외부인 연애 금지법 <a href=\"https://www.youtube.com/watch?v=_dZTmhWAtwE\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.youtube.com/watch?v=_dZTmhWAtwE</a>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">이기대 전망대</p>부산에는 많은 해안산책로가 있지만 그 중에서도 이기대 해안산책로는 가장 아름다운 코스로 손꼽힌다. 용암과 화산재, 그리고 파도의 침식으로 만들어진 해식절벽과 동굴 등 천혜의 절경이 부산 바다를 배경으로 한 폭의 그림과도 같다. \n이런 이기대의 황홀경을 전망대에서 먼저 품어보자. 이기대 전망대에서는 지척에 보이는 광안대교와 탁 트인 광안리 앞바다를 시작으로 해운대 마린시티, 동백섬, 달맞이언덕은 물론 저 멀리 높이 솟아오른 장산까지도 한 눈에 들어온다. 눈이 시원해지고 기분이 상쾌해진다.  해안절벽을 따라 잘 조성된 이기대 해안산책로도 걸어보자. 어느 순간 가슴이 뻥 뚫릴 듯 눈부시게 파란 바다가 눈앞에 펼쳐진다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의 전당</p>많은 여행 테마 중에서도 MZ세대들에게 떠오르고 있는 것은 ‘영화의 도시, 부산’이다. 많은 영화와 드라마들이 부산에서 촬영됐을 뿐 아니라 세계가 주목하는 영화 축제의 장 ‘부산국제영화제’도 이곳 부산에서 매년 개최되고 있다. \n영화의 도시 부산의 랜드마크 영화의 전당은 건물 그 자체가 그림이고 영화다. 각각 독립적으로 이루어진 3개의 건물이 구름다리로 서로 연결되어 곡선과 직선이 교차하는 역동적인 공간을 선사한다. 하늘을 연상시키는 영화의 전당 빅루프는 형형색색의 LED가 반짝일 때마다 마치 하늘에서 빛의 파도가 물결치는 듯하다. 미디어아트와도 같은 환상적인 야경을 가진 빅루프를 배경으로 나만의 인증샷도 찍어 보자.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도 스카이파크</p>아름다운 전망과 짜릿한 액티비티를 즐기고 싶다면 송도로 가자! 하늘 위에서 부산 바다를 만끽하는 송도해상케이블카, 걸으며 바다 위를 산책하는 구름산책로, 우거진 해송의 싱그러움을 전해주는 암남공원 숲속 산책 그리고 다양한 해양레저까지, 즐길거리가 많아도 너무 많다.\n암남공원에 위치한 송도 스카이파크 3층 스카이하버전망대에도 꼭 올라보자. 끝없이 펼쳐진 바다를 원 없이 내다 볼 수 있고 어린왕자 테마파크와 추억을 보관하는 타임캡슐까지 다양한 액티비티를 한 번에 즐길 수 있다. 해 질 무렵이면 이곳은 또 다른 낭만으로 펼쳐진다. 보랏빛으로 물든 하늘, 하나 둘 켜지는 조명, 눈앞에 펼쳐진 바다와 노란빛 부산의 달. 마치 영화 <라라랜드>의 한 장면처럼 로맨틱한 밤이다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안리 해변</p>부산의 찐 바이브를 느끼고 싶다면 역시 광안리를 빼 놓을 수 없다. 푸른 바다와 금빛 모래사장, 시원하게 뻗은 광안대교가 웅장함을 내뿜는 광안리 해변. 또한 카페며 레스토랑, 편집숍 등 각양각색 개성을 자랑하는 공간들이 저 마다의 매력을 발산하고 있다.\n밤의 광안리 해변은 낮보다 더 아름답다. 해가 지면 광안대교의 불이 하나 둘 켜지며 화려한 조명으로 광안리의 밤을 수놓는다. 다이아몬드처럼 반짝이는 광안대교는 그래서 수많은 연인들의 프로포즈 배경 일순위인가 보다. 그렇지만 혼자여도, 둘이어도, 여럿이어도 상관없다. 너나 할 것 없이 광안대교 앞에서 ‘김치~’하고 웃으면 그날이 가장 행복한 순간으로 기록된다. 오늘, 낭만 가득한 광안리의 밤으로 여행을 떠나보는 건 어떨까?\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1198&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1200",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "나 홀로 떠나는 광안리 여행",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "대한민국에서 광안리를 모르는 사람은 거의 없을 겁니다. 해운대와 함께 부산을 대표하는 여행지로 손꼽히는 곳이죠. 바다를 가로지는 광안대교는 부산의 랜드마크로 국내는 물론 해외에서도 관심이 뜨겁습니다.\n\n그런 광안리를 제대로 여행하는 방법을 준비했습니다. 나 홀로 즐기는 광안리! 어떤 이야기가 숨어 있을지 지금 함께 떠나보시죠!﻿\n<p class=\"font-size28 colorDarkBlue medium\">나 홀로 공간-호텔1</p>나 홀로 떠나는 여행이기에 더욱 깐깐하게 숙소를 고를 수밖에 없다. 안전하고 쾌적한 공간이어야 하는 건 기본. 편의시설도 잘 갖추고 가격도 합리적이면 좋겠다. 창밖으로 바다 풍경까지 볼 수 있다면 금상첨화다. 광안리해수욕장 해변에 자리한 호텔1의 캡슐호텔이라면 이런 까다로운 조건을 모두 만족시키고도 남는다.\n\n새하얀 커튼을 열고 방으로 들어가면 커다란 창밖으로 펼쳐진 푸른 바다가 먼저 눈에 들어온다. 캡슐호텔이지만 오션뷰 룸을 고르면 특급 호텔이 부럽지 않은 풍경을 침대 위에서 즐길 수 있다. 1인실부터 4인실까지 다양한 크기의 룸을 고를 수 있으며 천연 라텍스 매트리스와 베개를 제공한다. 공용 샤워실과 화장실, 세탁실 등도 매우 깔끔하다.﻿\n엘리베이터를 타고 건물 옥상으로 올라가면 루프탑 공간 '별 카이'다. 탁 트인 광안리 바다 풍경을 배경으로 옥상 공간을 아기자기하게 꾸며 놓았다. 휴양지를 떠올리게 하는 흔들의자와 넓은 자쿠지, 나무로 지은 오두막 등 인스타그래머들의 눈이 빙글빙글 돌아갈 사진 스폿들이 가득하다.\n\n압권은 하늘을 향해 펼쳐진 '천국의 계단'이다. 아찔한 계단을 따라 한 걸음씩 올라갈 때마다 전혀 다른 풍경이 눈앞에 펼쳐진다. 해가 질 무렵 뜨거운 일몰을 배경으로 촬영한 사진 한 장은 말 그대로 인생샷이다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">나 홀로 한 끼-동경밥상</p>여행에 식도락을 빼놓을 수 없다. 혼자서도 근사한 한 끼를 먹고 싶다면 광안리 해변가에 숨어 있는 동경밥상으로 가보자. 마치 일본의 세련된 가게를 보는 듯한 대문과 마당이 벌써부터 흥미를 돋운다.\n\n문을 열고 가게 안으로 들어가면 셰프가 부드러운 손길로 부채질을 하며 열심히 장어를 굽고 있다. 230년 동안 민물장어를 구워온 일본 도쿄의 장어요리 전문점 '쥬바코'의 맛을 그대로 한국에 옮겨왔다. 쥬바코는 장어구이의 온도를 유지하기 위해 사용한 찬합 상자를 뜻하는데 동경밥상에서도 민물장어구이를 네모난 찬합에 담아 내놓는다.\n\n대표 메뉴인 민물장어구이 '우나쥬'는 장어 한 마리를 통째로 밥에 올린다. 장어 특유의 잡내를 없애고 은은하고 부드러운 맛을 냈다. 대개는 장어에 바른 양념이 너무 짜거나 달아서 몇 점 먹고 나면 물리기 십상인데 마지막 한 점까지 깔끔하고 담백한 맛을 잃지 않는다. 함께 내는 몇 가지 반찬과 뜨거운 장국도 일품이다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">나 홀로 산책</p>식사 후엔 본격적으로 나 홀로 산책을 즐겨보자. 광안리해수욕장 끄트머리에 위치한 삼익비치 아파트가 출발점이다. 잘 정돈된 해변 산책로를 따라 걸으며 바다를 바라보면 거대한 광안대교가 손에 잡힐 듯 가까이 보인다. 그 뒤로 펼쳐진 해운대 마린시티의 마천루는 마치 외국의 한 도시 풍경처럼 생경하다.\n\n백사장으로 내려가면 곳곳에 사진 스폿들이 마련되어 있다. '광안리'의 한글 자음과 모음을 옆으로 늘어놓은 붉은색 조형물과 새하얀 반지처럼 생긴 그네, 이국적인 분위기를 물씬 풍기는 갈대 파라솔 등 사진 놀이만 즐겨도 한나절이 훌쩍 달아날 매력적인 공간이 가득하다.﻿\n광안리해수욕장을 지나 해변도로를 따라 계속 걸으면 어선들이 옹기종기 모여 있는 작은 포구가 나타난다. 아직도 어부들이 고기잡이를 하는 민락항이다. 한적하고 평화로운 대개의 어촌마을과 달리 민락항 주변은 고층 빌딩이 즐비하다. 포구를 둘러싼 방파제 끝에는 빨간색과 흰색 등대가 나란히 서서 포구로 돌아오는 어선들을 맞이한다.\n\n방파제를 따라 조성된 산책로를 따라가면 등대까지 가볼 수 있다. 방파제 뒤로 보이는 광안대교와 붉게 물들어가는 석양이 한 폭의 그림처럼 아름답다. 광안리해수욕장에서는 느낄 수 없는 광안리의 색다른 풍경이다.﻿\n민락항을 빠져나와 해변을 따라 조금 더 걸으면 횟집들이 모여 있는 민락회센터가 나타난다. 회센터 바로 앞 해변은 시민들이 바다를 보며 쉴 수 있도록 꾸민 민락수변공원이다.\n\n빨강, 파랑, 노랑 등 원색으로 칠해진 바닥과 계단이 먼저 눈길을 끈다. 배 모양으로 만들어진 전망대에 오르면 광안대교가 바로 코앞이다. 밤이 되면 마린시티의 화려한 야경을 광안대교와 함께 볼 수 있는 야경 스폿으로도 인기다. 여름에는 회센터에서 구입한 회를 펼쳐놓고 여름밤의 낭만을 즐기는 청춘들로 북새통을 이루기도 한다.\n\n민락수변공원에서 수영교까지는 수영강을 따라 강변 산책로가 잘 조성되어 있다. 마린시티와 수영요트경기장, 센텀시티 등 화려한 도심 풍경을 구경하며 걷다 보면 어느새 수영교에 다다른다. 민락동과 센텀시티를 잇는 수영교 위에 서면 부산국제영화제의 무대인 영화의 전당과 세계에서 가장 넓은 백화점인 신세계백화점 그리고 마린시티와 민락동 일대, 광안대교까지 센텀 일대의 도시 풍경을 한눈에 감상할 수 있다. 해가 질 무렵의 황홀한 일몰부터 화려한 야경까지 어느 것 하나도 놓칠 수 없는 부산 여행의 명장면들이다.﻿\n\n**민락수변공원은 2023.7.1.부터 금주구역으로 지정되었음을 알려드립니다. \n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1200&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1372",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "내셔널지오그래픽이 선정한 [2023 세계 최고 여행지 부산] 여행하기",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "자연·문화·역사·과학 등 전반에 걸친 탐사취재를 전문으로 하는 매체 ‘내셔널지오그래픽’(National Geographic)이 부산을 ‘2023 세계 최고 여행지 톱 25’에 선정하며 활기찬 문화도시이자 놀랍도록 멋진 여행지로 소개했습니다. 문화 부문 도시의 하나로 선정된 부산은 산, 바다, 강을 모두 갖춘 국제관광도시이기도 하지요.\n아시아에서 최고의 권위를 자랑하는 부산국제영화제, 세계 커피산지의 원두를 가장 신선하게 맛볼 수 있는 커피도시, 여행지 곳곳 양조장이 있는 수제맥주의 성지, 그리고 시민을 위한 공원으로 탈바꿈한 미군 기지 등 문화와 역사, 미식을 골고루 경험할 수 있어요. 다채로운 매력이 공존하는 부산을 여행하세요.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산국제영화제</p>10월이 되면 부산은 또 하나의 바다에 빠져들게 된다. 바로 영화의 바다, 아시아 최고의 국제영화제 부산국제영화제가 바로 그것이다. 센텀시티 영화의 전당에서는 가을밤바람과 함께 아시아는 물론 세계적인 영화인들이 수놓는 레드카펫 행사가 진행된다. 웅장한 영화의 전당 야외상영관을 빼곡하게 채운 관객들과 함께 영화 속 주인공들을 맞이하며 막을 올리는 개막식은 야외상영관의 거대한 스크린과 천장에서 쏟아지는 다채로운 불빛 속에서 그 화려함을 더한다. 열흘의 시간동안 펼쳐지는 부산의 ‘영화나라’ 속으로 오지 않을 이유가 있을까?\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201005001000&uc_seq=524&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201005001000&uc_seq=524&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">국제커피박물관 & 영도 커피특화거리</p>문화플랫폼 시민마당 1층에 위치한 ‘국제커피박물관’에는 각양각색의 커피 기구 2000여 점이 전시되어 있어 전 세계 커피의 역사를 한자리에서 만나볼 수 있다. 영도의 봉래나루로 600m 구간에는 커피특화거리가 조성되고 있는데 커피바를 겸한 대형 문화공간이 들어서서 커피 마니아들의 발길을 사로잡고 있다. \n탁월한 자연경관과 함께 커피 힐링을 경험할 수 있는 곳으로 잘 알려진 부산. 국제커피박물관은 물론 스페셜티와 스몰브랜드가 공존하는 곳, 커피도시 부산에서 부산 커피의 매력에 빠져 보자.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1369&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1369&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">수제맥주</p>부산을 여행하는 이들에게 먹는 즐거움은 빼놓을 수 없는 재미 중 하나. 여기에 마시는 즐거움까지 더해진다면 어떨까.\n영국인이 직접 만들어 산지 그대로의 맛과 향이 살아있는 영국 전통 맥주, 달콤 쌉싸름한 맛에 상큼한 향이 도드라지는 사우어 맥주, 맥주 애호가들로부터 많은 인기를 누리고 있는 부산 라거까지 여행지 곳곳에서 수제 맥주를 맛볼 수 있다. 맥주 마니아들이 사랑하는 부산의 수제맥주를 경험해 보자.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=486&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=486&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산시민공원</p>군부대와 공원. 정반대에 놓여있는 느낌의 두 단어다. 하지만 군부대가 공원으로 다시 태어난 곳이 있으니, 바로 부산시민공원이다. 눈앞에 펼쳐진 아름다운 풍경 속에서 지나온 시간의 흔적을 본다. 일제강점기부터 미군 하야리아 부대, 그리고 부산시민공원으로 이어진 이곳, 하야리아 부대에 남아있던 나무전봇대를 재활용한 기억의 기둥이 높이 솟아 있다. 부산시민의 품으로 힘겹게 돌아온 공원이 오랜 기간 미군부대에 강제점유 당한 세월이 있었음을 기억하고 되새기는 공간이다. 그래서 더욱 소중하고 아름다운 공원이다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=354&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=354&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">을숙도</p>낙동강줄기와 남해 바닷물이 하나 되는 곳, 비옥한 토양과 민물 어패류의 생태적 보고, 넓은 지대와 풍부한 먹이 덕에 겨울 철새들이 모여드는 곳, 부산의 아름다운 섬, 을숙도다. 새가 많고 물이 맑은 섬이라는 뜻의 을숙도는 우리나라 제1의 철새도래지로도 유명하다. 그래서 을숙도 여행은 낙동강하구에코센터에서 시작하는 걸 추천한다. 에코센터 벽면 한쪽을 꽉 채우고 있는 유리창 너머로 드넓은 낙동강 풍경이 펼쳐지는데 실시간으로 습지와 철새를 자세히 관찰할 수 있다. \n\n**낙동강하구에코센터 전시관 휴관 알림\n휴관기간 : 2023. 3. 27.(월) ~ 리모델링 완료 시까지(12월 말 예정)\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1372&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2100",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "'비교불가' 부산의 기록적인 여행지 9선",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_01.jpg\" alt=\"'비교불가' 부산의 기록적인 여행지 9선.짜릿한 스케일에 한 번, 유서 깊은 역사에 두 번 반하는 세계적 스케이르이 부산 레전드 스팟 9곳, 지금 소개합니다!\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_02.jpg\" alt=\"Largest. 세계 최대(最大) 규모를 자랑하는 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2091&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_03.jpg\" alt=\"아르떼 뮤지엄. 약 1700평, 전 세계 아르떼 뮤지엄 여덟 곳 중 최대규모! 규모만큼 화려한 미디어 작품ㅇ르 선보이는 몰입형 미디어아트 전시관이다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2077&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_04.jpg\" alt=\"부산 수학문화관 연면적 9884m², 7층 규모의 공간! 수학 단일주제로는 세계 최대규모 문화관으로, 넓은 공간을 활용해 폭넓은 수학 콘텐츠를 제공한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=983&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_05.jpg\" alt=\"다대포 꿈의 낙조분수.세계최대 바닥분수로 기네스북에 오른 '꿈의 낙조분수'. 둘레 180m의 거대한 규모가 분수쇼의 화려함을 더한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=996&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_06.jpg\" alt=\"엑스더스카이. 씨티뷰와 씨사이드뷰(SEA SIDE VIEW)를 함께 조망할 수 있는 국내 최대 규모 전망대. 층마다 부산의 명소를 조망할 수 있는 특화된 '파노라믹 오션뷰'를 제공한다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_07.jpg\" alt=\"Earliest 세계/국내/부산 최초(最初)를 기록한 역사적인 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=257&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_08.jpg\" alt=\"국립해양박물관. 2012년 개관한 세계 최초 종합해양박물관. 해양 역사, 인물, 해양 문화, 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 관련 종합지식을 전달하고 있다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_09.jpg\" alt=\"송도해수욕장. 1913년 개장해 100년이 넘는 역사를 자랑하는 국내 최초 공설 해수욕장. 1970년대 이후 침체기를 겪다,2000년대 이후 송도 구름산책로와 케이블카가 생기며 관광지로서 새롭게 부상했다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2078&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_10.jpg\" alt=\"마하사. 5세기(삼국시대) 신라 아도화상이 창건했다고 기록돼있는 부산 최초의 사찰. 아름다운 자연경관과 역사적 상징성 덕에 많은 사람에게 삶의 안식처로 자리 잡았다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_11.jpg\" alt=\"Longest. 세계 최장(最長) 길이로 쭉 뻗은 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=421&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_12.jpg\" alt=\"영화의 전당 '빅루프'. 전체 길이 163m/너비 61m/ 높이 32m/무게 4,000톤의 초대형 지붕, 영화의 전당 '빅루프'! 기둥으로 받쳐지지 않은 부분만 85m로, 세계 최장 캔틸레버 지붕 타이틀을 보유하고 있다. *캔틸레버: 한쪽 끝은 고정되고 다른 끛은 받쳐지지 않은 보\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_13.jpg\" alt=\"Only.세계 유일(有一)의 공간\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=277&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_14.jpg\" alt=\"유엔기념공원.한국전쟁 참전국 장병 2,300여 유해가 안장되어있는 공간. 세계평화와 자유를 위해 공헌한 한국전쟁 영웅들을 기리고자 조성됐다.\"></a></td></tr></table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2100&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2601",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화와 현실의 경계를 허무는 체험형 페스티벌 <시네마 팝업:뮤직온>",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "영화의전당 야외 잔디공간에서 영화 도시의 심장이 뛰고 있습니다. 바로, ‘시네마 팝업: 뮤직 온’ 행사가 열렸기 때문입니다. \n10월 31일부터 11월 2일, 11월 7일부터 11월 9일까지 총 6일간 진행되는 ‘시네마 팝업: 뮤직 온’은 스크린 속 장면이 현실 공간으로 확장되는 체험형 콘텐츠 페스티벌입니다. 관람객이 직접 주인공이 되어 참여할 수 있는 다채로운 프로그램이 준비되어 있으며, 게임존, 포토존, 체험존, 푸드존, 마켓존, 그리고 야외무대까지 하나의 거대한 영화 속 공간이 펼쳐집니다.\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">게임존</p> \n부산 영화의전당 잔디 위, 웃음과 환호가 끊이지 않는 곳. 바로 게임존입니다. 이곳은 단순한 오락 공간이 아니라 영화의 몰입감을 몸으로 느낄 수 있는 체험형 놀이터이죠. 누구나 세 가지 이상의 게임 또는 포토존 미션을 완료, 인증하고 만족도 조사를 마치면 귀여운 굿즈도 받을 수 있습니다.\n영화 <암살> 속 저격수처럼 총을 조준하고, <퍼펙트 게임>의 투수가 되어 공을 던지며, 농구 영화 <리바운드>의 한 장면을 재현하듯 미니 농구 게임에 도전할 수 있습니다.\n또한 나의 영화 성향을 분석하는 ‘영화 MBTI 테스트’ 부스도 인기입니다. 테스트를 마치면 성격 유형에 어울리는 영화를 추천받을 수 있죠. AR(증강현실) 앱 ‘숨플’을 이용하면 영화의전당 잔디밭이 보물찾기 현장으로 변신합니다. 화면 속 AR 보물 상자를 찾아 퀴즈를 풀면 디지털 배지를 획득할 수 있습니다.\n<br>\n\n<p class=\"font-size28 colorDarkBlue medium\">영화 세트존</p> \n스크린을 넘어 직접 영화 속 장면을 체험할 수 있는 공간, 바로 ‘영화 세트존’입니다. 국내 대표 영화들을 테마로 한 세트가 실제로 구현되어 있어, 관람객은 영화 속 주인공이 된 듯한 몰입형 체험을 즐길 수 있습니다.\n영화 <부산행> 세트존에서는 투명 아크릴 창문을 통해 마치 진짜 열차 안에 있는 듯한 공간이 연출됩니다. 시간대별로 등장하는 좀비 분장 배우의 퍼포먼스 덕분에 현장은 실제 좀비 탈출극을 방불케 하죠. 영화 <나쁜계집애> 포스터 속 주인공이 되어보는 포토 체험존도 인기입니다. 대형 포스터 속 비워진 주인공의 자리에 서면, 어느새 내가 바로 ‘나애리’가 됩니다. 또한 영화 <변호인>의 법정 세트를 그대로 재현한 공간에서는 관람객이 영화 속 장면의 한복판에 서 있는 듯한 생생한 몰입감을 느낄 수 있습니다.\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">체험존</p> \n상상의 숲에서 운영되는 체험존은 여섯 가지 영화 테마 프로그램으로 구성되어 있습니다. 영화 속 주인공이 되어 직접 체험하는 이 50분의 시간은, 당신의 인생 장면이 될지도 모릅니다.\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">영화 상영회(GV)</p> \n특별 상영작 <어쩔 수가 없다>를 상영한 후에는 영화평론가 이동진이 진행하는 특별 GV가 열립니다. 오후 3시 40분에 상영하는 영화가 끝난 뒤 이어지는 관객과의 대화에서는 영화의 깊은 해석과 진솔한 이야기를 함께 나눌 수 있습니다.\n<br>\n\n<p class=\"font-size28 colorDarkBlue medium\">시네마 콘서트 & 공연</p> \n야외무대에서는 음악과 영화가 어우러진 공연이 이어집니다. 버스킹, 국악, 뮤지컬 등 장르를 넘나드는 무대가 시간마다 펼쳐지며, 감성의 조명 아래 앉아 영화 음악을 듣는 순간, 어느새 당신도 한 편의 영화 속 주인공이 됩니다.\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">푸드존</p> \n상상의 숲 한편에서 맛있는 냄새가 솔솔 퍼지는 다양한 푸드트럭이 늘어서 있습니다. 버거, 타코, 핫도그, 크로플, 커피, 디저트 등 영화 속 거리 한가운데 앉아 있는 듯한 풍경 속에서 여유로운 식사를 즐길 수 있죠. 하루 종일 돌아다니다 보면 결국 모든 길은 이곳으로 향하게 될 것입니다.\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">마켓존</p> \n마켓존은 영화와 예술이 만나는 또 하나의 무대입니다. 부스마다 영화에서 영감받은 핸드메이드 제품과 미니어처, 비즈 액세서리, 캐릭터 키링, 매듭 팔찌 등이 판매되어 눈길을 끕니다. 직접 만든 작품들이 영화 속 소품처럼 반짝이는 이곳에서, 영화의전당은 잠시 예술시장이 됩니다.\n이곳은 단순한 축제가 아닌, 영화와 현실이 맞닿는 순간을 경험할 수 있는 무대입니다. 스크린을 넘어 직접 체험하고, 직접 느끼는 특별한 영화 축제 ‘시네마 팝업: 뮤직 온’. \n이 가을, 부산 영화의전당으로 당신을 초대합니다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2601&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2617",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 겨울을 수놓는 빛의 축제 4선",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "2025년 겨울, 부산 곳곳에서는 도심과 바다, 문화 공간을 배경으로 한 다채로운 빛 축제가 펼쳐집니다. 연말 분위기를 제대로 느끼고 싶은 여행객이라면, 부산의 겨울 축제를 즐기며 만끽해 보는 것 어떨까요?\n<br>\n<p class=\"font-size28 colorDarkBlue medium\" >1. 부산의 겨울을 밝히는 축제, 크리스마스 빌리지 부산 2025</p>\n부산 영화의전당에서 열리는 크리스마스 빌리지 부산 2025는 연말 분위기를 제대로 느낄 수 있는 겨울 대표 축제입니다. 대형 크리스마스트리와 화려한 조명 연출이 더해져 축제장 전체가 하나의 거대한 포토존으로 변신하며, 정각마다 펼쳐지는 스노잉쇼, 산타 퍼레이드 등 다양한 볼거리로 방문객들의 시선을 사로잡습니다.\n<p class=\"font-size20 colorDarkBlue medium\">전 세계의 겨울 맛을 한자리에서</p>\n이 축제의 큰 즐거움 중 하나는 다양한 먹거리입니다. 글로벌 크리스마스 음식부터 부산 로컬 맛집까지 다양한 브랜드가 참여해, 가족 단위 방문객부터 여행객까지 모두 만족할 수 있는 풍성한 먹거리를 제공합니다.\n<p class=\"font-size20 colorDarkBlue medium\">기프트 마켓 & 라이프스타일 숍</p>\n축제장 곳곳에는 크리스마스 선물용 소품, 패션 아이템, 핸드메이드 작품을 만날 수 있는 마켓을 운영합니다. 지역 아티스트와 브랜드가 참여해 특별한 선물을 찾는 분들에게 특히 인기가 높습니다. 여행 중 기념품을 구매하거나, 연말을 맞아 소중한 사람에게 선물을 준비하기에도 좋은 공간입니다.\n<p class=\"font-size20 colorDarkBlue medium\">가족·연인·친구 모두에게 특별한 경험</p>\n해가 지면 영화의전당 야외 광장이 화려한 조명으로 가득 채워져, 감탄할 만큼 아름다운 겨울 풍경이 펼쳐집니다. 체험 프로그램, 포토존, 공연과 퍼포먼스 등이 마련되어 있어 누구와 함께 오셔도 특별한 추억을 남길 수 있습니다.\n\n<p class=\"list-tit mt\">크리스마스 빌리지 부산</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산 해운대구 수영강변대로 120 영화의전당</li><li><span>기간</span> : 2025.11.27(목) ~ 2025.12.25(목)</li><li><span>시간</span> : 11:00 ~ 22:00</li><li><span>홈페이지</span> : <a href=\"https://www.marketchango.com/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://www.marketchango.com</a></li></ul>\n<br>\n<p class=\"font-size28 colorDarkBlue medium\" >2. 해운대 겨울밤이 빛나는 순간, 해운대 빛축제 2025</p>\n2025 해운대 빛축제는 ‘STELLAR HAEUNDAE: 별의 물결이 밀려오다’를 주제로 열리는 부산의 대표 겨울 야간 축제입니다. 올해는 2025년 11월 29일부터 2026년 1월 18일까지 진행되며, 해운대 해수욕장과 구남로 일대가 주요 무대가 됩니다. 축제는 무료로 관람할 수 있으며, 해운대의 겨울 바다를 배경으로 다양한 빛 설치 작품과 미디어 연출을 감상할 수 있다는 점이 큰 매력입니다.\n<p class=\"font-size20 colorDarkBlue medium\">걸을 때마다 빛나는 곳</p>\n축제 공간에는 테마에 맞춰 별빛, 빛의 흐름, 파도 등을 활용한 조명 설치물과 미디어아트 작품이 화려하게 꾸며집니다. ‘별의 물결’이라는 주제에 따라 해운대 일대가 화려한 야간 경관으로 바뀌며, 산책하듯 걸으며 자연스럽게 이어지는 빛의 장면을 감상할 수 있습니다.\n\n<p class=\"font-size20 colorDarkBlue medium\">더 즐겁게 보는 작은 꿀팁</p>\n축제 기간에는 해운대 주변 상점과 함께 분위기 좋은 야식·카페들도 활발히 운영됩니다. 단, 주말과 연말 시즌에는 인파가 몰리기 때문에 대중교통을 이용하면 좋습니다. 바닷가 특성상 체감온도가 낮아 평소보다 따뜻하게 대비하시면 좋고, 어린이와 함께 방문하실 경우 주요 포토존 주변의 혼잡을 주의하시면 좋습니다.\n<p class=\"list-tit mt\">해운대 빛축제</p><ul class=\"list-con mb\"><li><span>주소</span> : 해운대해수욕장, 구남로 일원</li><li><span>기간</span> : 2025.11.29(토) ~ 2026.01.18(일)</li><li><span>시간</span> : 18:00 ~ 23:00</li><li><span>홈페이지</span> : <a href=\"https://www.instagram.com/haeundae_light/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">@haeundae_light</a></li></ul>\n<br>\n<p class=\"font-size28 colorDarkBlue medium\" >3. 부산 겨울의 하이라이트, 광복로 겨울빛 트리축제</p>\n부산의 대표적인 연말 명소인 광복로 겨울빛 트리축제는 2025년에도 도심을 환하게 밝히며 방문객들을 맞이합니다. 올해 축제는 2025년 12월 5일부터 2026년 2월 22일까지 이어지며, 매일 오후 5시 30분부터 밤 10시까지 광복로와 광복중앙로 일대를 화려한 조명으로 물들입니다.\n<p class=\"font-size20 colorDarkBlue medium\">올해의 테마, “K-누리(광복에서 세계로)”</p>\n2025년 축제는 “K-누리(광복에서 세계로)”라는 테마 아래 진행됩니다. 한국적 패턴과 디자인을 활용한 조형물이 곳곳에 배치되고, 다채로운 조명 연출이 더해져 전통과 현대가 어우러진 분위기를 선사합니다. 한국적 아이덴티티를 담아낸 빛의 거리는 국내 여행객은 물론, 외국인 관광객에게도 더욱 매력적으로 느껴지는 축제입니다.\n<p class=\"font-size20 colorDarkBlue medium\">화려한 메인 트리와 빛의 거리</p>\n축제의 상징인 대형 트리가 설치되며, 개막일에는 점등식과 함께 카운트다운 이벤트가 열립니다. 광복로 전체가 조명으로 장식되어 어느 방향으로 걸어도 화려한 야경을 즐길 수 있으며, 포토존도 다양하게 마련되어 있어 연말 여행 사진 남기기에도 안성맞춤입니다.\n\n<p class=\"font-size20 colorDarkBlue medium\">주말 공연과 체험 프로그램</p>\n주말에는 지역 아티스트들의 버스킹 공연, 시민 참여형 점등 이벤트 등이 운영되어 축제 분위기를 더 끌어올립니다. 12월 20일~21일 주말에는 크리스마스 쿠킹 클래스, 미니 트리 만들기 등 가족·연인 단위로 즐기기 좋은 체험 프로그램도 마련되어 있어 색다른 추억을 남기기에 충분합니다.<br>\n<p class=\"font-size2 colorDarkBlue small\">이미지 제공 : 중구 SNS 서포터즈 해마쌤</p>\n<p class=\"list-tit mt\">광복로 겨울빛 트리축제</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산 광복로, 광복중앙로 일원</li><li><span>기간</span> : 2025.12.05(금) ~ 2026.02.22(일)</li><li><span>시간</span> : 17:30 ~ 22:00</li><li><span>홈페이지</span> : <a href=\"https://litt.ly/gwangbok_treefestival/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://litt.ly/gwangbok_treefestival</a></li></ul>\n<br>\n<p class=\"font-size28 colorDarkBlue medium\" >4. 겨울 감성으로 가득한 곳, 빌라쥬 드 아난티 트리빌리지</p>\n부산 기장 해안에 위치한 빌라쥬 드 아난티 트리빌리지는 겨울 시즌을 맞아 조명과 트리 장식으로 꾸며진 야외 공간을 선보입니다. 축제는 기장 바닷가 인근의 아난티 광장에서 진행되며, 방문객 누구나 자유롭게 관람할 수 있는 것이 특징입니다. 광장 일대에는 다수의 트리가 숲처럼 배치되고, 조명 연출이 더해져 따뜻하고 화려한 겨울 분위기를 만들어냅니다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2617&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2790",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산에서 즐기는 책멍 여행, 이색 책 공간 3곳",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "무더운 여름이 만연한 요즘. 조용한 실내에서 책과 함께 여유를 즐기는 피서는 어떠세요? 단순히 책을 읽는 공간을 넘어 문화를 경험하고, 감각적인 건축과 휴식을 함께 즐길 수 있는 부산의 ‘책멍’ 명소 3곳을 소개합니다. 책과 함께하는 이색 공간 함께 보시죠!\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화와 함께 머무는 공간, 영화의전당 라이브러리</p>\n해운대 센텀시티 영화의전당 더블콘 4층에 위치한 영화의전당 라이브러리는 영화 전문 자료를 만날 수 있는 특별한 공간입니다. 영화와 관련된 다양한 국내외 서적과 시나리오에 대한 책을 보고 휴식할 수 있는 공간도 있어요.\n영화 잡지뿐 아니라 OST LP도 자유롭게 감상할 수 있으며, 영화 DVD 무료 감상도 가능하여 영화 팬이라면 더욱 흥미롭게 둘러볼 수 있습니다.\n라이브러리 이용과 함께 영화 상영회와 아카데미 등 다양한 문화 프로그램도 운영하고 있어요. 영화를 보다 깊이 있게 경험하고 싶은 여행자들에게 추천하는 실내 문화 공간입니다.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 해운대구 수영강변대로 120, 영화의전당 더블콘 4층</span></li><li><p>운영 시간</p><span>화요일~일요일 10:00 ~ 19:00 (매주 월요일 정기 휴관)</span</li><li><p>주차 정보</p><span>영화의전당 건물 내 유료 주차장 (08:00 ~ 23:00 운영 / 현금결제 불가)</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산역에서 가장 가까운 힐링 공간, 북두칠성도서관</p>\n부산역에서 도보 약 5분 거리에 위치한 북두칠성도서관은 부산에 방문했을 때 여행의 시작과 끝에 잠시 쉬어가기 좋은 복합문화공간입니다.\n높은 층고와 계단형 서가가 인상적인 내부에서는 남녀노소 누구나 자유롭게 독서를 즐길 수 있어요. 여름방학 기간에는 어린이를 위한 체험 프로그램도 운영되어 가족 단위 방문객들에게도 인기가 높답니다.\n부산의 특색을 담은 로컬 굿즈도 판매하고 있는데요. 엽서부터 마그넷, 티셔츠까지 다양한 물품이 있어서 골라서 구매도 가능합니다. 부산역 근처에 있으니 기념품 구매를 위해 들러보시는 것도 추천드려요.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 동구 충장대로 160, 협성마리나G7 B동 1층</span></li><li><p>운영 시간</p><span>평일 10:00 ~ 20:00 / 주말 10:00 ~ 20:30 (매주 화요일 정기 휴관)</span</li><li><p>찾아가는 길</p><span>부산KTX역 6번 출구와 연결된 보행데크를 통해 도보 5분 이내로 편리하게 이동 가능</span></li><li><p>주차 정보</p><span>건물 내 지하 유료 주차장, 주차 요금은 매 10분당 500원</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">책과 정원이 함께하는 복합문화공간, 종로문고 스퀘어가든점</p>\n문현금융단지 BIFC2에 위치한 종로문고 스퀘어가든점은 서점과 휴식 공간이 자연스럽게 연결된 오픈한지 얼마 안된 복합문화공간입니다. 따뜻한 원목 인테리어와 넓은 서가, 다양한 문구와 라이프스타일 상품을 둘러보는 재미는 물론, 실내 이끼 정원과 야외 스퀘어가든까지 이어지는 공간 구성이 특징이예요.\n서점에서 책을 읽은 뒤 정원을 산책하거나 루프탑에서 잠시 쉬어갈 수 있는 공간도 마련되어 있어요. 책을 읽은 후 휴식을 취하며 도심 속 여유를 만끽하기 좋습니다. 푸드코트와 카페도 함께 이용할 수 있어 반나절 여행지로도 안성맞춤이랍니다.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 남구 문현금융로 40 BIFC2 상가층 3층</span></li><li><p>운영 시간</p><span>오전10시 - 오후9시</span</li><li><p>주차 정보</p><span>건물 지하 유료주차장 이용</span></li></ul></div>\n\n<p class=\"font-size20 colorBlack medium\">[부산 책멍 명소 자주 묻는 질문]</p>\nQ1. 부산에서 조용히 책을 읽을 수 있는 공간을 찾는다면 어디가 좋나요?\nA. 영화의전당 라이브러리, 북두칠성도서관, 종로문고 스퀘어가든점을 추천합니다. 각각 영화 자료, 복합문화공간, 서점과 정원이 어우러진 공간이라는 특징이 있습니다.\n\nQ2. 부산역 근처에서 갈 수 있는 책 공간이 있나요?\nA. 부산역에서 도보 약 5분 거리에 위치한 북두칠성도서관을 추천합니다. 부산의 특색을 담은 로컬 굿즈도 판매하고 있습니다.\n\nQ3. 영화 관련 자료를 볼 수 있는 곳은 어디인가요?\nA. 해운대 센텀시티 영화의전당 더블콘 4층에 위치한 영화의전당 라이브러리입니다. 영화 관련 국내외 서적과 시나리오 책, OST LP 감상, 영화 DVD 무료 감상이 가능합니다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2790&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2856",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 10월 대표 축제, 영화와 함께 만나는 부산! 제31회 부산국제영화제",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 영화의 전당",
+        "review": "pending"
+      },
+      "originalText": "<p class=\"font-size20 colorGray medium\">사진 : 고부기 크리에이터 6기 김현경</p>&nbsp;\n올가을 부산이 다시 영화로 물듭니다. 아시아를 대표하는 영화 축제 중 하나인 부산국제영화제가 올해도 부산을 찾는 영화인과 관객들을 맞이합니다. 제31회 부산국제영화제는 2026년 10월 6일(화)부터 10월 15일(목)까지 열흘간 부산 곳곳에서 개최되는데요. 영화의전당을 중심으로 다양한 상영과 프로그램이 펼쳐져 영화와 부산 여행을 함께 즐기기 좋은 시기입니다.\n올해 영화제에서는 총 316편의 영화가 상영될 예정이며, 개막작으로는 김종관 감독의 <낮과 밤은 서로에게>가 선정됐습니다. 국내외 다양한 작품을 한자리에서 만나볼 수 있어 평소 영화에 관심이 많았다면 더욱 특별한 여행을 계획해볼 수 있답니다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화만큼 다양한 영화제 프로그램</p>\n부산국제영화제의 매력은 영화와 영화인을 가까이에서 만날 수 있는 다양한 프로그램이 함께 마련되는데요!\n배우들의 이야기를 직접 들어볼 수 있는 ‘액터스 하우스’에서는 배우가 직접 자신의 작품과 연기, 영화에 대한 이야기를 들려줍니다. 영화에 대한 깊이 있는 이야기를 듣고 싶다면 ‘마스터 클래스’도 놓치지 마세요. 영화계의 거장들이 작품과 영화 철학에 대해 이야기하는 자리로, 영화를 조금 더 깊이 있게 바라볼 수 있는 시간이 됩니다.\n야외에서 영화를 즐길 수 있는 ‘오픈 시네마’도 부산국제영화제에서 만날 수 있는 특별한 프로그램입니다. \n\n\n<p class=\"font-size28 colorDarkBlue medium\">남포동에서 만나는 관객 중심 영화 축제, 커뮤니티비프</p>\n\n영화제 기간에는 영화의전당뿐만 아니라 부산의 다양한 공간에서도 영화와 관련된 프로그램이 이어집니다.\n그중 남포동에서 열리는 ‘커뮤니티비프’는 관객이 직접 참여하고 함께 만들어가는 영화 축제입니다. 10월 8일부터 11일까지 진행되며 영화 상영은 물론 공연과 토크 등 다양한 프로그램이 어우러져 색다른 영화제 경험을 선사합니다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화와 함께 더 특별해지는 가을 부산 여행</p>\n부산국제영화제 기간에는 영화의전당 주변뿐만 아니라 부산 곳곳에서 영화제의 분위기를 느낄 수 있습니다. 영화를 좋아하는 여행객이라면 관심 있는 작품을 미리 살펴보고 상영 일정에 맞춰 부산 여행 코스를 계획해보세요.\n낮에는 부산의 바다와 골목을 여행하고, 저녁에는 영화 한 편을 감상하거나 영화인들의 이야기를 들어보는 것도 추천합니다. 평소와는 다른 부산의 분위기를 느낄 수 있답니다.\n\n\n<p class=\"font-size20 colorBlack medium\">Q&A</p>\n<span class=\"colorBlack medium\">Q. 부산국제영화제 주요 프로그램은 어디에서 열리나요?</span>\n\nA. 배우와 직접 만나는 ‘액터스하우스’와 영화 거장들의 이야기를 들을 수 있는 ‘마스터클래스’는 주로 신세계백화점 센텀시티점 9층 문화홀에서 진행돼요. ‘오픈시네마’는 영화의전당 루프씨어터에서 야외 상영으로 만나볼 수 있답니다. 단, 마스터클래스는 프로그램에 따라 영화의전당에서 진행되는 경우도 있으니 예매 전 상영 장소를 확인해 주세요.\n\n<span class=\"colorBlack medium\">Q. 부산국제영화제 프로그램은 어떻게 예매하나요?</span>\n\nA. 주요 프로그램은 모두 부산국제영화제 공식 홈페이지를 통해 예매할 수 있어요. 프로그램별 예매 오픈 일정과 좌석, 장소가 다르기 때문에 관람을 원하는 프로그램의 상세 정보를 미리 확인하는 것을 추천해요. 디지털 취약층에 해당하는 만 65세 이상 어르신과 장애인은 당일 및 익일 상영작에 한하여 모든 현장 매표소에서 티켓 구매가 가능합니다. (신분증 등 지참필수, 몇몇 유료 이벤트 제외)\n&nbsp;\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2856&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

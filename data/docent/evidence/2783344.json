@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2783344",
+    "name": "낙동강 생태탐방선",
+    "lat": 35.110210832,
+    "lng": 128.9491801483
+  },
+  "collectedAt": "2026-10-24T09:57:13.410Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:353"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2783344",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "낙동강 생태탐방선",
+      "relation": "same-place",
+      "originalText": "낙동강 생태탐방선은 낙동강 물줄기를 따라 에코투어를 즐길 수 있는 프로그램이다. 물금과 대동 코스, 을숙도 일원 코스, 화명과 물금 코스가 있다. 낙동강 생태탐방선은 전화로 사전예약 또는 방문 후 승선이 가능하다. 승선신고서 작성을 위해 신분증을 반드시 지참해야 하며, 탑승 20분 전까지 탑승장에 도착해야 한다.\n여객 30명까지 승선이 가능한 탑승선은 쾌적하고 넓은 내부를 자랑한다. 탐방선이 출발하면 생태탐방 해설사가 낙동강의 생태와 역사에 관해 설명해 준다. 유익한 해설을 들은 후에는 탐방선 2층에서 따뜻한 햇볕과 시원한 강바람을 맞으며 아름다운 낙동강 풍광을 눈에 담을 수 있다. 낙동강 생태탐방선의 특징 중 하나는 친환경에너지를 사용한다는 것인데, 2층에서 태양광발전기와 풍력발전기를 통해 에너지를 얻는 모습을 직접 관찰할 수 있다. 또 선내에 망원경이 비치되어 멀리 있는 풍경까지 더욱 자세한 생태탐방이 가능하다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2783344&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:53:49.372Z",
+      "modifiedAt": "20260810152146"
+    },
+    {
+      "id": "busan-theme:353",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "여긴 꼭 가야해! 아이와 함께 가기 좋은 곳",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "낙동강 생태탐방선",
+        "review": "pending"
+      },
+      "originalText": "자녀에게는 좋은 것만 보여주고픈 것이 부모 마음. 어딜 가든, 무엇을 하든, 그 마음은 변치 않는다. 부산에서도 아이와 함께 꼭 가봐야 할 곳이 많다.\n<p class=\"font-size20 colorDarkBlue bold\">국립해양박물관</p>모든 연령대의 어린이를 충족시킬 수 있는 전시‧체험시설이 층별로 구비되어 있는 박물관. 조용한 공간을 찾는다면 1층어린이 자료실로, 전시 관람과 체험활동은 2층 어린이박물관으로, 바다생물을 직접 만나려면 3층 수족관으로, 하루 종일 지루할 틈이 없으니 아이들의 천국이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산시민공원</p>아이와 함께 연날리기, 비누방울놀이 하기, 모래놀이 하기, 뽀로로 만나기, 책읽기, 놀이터에서 놀기... 끝도 없이 이어지는 이 모든 것을 부산시민공원에서 한방에 해결할 수 있다. 아이들에게 즐거운 기억만을 선물해 주는 아주 특별한 공원이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산아쿠아리움</p>신비로운 바닷 속 광경이 눈앞에 펼쳐진다. 동에 번쩍, 서에 번쩍 나타나는 대형 상어는 아이들의 혼을 쏙 빼놓는다. 대형 수조 속에는 바다동물과 인어공주가 함께 유영한다. 아이의 눈에는 그저 신기하기만한 바다세상이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">낙동강생태탐방선</p>배를 타고 낙동강 주변의 생태환경을 보고 느낄 수 있는 탐방 프로그램이다. 날씨 좋은 어느 날, 아이와 함께 강 탐험에 나서보자. 바다와 강이 만나는 낙동강 하류 지역은 자연생태 체험의 보고다. 홈페이지 예약은 필수!\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">키자니아부산</p>어린이 직업체험 테마파크인 이곳은 체험군이 다양하여 미리 알아보고 직업군을 정하지 않으면 흘러가는 시간에 마음이 조급해질지도 모른다. ‘네 꿈은 뭐야?’ 키자니아부산에서 발견할 수 있다. 꿈도 많고, 하고 싶은 것도 많은 내 아이와 소중한 시간을 나눠보자.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산영화체험박물관/트릭아이뮤지엄부산</p>영상물을 좋아하는 아이라면 부산영화체험박물관을 지나칠 수 없다. 순서에 따라 촬영하기만 하면 한편의 영상이 완성된다. 즐거운 착시를 경험하는 트릭아이뮤지엄도 같은 공간에 있다. 앱을 활용하면 살아 움직이는 벽화 속에서 다양한 모험이 가능하다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">솔로몬로파크</p>대한민국에 몇 개 없는 법 교육 테마공원이다, 법조인을 꿈꾸는 아이부터 법에 관심 있는 어른까지 함께 참여할 수 있으며, 모의재판, 과학수사 등 다양한 체험 프로그램이 갖춰져 있다. 법은 멀리 있지 않다. 아이들이 쉽고 재미있게 법을 접할 수 있도록 만들어진 공간.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">을숙도</p>을숙도는 아이와 함께 자연, 문화, 교육, 레저를 동시에 즐길 수 있는 곳이다. 낙동강 하구 자연생태를 가장 가까이에서 관찰할 수 있고, 다양한 전시와 공연 관람도 가능하다. 억새 흐드러진 오솔길을 달리는 자전거 여행을 계획해보는 것도 좋겠다.\n\n\n<p class=\"font-size20 colorDarkBlue bold\">다대포낙조분수</p>밤하늘을 배경으로 화려한 조명이 빛을 발한다. 신나는 음악에 맞춰 춤을 추는 분수가 환상적이다. 높이 솟았다가, 갑자기 땅으로 내려앉았다가, 또다시 물줄기가 솟아오르며 사방으로 물결친다. 아이의 마음도 분수 따라 춤을 춘다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=353&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

@@ -152,3 +152,6 @@ vite.config.ts.timestamp-*
 next-env.d.ts
 *.tsbuildinfo
 .vercel
+
+# 로컬 도슨트 API 응답 캐시 (검수 대상 evidence/는 커밋)
+data/docent/cache/

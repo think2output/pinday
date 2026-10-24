@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2487925",
+    "name": "대저생태공원",
+    "lat": 35.199412,
+    "lng": 128.974342
+  },
+  "collectedAt": "2026-10-24T09:57:13.578Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:306",
+      "busan-theme:307",
+      "busan-theme:465",
+      "busan-theme:468",
+      "busan-theme:831",
+      "busan-theme:861",
+      "busan-theme:1004",
+      "busan-theme:1149",
+      "busan-theme:1158",
+      "busan-theme:1182",
+      "busan-theme:1215",
+      "busan-theme:1823",
+      "busan-theme:2835"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2487925",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "대저생태공원",
+      "relation": "same-place",
+      "originalText": "대저생태공원은 낙동강 우안 대저수문에서부터 김해공항램프까지의 둔치지역으로, 구포대교부터 아래로 낙동강하류 철새도래지에 속하는 지역이다. 신덕습지를 비롯한 크고 작은 습지와 수로, 초지, 유채꽃단지, 각종 체육시설이 조성되어 있어 여가와 휴식을 즐길 수 있는 곳이다. 공원의 양쪽 끝에 체육시설과 이용편의시설을 배치하고 그 외 지역은 습지와 초지 등으로 조성하였다. 특히 구포대교 아래쪽으로 조성된 유채경관단지에서 매년 4월 개최되는 유채꽃 축제에는 수많은 관광객들이 방문하는 새로운 명소로 자리 잡고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2487925&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:53:57.790Z",
+      "modifiedAt": "20260305095846"
+    },
+    {
+      "id": "busan-theme:306",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "2024년 가장 먼저 달려가서 봐야 할 부산 벚꽃 명소 모음zip",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "대한민국에서 제주도를 제외하고 벚꽃이 가장 먼저 꽃망울을 터뜨리는 곳, \n도시 곳곳에서 혹은 도시를 잠깐 벗어나서 산과 함께, 강과 함께, 바다와 함께 벚꽃을 볼 수 있는 곳, 부산의 봄을 소개한다.\n<p class=\"font-size20 colorDarkBlue bold\">대저생태공원</p>대저생태공원은 전국 최대 규모 유채꽃단지다. 다양한 체육시설이 조성돼 있어 여가와 휴식을 동시에 즐길 수 있다. 유채꽃 질 무렵, 벚꽃 잎이 꽃망울을 터뜨리면 연분홍과 노란 물결이 동시에 장관을 만든다. 3월 말이면 어김없이 강서 낙동강30리 일대에선 벚꽃 축제가 열리고 이때가 되면 낙동강변은 흐드러지는 하얀 벚꽃 잎으로 봄의 절정을 향해 간다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">삼락생태공원</p>삼락생태공원은 철새 도래지로도 유명한데 야생화단지, 자전거도로, 산책코스, 오토캠핑장 등을 갖추고 있어 다양한 야외 활동이 가능하다. 특히 봄이면 낙동제방에 심어진 3.000여 그루의 벚나무가 하얀 꽃터널을 만들어 해가 지고 조명이 켜지면 로맨틱한 분위기가 절정에 달한다. 부산의 최고 벚꽃 명소를 꼽을 때 삼락생태공원을 빼놓고 이야기하기 힘든 이유다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">맥도생태공원</p>맥도생태공원은 겨울철새들이 날아드는 곳으로 탐방로, 습지데크, 연꽃단지, 수생식물원, 체육시설 등이 조성돼 있어 사시사철 시민들의 사랑을 받는 장소다. 이곳은 부산의 벚꽃 명소 중에서도 비교적 덜 알려져 있어 한산하게 봄을 만끽할 수 있다. 노점이 없어 호젓한 분위기에서 벚꽃을 즐기려는 사람들에게 안성맞춤이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">해운대 달맞이길</p>부산의 인기 드라이브코스 해운대 달맞이길은 언덕 위에 조성된 카페 거리와 함께 연인들이 즐겨 찾는 데이트코스다. 특히 벚꽃이 만개한 저녁, 보름달까지 뜨면 달빛과 벚꽃의 몽환적 조화가 잊을 수 없는 아름다움을 만든다. 천천히 언덕길을 따라 걸으며 점점 화려해지는 벚꽃 군무를 달빛 아래서 감상하는 게 포인트다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">남천동 벚꽃거리</p>부산 대표 벚꽃 군락지 남천동 벚꽃거리는 외국인들도 많이 찾는 관광지다. 삼익비치타운아파트부터 광안리 바닷가로 연결되는 길은 한적하게 벚꽃을 감상할 수 있는 숨은 명소다. 봄이면 아파트 단지 사이 도로변을 드라이브하거나 벚꽃 아래서 추억을 남기는 사람들을 쉽게 찾아 볼 수 있다. 벚꽃철에는 주변에 거주하는 주민을 위해 소음을 낮추는 센스, 잊지 말자.\n<p class=\"font-size20 colorDarkBlue bold\">동대신동 벚꽃거리</p>부산 사람도 잘 모르는 벚꽃 명소가 또 있다. 바로 동대신동 삼익아파트 벚꽃터널이다.\n주택과 아파트 단지 사이로 매년 봄 연분홍빛 벚꽃이 장관을 이룬다. 아직 잘 알려지지 않아 번잡한 유명 벚꽃길보다 조용히 봄을 즐길 수 있다. 만개한 벚꽃과 가로등 불빛의 조화가 매력인데 퇴근길에 잠시 들러 봄을 만끽하기 좋다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">온천천카페거리</p>온천천카페거리는 새로운 분위기의 카페들로 연중 젊은이들이 많이 찾는 장소다. 그러나 이곳이 가장 붐비는 시기는 뭐니 뭐니 해도 벚꽃시즌이다. 낮이면 밝은 분홍빛 벚꽃이 온천천에 반영을 만드는 황홀한 풍경이, 밤이면 가로등 불빛과 어우러진 벚꽃 향연이 많은 이들의 발걸음을 붙잡아 놓는다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">황령산벚꽃길</p>부산의 대표 명산으로 꼽히는 황령산은 정상으로 올라가는 도로를 따라 벚꽃 나무 군락이 형성돼 있다. 봄이면 부산 시내 야경과 함께 벚꽃을 감상하기에 더없이 좋은 장소다. 특히 벚꽃 잎이 떨어지는 시기, 차로 이 도로를 달리면 꽃잎이 비처럼 쏟아지는 아름다운 풍경을 마주할 수 있다.\n꽃잎 흩날리는 도로 끝에는 봄에 취한 부산이 한눈에 들어온다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=306&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:307",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 유채꽃명소 추천, 노란 꽃들의 절정",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "3월과 4월, 부산은 온통 노란빛으로 물든다. 부산의 산과 공원이 유채꽃으로 절정을 이루기 때문이다.\n탁 트인 바다 풍경의 유채밭, 전국 최대 규모를 자랑하는 유채꽃 공원 등 모두 부산의 봄에 만날 수 있는 명소들이다.\n<p class=\"font-size20 colorDarkBlue bold\">대저생태공원</p>대저생태공원은 전국에서 가장 넓은 76만㎡의 유채꽃 단지다. 무려 축구장 63개 규모를 자랑하는 이곳은 도심과 가까워 유채꽃 시즌이면 항상 인파로 붐빈다. 특히 매년 4월 ‘부산 낙동강유채꽃축제’가 열리는 곳으로 이색적 개막식부터 합동결혼식, 음악공연까지 다양한 볼거리를 제공한다.\n대저생태공원에서는 무료 자전거 대여가 가능해서 넓은 유채꽃밭을 누비며 하하호호 페달을 밟는 재미가 쏠쏠하다. 또 이곳은 부산 지역 사진 애호가들을 불러 모으는 야외 촬영지로도 유명한데 너른 유채꽃밭 곳곳에서 예쁜 전경을 프레임에 담는 셔터 소리가 귀를 간질인다.\n<p class=\"font-size20 colorDarkBlue bold\">삼락생태공원</p>삼락생태공원은 사상구 삼락동 낙동강 둔치에 자리한 시민공원이다. 매년 봄이면 낙동강을 사이에 둔 벚꽃 터널과 유채꽃밭을 동시에 즐길 수 있는 장소로 유명하다. \n4월 초에 ‘삼락유채꽃축제’가 열리면 부산은 물론 전국에서 행락객이 몰려든다. 축제 시즌이면 곳곳에 포토존이 마련되고 각종 거리공연 등이 열린다. \n삼락생태공원은 자전거전용 도로를 비롯해 산책코스, 오토캠핑장, 수상레포츠타운 등 각종 여가시설이 잘 갖춰져 있다. 축제기간을 활용해 레저 활동을 함께 즐기는 것도 좋겠다.\n<p class=\"font-size20 colorDarkBlue bold\">온천천 시민공원</p>부산 동래구에 위치한 온천천 시민공원은 도심 한복판을 가로지르는 생태하천을 간직한 공간이다.\n봄철이면 벚꽃, 유채꽃, 영산홍이 만개해 명품 산책로가 돼 준다. 특히 색색 꽃망울이 하천에 반영을 만드는 장면은 온천천 시민공원에서 놓쳐선 안 될 장면이다. \n온천천 시민공원의 또 다른 백미는 야간에 즐기는 유채꽃 풍경이다. 카페거리에서 바라 본 유채꽃과 벚꽃이 무드등과 조화를 이루는 몽환적 아름다움은 부산의 밤을 더 없이 아름답게 만든다.\n<p class=\"font-size20 colorDarkBlue bold\">오륙도</p>부산 남구 용호동에 위치한 오륙도 해맞이 공원은 스카이워크 뒤편 산자락에 위치해 있다.\n이 공원이 특별히 아름다워 지는 시기는 유채꽃 망울이 터지면서부터다. 매년 3월말 ~ 4월이면 공원을 둘러싼 해안 절벽과 공원 전체를 뒤덮고 있는 유채꽃이 만발한다.\n흐드러지는 노란 유채꽃과 푸른 바다가 어우러진 풍경은 마치 한 폭의 풍경화를 보는 듯하다. 시원한 바닷바람이 불 때면 노란 꽃잎이 허공을 수놓는 드라마틱한 풍경을 만날 수 있다.\n해안절벽 위 투명한 유리 다리를 통해 바다 절경을 스릴 있게 감상할 수 있는 스카이워크도 빼놓지 말자.\n봄이면 가장 먼저 벚꽃을 떠올리는 이들이 많지만 전국 최대의 유채 꽃밭이 부산에 있다는 것을 아는 이들은 그리 많지 않다.\n부산 곳곳의 유채 명소들을 따라가다 보면 벚꽃을 함께 즐길 수 있는 경우도 많으니, 봄을 제대로 만끽하는 일석이조의 방법 아닐까. \n싱그러운 유채 향기를 따라 부산의 봄을 제대로 느껴보자.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=307&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:465",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "갈대와 억새가 부르는 가을 노래",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "하늘은 높고 말은 살찌는 천고마비의 계절 가을. 맑은 하늘과 선선한 바람을 느끼다 보면 설레는 마음을 감출 길이 없다. 하던 일은 잠시 내려두고 걷고 싶은 날. 부산 곳곳에서 만날 수 있는 갈대와 억새를 통해 가을의 정취를 느껴보기로 한다.\n<p class=\"font-size20 colorDarkBlue bold\">을숙도생태공원</p>낙동강 하구의 생태계가 오롯이 보존되어 있는 을숙도생태공원. 가을에서 겨울로 넘어가는 때, 철새들의 보금자리가 되는 이곳은 해질 무렵이면 아름다운 일몰을 만날 수 있는 곳으로도 유명하다.\n쭉 뻗어 나 있는 생태탐방로를 따라 갈대와 물억새 군락이 춤을 추는 곳에서 늦가을의 정취를 한껏 누려본다, 금빛과 은빛이 혼재된 황홀한 물결 속에서 자연과 하나 되는 놀라운 경험을 할 수 있다.\n을숙도의 남단에 위치한 낙동강하구 탐방체험장에서 드넓은 갈대 습지의 장관을 감상할 수 있다. 바람에 일렁이는 황금빛 파도 위로 날아오르는 철새들의 모습은 소리 없는 감탄을 자아낸다. 선선한 가을바람을 타고 흐르는 낙동강의 유유한 물결과 무르익은 습지의 갈대가 스치는 소리는 마치 존재하지 않는 딴 세상을 만난 듯 이질적이면서 신비롭다.\n<p class=\"font-size20 colorDarkBlue bold\">삼락생태공원</p>넓디넓은 삼락생태공원, 사계절 내내 한예쁨 하는 곳이지만 갈대와 억새가 늦가을의 풍경을 한껏 뽐낼 때면 그 살랑거림에 이끌려 많은 발걸음이 이곳에 머문다. 낙동강을 따라 조성된 산책로는 탁 트인 전망만큼이나 막혔던 속을 한껏 뚫어준다. 유유히 흐르는 물살과 여유롭게 걷는 걸음, 그리고 강나루 갈대숲길, 물아일체(物我一體)의 일상이 이곳에 있는 듯하다. 삼락생태공원의 하늘은 유달리 높고, 산들산들 부는 바람이 얼굴을 간질인다. 경사 없는 평탄한 산책길을 여유롭게 즐긴다. 바람에 서로 부대끼며 가을 낭만을 전해주는 곳, 키를 훌쩍 넘어서는 갈대와 억새가 아늑한 오솔길을 만들어 준다.\n<p class=\"font-size20 colorDarkBlue bold\">대저생태공원</p>크고 작은 습지와 다양한 식물군 사이로 멋진 산책로가 조성되어 있는 대저생태공원은 봄이면 노란 물결 일렁이는 유채꽃밭이 펼쳐지지만, 가을에는 억새와 갈대군락이 손짓하는 황금 들판으로 변모한다. 휘어지는 데크와 수로를 따라 길게 펼쳐지는 갈대밭, 바람이 불어오는 방향으로 발걸음을 옮기면 눈부신 햇살아래 갈대가 품에 안길 듯 다가온다. 눈에 가득 담기는 가을 풍경, 분명 도심 속 강둑 하나 넘어온 것뿐인데 아주 먼 곳으로 여행 온 듯 마음에 여유가 깃든다. 넘어지고 밟혔다가도 다시 일어서서 바람을 맞고 선 갈대를 바라보며 삶의 의연함을 배운다. 아름다움과 평온함의 공존을 그저 말없이 바라보게 된다.\n<p class=\"font-size20 colorDarkBlue bold\">다대포해수욕장</p>다대포해수욕장 한쪽 편에 넓게 자리한 갈대평원, 푸른 바다와 절묘한 조화를 이루는 황금빛 갈대 물결이 장관을 이루는 곳이다. 낙동강이 남해로 흘러드는 최남단에 형성된 습지, 이곳엔 철새와 갈대가 사이좋게 공존한다. 갈대 숲 사이로 보이는 사람과 새의 발자국이 또 다른 조화를 이룬다. 무르익은 갈대밭 속 시선을 사로잡는 소나무 한 그루, 벽에 걸린 액자 속 풍경사진이 그대로 펼쳐진 듯하다. 갈대는 바람에 출렁이고 파란 하늘과 바다는 자연의 축복인 듯 눈이 시리다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=465&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:468",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "자전거로 즐기는 부산",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "부산은 바다, 산, 강을 모두 품고 있다. 이런 자연환경 덕분에 부산에서는 개인의 취향에 맞는 다채로운 체험이 가능하다. 특히 부산의 강과 하천을 따라 자전거를 타고 시원하고 경쾌하게 달려 보는 건 부산을 즐기는 또 하나의 방법이다.\n\n자전거로 부산을 즐기려면 당연히 자전거가 있어야한다. 내 자전거가 있으면 좋겠지만 없어도 걱정할 필요 없다. 부산에는 총 12곳의 공공 자전거 대여소 있기 때문이다. 자전거 대여는 삼락·화명·맥도·대저생태공원과 스포원 파크, 좌수영교, 을숙도, 온천장역, 온천천시민공원, 민락동 등에서 무료 또는 저렴한 비용으로 이용할 수 있다.\n\n자전거 타고 부산을 즐길 시간, 자전거 라이더들의 인기를 한 몸에 받고 있는 최애 라이딩 장소 5곳을 소개한다.\n<p class=\"font-size20 colorDarkBlue bold\">을숙도생태공원</p>유유히 흐르는 낙동강변을 따라 조성된 을숙도생태공원 자전거 길은 여름이면 푸른 녹음이 가득하고 늦가을엔 갈대군락이 살랑살랑 인사하는 곳이다. 가볍게 뺨을 스치고 지나가는 바람을 맞으며 고개를 들어보면 쾌청한 하늘이 라이딩의 재미를 더해준다. 일몰에 맞춰 이 코스를 찾는다면 세상의 모든 것들을 아름답게 만드는 마법 같은 시간, 골든아워를 달리는 라이더가 될 수 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">화명생태공원</p>곱게 뻗은 자전거 도로를 유유자적 달릴 수 있는 화명생태공원은 비단길 같은 길로 라이더들에게 사랑 받아 온 곳이다. 우거진 숲 사이 자전거 도로를 달리면 불어오는 시원한 강바람이 라이딩에 즐거움을 더하는 코스다. 특히 늘어지는 나무가 만들어주는 초록의 터널을 씽씽 달리는 경험은 화명생태공원만이 가진 매력이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">대저생태공원</p>봄에는 유채꽃이, 가을에는 핑크뮬리가 손짓하는 대저생태공원에서도 자전거 여행은 계속된다. 시원하게 뻗은 가로수길을 씽씽 달리는가 하면, 벚나무 터널 아래 끝날 것 같지 않은 자전거길이 계속 이어진다. 속도를 줄이고 천천히 페달을 밟다 보면 청량한 자연의 향기가 기분을 들뜨게 하고, 대나무가지가 바람에 춤을 추기라도 하면 잠시 멈춰 서서 대숲이 전하는 소리를 감상한다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">수영강변로</p>해운대와 수영을 가르는 수영강변은 낙동강변에서 느낄 수 없었던 시티 라이딩만의 매력을 만끽하며 달릴 수 있는 곳이다. 무조건 스피드를 높이는 것 보다는 천천히 페달을 밟으며 강약을 조절해가며 달린다. 수영강 물줄기를 따라 잘 정돈된 자전거 도로가 기분을 상쾌하게 만든다. 강변에 자리 잡은 APEC나루공원에서 충분한 휴식을 취해도 좋고. 여유 있는 라이딩을 즐기며 광안리 해변까지 달려 봐도 좋겠다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">온천천시민공원</p>부산의 대표 도심하천인 온천천을 따라 조성된 온천천시민공원 자전거도로는 온천천의 매력을 흠뻑 느끼며 편안하게 달릴 수 있는 코스다. 봄철 벚꽃길 라이딩이 아름다운 곳이기도 하지만, 사계절 내내 자전거를 즐길 수 있는 공간이다. 온천천 카페거리도 잘 조성돼 있어 자전거를 타다 휴식과 낭만을 즐기기에도 안성맞춤이다.\n\n똑같은 장소도 누구와 함께 가느냐, 또 어떤 방법으로 즐기느냐에 따라서 전혀 다른 느낌과 추억을 남길 수 있기 마련이다. 소풍을 와도 좋고 산책을 와도 좋지만, 자전거를 타고 즐기는 부산은 또 하나의 색깔 다른 추억이 되지 않을까.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=468&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:831",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "뜨거운 여름 도도한 연꽃 바다에 풍덩",
+      "relation": "same-place",
+      "match": {
+        "field": "MAIN_PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "화중군자(花中君子). 도도한 기품이 군자에 이른다 하여 붙여진 연꽃의 별명이다. 초록의 바다 위에 우뚝 솟아 발그레한 속살을 내비치는 연꽃의 자태는 누구라도 돌아볼 수밖에 없는 매력을 지녔다. 뜨거운 태양 아래 도도한 기품을 뽐내는 연꽃을 찾아 여름여행을 떠나보면 어떨까?\n\n부산에도 연꽃을 볼 수 있는 곳이 많다. 도심과 가까운 곳에 드넓게 펼쳐진 연밭이 있는가 하면 마을 한편에 소박하게 자리한 연꽃공원도 있다. 날씨가 좋으면 좋은 대로 나쁘면 또 나쁜 대로 여름 정취를 물씬 풍기는 부산의 연꽃 여행지로 다 함께 떠나 보자.﻿\n<p class=\"font-size28 colorDarkBlue medium\">삼락생태공원</p>낙동강을 따라 강변에 조성된 낙동강생태공원은 부산시민들이 즐겨 찾는 도심 속 생활공원이다. 화명에서 시작해 대저와 삼락, 맥도, 을숙도까지 이어지는 광활한 땅에 자전거길과 도보길, 운동시설, 휴게공간 등이 잘 조성되어 있어서 많은 시민들이 즐겨 찾는다.\n\n그 중 삼락생태공원은 지하철과 시내버스로 쉽게 접근할 수 있어서 더욱 많은 사랑을 받고 있다. 계절마다 꽃이 지천으로 피고 다양한 수생식물과 철새들도 만날 수 있어서 4계절 방문객이 끊이지 않는다. 공원 안 쪽으로 더 들어가면 무성한 나무들이 작은 숲을 이루고 낙동강과 샛강 사이에 수로가 여러 갈래로 이어지면서 색다른 풍경을 선사한다. 부산사람들도 놀랄 만큼 뜻밖의 운치다.﻿\n공원 한편엔 연꽃단지도 마련되어 있는데 여름이 시작되는 7월이면 연꽃이 한가득 피어나 장관을 이룬다. 그리 넓지 않은 공간이지만 홍련과 백련, 수련까지 다양한 연꽃을 한 번에 만날 수 있는데다 연꽃이 손에 닿을 듯 가까이 있기 때문에 사진을 찍기에도 더할 나위 없이 좋다. 덕분에 전국에서 찾아온 사진가들로 연꽃단지는 늘 북적인다.\n\n한여름 뙤약볕이 너무 힘들면 연꽃단지 가운데에 마련된 정자에서 잠시 쉬어가도 좋다. 마루에 앉아 연꽃을 바라보고 있으면 시원한 강바람이 금방 땀을 식혀준다. 서걱거리는 물억새 소리는 덤이다. 해가 질 무렵에 찾아가면 멋진 일몰까지 함께 감상할 수 있다. 낙동강 너머 서쪽 하늘로 지는 붉은 태양과 화려한 연꽃의 컬래버레이션은 삼락생태공원 연꽃단지를 더욱 빛나게 하는 히든카드다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">두구동 연꽃소류지</p>부산의 북쪽 끝자락인 두구동엔 작은 연꽃소류지가 있다. 두구동은 부산 도심과 가까운 곳인데도 한적한 시골 같은 전원 풍경이 펼쳐진다. 그 변화가 얼마나 드라마틱한지 갑자기 타임머신을 타고 다른 곳으로 순간이동을 한 기분마저 든다.\n\n마을 어귀를 지나 5분 정도 걸으면 금방 연꽃소류지에 닿는다. 그리 크지 않은 연못에 연잎이 빼곡하게 들어차 싱그러운 기운을 뿜어낸다. 조금 더 다가가면 진초록색 연잎 사이로 수줍게 고개를 내민 새하얀 백련이 눈길을 붙잡는다. 순백의 연잎이 바람에 하늘거리는 모습을 보고 있으면 내 마음도 덩달아 깨끗해지는 느낌이다.﻿\n소류지를 가로지르는 관람 데크를 따라 연밭 한가운데로 들어가면 연꽃을 더욱 자세하게 볼 수 있다. 약간 높은 위치에서 연꽃을 내려볼 수 있어서 연잎과 연꽃의 모양이 조금 더 입체적으로 보인다.\n\n커다란 연잎 아래 시원한 그늘에는 개구리들이 앉아 더위를 식히고 있다. 가만히 개구리를 지켜보고 있자니 여기저기에서 풍덩 풍덩 소리가 난다. 더위를 못 참고 물속으로 뛰어드는 개구리들 소리다.﻿\n\n﻿소류지 둑방을 따라 조성된 둘레길에는 다양한 여름 꽃들이 활짝 피어 여름 정취를 더한다. 10분이면 한 바퀴를 돌 수 있을 만큼 짧은 길이지만 여름 꽃들과 한바탕 사진 놀이를 즐기다 보면 한 시간이 훌쩍 달아난다. 소류지 곳곳에 사진 찍기 좋은 조형물들도 설치되어 있다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">대저생태공원</p>삼락생태공원과 함께 낙동강생태공원의 일부인 대저생태공원은 계절에 따라 다양한 꽃과 식물들을 심어 관광객들을 불러 모으는 경관농업지구로 유명하다. 대도시에선 보기 힘든 드넓은 땅에 봄이면 유채꽃, 여름에는 해바라기와 코스모스가 끝도 없이 피어나 비현실적인 풍경을 만든다. 가을에는 감성을 자극하는 핑크뮬리도 볼 수 있어서 부산여행의 필수 코스가 되었다.\n\n해바라기와 코스모스가 피기 전인 지금 대저생태공원은 연꽃이 한창이다. 작은 공간에 아기자기한 멋이 있는 삼락생태공원이나 두구동 연꽃소류지와 달리 대저생태공원은 탁 트인 공간에 드넓은 연밭이 펼쳐져 대조를 이룬다.﻿\n대저생태공원 주차장에서 강 쪽으로 10분 남짓 걸으면 연꽃단지를 만나게 된다. 끝이 보이지 않을 정도로 넓은 공간을 연잎이 가득 채우고 있는 모습부터가 색다르다. 이제 막 피어난 수 천 개의 홍련이 곳곳에서 손을 흔든다. 안쪽으로 걸어 들어갈 수는 없고 밖에서만 봐야하는 것이 아쉬울 만큼 거대한 스케일이다.\n\n연밭은 맑은 날도 좋지만 비오는 날이 더 예쁘다. 물기를 머금은 연꽃과 연잎이 더 싱그럽게 보이는데다 연밭에 떨어지는 빗방울도 무척 감성적이다. 연잎에 떨어진 물방울이 또르르 구르는 모습은 비오는 날 연밭 풍경의 하이라이트다. 비에 옷이 젖을까, 카메라가 망가지지 않을까 너무 걱정하지 말고 비가 주룩주룩 내리거든 연밭으로 가보자. 평생 잊지 못 할 멋진 풍경을 만나게 될 테니.﻿\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=831&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:861",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "안녕한 부산 안녕한 언택트 캠핑/차박",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "코로나 19로 새로운 일상을 맞이한 요즘, 거리두기를 실천하며 즐길 수 있는 안전한 여행지를 찾고 있나요? 더 없이 소중해진 일상에 소중한 추억을 만들어 주는 부산의 캠핑장은 어떨까요? 도심 속 자연을 충분히 느낄 수 있는 힐링 캠핑장을 소개합니다! \n<p class=\"font-size28 colorDarkBlue medium\">구덕야영장</p>숲 속 캠핑 느낌을 마음껏 느끼고 싶다면 구덕야영장을 선택해 보세요. 녹음이 우거진 숲 속에 동그란 앞마당 같은 캠핑장이 총 6곳으로 나눠져 있고, 각각의 캠핑장마다 나무 데크가 설치되어 있어요. 초록빛 풍성한 나무들이 하늘을 가득 채워주니 마치 깊은 산중에서 즐기는 캠핑 같기도 하답니다. 펼쳐진 나뭇잎 사이로 반짝이는 햇살을 마주하고 있노라면 평온한 일상의 소중함에 감사한 마음이 절로 피어오르는 곳이기도 합니다.\n산 속에 있는 만큼 다른 곳보다 조용하고 공기가 아주 맑고 상쾌해요. 종류도 다양한 울창한 나무숲 가운데 자리한 캠핑장은 훌륭한 생태학습장이 되기도 하죠. 뿐만 아니라 오솔길을 따라 걷다 만나게 되는 고즈넉한 호수는 구덕야영장의 장점 중 하나랍니다. 호수주변으로 산책로가 예쁘게 조성되어 있어 자연을 만끽하는 여유로운 산책이 가능해요. 숲 속 산책길 사이로는 개울이 흘러 그 시원함을 더하고, 밤이 되면 달빛 아래 풀벌레들의 노랫소리를 감상할 수 있는 구덕야영장입니다.\n\n주소 부산광역시 서구 서대신동3가 750\n전화 051-246-4685\n이용시간 09:00~18:00 / 야영지 이용일 13:00 ~ 퇴소일 11:00 \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">대저생태공원캠핑장</p>아름다운 낙동강변 청정구역에 넓게 위치한 대저생태공원캠핑장은 강변 특유의 서정적인 풍경을 선사하는 곳입니다. 시원하게 불어오는 강바람 즐기며 여유로운 힐링의 시간을 가질 수 있답니다.  끝없이 펼쳐진 초록의 잔디에 일반캠핑과 오토캠핑 구역이 질서정연하게 구분되어 있고, 화장실과 샤워장, 매점 등 편의시설이 모두 갖추어져 있어요. 달랑달랑 매달려 있는 캠핑용구들이 작지만 강력한 힐링 도구로 변신할 타이밍을 기다리고 있는 것 같아요.\n대저생태공원캠핑장의 넓은 공간이 가진 장점은 아주 많아요. 일단 옆 사이트와의 간격이 넉넉해 확장된 개별공간을 누릴 수 있어요. 또한 다목적으로 사용할 수 있는 광장이 군데군데 마련되어 있어 개인 취미 활동도 가능하답니다. 푸른 강물을 따라 이어진 산책로를 걸으며 나만의 사색의 시간을 가질 수 있는 곳이기도 하지요. 해질 녘엔 붉게 물드는 하늘이 너무 예쁜 대저생태공원캠핑장입니다.\n\n주소 부산광역시 강서구 대저1동 1-12번지\n전화 051-941-0957 / 010-7669-1472\n이용시간 이용일 14:00 ~ 퇴장일 12:00\n홈페이지 <a href=\"https://www.daejeocamping.com/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.daejeocamping.com/</a>\n\n\n소중한 캠핑과 차박의 추억을 위해 마스크와 손 소독제를 꼭 준비하셔서 안전한 여행 하세요~! \n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=861&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1004",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "낭만 가득 가을 꽃길 산책",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "﻿﻿\"가을이라 가을바람~ 솔솔 불어오니~♪♪ \" 가을바람 살랑 이는 바야흐로 가을. 부산에도 가을 정취가 물씬 느껴지는 낭만적인 꽃길이 가득하니 엉덩이가 절로 들썩인다. 핑크빛 고운 빛깔로 여심을 저격하는 핑크뮬리를 시작으로 가을 분위기 물씬 느껴지는 갈대꽃과 푸른 하늘과 찰떡궁합인 코스모스까지. 낙동강을 따라 끝없이 펼쳐지는 가을 꽃길 종합세트로 여러분을 안내한다.﻿\n<p class=\"font-size28 colorDarkBlue medium\">1. 을숙도 생태공원</p>을숙도는 낙동강이 바다와 만나는 곳에 형성된 섬이다. 삼각주를 비롯해 하구와 갯벌, 모래섬 등 다양한 생물들이 살 수 있는 환경이 잘 조성된 '생태계의 보고'다. 겨울에는 수천 마리의 철새들이 겨울을 나기 위해 을숙도로 날아든다. 낙동강에코센터를 방문하면 끝이 보이지 않는 습지와 갈대밭 사이로 철새들의 모습을 생생하게 관찰할 수 있다.\n\n부산 현대미술관 맞은편에 위치한 피크닉광장은 9월 말부터 온통 분홍빛으로 물들어 가을 정취를 북돋운다. 분홍쥐꼬리새라 불리는 '핑크뮬리'가 만개해 가을가을한 분위기를 듬뿍 느끼게 한다. 그리 큰 규모는 아니지만 공원 한편을 원형으로 감싸 도는 형태로 군락을 이루고 있어서 가볍게 산책을 즐기며 가을 기분을 느끼기에 부족함이 없다.﻿(올해는 코로나19 확산을 막기 위해 최근 핑크뮬리를 잘라냈기 때문에 이제는 볼 수가 없다.)\n을숙도공원 피크닉광장 가운데엔 드넓은 잔디밭이 펼쳐져 있다. 핑크뮬리와 함께 인생사진을 찍느라 지쳤다면 잔디밭 가운데에 듬성듬성 서 있는 키 큰 나무 아래에서 가을바람을 맞으며 잠시 쉬어도 좋다. '피크닉광장'이란 이름에 걸맞게 나무 그늘 아래 돗자리를 펴고 도시락을 먹거나 책을 읽는 사람들이 주변에 가득하다.\n\n을숙도공원이 가장 빛나는 시간은 해가 질 무렵이다. 나른해진 햇살이 세상을 황금빛으로 물들이며 영화 속 한 장면을 연출한다. 멋진 인물사진을 찍고 싶다면 이 순간을 놓치지 말자. 인생사진은 이런 빛 속에서 탄생한다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">2. 삼락생태공원</p>을숙도 생태공원에서 자동차로 10여 분 떨어진 곳에 있는 삼락생태공원은 사시사철 색다른 풍경을 만날 수 있는 도심 속 생활 공원이다. 계절마다 예쁜 꽃들이 지천으로 피어나는데다 산책로와 운동시설을 잘 갖추고 있어서 부산 시민들뿐 아니라 관광객들도 즐겨 찾는 곳이다. 조금만 안쪽으로 들어가면 낙동강 샛강 사이로 무성한 나무들이 숲을 끝이 보이지 않을 정도로 드넓게 숲을 이루고 있어서 대도시가 아닌 한적한 시골에 와 있는 듯 한 착각마저 드는 이색적인 장소다.\n\n어느 계절인들 아름답지 않겠냐 만은 삼락생태공원의 매력을 제대로 느낄 수 있는 계절은 단연 가을이다. 새하얀 갈대꽃이 끝도 없이 이어지는 장관을 만날 수 있기 때문이다. 9월 중순부터 10월 말까지 삼락생태공원 일대는 갈대꽃의 향연이 펼쳐진다. 낙동강을 따라 빼곡하게 자라난 갈대가 어찌나 많은지 도무지 그 끝을 가늠하기조차 어렵다. 잠잠하던 바람이 스치듯 불어오면 마치 파도가 일듯 새하얀 갈대꽃이 일제히 춤을 춘다. 서로 어깨를 걸고 군무를 추는가 싶더니 엇갈린 바람에 제각기 몸을 흔들며 화려한 자태를 뽐낸다. 가만히 서서 그 모습을 지켜보고 있으면 얼굴에 절로 미소가 떠오른다.﻿\n삼락생태공원 내에 있는 습지생태원은 가을바람을 맞으며 걷기 좋은 곳이다. 여름에는 연꽃이 활짝 피어 장관을 이루고 가을에는 갈대꽃이 걸음을 멈추게 한다. 갖가지 꽃을 만날 수 있는 야생화원과 코스모스 밭도 놓칠 수 없는 볼거리. 나무 사이로 난 오솔길을 따라 천천히 걸으면서 다양한 가을 풍경을 감상하다보면 시간이 어떻게 흘러가는지 까맣게 잊게 된다.\n\n워낙 넓은 공간이라 하루 중 어느 때 방문해도 좋지만 가을 기분을 제대로 느끼고 싶다면 서쪽으로 해가 기우는 오후 시간대를 맞춰 방문하는 것이 좋다. 아이들과 함께 자전거를 타거나 뛰어 놀기에도 더할 나위 없이 좋은 공간이다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">3. 대저생태공원</p>계절마다 다양한 꽃과 식물을 심어 관광객들에게 볼거리를 제공하는 대저생태공원도 가을이면 이색적인 풍경이 펼쳐진다. 올해는 코로나19 여파로 대규모 꽃단지를 만날 수는 없지만 공원 한편에 심어놓은 핑크뮬리는 예전보다 더 화려한 모습으로 우리를 기다리고 있다.\n\n대저생태공원에 조성된 핑크뮬리 군락은 을숙도 생태공원보다 훨씬 면적이 넓다. 좁은 공간에 많은 사람이 몰려들면 사진을 찍기도 구경을 하기도 힘들지만 대저생태공원은 물리적 공간이 넓어 그런 걱정은 넣어두어도 된다. 을숙도나 삼락생태공원처럼 도심과 완전히 동떨어진 듯 한 풍경은 아니지만 낙동강 주변의 넓은 공간이 주는 시원함이 대저생태공원의 매력이다. 산이 많은 부산은 생각보다 평지가 많지 않다. 대부분 비탈이거나 언덕이어서 지평선을 만나기 어렵다. 하지만 대저생태공원에선 지평선을 마주하게 된다. 지하철 3호선 강서구청 역에서 가까워 언제든 찾을 수 있는 것도 장점이다.﻿\n강둑을 따라 산책로가 길게 이어진다. 길옆으로 나무들이 보기 좋게 줄을 서 있고 그 사이로 갈대꽃이 드문드문 얼굴을 내민다. 대나무숲길도 만날 수 있다. 삼락생태공원만큼 압도적인 풍경은 아니지만 가을 분위기를 느끼기엔 부족함이 없다. 근처의 김해공항에서 날아오른 비행기와 하늘 가득 번지는 노을이 만나는 시간에는 여행 감성이 절정으로 치닫는다. 두 손에 카메라가 있다면 무조건 셔터를 눌러야할 매직 타임이다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1004&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1149",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "보라보라한 가을 감성여행지",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "아침저녁으로 이제 제법 선선한 바람이 붑니다. 바야흐로 가을이네요. 오늘은 가을 감성에 잘 어울리는 여행지들을 골라봤습니다. 가을 분위기가 물씬 풍기는 여러 여행지들 중에서도 특히 보라색에 주목해봤는데요. 보라보라한 부산의 감성 여행지로 지금 함께 떠나보시죠~!\n<p class=\"font-size28 colorDarkBlue medium\">대저생태공원</p>가을이 되면 가장 먼저 생각나는 부산 대표 공원이다. 낙동강변의 넓은 공간에 자리한 대저생태공원은 지금 가을 분위기가 절정이다. 공원 곳곳에 가을의 전령인 코스모스가 활짝 피었기 때문이다.\n파란 하늘을 이고 선 분홍빛 코스모스는 가만히 보고만 있어도 가을가을한 감성을 느끼기에 충분하다. 대저생태공원 한가운데에 위치한 연밭에 특히 코스모스들이 많은데. 다소곳이 고개를 들고 있다가도 산들바람에 이리 저리 춤을 추는 모습이 얼마나 예쁜지 저절로 걸음을 멈추고 카메라를 들게 된다.﻿\n\n구포대교 근처의 낙동강 둔치공원 주변은 요즘 핑크뮬리가 한창이다. '분홍쥐꼬리새'라는 이름의 여러해살이 풀인 핑크뮬리는 가을이 되면 진분홍빛으로 물들어 동화 속 풍경을 연출한다. 아주 가는 풀들이 솜사탕처럼 뭉쳐 분홍빛을 내는데. 핑크뮬리 사이로 난 산책로를 따라 걷다 보면 몽글몽글한 구름 속을 걷는 기분이 든다. 배경을 핑크뮬리로 가득 채우고 그 속에서 사진을 찍어보자. 가을 감성이 듬뿍 느껴지는 인생샷을 얻게 될 테니.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">장림포구</p>파란 가을 하늘이 잘 어울리는 곳을 꼽으라면 바로 여기. 장림포구를 빼놓을 수 없다. 마치 동화 속 마을처럼 알록달록하고 아기자기한 건물들이 가을 하늘과 만나 이국적인 분위기를 물씬 풍긴다. 바다로 연결된 마을 앞 포구에는 작은 배들이 줄지어 떠 있다. 이탈리아의 베네치아도 울고 갈 부산의 베네치아. 부네치아다.\n\n워낙 컬러풀한 공간이라 색감에 집중하며 여행을 즐겨보자. 빨강이나 파랑, 보라 등 색깔을 콕 집어서 찾아다니면 마치 보물찾기를 하는 것처럼 꽤나 재미있게 장림포구를 즐길 수 있다. 가을 감성을 찾고 싶다면 장림포구에 숨어 있는 보라색을 추천한다. 보라색과 대비되는 연두색 계열의 옷이나 소품을 준비하면 더욱 멋진 사진을 찍을 수 있다.\n\n장림포구 입구에 들어선 부네치아 선셋전망대에 오르면 장림포구 전체를 한눈에 조망할 수 있다. 위에서 보는 장림포구는 또 다른 매력으로 가득하다. 선셋전망대란 이름처럼 해가 질 무렵에는 멋진 낙조도 전망대에서 감상할 수 있다. 전망대 내에 위치한 카페테리아에서 향긋한 커피를 마시며 우아하게 장림포구를 즐겨 봐도 좋다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">감천문화마을</p>가을 햇살이 스며드는 감천문화마을도 가을 감성 여행지로 놓칠 수 없다. 경사가 심한 산비탈을 따라 마치 장난감처럼 보이는 아기자기한 집들이 산꼭대기까지 빼곡하게 들어선 모습이 무척 이국적이다. 모양만 신기한 것이 아니라 색깔까지 알록달록 화려하다. 각기 다른 모습을 집들을 하나씩 구경하는 재미가 쏠쏠하다. 보일듯 말듯 집들 사이로 난 좁은 골목길로 사람들이 지나다니는 풍경도 신기하다.\n\n마을 곳곳에 숨어 있는 벽화와 상징물들을 찾아다니는 재미도 크다. 감천문화마을이 시원스럽게 내려다보이는 길가에 무심히 앉아 있는 어린왕자를 비롯해 건물 담벼락에서 고개를 빼꼼 내밀고 있는 강아지. 지붕 위에 내려앉은 새들까지. 마치 보물찾기를 하듯 마을 곳곳을 탐험하다보면 반나절은 훌쩍 달아나고 없다.\n\n마을 주민들이 살고 있는 마을이니 소란스럽게 하거나 무례한 행동은 하지 말자. 대부분 좁은 골목길이라 광각 렌즈를 활용할 일이 많다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">흰여울터널</p>감천문화마을 만큼이나 이국적인 풍경을 자랑하는 부산여행지가 바로 영도 흰여울문화마을이다. 발 아래로 바다가 펼쳐지는 해안 절벽에 위치한 마을이라 그리스 산토리니도 부럽지 않은 경치를 자랑한다. 커다란 외항선들이 마을 앞바다에 정박해 있는 모습을 보고 있으면 외국의 어느 섬에 와 있는 듯한 착각마저 든다. 항구도시 부산의 매력을 이토록 진하게 느낄 수 있는 공간이 또 있을까.\n\n그런 흰여울문화마을에 최근 명물이 또 하나 생겼다. 절벽 아래 해안가에 조성된 절영해안산책로를 따라 걷다보면 만나게 되는 흰여울터널이다. 그리 길지 않은 터널이 유명세를 타게 된 건 터널을 프레임 삼아 바다를 배경으로 촬영한 실루엣 사진 덕분이다. 마치 신비한 바닷가 동굴에라도 와 있는 듯한 이색 풍경에 국내외 관광객들의 발걸음이 끝도 없이 이어지고 있다. 터널 내부에 마련된 포토존도 그냥 지나칠 수 없다. 보랏빛 가득한 조형물 앞에서 부산여행의 추억을 제대로 기록해보자.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항대교</p>광안대교와 함께 부산의 상징으로 자리 잡은 부산항대교는 밤이 되면 화려한 불빛으로 관광객들을 유혹한다. 빨강, 파랑, 초록 그리고 보랏빛. 어스름이 내린 도심을 환하게 비추는 부산항대교의 조명과 대형 선박들이 정박해 있는 부두가 뿜어내는 환한 불빛들은 여행자들의 감성을 자극하기에 충분하다.\n\n영도는 물론이고 부산역과 산복도로, 황령산 등 옛 부산항 보이는 곳이라면 어디서든 부산항대교를 조망할 수 있는데 특히 영도의 청학배수지전망대와 청학수변공원에선 부산항대교의 아름다운 야경을 손에 잡힐 듯 가까이에서 만날 수 있다. 너무 어두운 시간보다 해가 지고난 뒤 30분 정도 지난 시간에 찾아가면 컬러풀한 야경을 제대로 만날 수 있다.﻿\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1149&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1158",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "썸 타는 가을, 감성 가득 커플데이트 명소",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "갑자기 불어오는 차가운 바람에 몸을 움츠리다가도 따사로운 햇살과 파란 하늘을 보면 괜시리 마음이 일렁이는 계절이다. 산야가 단풍과 황금빛으로 물들 때면 어느새 완연하게 농익은 가을이 왔음을 느낀다. 가을은 화려한 색으로 온통 물들였다가 찰나의 순간 사라져 항상 아쉬움이 남는데.. 그래서일까? 가을만 되면 정취와 낭만에 빠져 여기저기 떠나고 싶은 여행 병이 도진다. 오늘 사랑하는 사람과 함께 가을의 낭만이 가득한 곳으로 떠나 보는 건 어떨까? \n<p class=\"font-size28 colorDarkBlue medium\">UN기념공원 메타세쿼이아</p>화창한 날씨가 계속되는 요즘, 대연동에 있는 UN기념공원으로 가볍게 가을 산책을 떠나보자. UN기념공원은 한국전쟁 중 전사한 UN군을 기리기 위한 세계 유일의 UN군 묘지이자 성지다. 하지만 부산 사람들이 유독 가을만 되면 이곳을 찾는 이유는 따로 있다. 바로 울긋불긋 가을로 물들어 가는 메타세쿼이아 가로수 길을 보기 위해서다. \nUN군 위령탑에서 오른쪽으로 가면 길게 쭉 뻗은 메타세쿼이아 가로수 길이 있다. 가을 초입에는 아직 초록빛을 내지만 가을이 깊어지면 깊어질수록 갈색으로 물든 단풍을 만날 수 있다. 단풍이 완연하게 물든 11월에는 그 어느 곳보다 아름다운 풍경으로 가을의 정취를 제대로 느낄 수 있는 명소이다. 이 계절이 지나가기 전에 가을을 기록해 보자. \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">대저생태공원 핑크뮬리</p>가을이 울긋불긋 단풍잎에 스며들 때면 사람들의 발길을 재촉하는 곳이 있다. 탁 트인 벌판을 배경삼아 온통 핑크색 수채화로 칠한 듯 물들어 버린 이곳, 대저생태공원 핑크뮬리 군락지다. 보송보송한 분홍 솜털의 핑크뮬리가 바람에 흩날릴 때면 마치 몽글몽글한 꽃 안개 속을 걷는 듯한 기분이랄까. 그래서 가을만 되면 대저생태공원에는 핑크뮬리를 보러 오는 방문객들로 인산인해를 이룬다. \n핑크뮬리 군락지는 ‘인생샷’ 명소로도 꼽힌다. 바람에 살랑이는 핑크빛 꽃무리가 마치 솜사탕 같기도 하고, 안개꽃 같기도 하고.. 핑크뮬리에 포옥 파묻혀 찍은 사진 한 장은 한 폭의 수채화처럼 몽환적인 인생샷을 완성한다. 몇 년 전부터 가을의 트레이드마크로 자리 잡은 핑크뮬리 속에서 이번 가을을 흠뻑 느껴보자. \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장 갈대밭</p>강바람과 바닷바람이 마주하는 곳, 낙조가 아름다운 부산의 서쪽 바다 다대포해수욕장이다. 가을의 다대포는 여름처럼 빛이 강하지 않아 유유자적하게 걷기에 좋다. 마음의 쉼표를 찍을 수 있는 곳, 다대포의 가을은 그런 곳이다. \n해질 무렵, 아름다운 노을이 유명한 장소인 만큼 일몰 시간에 맞춰 이곳을 방문해 보자. 바람에 일렁이는 갈대가 낙조(落照)에 황금빛으로 물들어 가을 정취를 물씬 느낄 수 있다. 갈대밭 안쪽까지 깊숙하게 들어가면 사각사각 갈잎들이 서로 부대끼며 만들어 낸 가을바람 소리에 기분마저 상쾌해진다. 바람 따라, 노을 따라 일렁이는 갈대밭을 배경 삼아 오늘의 기억을 기록해 보자.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1158&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1182",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Visit Taste",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">Visit Taste</p>영화처럼 맛있게! 부산 미식여행\n\n바다를 끼고 있어서 식재료가 풍부한 부산. 여기에 부산 특유의 음식문화가 더해져 오직 부산에서만 즐길 수 있는 식도락 여행이 탄생했다. 돼지국밥과 곰장어는 기본. 맛 좋고 분위기 좋은 부산 대표 음식점들을 한 자리에 모았다. 영화 속 주인공들이 맛깔스럽게 먹던 그 음식들을 찾아 얼른 떠나보자.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">사상꼬리집</p>저렴한 가격에 맛도 좋다. 평소 먹기 힘든 돼지꼬리가 대표 메뉴다. 쫄깃하면서도 고소하고 담백한 돼지꼬리 맛이 반하면 자꾸만 부산으로 달려가게 될지도.  \n\n위치\n부산광역시 사상구 사상로233번길 34 / 사상서부터미널 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹(2016) <span style=\"font-size: 18px;color: #000;\">조인성, 정우성 주연</span></p><p>출세가도를 달리던 부패한 정치검사들을 그린 블랙코미디 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">1987(2017) <span style=\"font-size: 18px;color: #000;\">김윤석, 하정우, 김태리 주연</span></p><p>1987년 대학생 경찰고문치사 사건으로 일어난 국민들의 항쟁을 다룬 영화</p>\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">삼락생태공원</span> <a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">대저생태공원</span> <a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1149&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">중앙돼지집</p>부산 사람들의 소울 푸드인 돼지국밥. 30년 넘게 매일 돼지국밥을 끓여온 중앙돼지집은 푸짐하면서도 깔끔한 국밥을 내놓는다. 갖은 재료를 넣고 손수 만드는 순대는 절대 놓치지 말 것!\n\n위치\n부산광역시 중구 충장대로5번길 50 / 동구공영주차빌딩\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">보안관(2017) <span style=\"font-size: 18px;color: #000;\">이성민, 조진웅 주연</span></p>낙향한 전직형사가 고향마을을 지키기 위해 고군분투하는 활약상을 코믹하게 그린 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">40계단 문화관광테마거리</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=364&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">국제시장</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201003001000&uc_seq=399&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">손목서가</p>영도 흰여울마을에서 가장 돋보이는 카페. 이름에서도 알 수 있듯 책을 읽을 수 있는 공간이다. 바다가 내려다보이는 마당에 앉아 향긋한 커피를 마시고 있으면 세상 시름이 싹 잊힌다. \n\n위치\n부산광역시 영도구 흰여울길 307 / 신선3동 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 되어준 두 주인공이 그려가는 아날로그 감성 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">영도대교</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=369&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">흰여울문화마을</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=255&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">장성향</p>영화 ‘올드보이’에서 오대수가 무려 15년 동안이나 먹었던 군만두. 일반 만두의 2~3배는 되어 보이는 큼직한 만두를 한 입 베어 물면 육즙을 머금은 담백한 고기소가 입안에 가득 찬다. 매일 먹으라고 해도 먹을 수 있는 맛!\n\n위치\n부산광역시 동구 대영로243번길 29 / 차이나타운 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">올드보이(2003) <span style=\"font-size: 18px;color: #000;\">최민식, 유지태, 강혜정 주연</span></p>어느 날 납치되어 15년 동안 감금되었던 평범한 샐러리맨의 복수를 다룬 미스터리 스릴러 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">이바구길사진관</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=513&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">차이나타운</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=415&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">초량1941</p>부산역 뒤편 산복도로에 자리한 초량1941. 적산가옥을 개조해 1940년대로 되돌아간 듯 복고풍 분위기가 물씬 풍긴다. 다양한 맛을 담은 초량우유는 타지에서도 주문할 정도로 인기다.\n\n위치\n부산광역시 동구 망양로 533-5 / 초량1941 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">그냥 사랑하는 사이(2017) <span style=\"font-size: 18px;color: #000;\">이준호, 원진아 주연</span></p><p>붕괴사고에서 극적으로 살아남은 두 남녀가 서로의 상처를 보듬어가는 과정을 그린 멜로드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">심야카페 시즌1 : 비긴즈(2020) <span style=\"font-size: 18px;color: #000;\">신주환, 송원엽, 박시우 주연</span></p><p>밤 12시부터 해 뜰 때까지 운영하는 독특한 심야카페 이야기를 그린 웹드라마</p>\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">168계단 모노레일</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=975&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">이바구공작소</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=58&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">원조할매낙지</p>낙지, 곱창, 새우 그리고 당면과 갖은 채소를 넣고 매콤한 양념에 한소끔 끓여낸 낙곱새. 잘 졸여진 양념에 부추를 얹어 흰밥에 슥슥 비벼 먹으면 두 세 그릇은 뚝딱 없어진다. \n\n위치\n부산광역시 부산진구 골드테마길 10 / 골드테마거리 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">배틀 트립(2020) <span style=\"font-size: 18px;color: #000;\">SF9 인성, 다원, 찬희 출연</span></p>특정 주제로 여행을 다니면서 실속 있는 여행정보와 꿀팁을 알려주는 예능 프로그램\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">부산시민공원</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=354&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">서면 젊음의거리</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201003001000&uc_seq=460&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">칠백장 장인국밥</p>영화 ‘택시운전사’의 배경이었던 칠백장. 자리에 앉자마자 불판에 양념고기를 얹어 지글지글 구워준다. 저렴하면서도 맛깔난 음식에 기사식당 특유의 서민적 분위기가 눈길을 끄는 곳. \n\n위치\n부산광역시 동래구 미남로 67 /칠백장 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">택시운전사(2017) <span style=\"font-size: 18px;color: #000;\">송강호, 유해진, 류준열 주연</span></p>1980년 5월 18일, 군부세력에 맞서 저항하는 광주 시민군들의 민주화운동을 다룬 영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">금강공원</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">동래읍성</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=409&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">칠성식당</p>문현동 곱창거리의 터주대감인 철성식당. 아직도 옛 건물을 그대로 사용하는 1호점은 70~80년대 분위기가 여전히 느껴진다. 쫄깃한 식감의 곱창과 매콤 달콤한 양념의 조화가 찰떡이다. \n\n위치\n부산광역시 남구 지게골로 7 / 칠성식당 본점 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">친구(2001) <span style=\"font-size: 18px;color: #000;\">유오성, 장동건 주연</span></p>세월의 흐름과 함께 변해버린 네 사람의 우정과 삶을 그린 범죄 액션영화\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">신선대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=279&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">이기대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=323&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대포장마차</p>고층 건물과 바다 사이에 줄지어 선 노란색 포장마차. 낭만적인 분위기에 저절로 발걸음을 멈추게 된다. 랍스터 한 마리를 다양하게 요리해 싱싱한 해산물과 함께 내는 랍스터 코스가 별미다.  \n\n위치\n부산광역시 해운대구 해운대해변로 236 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">어서와~한국은 처음이지?(2019) <span style=\"font-size: 18px;color: #000;\">핀란드 친구 빌푸, 빌레, 사미 출연</span></p>한국 거주 외국인이 자신의 모국 친구들과 함께 한국을 여행하는 예능프로그램\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">해운대</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">동백섬</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=284&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">원조짚불곰장어 기장외가집</p>짚에 불을 붙여 1500도 고온에서 순식간에 구워낸 덕에 담백하고 부드럽다. 코끝으로 번지는 은은한 짚불향이 식욕을 돋운다. 기장 앞바다에서 잡아 올린 싱싱한 곰장어를 가장 특별하게 먹는 법.\n\n위치\n부산광역시 기장군 기장읍 공수2길 5-1 / 원조짚불곰장어기장외가집 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">식샤를 합시다 3 : 비긴즈(2018) <span style=\"font-size: 18px;color: #000;\">윤두준, 백진희 주연</span></p>주인공이 친구와 재회한 후 스무 살 그 시절의 음식과 추억을 공유하며 상처를 극복하는 드라마\n\n<p class=\"font-size24 colorDarkBlue medium\">  연계여행지 </p><span class=\"font-size25 colorDarkBlue medium\">아난티타운</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=281&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a> / <span class=\"font-size25 colorDarkBlue medium\">해동용궁사</span> <a href=\"https://visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1182&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1208",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산에도 봄이 왔나봄! ",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"> <table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694727344.jpg\" alt=\"부산에도 봄이 왔나봄! 부산으로 봄캉스 떠나요\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732233.jpg\" alt=\"꽃바람이 흩날리는 부산 꽃 명소\"></td></tr><tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1205&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732532.jpg\" alt=\"부산은 벌써 봄! 매화 여행지로 떠나요~ 이른 봄의 향기를 느끼며 매화의 아름다움을 느낄 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=307&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732942.jpg\" alt=\"부산 유채꽃 명소 추천, 노란 꽃들의 절정 커피 한 잔과 함께 여유로운 힐링을 느낄 수 있는 곳\"></a></td> </tr> <tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=306&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733341.jpg\" alt=\"부산 곳곳, 벚꽃이어라 부산 곳곳에 숨겨진 푸르고, 붉고, 청량한 자연을 만날 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=521&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733692.jpg\" alt=\"부산 곳곳에 숨어 있는 장미 명소를 찾아 노을과 트레킹, 카페, 야경까지 예쁜 포인트가 모여 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734088.jpg\" alt=\"따스한 햇살 품은 봄 힐링 산책 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=761&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734451.jpg\" alt=\"나의 힐링 버킷리스트, 허브랑힐링숲 바쁜 일상 속 여유로운 오후 힐링타임을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734761.jpg\" alt=\"철새와 함께하는 아름다운 문화의 향연, 을숙도 문화의 향기를 느끼며 조용히 산책을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=1079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694735074.jpg\" alt=\"기장의 숨은 산책길, 신평소공원 시원하게 펼쳐진 푸른바다를 보며 산책할 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846152.jpg\" alt=\"두근두근 설레이는 봄 나들이 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846560.jpg\" alt=\"봄, 여름, 가을, 겨울이 다 달라 삼락생태공원 삼락생태공원의 매력을 찾아서 유유히 흘러가는 낙동강 줄기 옆으로 삼락동 둔치에 넓게 자리 잡은 삼락생태공원. 계절마다 각기 다른 매력을 뽐낸다.\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=786&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846953.jpg\" alt=\"동화 속 풍경을 담은 화명수목원 부산 도심 속 공원의 재발견 금정산 고당봉을 뒤로하고 맑은 대천천이 흐르고 있어, 공기는 맑았고 귓가에는 물소리로 가득했다.\"></a></td> </tr> </table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1208&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1215",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "눈부신 나의 봄날, 인생샷 찍기 좋은 부산 봄꽃 추천 여행지!",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "따스한 봄바람이 불어오는 요즘, 부산 곳곳에서는 봄 분위기가 만연한 풍경을 만나볼 수 있는데요? 특히 이맘때에만 볼 수 있는 아름다운 봄꽃들이 있으니 인생샷과 함께 특별한 추억을 만들어보시면 좋을 것 같습니다! \n\n\n<p class=\"font-size28 colorDarkBlue medium\" >오륙도 해맞이공원</p>저 멀리 보이는 오륙도와 눈부시게 아름다운 바다, 그리고 노란 수선화·유채꽃을 보며 마음껏 힐링할 수 있는 곳. \n해파랑길 1코스의 시작점인 오륙도 해맞이공원은 이기대 수변공원과 나무데크길로 연결되어 있어 산책하기도 좋은 곳이에요.\n언덕으로 이어져 있는 산책로를 따라 가볍게 걸으면 샛노란 수선화와 유채꽃이 한가득 피어있는 모습을 볼 수 있어요. \n꽃 앞에 서기만 하면 누구나 바다를 배경으로 예쁜 감성 사진을 찍을 수 있는 포토존이랍니다. \n\n바다와 봄꽃을 동시에 감상할 수 있는 것이 오륙도 해맞이공원만의 특별한 매력이 아닐까 싶습니다. \n푸른 바다에 볼록 솟아 있는 오륙도까지 멋진 배경이 되어주어 부산의 봄을 대표하는 사진명소로 많은 사랑을 받고 있어요.\n나무데크 계단을 하나, 둘 오르면 만개한 유채꽃밭과 벚꽃도 만나볼 수 있어요. 그 옆으로 이기대 수변공원으로 이어지는 산책로도 발견할 수 있답니다.\n\n바다와 어우러진 컬러풀한 봄 풍경을 눈에 담으며 잠시 쉬어갈 수 있는 카페에는, 탁 트인 전망을 감상할 수 있는 루프탑도 있으니 한번 들러보는 것도 좋을 것 같아요.\n오륙도 해맞이공원을 방문한다면 꼭 한 번쯤 가봐야 하는 곳이 스카이워크인데, 투명한 유리바닥 위를 걸으며 멋진 전망과 짜릿함을 동시에 즐길 수 있는 전망대랍니다. \n유채꽃과 수선화가 피어있는 공원 언덕을 충분히 즐긴 후엔 스릴 넘치는 스카이워크로 고고!\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\" >대저생태공원</p>온통 노란빛으로 물든 꽃밭 사이를 걷고 싶다면 대저생태공원으로 가보시면 어떨까요? \n유유히 흐르는 낙동강, 그 옆으로 드넓은 유채꽃밭이 그림처럼 펼쳐진 곳이에요. 꽃밭 사이로 통행로가 조성되어 있어 자유롭게 거닐 수 있답니다. \n햇살에 반짝이는 눈부신 유채꽃을 실컷 감상해 보세요.\n\n대저생태공원 유채꽃밭은 코로나가 일상이 된 후 무려 3년 만에 개방되어 더욱 각별하게 느껴져요.\n그래서일까요? 싱그러운 봄기운을 즐기려는 많은 분들이 제일 먼저 가보고 싶어 하는 곳이랍니다. \n워낙 규모가 넓은 곳이기에 혼잡한 느낌 없이 편하게 사진을 찍을 수 있답니다. \n\n4월 초부터 본격적으로 개화를 시작해 4월 중순쯤 만개하기 때문에 4월엔 온통 예쁜 유채꽃의 모습을 볼 수 있을 것 같습니다.\n봄을 통째로 옮겨놓은 듯한 이곳에서 분위기 있는 봄 사진을 남겨보세요.\n\n대재생태공원은 샛노란 유채꽃뿐만 아니라 핑크핑크한 벚꽃도 만나볼 수 있어요.\n이곳이 낙동강을 따라 이어져 있는 ‘낙동강변 30리 벚꽃길’의 시작지점이기 때문이랍니다. \n대저생태공원에서 유채꽃과 벚꽃터널을 함께 감상하며 여유로운 봄의 시간을 만끽하는 건 어떨까요?\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\" >화명생태공원</p>낙동강변에는 각기 다른 아름다움을 지닌 생태공원이 여럿 있는데요. \n그 중 또 다른 봄꽃의 매력을 한창 발산하고 있는 곳인 화명생태공원은 튤립이 너무 아름다운 봄꽃 성지랍니다. \n분홍색, 빨간색, 하얀색, 노란색, 보라색 등 알록달록한 튤립꽃 수만 송이가 피어나고 있어요. \n본연의 선명한 색감을 뽐내는 튤립은 예쁜 인생샷을 위한 최고의 배경이 아닐까요? \n지금 아름답게 피어난 튤립은 5월까지 만나볼 수 있으니 화명생태공원 방문 계획을 꼭 세워보세요. \n유채꽃, 수선화, 벚꽃과는 다른 강렬한 매력을 지닌 튤립을 놓치지 마시길 바랍니다. \n\n넓은 규모의 화명생태공원에서는 튤립 꽃밭뿐만 아니라 새하얀 벚꽃도 만나볼 수 있어요. \n벚나무 그늘 아래 피크닉 매트 하나 깔면 봄나들이 장소로 최고랍니다. \n도시락 든든히 챙겨 먹고 근처 대천천 따라 산책하며 화사한 봄을 만끽해 보세요~ꕤ*.ﾟ\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1215&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1823",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "봄의 한가운데, 겹벚꽃 다발 아래서 즐기는 낭만",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "4월 중순, 벚꽃이 지고 겹벚꽃이 만개하는 시기입니다. \n겹벚꽃은 꽃잎이 몽글몽글 겹쳐 피어나기 때문에 마치 꽃다발이 주렁주렁 매달린 것처럼 보이기도 합니다.\n자연이 만들어낸 천연 꽃다발이라니 로맨틱하지 않나요?\n부산 겹벚꽃 명소에서, 겹벚꽃과 함께 영화 속 주인공이 된 듯한 낭만을 즐겨보는 건 어떨까요?\n<p class=\"font-size28 colorDarkBlue medium\">부산민주공원</p>겹벚꽃 명소로 소문난 부산 민주공원. 여러 겹벚꽃 나무들이 군락을 이루어 꽃 터널을 이루고 있습니다. \n\n부산민주공원은 특히 피크닉 장소가 잘 마련되어 있는데요. 뿐만 아니라 피크닉카트세트, 컬러링페이퍼, 미술도구 등을 대여해 그림 그리며 소풍을 즐길 수 있는 ‘반나절풍류 드로잉피크닉’도 운영하고 있습니다. \n봄, 가을에는 방문하기 30일~5일 전까지 부산민주공원 홈페이지에서 예약할 수 있다고 하니 참고하세요!\n\n부산민주공원 겹벚꽃 명소로 가장 유명한 피크닉 데크 소개도 빠질 수 없겠죠? 겹벚꽃 사이 둘러싸여 황홀한 피크닉도 즐기고, 나만의 포즈로 인생사진도 남겨보세요. 반려견이 있다면 함께 봄나들이를 떠나 보셔도 좋아요.\n<p class=\"list-tit mt\">부산민주공원</p><ul class=\"list-conmb\"><li><span>주소</span> : 부산광역시 중구 민주공원길 19</li><li><span>교통</span> : 도시철도 부산 1호선 동대신역 3번 출구 → 중구 1 버스 환승 → 중앙공원·민주공원 정류장 하차 도보 5분</li><li><span>주차</span> : 중앙공원‧민주공원 공영주차장</li><li><span>문의</span> : 051-790-7400</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">유엔기념공원</p>유엔기념공원에는 아름드리 겹벚꽃나무들이 차례로 자리하고 있습니다. 나무 여러 그루가 얽혀 멋진 풍경을 자아내는 부산민주공원과는 다른 매력으로, 한 그루 한 그루 탐스럽게 맺힌 꽃송이를 감상할 수 있습니다. \n\n길을 따라 늘어선 겹벚꽃 나무들 덕에 꽃을 배경으로 단독 사진을 찍기에는 안성맞춤입니다. 다만 유엔기념공원에서는 다소 경건한 마음가짐으로 조용히 즐겨주는 매너를 갖춰 주세요~!\n<p class=\"list-tit mt\">유엔기념공원</p><ul class=\"list-conmb\"><li><span>주소</span> : 부산광역시 남구 유엔평화로 93</li><li><span>교통</span> : 도시철도 2호선 대연역 1번 출구 → 대연역‧부산은행 정류장 버스환승 버스환승 138  → 유엔공원‧부산문화회관 정류장 하차, 도보 8분</li><li><span>주차</span> : 유엔기념공원주차장</li><li><span>문의</span> : 051-625-0625</li></ul>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">대저생태공원</p>부산 민주공원이 너무 소문나버려서 가기 꺼려진다구요? 그렇다면 찐 숨어있는 겹벚꽃 터널 명소, 대저생태공원을 추천합니다.\n대저생태공원의 경우 산책로 사이 짧게 겹벚꽃 터널이 형성되어 있는 곳인데요. 그 터널이 바로 대저생태공원의 겹벚꽃 스팟입니다. 자연스러운 포즈로 사진도 남기고, 대저생태공원에서 자전거를 대여해 낙동강변 산책로도 함께 즐겨보세요!\n<p class=\"list-tit mt\">대저생태공원</p><ul class=\"list-conmb\"><li><span>주소</span> : 부산광역시 강서구 대저1동 1-5</li><li><span>운영요일 및 시간</span> : 매일 06:00 - 21:00</li><li><span>교통</span> : 도시철도 부산 3호선 강서구청역 3번 출구 → 강서구청역 정류장 버스환승 125 → 부산혜운학교 정류장 하차 도보 8분</li><li><span>주차</span> : 대저생태공원 주차장</li><li><span>문의</span> : 051-971-6011</li></ul>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산시민공원 북문</p>시민공원 북문 ‘숲속 북카페’ 테라스에는 풍성하게 피어난 커다란 겹벚꽃 나무 한 그루가 있습니다. \n무게 덕에 낮게 피는 겹벚꽃 송이와 카페 지붕이 조화롭게 어우러져 있습니다.\n\n‘숲속 북카페’에서는 책을 읽을 수 있는 공간이 마련되어 있습니다. 취향 따라 고른 음료와 함께, 겹벚꽃을 배경으로 독서하는 봄의 낭만을 즐겨 보세요.\n\n<p class=\"list-tit mt\">부산시민공원</p><ul class=\"list-conmb\"><li><span>주소</span> : 부산광역시 부산진구 시민공원로 73</li><li><span>교통</span> : 도시철도 1호선 부전역 1번 출구 하차 → 도보 17분</li><li><span>주차</span> : 부산시민공원 주차장</li><li><span>문의</span> : 051-850-6000</li></ul>\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1823&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2835",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "낙동강에서 바다까지, 부산의 가을을 따라",
+      "relation": "same-place",
+      "match": {
+        "field": "MAIN_PLACE",
+        "method": "exact-name",
+        "placeName": "대저생태공원",
+        "review": "pending"
+      },
+      "originalText": "강바람이 선선해지고 억새와 갈대가 햇빛을 머금는 계절. 부산의 가을을 제대로 만나고 싶다면 낙동강을 따라 서부산으로 떠나보자. 화명생태공원에서 강변의 여유를 즐기고, 대저의 분홍빛 들판을 지나 삼락의 은빛 억새길을 걸어보자. 철새가 머무는 을숙도에서는 자연과 예술을 만나고, 여행의 마지막은 다대포의 황홀한 노을이다. 걷고, 사진을 남기고, 축제와 공연까지 즐기다 보면 부산의 가을이 특별한 추억으로 남는다.\n\n<strong style=\"font-size:18pt; font-weight: bold;\">추천 코스<br>화명생태공원 → 대저생태공원 → 삼락생태공원 → 을숙도생태공원 → 다대포해수욕장</strong>\n<div style=\"margin:0; line-height:1.8;\"><span class=\"font-size28 colorDarkBlue bold\">1. 화명생태공원</span><br><span class=\"font-size23 bold\">강바람을 따라 가볍게 출발</span></div>\n부산의 가을 여행은 낙동강의 시원한 풍경을 마주하는 것에서 시작해보자. 화명생태공원에는 낙동강을 따라 산책로와 자전거길이 나란히 이어진다. 부산 갈맷길 6-3구간이자 국토종주 낙동강 자전거길의 일부로, 천천히 걸어도 좋고 자전거를 타고 강변을 달려도 좋다. 탁 트인 강을 바라보며 걷다 보면 여행의 시작부터 한결 여유로워진다.\n걷다가 마음에 드는 자리에 잠시 멈춰 잔디밭에서 피크닉을 즐겨보자. 강변을 따라 불어오는 바람과 넓게 펼쳐진 풍경 속에서 도심에서는 느끼기 어려운 가을의 여유를 만끽할 수 있다. 가을에는 별바다부산 나이트 마켓과 낙동강 구포나루축제가 열려 강변의 가을밤을 더욱 풍성하게 만들어준다.\nTRAVEL TIP\n․ 별바다부산 나이트 마켓(2026년 10월1~4일, 10월8~11일,\n  10월15~18일)에서 가을밤의 낭만을 즐겨보자.\n․ 낙동강 구포나루축제(2026년 10월16~18일) 기간에는 \n 강변 산책과 함께 다양한 먹거리와 볼거리를 즐길 수 있다.\n\nPOINT\n#낙동강 자전거 라이딩 #강변 피크닉 #홍댑싸리\n#별바다부산 나이트 마켓\n\n<div style=\"margin:0; line-height:1.8;\"><span class=\"font-size28 colorDarkBlue bold\">2. 대저생태공원</span><br><span class=\"font-size23 bold\">가을 들판에 번지는 분홍빛과 은빛 물결</span></div>\n낙동강을 따라 끝없이 펼쳐진 드넓은 초지가 가을이면 분홍빛 핑크뮬리와 은빛 팜파스로 물든다. 바람에 일렁이는 꽃과 탁 트인 낙동강 풍경이 어우러져 부산에서 만나는 색다른 가을 풍경을 선사한다.\n분홍빛과 은빛이 어우러진 들판을 천천히 거닐며 가을의 색을 만끽해보자. 특히 햇빛에 따라 핑크뮬리와 팜파스의 색감이 더욱 선명해져 사진을 남기기에도 좋다. 파란 가을 하늘과 낙동강까지 한 프레임에 담으면 부산의 가을을 오래 기억하게 해줄 특별한 순간이 된다.\n\nTRAVEL TIP\n․ 가을에는 핑크뮬리와 팜파스가 어우러진 풍경을 감상하며 낙동강과 가을 하늘을 함께 담아보자. \n․ 개화 시기는 기상 상황에 따라 달라질 수 있으니 방문 전 확인하는 것을 추천한다.\n\nPOINT\n#핑크뮬리 #팜파스 #낙동강을 배경으로 인생사진\n\n\n<div style=\"margin:0; line-height:1.8;\"><span class=\"font-size28 colorDarkBlue bold\">3. 삼락생태공원</span><br><span class=\"font-size23 bold\">억새 사이로 흐르는 가을의 리듬</span></div>\n낙동강변을 따라 이어지는 삼락생태공원은 가을이면 억새와 갈대가 바람에 흔들리며 은빛 풍경을 만든다. 습지와 연꽃단지, 야생화단지까지 다양한 자연이 이어져 걷는 길마다 새로운 풍경을 만날 수 있다.\n가을의 삼락은 자연과 음악이 어우러져 더욱 활기차다. 억새와 갈대 사이를 천천히 걸으며 계절의 바람을 느껴보고, 부산국제록페스티벌이 열리는 시기에는 자연 속에서 국내외 아티스트의 음악을 즐겨보자. 자연과 음악이 함께하는 색다른 가을 여행을 경험할 수 있다.\nTRAVEL TIP\n․ 부산국제록페스티벌(2026년 10월 2~4일)에서 국내외 아티스트의 음악과 낙동강변의 가을 풍경을 함께 즐겨보자. \n․ 억새와 갈대가 어우러진 낙동강변을 자전거로 달리며 가을의 정취를 만끽해보자.\n\nPOINT\n#은빛 억새길 걷기 #낙동강 자연풍경 \n#부산국제록페스티벌\n\n<div style=\"margin:0; line-height:1.8;\"><span class=\"font-size28 colorDarkBlue bold\">4. 을숙도생태공원</span><br><span class=\"font-size23 bold\">철새와 사람이 함께 쉬어가는 섬</span></div>\n낙동강과 바다가 만나는 을숙도는 넓은 갈대밭과 복원 습지가 어우러진 부산의 대표적인 생태관광 명소다. 계절마다 찾아오는 철새를 관찰하며 천천히 걸어보면 도시와는 다른 을숙도만의 자연을 만날 수 있다.\n낙동강하구에코센터에서 낙동강 하구의 생태계와 이곳에 살아가는 생명들의 이야기를 만나보고, 이어 2026부산비엔날레가 열리는 부산현대미술관까지 둘러보자. 자연을 느끼는 데서 그치지 않고 생태와 예술을 함께 즐기는 색다른 여행이 완성된다.\nTRAVEL TIP\n․ 철새가 찾아오는 계절에는 낙동강하구에코센터(9:00~18:00, 월요일 휴관)에서 생태체험과 철새 관찰을 즐겨보자.  \n․ 2026부산비엔날레(2026년 8월29일~11월1일)가 부산현대미술관, 스페이스원지, (구)부산남고등학교에서 열린다. 부산현대미술관에서 생태와 예술이 어우러진 전시를 만나보자.\n\nPOINT\n#철새 관찰 #생태체험 \n#낙동강하구에코센터\n#2026부산비엔날레\n\n<div style=\"margin:0; line-height:1.8;\"><span class=\"font-size28 colorDarkBlue bold\">5. 다대포해수욕장</span><br><span class=\"font-size23 bold\">노을이 오늘의 마지막 장면이 되는 곳</span></div>\n낙동강을 따라 이어온 여행의 마지막 목적지는 바다다. 넓은 백사장과 갯벌, 갈대가 어우러진 다대포해수욕장은 해 질 무렵 가장 아름다운 풍경을 보여준다.\n먼저 고우니생태길을 따라 갈대와 습지를 천천히 걸어보자. 산책을 마친 뒤에는 넓은 백사장에서 맨발걷기(어싱)를 즐기며 바다의 여유를 만끽해보자. 해변에 앉아 붉게 물드는 노을을 기다리면 여행의 마지막 장면이 완성된다.\n강에서 시작해 들판을 지나고, 억새와 철새를 만난 뒤 바다와 노을에 닿는 여행. 부산의 가을을 제대로 느끼고 싶다면 낙동강에서 다대포까지 이어지는 서부산의 길을 따라가 보자.\n\nTRAVEL TIP\n․ 고우니생태길을 따라 산책한 뒤 해변에서 붉게 물드는 노을을 감상해보자. \n․ 넓은 백사장에서 맨발걷기(어싱)를 즐기며 바다의 여유를 만끽해보자.\n․ 도시철도 1호선 다대포해수욕장역에서 도보로 방문하기 편리하다.\n\nPOINT\n#다대포 노을 감상 #고우니생태길 산책 #바닷가 맨발걷기\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2835&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

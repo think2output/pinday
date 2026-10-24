@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "126108",
+    "name": "해운대온천센터",
+    "lat": 35.1634406103,
+    "lng": 129.1645768542
+  },
+  "collectedAt": "2026-10-24T09:57:15.655Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:126108",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "해운대온천센터",
+      "relation": "same-place",
+      "originalText": "해운대 온천센터는 임해 온천이며, 해운대 해수욕장 부근 온천지구에 위치한 대형 온천이다. 온천물은 나트륨과 염소 성분이 다량 함유되어 있고 라듐 성분이 있어 호르몬 분비를 촉진하고 노화 방지, 류마티스, 고혈압, 위장병, 부인병, 피부병에 효과가 있다고 한다. 온천센터는 지하 2층, 지상 7층의 대형 건물로, 4층은 매표소와 여탕, 5층은 남탕, 7층은 헬스장이 운영되고 있다. 외에도 황토방, 소금방, 토르말린방과 휴식할 수 있는 공간이 마련되어 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126108&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:27.443Z",
+      "modifiedAt": "20250415095848"
+    }
+  ],
+  "errors": []
+}

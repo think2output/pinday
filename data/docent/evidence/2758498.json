@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2758498",
+    "name": "은진사",
+    "lat": 35.336007041,
+    "lng": 129.2764961068
+  },
+  "collectedAt": "2026-10-24T09:57:15.017Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2758498",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "은진사",
+      "relation": "same-place",
+      "originalText": "장안읍 길천리 장안천 인근에 자리 잡은 은진사에는 3천여 종의 야생화와 산수화 분경, 연꽃이 가득한 사찰이다. 은진사는 규모가 크진 않지만, 머무르는 동안 아름다운 꽃들이 많아 눈이 즐거워진다. 여름에는 주황빛 능소화가 반겨주며, 바다와 물을 수호하는 신이 모셔져 있는 용왕전 앞에 있는 연못에는 잉어 떼가 가득하고, 수국과 맥문동이 반긴다. 보기만 해도 기분이 좋아지는 포대화상과 항상 웃는 모습으로 자비와 복을 상징하는 미륵보살도 있다. 규모가 큰 절은 아니지만, 동굴 대법당, 소법당 영가전, 약사대불전, 산신전, 지장전, 관음전, 공양전, 연당 등 아기자기한 법당들이 잘 갖추어져 있으며, 연못, 폭포 등 볼거리가 많은 사찰이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2758498&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:03.525Z",
+      "modifiedAt": "20261019170611"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3410658",
+    "name": "아르떼뮤지엄 부산",
+    "lat": 35.08693373984686,
+    "lng": 129.07656229149976
+  },
+  "collectedAt": "2026-10-24T09:57:14.669Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:2492"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3410658",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "아르떼뮤지엄 부산",
+      "relation": "same-place",
+      "originalText": "아르떼뮤지엄 부산은 부산 영도구에 위치한 최첨단 디지털 아트 뮤지엄이다. 이곳은 3D, 4D, 인터랙티브 영상 등을 활용한 몰입형 전시가 특징이다. 방문객들은 전시된 작품과 상호작용하며, 예술을 몸소 체험할 수 있다. 아르떼뮤지엄 부산은 예술과 기술이 결합된 혁신적인 공간으로, 예술적 감동뿐만 아니라 새로운 미적 경험을 선사한다. 특히, 디지털 미디어를 활용한 전시가 특징으로, 젊은 세대와 예술을 좋아하는 사람들에게 큰 인기를 끌고 있다. 부산을 방문한 관광객들에게 꼭 추천할 만한 명소로, 새로운 형태의 예술을 만날 수 있는 공간이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3410658&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:48.294Z",
+      "modifiedAt": "20260331111845"
+    },
+    {
+      "id": "busan-theme:2492",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "예술이 머무는 순간, 전시로 만나는 부산",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "아르떼뮤지엄 부산",
+        "review": "pending"
+      },
+      "originalText": "조용하고 깊이 있는 시간을 보내고 싶은 순간이 있죠. 그럴 땐, 여행을 통해 예술이 있는 부산을 만나보는 건 어떨까요?\n현대미술부터 디지털아트까지, 각기 다른 방식으로 예술을 풀어내는 전시 공간들이 부산 곳곳에 있습니다. 전시를 감상하는 일은 일상에 여유를 더하고, 잠시 멈춰 생각할 시간을 줍니다.\n그런 여유를 찾아, 이번에는 예술을 따라 부산의 전시 공간들을 걸어볼까요?\n<br>\n<p class=\"font-size28 colorDarkBlue medium\">부산현대미술관</p> \n<p class=\"font-size7 colorDarkBlue small\">김채린, 하나인 27가지 목소리, 2025, 혼합재료, 95×95×110cm, 부산현대미술관 제작 지원, 협력 사운드 서혜민, 글 홍승택, 영상 김용현, 자문 이성수, 제작보조 박형조</p> \n을숙도에 위치한 부산현대미술관은 아름다운 자연 속, 예술이 숨 쉬는 특별한 공간입니다.\n2018년에 개관한 이 미술관은 자연과 예술이 조화를 이루는 독특한 건축미로 많은 이들의 발길을 사로잡고 있습니다.\n\n건물 외벽을 감싸고 있는 초록빛 식물들은, 프랑스 식물학자이자 예술가인 패트릭 블랑(Patrick Blanc)이 조성한 작품 〈수직 정원: Vertical Garden〉으로, 개관을 기념해 설치된 살아 있는 예술이기도 합니다.\n<p class=\"font-size7 colorDarkBlue small\">열 개의 눈</p> \n부산현대미술관은 회화, 조각, 설치, 미디어 아트 등 다양한 현대미술 작품을 전시하며, 한국 작가뿐 아니라 해외 작가들의 전시도 활발하게 진행되고 있어요. 특히 비엔날레 등 국제 전시가 열릴 때면 세계적인 예술가들의 작품을 한자리에서 만날 수 있는 기회도 생기죠.\n<p class=\"font-size7 colorDarkBlue small\">(좌) 힐마 아프 클린트, No. 7, 성인기, 그룹 IV, 10점의 대형 그림, 1907, 종이에 템페라, 캔버스에 부착, 315 × 235 cm. 힐마 아프 클린트 재단 제공. HaK 108.</p> <p class=\"font-size7 colorDarkBlue small\">(우) 힐마 아프 클린트, No. 1, 백조, 그룹 IX 파트 I, SUW 연작, 1914-1915, 캔버스에 유채, 150 × 150 cm. 힐마 아프 클린트 재단 제공. HaK 149.</p>\n2025년 7월부터는 추상미술의 선구자 힐마 아프 클린트의 《적절한 소환》 전시가 열릴 예정으로, 한층 더 깊이 있는 예술적 만남을 기대해 볼 수 있습니다.\n\n전시뿐 아니라 다양한 교육 프로그램도 함께 운영되고 있어 가족 단위 여행객에게도 안성맞춤이에요. 어린이들을 위한 체험형 공간과 도서관, 도슨트 해설 투어까지 준비되어 있어 남녀노소 누구나 예술을 즐기며 머물 수 있는 공간입니다. \n(사진제공 : 부산현대미술관)\n\n<p class=\"list-tit mt\">부산현대미술관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 사하구 낙동남로 1191</li><li><span>운영 요일 및 시간</span> : 화요일~일요일 10:00~18:00 (17:30 입장 마감)</li><li><span>휴무일</span> : 월요일(월요일이 공휴일이면 화요일 휴관), 1월 1일</li><li><span>홈페이지</span> : <a href=\"https://www.busan.go.kr/moca\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://www.busan.go.kr/moca</a></li><li><span>교통정보</span> : 도시철도 1호선 하단역 3번 출구 → '하단역환승센터'에서 명지 방면 버스 환승 → ‘부산현대미술관’ 정류장 하차\n※ 고속철도 부산역에서 셔틀버스(11:00 / 14:00) 운영</li><li><span>문의</span> : 051-220-7400</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">부산시립미술관</p> \n<p class=\"font-size7 colorDarkBlue small\">이우환 공간, 외관</p> \n해운대 센텀시티 인근에 위치한 부산시립미술관은 1998년 개관 이후, 부산의 현대미술 흐름을 대표하는 공공 미술관으로 자리 잡아온 예술 공간입니다. 도시적 감각과 예술적 깊이를 동시에 담아내는 이 공간은 시민과 예술, 지역과 세계를 잇는 예술 플랫폼으로 꾸준히 진화해 왔습니다.\n<p class=\"font-size7 colorDarkBlue small\">(좌) 이우환, 회의(Discussion), 2013, 철판, 화강석</p> <p class=\"font-size7 colorDarkBlue small\">(우) 이우환, 관계항-안과 밖의 공간(Relatum-Inside Outside), 2016, 스테인레스 판, 자연석</p> \n넓고 쾌적한 전시 공간으로 구성되어 있으며, 회화, 조각, 사진, 미디어 아트 등 다양한 장르의 전시가 연중 이어집니다.\n그뿐만 아니라 야외 조각 정원과 어린이 갤러리, 도서 자료실 등 누구나 예술과 자연스럽게 만나고 머무를 수 있는 환경이 잘 갖추어져 있습니다.\n<p class=\"font-size7 colorDarkBlue small\">(좌) 이우환, 관계항-좁은 문(Relatum-Narrow Gate), 2015, 철판, 자연석</p> <p class=\"font-size7 colorDarkBlue small\">(우) 이우환, 대화(Dialogue), 2015, 캔버스, 자연석</p> \n현재 부산시립미술관 본관은 리노베이션 공사중나, 별관에 마련된 ‘이우환 공간’ 또한 주목할 만한 장소입니다.\n‘관계의 예술’을 이야기해 온 한국 현대미술의 거장, 이우환 작가의 철학과 작품 세계를 정제된 분위기 속에서 언어별(국, 영, 일, 중문) 오디오 가이드와 함께 감상할 수 있어, 많은 이들이 찾는 명소이기도 합니다. \n\n현재는 미술관 소장품과 부산 지역 미술의 시작을 조명하는 〈콜렉션 99.999〉, 〈부산미술, 그 시작〉 전시가 진행 중이며, 부산 미술의 시간적 흐름과 예술적 맥락을 함께 이해해 볼 수 있는 좋은 기회가 될 것입니다.\n(사진제공 : 부산시립미술관)\n\n<p class=\"list-tit mt\">부산시립미술관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 해운대구 APEC로 58</li><li><span>운영 요일 및 시간</span> : 화요일~일요일 10:00~18:00 (17:30 입장 마감)</li><li><span>휴무일</span> : 월요일(월요일이 공휴일이면 화요일 휴관), 1월 1일</li><li><span>홈페이지</span> : <a href=\"https://art.busan.go.kr/\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://art.busan.go.kr/</a></li></li><li><span>교통정보</span> : 도시철도 2호선 벡스코(시립미술관)역 5번 출구 도보 5분</li><li><span>문의</span> : 051-744-2602</li><li><span>꼭 알아두세요</span> : 본관 리노베이션으로 인해 장기 휴관</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">갤러리 플레이리스트</p>\n중구에 자리한 갤러리 플레이리스트는 감각적이고 실험적인 현대미술을 소개하는 사립 갤러리입니다. 신진 작가들의 참신한 시선을 담은 전시로 꾸준히 주목받아 온 이 공간은, 소박한 규모이지만 예술의 밀도만큼은 작지 않은 곳입니다.\n입구에는 작가 소개와 방명록이 비치돼 있어, 방문자가 작품을 이해하고 감상하는 데 자연스러운 흐름을 더해줍니다.\n갤러리 플레이리스트는 회화, 사진, 설치, 조각 등 다양한 장르의 전시를 선보이며, 국내 신진 작가들의 작품 세계를 깊이 있게 조명합니다.\n최근에는 《The Quiet Grain of Objects》 전시가 진행되었으며, 갤러리 플레이리스트는 사물성과 시간, 감각을 주제로 한 전시들을 통해, 단순한 ‘관람’을 넘어 조용히 머무는 ‘감응의 공간’으로 자리매김하고 있습니다.\n\n오는 8월 2일부터는 《The Moment Between》 전시를 통해 작가 각자의 시선으로 포착한 ‘사이’의 감각을 시각적으로 풀어낸 작품들로 관객들을 만납니다.\n뿐만 아니라 갤러리 플레이리스트는 뉴욕 NADA 아트페어 등 국제 전시에 꾸준히 참여하며, 부산의 예술성과 작가들을 세계 무대에 알리는 중요한 연결점 역할도 하고 있습니다.\n여행 중 도심 속 작은 예술 공간을 찾고 있다면, 이곳에서 잠시 느리게 걷고 천천히 바라보는 시간을 가져보는 건 어떨까요?\n(사진제공 : 갤러리 플레이리스트)\n\n<p class=\"list-tit mt\">갤러리 플레이리스트</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 중구 대청로138번길 3</li><li><span>운영 요일 및 시간</span> : 수요일~토요일 11:00~18:00</li><li><span>휴무일</span> : 일요일, 월요일, 화요일</li><li><span>홈페이지</span> : <a href=\"https://www.instagram.com/galleryplaylist\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://www.instagram.com/galleryplaylist</a></li><li><span>교통정보</span> : 도시철도 1호선 중앙역 5번 출구 도보 5분</li><li><span>문의</span> : 070-8287-2259</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">아르떼뮤지엄</p>\n영도에 위치한 아르떼 뮤지엄 부산은 자연의 감각을 디지털 기술로 재해석한, 몰입형 미디어아트 전시관입니다. 제주, 여수, 강릉에 이어 국내 네 번째로 문을 연 이곳은, 아르떼 뮤지엄 중 세계 최대 규모를 자랑합니다.\n디지털 디자인 전문 그룹 ‘디스트릭트(d’strict)’가 기획한 이 전시는 ‘ETERNAL NATURE(영원한 자연)’을 주제로 빛, 소리, 향 등 다양한 감각 요소를 활용한 미디어 작품을 선보이고 있습니다.\n대표 작품으로는 거대한 황금 모래가 순환하는 〈CIRCLE〉, 7m 높이의 폭포가 흐르는 〈WATERFALL INFINITE〉, 그리고 부산의 야경과 감성을 담은 〈STARRY BUSAN〉 등이 있으며, 시청각은 물론 후각과 촉각까지 자극하는 오감 체험을 제공합니다. 특히 〈STARRY BUSAN〉은 항구 도시 부산의 정체성을 음악, 미디어, 공간 연출로 풀어낸 전시로, 이곳에서만 만날 수 있는 특별한 감상을 선사합니다.\n현재는 아르떼뮤지엄 천만 관객 돌파를 기념한 <아르떼뮤지엄: PINK MOON> 특별전이 펼쳐지고 있습니다. ‘핑크문’은 아르떼 뮤지엄이 전하는 감사의 마음이 담겨있으며 새로운 시작을 의미합니다. 천만 관객 이후 첫 걸음을 떼는 아르떼 뮤지엄, 12월 12일까지 진행되는 핑크문과 함께하는 특별한 전시에 함께해보세요.\n(사진제공 : 아르떼뮤지엄)\n\n<p class=\"list-tit mt\">아르떼뮤지엄</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 영도구 해양로247번길 29</li><li><span>운영 요일 및 시간</span> : 매일 10:00~20:00 (19:00 입장 마감)</li><li><span>홈페이지</span> : <a href=\"https://kr.artemuseum.com/busan\" target=\"_blank\" title=\"새창열림\" class=\"link-style1\">https://kr.artemuseum.com/busan</a></li><li><span>교통정보</span> : 도시철도 부산 1호선 남포역 8번 출구 → 영도대교 정류장 버스환승 17, 186 → 아르떼뮤지엄.미창석유 정류장 하차 도보 3분</li><li><span>문의</span> : 1899-5008</li></ul>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2492&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

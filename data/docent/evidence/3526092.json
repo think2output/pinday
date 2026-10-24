@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3526092",
+    "name": "에스엠비 웰니스 센터",
+    "lat": 35.2588823233,
+    "lng": 129.243044732
+  },
+  "collectedAt": "2026-10-24T09:57:14.713Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3526092",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "에스엠비 웰니스 센터",
+      "relation": "same-place",
+      "originalText": "부산 기장군 바다와 맞닿은 조용한 마을에 영혼(Soul), 마음(Mind), 몸(Body)의 균형을 찾는 공간, 에스엠비(SMB) 웰니스 센터가 있다. 이름 그대로 심신과 영혼의 회복을 추구하는 이곳은 잠시나마 숨 가쁜 일상에서 벗어나 자신의 중심을 찾을 수 있도록 돕는다. 에스엠비 웰니스 센터는 일시적인 힐링을 넘어, 진정한 의미의 복구를 원하는 이들에게 필요한 공간이다. 온전히 나에게 집중하는 시간을 통해 지친 몸과 마음, 그리고 영혼에 새로운 힘을 불어넣기 좋다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3526092&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:50.658Z",
+      "modifiedAt": "20260706154255"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2504464",
+    "name": "부산 송도해상케이블카",
+    "lat": 35.0766411637,
+    "lng": 129.023396378
+  },
+  "collectedAt": "2026-10-24T09:57:14.044Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:310",
+      "busan-theme:378",
+      "busan-theme:431",
+      "busan-theme:790",
+      "busan-theme:983",
+      "busan-theme:1176",
+      "busan-theme:1198",
+      "busan-theme:1317",
+      "busan-theme:2787"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2504464",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "부산 송도해상케이블카",
+      "relation": "same-place",
+      "originalText": "송도해수욕장에 위치한 송도해상케이블카는 우리나라 제1호 공설해수욕장인 송도해수욕장의 옛 명성을 되살리기 위해 29년 만에 복원되었다. 부산에어크루즈는 해수욕장 동쪽 송림공원에서 서쪽 암남공원까지의 구간을 바닥이 투명한 크리스털캐빈을 포함하여 최신기종인 캐빈 39기가 운행된다. 특히, 바다 위를 가로질러 운행함으로써 부산 송도 일대의 빼어난 풍광을 즐길 수 있다.\n이 밖에 국내 최초의 케이블카 뮤지엄 ‘송도 도펠마이어 월드’, 아시아 최초의 공중그네 ‘스카이스윙’, ‘테마파크 포토서비스 ’등 다양한 테마시설과 볼거리를 제공한다.\n\n◎ 한류의 매력을 만나는 여행 정보 - 예능 \n바다와 산, 그리고 하늘을 한눈에 다 담고 싶다면 ‘송도 해상케이블카’가 모든 걸 충족시켜 줄 것이다. ‘뉴진스코드 IN 부산’에서는 뉴진스 멤버들이 이 케이블카에 탑승해 발밑으로 보이는 바다와 탁 트인 자연 풍경에 감탄하는 모습을 보인다. 부산을 한눈에 담고 싶다면 ‘송도 해상케이블카’에 올라타 보는 것을 추천한다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2504464&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:24.820Z",
+      "modifiedAt": "20260814013001"
+    },
+    {
+      "id": "busan-theme:310",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "모든 이들에게 공평한 관광을 선사하는 부산 무장애 여행지",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "<p class=\"font-size20 medium\">코스1 : 도시철도 해운대역-아쿠아리움-동백공원 해안산책로/누리마루 APEC하우스-더베이101</p>\n도시철도 해운대역 내부에는 엘리베이터, 전동휠체어를 충전할 수 있는 공간이 마련되어 있다. 지상으로 올라오면 점자블록이 설치돼 있는 구남로를 따라 시각장애인을 위한 오디오 가이드를 갖춘 아쿠아리움으로 이동할 수 있다.\n동백공원 해안산책로는 공원 전체가 휠체어 통행이 자유로운 곳이다. 누리마루 APEC 하우스에서 휠체어 무료대여가 가능하다.(실내에서만 가능) 아름다운 산책로 곳곳에서 숲속 힐링을 즐길 수 있으며 산, 바다, 광안대교를 한 번에 느낄 수 있는 풍경은 동백섬의 자랑이다.\n동백섬 입구에 위치한 더베이101에서 야경을 즐기며 식사나 차를 즐길 수도 있다. 이곳에는 장애인 주차구역과 장애인 화장실, 엘리베이터가 설치돼 있다.\n<p class=\"font-size20 medium\">코스2 : 송도해수욕장,스카이워크,케이블카-암남공원전망대</p>\n송도해수욕장 입구에는 완만한 경사의 휠체어 전용통로가 설치돼 있다. 바다 위에 설치된 국내 산책로 중 가장 긴 스카이워크 또한 출입이 용이하다.\n송도해상케이블카에 전동휠체어는 안전상 탑승이 불가하므로 현장에 갖춰진 일반 휠체어로 갈아탄 후, 케이블카에 탑승할 수 있다. 암남공원 정류장 스카이파크 전망대에서 바다전경을 조망할 수 있으며 전망대 내 장애인 화장실과 다양한 부대시설을 갖추고 있다.\n송도 암남공원도 빼놓을 수 없는 장소인데 산책로를 따라 휠체어 이동이 가능하며 시원한 바닷바람과 해안절경을 만끽할 수 있다.\n<p class=\"font-size20 medium\">코스3 : 송정해수욕장-수산과학관-오랑대공원-대변항-죽성성당</p>\n송정해수욕장 백사장을 따라 설치된 데크형 산책로는 휠체어 이동이 용이하고 산책로 중간에 장애인 화장실이 갖춰져 있다.\n멋진 야외 전망대를 가진 국립수산과학관에도 장애인 화장실과 장애인 주차구역이 갖춰져 있으며 전시관은 무료입장이다.\n일출명소 오랑대공원은 바닷가 바로 앞에 위치한 휠체어접근 가능 산책로로 유명하다. 오랑대 인근 대변항은 기장 멸치로 잘 알려진 곳으로 아름다운 등대가 바라보이는 작은 어촌마을이다.\n드라마 촬영세트로 유명해진 죽성성당은 바다 전망과 성당 건물이 어우러진 그림 같은 풍경으로 사람들을 불러 모은다. 휠체어 통행은 가능하나 주차공간이 넉넉지 않다.\n<p class=\"font-size20 medium\">코스4 : 영도대교-깡깡이마을-절영해안산책로-태종대유원지</p>\n매일 오후 2시에 도개행사를 진행하는 영도대교, 휠체어 접근이 가능한 곳이지만 많은 인파가 몰릴 때는 구경하는 자리가 넉넉하지 않을 수 있다.\n수리 조선소가 몰려 있던 대평동 깡깡이마을은 조용히 마을을 둘러보며 숨어있는 예술작품을 찾아내는 재미가 있는 곳이다. 하지만 지금도 마을 곳곳에 선박수리소와 공업사가 영업 중이어서 주말 혹은 통합투어 프로그램을 이용해 방문하는 것이 좋다.\n절영해안산책로는 입구에서 흰여울 터널까지 휠체어통행이나 도보이동이 쉬운 편으로 영도바다를 가장 가까이에서 마주할 수 있는 코스이다. 장애인 주차구역과 장애인 화장실이 갖춰져 있다.  \n태종대는 다누비열차를 이용해 유원지 전체를 둘러볼 수 있고, 휠체어 또한 대여 가능하다. 태종대의 기암괴석과 푸른 바다를 만날 수 있다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=310&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:378",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "유니크베뉴_수변‧전경시설",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "독특한 콘셉트로 회의, 관광, 컨벤션, 이벤트. 전시 등을 포괄하는 여행지들이 인기를 끌고 있다. 부산에서 만나는 즐겁고 새로운 MICE 장소, 유니크베뉴 2 여긴 어떨까?\n<p class=\"font-size20 colorDarkBlue bold\">현대적 감각으로 재탄생한 한국의 정자, 누리마루APEC하우스</p>\n주소 : 부산광역시 해운대구 동백로 116\n전화 : 051-743-1974\n홈페이지 <a href=\" http://www.busan.go.kr/nurimaru/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.busan.go.kr/nurimaru/</a>\n\n누리마루 APEC 하우스는 2005년 부산 APEC 정상 회의를 했던 장소이다. 해운대 절경과 완벽하게 어울리는 전통 정자모양의 외관은 세계에서 가장 이색적인 국제 회의장으로 손색이 없다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">건강한 이탈리안 코스요리를 강변에서, 뱅델올리브</p>\n주소 : 부산광역시 수영구 좌수영로 129-1\n전화 : 051-752-7309\n\n수영강의 아름다운 야경을 감상하며 지중해식 슬로우 푸드를 맛볼 수 있는 이탈리안 레스토랑이다. 3개의 프라이빗룸은 가변형 벽체를 사용하여 적절한 공간 구성이 가능하여 다양한 인원을 수용할 수 있다.\n\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">프랑스인 오너 쉐프의 프렌치 만찬, 레플랑시</p>\n주소 : 부산 수영구 남천동로108번길 38 9층\n전화 : 0507-1400-2216\n홈페이지 <a href=\" http://lesplanches.modoo.at/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://lesplanches.modoo.at/</a>\n\n통유리를 통해 바다를 감상하며 여유로운 식사를 즐길 수 있는 깔끔한 프렌치 레스토랑이다.\n\n\n<p class=\"font-size20 colorDarkBlue bold\">도심 속 이색 바다, SEA LIFE 부산아쿠아리움</p>\n주소 : 부산광역시 해운대구 해운대해변로 266\n전화번호 : 051-740-1700\n홈페이지 <a href=\"  https://www.busanaquarium.com/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> https://www.busanaquarium.com/</a>\n\n\n놀라운 바다 속 세상을 바로 눈앞에서 만날 수 있는 해양테마파크 부산아쿠아리움. 다양한 바다친구와 교감할 수 있는 재미있는 프로그램을 운영 중이며, 거대한 상어가 지나다니는 해저 터널 아래에서 연회행사나 파티를 즐길 수 있다.\n\n\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">자연, 예술, 자부심을 담은 공간, 더베이101요트클럽</p>\n주소 : 부산광역시 해운대구 동백로 52 더베이101\n전화 : 051-726-8888\n홈페이지 <a href=\" http://www.thebay101.com\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.thebay101.com</a>\n\n동백섬 입구에 위치해 최고의 전망을 자랑하는 더베이101요트클럽은 갤러리홀을 비롯하여, 카페, 레스토랑, 잡화점, 회의장 등 다양한 공간을 갖추고 있는 해양복합 문화공간이다. 더불어 요트투어와 짜릿한 해양레저를 다양한 테마로 즐길 수 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산 밤바다가 선물하는 낭만의 시간, 팬스타크루즈</p>\n주소 : 부산광역시 동구 충장대로 206\n전화 : 1577-9996\n홈페이지 : <a href=\" https://www.panstarcruise.com/main/contents.html\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> https://www.panstarcruise.com/main/contents.html</a>\n\n배 안이지만 없는 것이 없는 팬스타드림호는 침실, 카페, 공연장, 컨퍼런스룸, 의료실, 편의점, 사우나를 겸비한 최상의 크루즈 유람선이다. 각종 문화공연과 레이저쇼, 불꽃쇼 등을 관람하며 이색적인 연회를 즐기기에 안성맞춤이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">바다 위를 날아오르다, 송도해상케이블카</p>\n주소 : 부산광역시 서구 송도해변로 171\n전화 : 051-247-9900\n홈페이지 <a href=\" http://www.busanaircruise.co.kr\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.busanaircruise.co.kr</a>\n\n송림공원에서 암남공원까지 운행하는 송도해상케이블카는 바다 위를 가로지르며 발아래 펼쳐지는 아찔한 바다와 기암절벽을 맘껏 누릴 수 있는 관광코스다. 아울러 다양한 체험공간과 테마시설을 통해 최고의 즐거움을 선사한다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">바다를 담은 야외 정원, 목장원</p>\n주소 : 부산광역시 영도구 절영로 355\n전화 : 051-404-5000\n홈페이지 <a href=\" http://mokjangwon.co.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://mokjangwon.co.kr/</a>\n \n아름다운 자연 경관과 더불어 품격 있는 한식을 고집해 온 영도 목장원. 갈비전문점, 한식뷔페, 로맨틱 카페, 가족파티, 야외 웨딩홀, 기업 세미나 등을 위한 공간을 한곳에서 누릴 수 있는 매력적인 장소다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">수변도시의 미래, 낙동강문화관</p>\n주소 : 부산광역시 사하구 낙동남로 1233번길 1\n전화 : 051-292-1042\n홈페이지 <a href=\"  http://www.riverguide.go.kr/kor/page.do?menuIdx=508\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.riverguide.go.kr/kor/page.do?menuIdx=508</a>\n\n낙동강문화관은 낙동강에 관한 다양한 이야기를 전해주는 공간으로 강을 주제로 다양한 문화예술 프로그램을 운영하고 있다. 특히, 어린이들을 위한 체험프로그램을 통해 물과 강에 대한 소중함을 일깨워 주는 곳이다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=378&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:431",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "빽빽하게 들어선 빌딩 숲만 오가다 보면 조용한 곳에서 선선한 바람을 맞으며 쉬고 싶을 때가 있다. 도심과는 조금 떨어진 자연 속에 폭 안겨 여유와 낭만을 느낄 수 있는 곳. 서부산투어는 일상에 지친 사람들을 넉넉한 자연의 품으로 안내한다.\n<p class=\"font-size20 colorDarkBlue bold\">다대포해수욕장</p>다대포해수욕장은 계절에 관계없이 자연을 만끽하기 좋은 곳이다. 느린 걸음으로 천천히 해변을 거닐다 큰 키의 사람 조형물을 만나면 나란히 옆에 서서 그 시선을 따라간다. 조용히 먼 바다를 응시하는 키다리 사람조형물이 말없이 친구가 되어준다. 근처 아미산전망대에 오르면 사시사철 흐르는 낙동강 물살과 출렁이는 다대포 파도가 하나로 합쳐지며 절경을 이룬다. 특히 해질 녘 전망대에서 내려다보는 다대포는 쉽게 눈을 뗄수 없을 정도로 몽환적이다.\n<p class=\"font-size20 colorDarkBlue bold\">감천문화마을</p>오랜 세월 피란민들의 삶의 터전이었던 감천문화마을. 마을입구에 들어서면 세월과 예술의 만남이 빚어낸 아름답고 살가운 풍경이 먼저 시선을 잡아끈다. 한복을 입고 골목길 투어에 나선 여행자들의 얼굴에는 활기가 가득하다. 삐뚤삐뚤 굽이굽이 두 사람이 지나가기에도 벅찬 좁은 골목길은 무척이나 복고스럽다. 어디로 통할지 모르는 길 곳곳마다 예쁘게 디자인 된 표지판이 여행자들을 인도한다. \n<p class=\"font-size20 colorDarkBlue bold\">송도해수욕장</p>송도해수욕장은 우리나라 1호 해수욕장으로 100년 넘는 역사를 자랑한다. 송도구름산책로와 송도해상케이블카, 그리고 기암절벽을 따라 걷는 해안볼레길이 손짓하는 100년 송도의 매력에 풍덩 빠져보자.\n<p class=\"font-size20 colorDarkBlue bold\">삼락생태공원</p>봄에는 유채꽃, 여름엔 해바라기, 가을엔 코스모스가 피어나 향긋한 꽃향기를 전해주고, 겨울에는 갈대가 아름다운 장관을 선물하는 삼락생태공원. 계절마다 각기 다른 모습으로 우리에게 다가오는 이 곳은 한가로이 걷고 싶을 때, 혹은 자전거 질주본능이 피어오를 때 주저 없이 선택할 수 있는 곳이다.\n<p class=\"font-size20 colorDarkBlue bold\">운수사 / 석불사</p>조용한 명상의 시간을 원한다면 사찰도 빼놓을 수 없다. 단아한 분위기를 뽐내는 고즈넉한 사찰을 걷고 싶다면 운수사로, 사찰 뒤로 펼쳐진 바위 불상의 웅장함을 느끼고 싶다면 석불사로 가면 된다. 바쁜 일상을 잠시 내려놓고 사찰을 따라 거닐다 보면 자연스레 마음 한쪽에서 잔잔한 평온이 퍼져 나간다.\n<p class=\"font-size20 colorDarkBlue bold\">렛츠런파크 부산경남</p>사진과 그림으로만 보던 말을 직접 만져보고 타보며 아이들의 감성을 자극할 수 있어 가족단위 관광객이 많이 찾는 렛츠런파크 부산경남. 승마를 배우며 신체를 단련하고 동물을 사랑하는 마음도 기를 수 있으니, 아이들에게는 이만한 체험학습 장소가 없다.\n<p class=\"font-size20 colorDarkBlue bold\">가덕도</p>부산 끝자락에 있는 가덕도는 한적한 어촌 정취를 느낄 수 있는 곳이자 일제강점기 역사를 만날 수 있는 섬이다. 가덕도 초입 정거벽화마을은 마을 곳곳 예쁜 벽화들이 그려져 있어 포토존으로도 인기다. 외양포마을에는 러일전쟁 후 일제가 구축한 군사시설 흔적이 남아 있으며 당시 포진지, 막사, 창고 등의 모습을 살펴 볼 수 있다.\n\n자연과 그 속에 깃든 문화와 역사까지 아우르는 서부산 투어. \n풍경에서 나아가 역사적인 의미도 찾을 수 있는 여행을 원하는 이들에게 추천한다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=431&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:790",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "초보라도 걱정 없는 방파제 낚시 명소",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "우연히 따라갔다가 어김없이 그 매력에 빠져 헤어 나오지 못하게 된다는 낚시, 처음으로 경험해 본 손맛을 잊지 못해 처음이 두 번, 두 번이 세 번, 그렇게 점점 초보낚시꾼은 입질 좋은 방파제를 찾아다니게 된다지요.\n방파제 천국 부산으로 향하긴 했으나 어느 곳에 장비를 세팅해야 할지 고민이라고요?\n초보 낚시꾼에게도 잘 물려주는 착한 물고기 많은 부산 도심 속 방파제낚시 포인트를 알려드릴게요!\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">암남공원 방파제</p>평일에도 낚시 하는 사람이 많은 생활낚시 포인트 암남공원. 머리 위로는 송도해상케이블카가 지나다니고 암남공원 해안절벽을 따라 아름다운 산책로까지 조성되어 있어 낚시 뿐 아니라 가벼운 트레킹을 즐기기에도 정말 좋은 곳이랍니다. 최근에는 암남공원과 동섬을 잇는 송도용궁구름다리가 개통되면서 흔들거리는 출렁다리의 스릴까지 경험할 수 있다고 합니다. 대~박!\n슬슬 해가 넘어갈 때쯤이면 전갱이들이 떼로 출몰하는 곳이라는데요, 풍부한 손맛을 느낄 수 있을 것 같은 느낌적인 느낌이 퐉퐉!\n처음 하는 낚시에 고민이 앞선다고요? 걱정은 넣어두세요. 우물쭈물 초보 티내고 있으면 지나가는 고수분들께서 깨알 팁을 대방출해 주실 테니까요. 초보 낚시꾼이 뭐든 잡으면 박수치며 같이 좋아하는 훈훈한 낚시터라고 합니다. 다만 옆집 낚싯대는 감지 않도록 조심해야겠죠?\n\n주소 부산광역시 서구 암남동 620-4\n주차 암남공원 노외공영주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영도 신방파제</p>생활낚시인들이야 잘 알고 있는 방파제 낚시터겠지만 대부분의 부산 사람에게도 잘 알려지지 않은 한적한 곳이 바로 영도 신방파제라고 할 수 있어요. 낚시장인들은 이곳을 줄여서 ‘신방’이라 부르고 있다죠. 방파제를 따라 긴 광장이 조성되어 있는 안전한 곳으로, 석벽 위로 몇 계단 올라선 곳에서 시원한 바다 조망을 만날 수 있답니다.\n갈치 시즌을 제외하면 상대적으로 한산해진다고 하는데요, 그래서 그런지 조용한 힐링을 좋아하는 분들은 이 곳을 선호한다고 해요. 편안하게 앉아서 낚시를 할 수 있다는 것도 큰 장점이 될 수 있겠네요. 전갱이나 붕장어의 손맛을 느낄 수 있다면 금상첨화겠지요.\n낚시 힐링의 정수를 느낄 수 있는 영도 신방파제입니다.\n\n주소 부산광역시 영도구 동삼동\n주차 영도 신방파제 주차장\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=790&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:983",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "낭만이 가득한 부산 야경맛집",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "부산의 밤은 여전히 아름답습니다. 한국관광공사가 선정한 한국의 야경 100선, 그 세 번째 야행을 이어가 보도록 할게요! 낭만이 가득한 부산 야간명소로 떠나볼까요?\n<p class=\"font-size28 colorDarkBlue medium\">다대포 꿈의낙조분수</p>다대포 하늘을 붉게 물들인 노을이 물러가고 어둠이 내려앉으면 꿈의낙조분수가 세상에서 하나밖에 없는 쇼를 준비합니다. 화려한 색동옷 갈아입은 분수가 음악에 맞춰 춤을 춥니다. 높게 솟아 오른 물줄기가 무지개 마냥 밤하늘을 수놓습니다. 다대포 꿈의낙조분수는 부산 최초의 음악분수로, 기네스 세계 기록에서 '세계 최대 바닥분수'로 꼽히기도 했답니다!\n감미로운 클래식부터 팝송, 트롯, 그리고 k-pop까지 신나는 음악과 춤추는 물기둥이 장관을 이룹니다. 음악이 차분해지면 분수도 얌전해집니다. 그러다 음악이 절정에 오르면 아파트 높이만큼 높이 치솟는 물기둥에 눈이 휘둥그레 집니다. 누구와 함께 하더라도 즐거운 시간을 가질 수   있습니다. 시원하게 뿜어내는 물줄기를 보고 있으면 무더위도 재빨리 도망을 갈 것 같아요!\n분수쇼가 끝났다고 너무 아쉬워하진 마세요. 이후에 체험분수 시간이 있으니 아이들과 함께 꿈의낙조분수에서 지상낙원을 경험해 보세요.\n\n주소 부산광역시 사하구 몰운대1길 14\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도구름산책로</p>부산의 여름 밤을 제대로 느끼고 싶다면 송도로 오세요. 볼 거리가 가득한 송도해수욕장에는 한국에서 가장 긴 스카이워크가 있습니다. 부드러운 곡선으로 휘어진 송도구름산책로는 밤이 되면 오색찬란한 빛을 발하며 까만 밤바다 위를 화려하게 수놓습니다. \n하늘 위로는 송도해상케이블카가 별처럼 빛을 내며 오고 가고, 시시각각 조명옷을 갈아입는 송도구름산책로는 마치 천상을 향해 열려 있는 계단처럼 보입니다. 구름산책로에 부딪히는 파도소리가 귀를 즐겁게 하고 내딛는 발걸음마다 은은하게 감싸주는 조명이 기분을 한껏 고조시킵니다. 밤의 송도구름산책로가 가진 매력에 빠져보세요. \n\n주소 부산광역시 서구 암남동 129-4\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해상케이블카</p>달빛과 조명으로 은은하게 빛나는 송도의 모습을 한 눈에 바라볼 수 있는 곳, 바로 송도해상 케이블카입니다. 케이블카를 타고 밤바다를 내려다보고, 부산 도심의 이색적인 야경도 즐겨보세요. 부드러운 노을, 거대한 산, 우뚝 솟은 고층 건물, 드넓은 바다, 모든 것이 완벽하답니다!\n송도 해상케이블카는 크리스탈 크루즈와 에어크루즈로 나뉘어 있어요. 크리스탈 크루즈는 바닥이 투명한 프리미엄 캐빈이라 발 아래로 부서지는 하얀 파도를 보며 짜릿한 시간을 즐길 수 있습니다.\n케이블카에서 내리면 송도베이스테이션과 스카이파크에서 구경해도 좋아요. 어린왕자와 같은 조형물을 비롯해 여러 테마파크가 멋지게 조성되어 있어 야경 이외에도 즐길거리, 볼거리가 많습니다. 케이블카와 해수욕장이 어우러진 아름다운 모습을 가장 잘 볼 수 있는 곳이기도 하죠. \n사랑하는 사람과 함께 송도의 야경을 보러오세요. 부산은 당신을 기다리고 있습니다.\n\n주소 부산광역시 서구 송도해변로 171\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=983&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1176",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "송도해수욕장 주변 가을산책, 서울워커의 부산여행",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "스산한 바람이 바다를 감싸면 가을의 바다는 낭만의 파도로 출렁인다. 해운대, 광안리, 기장이 부산 여행지의 대명사처럼 여겨지지만, 최근 부산의 남단에 있는 ‘송도’가 낭만 가득한 가을 여행지로 떠오르고 있다. 푸른 바다가 절경을 이룬 암남공원부터 바다 위를 가로지르는 송도해상케이블카, 동양의 나폴리로 불리는 송도해수욕장까지! 송도에서 하루 종일 즐기는 여행코스, 지금 떠나 보자.\n\nSeoul Walker가 걸은 부산 안심여행지 송도 영상 <a href=\"https://www.youtube.com/watch?v=yDiq3JzI1hg \" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.youtube.com/watch?v=yDiq3JzI1hg</a>\n\n<p class=\"font-size28 colorDarkBlue medium\">암남공원</p>오솔길 따라 울창한 소나무 숲 사이로 푸른 바다의 절경이 한 눈에 내다보이는 송도의 랜드마크, 암남공원이다. \n깎아지를 듯 솟은 기암절벽으로 이루어진 암남공원은 오르는 중간 중간에 전망대와 벤치가 있어 한 폭의 그림처럼 펼쳐진 송도 바다의 아름다운 모습을 감상 할 수 있다. 시원하게 불어오는 해풍을 맞으며 1시간 정도 가볍게 트레킹을 즐기기에도 제격이다.\n\n\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도용궁구름다리</p>암남공원과 바다 건너 작은 무인도 동섬을 연결하는 송도용궁구름다리는 바닥이 철망으로 되어 있어 마치 바다 위를 걷는 듯한 짜릿한 기분이 든다. 동섬을 따라 이어진 원형 탐방로는 시원스럽게 펼쳐진 송도 바다의 풍광과 기암절벽이 빚어낸 천혜의 경관, 하늘을 가로지르는 형형색색의 케이블카를 한 눈에 조망할 수 있다.\n\n\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해상케이블카</p>하늘 높이, 탁 트인 송도의 모습을 보고 싶다면 송도해상케이블카를 타보자. 단언컨대 지금까지 타 본 어떤 케이블카와도 비교할 수 없다. 최고 86m 높이의 바다 위 한가운데를 활공하는 케이블카는 짜릿함을 넘어 가슴 터질 듯 아찔한 기분마저 든다. 하지만 두려움도 잠시! 발밑에 광활하게 펼쳐진 바다의 모습에 어느 새 넋을 놓고 감탄사를 연발하는 내 모습을 발견할지도 모른다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">구름산책로</p>상쾌한 가을바람을 맞아 한층 푸른빛으로 짙어진 송도 바다 위를 거닐어 보는 건 어떨까?\n송도해수욕장 동쪽에 있는 거북섬과 육지를 잇는 스카이워크 구름산책로다. \n유연하게 굴곡을 그리는 나무데크의 산책로를 따라 걸으면 송도의 모습을 형상화한 여러 조형물들을 감상할 수 있다. 발아래 투명하게 비치는 출렁이는 파도를 보며 잠시 감상에 젖어들어도 좋다. \n\n\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해수욕장</p>하루가 끝나갈 무렵, 해가 지고 도심의 불빛이 하나 둘 켜지면 송도해수욕장은 또 다른 황홀경에 빠진다. \n하늘과 바다가 어둠에 빠질수록 구름산책로와 송도해상케이블카의 오색 불빛이 반짝거리며 밤하늘을 수놓기 시작한다. 바다와 섬, 산과 도심이 어우러진 일몰이라니.. 이것이야말로 부산의 낭만 여행지 ‘송도’에서만 볼 수 있는 야경이 아닐까? \n\n\n\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1176&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1198",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "SF9 찬희 ♡ 채연의 부산 잠입 작전!",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "부산은 도시와 자연을 한꺼번에 경험할 수 있는 흔치 않은 여행지다. 테마도 다양하다. 자연, 역사, 영화, 액티비티, 미식 등 어떤 것이라도 부산에선 이 모든 것을 누릴 수 있다. 그래서일까? 한 번의 여행만으론 아쉬움이 남는 여행지가 부산이기도 하다. 하지만 떠오르는 핫플레이스는 따로 있다. 해시태그 부산여행만 검색해도 수두룩하게 나오는 그 곳! 부산에서도 찐 부산 바이브를 느낄 수 있는 핫플레이스를 지금 소개한다.\n\nSF9 찬희♡채연의 부산 잠입 작전! 과연 미션 성공?!｜외부인 연애 금지법 <a href=\"https://www.youtube.com/watch?v=_dZTmhWAtwE\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.youtube.com/watch?v=_dZTmhWAtwE</a>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">이기대 전망대</p>부산에는 많은 해안산책로가 있지만 그 중에서도 이기대 해안산책로는 가장 아름다운 코스로 손꼽힌다. 용암과 화산재, 그리고 파도의 침식으로 만들어진 해식절벽과 동굴 등 천혜의 절경이 부산 바다를 배경으로 한 폭의 그림과도 같다. \n이런 이기대의 황홀경을 전망대에서 먼저 품어보자. 이기대 전망대에서는 지척에 보이는 광안대교와 탁 트인 광안리 앞바다를 시작으로 해운대 마린시티, 동백섬, 달맞이언덕은 물론 저 멀리 높이 솟아오른 장산까지도 한 눈에 들어온다. 눈이 시원해지고 기분이 상쾌해진다.  해안절벽을 따라 잘 조성된 이기대 해안산책로도 걸어보자. 어느 순간 가슴이 뻥 뚫릴 듯 눈부시게 파란 바다가 눈앞에 펼쳐진다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의 전당</p>많은 여행 테마 중에서도 MZ세대들에게 떠오르고 있는 것은 ‘영화의 도시, 부산’이다. 많은 영화와 드라마들이 부산에서 촬영됐을 뿐 아니라 세계가 주목하는 영화 축제의 장 ‘부산국제영화제’도 이곳 부산에서 매년 개최되고 있다. \n영화의 도시 부산의 랜드마크 영화의 전당은 건물 그 자체가 그림이고 영화다. 각각 독립적으로 이루어진 3개의 건물이 구름다리로 서로 연결되어 곡선과 직선이 교차하는 역동적인 공간을 선사한다. 하늘을 연상시키는 영화의 전당 빅루프는 형형색색의 LED가 반짝일 때마다 마치 하늘에서 빛의 파도가 물결치는 듯하다. 미디어아트와도 같은 환상적인 야경을 가진 빅루프를 배경으로 나만의 인증샷도 찍어 보자.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도 스카이파크</p>아름다운 전망과 짜릿한 액티비티를 즐기고 싶다면 송도로 가자! 하늘 위에서 부산 바다를 만끽하는 송도해상케이블카, 걸으며 바다 위를 산책하는 구름산책로, 우거진 해송의 싱그러움을 전해주는 암남공원 숲속 산책 그리고 다양한 해양레저까지, 즐길거리가 많아도 너무 많다.\n암남공원에 위치한 송도 스카이파크 3층 스카이하버전망대에도 꼭 올라보자. 끝없이 펼쳐진 바다를 원 없이 내다 볼 수 있고 어린왕자 테마파크와 추억을 보관하는 타임캡슐까지 다양한 액티비티를 한 번에 즐길 수 있다. 해 질 무렵이면 이곳은 또 다른 낭만으로 펼쳐진다. 보랏빛으로 물든 하늘, 하나 둘 켜지는 조명, 눈앞에 펼쳐진 바다와 노란빛 부산의 달. 마치 영화 <라라랜드>의 한 장면처럼 로맨틱한 밤이다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안리 해변</p>부산의 찐 바이브를 느끼고 싶다면 역시 광안리를 빼 놓을 수 없다. 푸른 바다와 금빛 모래사장, 시원하게 뻗은 광안대교가 웅장함을 내뿜는 광안리 해변. 또한 카페며 레스토랑, 편집숍 등 각양각색 개성을 자랑하는 공간들이 저 마다의 매력을 발산하고 있다.\n밤의 광안리 해변은 낮보다 더 아름답다. 해가 지면 광안대교의 불이 하나 둘 켜지며 화려한 조명으로 광안리의 밤을 수놓는다. 다이아몬드처럼 반짝이는 광안대교는 그래서 수많은 연인들의 프로포즈 배경 일순위인가 보다. 그렇지만 혼자여도, 둘이어도, 여럿이어도 상관없다. 너나 할 것 없이 광안대교 앞에서 ‘김치~’하고 웃으면 그날이 가장 행복한 순간으로 기록된다. 오늘, 낭만 가득한 광안리의 밤으로 여행을 떠나보는 건 어떨까?\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1198&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1317",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "숨은 달빛 한 조각, 부산 달캉스 명소 4  ",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "무더운 여름이 끝나고 점점 더 선선해지는 날씨와 함께 가을이 다가오고 있습니다. 가을 하면 떠오르는 것이 바로추석! 가족과 함께 시간을 보내고, 달을 보며 소원을 빌기도 하는 것이 바로 추석 명절의 매력이죠? 그래서 준비한 부산 달캉스 명소 4곳! 밤이 되면 아름다운 달을 만날 수 있는 부산 달캉스 명소에서 좋은 추억을 만들어 보세요.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길 해월정</p>‘은은한 달빛을 받으며 걷는 길’이라는 달맞이길은 해운대 바다에서부터 시작하여 산책하기 좋은 길입니다. 여름을 맞아 푸릇푸릇함이 가득한데, 키 큰 나무들이 만들어주는 그늘 아래를 걸으며 언덕길을 오를 수 있습니다.\n특히 달맞이길 언덕에 있는 ‘해월정’에서는 탁 트인 전망을 감상할 수 있는 것은 물론, 달 조형물과 사진 찍기에도 좋고 그늘에서 쉬어가기도 좋답니다. 해월정에서 내려다보는 풍경이 아름다우니 달맞이길을 산책하신다면 해월정도 꼭 한번 들러보시면 좋을 것 같아요. \n해월정 앞에 있는 예쁜 달 조형물과 함께 인증사진을 남겨봅니다. 밤에는 달 조형물에 빛이 들어오기 때문에 더욱 아름다운 모습을 감상할 수 있습니다.\n해월정에서 전망대 방향으로 이어지는 나무데크 산책로도 아름다워서 직접 걸어보는 것을 추천합니다. 빼곡한 초록숲 사이로 불어오는 해풍이 싱그러운 기운을 선사합니다. 달맞이길 입구에 위치한 전망대에서 광안대교와 해운대 해수욕장의 시원한 풍경을 감상하며 달맞이길 산책을 마무리하면 어떨까요?\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해상케이블카 스카이파크</p>부산 송도엔 해수욕장, 케이블카는 물론 암남공원과 스카이파크도 있어서 볼거리가 많습니다. 스카이파크로 가는 방법에는 두 가지 방법이 있는데 송도해수욕장에서 케이블카를 타거나 직접 스카이파크까지 이동할 수 있습니다.\n암남공원에 위치한 송도해상케이블카의 정류장에는 푸릇푸릇한 숲과 잘 어울리는 공원, 스카이파크를 조성해놓았습니다. 아이들이 좋아할만한 조형물들이 가득합니다. 인증사진 찍기 좋은 예쁜 달 조형물을 비롯해 노란 색감과 디자인이 돋보이는 달팽이가든 등은 스카이파크의 볼거리입니다.\n또한 본관 건물 2층과 3층에는 오션뷰 테라스와 스카이하버 전망대가 마련되어 있습니다. 광활하게 펼쳐진 멋진 바다 전망을 배경으로 다양한 포토존이 꾸며져 있어요. 3층 전망대에 있는 달 조형물은 그냥 지나칠 수 없는 포토존입니다. 달과 함께 다양한 포즈를 연출해 보세요. 이외에 어린왕자 등 예쁜 포토존이 많으니 찬찬히 둘러보면 좋을 것 같아요. 스카이파크를 둘러본 다음에는 바로 근처에 있는 송도 용궁구름다리도 산책하기 좋습니다. 멀리 묘박지의 신기한 풍경도 즐기고, 발아래 스릴 가득 짜릿한 바다도 느껴보세요.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포 해수욕장</p>부산 일몰 명소로 알려진 다대포 해수욕장에는 사진 찍기 좋은 포토존도 여럿 마련되어 있어서 바다를 따라 산책하며 사진 찍기 좋습니다. 바다와 갈대를 동시에 만나볼 수 있는 고우니 생태길은 다대포 해수욕장을 방문했다면 꼭 한 번쯤 걸어보기 좋은 길입니다.\n다대포 바다와 하늘, 건너편 해안선의 실루엣마저 아름다운 이곳에 예쁜 달 조형물이 자리 잡고 있습니다. 낮에도 사진 찍기 좋지만 달빛처럼 환한 조명이 들어오는 밤에는 더욱 운치 있는 곳이에요. 이곳에서 예쁜 인증사진 남기는 것도 잊지 마세요. 달 조형물 이외에도 나만의 인생샷을 업데이트할 수 있는 스폿이 많으니 일몰을 감상하며 여유 있게 돌아보세요.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">우암동 도시숲</p>영도 바다와 부산항대교까지 한눈에 들어오는 우암동 도시숲, 이곳의 일몰과 야경 풍경이 아름다워 ‘부산의 라라랜드’라는 별명이 붙여졌습니다.\n규모는 작지만 한층 짙어진 초록의 숲이 싱그러운 공원을 만들어 줍니다. 공원 언덕에는 아름다운 보름달 조형물이 설치되어 있는데 이곳이 인증사진 스폿으로 많은 사랑을 받고 있습니다. 보름달 뒤로는 부산항대교와 봉래산이 보입니다. 예쁜 인증사진과 함께 멋진 전망도 감상할 수 있어요.\n나무데크 산책로를 따라 울창한 숲길을 내려오면 만나게 되는 소박한 골목길, 그 끝에 놓칠 수 없는 또 다른 포토존이 있습니다. 동항성당의 예수상과 함께 부산항과 부산항대교가 그림처럼 펼쳐지는 전망대는 이국적인 포토존으로 유명합니다.  낮과 밤이 다른 반전 매력을 느낄 수 있는 우암동 도시숲에서 아름다운 추억을 만드세요.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1317&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2253",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "설 연휴맞이 부산",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_01.jpg\" alt=\"설 연휴맞이 부산 종합 여행지 선물세트\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_02.jpg\" alt=\"부모님께 선물하고픈 따뜻한 겨울 여행코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1753&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_03.jpg\" alt=\"센텀 스파랜드. 쇼핑, 노천족탕, 찜질방을 한번에! 부모님 맞춤 힐링 스팟으로 제격.\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1938&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_04.jpg\" alt=\"해목. 몸보신에는 장어만 한게 없지, 미쉐린 선정 식당에서 기운 완충!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_05.jpg\" alt=\"해동용궁사. 숨막히는 해안 절경에 웅장한 사찰 뷰까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2068&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_06.jpg\" alt=\"프레스트. 운치 있는 한옥 카페에서 여유롭게 차 한잔~\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2195&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_07.jpg\" alt=\"해운대 일품한우. 고기에도 품격이 있다! 셀럽들의 '일품'한우 맛집 성지\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_08.jpg\" alt=\"한복을 입고 선물상자를 든 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_09.jpg\" alt=\"아이들과 즐길 거리 가득한 체험 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1937&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_10.jpg\" alt=\"딤타오 본점. 모양도 맛도 다채로운 딤섬 체험, 미쉐린 선정 식당에서 즐겨보자!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1680&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_11.jpg\" alt=\"클럽디오아시스. 겨울철에도 감기 걱정 없는 '온수 무한제공' 물놀이 스팟\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=980&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_12.jpg\" alt=\"해운대 블루라인파크. 해운대를 여행하는 가장 낭만적인 방법\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2108&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_13.jpg\" alt=\"도희네 조개구이. 부산 바다 한입에 정리 완료! 신선한 조개구이 전문점\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1322&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_14.jpg\" alt=\"현대 모터스튜디오 부산. 볼거리, 즐길거리가 한데 모인 모던한 복합문화공간\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_15.jpg\" alt=\"한복을 입은 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_16.jpg\" alt=\"커플끼리 설렘 가득한 낭만 데이트코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2087&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_17.jpg\" alt=\"까사데룩. 카페 데이트와 전시관 데이트, 둘 다 놓칠 수 없지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2145&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_18.jpg\" alt=\"도모헌. 복합문화공간으로 재탄생. 의미와 재미, 한 번에 잡자!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=1323&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_19.jpg\" alt=\"밀락더마켓.마냥 걷다 보면 두 손에 물건이 가득! 화려한 복합문화공간의 정석\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2219&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_20.jpg\" alt=\"아델라베일리 부산. 특별한 날을 더 특별하게 해줄 로맨틱한 식당\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2208&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_21.jpg\" alt=\"꼬쇼네. 귀여운 강아지 '꼬쇼'가 있는 아기자기한 감성 카페\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_22.jpg\" alt=\"한복을 입고 복주머니를 들고있는 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_23.jpg\" alt=\"혼자만의 시간, 나 홀로 떠나는 힐링 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_24.jpg\" alt=\"신발원. 만두 러버들의 성지. 중국 정통만두를 맛보고 싶다면 방문 필수!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1422&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_25.jpg\" alt=\"송도해상케이블카&용궁다리. 송도바다의 중심에서 힐링을 외치다\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=1967&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_26.jpg\" alt=\"EL16.52 카페. 파도를 쏙 빼닮은 멋진 건물 디자인에, 맛있는 베이커리까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=1527&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_27.jpg\" alt=\"이가네 떡볶이. 어나더 레벨 부산 떡볶이, 여기가 진짜다!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202008001000&uc_seq=2242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_28.jpg\" alt=\"망미블루스. 주인장이 직접 디깅한 LP 음악을 곁들인 혼술명당\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_29.jpg\" alt=\"한복을 입고 연꽃 위에 앉아 있는 이미지\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_30.jpg\" alt=\"\"></td> </tr></table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2253&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2787",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "해운대 말고 여기 어때요? 올여름 가볼 만한 부산 해수욕장 3곳",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산 송도해상케이블카",
+        "review": "pending"
+      },
+      "originalText": "부산하면 떠오르는 것은 바로 여름 물놀이의 꽃, 해수욕장입니다. 올해도 어김없이 해운대해수욕장을 비롯하여 부산의 해수욕장 7곳이 개장했는데요.\n\n해운대해수욕장이 가장 대표적으로 알려져 있지만, 부산에는 각기 다른 매력을 가진 해변들이 곳곳에 자리하고 있습니다. 올여름에는 부산의 또 다른 해수욕장을 찾아 특별한 여름 여행을 떠나보는 것은 어떨까요?\n\n\n<p class=\"font-size28 colorDarkBlue medium\">2026 부산 해수욕장 개장 일정</p>\n2026년 부산해수욕장 개장 소식과 일정부터 알려드려요. 여행 일정에 맞춰 개장 기간을 확인하고 방문하면 더욱 안전하고 즐거운 여름 여행을 즐길 수 있습니다.\n\n-\t해운대해수욕장 : 6월 26일 ~ 9월 15일\n-\t송정해수욕장 : 6월 26일 ~ 8월 31일\n-\t광안리·송도·다대포·일광·임랑해수욕장 : 7월 1일 ~ 8월 31일\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대 말고 여기 어때? 추천 해수욕장 3곳</p>\n\n<p class=\"font-size24 colorBlack medium\">1. 야경과 즐길거리가 가득한 광안리해수욕장</p>\n광안리해수욕장은 광안대교를 배경으로 펼쳐지는 아름다운 야경으로 많은 사랑을 받는 부산의 대표 해변입니다.\n매주 토요일 밤에는 광안리 밤하늘을 수놓는 드론쇼가 펼쳐져 특별한 볼거리를 선사하고 있어요. 해변을 따라 감성 카페와 레스토랑, 다양한 먹거리와 즐길거리가 이어져 낮부터 밤까지 활기찬 분위기를 즐길 수 있습니다.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 수영구 광안해변로 219</span></li></ul></div>\n\n\n<p class=\"font-size24 colorBlack medium\">2. 해수욕과 체험을 함께 즐기는 송도해수욕장</p>\n송도해수욕장은 부산 최초의 공설 해수욕장으로, 다양한 체험시설을 함께 즐길 수 있는 것이 특징입니다.\n바다 위를 가로지르는 송도해상케이블카를 비롯해 송도용궁구름다리, 암남공원 등 해수욕 외에도 즐길 수 있는 콘텐츠가 풍부해 가족 단위 여행객들에게 추천하는 여행지예요.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 서구 송도해변로 100</span></li></ul></div>\n\n\n<p class=\"font-size24 colorBlack medium\">3. 부산에서 가장 아름다운 노을을 가진 해수욕장, 다대포해수욕장</p>\n넓은 백사장과 완만한 수심을 자랑하는 다대포해수욕장은 부산을 대표하는 일몰 명소입니다. 해수욕을 즐기고 난 후 해 질 무렵 붉게 물드는 바다 풍경까지 꼭 감상해보세요.\n해수욕장 인근의 다대포해변공원, 몰운대 산책로와 고우니생태길까지 함께 둘러볼 수 있어 자연을 여유롭게 만끽하기에 좋은 여행지입니다. 도심과는 또 다른 한적한 분위기 속에서 부산의 아름다운 해안을 만날 수 있어요.\n\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 사하구 다대동</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">함께 만드는 즐거운 부산의 해변 문화</p>\n깨끗하고 안전한 해변은 관광객과 지역주민이 함께 만들어갑니다. 모두가 기분 좋게 부산의 바다를 즐길 수 있도록 작은 배려를 함께 실천해주세요!\n\n<p class=\"font-size24 colorBlack medium\">함께 지켜요! 해변 이용 에티켓</p>\n-\t쓰레기는 지정된 장소에 분리배출하기\n-\t금연구역 준수하기\n-\t사진 촬영 시 주변 사람들의 사생활 배려하기\n-\t음향기기 사용 시 소음을 줄여 모두가 편안한 환경 만들기\n-\t지역주민과 다른 이용객을 배려하며 해변 이용하기\n\n올여름에는 부산의 다양한 해수욕장에서 각기 다른 바다의 매력을 만나고, 모두가 함께 즐기는 건강한 해변 문화를 만들어 보시기 바랍니다.\n\n\n<p class=\"font-size20 colorBlack medium\">[부산 해수욕장 자주 묻는 질문]</p>\nQ1. 해운대 말고 가볼 만한 부산 해수욕장은 어디인가요?\nA. 광안리해수욕장, 송도해수욕장, 다대포해수욕장을 추천합니다. 각각 야경, 체험시설, 노을이라는 서로 다른 매력을 가지고 있습니다.\n\nQ2. 2026년 부산 해수욕장 개장 기간은 언제인가요?\nA. 해운대해수욕장은 6월 26일~9월 15일, 송정해수욕장은 6월 26일~8월 31일, 광안리·송도·다대포·일광·임랑해수욕장은 7월 1일~8월 31일까지 개장합니다.\n\nQ3. 가족 단위로 방문하기 좋은 해수욕장은 어디인가요?\nA. 송도해수욕장을 추천합니다. 송도해상케이블카, 송도용궁구름다리, 암남공원 등 해수욕 외에 즐길 거리가 많아 가족 단위 여행객들에게 인기가 있습니다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2787&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

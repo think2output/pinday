@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3083341",
+    "name": "정관온천",
+    "lat": 35.32254781057412,
+    "lng": 129.17787242339242
+  },
+  "collectedAt": "2026-10-24T09:57:15.198Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3083341",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "정관온천",
+      "relation": "same-place",
+      "originalText": "정관온천은 부산 기장군 정관읍에 위치한 자연친화적인 온천 시설이다. 860m 지하에서 용출하는 천연 암반 온천으로 약알칼리성 수질을 가지고 있으며 약알칼리성 온천수는 신경통, 류머티즘 관절염 같은 질병 치료 효과가 있어 스트레스 해소, 피부 미용에 좋다고 알려져 있다. 정관온천에는 다양한 탕과 찜질방, 노천탕을 구비하고 있어 시원한 야외 공기를 마시며 온천을 즐기기에 좋은 곳이다. 또한, 넓은 주차장과 피트니스클럽을 운영하고 있어 건강관리와 체력 증진에 도움이 된다. 가족 단위 방문객과 부모님과의 나들이에 안성맞춤이며, 함께 힐링할 수 있는 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3083341&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:12.333Z",
+      "modifiedAt": "20260424091626"
+    }
+  ],
+  "errors": []
+}

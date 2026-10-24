@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "3017467",
+    "name": "중리항 방파제 등대",
+    "lat": 35.067993,
+    "lng": 129.064176
+  },
+  "collectedAt": "2026-10-24T09:57:15.263Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3017467",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "중리항 방파제 등대",
+      "relation": "same-place",
+      "originalText": "중리항 방파제 등대는 빨간색 원통형 모양의 등대로 해양수산부 부산지방해양수산청에서 관리하고 있으며 2018년 8월 처음 불을 밝혔다. 천혜의 아름다운 낙조 지역으로 알려진 중리 바닷가 방파제 끝단에 설치되어 있으며 황금빛 노을을 만끽할 수 있는 명소로 알려져 있다. 등대가 있는 방파제에는 낚시를 즐기는 낚시꾼들이 많이 찾는 곳이며 2022년 3월 이달의 등대로 선정되기도 하였다. 등대가 있는 방파제 입구에는 30년 전 해녀들이 정착해 운영하는 해녀촌이 있어 영도 앞바다에서 갓 잡아 올린 싱싱한 해산물을 맛볼 수 있고 그들의 역사와 삶의 흔적을 느껴볼 수 있는 영도 해녀문화전시관도 인접해 있다. 노을을 감상할 수 있는 노을 전망대도 위치해 있어 함께 방문하기 좋은 관광지이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3017467&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:14.254Z",
+      "modifiedAt": "20260424091626"
+    }
+  ],
+  "errors": []
+}

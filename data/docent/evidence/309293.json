@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "309293",
+    "name": "미륵사(부산)",
+    "lat": 35.274006634,
+    "lng": 129.0489255467
+  },
+  "collectedAt": "2026-10-24T09:57:13.850Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:309293",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "미륵사(부산)",
+      "relation": "same-place",
+      "originalText": "미륵사는 의상대사가 범어사를 창건한 해에 원효대사가 세운 절이다. 이곳에는 한가운데 위치한 염화 전 뒤편의 거대한 바위가 스님이 좌선하는 모양과 같다고 하여 ‘좌선바위’라 불리고 있다. 이 바위는 여러 개의 바위들이 모자이크 한 듯이 어울려 있는데, 해가 지고 난 뒤 바위와 바위 사이의 금이 보이지 않게 될 때 전체로 보면 그 형상이 분명하게 드러난다. 이 좌선바위 뒤편에는 미륵불과 닮은 미륵불을 향해 좌선을 하고 있는 형상의 절묘한 터에 원효는 기도도량을 세운 것이 다. 미륵사이란 이름도 여기에서 유래했다고 한다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=309293&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:11.136Z",
+      "modifiedAt": "20250325103121"
+    }
+  ],
+  "errors": []
+}

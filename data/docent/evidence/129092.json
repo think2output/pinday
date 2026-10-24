@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "129092",
+    "name": "대변마을",
+    "lat": 35.224783162581,
+    "lng": 129.230364645028
+  },
+  "collectedAt": "2026-10-24T09:57:13.562Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:129092",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "대변마을",
+      "relation": "same-place",
+      "originalText": "멸치의 고장, 기장에서도 멸치의 주산지로 꼽히는 곳이 바로 대변마을. 대변항은 물살 센 동해에 접해 있지만 파도가 밀려와도 자연스럽게 방파제 역할을 해주는 죽도를 눈앞에 두고 있는 천혜의 어항을 낀 어촌마을이다. 봄철 대변항에는 왕멸치가 잡혀오는데 멸치의 길이가 15cm나 된다. 항구에 들어온 멸치어선들은 잡은 멸치를 털어내는데 노랫가락에 맞추어 멸치를 털어내는 모습이 대변항을 대표하는 상징적인 풍경이다. 대변마을은 조선 중기 때부터 사용된 이름인데 당시 김성련이란 선비가 적은 병술일기에 우기이대변포문생원가라는 기술이 있었고, 대동고변포라는 긴 지명을 줄여 대변포라 부르다가 대변마을이 되었다 한다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=129092&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:53:56.890Z",
+      "modifiedAt": "20260305101534"
+    },
+    {
+      "id": "heritage:23-21-0000410000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "기장척화비",
+      "relation": "nearby-only",
+      "distanceMeters": 278,
+      "coordinates": {
+        "lat": 35.2246958,
+        "lng": 129.2273014
+      },
+      "originalText": "척화비란 조선 고종 때 병인양요, 신미양요를 승리로 이끈 흥선대원군이 서양세력을 배척하고, 이를 모든 백성에게 일깨워 주고자 전국의 중요한 곳에 세워두도록 한 것으로, 이 비도 그 중 하나이다. \n비는 낮은 사각받침돌 위로 길쭉한 비몸돌을 세운 모습이다. 비문에는 ‘서양 오랑캐가 침범하는데 싸우지 아니하고 화친하자고 주장하는 것은 나라를 팔아먹는 것이니, 우리 만년자손에게 경계한다’는 강한 어투의 경고문을 적고 있다. \n 원래는 대변항 방파제 안쪽의 동해바다가 굽어보이는 곳에 세워두었으나, 일제시대에 항을 넓히면서 일본인에 의해 뽑혀 바다 속에 버려졌던 것을, 해방 후 다시 건져내었는데 현재는 대변초등학교내에 세워져있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000410000000",
+      "fetchedAt": "2026-10-24T09:53:57.110Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    }
+  ],
+  "errors": []
+}

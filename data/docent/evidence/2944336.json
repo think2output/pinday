@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2944336",
+    "name": "남부산교회",
+    "lat": 35.1523359634,
+    "lng": 129.0732174206
+  },
+  "collectedAt": "2026-10-24T09:57:13.452Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2944336",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "남부산교회",
+      "relation": "same-place",
+      "originalText": "2022년도에 개봉한 영화 에서 베이비박스가 있는 교회 장면을 촬영한 장소로 이야기의 시작점이 되는 곳으로 충분히 인상적인 모습의 장소이다. 극 중 이름은 ‘부산가족교회’였다. 언덕이 많은 부산의 지형을 잘 보여주며 40년이 넘는 역사가 쌓인 외관이 영화의 분위기와 잘 어울린다. 길 아래로 걸어 내려오면 극 중에서 등장한 벽화와 정겨운 동네의 풍경 그리고 같은 영화 촬영 장소인 전포삼거리의 버스정류장과 공중전화 부스가 보인다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2944336&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:53:50.685Z",
+      "modifiedAt": "20261013084512"
+    }
+  ],
+  "errors": []
+}

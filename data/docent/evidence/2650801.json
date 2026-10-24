@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2650801",
+    "name": "뮤지엄 원",
+    "lat": 35.1713708789985,
+    "lng": 129.129031134497
+  },
+  "collectedAt": "2026-10-24T09:57:13.847Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:2679"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2650801",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "뮤지엄 원",
+      "relation": "same-place",
+      "originalText": "부산 센텀에 위치한 뮤지엄 원은 예술 전문 기획사 쿤스트원이 2019년에 설립한 미디어 전문 현대 미술관으로, 2022년 3월 뮤지엄 원이라는 새로운 이름으로 재개관했다. 복층 형태로 이루어진 뮤지엄 원은 8천만 개의 LED를 바닥과 천장, 벽면에 설치하여 관람객들을 예술 작품 속으로 안내하는 초현실적인 경험을 선사한다. 뮤지엄 원은 대중을 위한 예술, 대중이 체험하고 즐길 수 있는 예술을 지향하며 대중들이 열광하는 환상적인 미디어 아트뿐만 아니라 현대 미술가의 영상, 설치, 사진 등의 작품까지 만나볼 수 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2650801&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:10.923Z",
+      "modifiedAt": "20260305091621"
+    },
+    {
+      "id": "busan-theme:2679",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산에서만 만날 수 있는 특별한 공간, 부산 유니크베뉴",
+      "relation": "same-place",
+      "match": {
+        "field": "MAIN_PLACE",
+        "method": "exact-name",
+        "placeName": "뮤지엄 원",
+        "review": "pending"
+      },
+      "originalText": "업무+여행이 함께 이루어지는 블레저(Bleisure, Business + Leisure) 트렌드가 확산되면서, MICE 개최 도시는 단순한 행사 장소가 아닌 하나의 여행 목적지로 주목받고 있습니다. 이에 따라 행사 공간 역시 기능성과 편의성뿐 아니라, 지역만의 매력과 분위기를 경험할 수 있는 특별한 장소에 대한 관심이 높아지고 있습니다.\n유니크베뉴란 일반적인 컨벤션 센터나 호텔 연회장을 넘어, 지역의 문화•역사•스토리가 담겨있고 오래 기억될 독특한 장소적 경험을 제공하는 공간 및 시설을 뜻합니다. 해양과 도시, 자연과 문화가 어우러진 글로벌 관광도시 부산은 이러한 유니크베뉴의 매력을 가장 잘 경험할 수 있는 도시입니다. 바다를 품은 전시·공연시설, 도시의 역사와 이야기가 담긴 문화공간, 현대적 감각의 복합문화시설 등 부산만의 개성과 분위기를 담은 다양한 공간들은 MICE 행사에 특별한 가치를 더합니다.\n부산유니크베뉴는 단순한 행사 장소를 넘어, 참가자들이 부산의 풍경과 문화, 라이프스타일을 직접 체험하며 도시의 매력을 깊이 느낄 수 있도록 합니다. 비즈니스와 관광이 자연스럽게 연결되는 특별한 경험, 그 시작을 부산에서 함께해보세요.\n\n\n<p class=\"font-size28 medium\">해운대구</p>\n<p class=\"font-size28 colorDarkBlue medium\">누리마루 APEC 하우스</p>\n\n누리마루 APEC 하우스는 ‘세계’를 뜻하는 ‘누리’와 ‘정상’을 뜻하는 ‘마루’를 조합해 세계 정상들이 모이는 집을 의미하며 한국 전통 건축의 고유한 아름다움이 특징입니다. 세계 정상이 참석한 2005 APEC 정상회의 기념관이자 CEO 및 신제품 발표회, 투자 간담회, 최고정부협의회 등이 개최되는 부산의 대표적인 이색 컨퍼런스 장소로 활용되고 있습니다.\n<p class=\"list-tit mt\">누리마루 APEC 하우스</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 해운대구 APEC로 55</li><li><span>문의</span> : 051-740-7515</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=219\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n<p class=\"font-size28 colorDarkBlue medium\">MUSEUM 1</p>\n뮤지엄 원은 부산 해운대구 센텀시티에 위치한 미디어 아트 전문 현대 미술관입니다. 리셉션, 애프터파티 형태의 행사들을 주로 진행하고 있습니다.뮤지엄 원은 약 700여 평 복층 형태의 구조로 8,000만 개의 LED 디스플레이를 갖추고 있는 국내 최대 규모의 미디어 아트 전문 현대미술관입니다. 미디어 작품은 물론 설치, 회화, 조각, 도자, 사진 등 다양한 장르의 예술 작품을 선보이고 있어 다양한 예술 작품과 함께 즐기는 색다른 행사가 될 것입니다.\n<p class=\"list-tit mt\">뮤지엄 원</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 해운대구 센텀서로 20</li><li><span>문의</span> : 070-4256-8432</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=272\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n<p class=\"font-size28 colorDarkBlue medium\">부산엑스더스카이</p>\n부산엑스더스카이는 국내 두 번째 높이(411.6m)인 '해운대 엘시티 랜드마크 타워'에 위치한 국내 최대 규모의 전망대입니다. 부산 랜드마크(광안대교, 마린시티) 외에도 부산의 오션뷰와 시티뷰를 한눈에 볼 수 있으며, 전망대 내 화려한 미디어 시설과 부산 최고층 레스토랑 '스카이99 그릴&파스타', 전세계 최고층 스타벅스 등 최고의 프리미엄 서비스를 지향합니다.\n<p class=\"list-tit mt\">부산엑스더스카이</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 해운대구 달맞이길 30(엘시티 랜드마크타워 98-100F)</li><li><span>문의</span> : 070-7730-3744</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=201\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n\n<p class=\"font-size28 medium\">중구</p>\n<p class=\"font-size28 colorDarkBlue medium\">노티스</p>\n카페 노티스는 1950년에 세운 쌀 창고를 현대적인 감각으로 아름답게 재구성한 복합문화공간입니다. 1층은 다양한 문화 행사를 위한 다채로운 공간으로, 예술과 문화를 사랑하는 이들에게 열린 장입니다. 2층과 3층은 카페 공간으로 운영되며, 상시적으로 방문객들에게 휴식과 커피를 제공합니다.\n<p class=\"list-tit mt\">노티스</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 중구 대교로 135</li><li><span>문의</span> : 070-4114-8232</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=220\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n<p class=\"font-size28 colorDarkBlue medium\">부산근현대역사관</p>\n부산근현대역사관은 부산을 대표하는 근현대사 전문 기관입니다. 부산은 우리나라 근현대사의 역동성을 가장 풍부하게 드러내 주는 곳입니다. 개항기와 일제강점기, 한국전쟁, 산업화와 민주화의 역사가 짙고 선명하게 남아있는 도시입니다. 부산의 근현대사는 부산 시민과 가장 가까운 역사이고 지금도 우리가 함께 만들어가고 있는 역사입니다. 앞으로 기억과 기념을 넘어 시민들의 추억까지 담을 수 있는 부산근현대역사관이 되겠습니다.\n<p class=\"list-tit mt\">부산근현대역사관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 중구 대청로 112(본관)/104(별관)</li><li><span>문의</span> : 051-607-8043</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=280\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n\n<p class=\"font-size28 medium\">영도구</p>\n<p class=\"font-size28 colorDarkBlue medium\">무명일기</p>\n근대항만창고가 즐비한 부산 영도의 창고군에 자리한 무명일기는 1950년대 지어진 낡은창고를 리노베이션하여 지금을 살아가는 사람들과 생활문화에 기반한 유·무형의 콘텐츠를 제공합니다. 우리는 정해지지 않은 일상의 기록을 보관하기 위한 브랜드 무명일기를 통해 당신을 위한 취향을 제안하고, 투박한 공간에 따듯한 햇살을 담아 오늘을 함께 공유합니다. 카페라운지는 다양한 음료와 시그니처 디저트, 지역의 이야기를 담은 브런치를 즐길 수 있으며, 비정기적인 공연과 전시, 커뮤니티행사등을 개최하며, SNS 채널을 통해 누구나 참여할 수 있습니다.\n<p class=\"list-tit mt\">무명일기</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 영도구 봉래나루로178</li><li><span>문의</span> : 070-7347-8069</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=208\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n<p class=\"font-size28 colorDarkBlue medium\">스페이스 원지</p>\n부산 영도구 물양장에 자리한 스페이스 원지는 100년 전의 원형을 그대로 간직한 채, 현대적 감성을 더한 복합문화공간입니다. '보세창고' 3동, 'F&B 플레이스' 1동 총 1,100평 규모로 구성되어 있으며 과거와 현재가 어우러진 경험을 제공하고 있습니다. F&B 플레이스는 양식 레스토랑과 카페로, 다양한 식문화 콘텐츠를 제공합니다. 넓고 쾌적한 공간은 캐주얼한 모임부터 대규모 연회까지 다방면 활용이 가능합니다. 수제맥주, 와인 등 주류도 보유하고 있어 메뉴 선택의 폭이 넓습니다.\n<p class=\"list-tit mt\">스페이스 원지</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 영도구 봉래나루로214</li><li><span>문의</span> : 051-412-4500</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=258\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n<p class=\"font-size28 colorDarkBlue medium\">피아크</p>\n피아크는 F&B를 비롯해 문화, 예술, 전시, 액티비티 등 지금 시대가 주목하는 라이프스타일을 기반으로 크리에이터와 브랜드 콘텐츠를 수시로 경험할 수 있는 복합문화공간입니다. 대형 선박의 구조를 모티브로 설계되었으며 계절별로 기획된 테마에 맞춰 각각의 공간에서 다양한 문화 이벤트가 이뤄지고 있습니다. 새로운 라이프스타일 브랜드들과 연계해 특별한 경험을 제공하며 과거와 현재, 공업지대와 예술공간, 판매자와 소비자, 지역주민과 관광객을 이어주는 문화 허브의 공간입니다.\n<p class=\"list-tit mt\">피아크</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 영도구 해양로195번길 180</li><li><span>문의</span> : 070-4628-0011</li><li><span>자세히보기</span> : <a href=\"https://www.busanmice.or.kr/portal/aply/venue/total/view.do?mid=0206000000&idx=165\" target=_blank\" title=\"새창열림\" class=\"link-style1\">바로가기</a></li></ul><br>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2679&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2614727",
+    "name": "장산 (부산 국가지질공원)",
+    "lat": 35.1811053657,
+    "lng": 129.168189943
+  },
+  "collectedAt": "2026-10-24T09:57:15.125Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:981"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2614727",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "장산 (부산 국가지질공원)",
+      "relation": "same-place",
+      "originalText": "부산의 도심에서 남해 바다를 내려다보며 우뚝 솟아 있는 장산은 그 범위가 넓어 다양한 등산 코스가 만들어져 있다. 해운대 마린시티와 광안대교를 조망하고 있다. 유문암질 화산활동으로 분출된 화산재, 용암, 화쇄류로 이루어진 산으로 다양한 화산암들과 장산폭포, 돌서렁 등의 웅장한 지형이 넘쳐나며 뛰어난 해안도심 경관을 즐길 수 있는 명소이다. 장산은 백악기말 칼데라의 잔존구조인 화산함몰체로 한반도 남동부의 화산활동사를 연구하는데 높은 학술적 가치를 지니고 있다. 특히 장산 자락에는 화산암 암벽에서 떨어진 거력들이 산의 경사면을 따라 길게 뻗어있는 암괴류를 관찰할 수 있다. 총 아홉 줄기로 나뉘어 있으며, 각각의 암괴류를 연결한 재송너덜길을 통해 남해, 동해 바다의 경치를 즐길 수 있는 명소이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2614727&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:06.791Z",
+      "modifiedAt": "20250326094820"
+    },
+    {
+      "id": "busan-theme:981",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "안녕한 부산 안녕한 언택트 트레킹",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "장산 (부산 국가지질공원)",
+        "review": "pending"
+      },
+      "originalText": "계속되는 생활 속 거리두기로 새로이 찾아든 문화 언택트, 여행도 예외일 수 없습니다. 답답해진 마음을 조금이나마 해소할 수 있는 여행 방법을 고민 중이라면 언택트 트레킹을 시작해 보는 것도 좋을 것 같아요. 부산의 대표적인 명산, 장산과 황령산에서 언택트 트레킹 즐기며 안녕한 여행하세요! \n<p class=\"font-size28 colorDarkBlue medium\">장산</p>생활트레킹을 즐기는 분이라면 해운대 장산을 한 번쯤은 들어보셨겠죠? 대천공원에서 출발해 계곡을 따라 이어지는 둘레길 코스가 아주 매력적인 곳입니다. 대천공원은 장산 초입에 자리한 넓은 호수공원인데 트레킹 시작 전 호수산책로를 한 바퀴 돌며 간단히 워밍업을 해도 좋을 듯해요.\n등산로가 시작되는 입구에는 단계별 등산코스 안내도가 상세하게 표시되어 있어요. 본인의 체력에 맞는 코스를 선택해 트레킹을 시작하면 된답니다. 정상 정복이 부담스럽다면 1단계 완만한 코스부터 도전해 보면 어떨까요? 등산로 옆으로 보이는 시원한 계곡이 장산 트레킹의 시작을 더욱 기분 좋게 해줍니다. 싱그러운 숲 향기가 유혹하는 초록의 장산 둘레길을 탐방해 보세요. \n대천공원에서 시작하는 등산로는 그리 힘들지 않아요. 숲이 만들어 준 나무그늘 아래 삼림욕을 즐기며 천천히 걷다 보면 작아보이던 계곡도 점점 깊어져 갑니다. 얼마 지나지 않아 만나게 되는 양운폭포는 바위 사이로 떨어지는 하얀 물기둥과 그 아래  짙푸른 소(沼)가 아름다운 곳입니다. 작은 폭포처럼 보이지만 떨어지는 폭포수의 소리가 우렁차 잠시 귀 기울인다면 세상 시원한 기분을 느낄 수 있을 거예요. 오며 가며 지나치는 작은 산사의 소담한 담벼락마저도 심신의 편안을 더해줍니다. 콸콸콸 경쾌하게 흐르는 물소리에 둘레길을 걷는 발걸음이 한결 가벼워진답니다.\n\n주소 부산광역시 해운대구 장산로 331-9\n도시철도 2호선 장산역 10번 출구 택시 이용\n주차 대천공원 공영주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">황령산</p>부산의 대표적인 야경 명소로 알려진 황령산,  화려하게 너울거리는 도심의 야경을 가장 잘 볼 수 있는 곳이라 야간드라이브 인기 코스이기도 합니다. 부산의 4개 구를 품에 안은 황령산은 잘 조성된 둘레길을 걷다가 곳곳에서 연결된 등산로를 만나 정상으로 오르게 되는 완벽한 트레킹 코스도 가지고 있답니다. 정상에 이르기까지 그리 호락호락하진 않지만 일단 오른 후에는 뿌듯한 성취감과 함께 시원하게 펼쳐지는 부산의 전경을 모두 가질 수 있습니다. 적당한 오르막과 내리막을 가진 둘레길을 걷는 것만으로도 충분한 숲 속 트레킹을 즐길 수 있으니 도전할 수 있는 구간만큼만 걷다가 원점 회귀하는 방법도 나쁘지 않습니다.\n봉수대가 있는 황령산 정상에는 전망쉼터가 있습니다. 아마 부산의 산꼭대기 쉼터 중 가장 편안한 곳이 아닐까 싶어요. 정상석 근처 전망대에서는 광안리‧해운대‧시청방면을, 봉수대 전망대에서는 부산항‧서면‧낙동강 방면의 전경을 한 눈에 담을 수 있습니다. 아름다운 경치를 바라보고 있자니 시원하게 불어오는 바람이 지친 심신을 위로합니다. 정상까지 오르느라 버거웠던 기억은 눈 녹듯 사라집니다. 황령산 정상에서 바라보는 정상뷰, 눈으로 그리고 가슴으로 마음껏 담아보면 어떨까요?\n\n주소 부산광역시 남구 황령산로 391-39\n도시철도 2호선 금련산역 6번 출구 택시 이용\n주차 황령산 전망쉼터 주차장\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=981&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1170",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "산들바람 솔솔 부산의 리틀 포레스트",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "장산 (부산 국가지질공원)",
+        "review": "pending"
+      },
+      "originalText": "<img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100595241.jpg\" alt=\"바람이 불어오는 곳, 그곳으로 가면/산들바람 솔솔/부산의 리틀 포레스트/여유롭게 흔들리는 억새풀 따라, 쉼표여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597006.jpg\" usemap=\"#planetmap\" alt=\"장산 억새바다, 그 사이 오솔길이 한 폭의 그림 같은 곳/승학산 억새평원, 은빛으로 하늘거리는 억새풀의 향연\"><map id=\"planetmap\" name=\"planetmap\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=432&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=445&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597748.jpg\" alt=\"가을 담긴 반짝이는 물빛을 보며, 힐링여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598170.jpg\" usemap=\"#planetmap2\" alt=\"성지곡수원지, 마음의 평온을 주는 가을종합선물세트/회동수우언지, 강과 호수, 숲이 어우러진 명품 산책로\"><map id=\"planetmap2\" name=\"planetmap2\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=430&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=436&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598778.jpg\" alt=\"붉은 빛이 일렁이는 그곳에서, 낭만여행\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=423&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599189.jpg\" alt=\"기장 불광산 숲길 황홀한 빛깔로 물드는 산 속 풍경 경건하게 마음을 씻 내며 사찰의 아름다움을 감상 할 수있는, 불광산 숲길을 함께 걸어보자.\" />\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=424&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599517.jpg\" alt=\"일광산테마길 느림의 미학을 추구하는 길 편안하게 걷기에만 집중할 수 있는 일광산테마길은 낙엽과 단풍이 아름다운 가을이면 더욱 걷기 좋다. 곱게 깔린 산책로를 따라 가벼운 발걸음으로 나서보자.\">\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599949.jpg\" alt=\"금강공원과 식물원 뉴트로 감성 가득한 나만의 휴식처 도심 속 울창한 숲과 기암괴석의 조화가 아름다운 공원. 일상 속 찰나의 행복을 아낌없이 내어주는 금강공원 케이블카와 금강식물원도 즐겨보자.\"></a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1170&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

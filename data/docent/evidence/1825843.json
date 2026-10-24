@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "1825843",
+    "name": "국립해양박물관",
+    "lat": 35.0785003395,
+    "lng": 129.0802910274
+  },
+  "collectedAt": "2026-10-24T09:57:13.217Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:353",
+      "busan-theme:381",
+      "busan-theme:798",
+      "busan-theme:853",
+      "busan-theme:1188"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:1825843",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "국립해양박물관",
+      "relation": "same-place",
+      "originalText": "국립해양박물관은 대한민국 해양문화의 랜드마크로서 해양의 역사·문화·생물·예술에 이르는 다양한 분야의 유물과 자료를 수집, 보존, 연구하는 종합 해양 전문 박물관이다. 부산광역시 영도구에 위치하며, 2012년 5월 개관하였다. 지하 1층부터 지상 4층까지 구성되어 있으며, 전시실, 해양도서관, 어린이 박물관, 수장고, 수족관 등 다양한 시설을 갖추고 있다. 박물관은 약 3만여 점의 해양 관련 유물을 소장하고 있으며, 기획전과 상설전시를 통해 관람객에게 풍부한 콘텐츠를 제공한다. 또한, 바다 생물들이 살아 숨 쉬는 공간이자 해양동물전문구조치료기관, 서직지외보전기관으로서 생물을 보호·보전하는 역할을 수행하고 있다. 어린이박물관, 어린이해양도서관을 포함한 어린이·청소년을 위한 교육 프로그램도 활발히 진행되고 있다. 국민 누구나 바다의 소중함과 미래 가치를 느낄 수 있도록 돕는 국립 해양문화 플랫폼이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1825843&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:52.016Z",
+      "modifiedAt": "20260921190924"
+    },
+    {
+      "id": "heritage:13-21-0002660000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 동삼동 패총",
+      "relation": "nearby-only",
+      "distanceMeters": 897,
+      "coordinates": {
+        "lat": 35.07043957377,
+        "lng": 129.079887368829
+      },
+      "originalText": "신석기시대 사람이 버린 각종 생활 쓰레기와 조개껍질이 쌓여 이루어진 동삼동패총은 우리나라 신석기시대를 대표하는 패총 유적이다. 1929년 일제강점기에 처음 발견된 이래 2015년까지 국립중앙박물관과 부산박물관 등 여러 기관에서 10여 차례 발굴조사를 실시하였다.   발굴조사 결과 동삼동패총은 8,000년 전에서 4,000년 전 무렵까지 오랜 기간에 걸쳐 형성되었으며, 패총뿐만 아니라 독무덤〔옹관묘〕, 주거지, 화덕자리 등 각종 생활 시설물을 포함하는 대규모 복합 유적임이 밝혀졌다.\n  동삼동패총은 퇴적 층위와 유물의 성격에 따라 크게 초기에서 말기까지 5개 문화층으로 구분되며, 각 문화층에서는 다양한 형식의 빗살무늬토기와 석기, 골각기, 패기〔貝器〕, 장신구, 의례구를 비롯하여 일본 규슈〔九州〕산 흑요석과 조몬〔繩文〕토기 등이 출토되었다.  이밖에 신석기시대 생업형태와 식생활을 알 수 있는 고래, 호랑이, 멧돼지, 사슴, 어패류 등 각종 동물 유체와 조, 기장 등이 확인되었는데, 특히 1호 주거지에서 출토된 조와 기장은 신석기시대 잡곡 농경을 증명하는 중요한 자료이다.\n  동삼동패총은 남해안지역 신석기문화의 특징과 변천과정을 이해하는데 많은 정보를 제공하며, 이른 시기부터 해양 활동을 통해 일본 규슈〔九州〕지역까지 교류했음을 보여 준다는 점에서 역사적 가치가 높은 유적이다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=13&ccbaCtcd=21&ccbaAsno=0002660000000",
+      "fetchedAt": "2026-10-24T09:52:52.240Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:353",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "여긴 꼭 가야해! 아이와 함께 가기 좋은 곳",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "자녀에게는 좋은 것만 보여주고픈 것이 부모 마음. 어딜 가든, 무엇을 하든, 그 마음은 변치 않는다. 부산에서도 아이와 함께 꼭 가봐야 할 곳이 많다.\n<p class=\"font-size20 colorDarkBlue bold\">국립해양박물관</p>모든 연령대의 어린이를 충족시킬 수 있는 전시‧체험시설이 층별로 구비되어 있는 박물관. 조용한 공간을 찾는다면 1층어린이 자료실로, 전시 관람과 체험활동은 2층 어린이박물관으로, 바다생물을 직접 만나려면 3층 수족관으로, 하루 종일 지루할 틈이 없으니 아이들의 천국이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산시민공원</p>아이와 함께 연날리기, 비누방울놀이 하기, 모래놀이 하기, 뽀로로 만나기, 책읽기, 놀이터에서 놀기... 끝도 없이 이어지는 이 모든 것을 부산시민공원에서 한방에 해결할 수 있다. 아이들에게 즐거운 기억만을 선물해 주는 아주 특별한 공원이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산아쿠아리움</p>신비로운 바닷 속 광경이 눈앞에 펼쳐진다. 동에 번쩍, 서에 번쩍 나타나는 대형 상어는 아이들의 혼을 쏙 빼놓는다. 대형 수조 속에는 바다동물과 인어공주가 함께 유영한다. 아이의 눈에는 그저 신기하기만한 바다세상이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">낙동강생태탐방선</p>배를 타고 낙동강 주변의 생태환경을 보고 느낄 수 있는 탐방 프로그램이다. 날씨 좋은 어느 날, 아이와 함께 강 탐험에 나서보자. 바다와 강이 만나는 낙동강 하류 지역은 자연생태 체험의 보고다. 홈페이지 예약은 필수!\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">키자니아부산</p>어린이 직업체험 테마파크인 이곳은 체험군이 다양하여 미리 알아보고 직업군을 정하지 않으면 흘러가는 시간에 마음이 조급해질지도 모른다. ‘네 꿈은 뭐야?’ 키자니아부산에서 발견할 수 있다. 꿈도 많고, 하고 싶은 것도 많은 내 아이와 소중한 시간을 나눠보자.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산영화체험박물관/트릭아이뮤지엄부산</p>영상물을 좋아하는 아이라면 부산영화체험박물관을 지나칠 수 없다. 순서에 따라 촬영하기만 하면 한편의 영상이 완성된다. 즐거운 착시를 경험하는 트릭아이뮤지엄도 같은 공간에 있다. 앱을 활용하면 살아 움직이는 벽화 속에서 다양한 모험이 가능하다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">솔로몬로파크</p>대한민국에 몇 개 없는 법 교육 테마공원이다, 법조인을 꿈꾸는 아이부터 법에 관심 있는 어른까지 함께 참여할 수 있으며, 모의재판, 과학수사 등 다양한 체험 프로그램이 갖춰져 있다. 법은 멀리 있지 않다. 아이들이 쉽고 재미있게 법을 접할 수 있도록 만들어진 공간.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">을숙도</p>을숙도는 아이와 함께 자연, 문화, 교육, 레저를 동시에 즐길 수 있는 곳이다. 낙동강 하구 자연생태를 가장 가까이에서 관찰할 수 있고, 다양한 전시와 공연 관람도 가능하다. 억새 흐드러진 오솔길을 달리는 자전거 여행을 계획해보는 것도 좋겠다.\n\n\n<p class=\"font-size20 colorDarkBlue bold\">다대포낙조분수</p>밤하늘을 배경으로 화려한 조명이 빛을 발한다. 신나는 음악에 맞춰 춤을 추는 분수가 환상적이다. 높이 솟았다가, 갑자기 땅으로 내려앉았다가, 또다시 물줄기가 솟아오르며 사방으로 물결친다. 아이의 마음도 분수 따라 춤을 춘다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=353&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:381",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "유니크베뉴_전시시설",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "독특한 콘셉트로 회의, 관광, 컨벤션, 이벤트. 전시 등을 포괄하는 여행지들이 인기를 끌고 있다. 부산에서 만나는 즐겁고 새로운 MICE 장소, 유니크베뉴 3 여긴 어떨까?\n<p class=\"font-size20 colorDarkBlue bold\">부산 예술의 중심, 부산시립미술관</p>\n주소 : 부산광역시 해운대구 APEC로 58\n전화 : 0507-1404-2602\n홈페이지 <a href=\" http://art.busan.go.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://art.busan.go.kr/</a>\n\n1998년 개관 이후 다양한 전시와 교육 프로그램으로 시민들에게 문화 체험의 기회를 제공하고 있는 부산시립미술관. 최근 개관한 어린이미술관 또한 아이들의 예술적 소양을 고취시킬 수 있는 체험 프로그램으로 예술 부산의 미래를 밝히고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">디자인의 모든 것, 부산디자인진흥원</p>\n주소 : 부산광역시 해운대구 센텀동로 57\n전화 : 051-790-1000\n홈페이지 <a href=\"http://www.dcb.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">http://www.dcb.or.kr/</a>\n\n부산디자인진흥원은 부산 지역 디자인산업의 메카와 같은 곳이다. 디자인 분야의 다양한 업체들이 입주해 있으며 공연은 물론 세미나, 워크샵, 컨퍼런스 등 각종 학술행사가 수시로 개최되고, 디자인에 대한 일반인의 이해를 돕는 수준 높은 이벤트도 열린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">동남권 과학문화의 거점, 국립부산과학관</p>\n주소 : 부산광역시 기장군 기장읍 동부산관광6로 59\n전화 : 051-750-2300\n홈페이지 <a href=\"https://www.sciport.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> https://www.sciport.or.kr/</a>\n\n국립부산과학관은 자동차, 항공우주, 선박, 에너지, 의과학을 주제로 다양한 과학전시물과 체험 공간을 갖추고 있다. 특히 천체투영관에서 쏟아지는 우주를 대형 돔스크린으로 생생하게 즐길 수 있으며, 천체관측소에서 망원경으로 직접 태양과 별을 관측할 수 있다. 다양한 과학문화행사와 과학강연도 정기적으로 개최된다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">바다를 들여다보자, 국립해양박물관</p>\n주소 : 부산광역시 영도구 해양로301번길 45\n전화 : 051-309-1900\n홈페이지 <a href=\"https://www.mmk.or.kr/ \" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.mmk.or.kr/</a>\n\n영도 앞바다를 배경으로 웅장한 자태로 들어서 있는 국립해양박물관은 바다의 역사, 문화, 과학자료 등을 한 눈에 살펴 볼 수 있는 흔치 않은 장소다. 상설전시, 기획전시가 열리고 어린이박물관과 해양도서관에서 우리바다에 대한 이해를 돕고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">아픔을 넘어 평화로, 유엔평화기념관</p>\n주소 : 부산광역시 남구 홍곡로320번길 106\n전화 : 051-901-1400\n홈페이지 <a href=\" http://unpm.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://unpm.or.kr/</a>\n\n우리 민족에게 깊은 상흔을 남긴 한국전쟁에 대한 기억을 간직하고, 낯선 나라를 위해 희생한 수많은 유엔군 참전용사에 대한 감사를 전하는 공간 유엔평화기념관, 한국전쟁에 관한 사실적 전시와 다양한 교육프로그램으로 전쟁이 남긴 상처와 평화의 의미를 되새기는 기념관이다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=381&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:798",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "수국이 있는 풍경",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "6월은 수국이 앞다투어 피어나는 계절, 주로 6월 말경 수국이 만개하는 시기에 맞춰 영도 태종사에서 수국축제가 화려하게 열렸지만 올해는 안타깝게도 축제가 열리지 않는다고 해요. 계절에 맞춰 피고 지는 꽃들을 축제와 더불어 다함께 즐길 수 없는 아쉬움이 남지만 탐스런 수국꽃 피어있는 부산 수국 명소가 많으니 삼삼오오 한 번 가볼까요?\n<p class=\"font-size28 colorDarkBlue medium\">태종대 태종사</p>울창한 나무숲 사이로 알록달록 수국이 태종사를 물들이기 시작합니다. 조금 이른 감이 없잖아 있지만 소담한 수국의 향연을 즐기기엔 부족함이 없지요. 오솔길을 따라 태종사에 오르는 길은 산 전체가 마치 수국꽃밭인 듯 착각을 일으킵니다. 며칠 지나면 만개한 꽃송이가 지천에 흐드러지겠지요.^^\n이 곳 태종사의 수국은 주지스님의 40년 넘는 정성이 고스란히 깃든 작품이라고 해요. 수국 모종을 구하기 위해 세계 많은 나라를 다녀오셨다고 하는데요, 현재 태종사에는 30여 종, 5000그루의 수국이 그 장관을 자랑하고 있어요.\n매년 축제인파로 북적이던 모습은 간데 없고, 수국에 둘러싸인 조용한 사찰의 풍경이 전해집니다. 몽글몽글 피어 오르기 시작하는 수국의 모습도 싱그럽기 그지없네요. 조금 이른 시간에는 자욱한 안개 속 수국도 만나볼 수 있다고 해요. 코로나 여파가 지나고 나면 한번쯤 경험해 보고 싶은 장면이기도 합니다. \n\n주소: 부산광역시 영도구 전망로 119\n주차: 태종대 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">태종대 법융사</p>태종사와 그리 멀지 않은 거리에 법융사가 있어요. 법융사 역시 초여름 수국의 자태를 뽐내는 곳 중의 하나지요. 태종사에 비해 그 규모가 조금 소박한 편이지만 자생 산수국이 빛깔도 다양하게 피어있답니다. 이름 모를 들꽃과 소담스런 수국이 함께 어우러진 멋진 산책로도 있지요.^^\n아담한 절집의 기와지붕과 절묘하게 어우러진 산수국의 모습에서 눈을 떼기란 정말 쉽지 않아요.^^ 여러 조각으로 나눠진 꽃받침이 특이해 한참을 바라보게 된답니다. 길을 따라 올라갈수록 점점 더 풍성한 색깔의 수국동산이 펼쳐져요. 법융사 뒤뜰에도 탐스러운 수국이 정원을 이루고 있네요. 조그만 사찰 법융사와 어우러진 꽃밭이라 그런지… 마치 속세에서 벗어난 깨끗한 아름다움을 바라보는 것 같아요. \n\n주소: 부산광역시 영도구 태종로833번길 55\n주차: 태종대 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">국립해양박물관 아미르공원</p>태종대에 새로이 형성된 수국로드가 있어요. 바로 국립해양박물관 아미르 공원이랍니다. 소개한 세 곳 중 가장 소박한 수국로드가 아닐까 하는데요, 대신 시원하게 펼쳐진 바다를 품은 수국명소입니다. 가로수가 길게 이어진 평탄한 산책로가 바다를 향해 쭉 뻗어 있답니다.^^\n수국이 활짝 핀 가로수길이 정말 낭만적이죠. 연분홍빛, 자주빛 수국 꽃잎이 풍성한 초록과 만나 청량감을 더합니다. 사찰에 핀 수국에 비해 그 색이 매우 다양한 것이 아미르 공원 수국의 특징이에요. 키 작은 수국 다발이 마치 부케처럼 아름다운 자태를 뽐내고 있습니다. 화분에 심겨진 수국의 모습도 아미르 공원에서만 볼 수 있는 광경이라지요. 거대한 수국 화분, 집에 하나 들여놓고 싶네요.^^\n수국로드를 쭉 걷다가 그 끝에서 만난 바다에서는 답답한 속 뻥 뚫어주는 시원한 힐링을 만끽할 수 있답니다.\n\n주소: 부산광역시 영도구 동삼동 1165\n주차: 국립해양박물관 주차장\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=798&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:853",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "안녕한 부산 안녕한 언택트 문화역사",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "코로나 시대에 등장했던 언택트라는 단어는 사람과의 접촉을 피하는데서 시작되었죠.\n거리두가가 해제되었지만 때로는 혼자 여행하고 싶은 마음이 들 때 안전하고도 생각할 수 있는 아름다운 곳이 있습니다.\n<p class=\"font-size28 colorDarkBlue medium\">아미르 공원</p>넓은 잔디, 시원한 가로수, 끝없이 펼쳐진 바다전망을 모두 가진 숨은 명소, 들어보셨나요? 부산에서도 아는 사람만 안다는 아미르 공원이 그 주인공이랍니다. 푸른 하늘과 에메랄드빛 바다 사이로 초록의 싱그러움이 반짝이는 아름다운 공원입니다. 부산의 영도는 어딜 가나 풍경 맛집으로 유명한 곳인데요, 아미르 공원 역시 빠지지 않는 멋진 풍경을 선사합니다. 나만의 한적한 히든 스폿을 원한다면 아미르 공원이 제격입니다.\n사실 알고 보면 아미르 공원은 국립해양박물관 바로 옆에 있어요. 국립해양박물관은 우리나라 해양문화에 대한 정보를 아낌없이 알려주는 곳인데다 자리한 위치마저 빼어난 경관을 자랑하는 곳이기도 합니다. 피크닉 매트 하나만 있으면 박물관과 아미르 공원에서 하루 종일 여유로운 힐링이 가능하답니다. 예쁘게 늘어선 가로수 길을 천천히 걷다가 그 끝에서 만나는 심쿵 오션뷰, 그저 바라보고만 있어도 지친 일상이 치유되는 마술 같은 장소입니다.\n\n부산광역시 영도구 동삼동 1165\n버스 190, 30, 8, 101, 88 동삼혁신지구입구 하차, 도보 5분\n주차 국립해양박물관 주차장\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">평화공원</p>세계 유일의 유엔군 묘지인 유엔기념공원 바로 옆에 맞닿아 있는 평화공원, 공원 전체가 싱그러운 수목으로 둘러싸여 도심 속 힐링 장소로 손색이 없는 곳이랍니다. 유엔군 전사자들의 뜻을 기리기 위해 평화공원이라 이름 지어졌다고 해요. 공원 입구 평화의 광장을 시작으로 아름다운 산책로가 조성되어 있어요. 실개천이 예쁘게 흐르는 산책로를 거닐며 작은 생태계를 눈에 담에 보세요. 마음이 편안해지는 여유로운 산책을 즐길 수 있답니다.\n넓은 공원 전체를 거니는 것에 정해진 코스는 없습니다. 발길이 가는대로, 수목의 생명력을 느끼며 물 흐르듯 그렇게, 차분히 둘러보는 것도 좋을 것 같아요. 평화공원엔 소나무가 가장 많지만 그 외에도 다양한 종류의 수목과 야생화가 자라고 있어요. 하나하나 눈 맞추며 마음의 대화를 나눠보세요. 깊은 사색에 잠기고 싶다면 비 오는 날의 평화공원 산책도 좋아요. 빗방울을 머금은 자연이 더욱 선명해진 풍경을 선사해 줄 테니까요.\n\n부산광역시 남구 대연동 677\n버스 10, 155, 583, 남구8 평화공원 하차, 도보 2분\n주차 평화공원 공영주차장\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=853&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1188",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "색다른 문화감성 우리 동네 도서관은 이 정도야!",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "책만 읽던 도서관은 옛이야기! ‘이런 도서관, 본 적 있어?’ 도서관의 광장에서 영화나 공연을 보고 책으로 가득한 자료실에선 강연을 듣는다. 책을 읽고 문화를 즐기고 휴식을 취할 수 있는 도서관은 뜻밖의 힐링을 선사하며 핫플레이스로 떠오르고 있다. 도심, 바다, 산까지~ 모든 게 다 있는 부산에는 각자 다른 개성을 담은 특색 있는 도서관이 있다. 이 겨울 떠나기 좋은, 부산의 감성 도서관을 소개한다. \n<p class=\"font-size28 colorDarkBlue medium\">시티뷰 : 북두칠성 도서관</p>부산 북항에 있는 ‘북두칠성 도서관’은 ‘책이 사람을 만나 빛이 되고 길이 되는 공간’이라는 슬로건과 함께 지난 5월 새롭게 문을 열었다. 천장과 맞닿은 수많은 책은 단번에 시선을 사로잡는다. 계단식 서가, 영화와 공연을 즐길 수 있는 책오름 광장이 이곳의 특징! \n북두칠성 도서관은 학당, 카페, 공연장 등 다양하고도 창의적인 문화공간의 역할을 톡톡히 해내며 새로운 문화복합공간이자 북항의 랜드마크로 떠오르고 있다.\n북두칠성 별자리를 모티브로 7개 공간으로 설계된 북두칠성 도서관은 주제와 이슈별로 도서가 배치되어있어 누구나 쉽게 책을 찾을 수 있다. 어디든 앉아 책을 볼 수 있는 아늑하고 편안한 인테리어는 책 읽고 싶은 욕구를 자극한다.  \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">오션뷰 : 국립해양박물관 해양도서관</p>바다 내음 흠뻑 머금은 책의 향기를 맡고 싶다면 영도에 있는 국립해양박물관 해양도서관으로 가보자. 전망 좋은 카페가 부럽지 않은 이곳은 영도 주민들의 명소이자 뷰 맛집이다. 전면 유리창으로 보이는 영도 바다 풍경은 도서관을 찾는 이의 마음을 개운하게 한다. 바다를 향해 놓여있는 안락한 자리에 앉아 마음의 양식을 쌓아보자. 바다를 새어 나온 파도 소리에 잠시 귀를 기울이면 걱정으로 엉킨 마음이 하나, 둘 풀릴 것만 같다.   \n국립해양박물관 해양도서관에는 바다와 관련된 역사, 정치, 경제적 이슈 등을 다룬 책과 함께 ＜모비딕＞ ＜노인과 바다＞ 등 바다를 주제로 한 해양문학까지 다양한 책이 보관되어있다. 사색의 깊은 바다로 항해할 수 있는 이곳에서 바다와 삶을 탐험해보면 좋겠다.  \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">마운틴뷰 : 부산광역시립중앙도서관 </p>자연과 어우러져 절로 힐링이 되는 도서관을 선호한다면 민주공원에 있는 부산광역시립중앙도서관으로 가보자. 빼곡한 나무로 둘러싸인 이곳의 특징은 사계절 시시때때로 달라지는 창밖 풍경! 자연이 만든 숲속 액자를 바라보는 것만으로도 온 몸이 정화되는 듯하다. 도서관과 가까이 위치한 숲과 공원에 산책로가 잘 조성되어 있어 자연을 만끽하기에 더할 나위 없이 좋다. 열심히 공부 하다가, 또는 느긋하게 책을 읽다가, 잠깐 밖으로 나와 상쾌한 힐링의 시간을 가져보는 건 어떨까.\n‘문화 일번지 중구’에 있는 부산광역시립중앙도서관은 책을 접목한 다양한 체험 문화 프로그램을 제공하는 곳으로도 유명하다. 지난 9월에는 호러 카페를 운영, 호러 소설에 대한 관심을 불러 모으기도 했다. 단순히 책을 읽고 보관하는 도서관이 아니라 다양한 프로그램을 즐길 수 있는 부산광역시립중앙도서관에서 색다른 문화 감성을 느껴보자. \n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1188&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2100",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "'비교불가' 부산의 기록적인 여행지 9선",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립해양박물관",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_01.jpg\" alt=\"'비교불가' 부산의 기록적인 여행지 9선.짜릿한 스케일에 한 번, 유서 깊은 역사에 두 번 반하는 세계적 스케이르이 부산 레전드 스팟 9곳, 지금 소개합니다!\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_02.jpg\" alt=\"Largest. 세계 최대(最大) 규모를 자랑하는 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2091&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_03.jpg\" alt=\"아르떼 뮤지엄. 약 1700평, 전 세계 아르떼 뮤지엄 여덟 곳 중 최대규모! 규모만큼 화려한 미디어 작품ㅇ르 선보이는 몰입형 미디어아트 전시관이다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2077&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_04.jpg\" alt=\"부산 수학문화관 연면적 9884m², 7층 규모의 공간! 수학 단일주제로는 세계 최대규모 문화관으로, 넓은 공간을 활용해 폭넓은 수학 콘텐츠를 제공한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=983&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_05.jpg\" alt=\"다대포 꿈의 낙조분수.세계최대 바닥분수로 기네스북에 오른 '꿈의 낙조분수'. 둘레 180m의 거대한 규모가 분수쇼의 화려함을 더한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=996&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_06.jpg\" alt=\"엑스더스카이. 씨티뷰와 씨사이드뷰(SEA SIDE VIEW)를 함께 조망할 수 있는 국내 최대 규모 전망대. 층마다 부산의 명소를 조망할 수 있는 특화된 '파노라믹 오션뷰'를 제공한다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_07.jpg\" alt=\"Earliest 세계/국내/부산 최초(最初)를 기록한 역사적인 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=257&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_08.jpg\" alt=\"국립해양박물관. 2012년 개관한 세계 최초 종합해양박물관. 해양 역사, 인물, 해양 문화, 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 관련 종합지식을 전달하고 있다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_09.jpg\" alt=\"송도해수욕장. 1913년 개장해 100년이 넘는 역사를 자랑하는 국내 최초 공설 해수욕장. 1970년대 이후 침체기를 겪다,2000년대 이후 송도 구름산책로와 케이블카가 생기며 관광지로서 새롭게 부상했다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2078&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_10.jpg\" alt=\"마하사. 5세기(삼국시대) 신라 아도화상이 창건했다고 기록돼있는 부산 최초의 사찰. 아름다운 자연경관과 역사적 상징성 덕에 많은 사람에게 삶의 안식처로 자리 잡았다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_11.jpg\" alt=\"Longest. 세계 최장(最長) 길이로 쭉 뻗은 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=421&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_12.jpg\" alt=\"영화의 전당 '빅루프'. 전체 길이 163m/너비 61m/ 높이 32m/무게 4,000톤의 초대형 지붕, 영화의 전당 '빅루프'! 기둥으로 받쳐지지 않은 부분만 85m로, 세계 최장 캔틸레버 지붕 타이틀을 보유하고 있다. *캔틸레버: 한쪽 끝은 고정되고 다른 끛은 받쳐지지 않은 보\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_13.jpg\" alt=\"Only.세계 유일(有一)의 공간\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=277&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_14.jpg\" alt=\"유엔기념공원.한국전쟁 참전국 장병 2,300여 유해가 안장되어있는 공간. 세계평화와 자유를 위해 공헌한 한국전쟁 영웅들을 기리고자 조성됐다.\"></a></td></tr></table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2100&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

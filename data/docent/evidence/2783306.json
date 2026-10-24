@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2783306",
+    "name": "해리단길",
+    "lat": 35.1648388507,
+    "lng": 129.1576008763
+  },
+  "collectedAt": "2026-10-24T09:57:15.569Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:1184",
+      "busan-theme:2782"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2783306",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "해리단길",
+      "relation": "same-place",
+      "originalText": "부산 해운대 도시철도역 4번 출구에서 옛 해운대 기차역 뒤편 기찻길을 건너면 해리단길이 시작된다. 해리단길은 서울의 경리단길에서 아이디어를 얻은 이름이다. 좁은 도로를 따라 다양한 개성의 카페와 음식점들이 속속 생겨나면서 해운대 인기 명소로 자리매김했다.\n골목길 담벼락에 그려진 위트 넘치는 벽화를 비롯해 자유로운 거리 분위기를 즐길 수 있어 시민들은 물론 관광객들도 일부러 찾아오는 곳이다. 사진 찍기 좋은 아기자기한 외관의 카페와 식당, 색다른 기념품을 판매하는 소품샙, 비정기적으로 열리는 플리마켓 등 다채로운 볼거리가 발길을 끌어모은다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2783306&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:25.310Z",
+      "modifiedAt": "20260618135441"
+    },
+    {
+      "id": "busan-theme:1184",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Exciting Hidden Spot",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "해리단길",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’ 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어' 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n영상보러가기 <a href=\"https://youtu.be/N0p_CDLX8Iw\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://youtu.be/N0p_CDLX8Iw</a>\n<p class=\"font-size28 colorDarkBlue medium\">Exciting Hidden Spot</p>몸도 마음도 리프레쉬! 부산 힐링여행\n\n바쁜 시간을 쪼개고 쪼개어 부지런히 움직이는 여행보다 천천히 그리고 느긋하게 즐기는 여행이 좋다면 주목! 한없이 무거운 몸과 마음이 깃털처럼 가벼워지는 힐링 여행지가 부산 곳곳에 숨어 있다. 숲으로 둘러싸인 호수에서. 도시가 내려다보이는 드넓은 잔디밭에서. 옛날 부산을 떠올리게 하는 오래된 성곽에서. 여행이 곧 치유가 되는 선물 같은 여행지로 여러분을 안내한다. \n\n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">숨겨진 선물 같은 부산 힐링여행</p></div><ul class=\"course1\"><li><span>용소웰빙공원(영화의 거리, 2021)</span></li><li><span>해운정사(1987, 2017)</span></li><li><span>고려제강기념관(승리호, 2020)</span></li><li><span>동래읍성역사탐방로(알쓸신잡 3, 2018)</span></li><li><span>만덕고개누리길전망데크</span></li></ul></div>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">용소웰빙공원</p>골짜기 사이로 아담한 호수가 펼쳐진다. 그 위에 떠 있는 작은 배 한 척이 무척 생경하다. 호수를 따라 조성된 숲속 오솔길을 따라 걷다 보면 시시각각 변하는 주변 풍광에 저절로 카메라를 들게 된다.  \n\n위치\n부산광역시 기장군 기장읍 / 용소웰빙공원 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">한선화, 이완 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운정사</p>해리단길에서 조금 올라가면 만나게 되는 해운정사. 해탈문을 지나 본당으로 이어지는 긴 계단이 무척 낭만적이다. 계단 끝에서 뒤를 돌아보면 해운대 마천루가 병풍처럼 눈앞에 펼쳐진다. \n\n위치\n부산광역시 해운대구 우동2로 40-6 / 해운정사 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">1987(2017) <span style=\"font-size: 18px;color: #000;\">김윤석, 하정우, 김태리 주연</span></p>1987년 대학생 경찰고문치사 사건으로 일어난 국민들의 항쟁을 다룬 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">고려제강기념관</p>와이어산업과 고려제강의 역사를 소개하는 곳. 와이어를 만드는 회사답게 와이어로만 건물을 지탱하도록 설계했다. 핵심은 기념관 옥상이다. 잔디를 심어 언덕처럼 꾸몄는데 탁 트인 시야에 센텀시티가 내려다보이는 전망까지 예술이다. \n\n위치\n부산광역시 수영구 구락로141번길 63 / 고려제강기념관 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">승리호(2020) <span style=\"font-size: 18px;color: #000;\">송중기, 김태리, 진선균, 유해진 주연</span></p>2092년, 우주쓰레기를 주워 돈을 버는 청소선 ‘승리호’ 선원들의 이야기를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">동래읍성역사탐방로</p>부산의 옛 이름은 동래다. 동래읍성역사탐방로는 그래서 진짜 부산을 찾아가는 길이다. 왜적의 침입을 막기 위해 쌓은 동래읍성을 지금도 만날 수 있다. 성곽을 따라 걸으면서 복천동고분군과 동래 곳곳을 조망할 수 있다.\n\n위치\n부산광역시 동래구 명륜동 / 복천박물관 전용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">알쓸신잡 3(2018) <span style=\"font-size: 18px;color: #000;\">유희열, 유시민, 김영하 출연</span></p>잡학박사들이 여행한 지역에 대해 다양한 관점으로 이야기를 펼치는 예능 프로그램\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">만덕고개누리길전망데크</p>금정산 자락을 따라 산길이 구불구불 이어지다가 어느 순간 탁 트인 공간이 나타나는데 그 곳에 전망대가 있다. 동래는 물론 멀리 해운대와 바다까지 멋진 전망이 눈앞에 펼쳐진다. 도심이 불을 밝히는 밤에는 보석같은 야경을 만날 수 있다. \n\n위치\n부산광역시 동래구 온천동\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1184&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1218",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산을 머무르는 다양한 방법",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "해리단길",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2782",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "외국인들에게도 사랑받고 있는 부산 디저트 카페 3",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "해리단길",
+        "review": "pending"
+      },
+      "originalText": "부산에는 요즘 곳곳에서 디저트 열풍이 불고 있습니다. 그 중 외국인의 사랑도 듬뿍 받고 있는 부산의 대표 디저트 카페를 소개합니다.\n\n<p class=\"font-size28 colorDarkBlue medium\">1. 상큼하고 쫀득한 대왕과일모찌를 만날 수 있는 ‘김모찌’</p>\n\n김모찌는 정식 오픈한지 2달밖에 안된 광안리 신상 디저트 카페입니다. 대표 메뉴로는 달달한 생과일을 넣고 쫀득하게 만든 과일 모찌를 판매하고 있어요.\n\n당도 높은 망고, 멜론부터 꾸준히 인기 많은 딸기, 블루베리, 귤 등으로 대왕 과일 모찌를 선택할 수 있어요. 그 외에도 특제 펄을 더한 왕크림 모찌와 쫀득 모찌, 다양한 음료 메뉴를 함께 판매하고 있습니다.\n오픈한지 얼마 안된 카페임에도 SNS에서 큰 인기를 얻으며 각종 팝업스토어 운영과 함께 외국인들의 발길이 끊임없는 곳이랍니다.\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산광역시 수영구 광남로 166 1층 103호</span></li><li><p>전화번호</p><span>051-711-5516</span</li><li><p>운영요일 및 시간</p><span>12:00 ~ 20:00 (매주 화요일 정기 휴무)</span></li></ul></div>\n<p class=\"font-size28 colorDarkBlue medium\">2. 부산의 대표 기념품 중 하나가 된 ‘부산바다샌드’</p>\n\n부산바다샌드는 외국인들에게 부산 여행 중 사가야할 대표 디저트 중 하나로 인기를 얻고 있습니다. 부산에서도 대표 관광지인 해리단길에 1곳, 감천문화마을에 1곳을 운영하고 있어 여행 중 구매하기 좋은 디저트예요.\n부산바다샌드는 부산에서 직접 양봉한 벌꿀과 프랑스산 최고급 고메버터로 만든 샌드빵입니다. 차갑게 먹으면 더 맛있답니다. 부산바다샌드 외에도 부산바다 캔디, 부산바다 카라멜, 부산바다 쿠키 등 디저트도 판매하고 있어 구매 가능합니다.\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>- 본점 : 부산 해운대구 우동1로20번길 21 1층\n- 부산바다샌드 힐스 : 부산광역시 사하구 감내2로 127</span></li><li><p>운영요일 및 시간</p><span>- 본점 : 11:00 ~ 19:00\n- 부산바다샌드 힐스 : 9:30 ~ 18:00</span></li></ul></div>\n<p class=\"font-size28 colorDarkBlue medium\">3. 부드러운 맛이 일품! 선물 세트로 딱인 ‘캐버린하우스’</p>\n캐버린하우스는 해리단길에 위치한 디저트 가게입니다. 오래된 유럽풍의 가게 입구부터 아기자기한 내부로 장소부터 특색있는 곳이랍니다. 이곳의 대표 메뉴는 고급스러운 크림과 여러 가지 맛을 선택할 수 있는 듀플릿 브레드가 있어요.\n듀플릿브레드는 6구, 8구 구매하면 선물세트로도 구매가능하여, 부산 여행 후 기념품으로 사서 가기도 좋답니다. 매장이 협소하여 취식이 어렵다면 해리단길의 듀플릿 카페에서 취식도 가능합니다.\n<h5 class=\"tit_con\">이용안내</h5><div class=\"cntInfoDetails\"><ul class=\"InfoD-List\"><li><p>주소</p><span>부산 해운대구 우동1로38번가길 14-5 1층</span></li><li><p>대표메뉴</p><span>듀플릿브레드</span></li><li><p>운영요일 및 시간</p><span>매일 11:00 ~ 20:00</span></li></ul></div>\n<p class=\"font-size20 colorBlack medium\">[부산 디저트 카페 자주 묻는 질문]</p>\nQ1. 외국인에게 인기 있는 부산 디저트 카페는 어디인가요?\nA. 부산에는 외국인 관광객들이 많이 찾는 다양한 디저트 카페가 있습니다. 광안리의 김모찌에서는 생과일 모찌를, 해리단길의 부산바다샌드와 캐버린하우스에서는 부산을 대표하는 디저트와 선물용 제품을 만나볼 수 있어 부산 여행 코스로 함께 방문하기 좋습니다.\n\nQ2. 부산 여행 기념품으로 사기 좋은 디저트는 무엇인가요?\nA. 부산 여행 기념품을 찾는다면 부산바다샌드와 캐버린하우스의 듀플릿브레드가 많이 알려져 있습니다. 두 곳 모두 선물용 세트로 구매할 수 있어 여행의 추억을 담은 기념품이나 선물로 선택하기 좋습니다.\n\nQ3. 광안리와 해운대에서 함께 가볼 만한 디저트 카페가 있나요?\nA. 광안리에서는 생과일 모찌를 맛볼 수 있는 김모찌를, 해운대 해리단길에서는 부산바다샌드와 캐버린하우스를 함께 둘러볼 수 있습니다. 각기 다른 매력을 가진 디저트를 즐길 수 있어 부산 여행 코스와 함께 방문하기 좋습니다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2782&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

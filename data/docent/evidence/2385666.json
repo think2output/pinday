@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2385666",
+    "name": "국립부산과학관",
+    "lat": 35.2045740978,
+    "lng": 129.2126863022
+  },
+  "collectedAt": "2026-10-24T09:57:13.180Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:381",
+      "busan-theme:417",
+      "busan-theme:1408"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2385666",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "국립부산과학관",
+      "relation": "same-place",
+      "originalText": "오시리아 관광단지(부산시 기장군)에 위치한 국립부산과학관은 2015년 12월 개관 이후 누적관람객 700만 명을 넘어섰으며 2025년 개관 10주년을 맞이하였다. 또한, 연평균 관람객 100만여 명, 교육참가자 약 10만 명으로 부울경 지역의 과학적 사고력 함양에 기여하는 과학문화 확산의 거점기관으로 역할을 하고 있다. 자동차, 항공, 조선, 에너지, 의과학 등 부울경 과학산업기술 전시와 4차 산업혁명 이후 맞이하게 된 미래 기술과 문화를 직접 체험하고 배울 수 있도록 인공지능, 로봇, 메이커 등 교육 및 문화행사 프로그램을 지속적으로 개발 및 보급하고 있다. 국립부산과학관에는 자동차, 항공우주, 선박, 에너지, 의과학 등 지역산업의 과학기술을 체험형 전시물로 담은 상설전시관, 영유아를 위한 우주과학놀이터 새싹누리관, 기초과학원리와 미래기술을 직접 느껴볼 수 있는 어린이과학관과 항상 새로운 주제의 특별전시로 관람객을 맞는 기획전시실 김진재홀이 있다. 이외에도 한낮의 밤하늘 여행을 떠나는 천체투영관, 굴절망원경이 있는 천체관측소, 뛰어놀면서 배우는 사이언스파크, 산업혁명 증기기관차를 상징하는 꼬마기차, 1박 2일 숙박형 과학교육캠프관 등 국립부산과학관에는 과학을 즐길거리가 무궁무진하다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2385666&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:48.449Z",
+      "modifiedAt": "20260909102112"
+    },
+    {
+      "id": "busan-theme:381",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "유니크베뉴_전시시설",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "국립부산과학관",
+        "review": "pending"
+      },
+      "originalText": "독특한 콘셉트로 회의, 관광, 컨벤션, 이벤트. 전시 등을 포괄하는 여행지들이 인기를 끌고 있다. 부산에서 만나는 즐겁고 새로운 MICE 장소, 유니크베뉴 3 여긴 어떨까?\n<p class=\"font-size20 colorDarkBlue bold\">부산 예술의 중심, 부산시립미술관</p>\n주소 : 부산광역시 해운대구 APEC로 58\n전화 : 0507-1404-2602\n홈페이지 <a href=\" http://art.busan.go.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://art.busan.go.kr/</a>\n\n1998년 개관 이후 다양한 전시와 교육 프로그램으로 시민들에게 문화 체험의 기회를 제공하고 있는 부산시립미술관. 최근 개관한 어린이미술관 또한 아이들의 예술적 소양을 고취시킬 수 있는 체험 프로그램으로 예술 부산의 미래를 밝히고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">디자인의 모든 것, 부산디자인진흥원</p>\n주소 : 부산광역시 해운대구 센텀동로 57\n전화 : 051-790-1000\n홈페이지 <a href=\"http://www.dcb.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">http://www.dcb.or.kr/</a>\n\n부산디자인진흥원은 부산 지역 디자인산업의 메카와 같은 곳이다. 디자인 분야의 다양한 업체들이 입주해 있으며 공연은 물론 세미나, 워크샵, 컨퍼런스 등 각종 학술행사가 수시로 개최되고, 디자인에 대한 일반인의 이해를 돕는 수준 높은 이벤트도 열린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">동남권 과학문화의 거점, 국립부산과학관</p>\n주소 : 부산광역시 기장군 기장읍 동부산관광6로 59\n전화 : 051-750-2300\n홈페이지 <a href=\"https://www.sciport.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> https://www.sciport.or.kr/</a>\n\n국립부산과학관은 자동차, 항공우주, 선박, 에너지, 의과학을 주제로 다양한 과학전시물과 체험 공간을 갖추고 있다. 특히 천체투영관에서 쏟아지는 우주를 대형 돔스크린으로 생생하게 즐길 수 있으며, 천체관측소에서 망원경으로 직접 태양과 별을 관측할 수 있다. 다양한 과학문화행사와 과학강연도 정기적으로 개최된다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">바다를 들여다보자, 국립해양박물관</p>\n주소 : 부산광역시 영도구 해양로301번길 45\n전화 : 051-309-1900\n홈페이지 <a href=\"https://www.mmk.or.kr/ \" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.mmk.or.kr/</a>\n\n영도 앞바다를 배경으로 웅장한 자태로 들어서 있는 국립해양박물관은 바다의 역사, 문화, 과학자료 등을 한 눈에 살펴 볼 수 있는 흔치 않은 장소다. 상설전시, 기획전시가 열리고 어린이박물관과 해양도서관에서 우리바다에 대한 이해를 돕고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">아픔을 넘어 평화로, 유엔평화기념관</p>\n주소 : 부산광역시 남구 홍곡로320번길 106\n전화 : 051-901-1400\n홈페이지 <a href=\" http://unpm.or.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://unpm.or.kr/</a>\n\n우리 민족에게 깊은 상흔을 남긴 한국전쟁에 대한 기억을 간직하고, 낯선 나라를 위해 희생한 수많은 유엔군 참전용사에 대한 감사를 전하는 공간 유엔평화기념관, 한국전쟁에 관한 사실적 전시와 다양한 교육프로그램으로 전쟁이 남긴 상처와 평화의 의미를 되새기는 기념관이다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=381&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:417",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산인문학여행",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립부산과학관",
+        "review": "pending"
+      },
+      "originalText": "부산이라는 도시가 가진 인문학적 가치를 찾아 떠나는 여행, 부산은 어떤 도시일까?\n\n<p class=\"font-size20 colorDarkBlue bold\">복천동 고분군 / 복천박물관 / 동래읍성임진왜란역사관</p>첫 여행지는 역사적 장소와 유물이 많은 동래다.\n가야시대 지배계층의 무덤이 발견된 복천동 고분군은 고대문화를 이해할 수 있는 중요한 유적이다. 고분에서 출토된 많은 유물을 전시하고 있는 복천박물관에서는 가야의 뛰어난 철기문화와 더불어 고대 무덤 형식의 변천과정을 상세히 알 수 있다.\n땅만 파면 유물이 나온다는 동래지역이다 보니 2005년에는 지하철 공사 도중 임진왜란의 참상이 그대로 묻힌 동래읍성 해자가 발굴되었다. 전쟁 통에 죽임을 당한 민관군의 유골과 유물이 수 백 년의 세월을 지나 세상 밖으로 나온 것이다. 발굴 당시의 처참함을 그대로 복원한 동래읍성임진왜란 역사관이 도시철도 수안역사 내 건립되었다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산박물관 / 부산근대역사관 / 국립일제강제동원역사관</p>선사시대부터 근‧현대까지, 부산 역사의 모든 것을 알 수 있는 부산박물관에서 부산이 가진 역사의 무게를 경험하며, 격동의 시기를 헤쳐 온 부산을 만나는 두 번째 인문학여행을 시작한다.\n일제의 수탈기구 동양척식주식회사 부산본점으로 지어진 부산근대역사관은 광복 후 미문화원으로 50년 간 무단 사용된 건물로, 부산의 아픔과 설움의 시간을 고스란히 간직하고 있다.\n국립일제강제동원역사관은 조선의 모든 것을 앗아가 버렸던 일제의 잔혹함을 피부로 느낄 수 있는 곳이다. 끝나지 않는 고통 속에서 고된 삶을 이어가야 했던 조선인 탄광노무자. 군인, 여자근로정신대. 가슴 아픈 역사지만 일제강제동원의 역사적 진실을 함께 기억하고 널리 알려야 할 것이다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">40계단문화관 / 보수동책방골목</p>한국전쟁은 부산에 많은 흔적을 남겼다. 부산항으로, 부산역으로, 하루에도 수십 번 씩 40계단을 오르내리며 일거리를 찾아 헤매던 당시 피란민의 일상이 40계단문화관에 생생이 기록되어 있다.\n모든 것이 부족했던 어려운 시절, 책이라고 부족하지 않을 리가 없었다. 여기저기서 모은 헌책들을 노상에 펼쳐놓고 팔던 그 자리 그대로 보수동책방골목을 이루었다. 필요한 책을 찾아 보물찾기하듯 골목을 헤매는 사람들의 모습에서 그 시절의 향수가 겹쳐진다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">최민식 갤러리 / 요산문학관</p>그때 그 시절을 기억하게 해주는 사진과 글도 만날 수 있다. 가난한 피란민의 생활상을 꾸밈없이 카메라에 담았던 최민식 작가의 삶과 작품을 엿볼 수 있는 최민식 갤러리, 혼돈의 시대를 틈타 권력에 빌붙는 사람들을 글로 응징한 소설가 김정한 선생의 작품세계를 알 수 있는 요산문학관으로 발걸음을 돌린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">영화의 전당 / 부산시립미술관 / 국립부산과학관</p>과거의 아픔을 뛰어넘어 문화가 흐르는 도시가 된 부산. 10월이면 부산국제영화제로 물드는 영화의 전당과 1998년 개관하여 20년이 넘는 시간동안 지역 미술의 활성화와 시민들을 위한 감성문화를 만들어가고 있는 부산시립미술관, 그리고 모두를 과학과 상상의 세계로 떠나게 해주는 국립부산과학관까지, 아팠던 시절엔 생각지도 못한 다양한 문화가 부산에 넘실거리고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">이터널저니 / F1963</p>그뿐만이 아니다. 북큐레이션이라는 테마로 이색적인 문화공간의 역할을 하는 서점 이터널저니, 과거의 와이어공장이 복합문화공간으로 다시 태어난 F1963 등 현재의 도시 부산은 풍요로운 문화예술의 향기로 가득하다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=417&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1218",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산을 머무르는 다양한 방법",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립부산과학관",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1408",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "국립부산과학관",
+        "review": "pending"
+      },
+      "originalText": "얼마 전 여행자가 꼭 가볼 만한 한국의 대표 관광지 100곳이 공개되었습니다. 2023-2024 한국관광 100선에 선정된 부산의 관광지는 총 8곳! 모두 국내외 여행자들에게 꾸준한 사랑을 받고 있는 곳입니다. 국제관광도시 부산을 대표하는 우수관광지 8곳을 지금 만나보세요.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">태종대</p>초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는 곳. 오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳. 부산 영도 남쪽 끝에 자리하고 있는 태종대의 이야기다. 태종대는 바다를 조망할 수 있는 전망 포인트뿐만 아니라 해안 자갈마당과 이어지는 계단오솔길도 잘 조성되어 있다. 발걸음을 옮기는 곳마다 새로워지는 풍경에 여행자의 마음이 절로 설렌다. 도시와 얼마 떨어지지 않은 곳이건만 이곳만큼은 세상의 때가 덜 닿은 듯하다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대∙송정해변</p>부산하면 가장 먼저 떠오르는 것, 바다! 그중에서도 부산 바다의 정석으로 불리는 곳은 단연 해운대해수욕장이다. 여름은 물론이요, 사시사철 부산을 찾는 관광객들의 발걸음이 한 번쯤은 머무르다 가는 곳, 해운대 해수욕장은 다른 어떤 곳보다 다이내믹한 부산의 분위기를 느낄 수 있는 장소다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko</a>\n\n\n해운대, 광안리와 더불어 부산 동부의 3대 해수욕장으로 손꼽히는 송정해수욕장은 수심이 낮고 경사가 완만하여 가족단위 피서지로 인기가 높다. 최근 들어서는 사계절 내내 서퍼들이 몰려드는 서핑의 성지로 각광받고 있다. 동해와 남해가 맞닿아 있는 위치 덕분에 북풍과 남풍의 영향을 동시에 받는데, 이는 사시사철 높은 파도가 끊임없이 들어오는 좋은 조건을 만들어준다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=280&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=280&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">감천문화마을</p>부산 서부산여행의 랜드마크가 된 감천문화마을은 보고 즐기는 체험관광지로 관광객들의 뜨거운 호응을 받고 있다. 마을안내센터에서 구매한 스탬프지도를 따라가기만 하면 골목길투어가 완성된다. 먼저, 입구에 위치한 감천문화마을 작은 박물관에 들러 마을의 이야기를 살펴본 후 투어를 시작하자.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">용두산∙자갈치 관광특구</p>부산 동부권역에 명소 해운대가 있다면 중부권에는 역시 남포동이 최고의 핫플레이스, 그 중 용두산공원은 부산을 찾는 이들이 빼놓지 않고 찾는 부산 대표 랜드마크다. 용두산공원에 이르는 길은 오르막이긴 하지만 시원한 그늘을 만들어 주는 나무가 드리워져 길을 따라 천천히 오르다보면 어느새 공원 입구에 다다르게 된다. 도시철도를 이용한 도보여행객은 역에서 가까운 에스컬레이터 입구를 이용하면 더욱 편리하게 공원을 만날 수 있다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=368&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=368&lang_cd=ko</a>\n\n\n자갈치시장은 에너지 넘치는 야외의 전통시장과 깔끔하고 정갈한 실내 현대시장으로 구분된다. 새벽에 찾은 야외의 전통시장은 또 다른 활기로 우리를 반겨준다. 잘 말린 건어물의 깔끔함과 갓 잡은 활어의 파닥거림 속에서 진한 바다향이 전해진다. \n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=412&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=412&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도용궁구름다리</p>송도용궁구름다리에서는 아름다운 바다 풍경을 즐길 수 있다. 다리의 형상이 마치 용이 바다에서 승천하는 듯한 모습이다. 다리 위에서 여러 방면으로 바라보는 송도는 색다른 느낌을 가져다 준다. 발아래 푸른 바다와 붉게 드러난 기암, 초록빛의 나무가 조화롭게 어우러져 더욱 매력적으로 느껴진다. 바다 위에 둥둥 떠있는 선박들의 주차장 묘박지를 만날 수 있다는 것도 좋은 경험이 되지 않을까?\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=833&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=833&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">오시리아관광단지</p>설렘 가득한 부산 여행을 계획 중이라면 모두가 함께 즐거운 시간을 보낼 수 있는 기장 오시리아관광단지는 어떨까? 최근 개장한 롯데월드어드벤처를 포함해 스카이라인루지, 국립부산과학관, 힐튼부산 아난티코브, 오시리아해안산책로, 해동용궁사, 오랑대 등 재미와 휴식을 동시에 즐길 수 있다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202012001000&uc_seq=1025&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202012001000&uc_seq=1025&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산엑스더스카이∙그린레일웨이</p>‘부산엑스더스카이(BUSAN X the SKY)’는 ‘해운대 엘시티 랜드마크타워’에 위치하고 있으며, 전망대 각 층마다 특화된 해운대 해변과 도시 야경, 광안대교, 부산항대교, 이기대, 달맞이 고개, 동백섬 등 부산의 명소를 조망할 수 있는 ‘파노라믹 오션뷰’를 자랑한다. \n\n부산엑스더스카이 맞은편에 해운대해변열차 미포 정거장이 있다. 넓은 바다와 푸른 하늘을 마음껏 누릴 수 있는 기찻길 옆 산책로, 생각만으로도 너무 낭만적인 곳이다. 더불어 이색적인 자태 뽐내며 빵~ 하고 지나가는 해변열차, 옛 모습을 닮은 고풍스러운 부산그린레일웨이 기찻길 산책로도 방문해 보자.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1027&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1027&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안리해변∙SUP존</p>광안대교라는 랜드마크와 함께 부산을 대표하는 해수욕장 중 하나로 꼽히는 광안리 해수욕장. 도심과 가장 가까운 해변이자 부산 젊은이들의 성지라 할 수 있다. 전국에서 모여드는 이들의 입맛을 모두 충족시킬 수 있는 다양한 맛집의 향연, 바다가 보이는 카페, 골목 곳곳에 위치한 이색 공간, 봄이면 온 거리를 분홍빛으로 물들이는 남천동 벚꽃거리까지. 새하얀 백사장과 푸르른 바다 말고도, 광안리가 간직한 매력은 무궁무진하다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1408&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

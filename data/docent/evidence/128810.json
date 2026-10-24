@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "128810",
+    "name": "동백공원",
+    "lat": 35.1536609221,
+    "lng": 129.1523226328
+  },
+  "collectedAt": "2026-10-24T09:57:13.679Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:284",
+      "busan-theme:310",
+      "busan-theme:1183"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:128810",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "동백공원",
+      "relation": "same-place",
+      "originalText": "동백공원은 해운대해수욕장 남쪽 끝에 있는 동백섬을 공원으로 조성한 것으로, 1966년 9월 공원 대지로 지정되어 1990년대에 본격적으로 개발되었으며, 동백나무와 소나무가 울창한 자연경관이 아름다운 곳으로 육지와 연결된 육계도이다. 2006년 부산에서 APEC 행사가 개최되면서 동백 공원을 정비하고 조경 복구, 전망 데크 설치, 해안 정비, 산정 광장 및 순환 도로 정비, 쉼터 광장 및 주차장 등을 새롭게 조성하여 관광객의 발길이 끊이질 않는 곳이다. 산책로 외에 배드민턴장, 의자, 화장실 등의 편의시설이 조성되어 있다. 동백공원 주요 시설로는 최치원 유적지와 누리마루 APEC 하우스, 해운대 석각, 공원 앞 바닷가에는 무궁이라는 나라의 왕과 결혼한 황옥 공주에 얽힌 전설이 있는 동백섬 인어상 등이 있으며, 동백섬 둘레를 따라 조성된 해안산책로는 산책이나 운동하기 좋은 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=128810&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:03.282Z",
+      "modifiedAt": "20251219095747"
+    },
+    {
+      "id": "heritage:23-21-0000450000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "해운대석각",
+      "relation": "nearby-only",
+      "distanceMeters": 177,
+      "coordinates": {
+        "lat": 35.1521,
+        "lng": 129.1527
+      },
+      "originalText": "동백섬 내에 자리한 작은 바위 윗면에 ‘해운대(海雲臺)’라는 글씨를 새긴 것으로, 통일신라 후기의 학자였던 최치원 선생의 글씨로 전한다.\n 선생이 가야산으로 향하던 도중 이 주변의 자연경관이 너무도 아름다워 돌을 쌓아 대를 만든 후, 바다와 구름, 달과 산을 음미하면서 이 바위에 ‘해운대(海雲臺)’라는 글씨를 새기었는데, 이때 부터 ‘해운대’라는 지명이 생겨났다고 한다. \n 최치원 선생의 글씨라는 사실이 정확히 확인된 바는 없으나, 고려시대 당시 문신이었던 정포의 시에서 ‘대는 황폐하여 흔적이 없고 오직 해운의 이름만 남아 있구나’라고 읊고 있어, 이미 그 당시에도 이 석각이 있었음을 알 수 있다. \n 현재는 오랜 세월동안 비바람과 파도에 씻겨 나가 ‘운(雲)’자가 심하게 닳아있는 상태이다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000450000000",
+      "fetchedAt": "2026-10-24T09:53:59.478Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:284",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "바다와 산, 그리고 부산을 걷다",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "동백공원",
+        "review": "pending"
+      },
+      "originalText": "해운대해수욕장에서 탁 트인 바다를 바라보며 사색에 잠겨 걷다 보면 백사장 끝자락에 아담하게 자리하고 있는 동백섬에 다다르게 된다. 원래는 섬이었던 이곳은 오랜 세월 퇴적작용으로 육지와 연결되었지만 부산 사람들에겐 여전히 동백섬으로 불리고 있다.\n동백섬의 자연을 그대로 담아 공원으로 조성한 동백 공원은 우거진 해송이 아름다운 곳이다. 동백섬 둘레를 따라 난 해안산책로는 950m 정도로 긴 편은 아니지만, 조용히 산책하며 하루의 일과를 정리하기에는 더없이 좋은 공간이다.\n첫 번째 전망데크를 지나 조금만 걷다보면 바위 외로운 동상 하나가 눈에 들어온다. 삼국유사에 기록된 황옥공주의 설화를 바탕으로 제작된 인어상이다. 바다 건너 먼 곳으로 시집 간 황옥공주는 고국을 잊지 못해 보름달이 뜨는 밤바다를 보며 슬픈 마음을 달랬다고 한다.\n이 동상은 1974년 처음 설치되었으나, 1987년 태풍으로 인해 유실되어 현재 상체 부분은 부산박물관에 보관되어 있다. 지금의 청동인어상은 1989년 새로이 제작된 것이다.\n이어지는 바닷길을 따라가면 출렁다리가 눈앞에 나타난다. 일부 구간에는 아래를 볼 수 있게 되어 있지만, 다리가 비교적 짧고 높은 곳에 있지 않아 고소공포증이 있거나 높은 곳을 무서워하는 어린이라도 무난하게 지날 수 있다.\n해안산책로는 넓은 전망대와 함께 하얀 등대로 이어진다. 전망대에서 바다를 바라보면 누리마루 APEC하우스와 광안대교를 동시에 조망할 수 있다. 조금 더 왼쪽으로 시선을 돌리면 오륙도까지 볼 수 있어서 부산바다를 한눈에 구경하기에 더없이 좋은 장소다.\n누리마루 APEC 하우스는 2005년 부산 APEC 정상 회의를 했던 장소이다. 본회의장에 둥글게 배치된 아시아‧태평양 정상들의 의자를 비롯하여 당시 제공된 식사와 기념품 등을 관람할 수 있다. 해운대 절경과 완벽하게 어울리는 현대적인 외관은 세계에서 가장 이색적인 국제 회의장으로 손색이 없다.\n바다와 숲, 있는 그대로의 자연을 느낄 수 있는 동백섬. 해안선을 따라 걷는 낭만은 물론 부산을 대표하는 상징적 건축물을 한눈에 볼 수 있는 조망까지. 동백 해안산책로는 이미 해운대여행의 필수코스다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=284&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:310",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "모든 이들에게 공평한 관광을 선사하는 부산 무장애 여행지",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "동백공원",
+        "review": "pending"
+      },
+      "originalText": "<p class=\"font-size20 medium\">코스1 : 도시철도 해운대역-아쿠아리움-동백공원 해안산책로/누리마루 APEC하우스-더베이101</p>\n도시철도 해운대역 내부에는 엘리베이터, 전동휠체어를 충전할 수 있는 공간이 마련되어 있다. 지상으로 올라오면 점자블록이 설치돼 있는 구남로를 따라 시각장애인을 위한 오디오 가이드를 갖춘 아쿠아리움으로 이동할 수 있다.\n동백공원 해안산책로는 공원 전체가 휠체어 통행이 자유로운 곳이다. 누리마루 APEC 하우스에서 휠체어 무료대여가 가능하다.(실내에서만 가능) 아름다운 산책로 곳곳에서 숲속 힐링을 즐길 수 있으며 산, 바다, 광안대교를 한 번에 느낄 수 있는 풍경은 동백섬의 자랑이다.\n동백섬 입구에 위치한 더베이101에서 야경을 즐기며 식사나 차를 즐길 수도 있다. 이곳에는 장애인 주차구역과 장애인 화장실, 엘리베이터가 설치돼 있다.\n<p class=\"font-size20 medium\">코스2 : 송도해수욕장,스카이워크,케이블카-암남공원전망대</p>\n송도해수욕장 입구에는 완만한 경사의 휠체어 전용통로가 설치돼 있다. 바다 위에 설치된 국내 산책로 중 가장 긴 스카이워크 또한 출입이 용이하다.\n송도해상케이블카에 전동휠체어는 안전상 탑승이 불가하므로 현장에 갖춰진 일반 휠체어로 갈아탄 후, 케이블카에 탑승할 수 있다. 암남공원 정류장 스카이파크 전망대에서 바다전경을 조망할 수 있으며 전망대 내 장애인 화장실과 다양한 부대시설을 갖추고 있다.\n송도 암남공원도 빼놓을 수 없는 장소인데 산책로를 따라 휠체어 이동이 가능하며 시원한 바닷바람과 해안절경을 만끽할 수 있다.\n<p class=\"font-size20 medium\">코스3 : 송정해수욕장-수산과학관-오랑대공원-대변항-죽성성당</p>\n송정해수욕장 백사장을 따라 설치된 데크형 산책로는 휠체어 이동이 용이하고 산책로 중간에 장애인 화장실이 갖춰져 있다.\n멋진 야외 전망대를 가진 국립수산과학관에도 장애인 화장실과 장애인 주차구역이 갖춰져 있으며 전시관은 무료입장이다.\n일출명소 오랑대공원은 바닷가 바로 앞에 위치한 휠체어접근 가능 산책로로 유명하다. 오랑대 인근 대변항은 기장 멸치로 잘 알려진 곳으로 아름다운 등대가 바라보이는 작은 어촌마을이다.\n드라마 촬영세트로 유명해진 죽성성당은 바다 전망과 성당 건물이 어우러진 그림 같은 풍경으로 사람들을 불러 모은다. 휠체어 통행은 가능하나 주차공간이 넉넉지 않다.\n<p class=\"font-size20 medium\">코스4 : 영도대교-깡깡이마을-절영해안산책로-태종대유원지</p>\n매일 오후 2시에 도개행사를 진행하는 영도대교, 휠체어 접근이 가능한 곳이지만 많은 인파가 몰릴 때는 구경하는 자리가 넉넉하지 않을 수 있다.\n수리 조선소가 몰려 있던 대평동 깡깡이마을은 조용히 마을을 둘러보며 숨어있는 예술작품을 찾아내는 재미가 있는 곳이다. 하지만 지금도 마을 곳곳에 선박수리소와 공업사가 영업 중이어서 주말 혹은 통합투어 프로그램을 이용해 방문하는 것이 좋다.\n절영해안산책로는 입구에서 흰여울 터널까지 휠체어통행이나 도보이동이 쉬운 편으로 영도바다를 가장 가까이에서 마주할 수 있는 코스이다. 장애인 주차구역과 장애인 화장실이 갖춰져 있다.  \n태종대는 다누비열차를 이용해 유원지 전체를 둘러볼 수 있고, 휠체어 또한 대여 가능하다. 태종대의 기암괴석과 푸른 바다를 만날 수 있다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=310&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1183",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Impossible? I'm possible",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "동백공원",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">Impossible? I'm possible</p>같이의 가치! 모두를 위한 부산여행\n\n남녀노소, 임산부, 장애인 누구와도 함께 할 수 있는 부산여행지를 엄선했다. ‘배리어 프리’ 말 그대로 어떤 장애물도 없는 곳. 그래서 누구나 손쉽게 이동할 수 있는 공간들이다. 물론 수유실과 관광안내소, 엘리베이터 등 편의시설도 잘 갖추고 있으니 모두를 위한 여행지로 손색이 없다. \n\n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">같이의 가치! 모두를 위한 부산여행</p></div><ul class=\"course1\"><li><span>부산현대미술관(영화의 거리, 2021)</span></li><li><span>낙동강하구에코센터(당신, 거기 있어줄래요, 2016)</span></li><li><span>광안리해수욕장(라켓소년단, 2021 / 블랙 팬서, 2018)</span></li><li><span>동백섬</span></li><li><span>더베이101(지금, 헤어지는 중입니다, 2021 / 더 짠내투어, 2020)</span></li></ul></div>\n\n<p class=\"font-size28 colorDarkBlue medium\">부산현대미술관</p>초록색 나뭇잎으로 뒤덮인 건물이 무척 인상적이다. 175종의 식물로 만든 수직정원이다. 철새보호구역인 을숙도에 자리한 부산현대미술관은 다양한 예술 작품과 함께 산책과 사색을 즐길 수 있는 곳이다.  \n\n위치\n부산광역시 사하구 낙동남로 1191 / 부산현대미술관 주차장\n\n편의시설\n장애인화장실, 장애인전용주차구역, 휠체어이용가능시설, 경사로, 엘리베이터, 자동문, 수유실, 유모차이용가능시설\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">한선화, 이완 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">낙동강하구에코센터</p>낙동강과 을숙도가 만나는 낙동강 하구는 철새들의 오랜 낙원이다. 낙동강하구에코센터에선 겨울을 나기 위해 찾아오는 다양한 철새들에 대한 정보를 얻고 망원경으로 직접 관찰할 수도 있다. \n\n위치\n부산광역시 사하구 낙동남로 1240 / 을숙도 주차장1\n\n편의시설\n장애인화장실, 장애인전용주차구역, 휠체어이용가능시설, 경사로, 엘리베이터, 자동문, 수유실, 유모차이용가능시설\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">당신, 거기 있어줄래요(2016) <span style=\"font-size: 18px;color: #000;\">김윤석, 변요한 주연</span></p>30년 전 자신과 만나게 된 한 남자의 시간여행을 그린 판타지 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안리해수욕장</p>광안대교를 정면으로 바라볼 수 있는 해수욕장. 겨울에는 광안대교 아래로 해가 뜨는 장면을 만날 수 있는 도심 속 일출 명소다. 수많은 맛집과 카페들이 밀집해 있는 부산 대표 해변.\n\n위치\n부산광역시 수영구 광안해변로 219 / 민락해변공원 노상공영주차장\n\n편의시설\n장애인화장실, 장애인전용주차구역, 휠체어이용가능시설, 경사로, 관광안내소, 유모차이용가능시설\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">라켓소년단(2021) <span style=\"font-size: 18px;color: #000;\">김상경, 오나라, 탕준상 주연</span></p><p>시골 소년소녀들의 소년체전 도전기를 그린 성장 드라마\n</p><p class=\"font-size25 colorDarkBlue medium\">블랙 팬서(2018) <span style=\"font-size: 18px;color: #000;\">채드윅 보스만, 마이클 B. 조던 주연</span></p>와칸다의 왕좌를 지키고자 적에게 맞서는 ‘블랙팬서’의 활약상을 담은 SF 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">동백섬</p>부산여행에서 가장 먼저 둘러봐야할 곳. 해운대해수욕장과 광안대교, 누리마루 등 부산의 명소를 한 번에 조망할 수 있다. 해안을 따라 조성된 산책로를 따라 걷다 보면 부산의 매력이 단숨에 느껴진다. \n\n위치\n부산광역시 해운대구 우동 / 동백공원 공영주차장\n\n편의시설\n장애인화장실, 장애인전용주차구역, 휠체어이용가능시설, 경사로, 엘리베이터, 자동문, 관광안내소, 유모차이용가능시설\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">더베이101</p>홍콩보다 더 멋진 마린시티의 야경을 보면서 다양한 요리와 맥주를 즐기다 보면 마치 외국여행을 하고 있는 듯한 기분이 든다. 근사한 요트를 타고 바다로 나가서 광안대교와 주변 풍경을 둘러보고 오는 요트투어도 즐길 수 있다. \n\n위치\n부산광역시 해운대구 동백로 52 / 동백공원 공영주차장\n\n편의시설\n장애인화장실, 장애인전용주차구역, 휠체어이용가능시설, 엘리베이터\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">지금, 헤어지는 중입니다(2021) <span style=\"font-size: 18px;color: #000;\">송혜교, 장기용 주연</span></p><p>패션회사 디자인 팀장과 패션전문 포토그래퍼의 사랑과 이별을 그린 가슴 적시는 멜로 드라마\n</p><p class=\"font-size25 colorDarkBlue medium\">더 짠내투어(2020) <span style=\"font-size: 18px;color: #000;\">규현, 아린 출연</span></p><p>극과 극 여행코스 비교체험을 통해 여행지 정보를 전달하는 예능 프로그램</p>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1183&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

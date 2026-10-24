@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "1945309",
+    "name": "이기대",
+    "lat": 35.115449,
+    "lng": 129.123566
+  },
+  "collectedAt": "2026-10-24T09:57:15.036Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:1945309",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "이기대",
+      "relation": "same-place",
+      "originalText": "이기대는 장산봉이 바다로 면한 동쪽 바닷가에 있는 대로 용호3동에 속한다. 용호하수처리장에서 고개 하나 넘은 곳에 있으며 장산봉이 바다로 면한 동쪽은 기묘한 바위절벽으로 경관이 뛰어났지만 사람들이 걸어서 오가기에는 위험하다. 그래서 주로 바다에서 배로 그 경관을 즐긴다. 이기대 중심자리는 직각으로 된 절벽이 아니라 바다에 접한 암반이 비스듬히 기울어져 평면에 가깝게 된 곳이 산을 따라 2㎞ 정도 바닷가로 이어져 있다. 그 바위반석에서 동해를 바라보는 경관과 밀려드는 파도를 바라보는 경관이 빼어난 곳이다. 예전에는 군작전지구로 지정되어 있어 민간인의 출입이 금지되었다가 1993년에 개방되었다.\n\n(출처: 부산 남구 문화관광 홈페이지)",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1945309&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:04.191Z",
+      "modifiedAt": "20260929170026"
+    }
+  ],
+  "errors": []
+}

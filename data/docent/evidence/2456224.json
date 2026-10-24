@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2456224",
+    "name": "렛츠런파크 부산경남",
+    "lat": 35.1546043542,
+    "lng": 128.8818963152
+  },
+  "collectedAt": "2026-10-24T09:57:13.725Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:382",
+      "busan-theme:431"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2456224",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "렛츠런파크 부산경남",
+      "relation": "same-place",
+      "originalText": "렛츠런 파크는 한국마사회가 운영하며, 2011년 개장 이후 믿고 가는 가족 공원으로 자리 잡았다. 2017년 가족 놀이 시설로 리뉴얼 오픈하여, 사계절 썰매장(슬레이드힐), 워터범퍼카, 워터롤, 렛츠런 투어 4개 시설이 새롭게 단장했다. 또한 공원에서는 친환경 전기차를 운영하여 아이가 있는 가족도 편안하게 공원을 즐길 수 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2456224&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:05.499Z",
+      "modifiedAt": "20261022091955"
+    },
+    {
+      "id": "heritage:23-21-0000440000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "범방동 패총",
+      "relation": "nearby-only",
+      "distanceMeters": 160,
+      "coordinates": {
+        "lat": 35.1559716482698,
+        "lng": 128.881335490279
+      },
+      "originalText": "패총(貝塚)이란 수렵, 어로, 채집에 의하여 살아온 옛 사람들이 조개를 먹은 뒤 버린 조개껍데기와 생활쓰레기가 함께 쌓여 이루어진 유적으로 조개더미라고도 한다. \n 범방동패총은 신석기시대의 전기·중기·후기에 해당하는 3개의 문화층으로 형성되어 있는 유적으로 범방동 입구에 있다. 이 패총에서 조사된 유구는 둥근 화덕자리와 둥근돌무지유구, 그리고 널무덤을 비롯한 7기이다. 널무덤에서 출토된 사람의 뼈는 10세 전후의 여자아이의 것으로 추정되며, 뼈의 상태는 불량하나 두개골은 비교적 제 모습을 유지하고 있다. 둥근 화덕자리와 둥근돌무지유구는 배치상태나 주변 환경으로 보아 어패류나 동물을 요리하기 위한 야외 시설물로 보인다. 이 밖에 우리나라 남해안지역의 신석기시대 전 기간에 걸친 다양한 토기류가 출토되었고, 신석기시대 전기의 석기류가 출토되었다. \n 범방동 패총은 신석기시대의 전기부터 후기에 이르는 전 시기의 다양한 유물이 출토된 유적으로 신석기시대 생활문화 연구의 귀중한 자료로써 기념물로 지정하였다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000440000000",
+      "fetchedAt": "2026-10-24T09:53:52.746Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:382",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "유니크베뉴_이벤트‧문화시설",
+      "relation": "same-place",
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name",
+        "placeName": "렛츠런파크 부산경남",
+        "review": "pending"
+      },
+      "originalText": "독특한 콘셉트로 회의, 관광, 컨벤션, 이벤트. 전시 등을 포괄하는 여행지들이 인기를 끌고 있다. 부산에서 만나는 즐겁고 새로운 MICE 장소, 유니크베뉴 4 여긴 어떨까?\n<p class=\"font-size20 colorDarkBlue bold\">빅루프 아래 문화의 향연, 영화의 전당</p>\n주소 : 부산광역시 해운대구 수영강변대로 120\n전화 : 051-780-6000\n홈페이지 <a href=\" http://www.dureraum.org\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.dureraum.org</a>\n\n영화의 도시 부산을 대표하는 랜드마크 영화의 전당은 영화 관람은 물론 영화 관련 다양한 자료를 수집하여 시민들에게 공개하고 있다. 또한 각종 공연, 기획전시, 그리고 영화예술인 인재 양성을 위한 아카데미 프로그램도 운영하고 있다. 영화제 기간에는 부산국제영화제 개‧폐막식 등 중요 행사가 진행되고, 평상시에는 영화와 공연을 즐길 수 있는 복합문화공간이 된다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">부산 영상‧문화산업의 중심, 부산문화콘텐츠콤플렉스</p>\n주소 : 부산광역시 해운대구 수영강변대로 140\n전화 : 051-749-9157\n홈페이지 <a href=\" http://www.busanit.or.kr/bcc/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://www.busanit.or.kr/bcc/</a>\n\n부산문화콘텐츠콤플렉스는 문화콘텐츠 분야에서 기술력과 열정을 갖춘 중소기업을 발굴하여 지원하는 기관이다. 8~12인실 회의실과 프리젠테이션실, 그리고 어린이들을 위한 오감체험 디지털 감성놀이터를 제공하며 특히, 부산경남 지역 만화가들의 창작과 협업을 지원하는 복합공간 부산글로벌웹툰센터에서는 매년 부산웹툰페스티벌이 열린다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">시민들을 위한 놀이터, 렛츠런파크부산경남</p>\n주소 : 부산광역시 강서구 가락대로 929\n전화 : 1566-3333\n홈페이지 <a href=\" http://park.kra.co.kr/busan_main.do\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> http://park.kra.co.kr/busan_main.do</a>\n\n렛츠런파크부산경남은 다양한 편의시설을 갖추고 있는 대표적인 가족테마공원이다. 어린이들을 위한 놀이시설과 생태탐방시설, 축제 그리고 승마체험 등이 있어 온 가족이 함께 즐거운 시간을 보낼 수 있는 곳으로 사랑받고 있다.\n\n\n\n<p class=\"font-size20 colorDarkBlue bold\">국제 수준의 어쿠스틱 연주홀, 글로빌아트홀</p>\n주소 : 부산광역시 동래구 사직북로48번길 162\n전화 : 051-505-5995\n홈페이지 <a href=\"https://glovilarthall.modoo.at/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://glovilarthall.modoo.at/</a>\n\n어쿠스틱 전문 음향홀로서 200석의 쾌적한 객석을 갖춘 글로빌아트홀은 음악회와 콩쿨, 실기평가를 위한 장소로 사용되며 각종 행사 대관도 가능하다. 악기 교실과 노래교실 그리고 댄스 스포츠 교실 등 취미로 음악과 춤을 배울 수 있는 평생교육 프로그램도 운영한다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=382&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:431",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "렛츠런파크 부산경남",
+        "review": "pending"
+      },
+      "originalText": "빽빽하게 들어선 빌딩 숲만 오가다 보면 조용한 곳에서 선선한 바람을 맞으며 쉬고 싶을 때가 있다. 도심과는 조금 떨어진 자연 속에 폭 안겨 여유와 낭만을 느낄 수 있는 곳. 서부산투어는 일상에 지친 사람들을 넉넉한 자연의 품으로 안내한다.\n<p class=\"font-size20 colorDarkBlue bold\">다대포해수욕장</p>다대포해수욕장은 계절에 관계없이 자연을 만끽하기 좋은 곳이다. 느린 걸음으로 천천히 해변을 거닐다 큰 키의 사람 조형물을 만나면 나란히 옆에 서서 그 시선을 따라간다. 조용히 먼 바다를 응시하는 키다리 사람조형물이 말없이 친구가 되어준다. 근처 아미산전망대에 오르면 사시사철 흐르는 낙동강 물살과 출렁이는 다대포 파도가 하나로 합쳐지며 절경을 이룬다. 특히 해질 녘 전망대에서 내려다보는 다대포는 쉽게 눈을 뗄수 없을 정도로 몽환적이다.\n<p class=\"font-size20 colorDarkBlue bold\">감천문화마을</p>오랜 세월 피란민들의 삶의 터전이었던 감천문화마을. 마을입구에 들어서면 세월과 예술의 만남이 빚어낸 아름답고 살가운 풍경이 먼저 시선을 잡아끈다. 한복을 입고 골목길 투어에 나선 여행자들의 얼굴에는 활기가 가득하다. 삐뚤삐뚤 굽이굽이 두 사람이 지나가기에도 벅찬 좁은 골목길은 무척이나 복고스럽다. 어디로 통할지 모르는 길 곳곳마다 예쁘게 디자인 된 표지판이 여행자들을 인도한다. \n<p class=\"font-size20 colorDarkBlue bold\">송도해수욕장</p>송도해수욕장은 우리나라 1호 해수욕장으로 100년 넘는 역사를 자랑한다. 송도구름산책로와 송도해상케이블카, 그리고 기암절벽을 따라 걷는 해안볼레길이 손짓하는 100년 송도의 매력에 풍덩 빠져보자.\n<p class=\"font-size20 colorDarkBlue bold\">삼락생태공원</p>봄에는 유채꽃, 여름엔 해바라기, 가을엔 코스모스가 피어나 향긋한 꽃향기를 전해주고, 겨울에는 갈대가 아름다운 장관을 선물하는 삼락생태공원. 계절마다 각기 다른 모습으로 우리에게 다가오는 이 곳은 한가로이 걷고 싶을 때, 혹은 자전거 질주본능이 피어오를 때 주저 없이 선택할 수 있는 곳이다.\n<p class=\"font-size20 colorDarkBlue bold\">운수사 / 석불사</p>조용한 명상의 시간을 원한다면 사찰도 빼놓을 수 없다. 단아한 분위기를 뽐내는 고즈넉한 사찰을 걷고 싶다면 운수사로, 사찰 뒤로 펼쳐진 바위 불상의 웅장함을 느끼고 싶다면 석불사로 가면 된다. 바쁜 일상을 잠시 내려놓고 사찰을 따라 거닐다 보면 자연스레 마음 한쪽에서 잔잔한 평온이 퍼져 나간다.\n<p class=\"font-size20 colorDarkBlue bold\">렛츠런파크 부산경남</p>사진과 그림으로만 보던 말을 직접 만져보고 타보며 아이들의 감성을 자극할 수 있어 가족단위 관광객이 많이 찾는 렛츠런파크 부산경남. 승마를 배우며 신체를 단련하고 동물을 사랑하는 마음도 기를 수 있으니, 아이들에게는 이만한 체험학습 장소가 없다.\n<p class=\"font-size20 colorDarkBlue bold\">가덕도</p>부산 끝자락에 있는 가덕도는 한적한 어촌 정취를 느낄 수 있는 곳이자 일제강점기 역사를 만날 수 있는 섬이다. 가덕도 초입 정거벽화마을은 마을 곳곳 예쁜 벽화들이 그려져 있어 포토존으로도 인기다. 외양포마을에는 러일전쟁 후 일제가 구축한 군사시설 흔적이 남아 있으며 당시 포진지, 막사, 창고 등의 모습을 살펴 볼 수 있다.\n\n자연과 그 속에 깃든 문화와 역사까지 아우르는 서부산 투어. \n풍경에서 나아가 역사적인 의미도 찾을 수 있는 여행을 원하는 이들에게 추천한다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=431&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

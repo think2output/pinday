@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "place": {
+    "id": "2784363",
+    "name": "부산근현대역사관 별관",
+    "lat": 35.1026438048,
+    "lng": 129.0311727139
+  },
+  "collectedAt": "2026-10-24T09:57:14.190Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:2178"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2784363",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "부산근현대역사관 별관",
+      "relation": "same-place",
+      "originalText": "부산근현대역사관은 일제강점기 시기 건축물인 부산근대역사관(옛 동양척식주식회사, 미국문화원)과 한국 1세대 건축물인 옛 한국은행 부산본부 건물을 그대로 살려 단장한 곳이다. 부산 근현대역사관 별관은 부산 원도심 문화 거점으로 서관, 기록관, 박물관의 기능이 결합된 복합문화공간(라키비움)으로 운영되고 있다. 별관 건물은 근대 건축에 서구양식이 도입되던 시기의 경향을 살필 수 있는 초기 모더니즘 건축양식의 건축물이다. 외벽 중앙에는 넝쿨 문양의 부조로, 창호 주변은 연꽃 모양의 부조로 장식되어 있다. 1층은 서가, 자료검색대, 안내데스크, 인문학 행사 및 공연 공간이며 2층 전시 공간에 마련된 전시 유물과 패널, 정보영상을 통해 해당 시기의 역사·신문 기사·유물·사진·관련 자료 등을 확인하실 수 있습니다. 3층은 사무실, 회의실, 문서고로 이용된다. 살아있는 역사의 장소에서 부산의 근현대사를 보고 느끼고 즐길 수 있는 박물관이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2784363&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:29.221Z",
+      "modifiedAt": "20261021155044"
+    },
+    {
+      "id": "heritage:23-21-0000490000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "구 동양척식주식회사 부산지점",
+      "relation": "nearby-only",
+      "distanceMeters": 9,
+      "coordinates": {
+        "lat": 35.1026406945268,
+        "lng": 129.031276352942
+      },
+      "originalText": "일제시대 일본이 우리나라에 경제적인 수탈을 하기 위해 만든 동양척식주식회사 건물로서 부산지역의 경제수탈에 앞장섰던 본거지였다. 동양척식주식회사는 선진 농법을 전해주고 국토의 효율적으로 이용하여 더욱 잘 살게 해주겠다는 허울좋은 명분 아래 설립된 회사였으나 사실은 조선의 토지를 비롯한 노동력을 착취하기 위한 것이었다. \n 동양척식주식회사 부산지점으로 사용되었던 이 건물은 해방 이후에는 부산에 진주한 미군들의 숙소로 이용되다가 1949년 미문화원으로 개원하였고 1999년에야 비로소 반환되었다. 1920년대에 세워진 이 건물은 철근콘크리트조 건물로 서구양식이 도입될 당시의 건축 경향을 살필 수 있는 몇 남지 않은 자료이다. 또한 처음 지어졌을 당시부터 1999년 반환될 때까지 외세지배의 상징적 의미를 지니고 있는 한국 근대사에서 중요한 역사적 의미를 지닌 건축물이기도 하다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000490000000",
+      "fetchedAt": "2026-10-24T09:52:27.424Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:31-21-0000700000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "구 한국은행 부산본부",
+      "relation": "nearby-only",
+      "distanceMeters": 91,
+      "coordinates": {
+        "lat": 35.1025083657799,
+        "lng": 129.032160387012
+      },
+      "originalText": "구)한국은행 부산본부는 1909년 7월 공포한 대한제국의 「한국은행조례」에 의해 설립된 국책은행인 한국은행 부산지점(일제강점기 조선은행 부산지점)이 있었던 곳이다. 일제강점기에 현 부지에 있었던 조선은행 부산지점 건물은 경성(서울)의 본점과 함께 르네상스 스타일의 외관을 가진 건물로 타츠노카사이 설계사무실에서 설계하여 준공하였으나, 해방 이후인 1963년 옛 건물을 철거하고 지금의 근대식 건축물을 신축하여 사용하였다. \n구)한국은행 부산본부가 위치한 곳은 조선시대 초량왜관 경내에 해당하는 곳이며, 일제강점기 동양척식주식회사 부산지점(현, 부산근대역사관), 식산은행 부산지점, 경남무진주식회사를 비롯한 각종 금융기관과 한국 최초의 공설시장이었던 부평정시장(현,부평시장) 등이 들어서면서 부산의 중심 시가지가 된 대청로에 자리 잡고 있다는 역사성을 가지고 있으며, 대청로 일대에 남아 있는 각종 유․무형의 자산들은 근대도시 부산을 설명할 때 빼놓을 수 없는 매우 귀중한 자산들이다.\n한국전쟁 기간 동안 우리 정부는 두 번의 화폐개혁을 실시하였는데, 모두 한국은행 부산지점에서 시행되었다는 사실에서 한국은행은 물론이고 한국 경제와 한국금융사에서 ‘한국은행 부산본부’가 가지고 있는 역사적 중요성을 확인할 수 있다.\n또한 개항도시인 부산 지역 금융산업을 대표하였던 조선은행 부산지점 건물이 존재했던 장소에 1963년 새롭게 건축된 한국은행 부산지점 건물은 한국건축가 1세대인 이천승 선생이 설계한 건물로 금융건축의 전형적인 평면형식을 갖고 있으며, 근대적 조형과 기능성이 돋보이는 대표적인 금융건물이다. \n이처럼 1963년 건립된 구)한국은행 부산본부 건물 및 부지가 가지고 있는 역사적, 지역적, 경제사적 가치와 의미가 매우 크고 중요할 뿐 아니라 특히, 1963년 당시 건축계에 도입된 선진적인 건축기법이 적용되어 건축사적 가치 또한 매우 높은 건물로  평가된다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000700000000",
+      "fetchedAt": "2026-10-24T09:52:26.524Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0005730000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "대한성공회 부산주교좌성당",
+      "relation": "nearby-only",
+      "distanceMeters": 101,
+      "coordinates": {
+        "lat": 35.1034413299715,
+        "lng": 129.030631578583
+      },
+      "originalText": "대한성공회 부산주교좌성당은 1924년에 지어진 로마네스크양식의 벽돌조 건물로 최초 내부 평면은 1랑식 장방형 평면으로 구성되어 있었으나 1964년 측랑이 증축되어 변형된 2랑식 평면구성을 갖고 있다.\n종탑부의 지붕처마 및 버트레스 상부의 석재장식, 제단 아치의 석재장식 등이 뛰어나며, 종탑의 첨탑형태와 제단 앱스 천장의 석조리브는 국내에서는 매우 드문 사례다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0005730000000",
+      "fetchedAt": "2026-10-24T09:52:27.863Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:23-21-0000510000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산지방기상청",
+      "relation": "nearby-only",
+      "distanceMeters": 246,
+      "coordinates": {
+        "lat": 35.1046988030425,
+        "lng": 129.032177235974
+      },
+      "originalText": "기상청이 생긴 지 100년에 가깝다는 사실만으로도 충분히 기념적 가치 이상의 역사성을 내포하고 있으며, 건축물의 내·외부가 거의 온전히 보존되어 있고, 건축 외관의 형태를 배모양으로 고안하기 위해 수평적 가로줄을 많이 강조했기 때문에 르네상스적 기풍이 보이고 있다. \n 건물 전체를 콘크리트 거푸집으로 시공한 흔적이 보이며, 전면의 타일은 뒤에 다시 시공한 것으로 짐작된다. 특히 내부 수직창의 기술적 여닫이 처리와 천장 몰딩 문양의 거푸집처리는 이 건물의 돋보이는 특징으로 문화유산으로서의 가치가 있는 건물이다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000510000000",
+      "fetchedAt": "2026-10-24T09:52:26.070Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0003270000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 복병산배수지",
+      "relation": "nearby-only",
+      "distanceMeters": 356,
+      "coordinates": {
+        "lat": 35.1057012154713,
+        "lng": 129.032321303711
+      },
+      "originalText": "이 시설물은 성지곡수원지 물을 각 가정에 공급하기 위해 건립하였다. 배수지는 모두 3동으로 구성되어 있으며, 정면 왼쪽 저수 시설 2동은 1910년에 건립하였고, 오른쪽 1동은 1922년에 증축하였다. 1910년의 여과 시설 벽체는 붉은 벽돌로 쌓고 상부는 석재로 마감하였으며, 아치 형태의 석조 문틀로 된 입구 위에는 ‘선경(仙境)의 물처럼 마르지 말라’라는 뜻의 ‘요지무진(瑤池無盡)’이라는 현판이 남아 있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003270000000",
+      "fetchedAt": "2026-10-24T09:52:26.966Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:79-21-0003290000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "부산 구 남선전기 사옥",
+      "relation": "nearby-only",
+      "distanceMeters": 807,
+      "coordinates": {
+        "lat": 35.0994140074141,
+        "lng": 129.023229545368
+      },
+      "originalText": "이 건물은 한국전력주식회사의 전신인 남선전기 사옥으로 사용되었다. 1970년대에는 한국전력 부산지사로 사용하였으나, 한국전력의 조직 개편으로 현재 중부산 지점으로 사용하고 있다. 1층은 화강석 마감으로 사각기둥 형태의 필라스터(pilaster)를 이용하여 출입구를 강조하고, 2층 이상은 타일로 마감하였으며, 위쪽 처마선 아래에는 수평 돌림띠가 둘러져 있다. 부산에서 처음으로 엘리베이터를 설치하였다는 역사성이 있고 내부 구조가 그대로 남아 있는 등 한국 근대 사옥의 모습을 잘 보여 준다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003290000000",
+      "fetchedAt": "2026-10-24T09:52:42.306Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "heritage:23-21-0000560000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "영도대교",
+      "relation": "nearby-only",
+      "distanceMeters": 924,
+      "coordinates": {
+        "lat": 35.0955502464534,
+        "lng": 129.036466414641
+      },
+      "originalText": "영도와 부산을 잇는 연육교인 영도대교는 1932년 3월에 착공하여 1934년 11월에 개통된 길이 214.7m, 폭 18.3m의 우리나라 최초의 연육교이다. 하루 총 6회씩 도개하여 부산의 명물로 자리하였고 1966년 9월 증가하는 차량 통행으로 인하여 도개 기능이 멈추게 되었으나, 2013년 11월 27일에 기존 4차선을 6차선으로 복원․개통하여 매일 오후 2시에 도개를 하고 있으며, 부산의 명소로 옛 명성을 다시 찾고 있다.\n 일제강점기부터 부산시민과 애환을 함께 해 온 영도대교는 8.15해방과 6.25전쟁 이후 생활고에 지친 피난민들이 애환과 망향의 슬픔을 달랬었던 장소였다. 전쟁 당시 영도대교에 가면 친인척을 찾을 수 있을 것이라는 막연한 기대로 영도대교 인근은 피난민으로 가득 메웠고, 이들의 사연을 듣고 상담하는 점집들이 성업하는 등 우리나라 근대사와 함께 해온 구조물인 동시에 근대 부산의 상징적 의미를 갖고 있는 다리이다.\n영도대교의 건설은 부산항 물류장 확충과 간선도로의 개설과 함께 근대 부산의도시발달에서 중요한 사업이었다. 특히 영도는 영도대교의 건설로 인하여 부산 도심과 육로로 연결되고 전차가 개통되는 등 도시 성장의 기폭제가 되었다는 점에서 영도구의 도시 발달사를 증언하는 중요한 역사적 장소이다. \n영도대교는 교량 뿐 아니라 영도대교를 구성하는 건축물들도 건축적인 가치를 보여주고 있다. 교대의 경우 정교하게 다듬어진 화강석으로 바른 층 쌓기를 하여 교대를 형성하고 모서리 돌은 직사각형 화강석으로 모접기 등을 하는 등 정교한 디테일을 갖고 있다. 아울러 교대 좌우측의 화강석 계단, 교량 입구의 교문주와 난간 등은 영도대교의 구성미를 더욱 돋보이게 하고 있으며, 교량 입구 광장인 다리목광장은 영도대교의 얼굴에 해당하는 공간으로 근대 교량의 형식적 특징을 잘 보여주고 있는 부분이다.\n영도대교는 현재 우리나라에 잔존하는 유일한 단엽식 도개교(bascule bridge)로 희소가치가 매우 높은 교량이다. 또한 일반적인 도개교와는 달리 안벽부에 도개장치를 설치하고 있는 등 도개교량의 형식에서도 특이성이 인정되는 등 한국 교량사(토목)에 있어서도 유례가 없어 근대 교량사를 연구하는 데에 대단히 중요한 교량으로 그 보존가치가 매우 높다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000560000000",
+      "fetchedAt": "2026-10-24T09:52:28.275Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+    },
+    {
+      "id": "busan-theme:2178",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산, 기억의 파편을 따라 걷는 다크투어리즘",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산근현대역사관 별관",
+        "review": "pending"
+      },
+      "originalText": "부산의 근현대사를 따라 떠나는 다크투어리즘 관광지, 묵직한 역사의 흔적을 마주하며 기억의 파편을 되새겨 보세요. \n전쟁의 상처가 깃든 이곳에서 교훈을 얻고, 잊지 말아야 할 과거를 함께 기억해요.\n<p class=\"font-size28 colorDarkBlue medium\">일광 광산마을</p>\n강제징용의 역사와 흔적이 담긴 곳, '일광 광산마을'을 소개합니다.\n\n일광 광산마을은 일제강점기의 아픈 역사를 간직한 장소로, 강제징용의 흔적을 그대로 볼 수 있는 곳입니다. 1930년대 일본의 스미토모 광업 주식회사가 구리 자원을 착취하기 위해 개발한 닛코 광산(일광 광산)으로 시작되었는데요. 본격적인 채광은 1937년부터로, 한때 '조선 5대 구리광'으로 불릴 만큼 많은 구리가 생산됐습니다. 1944년부터는 많은 조선인들이 강제로 동원되어 구리 채광 작업을 했고, 일부는 군사 훈련에도 참여해야 했습니다. 당시의 작업 환경은 극히 열악해 '지옥의 일터'로 악명 높았죠.\n\n광산 입구에는 일본인 간부들이 사용했던 일본식 사무실과 적산가옥이 남아 있어 일제강점기의 건축적 흔적을 볼 수 있습니다. 빨래터, 우물가, 공동화장실 등은 강제 징용된 노동자들이 처한 비참한 환경을 상징하며, 그들의 삶의 흔적을 느낄 수 있는 중요한 장소입니다.  폐광으로 인해 마을은 점차 쇠락했지만, 여전히 옛 모습이 남아 있어 일제강점기 선조들의 생활상을 느낄 수 있습니다.  \n\n이곳은 역사적 의미 외에도 핑크뮬리와 억새가 자라는 경관 농업 단지로, 계절마다 아름다운 풍경을 볼 수 있답니다. 자연과 역사가 함께 어우러진 광산마을에서 선조들의 흔적을 느끼며 특별한 시간을 가져보세요.\n<p class=\"list-tit mt\">일광 광산마을</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 기장군 일광읍 원리 663-7</li><li><span>교통정보</span> : 도시철도 부산 동해선 기장역 1번 출구 도보 7분→기장 시장 정류장 버스 환승 182→좌천초등학교 정류장 하차→도보 4분→좌천초등학교 정류장 버스 환승 마을 기장군 8-1→광산입구 정류장 하차→도보 8분 </li><li><span>주차</span> : 주차 가능-주차장은 따로 없으나, 도로변 주차 가능</li><li><span>문의</span> : 051-709-4000</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항 제 1부두</p>\n피란민의 아픔에서 부산의 경제 발전으로, 재건의 시작 '부산항 제1부두'를 소개합니다.\n\n부산항 제1부두는 조선 시대부터 중요한 무역의 요충지였습니다. 1876년 강화도 조약에 따라 개항되었고, 부산항의 발전과 함께 역사적 의미를 더해왔는데요. 일제강점기에는 제1부두가 완공되고, 경부선 철도가 개통되면서 일본의 대륙 침략 거점이자 군수 물자 수송의 중심지로 기능했습니다.\n\n6.25 전쟁 당시 제1부두는 피란민과 유엔군, 원조 물자의 안전한 이동 통로였습니다. 이곳은 피난민들에게는 희망의 상징이었고, 부산 재건의 출발점이었습니다. 또한 북한군과 유엔군 포로 이동의 역사적 장소로도 특별한 의미를 지닙니다. \n\n오늘날 제1부두는 단순한 물류 항구 이상의 의미가 있는데요. 한국의 경제 성장을 이끌며, 현재 부산 신항으로 이어지는 중요한 거점 역할을 하고 있습니다. 과거의 아픔과 희망이 공존하는 이곳은 문화유산으로서 주목받고 있으며, 유네스코 등재 논의도 활발히 이루어지고 있습니다. 또한, 제 1부두의 대형 창고에서는 부산 국제 사진제와 같은 국제 문화 행사들이 열리기도 해 관광과 문화가 어우러지는 장소로서 가치를 더하고 있습니다.\n\n부산항 제 1부두는 희망과 재건의 상징으로, 부산의 정체성과 발전에 깊은 영향을 주고 있습니다. 이곳에서 과거의 흔적을 느끼며 역사적 의미를 되새기는 특별한 시간을 가져보세요.\n\n<p class=\"list-tit mt\">부산항 제 1부두</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 중구 중앙동 4가 15-33</li><li><span>교통정보</span> : 도시철도 부산 1호선 중앙역 2번 출구 도보 9분</li><li><span>주차</span> : 주차 가능</li><li><span>문의</span> : 051-600-4000</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">부산근현대역사관 별관</p>\n국제시장과 보수동책방골목, 임시수도기념관 등이 있는 부산 중구 일대는 부산의 근현대사를 오롯이 품고 있는 살아 있는 역사 교과서입니다. 특히 일제강점기 때 동양척식주식회사로 활용됐던 부산근대역사관은 부산 근현대사의 상징적인 공간으로 부산 역사 기행의 중심입니다.\n복합문화공간으로 변신한 부산근현대역사관 별관으로 지금 함께 떠나보시죠.﻿\n\n다시 태어난 역사적 공간인 부산근현대역사관 별관은 건립부터 현재까지의 역사를 품고 있습니다. 그 시작은 일제강점기 때인 1929년에 동양척식주식회사 부산지점으로 지어진 옛 부산근대역사관입니다. 초기모더니즘 건축양식을 엿볼 수 있는 서구풍의 건물은 해방 전까지 부산의 땅과 바다, 자원을 수탈하는 침략기지로 활용됐고 해방 이후에는 미군의 숙소로 사용되었습니다.\n\n대한민국 정부가 수립된 이후부터는 미국문화원으로 활용됐고 1980년대 민주화운동 과정에선 방화사건을 겪으며 부산근현대사의 산증인이 되었습니다. 1999년 시민에게 건물이 반환된 이후에는 부산근대역사관으로 재탄생했습니다. 그리고 2023년 시민들의 휴식 공간이자 복합문화공간으로 또 한 번 변신했습니다.\n\n2층 '대청마루'로 올라가면 이 건물의 역사와 구조를 알려주는 작은 전시공간을 제일 먼저 만납니다. 건물의 구조를 알 수 있도록 천장을 노출시킨 것도 이색적입니다. 신축 당시의 기술적·시대적 상황에 따라 철근콘크리트 구조와 철골 구조, 철골철근콘크리트 구조 세 가지 방식을 복합적으로 사용한 것을 두 눈으로 직접 확인할 수 있습니다.\n\n부산근현대역사관 별관은 도서관과 기록관, 박물관, 휴식처 등 다양한 기능을 접목한 복합문화공간입니다. 길을 걷다 잠시 들러 땀을 식혀도 좋고. 햇살 좋은 창가에 앉아 느긋하게 책을 읽어도 좋은 공간입니다. 누군가에겐 만남의 장소로. 또 다른 누군가에겐 배움의 장소로 활용될 수도 있습니다. 남녀노소 누구나 원하는 방식으로 공간을 즐기면 그만입니다.\n<p class=\"list-tit mt\">부산근현대역사관 별관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 중구 대청로 104</li><li><span>교통정보</span> : 도시철도 부산 1호선 중앙역 5번 출구→도보 7분</li><li><span>주차</span> : 용두산공원 공영주차장</li><li><span>운영요일 및 시간</span> : 화요일~일요일 09:00~18:00 (입장마감 17:00)</li><li><span>휴무일</span> : 매주 월요일, 1월 1일</li><li><span>홈페이지</span> : <a href=\"https://www.busan.go.kr/mmch/index\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">바로가기</a></li><li><span>문의</span> : 051-607-8000</li></ul>\n<p class=\"font-size28 colorDarkBlue medium\">부산시민공원 역사관</p>\n부산시민공원 역사문화관은 부산시민공원이 탄생하기까지 100여 년의 역사를 전시와 영상을 통해 보여주는 곳입니다. 부산의 아픈 근현대사를 알아볼 수 있는 다양한 전시와 프로그램을 통해, 과거 부산으로의 시간여행을 경험해볼 수 있습니다.\n\n전시관은 크게 기억의 공간 및 제1전시실~제4전시실로 구분돼있습니다. 각 전시관에서 보여주는 부산의 역사를 유심히 살펴보며, 그때의 부산을 생생히 느껴보시길 바랍니다.\n\n<p class=\"font-size20 colorDarkBlue medium\" >기억의 공간</p> 기억의 공간은 1949년 지어진 철근콘크리트 건물로, 과거 미군 장교들이 식사와 연회를 즐기던 곳입니다. 천정에 장식된 미 8군의 마크와 별 장식이 당시의 분위기를 그대로 전달해 주죠. 현재는 부산시민공원의 역사적 배경을 주제로 한 전시 영상을 감상하는 공간입니다.\n\n<p class=\"font-size20 colorDarkBlue medium\" >제1전시실</p> 제1전시실에서는 일제강점기 시절 일본인이 점령했던 부산 범전리·연지리의 일대 농지의 변모 과정을 보여줍니다. 범전동 일대는 오락과 군마 양성의 목적의 서면경마장으로 운영됐다가, 이후 일본군부대 및 임시군속훈련소로 사용된 곳이죠. 전시실에서 범전동 일대의 변화 과정을 살펴보며 역사적 의미를 느껴보세요.\n\n<p class=\"font-size20 colorDarkBlue medium\" >제2전시실</p> 제2전시실에서는 2차 세계대전 후 미군이 한반도에 진입하게 된 과정과 부산기지사령부 ‘캠프 하야리아’를 다룹니다. 군수 물자 공급과 후방 기지로서 캠프 하야리아가 맡은 역할을 유물과 모형으로 생생하게 알아갈 수 있습니다.\n\n<p class=\"font-size20 colorDarkBlue medium\" >제3전시실</p> 제3전시실에서는 캠프 하야리아 남쪽의 자연마을이었던 범전동 본동이 미군부대와 함께 어떻게 변화해갔는지를 보여줍니다. 미군과의 공존 속에서 형성된 마을의 상권과, 호황기 당시 주민들의 생활사를 모형을 통해 엿볼 수 있습니다.\n\n<p class=\"font-size20 colorDarkBlue medium\" >제4전시실</p> 제4전시실에는 시민단체가 펼쳤던 캠프 하야리아부대 부지 반환 운동과 부산시민공원 조성의 역사가 담겨 있습니다. 설명패널과 영상, 인터랙티브 체험공간을 통해 당시의 열정과 노력을 실감 나게 만나보세요.\n\n<p class=\"list-tit mt\">부산시민공원 역사관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 부산진구 시민공원로 73</li><li><span>교통정보</span> : 도시철도 부산 동해선 부전역 2번 출구→도보 14분</li><li><span>주차</span> : 시민공원 주차</li><li><span>운영요일 및 시간</span> : \n화요일~일요일 09:00~18:00</li><li><span>휴무일</span> : 매주 월요일</li><li><span>홈페이지</span> : <a href=\"https://www.busan.go.kr/citizenpark\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">바로가기</a></li><li><span>문의</span> : 051-850-6061</li></ul>\n<p class=\"font-size28 colorDarkBlue medium\">유엔평화기념관</p>\n6.25 전쟁 당시 이야기를 상세하게 공부할 수 있는 곳, 유엔평화기념관을 소개합니다.\n\n유엔평화기념관은 6.25 전쟁의 발발 원인과 전개 과정, 전쟁에 참전한 UN군의 이야기와 현재 유엔의 비전에 이르기까지 폭넓은 내용을 다루고 있습니다. 특히 한반도의 평화를 위해 힘썼던 26개 연합국과 참전용사의 흔적을 마음 깊이 되새길 수 있다는 점에서 역사적 가치가 높죠. 또 부산에 있는 전시관인 만큼, 전쟁 당시 ‘피란수도 부산’의 역할과 의의를 살펴보는 코너도 마련돼 있습니다.\n\n1층에는 6.25 전쟁의 상세한 전개 과정이 담긴 전시 테마와 당시 군수 물품을 그대로 보존해 전시한 공간이 주를 이룹니다. 이곳에서는 진중한 태도로 당시의 상황을 생각해보는 시간을 가져보시길 추천합니다. \n\n2층 전시실은 전쟁 당시 UN의 활약상을 알아보고, UN 참전용사를 기억하는 테마로 구성돼있습니다. UN군이 전쟁에서 사용했던 전시 물품이 전시돼 있어, 참전용사의 흔적을 생생하게 느끼며 그들을 기릴 수 있죠.\n특히 벽면과 바닥을 활용한 매직 아트와 복도에 전시된 시발자동차&실제 군용 레토나가 눈에 띄는데요. 이곳을 방문한 아이들이 우리 역사에 편안하게 접근할 수 있도록 노력한 점이 돋보입니다.\n\n더불어 2층 공간에는 UN키즈존이 조성돼있습니다. 혹여나 아이들이 지루해한다면 이곳에서 장난감 놀이도 하고, 책도 읽으며 분위기로 환기해보세요. \n\n이외 공간에는 UN의 뜻과 의의, 현재 UN의 비전, 유니세프의 역할에 대한 상세한 전시가 있습니다. 또 참전용사에게 메시지를 남기는 평화 메시지존도 조성돼있으니, 감사의 마음을 담아 글을 남겨봐도 좋겠죠?\n\n유엔평화기념관은 유엔기념공원과 가까운 거리에 있어 함께 들르기 좋습니다. 유엔평화기념관에서 전시를 감상한 후, 유엔기념공원에 방문해 전사자들을 추모하는 시간을 가져보면 더욱 뜻깊은 역사 기행이 될 듯합니다.\n\n<p class=\"list-tit mt\">유엔평화기념관</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 남구 홍곡로320번길 106</li><li><span>교통정보</span> : 도시철도 부산 2호선 대연역 5번 출구→대연역.부산은행 정류장 버스 환승 138→유엔공원.부산문화회관 정류장 하차→도보 10분</li><li><span>주차</span> : 주차 가능-기념관 우측 오르막길로 올라오면 연결되는 3층 옥외 주차장</li><li><span>운영요일 및 시간</span> : 화요일~일요일 10:00~18:00 (입장마감 17:30)</li><li><span>휴무일</span> : 매주 월요일(10.17~12.31 리뉴얼 공사로 부분 관람 가능)</li><li><span>홈페이지</span> : <a href=\"https://unpm.or.kr/un2022/main.php\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">바로가기</a></li><li><span>문의</span> : 051-901-1400</li></ul>\n\n<p class=\"font-size28 colorDarkBlue medium\">유엔기념공원</p>\n6.25 전쟁 참전국들의 희생을 기리며 평화를 바라는 마음이 꽃피는 유엔기념공원을 소개합니다. 이곳은 매년 6월 호국보훈의 달이 되면, 전쟁 없는 평화를 염원하는 꽃들이 만발하는 곳입니다. 그 꽃들은 한국전쟁 전사자들을 기억하며, 그들의 숭고한 희생을 되새기는 상징이기도 합니다.\n처음에는 한국전쟁 참전 21개국 11,000위가 봉안되어 있었으나 이후 신원 확인 영령들이 고국으로 돌아가고 현재는 터키, 영국 등 11개국 2,300여 유해가 안장되어 있습니다.\n묘역은 전사자 매장을 위해 유엔군 사령부가 조성하였고, 전국에 가매장 되었던 전몰장병들의 유해를 옮겨와 안장하였습니다. 대한민국은 먼 타국에서 목숨을 잃은 유엔군의 희생에 보답코자 공원을 유엔에 기증했습니다.\n\n공원 정중앙에는 비둘기가 조각된 유엔군위령탑이 있는데요. 안장자 사진과 기념품 등을 전시해 전사자를 추모하고 있습니다. 2006년에 건립된 유엔군 전몰장병 추모명비에는 실종자를 포함한 전사자의 이름이 새겨져 있죠. 꽃피지 못한 고귀한 생명이 평화로운 연꽃으로 승화되기를 바라며 소중한 이름 하나하나에 감사의 마음을 담았습니다.\n\n평화공원으로 이어지는 ‘무명용사의 길’에서는 그분들의 고마움이 마음으로 전해집니다. 유엔군참전 기념탑에 새겨진 글이 그 고마움을 대신해주죠.\n‘세계평화와 자유를 위해 이역만리 낮선 땅에서 공헌한 6.25전쟁 영웅들에게 바칩니다.’\n\n<p class=\"list-tit mt\">유엔기념공원</p><ul class=\"list-con mb\"><li><span>주소</span> : 부산광역시 남구 유엔평화로 93</li><li><span>교통정보</span> : 도시철도 부산 2호선 대연역 5번 출구→대연역.부산은행 정류장 버스 환승 138→유엔공원.부산문화회관 정류장 하차→도보 3분</li><li><span>주차</span> : 주차 가능</li><li><span>문의</span> : 051-625-0625</li></ul>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2178&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:2672",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "설 연휴에도 부산이 좋다",
+      "relation": "same-place",
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "full-name-mention",
+        "placeName": "부산근현대역사관 별관",
+        "review": "pending"
+      },
+      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070692148437.jpg\" alt=\"설 연휴에도 부산이 좋다/지역별 관광 명소 추천\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625418822.jpg\" alt=\"부산의 역사와 풍경, 그리고 맛.원도심-영도 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=1444\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026653483.jpg\" alt=\"부산근현대역사관별관/한 해의 시작에 돌아보는 근현대 부산 아카이브\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=2098\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026654111.jpg\" alt=\"화국반점/간짜장 맛집! 분위기 맛집! 온가족이 함께 즐기는 노포 감성\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026654879.jpg\" alt=\"태종대/다누비열차를 타고 만나는 푸른 바다와 절경\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1440&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026655329.jpg\" alt=\"Drive in 영도/역시 연휴에는 영화지! 감성 넘치는 자동차 극장\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625419982.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625421209.jpg\" alt=\"낙동강과 해안을 따라 떠나는 서부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=333&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026656391.jpg\" alt=\"장림포구/알록달록 아름다운 작은 포구에서 남기는 추억\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=1523&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026656784.jpg\" alt=\"삼락하동재첩국/담백한 재첩국으로 속을 든든하게!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026657278.jpg\" alt=\"을숙도/아이도 어른도 둘러보기 좋은 생태적 보고\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026657934.jpg\" alt=\"다대포 해변/데크 산책로를 따라 걸어보는 부산 일몰 명소 NO.1\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625422088.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625422837.jpg\" alt=\"바다와 숲이 어우러진 동부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2095\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026658656.jpg\" alt=\"송정구덕포 길/깔끔하게 조성된 산책로를 따라 걸어보는 아름다운 송정 해변\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=577&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659099.jpg\" alt=\"영변횟집/신선한 제철 회를 즐길 수 있는 세꼬시 맛집\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659496.jpg\" alt=\"해동용궁사/다 이루어져라! 부산의 바닷가 사찰\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=260&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659965.jpg\" alt=\"아홉산 숲/바람과 햇살 속 산책으로 새해에는 몸과 마음을 건강하게\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625423248.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625423661.jpg\" alt=\"자연따라 맛따라 북부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=396&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026660765.jpg\" alt=\"금정산/새해 다짐과 함께하는 첫 등산은 국내 최초 도심형 국립공원에서!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026661262.jpg\" alt=\"금강공원/케이블카를 타고 올라가 성광 따라 걷는 산책길\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=410&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026661770.jpg\" alt=\"동래파전/일반적인 파전과는 다르다! 동래하면 떠오르는 대표 음식\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=2212\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026662158.jpg\" alt=\"서동미로시장/명절 분위기 가득! 일상과 예술이 공존하는 전통시장\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625424706.jpg\" alt=\"\"></td></tr></table></div>\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2672&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}
