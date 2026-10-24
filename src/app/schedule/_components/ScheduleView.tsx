@@ -24,7 +24,7 @@ function withObject(name: string) {
   return `${name}${code % 28 ? "을" : "를"}`;
 }
 
-export function ScheduleView({ places }: { places: Record<string, SchedulePlace> }) {
+export function ScheduleView({ places, stories }: { places: Record<string, SchedulePlace>; stories: string[] }) {
   const { trip, saved } = useTrip();
   const mounted = useSyncExternalStore(subscribeMounted, () => true, () => false);
   const [selectedDay, setSelectedDay] = useState(1);
@@ -106,7 +106,7 @@ export function ScheduleView({ places }: { places: Record<string, SchedulePlace>
   };
 
   const actionsFor = (id: string, index: number, variant: "inline" | "sheet") => (
-    <PlaceActions day={day} dayTotal={total} index={index} count={ids.length} variant={variant}
+    <PlaceActions placeId={id} hasStory={stories.includes(id)} day={day} dayTotal={total} index={index} count={ids.length} variant={variant}
       onMoveDay={(to) => moveDay(id, to)} onRemove={() => removeFromSchedule(id)}
       onShift={(to) => { reorder(id, to); closeMenu(); }} />
   );

@@ -2,9 +2,15 @@
   "schemaVersion": 1,
   "placeId": "1997221",
   "placeName": "부산 감천문화마을",
-  "status": "ai-draft",
-  "humanReview": "pending",
-  "publishable": false,
+  "status": "approved",
+  "humanReview": {
+    "status": "approved",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": ""
+  },
+  "publishable": true,
   "generatedAt": "2026-10-24T18:28:01.332Z",
   "model": "gpt-6-luna",
   "promptVersion": "docent-draft-v1",
@@ -82,5 +88,8 @@
     "inputTokens": 757,
     "outputTokens": 365,
     "estimatedUsd": 0.000258
+  },
+  "display": {
+    "notes": []
   }
 }

@@ -3,7 +3,13 @@
   "placeId": "126081",
   "placeName": "해운대해수욕장",
   "status": "ai-draft",
-  "humanReview": "pending",
+  "humanReview": {
+    "status": "not-published",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": "해설이 한 문장뿐이라 이번에는 공개하지 않음"
+  },
   "publishable": false,
   "generatedAt": "2026-10-24T18:28:09.226Z",
   "model": "gpt-6-luna",
@@ -53,5 +59,10 @@
     "inputTokens": 809,
     "outputTokens": 102,
     "estimatedUsd": 0.000132
+  },
+  "display": {
+    "notes": [
+      "2023~2024년 소개 글 기준이라 지금과 다를 수 있어요"
+    ]
   }
 }

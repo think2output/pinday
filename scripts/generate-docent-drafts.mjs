@@ -66,6 +66,10 @@ for (const review of args.report ? [] : targets) {
   const evidenceFile = JSON.parse(readFileSync(`data/docent/evidence/${review.placeId}.json`, "utf8"));
   const { sources, problems } = selectedSources(review, evidenceFile);
   if (problems.length || !sources.length) { console.log(`건너뜀 ${review.placeName}: ${problems.join(", ") || "근거 없음"}`); continue; }
+  const existing = `${DRAFT_DIR}/${review.placeId}.json`;
+  if (existsSync(existing) && JSON.parse(readFileSync(existing, "utf8")).humanReview?.status === "approved" && !args.force) {
+    console.log(`건너뜀 ${review.placeName}: 사람 승인된 해설(덮어쓰려면 --force, 다시 검수 필요)`); continue;
+  }
   const { system, user } = buildPrompt(review, sources);
   if (!run) { console.log(`미리보기 ${review.placeName}: 근거 ${sources.length}개, 입력 약 ${system.length + user.length}자`); continue; }
   if (spent >= budget) { console.log(`예산 ${budget}달러에 도달해 중단`); break; }

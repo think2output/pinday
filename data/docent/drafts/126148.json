@@ -2,9 +2,15 @@
   "schemaVersion": 1,
   "placeId": "126148",
   "placeName": "범어사(부산)",
-  "status": "ai-draft",
-  "humanReview": "pending",
-  "publishable": false,
+  "status": "approved",
+  "humanReview": {
+    "status": "approved",
+    "reviewer": "사용자(PM)",
+    "reviewedOn": "2026-10-25",
+    "method": "AI가 문장별 원문 대조 후 요약 보고, 사용자가 요약을 보고 승인",
+    "note": ""
+  },
+  "publishable": true,
   "generatedAt": "2026-10-24T18:27:55.734Z",
   "model": "gpt-6-luna",
   "promptVersion": "docent-draft-v1",
@@ -76,5 +82,8 @@
     "inputTokens": 908,
     "outputTokens": 352,
     "estimatedUsd": 0.000267
+  },
+  "display": {
+    "notes": []
   }
 }
