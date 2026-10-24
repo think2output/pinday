@@ -1,13 +1,13 @@
 # HANDOFF — 지금 상태
 
-마지막 업데이트: 2026-10-25 · 작성: Cursor 에이전트 (일정 화면 → 근처 추천 → 도슨트 초안·화면)
+마지막 업데이트: 2026-10-25 · 작성: Cursor 에이전트 (날씨 대안 화면)
 
 ## 가장 먼저 알아둘 것
 
-- 원격 main **`0d90c48`**(PR #12)에 지금까지 작업이 모두 들어가 있다. 다음 작업은 **최신 `origin/main`에서 새 브랜치**로 시작한다. 이 문서 정리는 `docs/session-wrapup` 브랜치(사용자가 PR로 병합).
-- 완성된 화면: 홈 `/` · 어디 갈까? `/explore` · 언제 갈까? `/schedule`(근처 추천 포함) · AI 도슨트 `/docent` · 내 여행 `/trip`. 아직 없는 화면: 어떻게 갈까? `/route`, 날씨 대안 `/weather`, 취향 테스트, 랜덤 뽑기. 헤더의 `/route`·`/weather`는 누르면 404.
-- 마지막 검증: **테스트 110개·린트·빌드 통과**. Chrome 390px·1440px(별도 프로필)에서 일정·근처 추천·도슨트 화면 확인.
-- 다음 작업은 **사용자가 정한다.** 후보: 도슨트 해설 늘리기 / 어떻게 갈까? / 날씨 대안 / 취향 테스트·랜덤 뽑기. 아래 "다음 작업별 준비 상태" 참고.
+- 원격 main `20ac311`(PR #13)까지 병합됨. 날씨 대안은 **`feat/weather` 브랜치 PR**(사용자 병합 대기). 병합 전이면 이 브랜치가 최신이다. 다음 작업은 최신 `origin/main`에서 새 브랜치로.
+- 완성된 화면: 홈 `/` · 어디 갈까? `/explore` · 언제 갈까? `/schedule`(근처 추천 포함) · **날씨 대안 `/weather`** · AI 도슨트 `/docent` · 내 여행 `/trip`. 아직 없는 화면: 어떻게 갈까? `/route`, 취향 테스트, 랜덤 뽑기. 헤더의 `/route`는 누르면 404(메뉴 정리는 메인 메뉴를 다 만든 뒤에 — 사용자).
+- 마지막 검증: **테스트 118개·린트·빌드 통과**. Chrome 390px·1440px(별도 프로필)에서 날씨 대안 화면 확인(`docs/WEATHER_QA.md`).
+- 다음 작업은 **사용자가 정한다.** 사용자는 다음으로 어떻게 갈까?를 염두에 두고 있음. 후보: 어떻게 갈까? / 도슨트 해설 늘리기 / 취향 테스트·랜덤 뽑기.
 - 로컬 확인 주소는 **http://localhost:3000/**(`127.0.0.1`은 카카오 지도 오류).
 
 ## 사용자와 일하는 법 (이번 세션에서 배운 것)
@@ -25,11 +25,12 @@
 | 홈 `/` | 시안 C '어두운 전시실', 블록형 16개 구·군 지도·여행 기간·이야기 카드. `src/app/_home/`. `docs/HOME_QA.md` |
 | 어디 갈까? `/explore` | 검색·분류·취향순·카카오 지도·묶음 핀·후보함. '날짜에 배치하기' → `/schedule`. `docs/EXPLORE_QA.md` |
 | 언제 갈까? `/schedule` | 날짜 탭(강수 표시)·그날 일정(끌기·키보드 순서)·근처 추천·날짜 없는 곳(가까운 순)·그날 지도(번호·점선). `src/app/schedule/`. `docs/SCHEDULE_QA.md` |
+| 날씨 대안 `/weather` | 날짜 카드(하늘·강수확률·기온)·그날 일정 실내/야외·비 오는 날 야외 장소마다 실내 대안 3곳·바꾸기/되돌리기. `src/app/weather/`. `docs/WEATHER_QA.md` |
 | AI 도슨트 `/docent` | 승인 해설 6곳 목록·상세(근거 번호 펼침·듣기·후보함·일정 넣기·카카오맵 길찾기). `src/app/docent/`, `src/lib/server/docent.ts`. `docs/DOCENT_QA.md` |
 | 내 여행 `/trip` | 요약·초기화·되돌리기·이어서 계획하기. `src/app/trip/` |
 | 여행 저장소 | `src/lib/trip/`(`useTrip()`·`tripActions`). 이번 세션 수정 없음. `src/lib/trip/README.md` |
-| 장소 | 408곳, `data/places/places.json`, `/api/places`. `docs/PLACE_API.md` |
-| 날씨 API | `/api/weather`. `docs/WEATHER_API.md`. 일정 화면은 부산 대표 격자로 호출 |
+| 장소 | 408곳(실내 107), `data/places/places.json`, `/api/places`. `docs/PLACE_API.md`. 실내 예외는 `scripts/build-places.mjs`의 `INDOOR_IDS` |
+| 날씨 API | `/api/weather`. `docs/WEATHER_API.md`. 일정·날씨 대안 화면은 부산 대표 격자로 호출 |
 | 도슨트 데이터 | 근거 408곳(`data/docent/evidence/`). 해설 7곳(`data/docent/drafts/`, 승인 공개 6·비공개 1). 생성 `scripts/generate-docent-drafts.mjs`. `data/docent/README.md` |
 
 ## 화면별 핵심 규칙 (자세히는 각 QA 문서·DECISIONS)
@@ -39,8 +40,13 @@
 - 탐색 폴더의 `kakao.ts`·`mapCoordinates.ts`·`ConditionsEditor.tsx`를 수정 없이 가져다 씀(사용자 승인). 공통 폴더로 옮기려면 먼저 묻기.
 - 끌기는 라이브러리 없이 직접 구현(`DayList.tsx`). 날씨는 예보 전·자료 없음·실패를 '비 없음'으로 바꾸지 않는다(`scheduleModel.ts`).
 - 근처 추천: 직선거리 2km 안·아직 안 담은 곳·최대 3곳, 걸리는 시간은 쓰지 않음. "네 덩어리만" 결정의 사용자 승인 예외.
-- 이동 확인·날씨 확인 버튼은 비활성 '준비 중', 휴대폰에서도 지도 아래(와이어프레임은 하단 고정 — 해당 화면 만들 때 결정).
+- '날씨 확인'은 `/weather?day=N` 링크. '이동 확인'은 비활성 '준비 중'. 둘 다 휴대폰에서도 지도 아래(와이어프레임은 하단 고정 — 어떻게 갈까? 만들 때 결정).
 - ⋯ 메뉴 '이야기 보기'는 승인 해설이 있는 곳만 링크.
+
+**날씨 대안**
+- 비·눈 예보 날에만 대안. 거리 제한 없이 가까운 실내 3곳, 직선 2km 안 이야기 있는 곳 우선, 일정에 있는 곳 제외(사용자 결정).
+- 교체는 '이 장소로 바꾸기'를 눌러야만(`replaceInDay`). '바꾼 장소' 표시·되돌리기는 탭의 sessionStorage에만(`swapMemo.ts`) — 저장소 수정 없음.
+- 일정 화면의 `scheduleModel.ts`·`useScheduleWeather.ts`를 수정 없이 가져다 씀.
 
 **AI 도슨트**
 - 화면은 `publishable: true` + `humanReview.status: approved` + 자동 검사 0건인 해설만 읽는다. 미검수 근거(충분 후보 83곳 포함)를 이야기 있는 장소로 표시하지 않는다.
@@ -54,14 +60,14 @@
 | --- | --- | --- |
 | 도슨트 해설 늘리기 | 근거 408곳, 생성 스크립트, 검수 방식 | 근거 문단을 사람(대조는 AI) 검수로 골라야 함. 대표검수 형식 `data/docent/reviews/` 참고. 해운대·백제병원·석당박물관은 자료 보완 필요. 25의용단처럼 출처 충돌 주의 |
 | 어떻게 갈까? `/route` | 기획 6-6, 와이어프레임 How-* | 대중교통·도보 유료 API는 사용자가 활성화 안 함 → 시작 전 재결정. `.env`에 카카오 REST 키 값은 들어 있음(경로 API 활성화·쿼터는 미확인). 카카오맵 길찾기 링크(공식 URL)는 도슨트에서 사용 중 |
-| 날씨 대안 `/weather` | 날씨 API, 실내/야외 분류(`docs/분류표.md`), `replaceInDay` 규칙 | 실내/야외 예외 장소(전망대 등) 확인. 교체는 사용자가 누를 때만 |
 | 취향 테스트·랜덤 뽑기 | 기획 6-2·6-3, 결과 4종 확정 | 그림 카드 4장 제작 필요 |
 
 ## 사용자 확인이 필요한 것
 
 - `/schedule`·`/docent` 세부 디자인(사용자는 "전체적으로 괜찮다"까지 확인). 도슨트 휴대폰 하단 고정 칸이 높음.
 - 실제 휴대폰에서 ⋮⋮ 끌기 감도, 도슨트 듣기(기기별 한국어 목소리).
-- 헤더의 어떻게 갈까?·날씨 대안 404를 '준비 중' 안내로 바꿀지(공통 컴포넌트 `SiteHeader` 수정이라 먼저 묻기).
+- 날씨 대안에 웰니스(요가 스튜디오·다이빙 풀·스파)도 실내 대안으로 나옴. 뒤로 미루거나 뺄지.
+- 헤더 404 정리는 메인 메뉴를 다 만든 뒤에(사용자). 공통 컴포넌트 `SiteHeader` 수정이라 그때도 먼저 묻기.
 - 홈 이야기 카드에서 승인된 도슨트로 연결할지(지금은 듣기·전체 보기 숨김 상태).
 
 ## 디자인·구현 주의 (계속 유효)
@@ -77,7 +83,7 @@
 
 ## 아직 구현하지 않은 것·미정
 
-- `/route`, `/weather`, 취향 테스트, 랜덤 뽑기, 탐색의 이야기 필터, 도슨트 최근 소식·공식 음성.
+- `/route`, 취향 테스트, 랜덤 뽑기, 탐색의 이야기 필터, 도슨트 최근 소식·공식 음성.
 - 홈 첫 문구, '이번 주 부산 이야기' 선정 기준, 지도 나머지 13칸 그림.
 - 카카오모빌리티, Vercel 연결은 아직. 부산근현대역사관 아카이브는 마지막 기록상 승인 대기.
 
@@ -85,5 +91,5 @@
 
 - 최초 인수: `AGENTS.md`, 이 파일 → `docs/DECISIONS.md` → `docs/기획서.md` → `docs/wireframes/README.md` → `docs/design/README.md`. 다음 에이전트 첫 메시지: `docs/NEXT_AGENT_PROMPT.md`.
 - API 계약: `docs/PLACE_API.md`, `docs/WEATHER_API.md`. 여행 저장소: `src/lib/trip/README.md`. 도슨트 데이터: `data/docent/README.md`.
-- 확인 기록: `docs/HOME_QA.md`, `docs/EXPLORE_QA.md`, `docs/SCHEDULE_QA.md`, `docs/DOCENT_QA.md`. QA 문서는 작성 당시 기록이며, 이후 바뀐 점은 각 문서 맨 위 "이후 변경"에 적었다.
+- 확인 기록: `docs/HOME_QA.md`, `docs/EXPLORE_QA.md`, `docs/SCHEDULE_QA.md`, `docs/WEATHER_QA.md`, `docs/DOCENT_QA.md`. QA 문서는 작성 당시 기록이며, 이후 바뀐 점은 각 문서 맨 위 "이후 변경"에 적었다.
 - 세션 끝에는 검증 결과·남은 문제를 이 파일에 반영하고 커밋. 새 결정만 DECISIONS에 추가. main 직접 push·force push·다른 브랜치 삭제 금지.

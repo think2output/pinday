@@ -1,6 +1,6 @@
 # 언제 갈까? 구현·확인 — 2026-10-25
 
-> 이후 변경(2026-10-25): ⋯ 메뉴의 '이야기 보기'는 승인 해설이 있는 장소만 `/docent/[id]` 링크, 나머지는 '이야기 준비 중'(`docs/DOCENT_QA.md`). PR #10·#12로 main 병합.
+> 이후 변경(2026-10-25): ⋯ 메뉴의 '이야기 보기'는 승인 해설이 있는 장소만 `/docent/[id]` 링크, 나머지는 '이야기 준비 중'(`docs/DOCENT_QA.md`). PR #10·#12로 main 병합. '날씨 확인'은 `/weather?day=N` 링크로 바뀜(`docs/WEATHER_QA.md`).
 
 브랜치 `feat/schedule` (← `origin/main` `3aaeefe`, PR #9 인계 문서 병합 후). 사용자 승인: 탐색의 지도 코드(`kakao.ts`·`mapCoordinates.ts`·`ConditionsEditor.tsx`)는 수정하지 않고 가져다 쓰기, 끌기는 외부 라이브러리 없이 직접 구현.
 

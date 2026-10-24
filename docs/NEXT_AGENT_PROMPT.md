@@ -5,15 +5,15 @@ PinDay 작업을 이어받아줘.
    - docs/HANDOFF.md (지금 상태 · 나랑 일하는 법 · 다음 작업별 준비 상태)
    - docs/DECISIONS.md (정한 것. 기획서와 다르면 이게 우선)
    - docs/기획서.md, docs/wireframes/README.md, docs/design/README.md
-   - 하게 될 작업의 문서: 도슨트면 data/docent/README.md·docs/DOCENT_QA.md, 일정이면 docs/SCHEDULE_QA.md, 길찾기·날씨면 기획서 6-6·6-7과 docs/WEATHER_API.md
-2. git fetch 후 git status·최근 커밋 5개를 확인하고, 최신 origin/main에서 새 브랜치(feat/작업명)를 만들어. 로컬 main이 최신이라고 가정하지 마. docs/session-wrapup 브랜치가 아직 main에 안 들어갔으면 그 문서가 최신이야.
+   - 하게 될 작업의 문서: 도슨트면 data/docent/README.md·docs/DOCENT_QA.md, 일정이면 docs/SCHEDULE_QA.md, 길찾기면 기획서 6-6과 docs/WEATHER_QA.md(일정·날씨 화면 연결), 날씨면 docs/WEATHER_QA.md·docs/WEATHER_API.md
+2. git fetch 후 git status·최근 커밋 5개를 확인하고, 최신 origin/main에서 새 브랜치(feat/작업명)를 만들어. 로컬 main이 최신이라고 가정하지 마. feat/weather 브랜치가 아직 main에 안 들어갔으면 그 문서가 최신이야.
 3. 지금 상태와 이번 작업 범위를 짧게 요약하고, 내가 OK하면 시작해.
 
 ## 지금 상태
-- 완성: 홈, 어디 갈까?(/explore), 언제 갈까?(/schedule, 근처 추천 포함), AI 도슨트(/docent, 승인된 6곳), 내 여행(/trip).
-- 아직 없음: 어떻게 갈까?(/route), 날씨 대안(/weather), 취향 테스트, 랜덤 뽑기. 위쪽 메뉴의 /route·/weather는 지금 404.
-- 마지막 검증: 테스트 110개·린트·빌드 통과.
-- 다음 작업은 내가 정할게. 후보는 도슨트 해설 늘리기, 어떻게 갈까?, 날씨 대안, 취향 테스트야.
+- 완성: 홈, 어디 갈까?(/explore), 언제 갈까?(/schedule, 근처 추천 포함), 날씨 대안(/weather), AI 도슨트(/docent, 승인된 6곳), 내 여행(/trip).
+- 아직 없음: 어떻게 갈까?(/route), 취향 테스트, 랜덤 뽑기. 위쪽 메뉴의 /route는 지금 404(메뉴 정리는 메인 메뉴 다 만든 뒤에).
+- 마지막 검증: 테스트 118개·린트·빌드 통과.
+- 다음 작업은 내가 정할게. 후보는 어떻게 갈까?, 도슨트 해설 늘리기, 취향 테스트야.
 
 ## 나랑 일하는 법
 - 나는 PM이고 코딩 초보야. 쉬운 말로, 짧게, 결론부터 말해줘. 어려운 용어는 풀어서.
