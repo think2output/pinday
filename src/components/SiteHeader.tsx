@@ -28,14 +28,14 @@ export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
       <div className="flex h-13 items-center justify-between lg:h-auto">
         <Link
           href="/"
-          className={`flex items-center gap-1.5 font-display text-[21px] font-extrabold tracking-[-0.045em] lg:text-2xl ${onRoom ? "text-on-room" : "text-ink"}`}
+          className={`flex min-h-tap min-w-tap shrink-0 items-center gap-1.5 font-display text-[21px] font-extrabold tracking-[-0.045em] lg:text-2xl ${onRoom ? "text-on-room" : "text-ink"}`}
         >
           PinDay
           <span aria-hidden="true" className="size-1.5 rounded-full bg-light shadow-glow" />
         </Link>
         <Link
           href={myTripHref}
-          className={`flex min-h-tap items-center px-0.5 text-sm font-semibold lg:hidden ${onRoom ? "text-on-room" : "text-ink"}`}
+          className={`flex min-h-tap min-w-tap shrink-0 items-center px-0.5 text-sm font-semibold lg:hidden ${onRoom ? "text-on-room" : "text-ink"}`}
         >
           내 여행
         </Link>
@@ -51,7 +51,7 @@ export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
               key={item.href}
               href={item.href}
               aria-current={current ? "page" : undefined}
-              className={`flex min-h-tap items-center text-sm lg:text-[15px] ${color}`}
+              className={`flex min-h-tap min-w-tap shrink-0 items-center text-sm lg:text-[15px] ${color}`}
             >
               {item.label}
             </Link>
@@ -60,7 +60,7 @@ export function SiteHeader({ tone = "plain" }: { tone?: "plain" | "room" }) {
       </nav>
       <Link
         href={myTripHref}
-        className={`hidden min-h-tap items-center px-0.5 text-[15px] font-semibold lg:flex ${onRoom ? "text-on-room" : "text-ink"}`}
+        className={`hidden min-h-tap min-w-tap shrink-0 items-center px-0.5 text-[15px] font-semibold lg:flex ${onRoom ? "text-on-room" : "text-ink"}`}
       >
         내 여행
       </Link>
