@@ -82,6 +82,6 @@ Chrome 1440×1000·390×844 확인:
 - 앱 버튼·입력·선택창 44px 크기 유지. 브라우저 실행 예외 없음.
 - 테스트 88개·린트·빌드 통과. 공통 파일 변경 없음.
 
-캡처: 임시 폴더 `pinday-explore-pin-scroll-390.png`·`pinday-explore-pin-scroll-1440.png`, 하단 확인 `pinday-explore-scroll-bottom-390.png`·`pinday-explore-scroll-bottom-1440.png`. 사용자 재확인은 대기.
+캡처: 임시 폴더 `pinday-explore-pin-scroll-390.png`·`pinday-explore-pin-scroll-1440.png`, 하단 확인 `pinday-explore-scroll-bottom-390.png`·`pinday-explore-scroll-bottom-1440.png`. 사용자는 개선 후 대체로 괜찮다고 하고 커밋·push를 요청했다. 탐색 디자인 전체의 최종 확정과는 구분한다.
 
 접속 주소 주의: 사용자 지도 오류를 점검할 때 `127.0.0.1:3000/explore`에서 SDK 오류가 재현됐고 `localhost:3000/explore`에서는 지도 요청과 타일 응답 정상 확인. 사용자도 localhost로 변경 후 표시됨을 확인. 현재 로컬 확인은 `http://localhost:3000`을 사용한다. 두 주소를 같은 등록 도메인으로 가정하지 않는다.
