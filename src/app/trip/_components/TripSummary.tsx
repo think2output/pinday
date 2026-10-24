@@ -4,20 +4,20 @@ import Link from "next/link";
 import { dayCount } from "@/lib/trip/dates";
 import { summary } from "@/lib/trip/rules";
 import type { Trip } from "@/lib/trip/types";
-import { regionName } from "./regions";
+import { regionName } from "../../_home/regions";
 
-export function TripCard({ trip, onReset }: { trip: Trip; onReset: () => void }) {
+export function TripSummary({ trip, onReset }: { trip: Trip; onReset: () => void }) {
   const counts = summary(trip);
   const days = dayCount(trip.startDate, trip.endDate);
   const largestDay = Math.max(1, ...trip.days.map((ids) => ids.length));
   const dots = Math.max(14, Math.min(counts.candidates, 28));
 
   return (
-    <section aria-labelledby="my-trip-title" className="mt-8 bg-bg p-5 text-ink lg:mt-12 lg:grid lg:grid-cols-2 lg:gap-x-16 lg:p-8">
+    <section aria-labelledby="my-trip-title" className="mt-10 text-ink lg:grid lg:grid-cols-2 lg:gap-x-16">
       <div>
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 id="my-trip-title" className="font-display text-xl font-extrabold">내 여행</h2>
+            <h2 id="my-trip-title" className="font-display text-xl font-extrabold">여행 요약</h2>
             <p className="mt-1 text-sm text-ink-muted">
               {trip.regions.length ? trip.regions.map(regionName).join(" · ") : "부산 전체"}
             </p>
@@ -66,7 +66,7 @@ export function TripCard({ trip, onReset }: { trip: Trip; onReset: () => void })
             </li>
           ))}
         </ul>
-        <Link id="home-trip-continue" href={counts.candidates ? "/schedule" : "/explore"}
+        <Link id="trip-continue" href={counts.candidates ? "/schedule" : "/explore"}
           className="mt-6 flex min-h-14 items-center justify-between bg-room px-5 font-display font-bold text-on-room">
           이어서 계획하기 <span aria-hidden="true">→</span>
         </Link>

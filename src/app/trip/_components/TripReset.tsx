@@ -5,9 +5,9 @@ import { summary } from "@/lib/trip/rules";
 import { tripActions } from "@/lib/trip/store";
 import type { Trip } from "@/lib/trip/types";
 
-// 홈 전용 초기화 UI. 저장소의 reset/undoReset을 사용해 지역·기간·취향·후보·일정을 함께 처리한다.
-export function TripReset({ trip, saved, open, onClose, onResetDone }: {
-  trip: Trip; saved: boolean; open: boolean; onClose: () => void; onResetDone: () => void;
+// 내 여행 페이지의 초기화 UI. 저장소의 reset/undoReset으로 여행 정보 전체를 처리한다.
+export function TripReset({ trip, saved, open, onClose }: {
+  trip: Trip; saved: boolean; open: boolean; onClose: () => void;
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const undoRef = useRef<HTMLButtonElement>(null);
@@ -37,7 +37,6 @@ export function TripReset({ trip, saved, open, onClose, onResetDone }: {
 
   const reset = () => {
     tripActions.reset();
-    onResetDone();
     onClose();
     setUndoAvailable(true);
     if (timer.current) clearTimeout(timer.current);
@@ -65,10 +64,9 @@ export function TripReset({ trip, saved, open, onClose, onResetDone }: {
           <p role="status" className="text-sm">여행을 초기화했어요</p>
           <button ref={undoRef} type="button" onClick={() => {
             tripActions.undoReset();
-            onResetDone();
             setUndoAvailable(false);
             if (timer.current) clearTimeout(timer.current);
-            requestAnimationFrame(() => document.getElementById("home-trip-continue")?.focus());
+            requestAnimationFrame(() => document.getElementById("trip-continue")?.focus());
           }} className="min-h-tap shrink-0 px-2 text-sm font-bold text-light">되돌리기</button>
         </div>
       )}

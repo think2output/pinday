@@ -21,10 +21,10 @@ const nightsLabel = (days: number) => (days === 1 ? "당일" : `${days - 1}박 $
 const noop = () => () => {};
 const useMounted = () => useSyncExternalStore(noop, () => true, () => false);
 
-type Props = { trip: Trip; saved: boolean; onRemoveRegion: (region: string) => void; onReset: () => void };
+type Props = { trip: Trip; saved: boolean; onRemoveRegion: (region: string) => void };
 
 // 홈 여행 조건: 어디·언제 + 시작 버튼 (기획서 6-1). 기간은 화면을 떠나지 않고 그 자리의 작은 창에서 바꾼다(4장 이동 규칙 4).
-export function TripConditions({ trip, saved, onRemoveRegion, onReset }: Props) {
+export function TripConditions({ trip, saved, onRemoveRegion }: Props) {
   const mounted = useMounted();
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState({ start: "", end: "" });
@@ -47,7 +47,7 @@ export function TripConditions({ trip, saved, onRemoveRegion, onReset }: Props) 
   const value = "font-display text-base font-bold tracking-[-0.03em] text-on-room lg:text-lg";
 
   return (
-    <div className="flex flex-col">
+    <div id="trip-conditions" className="flex scroll-mt-6 flex-col">
       <div className="flex min-h-tap items-center gap-4 lg:min-h-12 lg:gap-5">
         <span className={label}>어디</span>
         <div className="flex flex-1 flex-wrap items-center gap-x-3.5">
@@ -120,9 +120,9 @@ export function TripConditions({ trip, saved, onRemoveRegion, onReset }: Props) 
             </button>
           </div>
           {saved && (
-            <button type="button" onClick={onReset} className="min-h-tap self-start text-sm text-on-room-muted">
-              새 여행 시작하기
-            </button>
+            <Link href="/trip" className="flex min-h-tap self-start items-center text-sm text-on-room-muted">
+              여행 관리
+            </Link>
           )}
         </div>
       )}
