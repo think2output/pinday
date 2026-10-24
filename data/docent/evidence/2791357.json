@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2791357",
     "name": "화전공원",
     "lat": 35.1056115145,
     "lng": 128.8791061045
   },
-  "collectedAt": "2026-10-24T09:57:15.746Z",
+  "collectedAt": "2026-10-24T10:23:47.081Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2791357&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:30.219Z",
-      "modifiedAt": "20260929155008"
+      "modifiedAt": "20260929155008",
+      "passages": [
+        {
+          "text": "부산시 강서구 화전동에 위치한 공원으로, 부산 시민과 화전산업단지에 근무하는 근로자의 소중한 휴식공간이 되고 있다. 공원 내에 축구장, 운동기구, 산책로 등이 조성되어 있다. 넓은 녹지 공간을 자랑하여 아이들이 뛰어놀기에도 좋다. 조금 더 조용한 자연 속에서 산책을 원한다면 화전공원  방문하는 것을 추천한다.",
+          "characters": 133,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

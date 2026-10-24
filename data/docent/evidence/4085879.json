@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "4085879",
     "name": "러블리가든(사계, 나를심다)",
     "lat": 35.1790829571,
     "lng": 128.9230898324
   },
-  "collectedAt": "2026-10-24T09:57:13.717Z",
+  "collectedAt": "2026-10-24T10:23:40.627Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=4085879&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:05.272Z",
-      "modifiedAt": "20260710163427"
+      "modifiedAt": "20260710163427",
+      "passages": [
+        {
+          "text": "부산 강서구에 위치한 러블리가든(사계, 나를심다)는 유럽 포도를 유기농으로 재배하는 체험형 농장이다. 봄에는 새순과 포도 나무 키우기 체험, 여름에는 포도 나무가 자라 포도가 되어 가는 모습 감상할 수 있으며 다양한 과일 수확 체험을 경험할 수 있다. 가을에는 포도 농장주와 함께하는 도슨트 투어 및 수확 체험, 겨울에는 다양한 만들기 클래스를 운영하며 사계절 내내 자연속에서 몸과 마을은 치유할 수 있다.",
+          "characters": 171,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

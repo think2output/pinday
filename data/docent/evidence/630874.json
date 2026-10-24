@@ -1,24 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "630874",
     "name": "낙동강하구에코센터",
     "lat": 35.1043892335363,
     "lng": 128.945866728608
   },
-  "collectedAt": "2026-10-24T09:57:13.434Z",
+  "collectedAt": "2026-10-24T10:23:39.866Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1183",
-      "busan-theme:1193",
-      "busan-theme:1318",
-      "busan-theme:1320",
-      "busan-theme:1372",
-      "busan-theme:2184",
-      "busan-theme:2835",
-      "busan-theme:2836"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -35,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=630874&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:50.014Z",
-      "modifiedAt": "20260311100340"
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "낙동강하구에코센터는 하구지역의 환경 보전과 이용, 철새도래지 보전과 관리, 자연생태 전시 및 교육, 야생동물 치료 및 보호 등 다양한 업무를 하고 있는 곳으로, 낙동강물이 바다와 어우러지는 지점이며, 세계적인 철새도래지인 을숙도에 있다. 을숙도는 상단부의 을숙도생태공원, 하단부의 을숙도철새공원으로 나뉜다. 낙동강 하류 철새 도래지의 핵심 지역이자 낙동강 하구 생태관광의 중심축으로, 겨울 철새와 하구 습지의 생태를 관찰하기 가장 좋은 장소이다. 낙동강하구에코센터에서는 자체 프로그램을 진행하는 것은 물론, 야생동물치료센터와 탐방체험장, 아미산전망대도 관리하고 낙동강 하구의 인문·생태 정보를 알기 쉽게 전시하며, 다양한 체험 프로그램을 제공한다.",
+          "characters": 287,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1183",
@@ -43,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Impossible? I'm possible",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강과 을숙도가 만나는 낙동강 하구는 철새들의 오랜 낙원이다. 낙동강하구에코센터에선 겨울을 나기 위해 찾아오는 다양한 철새들에 대한 정보를 얻고 망원경으로 직접 관찰할 수도 있다.",
+          "reason": "place-heading",
+          "characters": 79
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -62,9 +71,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "을숙도 가을산책, 서울워커의 부산여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강하구에코센터 가까이에 크고 작은 습지와 함께 걷기 좋은 산책길이 있다. 그 길을 따라 걷다 보면 어느 새 을숙도 철새공원에 도착한다. 이맘 때 쯤이면 습지를 찾아온 겨울 철새와 금빛 물결로 일렁이는 갈대밭이 절정을 이뤄 운치 있는 가을산책을 즐길 수 있다. 그저 천천히 걷는 것만으로도 힐링이 되는 곳, 을숙도 철새공원이다.",
+          "reason": "place-subject",
+          "characters": 137
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -80,10 +99,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-1편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -100,9 +123,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-2편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "을숙도 남단, 함께 걷기 좋은 산책길과 크고 작은 습지 가까이에 낙동강하구에코센터가 있다. 드넓게 펼쳐진 낙동강의 풍경을 배경으로 습지를 찾아온 철새들의 모습을 실시간으로 관찰할 수 있다. 낙동강하구 탐방 체험장을 갖추고 있어 아이들과 함께 을숙도 생태탐방을 할 수도 있다.",
+          "reason": "place-heading",
+          "characters": 117
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -118,10 +151,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "내셔널지오그래픽이 선정한 [2023 세계 최고 여행지 부산] 여행하기",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -138,9 +175,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 하늘 아래, 철새와 함께하는 생태여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강줄기와 남해 바닷물이 하나 되는 곳, 비옥한 토양과 민물 어패류의 생태적 보고, 넓은 지대와 풍부한 먹이 덕에 겨울 철새들이 모여드는 곳, 부산의 아름다운 섬, 을숙도를 찾았습니다. 새가 많고 물이 맑은 섬 을숙도는 우리나라 제1의 철새 도래지로도 유명합니다. 1950년대에는 아시아 최대 철새 도래지로 손꼽히던 곳입니다. 이러한 을숙도에 조성된 낙동강하구에코센터는 을숙도 Zoom-in 이라는 컨셉으로 2024년 5월 재단장하여 문을 열었습니다. 을숙도의 아름다운 사계와 철새를 비롯한 야생동물들을 더욱 흥미 있게 탐조하고 관찰하며 체험할 수 있는 교육 프로그램과 전시가 알차게 운영되고 있죠.",
+          "reason": "place-heading",
+          "characters": 260
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -156,10 +203,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "낙동강에서 바다까지, 부산의 가을을 따라",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },
@@ -175,10 +226,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "[서부산 생태·문화 코스] 자연과 예술이 숨 쉬는 섬, 을숙도 에코-아트 투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "낙동강하구에코센터"
+        ],
         "placeName": "낙동강하구에코센터",
         "review": "pending"
       },

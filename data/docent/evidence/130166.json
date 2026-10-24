@@ -1,23 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "130166",
     "name": "부산시립미술관",
     "lat": 35.1666576947,
     "lng": 129.1370166325
   },
-  "collectedAt": "2026-10-24T09:57:14.244Z",
+  "collectedAt": "2026-10-24T10:23:42.306Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:381",
-      "busan-theme:417",
-      "busan-theme:847",
-      "busan-theme:854",
-      "busan-theme:1154",
-      "busan-theme:1303",
       "busan-theme:1358",
-      "busan-theme:2492",
       "busan-theme:2734"
     ],
     "humanReview": "pending"
@@ -36,17 +30,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=130166&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:31.595Z",
-      "modifiedAt": "20261012150752"
+      "modifiedAt": "20261012150752",
+      "passages": [
+        {
+          "text": "미술인구의 저변 확산과 미술창작의 활성화를 목적으로 하여 개관한 최첨단 감각의 현대적 미술관이다. 여러 장르의 작품 전시와 각종 사회교육 프로그램을 실시하여 일반 시민들에게 다양한 문화향유 기회를 제공하는 열린 미술관을 지향하고 있다. 건물은 지하 2층, 지상 3층으로, 전시실과 수장고, 교육연구실, 사무공간, 야외조각 공원 등이 있다. 전시실은 13개의 전시실과 160석의 강당을 비롯하여 전시의 내용에 따라 내부를 적절하게 쓸 수 있도록 개폐식 구조로 되어 있다. 시립미술관에서는 격년제로 짝수 해에 개최되는 비엔날레 축제의 행사장이며, 1년 내내 기획전, 소장품전, 해외 미술전 등이 열려 시민들에게 예술과의 만남의 기회를 제공한다.",
+          "characters": 277,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:381",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "유니크베뉴_전시시설",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -62,10 +67,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산인문학여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -82,9 +91,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "모두 특색이 달라! 삼색 미술관 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "푸른 잔디와 깔끔한 조화를 이루는 부산시립미술관, 초록빛 앞마당이 먼저 관람객을 반깁니다. 건물의 외관도 마치 예술품처럼 멋있습니다. 외부 전시 작품도 놓치면 안 되니 잔디 정원 한 바퀴 거닐고 입장하시면 어떨까요? 아참! 사전관람예약을 하셔야 관람이 가능해요. 홈페이지를 통해 미리미리 안내사항을 숙지하세요~! 홈페이지를 통해 전시일정을 체크하세요. 전시 기획에 따라 폭넓은 미술문화를 제공하고 있답니다. 또한 시각적 관람 뿐 아니라 청각으로도 작품을 느낄 수 있어요. 오디오 가이드를 통해 작품에 대한 자세한 설명을 들을 수 있으니 참고하세요! 매년 젊은 작가들을 소개하는 전시와 어린이들을 위한 기획전도 열린답니다. 다양한 미술 작품을 경험하며 새로운 시선으로 작품을 즐겨보세요.",
+          "reason": "place-heading",
+          "characters": 296
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -101,9 +120,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 BTS 순례 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "다음은 남준(RM)이가 왔다간 부산시립미술관이에요. 부산시립미술관은 벡스코 역 5번 출구로 나가면 금방 찾을 수 있는데요. 웅장한 외관부터 독특한 입구까지, 사람을 묘하게 끌어들이는 힘을 느꼈어요.",
+          "reason": "place-heading",
+          "characters": 88
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -119,10 +148,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "반짝반짝 빛나는 부산의 밤 - 부산시티투어 브릿지코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -134,33 +167,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산시립미술관",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1303",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "밤의 낭만 안고 떠나는 부산시티투어버스 야경투어 브릿지 드라이브",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -177,9 +195,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜뷔, RM편＞",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "RM 미술에 관심이 많고 미술관을 자주 다니기로 유명하죠~ 부산시립미술관은 RM이 올해를 비롯해 2019년, 2020년에도 방문했던 곳이랍니다! 본관과 별관(이우환 공간)으로 나뉘어 있는 부산시립미술관으로 들어가 볼까요? 본관 입구에 들어서면 바로 티켓을 구매할 수 있습니다. 현재는 코로나19로 인해 한시적 무료 관람을 진행하고 있다고 해요! RM이 방문했던 전시 중 하나인 ＜나는 미술관에 OO하러 간다＞는 2022년 10월 16일까지 본관 3층에서 전시되었고 지금은 새로운 전시가 준비중인 듯합니다. 2층에서 진행되는 ＜모든 것은 서로를 만들어 나간다＞는 부산시립미술관 소장품을 중심으로 부산의 역사에 대해 알아볼 수 있는 전시입니다. 지하 1층 어린이 갤러리에서 진행 중인 ＜각진 원형:김용관＞은 도형을 작품화한 것으로 독특한 도형전시를 감상할 수 있어요. 1층 입구 반대편 문으로 나가면 별관인 이우환 공간으로 갈 수 있는데요. 이곳이 바로 RM의 사인이 있는 곳이랍니다! 사인은 이우환 공간 실내로 들어서면 바로 1층에 있는 카페에 있습니다. 참고로 이우환 공간은 사진 촬영이 금지되어 있으니 미술품에 집중하는 시간을 가져보면 좋을 것 같아요!",
+          "reason": "place-heading",
+          "characters": 456
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -196,9 +224,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "예술이 머무는 순간, 전시로 만나는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "이우환 공간, 외관",
+          "reason": "place-heading",
+          "characters": 8
+        },
+        {
+          "text": "해운대 센텀시티 인근에 위치한 부산시립미술관은 1998년 개관 이후, 부산의 현대미술 흐름을 대표하는 공공 미술관으로 자리 잡아온 예술 공간입니다. 도시적 감각과 예술적 깊이를 동시에 담아내는 이 공간은 시민과 예술, 지역과 세계를 잇는 예술 플랫폼으로 꾸준히 진화해 왔습니다.",
+          "reason": "place-subject",
+          "characters": 120
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },
@@ -215,9 +258,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 K-POP, 「B-POP」 ‘예술’ 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "F1963에서 거친 질감의 예술을 맛보았다면, 이제는 정제된 현대미술의 세계로 빠져볼 차례다. 부산시립미술관은 국내외 현대미술의 흐름을 한눈에 조망할 수 있는 부산 시각 예술의 중심지로, 고요함 속에서 깊은 사유를 즐길 수 있는 매력적인 공간이다. 최근 수많은 K-POP 아티스트들이 전 세계 미술관을 투어하며 영감을 얻고, 이를 자신들의 음악과 비주얼 아트에 녹여내고 있다. 예술과 대중문화의 경계가 허물어지는 지금, 미술관에서의 시간은 단순한 관람을 넘어 내면의 감각을 일깨우는 과정이다. 다양한 현대미술 작품 앞에서 이어폰을 꽂고 신비롭고 몽환적인 분위기의 K-POP 트랙을 감상해 보자. 작품의 여백이 음악으로 채워지고, 평면적인 그림이 입체적인 영상처럼 다가오는 특별한 공감각적 경험을 할 수 있다. (※ 방문 시기 및 리모델링 일정에 따라 야외 조각 공원이나 별관 공간을 활용하는 것도 좋다.)",
+          "reason": "place-subject",
+          "characters": 345
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시립미술관"
+        ],
         "placeName": "부산시립미술관",
         "review": "pending"
       },

@@ -1,20 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2729918",
     "name": "용소웰빙공원",
     "lat": 35.2467,
     "lng": 129.2045
   },
-  "collectedAt": "2026-10-24T09:57:14.930Z",
+  "collectedAt": "2026-10-24T10:23:44.511Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1079",
-      "busan-theme:1140",
-      "busan-theme:1184",
-      "busan-theme:2607"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -31,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2729918&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:58.855Z",
-      "modifiedAt": "20260309093631"
+      "modifiedAt": "20260309093631",
+      "passages": [
+        {
+          "text": "용소웰빙공원은 논밭이 있던 곳에 주택단지가 들어서면서 용도를 다한 저수지를 공원화하는 사업을 진행하며 탄생했으며, 2008년 대한민국 조경대상 장관상을 받은 공원이다. 사계절 내내 자연풍을 느끼며 숲길 산책을 하기에 좋고, 저수지의 잔잔한 물결을 바라보며 휴식하기에도 좋다. 숲으로 아늑하게 둘러싸인 아담한 호수와 다양한 수생식물을 전망대에 올라 바라보면 지친 일상도 잊게 만들어준다. 산책로를 따라 호수를 한 바퀴 도는데 약 30분 정도가 걸리며, 벤치와 흔들의자, 정자, 운동기구 등 휴식공간과 편의시설이 구비되어 있어 많은 주민들에게 사랑받고 있는 공원이다.",
+          "characters": 245,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000400000000",
@@ -47,7 +50,14 @@
       "originalText": "읍성이란 군이나 현의 주민을 보호하고, 군사적·행정적인 기능을 함께 하는 성을 말한다. 기장읍성은 북쪽의 낮은 산과 남쪽의 평지에 걸쳐 만들어졌다.\n성곽의 길이는 약1,000m정도이며, 높이는 4m이다. 평지의 성벽은 바깥과 안쪽 모두 돌로 쌓았으며, 지형이 높은 바깥쪽 성벽은 돌로 쌓았고 안쪽은 흙과 잡석으로 채웠다. 동·서·남문에는 성문을 보호하기 위한 옹성을 둘렀으며, 동문터 근처에는 적대가 있다. 성 안에는 관장이 집무를 보던 동헌을 비롯하여 향사당, 객사들이 있고, 성 밖에는 망풍정, 망루대가 있었으나 현재는 장관청만 남아있다.\n 고려 공민왕 5년(1356)에 성을 쌓았으며, 조선시대에 이르기까지 여러 차례에 걸쳐 보수하였다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000400000000",
       "fetchedAt": "2026-10-24T09:54:59.057Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "읍성이란 군이나 현의 주민을 보호하고, 군사적·행정적인 기능을 함께 하는 성을 말한다. 기장읍성은 북쪽의 낮은 산과 남쪽의 평지에 걸쳐 만들어졌다.\n성곽의 길이는 약1,000m정도이며, 높이는 4m이다. 평지의 성벽은 바깥과 안쪽 모두 돌로 쌓았으며, 지형이 높은 바깥쪽 성벽은 돌로 쌓았고 안쪽은 흙과 잡석으로 채웠다. 동·서·남문에는 성문을 보호하기 위한 옹성을 둘렀으며, 동문터 근처에는 적대가 있다. 성 안에는 관장이 집무를 보던 동헌을 비롯하여 향사당, 객사들이 있고, 성 밖에는 망풍정, 망루대가 있었으나 현재는 장관청만 남아있다.\n 고려 공민왕 5년(1356)에 성을 쌓았으며, 조선시대에 이르기까지 여러 차례에 걸쳐 보수하였다.",
+          "characters": 279,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0001530000000",
@@ -63,17 +73,28 @@
       "originalText": "기장 장관청은 동래부의 장관청(부산광역시지정 유형문화유산)과 함께 전국적으로도 남아 있는 사례가 드문 군관용 관아 건물이다. 조선 중기 이래의 간소한 굴도리식 건물로써 건축사적으로 크게 주목될 뿐 아니라 문화유산적 가치도 뛰어나며, 조선 후기 부산 및 기장 지역 관아 건축의 양상을 보여주는 몇 안 되는 건축 유구(遺構)로 우리나라 동남해안의 전략 요충지였던 기장군의 역사성을 고스란히 담고 있는 소중한 건축 문화유산이다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0001530000000",
       "fetchedAt": "2026-10-24T09:54:59.496Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "기장 장관청은 동래부의 장관청(부산광역시지정 유형문화유산)과 함께 전국적으로도 남아 있는 사례가 드문 군관용 관아 건물이다. 조선 중기 이래의 간소한 굴도리식 건물로써 건축사적으로 크게 주목될 뿐 아니라 문화유산적 가치도 뛰어나며, 조선 후기 부산 및 기장 지역 관아 건축의 양상을 보여주는 몇 안 되는 건축 유구(遺構)로 우리나라 동남해안의 전략 요충지였던 기장군의 역사성을 고스란히 담고 있는 소중한 건축 문화유산이다.",
+          "characters": 182,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1079",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 기장의 숨은 산책 코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "용소웰빙공원"
+        ],
         "placeName": "용소웰빙공원",
         "review": "pending"
       },
@@ -90,9 +111,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "로케이션 인 부산 ＜영화의 거리＞",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "＜영화의 거리＞ 속 도영과 선화가 함께 산책을 한 용소웰빙공원! ‘유럽이야? 한국이야?’ 순간, 유럽에 온 듯 착시현상을 일으키는 이곳은 아는 사람은 알고 모르는 사람은 모르는, 기장의 시크릿 가든이다. 데칼코마니처럼 마주 보고 있는 두 산과 평화로운 호수 그리고 탁 트인 하늘의 조화 그리고 운치를 더하는 배 한척까지. 용소웰빙공원의 아름다운 풍경은 마치 한 폭의 그림 같다. 특히, 오르막길 없이 호수 주변으로 이어지는 나무테크 산책로는 힐링하기에 딱 좋은 곳이다. 청아한 새소리와 물소리를 들으며 한적하고 아름다운 숲길을 걸으면... 이것이야말로 ‘자연일체’! 봄여름가을겨울 색과 멋이 달라져 언제든 찾아가도 좋은 용소웰빙공원에서 마음의 평화를 찾아보자.",
+          "reason": "place-heading",
+          "characters": 284
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "용소웰빙공원"
+        ],
         "placeName": "용소웰빙공원",
         "review": "pending"
       },
@@ -109,9 +140,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Exciting Hidden Spot",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "골짜기 사이로 아담한 호수가 펼쳐진다. 그 위에 떠 있는 작은 배 한 척이 무척 생경하다. 호수를 따라 조성된 숲속 오솔길을 따라 걷다 보면 시시각각 변하는 주변 풍광에 저절로 카메라를 들게 된다.",
+          "reason": "place-heading",
+          "characters": 80
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "용소웰빙공원"
+        ],
         "placeName": "용소웰빙공원",
         "review": "pending"
       },
@@ -127,10 +168,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 요즘 핫해진 가을 명소 추천",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "용소웰빙공원"
+        ],
         "placeName": "용소웰빙공원",
         "review": "pending"
       },

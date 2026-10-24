@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3033280",
     "name": "홍티예술촌",
     "lat": 35.06128744153255,
     "lng": 128.96111191808302
   },
-  "collectedAt": "2026-10-24T09:57:15.722Z",
+  "collectedAt": "2026-10-24T10:23:47.016Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3033280&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:29.582Z",
-      "modifiedAt": "20260305152830"
+      "modifiedAt": "20260305152830",
+      "passages": [
+        {
+          "text": "홍티예술촌은 부산광역시 사하구의 직영 사업소로 부산 지역에 있는 청년 작가들을 위한 창작 거점공간이다. 주요 사업으로 전시공간 지원 사업, 오픈스튜디오, 공공예술 프로젝트를 운영하고 있으며 사하구 주민들에게 문화예술 향유 기회를 제공하기 위해 노력하고 있다. 청년작가들을 위한 개인전, 기획 전시를 통하여 일상생활에서 예술을 쉽게 접할 수 있도록 운영하고 있으며 입주 작가들의 창작공간 지원과 지역 문화, 예술 활동 지원을 위한 다양한 전시와 프로그램을 진행하고 있다.",
+          "characters": 202,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3545977",
     "name": "라보드 우든보트",
     "lat": 35.0926530954171,
     "lng": 129.051455492089
   },
-  "collectedAt": "2026-10-24T09:57:13.710Z",
+  "collectedAt": "2026-10-24T10:23:40.608Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3545977&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:05.051Z",
-      "modifiedAt": "20260406163132"
+      "modifiedAt": "20260406163132",
+      "passages": [
+        {
+          "text": "라보드 우든보트는 4명의 보트빌더 청년들이 직접 제작한 다양한 우든보트를 소형화된 미니어처로 만들어 볼 수 있는 곳이다. 미니 배 원데이 클래스 등 다양한 소품도 함께 만나볼 수 있다. 영도의 상징인 터그보트를 실제 보트 건조공법으로 적용, 축소한 키트를 실제 조립하면서 보트 건조공법은 물론 보트 원리에 대해서도 배울 수 있는 미니 배 원데이 클래스는 친구나 가족과 함께 즐기기에 좋으며, 현재 라보드 우든보트에서 운영하는 카페 안에서 예약 형식으로 체험할 수 있다.",
+          "characters": 196,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

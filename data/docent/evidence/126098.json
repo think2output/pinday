@@ -1,23 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "126098",
     "name": "일광해수욕장",
     "lat": 35.2598,
     "lng": 129.234
   },
-  "collectedAt": "2026-10-24T09:57:15.077Z",
+  "collectedAt": "2026-10-24T10:23:44.974Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:398",
-      "busan-theme:453",
-      "busan-theme:454",
-      "busan-theme:490",
-      "busan-theme:1079",
-      "busan-theme:1180",
-      "busan-theme:1321",
-      "busan-theme:1325"
+      "busan-theme:454"
     ],
     "humanReview": "pending"
   },
@@ -35,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126098&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:05.259Z",
-      "modifiedAt": "20260701105452"
+      "modifiedAt": "20260701105452",
+      "passages": [
+        {
+          "text": "일광해수욕장은 기장군에 위치한 해수욕장으로 기장 8경 중 하나로 꼽힐 만큼 아름다운 곳이다. 모래사장은 이천강과 이천포가 맞닿은 곳에서부터 시작하여 학리 어구까지 마치 원을 이루며 펼쳐져 있다. 백사장의 주위에는 수백 년이 넘은 노송들이 우거져 있었는데 지금은 그 모습이 사라졌다. 그리고 백사장 오른쪽 끝자리에 위치한 학리마을에서는 이름 그대로 학이 노송 위를 무리 지어 날기도 하였으나 현재 그 모습 또한 많이 사라졌다. 이 밖에 백사장 한가운데에 고려 말 정몽주, 이색, 이숭인 세 성인들이 유람하였다고 전해지는 삼성대가 있다. 주변 관광지로는 국수당, 남산봉수대, 황학대 등이 있다.",
+          "characters": 251,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:398",
@@ -43,9 +44,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "멋진 바다풍경과 함께 걷는 갈맷길",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "갈맷길 1코스는 임랑해수욕장에서 송정해수욕장에 이르는 코스이다. 동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장 멋진 코스라고 할 수 있다. 1코스의 초반을 알리는 일광해수욕장은 해안선이 둥글게 말려있는 모습이 꼭 초승달 같은 곳이다. 조용하고 한적한 해수욕장이지만, 웬만한 편의시설은 모두 갖추고 있어 쉬어가기 좋은 해수욕장이다. 파도가 잔잔해 안전한 물놀이를 즐기기에도 적당하다.",
+          "reason": "place-subject",
+          "characters": 171
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -61,10 +72,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해파랑길 부산구간",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -81,9 +96,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화 속 부산을 찾아가는 쏠쏠한 재미",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "영화를 보는 것에서 벗어나 영화 속 인물들의 발자취를 따라 걷는 일, 마치 내가 주인공이 된 듯 그 장면 그 장소에 함께 있는 기분을 느낄 수 있는 것. 영화 촬영의 성지, 부산이라면 가능하다. 기장 아홉산숲은 영화 ＜군도＞의 촬영지다. 빽빽한 대나무 숲은 하정우와 강동원이 액션을 펼치던 곳으로 바람에 스치는 대나무 잎의 소리가 배경음악이 된다. 대나무뿐만 아니라 금강송과 같은 귀한 소나무도 군락을 이루고 있어 산책길로 안성맞춤이다. 흰여울문화마을은 영화 ＜변호인＞의 촬영지로 유명하다. 진우네 담벼락에 쓰인 영화 대사들이 구구절절해서 마음 한구석이 짠해진다. 영화 속 송강호가 찾았던 그 골목을 그대로 따라가면 나지막한 담벼락 넘어 시원하게 트여있는 바다가 눈이 부시다. 남포동 입구의 부산데파트는 영화 ＜도둑들＞의 촬영지다. 40년 이상의 역사를 간직한 이곳은 부산의 근대화를 상징하는 건물이기도 하다. 건물을 한 바퀴 돌다보면 빽빽한 창들 사이를 넘나들며 총격전을 벌이던 배우들의 치열한 음성이 들려오는 듯하다. 영화 ＜국제시장＞에서 6.25 피란민들의 생생한 삶을 보여준 국제시장. 주인공 덕수의 고모가 운영하던 꽃분이네의 인기는 지금도 여전하다. 꽃분이네 외에도 수많은 상점과 먹거리가 있으며, 부산 상인들의 넘쳐나는 정을 느낄 수 있다. 영화 ＜올드보이＞하면 만두가 가장 먼저 떠오를 것이다. 차이나타운에는 배우 최민식이 만두를 먹었던 중화요리집이 있다. 김이 모락모락 오르는 군만두를 비롯해 윤기가 좌르르 흐르는 자장면까지. 제대로 된 중화요리를 맛보고 싶다면 차이나타운을 추천한다. 수영만 요트경기장은 많은 영화의 촬영지로 유명하다. 영화 ＜무방비도시＞에서 손예진이 일본으로 도주하다 남자주인공에게 쫓기는 클라이맥스 장면의 배경도 이곳이다. 부산 영화 촬영소도 위치해있어 많은 영화인들의 사랑을 받는 곳이다. “고마해라~ 마이 무따 아이가~” 영화 ＜친구＞의 명대사는 모르는 사람이 없다. 영화에서 네 친구의 단단한 우정을 열정적으로 보여준 곳이 바로 범일동 철도건널목, 구름다리이다. 배우 장동건과 유오성이 교복을 입고 열심히 달리던 그 장소, 영화 속 그 장면처럼 포즈나 한번 잡아볼까. 영화 ＜파랑주의보＞에서 수호와 수은이 함께 걸었던 낭만적인 장소가 미포철길이다. 바다를 배경으로 쭉 뻗은 철길이 아름다운 이곳. 레트로 감성 물씬 풍기는 미포철길 위에 낭만 추억이 하나 둘 쌓여 간다. 해운대 끝자락에 있는 작은 포구 미포는 영화 ＜해운대＞ 속 횟집이 있던 장소이자, 바닷물이 밀려오던 철길건널목이 있던 장소이다. 영화에서는 쓰나미로 인해 아수라장이 되었던 현장이지만, 실제로는 하늘과 바다가 만나 예쁜 수평선을 선사하는 곳이다. 기장의 일광해수욕장은 영화 ＜보안관＞의 주인공 대호의 고향이다. 고향 ‘기장’을 수호하기 위한 그의 노력이 코믹하면서도 눈물겨운 영화다. 대호의 시선으로 기장 일광해수욕장을 바라다보면 잔잔한 감동의 물결이 밀려오는 듯하다.",
+          "reason": "place-subject",
+          "characters": 1112
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -100,9 +125,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "동해선 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "동해선의 마지막 일광역에서 10여분만 걸어가면 둥근 항아리 같은 해안선이 바다를 감싸고 있는 일광해수욕장에 닿을 수 있다. 수심이 얕고 잔잔한 일광해수욕장은 특히 가족단위로 안전하게 물놀이를 즐기기 좋은 곳이다. 개장 시즌에는 다양한 해양레포츠를 경험할 수 있는 곳이며, 캠핑할 수 있는 공간이 따로 마련되어 있어 바닷가 캠핑의 매력 또한 즐길 수 있다.",
+          "reason": "place-heading",
+          "characters": 150
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -118,10 +153,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 기장의 숨은 산책 코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -137,10 +176,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -157,9 +200,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "일러스트로 만나는 부산의 바다",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산광역시 기장군 일광면 삼성3길 17 쪽빛바다와 아늑한 해안선이 한 폭의 그림 같은 해변에서 캠핑하며 찾는 망중한의 여유",
+          "reason": "place-heading",
+          "characters": 52
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },
@@ -175,10 +228,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "그동안 몰랐던 인생스폿-부산이색등대 편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
         "placeName": "일광해수욕장",
         "review": "pending"
       },

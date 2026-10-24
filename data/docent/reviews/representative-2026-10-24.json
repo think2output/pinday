@@ -5,7 +5,7 @@
   "humanReview": "pending",
   "generationPerformed": false,
   "status": "drafting-scope-proposed",
-  "limitation": "장소 연결·일부 출처 충돌을 확인한 대표 표본 검수. 408곳 전체 검수나 사람의 최종 승인 아님. 원본 수집 자료와 자동 집계를 변경하지 않음.",
+  "limitation": "장소 연결·일부 출처 충돌을 확인한 대표 표본 검수. 408곳 전체 검수나 사람의 최종 승인 아님. 파일 전체 해시는 최초 검수 시점 기록이며 수집 규칙 v2 적용 시에는 출처별 원문 해시와 선택 문단을 검사함. 원문은 보존하고 자동 집계는 별도 갱신함.",
   "counts": {
     "scoped-draft-candidate": 7,
     "supplement-needed": 2,
@@ -34,7 +34,8 @@
       "excludedSources": [
         {
           "sourceId": "tourapi:126814",
-          "reason": "독립운동 기념관이라는 설명이 국가유산청·부산시 설명과 충돌"
+          "reason": "독립운동 기념관이라는 설명이 국가유산청·부산시 설명과 충돌",
+          "originalTextSha256": "b0119259d9751455f34bee5351ae299e6a5f218c6965634481da53baea767d68"
         }
       ],
       "notes": [
@@ -72,7 +73,8 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:1363",
-          "reason": "조계문·대웅전·삼층석탑을 국보로 서술. 적어도 조계문은 공식 국가유산포털의 보물 지정과 충돌하므로 글 전체를 초안 입력에서 제외"
+          "reason": "조계문·대웅전·삼층석탑을 국보로 서술. 적어도 조계문은 공식 국가유산포털의 보물 지정과 충돌하므로 글 전체를 초안 입력에서 제외",
+          "originalTextSha256": "95c0d1088a2e490042135f72387457b83930e4ed247e00ddd0bbfec3eda7d728"
         }
       ],
       "notes": [
@@ -110,15 +112,18 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:846",
-          "reason": "다른 전망대를 소개하며 감천문화마을을 비교 대상으로 언급. 직접 해설 근거에서 제외"
+          "reason": "다른 전망대를 소개하며 감천문화마을을 비교 대상으로 언급. 직접 해설 근거에서 제외",
+          "originalTextSha256": "87574382334c534cc7462d2983af1fbf7c02bf3ac4ef4a5ac1d76fea81f3531b"
         },
         {
           "sourceId": "busan-theme:857",
-          "reason": "태그를 제거한 본문에는 감천문화마을 이름이 없음. HTML 속성 언급으로 연결됨"
+          "reason": "추가 확인으로 정정: 본문에 감천 문화마을도 아니고라는 부정·비교 언급이 있음. 감천문화마을 자체 설명이 아니므로 제외(기존 속성만 언급이라는 이유를 바로잡음)",
+          "originalTextSha256": "5094daba1ea64e19eb203add29102b9a9b7158a0ca87381f09ca0100e32e5a00"
         },
         {
           "sourceId": "busan-theme:1218",
-          "reason": "본문 텍스트가 사실상 없고 이미지 속성·코스 링크 중심"
+          "reason": "본문 텍스트가 사실상 없고 이미지 속성·코스 링크 중심",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
         }
       ],
       "notes": [
@@ -156,7 +161,8 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:309",
-          "reason": "모노레일 현재 체험 안내가 최신 공식 경사형 엘리베이터 안내와 맞지 않음. 원문 전체를 초안 입력에서 제외"
+          "reason": "모노레일 현재 체험 안내가 최신 공식 경사형 엘리베이터 안내와 맞지 않음. 원문 전체를 초안 입력에서 제외",
+          "originalTextSha256": "bb0f77d22fbda999e3813eb2eaa29ceb8e83c4f93a053dfbadc0c28978b8c72b"
         }
       ],
       "notes": [
@@ -193,15 +199,18 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:795",
-          "reason": "해당 문단의 중심은 미포이며 해수욕장을 비교·위치 기준으로 언급. 미포의 특징을 해수욕장 전체로 옮기지 않음"
+          "reason": "해당 문단의 중심은 미포이며 해수욕장을 비교·위치 기준으로 언급. 미포의 특징을 해수욕장 전체로 옮기지 않음",
+          "originalTextSha256": "50798857a29bceebeeb65125270871599bf98d47ef6da0292c670515f04dd0b6"
         },
         {
           "sourceId": "busan-theme:1218",
-          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족"
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
         },
         {
           "sourceId": "busan-theme:2617",
-          "reason": "2025~2026 겨울 행사 일정은 2026-10-24 기준 현재 안내에 재사용 불가"
+          "reason": "2025~2026 겨울 행사 일정은 2026-10-24 기준 현재 안내에 재사용 불가",
+          "originalTextSha256": "749a4dc6ca1d2d71cfb3d8581ddbbba200364516275214c751b47834d13b31db"
         }
       ],
       "notes": [
@@ -235,7 +244,8 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:1218",
-          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족"
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
         }
       ],
       "notes": [
@@ -268,11 +278,13 @@
       "excludedSources": [
         {
           "sourceId": "busan-theme:1184",
-          "reason": "복천박물관은 다른 명소의 위치·주차장 안내로 언급될 뿐이라 해설 근거로 제외"
+          "reason": "복천박물관은 다른 명소의 위치·주차장 안내로 언급될 뿐이라 해설 근거로 제외",
+          "originalTextSha256": "912793ec633688cf9452840e730ddfe220b9c65410b2cd58d56019e5e93de363"
         },
         {
           "sourceId": "busan-theme:1218",
-          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족"
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
         }
       ],
       "notes": [

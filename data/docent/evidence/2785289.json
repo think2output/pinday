@@ -1,20 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2785289",
     "name": "감지해변",
     "lat": 35.06,
     "lng": 129.0775
   },
-  "collectedAt": "2026-10-24T09:57:12.969Z",
+  "collectedAt": "2026-10-24T10:23:38.731Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:254",
-      "busan-theme:452",
-      "busan-theme:1155",
-      "busan-theme:1414"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -31,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2785289&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:33.577Z",
-      "modifiedAt": "20260911164059"
+      "modifiedAt": "20260911164059",
+      "passages": [
+        {
+          "text": "부산 태종대 옆에 자리한 감지해변은 길이 270m, 폭 40m의 크기에 부산에서는 보기 힘든 조약돌이 깔린 아기자기한 해변이다. 수려한 경관과 바다 위로 드리운 일몰이 아름다워 뷰 포인트로 각광받고 있는 곳이다. 도심에서 30분 정도의 거리에 있어 접근성이 좋다. 각양각색의 다이빙 포인트가 많아 스킨스쿠버 다이빙을 즐기러 오는 다이버들에게 많은 사랑을 받는 곳이기도 하다. 감지해변의 해안선을 따라 약 3㎞의 길이로 조성된 감지해변 산책로는 어린이를 동반해도 무리 없을 정도로 경사가 완만하고, 야생초 꽃밭은 청소년들의 자연학습장으로 더할 나위 없이 좋다. 산책 후 태종대 유원지 부설주차장에 자리 잡은 조개구이촌에서 즐기는 바다 내음 가득한 신선한 조개구이도 빼놓지 말아야 할 코스이다.",
+          "characters": 295,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:254",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "걷기만 해도 힐링, 절영해안산책로",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감지해변"
+        ],
         "placeName": "감지해변",
         "review": "pending"
       },
@@ -57,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감지해변"
+        ],
         "placeName": "감지해변",
         "review": "pending"
       },
@@ -77,9 +88,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "태고의 신비가 느껴지는 태종대 비밀의 숲",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "태종사에서 내려오면 태종대 일주도로와 만난다. 오른쪽으로 가면 곧장 태종대 유원지 입구로 향하고 왼쪽으로 가면 영도등대와 전망대를 거쳐 유원지 입구로 갈 수 있다. 시간이 넉넉하다면 왼쪽으로 방향을 잡고 걸으면서 중간에 만나는 영도등대와 전망대를 함께 둘러보자. 유네스코 지질공원으로 지정될 만큼 아름다운 태종대의 해안 풍경을 만날 수 있는 코스다. 유원지 입구에서 왼쪽 길을 따라 내려가면 곧장 감지해변에 닿는다. 태종대에 있는 여러 개의 몽돌해변 중 하나로 탁 트인 전망과 푸른 바다가 인상적인 곳이다. 감지해변에서 유람선을 타면 바다에서 태종대를 살펴볼 수도 있다. 해변가에 있는 조개구이촌에서 파도소리를 들으며 소주 한 잔 기울이는 낭만도 놓치지 말자.",
+          "reason": "place-heading",
+          "characters": 281
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감지해변"
+        ],
         "placeName": "감지해변",
         "review": "pending"
       },
@@ -95,10 +116,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "드라마 촬영지 순례(ft.재벌집 막내아들)",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감지해변"
+        ],
         "placeName": "감지해변",
         "review": "pending"
       },

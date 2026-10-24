@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2763832",
     "name": "오륜대전망대",
     "lat": 35.248301730142344,
     "lng": 129.11309852862306
   },
-  "collectedAt": "2026-10-24T09:57:14.839Z",
+  "collectedAt": "2026-10-24T10:23:44.227Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:843"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2763832&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:55.398Z",
-      "modifiedAt": "20260211081009"
+      "modifiedAt": "20260211081009",
+      "passages": [
+        {
+          "text": "부엉산 정상에 있는 오륜대전망대는 오륜새내마을(수원지마을)에서 500m(약 20분)를 올라가면 전망대가 나온다. 전망대에 올라가면 회동수원지 전경과 땅뫼산, 한반도 모양 지형의 회동호, 멀리 해운대와 장산까지 바라다 보이는 전경이 아름다운 곳이다. 오륜대의 명칭은 삼강오륜을 갖춘 다섯 명의 노인이 경치를 바라보던 곳이라는 설에서 유래되었다고 한다. 오륜대 전망대에서 바라보는 호수와 산세는 가히 절경이라 할 만하다. 전망대에는 관망할 수 있는 데크가 마련되어 있으며 회동호에 비친 아름다운 산봉우리와 절벽들은 선경을 이루는 곳이다. 회동수원지에는 회동수원지 둘레길, 땅뫼산 황토숲길, 오륜대 전망대 등 다양한 관광지가 산재되어 있는 곳이다.",
+          "characters": 283,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:843",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "안녕한 부산 안녕한 언택트 힐링",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "오륜대전망대"
+        ],
         "placeName": "오륜대전망대",
         "review": "pending"
       },

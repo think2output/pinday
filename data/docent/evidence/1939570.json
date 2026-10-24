@@ -1,24 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1939570",
     "name": "임랑해수욕장",
     "lat": 35.3159730180485,
     "lng": 129.262056351708
   },
-  "collectedAt": "2026-10-24T09:57:15.087Z",
+  "collectedAt": "2026-10-24T10:23:44.996Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:398",
-      "busan-theme:453",
-      "busan-theme:789",
-      "busan-theme:1180",
-      "busan-theme:1201",
-      "busan-theme:1212",
-      "busan-theme:1321",
-      "busan-theme:2787"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -35,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1939570&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:05.471Z",
-      "modifiedAt": "20260309102540"
+      "modifiedAt": "20260309102540",
+      "passages": [
+        {
+          "text": "임랑해수욕장은 부산 기장군에 위치한 곳이다. 이곳은 백설 같은 백사장, 즉 모래사장이 1㎞ 이상 넓게 깔려 있다. 백사장 주변에는 노송이 즐비하여 병풍처럼 푸른 숲을 이루고 있다. 이에 따라 옛사람들도 이곳 임랑천의 맑은 물에서 고기잡이하면서 놀다가 밤이 되어 송림 위에 달이 떠오르면 사랑하는 님과 함께 조각배를 타고 달구경을 하면서 뱃놀이를 즐겼다고 한다. 오늘에 와서는 이곳을 아름다운 해수욕장으로 단장하였다. 해수욕장은 여름에 지역의 주민과 외지인들에게 즐거운 휴식의 장소로 알려져 있다. 이곳에는 해수욕장뿐만 아니라 인근의 자연산 횟집들이 즐비하고 있어 언제든지 방문하여도 자연의 아름다움과 맛의 멋을 즐길 수 있다.",
+          "characters": 268,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:31-21-0000420000000",
@@ -51,7 +50,14 @@
       "originalText": "묘관음사 오여래탱은 다보여래(多寶如來), 묘색신여래(妙色身如來), 광박신여래(廣博身如來), 이포외여래(離怖畏如來), 김로왕여래(甘露王如來) 등 다섯여래를 그린 탱화로, 영가천도 시에 경내에 내어 거는 불화이다. 묘관음사의 다섯 불입상의 전체적인 모습이 아주 흡사하다.\n 견본채색의 족자 형태로 그려졌던 각각의 화심들이 최근 1폭씩의 액자 형태로 개조된 채 재표구 되어져 있다. 화기란(畵記欄)은 원위치를 상실한 채 따로 액자 속에 보관되어 있다.\n 원 불화의 채색은 은은한 흔적이나 현재는 진하고 조잡한 색채를 군데군데 덧칠해 놓았다. 붓 선의 필선도 원래 필선은 가늘고 유연하나 보수된 필선은 굵고 조잡하며, 원래의 형상과는 다른 모습으로 필선처리 된 곳도 여러 군데 발견된다. \n 한 액자 속에 표구된 화기에서는 화원의 이름인 유성(有性)과 낙정(樂淨)이 표기되어 있어, 이 오여래탱을 그린 화사임을 알 수 있다. 유성은 18세기 통도사, 쌍계사, 봉정사, 개심사, 운문사 등의 불화를 제작하기도 한 유명한 화사이다.  \n 묘관음사 오여래탱은 화기와 그림이 분리되고 작품에 덧칠된 색채와 필선은 원래의 필선과 색채의 가치를 다소 떨어뜨리고 있으나, 18세기 경상도 지역에서 활약한 유성 화사의 작품의 일부분이란 점, 부산 지역에서 조선후기 오여래탱이 보고된 적이 없다는 점 등을 고려할 때 18세기 영남 지역 화사 연구 및 오여래탱 연구에 자료적 가치가 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000420000000",
       "fetchedAt": "2026-10-24T09:54:08.728Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "묘관음사 오여래탱은 다보여래(多寶如來), 묘색신여래(妙色身如來), 광박신여래(廣博身如來), 이포외여래(離怖畏如來), 김로왕여래(甘露王如來) 등 다섯여래를 그린 탱화로, 영가천도 시에 경내에 내어 거는 불화이다. 묘관음사의 다섯 불입상의 전체적인 모습이 아주 흡사하다.\n 견본채색의 족자 형태로 그려졌던 각각의 화심들이 최근 1폭씩의 액자 형태로 개조된 채 재표구 되어져 있다. 화기란(畵記欄)은 원위치를 상실한 채 따로 액자 속에 보관되어 있다.\n 원 불화의 채색은 은은한 흔적이나 현재는 진하고 조잡한 색채를 군데군데 덧칠해 놓았다. 붓 선의 필선도 원래 필선은 가늘고 유연하나 보수된 필선은 굵고 조잡하며, 원래의 형상과는 다른 모습으로 필선처리 된 곳도 여러 군데 발견된다. \n 한 액자 속에 표구된 화기에서는 화원의 이름인 유성(有性)과 낙정(樂淨)이 표기되어 있어, 이 오여래탱을 그린 화사임을 알 수 있다. 유성은 18세기 통도사, 쌍계사, 봉정사, 개심사, 운문사 등의 불화를 제작하기도 한 유명한 화사이다.  \n 묘관음사 오여래탱은 화기와 그림이 분리되고 작품에 덧칠된 색채와 필선은 원래의 필선과 색채의 가치를 다소 떨어뜨리고 있으나, 18세기 경상도 지역에서 활약한 유성 화사의 작품의 일부분이란 점, 부산 지역에서 조선후기 오여래탱이 보고된 적이 없다는 점 등을 고려할 때 18세기 영남 지역 화사 연구 및 오여래탱 연구에 자료적 가치가 있다.",
+          "characters": 542,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:31-21-0000460000000",
@@ -67,17 +73,28 @@
       "originalText": "불자는 삼이나 짐승의 털을 묶어서 자루 끝에 맨 것으로 원래는 모기 등의 벌레를 쫓는데 쓰는 생활용구이나, 불가에서는 수행자가 마음의 티끌과 번뇌를 털어내는 상징적 의미의 불교 용구이다. 불교식으로는 불(拂) 또는 불진(拂塵)으로 불린다. \n불가에서는 흰 말의 꼬리털로 만든 백불(白拂)을 귀하게 여기며 조사(祖師) 영정에 지물로 그리는 경우가 많다. 자루에는 장식으로 흔히 용의 문양을 새기기도 한다. 불자를 지물로 삼는 뜻은 신상의 악한 장애나 환란을 없애기 위해서라고 한다. 중국에서는 선종의 장엄구로 선승의 문답 시에 즐겨 사용하기도 하였으며 전법(傳法)의 증표로 사용되기도 하였다. \n묘관음사 불자는 짐승의 흰 털을 유제(鍮製)의 줄로 촘촘히 엮은 것으로 털이 빠지지 않게 세벌로 엮어 수공이 뛰어나다. 나무의 막대는 장식이 없으나 손잡이 부분에 도포 띠와 같은 수술을 매어 장식하였다. 혜명(慧明, 法號-慧月)선사의 유품으로 숫 사자의 갈기털이라고 하나 확인할 수는 없다. \n이 불자는 조선말기에서 일제강점기 사이에 제작된 것으로 보이는 유물이나 공예적 수법이 우수하며 소장 연기가 명확하고 보존 상태가 양호할 뿐 아니라, 또한 수장자의 전법 관계를 알 수 있고 현재 남아 있는 예가 드문 문화유산자료이다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000460000000",
       "fetchedAt": "2026-10-24T09:54:09.156Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "불자는 삼이나 짐승의 털을 묶어서 자루 끝에 맨 것으로 원래는 모기 등의 벌레를 쫓는데 쓰는 생활용구이나, 불가에서는 수행자가 마음의 티끌과 번뇌를 털어내는 상징적 의미의 불교 용구이다. 불교식으로는 불(拂) 또는 불진(拂塵)으로 불린다. \n불가에서는 흰 말의 꼬리털로 만든 백불(白拂)을 귀하게 여기며 조사(祖師) 영정에 지물로 그리는 경우가 많다. 자루에는 장식으로 흔히 용의 문양을 새기기도 한다. 불자를 지물로 삼는 뜻은 신상의 악한 장애나 환란을 없애기 위해서라고 한다. 중국에서는 선종의 장엄구로 선승의 문답 시에 즐겨 사용하기도 하였으며 전법(傳法)의 증표로 사용되기도 하였다. \n묘관음사 불자는 짐승의 흰 털을 유제(鍮製)의 줄로 촘촘히 엮은 것으로 털이 빠지지 않게 세벌로 엮어 수공이 뛰어나다. 나무의 막대는 장식이 없으나 손잡이 부분에 도포 띠와 같은 수술을 매어 장식하였다. 혜명(慧明, 法號-慧月)선사의 유품으로 숫 사자의 갈기털이라고 하나 확인할 수는 없다. \n이 불자는 조선말기에서 일제강점기 사이에 제작된 것으로 보이는 유물이나 공예적 수법이 우수하며 소장 연기가 명확하고 보존 상태가 양호할 뿐 아니라, 또한 수장자의 전법 관계를 알 수 있고 현재 남아 있는 예가 드문 문화유산자료이다.",
+          "characters": 475,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:398",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "멋진 바다풍경과 함께 걷는 갈맷길",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -93,10 +110,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해파랑길 부산구간",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -112,10 +133,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 탐구생활: 영화에 나온 이곳, 부산 어디야?",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -132,9 +157,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산에 있는 7개 해수욕장 중 가장 북단에 있다. 해운대나 광안리에 비하면 작고 소박한 해수욕장이지만 그래서 한적하고 여유롭다. 어선이 정박해 있는 포구와 물고기 모양의 등대도 볼거리.",
+          "reason": "place-heading",
+          "characters": 79
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -150,10 +185,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "마음껏 뛰어노시개~ 댕댕이와 함께 부산여행!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -169,10 +208,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "로맨틱 기장 드라이브",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -189,9 +232,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "일러스트로 만나는 부산의 바다",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산광역시 기장군 장안읍 임랑리 갈매기 노니는 소박한 해수욕장에서 가족과 함께 낚시 힐링 제대로",
+          "reason": "place-heading",
+          "characters": 41
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },
@@ -208,9 +261,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "해운대 말고 여기 어때요? 올여름 가볼 만한 부산 해수욕장 3곳",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "Q2. 2026년 부산 해수욕장 개장 기간은 언제인가요? A. 해운대해수욕장은 6월 26일~9월 15일, 송정해수욕장은 6월 26일~8월 31일, 광안리·송도·다대포·일광·임랑해수욕장은 7월 1일~8월 31일까지 개장합니다.",
+          "reason": "place-subject",
+          "characters": 105
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "임랑해수욕장"
+        ],
         "placeName": "임랑해수욕장",
         "review": "pending"
       },

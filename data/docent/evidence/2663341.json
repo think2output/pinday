@@ -1,33 +1,20 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2663341",
     "name": "부산시민공원",
     "lat": 35.1655426683,
     "lng": 129.0558397915
   },
-  "collectedAt": "2026-10-24T09:57:14.260Z",
+  "collectedAt": "2026-10-24T10:23:42.354Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:307",
-      "busan-theme:353",
       "busan-theme:356",
-      "busan-theme:466",
-      "busan-theme:468",
-      "busan-theme:491",
       "busan-theme:791",
-      "busan-theme:854",
       "busan-theme:1015",
-      "busan-theme:1182",
-      "busan-theme:1186",
-      "busan-theme:1306",
-      "busan-theme:1358",
-      "busan-theme:1372",
-      "busan-theme:1771",
-      "busan-theme:1823",
-      "busan-theme:2178",
-      "busan-theme:2713"
+      "busan-theme:1186"
     ],
     "humanReview": "pending"
   },
@@ -45,7 +32,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2663341&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:32.051Z",
-      "modifiedAt": "20260917135621"
+      "modifiedAt": "20260917135621",
+      "passages": [
+        {
+          "text": "부산시민공원은 기억, 문화, 즐거움, 자연, 참여라는 5가지 주제로 조성되었다. 부산의 새로운 공공 경관이자 치유와 휴식, 그리고 새로운 가능성이 축적되는 공간으로, 그중 공원 중앙에 자리한 하야리아 잔디광장이 가장 넓다. 공원 내에는 공원역사관, 공원안내소, 분수, 광장, 어린이놀이시설 등과 카페, 편의점, 화장실 등의 편의시설이 갖추어져 있다. \n부산시민공원은 부산 시민들과 외국인들도 편하게 방문하여 휴식을 취할 수 있는 공원이다.",
+          "characters": 191,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:307",
@@ -53,9 +47,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 유채꽃명소 추천, 노란 꽃들의 절정",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 동래구에 위치한 온천천 시민공원은 도심 한복판을 가로지르는 생태하천을 간직한 공간이다. 봄철이면 벚꽃, 유채꽃, 영산홍이 만개해 명품 산책로가 돼 준다. 특히 색색 꽃망울이 하천에 반영을 만드는 장면은 온천천 시민공원에서 놓쳐선 안 될 장면이다. 온천천 시민공원의 또 다른 백미는 야간에 즐기는 유채꽃 풍경이다. 카페거리에서 바라 본 유채꽃과 벚꽃이 무드등과 조화를 이루는 몽환적 아름다움은 부산의 밤을 더 없이 아름답게 만든다.",
+          "reason": "place-heading",
+          "characters": 186
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -72,9 +76,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "여긴 꼭 가야해! 아이와 함께 가기 좋은 곳",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "아이와 함께 연날리기, 비누방울놀이 하기, 모래놀이 하기, 뽀로로 만나기, 책읽기, 놀이터에서 놀기... 끝도 없이 이어지는 이 모든 것을 부산시민공원에서 한방에 해결할 수 있다. 아이들에게 즐거운 기억만을 선물해 주는 아주 특별한 공원이다.",
+          "reason": "place-heading",
+          "characters": 105
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -91,9 +105,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "걷는 곳곳 힐링, 나무와 함께 하는 화지산 치유숲길",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "어린이대공원에서 출발하여 화지산 치유숲을 거쳐 부산 시민공원까지, 초록의 자연을 눈에 담으며 몸과 마음을 가다듬는 트레킹에 나선다. 화지산과 이어진 백양산 자락에 위치한 어린이대공원은 성지곡 수원지를 중심으로 싱그러움 가득한 자연림을 만끽할 수 있는 곳이다. 다양한 종의 크고 작은 수목들이 빽빽이 들어차 있다. 울창하게 자란 수목들 덕에 마치 이곳은 부산의 도심이 아닌 것 같다. 강원도 깊은 산자락 어디쯤을 걷고 있는 기분을 느끼며 본격적으로 탐방을 시작한다. 어린이대공원에서 화지산을 향해 걷는 길은 평평한 흙길의 연속이다. 빼곡한 송림 사이로 편안한 차림의 등산객들이 제법 보인다. 사실, 화지산은 등산을 목적으로 오르는 산이라기보다 뒷동산에 더 가까운 모습이다. 그 덕에 누구나 쉽게 산에 오르며 치유숲을 즐길 수 있는 곳이다. 초록이 우거진 숲길 걸으며 상쾌한 공기를 한껏 들이마신다. 벌써 치유가 시작된 걸까. 발걸음이 점점 가벼워지는 듯하다. 화지산 정상으로 오르는 방향으로 접어들자 이리 저리 휜 소나무군락이 멋진 광경을 선사한다. 셀 수 없이 많은 이 소나무들은 언제부터 이렇게 자리했던 것일까. 바람에 실려 오는 솔향기를 음미하며 감사함을 전한다. 여기저기 떨어진 솔방울 하나도 조심조심 비켜가니 곧 정상을 알리는 표지석이 보인다. 정상을 찍었으니 이제 내려갈 차례다. 부산시민공원으로 가는 길을 보여주는 이정표가 반갑다. 얼마 지나지 않아 피톤치드향 가득한 편백숲을 만난다. 이 곳에서는 쭉 뻗어 올라간 나무 사이로 불어오는 바람이 시원해 점점 더 느리게 걷게 된다. 아예 자리를 잡고 잠시 쉬어가도 좋겠다. 시민공원이 더욱 가까워진 곳에서 천연기념물 배롱나무를 본다. 뜨거운 여름날에 꽃을 피우기 시작해 백일 동안을 화려하게 지내는 배롱나무. 꽃이 필 무렵 다시 오자 약속하고 발걸음을 옮긴다. 화지산에서 부산시민공원으로 이어지는 다리로 접어든다. 일명 에코브릿지. 낮에는 사람이, 밤에는 동물이 이동하는 생태통로이다. 사람과 동물의 평화로운 공존을 위해 노력하는 다리로구나. 에코브릿지를 통해 도착한 부산시민공원은 일제강점기와 미군주둔기를 지나 100년 만에 시민들에게 돌아온 땅으로 의미가 크다. 공원 정중앙 광활한 잔디광장을 중심으로 자연, 문화, 놀이가 한데 어울린 테마형 공원으로 치유트레킹의 마지막을 장식한다. 공원을 가로지르는 전포천을 거닐며 마음에 여유를 충전한다. 메타세과이어 길, 플라타너스 숲길, 동백나무 미로정원이 눈을 맑게 해준다. 대형분수에서 쏟아지는 시원한 물줄기가 조금 남았을지 모를 피로감을 날려버린다. 푸른 잔디 위에서 뛰어노는 아이들의 맑은 웃음소리가 귓가를 간질거린다. 이 즐거운 공간이 100년 동안이나 우리 땅이 아니었다니. 지난 역사는 아픔을 간직하고 있지만 우리가 그 기억을 지우지만 않는다면 오욕의 역사도 치유될 수 있지 않을까.",
+          "reason": "place-subject",
+          "characters": 1073
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -110,9 +134,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "펫트립",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산의 중심가에 위치하고 있는 부산시민공원은 애견인들에겐 이미 대표적인 산책 코스로 알려져 있다. 센트럴파크라는 별명을 가지고 있을 정도로 위치 뿐 아니라 규모도 상당하다. 잘 조성된 산책로를 거닐며 흙냄새, 풀냄새도 맡고 친구들과 반갑게 뛰어놀 수도 있으니 반려견들의 스트레스를 한방에 날려버릴 수 있는 최적의 장소이다.",
+          "reason": "place-heading",
+          "characters": 139
+        },
+        {
+          "text": "시원한 강바람이 불어오는 곳에서 반려견과 함께 걷고 싶다면 동래구에 위치한 온천천시민공원이 딱이다. 강변을 따라 향긋한 풀내음 맡으며 한가로이 산책하는 강아지들이 서로 조우하며 반기는 예쁜 모습에 견주들도 덩달아 행복해진다.",
+          "reason": "place-heading",
+          "characters": 98
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -129,9 +168,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "자전거로 즐기는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산의 대표 도심하천인 온천천을 따라 조성된 온천천시민공원 자전거도로는 온천천의 매력을 흠뻑 느끼며 편안하게 달릴 수 있는 코스다. 봄철 벚꽃길 라이딩이 아름다운 곳이기도 하지만, 사계절 내내 자전거를 즐길 수 있는 공간이다. 온천천 카페거리도 잘 조성돼 있어 자전거를 타다 휴식과 낭만을 즐기기에도 안성맞춤이다.",
+          "reason": "place-heading",
+          "characters": 135
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -148,9 +197,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "도시철도 1호선 타고 누비는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부전역에서 5분 정도 걸으면 도착 할 수 있는 부산시민공원은 과거 미군부대로 사용되던 부지가 시민을 위한 공원으로 재탄생한 공간이다. 공원 내에는 85만 그루가 넘는 나무가 자리해 있으며 남문에서 바로 보이는 호수에서는 시간마다 음악분수를 즐길 수 있다.",
+          "reason": "place-heading",
+          "characters": 108
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -167,9 +226,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "우중산책",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "평소 피크닉을 즐기는 가족들, 반려견과 산책하는 시민들로 가득한 부산시민공원은 비가내리면 잠시 주춤해집니다. 너무 한적해서 광활해 보이기까지 한 시민공원에서 비를 만나 더욱 싱그러워진 나무와 꽃들을 만납니다. 잘 정돈된 도심 속 자연이 주는 편안함, 그 속에서 평화로운 힐링을 즐길 수 있답니다. 비 오는 날의 운치 또한 한가득 내어주는 곳이기도 합니다. 보도블록으로 깔끔하게 정돈된 산책로 덕에 우중산책의 불편함이 전혀 없습니다. 질척임 1도 없는 안전한 산책로를 맘껏 즐겨보세요. 해바라기길, 대나무길, 데크길 등 다양한 테마의 산책로가 지루할 틈을 주지 않아요. 돌 틈 사이 피어오른 이름 모를 야생화, 나무를 타고 오르는 담쟁이넝쿨까지, 작은 것들 하나하나 세심하게 살필 수 있습니다. 이것이 바로 우중산책의 묘미 아닐까요? 비 내리면 고민 말고 부산시민공원으로!",
+          "reason": "place-heading",
+          "characters": 329
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -185,10 +254,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 BTS 순례 코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -205,9 +278,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "야외 독서 명당",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 도심의 중심에 위치해 접근성이 매우 뛰어난 부산시민공원이 대표적인 야외 독서 명당이랍니다. 평소에도 산책 겸 피크닉 겸, 자연과 함께 하고픈 사람들이 자주 찾는 곳이기도 하지요. 울긋불긋 단풍 옷 갈아입기 시작한 부산시민공원은 풍성한 갈대와 선명한 야생화 풍경까지 더해 최고의 가을 낭만을 보여주고 있습니다. 넓은 잔디광장, 마음에 드는 파라솔 찾아 그 아래 피크닉 매트 하나 깔고 앉으면 책 읽을 준비 완료! 햇살도 좋고, 바람도 시원하고… 가을은 독서의 계절이 맞습니다^^ 자연의 소리 벗 삼아 빠져드는 독서 삼매경, 자족하는 행복한 일상이 이곳에 있습니다. 실내에서 조용히 책 읽는 시간을 보내고 싶다면 공원 내 숲 속 북 카페에 들러보세요. 예쁜 기와지붕 아래 통 유리창이 돋보이는 아늑한 공간입니다. 책장에는 다양한 종류의 책들이 가득 채워져 있답니다. 시민공원이 한눈에 들어오는 창가에 앉아 읽고 싶은 책 마음껏 골라 읽기도 가능해요!",
+          "reason": "place-heading",
+          "characters": 357
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -223,10 +306,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Visit Taste",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -243,9 +330,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "삼원색 RGB 찾아 인증샷",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산진구에 위치하고 있는 부산시민공원은 부산을 대표하는 ‘초록색’ 여행지로 4계절 내내 푸른 모습을 맘껏 느낄 수 있는 곳입니다. 공원 내에는 110만 그루의 나무와 부전천, 전포천이 흐르는 자연에 가장 가까운 형태의 공원을 보여주고 있습니다. 특히 시민공원 중심부에 위치하고 있는 하야리야 잔디광장은 축구장 6배 규모를 자랑하는 넓은 공간으로 시민들의 휴식처를 제공하고 있습니다. 덕분에 봄이면 봄, 여름이면 여름, 그리고 가을과 겨울까지 4계절 내내 피크닉, 산책 등 다양한 형태로 시민공원을 즐기는 사람들이 점점 많아지고 있습니다. 부산시민공원은 장벽과 장애가 없는 공원을 지향하는 곳으로 문턱이 없는 출입구, 무장애 데크길, 안내표지판 등 남녀노소 누구나 방문하더라도 공원을 맘껏 즐길 수 있도록 조성하였습니다. 또한 365일 24시간 내내 안전한 공간이 될 수 있도록 CCTV와 치안센터, 안전지킴이 센터를 운영하여 이용객의 안전까지 보장하는 여행지입니다. 다양한 꽃과 나무를 만날 수 있는 시민공원은 단순히 걷고 주변을 둘러보는 것으로 끝나는 것이 아닌 정자, 호수, 미로정원 등을 통해서 사색을 즐기며 소중한 추억을 담아갈 수 있는 곳으로 조성되었습니다. 덕분에 하루를 여행하기 좋은 곳으로 알려져 있으며 SNS 속에서는 #부산피크닉명소 #부산힐링명소 #BTS_부산 등 도심 속 아름다운 자연공원으로 많은 사랑을 받는 곳이 바로 ‘부산시민공원’입니다. 공원을 걸으며 오솔길에서 잠시 쉬기도 하고 호수를 바라보며 아무 생각 없이 시간을 보내기도 좋습니다. 도시락만 준비하면 완벽한 피크닉이 되는 부산시민공원에서 나만의 소중한 시간을 즐겨보는 건 어떨까요?",
+          "reason": "place-heading",
+          "characters": 632
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -261,10 +358,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "뜨거운 햇살 속 싱그러운 여름 꽃밭을 찾아서",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -280,10 +381,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜뷔, RM편＞",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -300,9 +405,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "내셔널지오그래픽이 선정한 [2023 세계 최고 여행지 부산] 여행하기",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "군부대와 공원. 정반대에 놓여있는 느낌의 두 단어다. 하지만 군부대가 공원으로 다시 태어난 곳이 있으니, 바로 부산시민공원이다. 눈앞에 펼쳐진 아름다운 풍경 속에서 지나온 시간의 흔적을 본다. 일제강점기부터 미군 하야리아 부대, 그리고 부산시민공원으로 이어진 이곳, 하야리아 부대에 남아있던 나무전봇대를 재활용한 기억의 기둥이 높이 솟아 있다. 부산시민의 품으로 힘겹게 돌아온 공원이 오랜 기간 미군부대에 강제점유 당한 세월이 있었음을 기억하고 되새기는 공간이다. 그래서 더욱 소중하고 아름다운 공원이다.",
+          "reason": "place-heading",
+          "characters": 220
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -318,10 +433,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "겨울빛 부산여행, 인생샷 포토존을 가다!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -338,9 +457,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "봄의 한가운데, 겹벚꽃 다발 아래서 즐기는 낭만",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "시민공원 북문 ‘숲속 북카페’ 테라스에는 풍성하게 피어난 커다란 겹벚꽃 나무 한 그루가 있습니다. 무게 덕에 낮게 피는 겹벚꽃 송이와 카페 지붕이 조화롭게 어우러져 있습니다.",
+          "reason": "place-heading",
+          "characters": 74
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -357,9 +486,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산, 기억의 파편을 따라 걷는 다크투어리즘",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산시민공원 역사문화관은 부산시민공원이 탄생하기까지 100여 년의 역사를 전시와 영상을 통해 보여주는 곳입니다. 부산의 아픈 근현대사를 알아볼 수 있는 다양한 전시와 프로그램을 통해, 과거 부산으로의 시간여행을 경험해볼 수 있습니다.",
+          "reason": "place-heading",
+          "characters": 103
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },
@@ -375,10 +514,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 K-POP, 「B-POP」 ‘낭만’ 코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "시민공원"
+        ],
         "placeName": "부산시민공원",
         "review": "pending"
       },

@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2782765",
     "name": "곰내연밭",
     "lat": 35.2954092493,
     "lng": 129.1695450043
   },
-  "collectedAt": "2026-10-24T09:57:13.076Z",
+  "collectedAt": "2026-10-24T10:23:38.997Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2782765&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:41.659Z",
-      "modifiedAt": "20250325104359"
+      "modifiedAt": "20250325104359",
+      "passages": [
+        {
+          "text": "부산에서 여름에 가볼 만한 곳으로 인기가 많은 곳이다. 부산 기장군에 있으며, 철마중리연꽃공원이라고도 불린다. 연꽃 개화 시기는 7월부터 8월 사이라 이 시기에 방문하면 가득 핀 연꽃을 볼 수 있다. 연꽃, 연잎과 함께 개구리나 다양한 곤충들도 볼 수 있어 어린이들과 함께하기 좋다. 근처에는 산책하기 좋은 곰내재 숲 속 쉼터도 있고, 연잎이나 연을 재료로 하는 식당도 있다. 또한 여름과 어울리는 행사나 청정농산물 홍보행사 등 다양한 행사를 진행하는 곳이다.",
+          "characters": 193,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

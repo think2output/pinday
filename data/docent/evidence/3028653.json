@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3028653",
     "name": "고은사진미술관",
     "lat": 35.16330193334533,
     "lng": 129.14120332934948
   },
-  "collectedAt": "2026-10-24T09:57:13.060Z",
+  "collectedAt": "2026-10-24T10:23:38.959Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:847"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3028653&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:41.230Z",
-      "modifiedAt": "20260305154008"
+      "modifiedAt": "20260305154008",
+      "passages": [
+        {
+          "text": "고은사진미술관은 부산 해운대에 위치한 사진전문미술관이다. 국내외의 사진 작품 전시를 기획하며, 창의적이고 미래 지향적인 신진작가를 발굴 지원한다. 또한 사진 문화의 대중화를 위하여 출판 사업과 열린 문화예술 공간의 역할을 담당하고 있다. 문화예술에 대한 순수한 사랑과 열정으로 설립된 고은문화재단과 고은사진미술관은 사진 문화 발전과 한국 사진예술의 활성화를 위한 구심점이 되어 사진예술의 대중화에 앞장서고 있다.",
+          "characters": 181,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:847",
@@ -36,33 +42,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "모두 특색이 달라! 삼색 미술관 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "해운대의 푸른 파도를 느낄 수 있는 곳에 사진과 문화예술에 대한 열정이 엿보이는 고은사진미술관이 있습니다. 고은사진미술관은 부산 해운대에 위치한 지방 최초의 사진전문미술관이라고 해요! 사진을 사랑하는 분들이라면 꼭 들러야할 곳이랍니다! 고은사진미술관 또한 사전예약제로 운영되며 현장등록은 필수입니다! 국내외 수준 높은 사진작품들이 있으니 눈 크게 뜨고 관람해 보세요. 사진 속에는 현실이 있고 때론 그 현실보다 더 사실적인 힘을 가지고 있을 때가 있습니다. 작가의 다양한 시선으로 포착된 작품 속 소중한 의미를 재발견하는 특별한 시간을 가져보세요. 고은사진미술관 모바일앱을 통한 도슨트 서비스로 작품에 대한 자세한 설명을 들을 수 있어요. 개인 이어폰은 필참입니다!",
+          "reason": "place-heading",
+          "characters": 288
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "고은사진미술관"
+        ],
         "placeName": "고은사진미술관",
         "review": "pending"
       },
       "originalText": "예술작품은 어떤 상황에서 마주하느냐에 따라 매우 다른 느낌으로 다가와 많은 새로운 생각을 불러일으킵니다. 날이 좋아서, 날이 좋지 않아서, 날이 적당해서 떠날 수 있는 부산 미술관 투어, 함께 가보실까요?\n<p class=\"font-size28 colorDarkBlue medium\">부산시립미술관</p>푸른 잔디와 깔끔한 조화를 이루는 부산시립미술관, 초록빛 앞마당이 먼저 관람객을 반깁니다. 건물의 외관도 마치 예술품처럼 멋있습니다. 외부 전시 작품도 놓치면 안 되니 잔디 정원 한 바퀴 거닐고 입장하시면 어떨까요?\n아참! 사전관람예약을 하셔야 관람이 가능해요. 홈페이지를 통해 미리미리 안내사항을 숙지하세요~! \n홈페이지를 통해 전시일정을 체크하세요. 전시 기획에 따라 폭넓은 미술문화를 제공하고 있답니다. 또한 시각적 관람 뿐 아니라 청각으로도 작품을 느낄 수 있어요. 오디오 가이드를 통해 작품에 대한 자세한 설명을 들을 수 있으니 참고하세요!  매년 젊은 작가들을 소개하는 전시와 어린이들을 위한 기획전도 열린답니다. 다양한 미술 작품을 경험하며 새로운 시선으로 작품을 즐겨보세요.\n\n주소 부산광역시 해운대구 APEC로 58\n전화 051-744-2602\n홈페이지 <a href=\"http://art.busan.go.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">http://art.busan.go.kr/</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">고은사진미술관</p>해운대의 푸른 파도를 느낄 수 있는 곳에 사진과 문화예술에 대한 열정이 엿보이는 고은사진미술관이 있습니다. 고은사진미술관은 부산 해운대에 위치한 지방 최초의 사진전문미술관이라고 해요! 사진을 사랑하는 분들이라면 꼭 들러야할 곳이랍니다! 고은사진미술관 또한 사전예약제로 운영되며 현장등록은 필수입니다! 국내외 수준 높은 사진작품들이 있으니 눈 크게 뜨고 관람해 보세요.\n사진 속에는 현실이 있고 때론 그 현실보다 더 사실적인 힘을 가지고 있을 때가 있습니다. 작가의 다양한 시선으로 포착된 작품 속 소중한 의미를 재발견하는 특별한 시간을 가져보세요. 고은사진미술관 모바일앱을 통한 도슨트 서비스로 작품에 대한 자세한 설명을 들을 수 있어요. 개인 이어폰은 필참입니다!\n\n주소 부산광역시 해운대구 해운대로 452번길 16\n전화 051-746-0055\n홈페이지 <a href=\"http://www.goeunmuseum.kr/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">http://www.goeunmuseum.kr/</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">서면미술관</p>이제 우리가 작품이 될 시간입니다. 아름다운 공간미술 속으로 들어가 작품을 완성해보는 시간을 서면미술관에서 만들어보세요. 친구와 혹은 연인과 함께 멋진 인생 사진을 남길 수 있는 서면미술관, 분기별 다른 테마로 새로운 옷을 갈아입습니다. 전시장 내 사진촬영은 가능하지만 다른 관람객에게 피해주지 않도록 꼭! 무음카메라를 이용해주세요.\n전시공간에는 다양한 작품과 함께 포토존이 마련되어 있습니다. 몽환적인 분위기로 각 작가들의 방마다 개성 있는 작품들을 감상하는 재미가 있어요. 미술관 곳곳에 전시된 유니크한 작품과 글귀들이 마음을 두근거리게 한답니다! 어디에도 없는 새로운 전시문화를 느끼고 싶다면 서면 미술관으로 오세요.\n\n주소 부산광역시 부산진구 동천로 58\n전화 051-805-0555\n홈페이지 <a href=\"https://www.instagram.com/smma.official/\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://www.instagram.com/smma.official/</a>\n\n\n",
       "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=847&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "고은사진미술관",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",

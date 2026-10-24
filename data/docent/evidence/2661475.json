@@ -1,23 +1,19 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2661475",
     "name": "회동수원지(회동수원지 둘레길)",
     "lat": 35.2573,
     "lng": 129.1108
   },
-  "collectedAt": "2026-10-24T09:57:15.772Z",
+  "collectedAt": "2026-10-24T10:23:47.167Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:472",
       "busan-theme:843",
       "busan-theme:1000",
-      "busan-theme:1186",
-      "busan-theme:1207",
-      "busan-theme:1324",
-      "busan-theme:1407",
-      "busan-theme:2725"
+      "busan-theme:1186"
     ],
     "humanReview": "pending"
   },
@@ -35,17 +31,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2661475&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:31.088Z",
-      "modifiedAt": "20261007171941"
+      "modifiedAt": "20261007171941",
+      "passages": [
+        {
+          "text": "회동수원지는 ‘금정회동호’라고도 불리는 곳이다. 부산광역시 금정구 회동동, 선동 등 5개 동에 인접한 도심 속 산중 지역에 위치하고 있는 부산 시민의 상수원지이다. 1946년~1967년에 완공되었으며, 부산 시민의 중요한 식수원이자 휴양처로 알려져 있다. 조선시대에는 이곳에서 주자학을 공부하던 사람들이 숨어 지내면서 이곳의 아름다운 경치를 ‘오륜대’라고 불렀다. 상수원보호구역으로 지정되어 일반인의 접근이 금지되었다가 2010년 1월부터 시민에 개방되었다. 상수원지로서의 기능뿐만 아니라 땅뫼산 황토숲길, 편백나무숲, 갈맷길 등 도심 속에서 힐링을 느낄 수 있는 명소로 시민들에게 사랑받고 있다.\n회동수원지에는 둘레길이 조성되어 있다. 총거리는 21㎞로, 동대교에서 시작하여 회동동버스차고지에서 마무리되는 코스이다. 이어지는 길은 평탄해 누구나 편하게 걸을 수 있다.\n또한 회동호 누리교에서 시작하여 상현마을, 오륜대 전망대, 생태탐방로(대숲길), 땅뫼산 황토숲길, 땅뫼산 수변데크를 거쳐 동대교에서 끝나는 회동수원지투어도 즐길 수 있다.",
+          "characters": 420,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:472",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "송글송글 땀방울이 기분 좋은 갈맷길 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -62,9 +69,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "안녕한 부산 안녕한 언택트 힐링",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "오랜 시간 깨끗한 자연을 담은 회동수원지는 언제가도 좋은 힐링 산책로를 가지고 있습니다. 수원지를 따라 조성된 평탄한 둘레길은 자연을 느끼며 쉬엄쉬엄 걷기 좋은 구간들로 이루어져 있어요. 황토길을 맨발로 걸어보기도 하고, 편백숲 아래 벤치에 앉아 고요한 호수를 조망하며 사색에 잠기기도 좋은 곳이랍니다, 시원하게 펼쳐지는 회동수원지가 한 눈에 들어오는 오륜대전망대에 올라 답답했던 속을 뻥 뚫어버릴 수도 있어요. 계획을 세워 넓은 수원지 둘레길을 모두 걸어보는 방법도 있고, 걷기 좋은 둘레길만 선택해서 간편하게 산책하는 방법도 있어요. 양 옆으로 가로수가 시원한 그늘을 만들어주는 산책로를 따라가 봅니다. 잔잔하게 일렁이는 푸른 호수를 옆에 두고 걷는 이 길은 주변경관을 감상하며 여유로운 산책이 가능한 곳입니다. 녹음이 우거진 숲길, 짙푸른 호수, 파란 하늘에 둘러싸인 자연의 에너지를 맘껏 담아 보세요.",
+          "reason": "place-heading",
+          "characters": 345
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -81,9 +98,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "상쾌한 가을 바람을 느끼는 언택트 산책",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "산 좋고 물 맑은 회동수원지는 요즘처럼 선선한 가을 날 산책하기 좋은 코스입니다. 넓은 호수 주변을 따라 길게 조성된 산책로를 걷다 보면 땅뫼산 황토숲길과 만나게 됩니다. 맨발로 걷는 곳임을 알려주는 귀여운 벽화의 화살표를 따라가기만 하면 되는데요, 나무데크길 양 옆으로 바람에 일렁이는 갈대숲이 가을을 알립니다. 호수의 잔잔함을 눈에 담고 편백숲 우거진 땅뫼산 황토숲길을 걷기 시작합니다. 신발을 벗고 맨발로 황토길에 들어섭니다. 서늘한 기운이 온몸으로 퍼져나가면서 정신까지 맑아 지는 듯 합니다. 찰흙의 질감과 비슷한 느낌이 발바닥을 자극합니다. 습하지만 폭신폭신한 이런 황토숲길은 그리 흔치 않기에 걷는 속도를 되도록 천천히 조절합니다. 황토길을 따라 한쪽에는 다양한 수종을 자랑하는 우거진 숲이, 다른 한쪽에는 맑은 호수가 끝없이 펼쳐진답니다. 호수에서 불어오는 산들바람이 시원함을 더해 줍니다. 황토숲길을 걷다가 만나게 되는 팔각정 쉼터에서 그림 같은 호수의 풍경을 마음껏 즐길 수 있습니다. 느긋한 오후를 여유롭게 보내는 이 시간이 충만한 힐링으로 다가옵니다. 편백숲을 지나며 받은 피톤치드 샤워로 온 몸의 피로가 말끔히 씻긴 듯 개운합니다. 황토길의 끝에는 발을 씻을 수 있는 곳도 마련되어 있어 맨발로 건강하게 걷고 깨끗이 씻어낼 수 있답니다. 땅뫼산 황토숲길에서 경험하는 건강한 맨발 걷기, 한번 도전해 보세요!",
+          "reason": "place-subject",
+          "characters": 523
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -95,33 +122,24 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1170",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "산들바람 솔솔 부산의 리틀 포레스트",
-      "relation": "same-place",
-      "match": {
-        "field": "PLACE",
-        "method": "exact-name",
-        "placeName": "회동수원지(회동수원지 둘레길)",
-        "review": "pending"
-      },
-      "originalText": "<img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100595241.jpg\" alt=\"바람이 불어오는 곳, 그곳으로 가면/산들바람 솔솔/부산의 리틀 포레스트/여유롭게 흔들리는 억새풀 따라, 쉼표여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597006.jpg\" usemap=\"#planetmap\" alt=\"장산 억새바다, 그 사이 오솔길이 한 폭의 그림 같은 곳/승학산 억새평원, 은빛으로 하늘거리는 억새풀의 향연\"><map id=\"planetmap\" name=\"planetmap\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=432&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=445&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597748.jpg\" alt=\"가을 담긴 반짝이는 물빛을 보며, 힐링여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598170.jpg\" usemap=\"#planetmap2\" alt=\"성지곡수원지, 마음의 평온을 주는 가을종합선물세트/회동수우언지, 강과 호수, 숲이 어우러진 명품 산책로\"><map id=\"planetmap2\" name=\"planetmap2\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=430&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=436&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598778.jpg\" alt=\"붉은 빛이 일렁이는 그곳에서, 낭만여행\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=423&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599189.jpg\" alt=\"기장 불광산 숲길 황홀한 빛깔로 물드는 산 속 풍경 경건하게 마음을 씻 내며 사찰의 아름다움을 감상 할 수있는, 불광산 숲길을 함께 걸어보자.\" />\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=424&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599517.jpg\" alt=\"일광산테마길 느림의 미학을 추구하는 길 편안하게 걷기에만 집중할 수 있는 일광산테마길은 낙엽과 단풍이 아름다운 가을이면 더욱 걷기 좋다. 곱게 깔린 산책로를 따라 가벼운 발걸음으로 나서보자.\">\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599949.jpg\" alt=\"금강공원과 식물원 뉴트로 감성 가득한 나만의 휴식처 도심 속 울창한 숲과 기암괴석의 조화가 아름다운 공원. 일상 속 찰나의 행복을 아낌없이 내어주는 금강공원 케이블카와 금강식물원도 즐겨보자.\"></a>\n\n\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1170&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1186",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "삼원색 RGB 찾아 인증샷",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "회동수원지는 과거 가뭄으로 힘들어하는 시민들을 위해 조성된 인공저수지로 금정구 오륜동과 회동동에 걸쳐 있는 저수량 1850만톤을 자랑하는 저수지입니다. 부산시의 상수원을 책임지는 수원지로 1964년 상수원보호구역을 지정되어 2010년까지 일반인의 접근이 금지되었던 곳이었습니다. 약 50년이라는 시간 동안 회동수원지를 찾아오는 사람들이 발걸음이 멈추면서 자연스럽게 사람의 손을 타지 않은 아름다운 생태계와 자연이 만날 수 있게 된 곳입니다. 자연과 사람이 함께 만든 회동수원지는 ‘호수’를 따라 기분 좋은 산책을 즐길 수 있는 여행지로 많은 사랑을 받으면서 부산을 대표하는 힐링 여행지로 자리매김을 하였습니다. 그리고 계절마다 다양한 색의 옷을 갈아입으면서 매번 다른 풍경을 자아내고 있습니다. 특히 가을이 찾아오면 붉은 단풍잎과 함께 단풍놀이도 함께 즐길 수 있는 여행코스로 많은 사랑을 받고 있습니다. 회동수원지는 오륜동과 회동동에 함께 걸쳐있어 다양한 경로로 만날 수 있고 접근성이 좋아 지금의 계절에 가장 여행을 떠나기 좋은 곳입니다. 특히 땅뫼산황토숲길을 맨발로 걸으면 건강을 챙길 수 있고 걸음을 통해서 시시각각 달라지는 풍경을 만나는 재미를 느낄 수 있습니다. 수원지 전체를 도보로 이동할 수 있어 각도에 따라 달리 보이는 회동수원지의 모습은 물론이며 황톳길에서 데크길 그리고 숲속길로 바뀌는 또 다른 경험을 할 수 있습니다. 걷는 재미와 붉은 단풍을 함께 만나고 싶다면, 지금 바로 ‘회동수원지’로 떠나보는 건 어떨까요? 아침부터 늦은 오후까지 느긋하게 자연을 즐기면서 아름다운 추억을 기록하고 담아갈 수 있습니다. 그리고 걸음을 통해서 소중한 건강을 다시 한번 돌아보고 자연의 모습을 가슴속에 담아 갈 수 있는 곳이 회동수원지입니다.",
+          "reason": "place-heading",
+          "characters": 664
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -138,9 +156,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "대숲바람에 실려 오는 봄! ",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "금정구와 기장군, 양산시 3개 자치단체에 걸쳐 있는 회동수원지는 1964년부터 상수원보호구역으로 엄격하게 관리되던 곳이다. 일반인들의 출입이 제한돼 수십 년 동안 마치 비무장지대처럼 남아 있던 덕에 자연 그대로의 모습을 지금껏 잘 간직하고 있다. 금단의 땅이 일반에 공개된 것은 무려 45년이 지난 2010년. 20km에 달하는 호수 주변을 따라 산책로가 조성되면서 단숨에 부산 최고의 걷기 코스로 자리매김했다. 울창한 편백숲과 맨발로 걸을 수 있는 황톳길, 갈대가 하늘거리는 호숫길 등 오감이 즐거운 비경들을 즐기다보면 도무지 지루할 틈이 없다.",
+          "reason": "place-heading",
+          "characters": 235
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -156,10 +184,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜지민편＞",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -175,10 +207,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "비건지향 감성사진가의 맛있는 촬영여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },
@@ -194,10 +230,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 K-POP, 「B-POP」 ‘힐링’ 코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "회동수원지"
+        ],
         "placeName": "회동수원지(회동수원지 둘레길)",
         "review": "pending"
       },

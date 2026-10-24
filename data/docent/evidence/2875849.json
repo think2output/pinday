@@ -1,16 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2875849",
     "name": "대천공원",
     "lat": 35.1813775511,
     "lng": 129.1678566312
   },
-  "collectedAt": "2026-10-24T09:57:13.594Z",
+  "collectedAt": "2026-10-24T10:23:40.282Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:808",
       "busan-theme:981"
     ],
     "humanReview": "pending"
@@ -29,17 +29,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2875849&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:58.213Z",
-      "modifiedAt": "20250704093231"
+      "modifiedAt": "20250704093231",
+      "passages": [
+        {
+          "text": "대천공원은 해운대구 신시가지 조성과 함께 문화휴식 공간을 제공하기 위해 조성된 시민공원이다. 대천호 둘레를 따라 산책로가 잘 갖추어져 있고 어린이들을 위한 놀이시설도 갖춰져 있다. 특히, 대천공원을 방문하는 사람들의 시선을 사로잡는 것은 만선을 기원하는 커다란 상징 조형물과 인공 호수인 대천호다. 호수의 반은 아파트가 빼곡한 도심지의 풍경이, 나머지 반은 수려한 장산의 수림대 풍경이 펼쳐져 있다. 아침저녁으로 호수 둘레를 산책하려는 시민들이 많고 한낮엔 어린이와 함께 여가를 즐기는 가족 단위 방문이 많다. 공원 곳곳에 휴식을 취할 수 있는 정자와 벤치가 있고 야외무대와 광장이 있다. 매점과 화장실 같은 편의 시설도 잘 갖춰져 있다. 주변에 부흥 공원, 동백섬, 해운대 달맞이 공원, 청사포 등도 있다.",
+          "characters": 300,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:808",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "발 담그고 힐링 부산 계곡",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "대천공원"
+        ],
         "placeName": "대천공원",
         "review": "pending"
       },
@@ -56,9 +67,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "안녕한 부산 안녕한 언택트 트레킹",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "생활트레킹을 즐기는 분이라면 해운대 장산을 한 번쯤은 들어보셨겠죠? 대천공원에서 출발해 계곡을 따라 이어지는 둘레길 코스가 아주 매력적인 곳입니다. 대천공원은 장산 초입에 자리한 넓은 호수공원인데 트레킹 시작 전 호수산책로를 한 바퀴 돌며 간단히 워밍업을 해도 좋을 듯해요. 등산로가 시작되는 입구에는 단계별 등산코스 안내도가 상세하게 표시되어 있어요. 본인의 체력에 맞는 코스를 선택해 트레킹을 시작하면 된답니다. 정상 정복이 부담스럽다면 1단계 완만한 코스부터 도전해 보면 어떨까요? 등산로 옆으로 보이는 시원한 계곡이 장산 트레킹의 시작을 더욱 기분 좋게 해줍니다. 싱그러운 숲 향기가 유혹하는 초록의 장산 둘레길을 탐방해 보세요. 대천공원에서 시작하는 등산로는 그리 힘들지 않아요. 숲이 만들어 준 나무그늘 아래 삼림욕을 즐기며 천천히 걷다 보면 작아보이던 계곡도 점점 깊어져 갑니다. 얼마 지나지 않아 만나게 되는 양운폭포는 바위 사이로 떨어지는 하얀 물기둥과 그 아래 짙푸른 소(沼)가 아름다운 곳입니다. 작은 폭포처럼 보이지만 떨어지는 폭포수의 소리가 우렁차 잠시 귀 기울인다면 세상 시원한 기분을 느낄 수 있을 거예요. 오며 가며 지나치는 작은 산사의 소담한 담벼락마저도 심신의 편안을 더해줍니다. 콸콸콸 경쾌하게 흐르는 물소리에 둘레길을 걷는 발걸음이 한결 가벼워진답니다.",
+          "reason": "place-subject",
+          "characters": 509
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "대천공원"
+        ],
         "placeName": "대천공원",
         "review": "pending"
       },

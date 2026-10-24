@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2782658",
     "name": "오시리아 해안산책로",
     "lat": 35.1976,
     "lng": 129.2296
   },
-  "collectedAt": "2026-10-24T09:57:14.855Z",
+  "collectedAt": "2026-10-24T10:23:44.281Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1408"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2782658&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:55.824Z",
-      "modifiedAt": "20260916225008"
+      "modifiedAt": "20260916225008",
+      "passages": [
+        {
+          "text": "오시리아 해안 산책로는 탁 트인 바다와 중간중간 멋스러운 풍경을 바라볼 수 있는 쉼터가 잘 갖추어져 있어 아이들과 함께 걷기에도 좋다. 계절마다 피고 지는 다양한 야생화와 그림 같은 해안 절경을 따라 걷다 보면 어느새 소나무가 우거진 숲으로 이어진다. 울창한 소나무 숲이 한낮의 뜨거운 햇살을 가려줘 여름에는 더위를 잠시 피할 수도 있다. 소나무 사이로 들리는 파도 소리도 몸과 마음을 시원하게 해 준다. 해안산책로 한편에는 부산 동쪽 바다를 지키는 용왕을 모신 사당인 용왕단도 자리해 눈길을 끈다. 깎아지른 절벽 위에 세워져 웅장하면서도 경건한 분위기를 풍긴다. 용왕단이 바라보이는 자리에 흔들의자도 세워져 산책의 색다른 재미를 더한다. 이곳 산책로는 지난 2019년 대한민국 조경대상에서 문화체육부 장관상을 받기도 했다.",
+          "characters": 306,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1408",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "오시리아해안산책로"
+        ],
         "placeName": "오시리아 해안산책로",
         "review": "pending"
       },

@@ -1,17 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "769761",
     "name": "다대포 꿈의 낙조분수",
     "lat": 35.0463945293,
     "lng": 128.9680471374
   },
-  "collectedAt": "2026-10-24T09:57:13.502Z",
+  "collectedAt": "2026-10-24T10:23:40.037Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:983",
-      "busan-theme:2832"
+      "busan-theme:983"
     ],
     "humanReview": "pending"
   },
@@ -29,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=769761&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:53.471Z",
-      "modifiedAt": "20250714175656"
+      "modifiedAt": "20250714175656",
+      "passages": [
+        {
+          "text": "다대포 꿈의 낙조분수는 다대포해수욕장 입구 광장에 설치된 분수로 세계 최대 규모를 갖추고 있는 음악분수이다. 2010년 3월 27일 개장을 시작으로 매년 4월부터 10월까지 개장 및 운영을 하고 있다. 분수 바닥 면적 2,538㎡, 원형 지름 60m, 둘레 180m, 최대 물높이 55m 세계 최대 규모로 (사)한국기록원으로부터 대한민국 및 세계 최대 기록으로 인증서를 받은 바 있으며, 2010년 3월 27일 기네스월드레코드에 ‘세계최대 바닥분수’로 등재되었다.\n다대포 꿈의 낙조분수는 20종 29개의 소분수로 학날개 형상, 무지개 형상, 해바라기 형상, 안개 등 다양하게 연출이 가능하다. 또한, 가요, 팝송, 클래식 등 매달 60여 곡의 다양한 음악과 함께 선보인다. 무엇보다도 특별한 사연이나 프러포즈 등의 내용이 담긴 메시지를 미리 신청해 놓으면 분수 쇼가 진행되는 동안 그 내용을 소개해주기도 한다. 이곳을 찾은 사람들이 직접 참여하여 좀 더 다양하게 즐길 수 있는 계절별, 테마별 다양한 프로그램을 마련했다. 화려한 장관을 연출하는 분수쇼를 보는 것만으로도 좋은 볼거리가 되지만, 많은 사람들과 함께 즐길 수 있는 프로그램을 통해 분수 쇼와 더불어 좋은 추억거리가 하나 더 생기는 셈이다.",
+          "characters": 468,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0000030000000",
@@ -45,7 +52,14 @@
       "originalText": "동헌은 조선시대 지방관서에서 첨사가 정무를 보던 건물로 아사(衙舍)·군아(郡衙)·현아(縣衙)·시사청(視事廳) 등으로 부르기도 하였고 다대진성 내에 있던 관아건물 중에서 유일한 건축유구(建築遺構)로 지금은 몰운대 내의 부산광역시 사하구 몰운대1길 73(다대동 산144)에 옮겨져 있다.\n원래는 관아 일곽의 하단 구역에 위치했던 동헌 건물로 수호각(睡虎閣)이라 불렀다. \n다대진이 혁파된 후 공가(公家)로 방치되던 것을 다대포실용학교의 교사(校舍)로 사용되다가 다시 다대초등학교 교사로 전용되었고 1970년 다대초등학교 운동장 정지공사 때 지금 위치로 이전 복원되었는데 이때 학교 관계자들이 건물을 객사로 잘못 기록하였고 부산광역시 지정 유형문화유산(1972. 6. 26)으로 지정될 당시 다대포 객사라는 이름이 사용되었다가  2020년 7월 부산시 국가유산위원회 심의에서  다대진 동헌으로 명칭을 변경하였다.(2020.07.29)\n다대진 동헌은 정면 5칸, 측면 2칸으로 좌측 첫째 칸과 우측 첫째 칸은 온돌방으로, 가운데 세 칸은 우물마루를 칸 대청으로 꾸몄던 것으로 추정된다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000030000000",
       "fetchedAt": "2026-10-24T09:53:53.673Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동헌은 조선시대 지방관서에서 첨사가 정무를 보던 건물로 아사(衙舍)·군아(郡衙)·현아(縣衙)·시사청(視事廳) 등으로 부르기도 하였고 다대진성 내에 있던 관아건물 중에서 유일한 건축유구(建築遺構)로 지금은 몰운대 내의 부산광역시 사하구 몰운대1길 73(다대동 산144)에 옮겨져 있다.\n원래는 관아 일곽의 하단 구역에 위치했던 동헌 건물로 수호각(睡虎閣)이라 불렀다. \n다대진이 혁파된 후 공가(公家)로 방치되던 것을 다대포실용학교의 교사(校舍)로 사용되다가 다시 다대초등학교 교사로 전용되었고 1970년 다대초등학교 운동장 정지공사 때 지금 위치로 이전 복원되었는데 이때 학교 관계자들이 건물을 객사로 잘못 기록하였고 부산광역시 지정 유형문화유산(1972. 6. 26)으로 지정될 당시 다대포 객사라는 이름이 사용되었다가  2020년 7월 부산시 국가유산위원회 심의에서  다대진 동헌으로 명칭을 변경하였다.(2020.07.29)\n다대진 동헌은 정면 5칸, 측면 2칸으로 좌측 첫째 칸과 우측 첫째 칸은 온돌방으로, 가운데 세 칸은 우물마루를 칸 대청으로 꾸몄던 것으로 추정된다.",
+          "characters": 436,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000200000000",
@@ -61,7 +75,14 @@
       "originalText": "몰운대에 자리하고 있는 이 비는 임진왜란 당시 부산포 해전(1592년 9월 1일)에 우부장(右部將)으로 출전하여 공격의 맨 앞에 서서 장렬하게 싸우다 전사한 녹도만호 정운 장군의 의로운 죽음을 추모하고 있다. \n 임진왜란이 일어났을 때 전라좌수사 이순신 장군의 휘하에 있었던 정운 장군은 적병이 호남에 이르기 전에 먼저 나아가 칠 것을 주장하고, 맨 앞에 서서 공격할 것을 스스로 청하였다. 또한 옥포·사천·한산도 해전에서 공을 세우고, 왜적의 군영이 있던 부산포를 공격할 때에도 다시 맨 앞에서 공격을 하였다. 비문에는 장군이 수군 선봉으로 몰운대 아래에서 왜적을 만났을 때 몰운(沒雲)의 운(雲)자가 자기 이름자 운(運)과 음이 같다하여 이곳에서 죽을 것을 각오하고 싸우다가 순절하였다고 적고 있는데, 『충장공실기(忠壯公實記:‘충장’은 정운 장군의 시호)』와 『충무공전서(忠武公全書)』에는 부산포해전에서 순절하였다고 기록되어 있다. \n 직사각형의 비는 윗변을 둥글게 다듬은 간략한 형태이다. 정조 22년(1798) 정운 장군의 8대손 정혁이 다대첨사로 왔을 때 세운 것이며, 비문은 이조판서 민종현이 짓고, 훈련대장 서유대가 썼다. 1974년 부산시가 비각을 세워 비를 보호하고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000200000000",
       "fetchedAt": "2026-10-24T09:53:54.160Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "몰운대에 자리하고 있는 이 비는 임진왜란 당시 부산포 해전(1592년 9월 1일)에 우부장(右部將)으로 출전하여 공격의 맨 앞에 서서 장렬하게 싸우다 전사한 녹도만호 정운 장군의 의로운 죽음을 추모하고 있다. \n 임진왜란이 일어났을 때 전라좌수사 이순신 장군의 휘하에 있었던 정운 장군은 적병이 호남에 이르기 전에 먼저 나아가 칠 것을 주장하고, 맨 앞에 서서 공격할 것을 스스로 청하였다. 또한 옥포·사천·한산도 해전에서 공을 세우고, 왜적의 군영이 있던 부산포를 공격할 때에도 다시 맨 앞에서 공격을 하였다. 비문에는 장군이 수군 선봉으로 몰운대 아래에서 왜적을 만났을 때 몰운(沒雲)의 운(雲)자가 자기 이름자 운(運)과 음이 같다하여 이곳에서 죽을 것을 각오하고 싸우다가 순절하였다고 적고 있는데, 『충장공실기(忠壯公實記:‘충장’은 정운 장군의 시호)』와 『충무공전서(忠武公全書)』에는 부산포해전에서 순절하였다고 기록되어 있다. \n 직사각형의 비는 윗변을 둥글게 다듬은 간략한 형태이다. 정조 22년(1798) 정운 장군의 8대손 정혁이 다대첨사로 왔을 때 세운 것이며, 비문은 이조판서 민종현이 짓고, 훈련대장 서유대가 썼다. 1974년 부산시가 비각을 세워 비를 보호하고 있다.",
+          "characters": 472,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:983",
@@ -69,9 +90,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "낭만이 가득한 부산 야경맛집",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "다대포 하늘을 붉게 물들인 노을이 물러가고 어둠이 내려앉으면 꿈의낙조분수가 세상에서 하나밖에 없는 쇼를 준비합니다. 화려한 색동옷 갈아입은 분수가 음악에 맞춰 춤을 춥니다. 높게 솟아 오른 물줄기가 무지개 마냥 밤하늘을 수놓습니다. 다대포 꿈의낙조분수는 부산 최초의 음악분수로, 기네스 세계 기록에서 '세계 최대 바닥분수'로 꼽히기도 했답니다! 감미로운 클래식부터 팝송, 트롯, 그리고 k-pop까지 신나는 음악과 춤추는 물기둥이 장관을 이룹니다. 음악이 차분해지면 분수도 얌전해집니다. 그러다 음악이 절정에 오르면 아파트 높이만큼 높이 치솟는 물기둥에 눈이 휘둥그레 집니다. 누구와 함께 하더라도 즐거운 시간을 가질 수 있습니다. 시원하게 뿜어내는 물줄기를 보고 있으면 무더위도 재빨리 도망을 갈 것 같아요! 분수쇼가 끝났다고 너무 아쉬워하진 마세요. 이후에 체험분수 시간이 있으니 아이들과 함께 꿈의낙조분수에서 지상낙원을 경험해 보세요.",
+          "reason": "place-heading",
+          "characters": 366
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "다대포꿈의낙조분수"
+        ],
         "placeName": "다대포 꿈의 낙조분수",
         "review": "pending"
       },
@@ -83,33 +114,24 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2100",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "'비교불가' 부산의 기록적인 여행지 9선",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "다대포 꿈의 낙조분수",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_01.jpg\" alt=\"'비교불가' 부산의 기록적인 여행지 9선.짜릿한 스케일에 한 번, 유서 깊은 역사에 두 번 반하는 세계적 스케이르이 부산 레전드 스팟 9곳, 지금 소개합니다!\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_02.jpg\" alt=\"Largest. 세계 최대(最大) 규모를 자랑하는 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2091&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_03.jpg\" alt=\"아르떼 뮤지엄. 약 1700평, 전 세계 아르떼 뮤지엄 여덟 곳 중 최대규모! 규모만큼 화려한 미디어 작품ㅇ르 선보이는 몰입형 미디어아트 전시관이다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2077&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_04.jpg\" alt=\"부산 수학문화관 연면적 9884m², 7층 규모의 공간! 수학 단일주제로는 세계 최대규모 문화관으로, 넓은 공간을 활용해 폭넓은 수학 콘텐츠를 제공한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=983&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_05.jpg\" alt=\"다대포 꿈의 낙조분수.세계최대 바닥분수로 기네스북에 오른 '꿈의 낙조분수'. 둘레 180m의 거대한 규모가 분수쇼의 화려함을 더한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=996&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_06.jpg\" alt=\"엑스더스카이. 씨티뷰와 씨사이드뷰(SEA SIDE VIEW)를 함께 조망할 수 있는 국내 최대 규모 전망대. 층마다 부산의 명소를 조망할 수 있는 특화된 '파노라믹 오션뷰'를 제공한다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_07.jpg\" alt=\"Earliest 세계/국내/부산 최초(最初)를 기록한 역사적인 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=257&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_08.jpg\" alt=\"국립해양박물관. 2012년 개관한 세계 최초 종합해양박물관. 해양 역사, 인물, 해양 문화, 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 관련 종합지식을 전달하고 있다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_09.jpg\" alt=\"송도해수욕장. 1913년 개장해 100년이 넘는 역사를 자랑하는 국내 최초 공설 해수욕장. 1970년대 이후 침체기를 겪다,2000년대 이후 송도 구름산책로와 케이블카가 생기며 관광지로서 새롭게 부상했다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2078&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_10.jpg\" alt=\"마하사. 5세기(삼국시대) 신라 아도화상이 창건했다고 기록돼있는 부산 최초의 사찰. 아름다운 자연경관과 역사적 상징성 덕에 많은 사람에게 삶의 안식처로 자리 잡았다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_11.jpg\" alt=\"Longest. 세계 최장(最長) 길이로 쭉 뻗은 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=421&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_12.jpg\" alt=\"영화의 전당 '빅루프'. 전체 길이 163m/너비 61m/ 높이 32m/무게 4,000톤의 초대형 지붕, 영화의 전당 '빅루프'! 기둥으로 받쳐지지 않은 부분만 85m로, 세계 최장 캔틸레버 지붕 타이틀을 보유하고 있다. *캔틸레버: 한쪽 끝은 고정되고 다른 끛은 받쳐지지 않은 보\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_13.jpg\" alt=\"Only.세계 유일(有一)의 공간\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=277&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_14.jpg\" alt=\"유엔기념공원.한국전쟁 참전국 장병 2,300여 유해가 안장되어있는 공간. 세계평화와 자유를 위해 공헌한 한국전쟁 영웅들을 기리고자 조성됐다.\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2100&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2832",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 야간 가볼만한 곳, 다대포 꿈의 낙조분수부터 해수욕장·고우니생태길까지",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "다대포에서 가장 유명한 볼거리 가운데 하나가 바로 꿈의 낙조분수입니다. 다대포 꿈의 낙조분수는 음악에 맞춰 물줄기가 움직이고 조명이 더해지는 음악분수에요!",
+          "reason": "place-subject",
+          "characters": 68
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "다대포꿈의낙조분수"
+        ],
         "placeName": "다대포 꿈의 낙조분수",
         "review": "pending"
       },

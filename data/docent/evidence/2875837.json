@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2875837",
     "name": "달맞이동산",
     "lat": 35.1571305311,
     "lng": 129.1821532774
   },
-  "collectedAt": "2026-10-24T09:57:13.541Z",
+  "collectedAt": "2026-10-24T10:23:40.131Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1169"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2875837&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:56.041Z",
-      "modifiedAt": "20250704092614"
+      "modifiedAt": "20250704092614",
+      "passages": [
+        {
+          "text": "달맞이 동산은 부산시 해운대구 달맞이 길에 있는 산책로 겸 공원이다. 해운대해수욕장 동쪽에서 청사포(靑沙浦)로 넘어가는 와우산 중턱, 달맞이 고개를 말한다, 짙은 숲으로 드리워진 달맞이 고개에서 바라보는 월출(月出)은 대한 팔경의 하나로 예로부터 시인과 묵객들이 즐겨 찾았다. 현대에 들어와서도 음력 정월대보름 등에 보름달을 구경하는 관람객이 많이 찾는다. 특히 봄철에는 길가에 벚나무가 화사하게 꽃을 피워 장관을 이룬다. 1997년에 세워진 해월정은 달맞이 공원의 상징물이기도 하다. 달맞이와 꽃구경을 한꺼번에 할 수 있다는 곳으로 야외음악당과 달맞이 조각공원, 야생초화원도 있다.",
+          "characters": 255,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1169",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "우리가 가을 해운대를 사랑하는 이유, 달맞이길",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "달맞이동산"
+        ],
         "placeName": "달맞이동산",
         "review": "pending"
       },

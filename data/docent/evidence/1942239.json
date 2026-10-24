@@ -1,19 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1942239",
     "name": "초량교회",
     "lat": 35.1171033217,
     "lng": 129.0369328888
   },
-  "collectedAt": "2026-10-24T09:57:15.371Z",
+  "collectedAt": "2026-10-24T10:23:45.896Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:58",
-      "busan-theme:309",
-      "busan-theme:513"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -30,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1942239&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:18.197Z",
-      "modifiedAt": "20261016152125"
+      "modifiedAt": "20261016152125",
+      "passages": [
+        {
+          "text": "초량교회는 1892년 선교사 윌리엄 베어드가 설립한 부산 최초의 교회이며 선교사에 의해 설립된 한강 이남 최초의 교회다. 처음에는 선교사 기지 내의 영선현교회로 시작했는데, 교세가 늘어나자 영주동 봉래초등학교 앞에 있던 동사무소를 빌려 교육관으로 사용하다가 1912년 이곳을 매입해 교회로 바꿨다. 이후 영주동교회, 초량 3·1 교회를 거쳐 초량교회로 교회명을 바꾸었다. 일제강점기 초량교회는 항일민족독립운동과 밀접한 관계를 지니고 있었다. 신사참배 반대운동에 앞장섰으며 독립운동가들의 비밀 기도처가 됐다는 점에서 의의가 있다. 현재는 초량교회 역사관을 운영하며 교회가 보관하고 있는 역사적 자료들과 함께 힘들었던 시대에 초량교회가 걸어온 발자취를 전시하고 있다.",
+          "characters": 292,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0006470000000",
@@ -46,7 +50,14 @@
       "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
       "fetchedAt": "2026-10-24T09:52:07.235Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+          "characters": 164,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0003490000000",
@@ -62,17 +73,28 @@
       "originalText": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003490000000",
       "fetchedAt": "2026-10-24T09:52:07.691Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
+          "characters": 343,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:58",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기로 피어난 어제의 기억 초량이바구길",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량교회"
+        ],
         "placeName": "초량교회",
         "review": "pending"
       },
@@ -89,9 +111,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기가 있는 알짜배기 여행, 부산원도심 스토리투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 동구에 위치한 이바구길에서는 근대 부산의 흔적을 살펴볼 수 있다. 과거 개항 중심지였던 옛 영광을 드러내듯, 분위기 있는 카페로 변모한 옛 백제병원과 초량교회는 근대건축 양식을 그대로 간직하고 있다. 김민부전망대나 유치환우체통에서 내려다보는 부산항의 풍경은 갑갑했던 가슴을 한 번에 탁 트이게 할 만큼 시원하다. 산복도로 위아래를 연결하는 168계단은 옛 동네의 정감 있는 분위기를 그대로 간직하고 있다. 가파른 계단을 수도 없이 오르내리는 주민들을 위해 개통된 모노레일은 이곳을 찾는 이들에게 이바구길만의 특색 있는 체험거리를 제공한다.",
+          "reason": "place-subject",
+          "characters": 234
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량교회"
+        ],
         "placeName": "초량교회",
         "review": "pending"
       },
@@ -107,10 +139,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "역동의 초량, 그 이야기를 담다",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량교회"
+        ],
         "placeName": "초량교회",
         "review": "pending"
       },

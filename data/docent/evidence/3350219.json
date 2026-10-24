@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3350219",
     "name": "을숙도 들락날락",
     "lat": 35.109499,
     "lng": 128.944937
   },
-  "collectedAt": "2026-10-24T09:57:15.033Z",
+  "collectedAt": "2026-10-24T10:23:44.841Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3350219&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:03.963Z",
-      "modifiedAt": "20260406094239"
+      "modifiedAt": "20260406094239",
+      "passages": [
+        {
+          "text": "을숙도 들락날락은 부산 사하구와 EBS가 협력하여 조성한 공간으로, 예술 커뮤니티인 살롱을 테마로 한 어린이 문화 체험 공간이다. 지하 1층 아뜰리에, 1층 쑥갤러리에서 다양한 체험을 할 수 있으며, 2층은 쑥케치북이라는 낙서 자유 구역으로 어린이들이 자유롭게 그림을 그릴 수 있는 공간이다. 이외에도 다양한 체험 공간과 도서관이 있어 아이들과 방문하기 좋은 곳으로 손꼽힌다. 3층에는 카페와 전망대가 있어 휴식을 취하며 을숙도의 풍경을 감상할 수 있다.",
+          "characters": 194,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

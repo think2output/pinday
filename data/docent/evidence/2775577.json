@@ -1,18 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2775577",
     "name": "젖병등대",
     "lat": 35.2137870972648,
     "lng": 129.223051745362
   },
-  "collectedAt": "2026-10-24T09:57:15.206Z",
+  "collectedAt": "2026-10-24T10:23:45.349Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:451",
-      "busan-theme:1325",
-      "busan-theme:1682"
+      "busan-theme:1325"
     ],
     "humanReview": "pending"
   },
@@ -30,17 +29,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2775577&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:12.561Z",
-      "modifiedAt": "20260319094959"
+      "modifiedAt": "20260319094959",
+      "passages": [
+        {
+          "text": "2009년 부산지방해양항만청에서 만든 젖병 모양의 등대다. 등대를 세운 2009년은 부산이 전국에서 출산율이 가장 낮은 도시로 10년째 선정되던 해로, 저출생 시대의 위기를 극복하고자 출산 장려를 기원하는 의미에서 만들어졌다. 부산에 사는 영·유아 144명의 발 도장과 손도장이 양각으로 제작되어 있다. 방파제 길을 따라가면 연도별로 출산율이 어떻게 변화해 왔는지도 볼 수 있다. 딸·아들 구별 말고 둘만 낳아 잘 기르자던 시대에서 ‘잘 키운 딸 하나 열 아들 안 부럽다’가 되었다가 이제는 ‘아이가 미래’라는 시대가 되었다. 이색적인 등대에서 인생샷을 찍기 위해 전국에서 많은 관광객들이 몰려들고 있다.",
+          "characters": 259,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:451",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 바다의 든든한 지킴이, 등대투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "젖병등대"
+        ],
         "placeName": "젖병등대",
         "review": "pending"
       },
@@ -57,9 +67,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "그동안 몰랐던 인생스폿-부산이색등대 편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "기장군 연화리 서암항에서 만날 수 있는 이색등대입니다. 아기자기한 조형물처럼 보이지만 밤이 되면 빛을 내는 실제 등대인데요. 부산지방해양항만청이 2009년 출산 장려를 기원하기 위해 조성했는데 정식 명칭은 서암항남방파제등대입니다. 높이 5.8m의 젖병등대는 부산 어린이 만 2세 이하 144명의 손과 발을 프린트해 구운 도자기로 장식됐는데 지금은 귀여운 가족 그림도 그려져 있습니다. 디자인이 예쁘고 특별한 이색등대라서 포토존으로 안성맞춤입니다. 젖병등대를 마주 보는 곳에는 붉은 색의 차전등대가 있는데 특이한 형상 때문에 ‘닭볏등대’라는 별명을 갖고 있습니다. 이색등대들을 둘러본 다음에는 길을 따라 조금 걸어보세요. 얼마 가지 않아 기장군의 유일한 섬, 연화리 죽도를 만날 수 있습니다. 육지와 연결된 다리를 통해 죽도로 이동이 가능한데요. 대나무와 동백나무가 가득하여 상쾌한 기분을 만끽할 수 있습니다. 멋진 바다 전망을 감상할 수 있는 카페와 음식점들이 여럿 있어서 낮부터 밤까지 머물기 좋은 곳이에요. 고즈넉한 분위기 덕분에 커플들에게 인기가 많은 기장 연화리입니다.",
+          "reason": "place-subject",
+          "characters": 423
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "젖병등대"
+        ],
         "placeName": "젖병등대",
         "review": "pending"
       },
@@ -75,10 +95,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "테스형 나훈아와 함께 떠나는 기장 여행(ft. 기장갈매기 MV) ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "젖병등대"
+        ],
         "placeName": "젖병등대",
         "review": "pending"
       },

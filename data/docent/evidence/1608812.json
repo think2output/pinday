@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1608812",
     "name": "해월정",
     "lat": 35.156757,
     "lng": 129.181638
   },
-  "collectedAt": "2026-10-24T09:57:15.677Z",
+  "collectedAt": "2026-10-24T10:23:46.870Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1608812&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:28.082Z",
-      "modifiedAt": "20260305135357"
+      "modifiedAt": "20260305135357",
+      "passages": [
+        {
+          "text": "달맞이길은 해운대해수욕장을 지나 송정해수욕장으로 향하는 길목(와우산 중턱)에 위치하는 벚나무와 송림이 울창하게 들어찬 호젓한 오솔길로서, 15번 이상 굽어진다고 하여 15곡도(曲道)라고도 하며 8㎞에 달하는 드라이브 코스를 형성하고 있다. 이곳에서는 특히 정월 대보름날에 달빛과 어우러진 바다의 정취를 마음껏 즐길 수 있다. 또한 길목 중간 부분(정상)에는 달맞이동산이 조성되어 있다. 이곳에는 자연석으로 건립된 동산비가 있고 특히 지난 1997년 2월 중에 새로이 건립된 달맞이 정자 해월정(海月亭)은 옛날 정자식으로 건축되어 고풍스러운 분위기가 운치를 더하고 있다. 2000년 1월에 설치된 새천년기념시계탑도 유명하다. \n\n(출처 : 해운대구 문화관광 홈페이지)",
+          "characters": 293,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

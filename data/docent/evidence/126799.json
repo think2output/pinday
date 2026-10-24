@@ -1,19 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "126799",
     "name": "민락수변공원",
     "lat": 35.1545,
     "lng": 129.133
   },
-  "collectedAt": "2026-10-24T09:57:13.867Z",
+  "collectedAt": "2026-10-24T10:23:41.049Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:398",
-      "busan-theme:1200",
-      "busan-theme:2546",
-      "busan-theme:2619"
+      "busan-theme:2546"
     ],
     "humanReview": "pending"
   },
@@ -31,17 +29,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126799&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:11.785Z",
-      "modifiedAt": "20260309150200"
+      "modifiedAt": "20260309150200",
+      "passages": [
+        {
+          "text": "민락수변공원은 부산 수영구 민락동에 위치한 아름다운 해변 공원이다. 이곳은 광안리해수욕장과 인접해 있어 바다의 경관을 즐기며 산책할 수 있는 최적의 장소이다. 공원 내에는 넓은 잔디밭과 산책로가 잘 조성되어 있어 가족 단위 방문객이나 연인들이 여유로운 시간을 보낼 수 있다. 또한, 민락수변공원은 야경이 아름다워 특히 광안대교와 바다의 조화를 즐기기에 좋은 곳이다. 근처에는 카페와 레스토랑도 있어 바다를 바라보며 식사를 즐길 수 있다. 자연과 도시가 어우러진 이 공원은 부산의 대표적인 휴식처로 지역 주민뿐만 아니라 관광객들에게도 인기 있는 명소이다.",
+          "characters": 237,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:398",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "멋진 바다풍경과 함께 걷는 갈맷길",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "민락수변공원"
+        ],
         "placeName": "민락수변공원",
         "review": "pending"
       },
@@ -58,9 +67,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "나 홀로 떠나는 광안리 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "**민락수변공원은 2023.7.1.부터 금주구역으로 지정되었음을 알려드립니다.",
+          "reason": "place-subject",
+          "characters": 39
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "민락수변공원"
+        ],
         "placeName": "민락수변공원",
         "review": "pending"
       },
@@ -77,9 +96,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "8월 광안리에서만 즐길 수 있는 특별한 이벤트",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "광안리의 낮은 푸른 파도로 반짝이고, 해가 지면 광안대교의 조명이 켜지며 바다는 또 다른 얼굴을 드러냅니다. 그 풍경 속에서 하나의 특별한 무대가 열립니다. 바로 밀락수변 바다 영화관입니다. 민락수변공원은 부산 시민과 여행객이 즐겨 찾는 휴식 공간이지만, 8월부터 12월까지 매주 금·토요일 밤이면 작은 야외 영화관으로 변신합니다. 실내 영화관과는 전혀 다른 감각이 이곳을 채웁니다. 파도 소리가 은은한 배경음악처럼 흐르고, 바닷바람은 장면마다 자연스러운 효과음을 더해줍니다. 스크린 너머로 반짝이는 광안대교의 불빛은 영화의 또 다른 배경이 되어 관객들의 몰입을 돕습니다. 바다와 영화, 그리고 사람이 어우러져 만들어내는 장면 하나하나는 그 자체로 살아 있는 문화 공간의 풍경이 됩니다. 밀락수변 바다 영화관의 매력은 풍경만이 아닙니다. 입장료는 1인 3,000원으로 부담 없이 즐길 수 있으며, 수영구 내 음식점이나 카페에서 15,000원 이상 소비한 영수증을 제시하면 관람료가 그대로 환급되는 페이백 혜택도 제공됩니다. 관람객들은 영화와 함께 부산의 맛과 멋을 동시에 경험할 수 있고, 지역 상권은 활기를 얻습니다. 부산은 언제나 새로운 즐거움을 선사하는 도시지만, 그중에서도 밀락수변 바다 영화관은 가장 낭만적인 추억을 남길 수 있는 공간입니다. 부산을 여행할 계획이 있다면, 꼭 이 작은 바닷가 영화관을 일정에 넣어보시길 권합니다. 파도와 불빛, 그리고 영화가 어우러진 그 밤은, 여행이 끝난 뒤에도 오래도록 마음속에 남을 것입니다.",
+          "reason": "place-subject",
+          "characters": 576
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "민락수변공원"
+        ],
         "placeName": "민락수변공원",
         "review": "pending"
       },
@@ -95,10 +124,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "반짝임이 가득한 겨울의 부산!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "민락수변공원"
+        ],
         "placeName": "민락수변공원",
         "review": "pending"
       },

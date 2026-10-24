@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3544138",
     "name": "부네치아 선셋 전망대",
     "lat": 35.0792685405299,
     "lng": 128.95186067301356
   },
-  "collectedAt": "2026-10-24T09:57:14.012Z",
+  "collectedAt": "2026-10-24T10:23:41.568Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1149"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3544138&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:23.956Z",
-      "modifiedAt": "20260406170859"
+      "modifiedAt": "20260406170859",
+      "passages": [
+        {
+          "text": "장림포구는 장림포구 명소화 사업을 통하여 어항을 정비함과 동시에 해양보호구역 홍보관, 문화촌, 놀이촌, 맛술촌, 도시숲 등 관광객 이용 시설이 조성되어 있다. 이렇게 조성된 장림포구 모습, 특히 수면에 떠 있는 배와 형형색색의 건물들이 이탈리아 베네치아 무라노섬과 닮았다 하여 부산의 베네치아, ‘부네치아’로 불리며 SNS, 블로그상에서 인생 사진을 찍을 수 있는 장소로 명성을 얻고 있다. 부네치아 선셋 전망대는 부산의 일몰 명소로 알려져 있는데, 2층의 장림항 홍보관, 카페를 즐기며 장림포구의 전체적인 모습을 느낄 수 있다. 또한, 부네치아 선셋 전망대의 맛술촌은 다양한 먹거리를 제공하여 보는 재미 이외에도 먹는 재미까지 제공하고 있다.",
+          "characters": 276,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1149",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "보라보라한 가을 감성여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "부네치아선셋전망대"
+        ],
         "placeName": "부네치아 선셋 전망대",
         "review": "pending"
       },

@@ -1,30 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2605688",
     "name": "부산현대미술관",
     "lat": 35.1093302595,
     "lng": 128.9426918887
   },
-  "collectedAt": "2026-10-24T09:57:14.390Z",
+  "collectedAt": "2026-10-24T10:23:42.750Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:452",
-      "busan-theme:1004",
-      "busan-theme:1140",
-      "busan-theme:1174",
-      "busan-theme:1183",
-      "busan-theme:1193",
-      "busan-theme:1199",
-      "busan-theme:1318",
-      "busan-theme:1320",
-      "busan-theme:2492",
-      "busan-theme:2679",
-      "busan-theme:2834",
-      "busan-theme:2835",
-      "busan-theme:2836"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -41,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2605688&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:36.385Z",
-      "modifiedAt": "20260928100539"
+      "modifiedAt": "20260928100539",
+      "passages": [
+        {
+          "text": "천연기념물 제179호 을숙도에 위치한 부산현대미술관은 환경·생태적 가치의 지속 가능성을 지향하는 부산광역시 공립 미술관이다. 부지 29,900㎡, 면적 15,312㎡, 전시 공간 5,910㎡ 규모로 2018년 6월 16일 개관하였으며 서부산권 문화 플랫폼의 역할을 수행하고 있다. 급변하는 21세기 현대 사회에서 부산현대미술관은 뉴미디어를 포함한 다양한 매체에서 펼쳐지는 동시대 미술을 중심으로 지역과 세계를 밀접하게 연결하는 다각적인 예술 활동을 전개하고 있다. 이를 통해 미래의 기술 문명 속에서 자연과 인간, 비인간이 상호 긍정적인 관계로 공존하는 역동적인 예술의 장을 제시하고 있다. 부산현대미술관은 동시대적인 맥락에서의 예술 동향 조사 연구와 담론 생산을 선도하기 위해 작품 수집 및 전시·학술·국제 협력 프로그램을 운영하고 있다. 또한 다양성과 포용성이라는 미술관의 사회적 역할을 실현하기 위해 여러 계층을 대상으로 한 교육 및 문화 프로그램을 실시하며 일반 관람객과 미술 전문가 모두와 소통하는 미술관을 지향하고 있다.",
+          "characters": 406,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:452",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -67,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "낭만 가득 가을 꽃길 산책",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -87,9 +88,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "로케이션 인 부산 ＜영화의 거리＞",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강 끝자락, 을숙도에 있는 부산 현대미술관도 ＜영화의 거리＞에 등장한다. 단연코, 웅장함을 자아내는 외벽의 수직정원이 가장 먼저 눈에 띈다. 현대미술관을 푸르게 물들이는 수직정원은 식물학자 패트릭 블랑이 한국에 자생하는 식물 175종으로 만든 것으로 계절에 따라 색이 달라지는 게 특징이다. 지난 2018년 6월에 개관한 부산현대미술관은 뉴미디어 아트를 포함한 동시대 미술, 자연과 상태를 주제로 한 전시 등을 관람할 수 있다. 다양한 전시를 만날 수 있는 현대미술관에서 부산 여행의 품격을 더해보자.",
+          "reason": "place-heading",
+          "characters": 217
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -105,10 +116,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "발걸음마다 예술의 향기, 조각공원으로 산책 가요~",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -125,9 +140,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Impossible? I'm possible",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "초록색 나뭇잎으로 뒤덮인 건물이 무척 인상적이다. 175종의 식물로 만든 수직정원이다. 철새보호구역인 을숙도에 자리한 부산현대미술관은 다양한 예술 작품과 함께 산책과 사색을 즐길 수 있는 곳이다.",
+          "reason": "place-heading",
+          "characters": 86
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -144,9 +169,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "을숙도 가을산책, 서울워커의 부산여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "을숙도 한가운데 부산시가 건립한 공공미술관인 부산현대미술관이 2018년 6월에 개관했다. ‘생태계의 보고’인 을숙도의 분위기에 어울리게 미술관 외관부터 색다르다. 건물 그 자체가 ‘수직정원’이라는 작품명을 가지고 있는 이곳은 미술관 벽면을 따라 자라는 초록초록한 식물들로 지나가는 사람들의 눈길마저 사로잡는다.",
+          "reason": "place-heading",
+          "characters": 139
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -163,9 +198,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "코카앤버터의 Street of fun in Busan",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "초록초록한 식물들이 벽면을 온통 뒤덮고 있는 건물 하나. 건물 그 자체가 커다란 정원 같은 이곳은 을숙도의 핫플 부산현대미술관이다. 미술관 하면 도시 한복판, 멋지고 세련된 건물을 연상하지만 부산현대미술관은 ‘생태계의 보고’ 을숙도의 한가운데에 있다. 을숙도의 자연 경관을 해치지 않도록 설계된 수직정원, 부산현대미술관은 마치 처음부터 이곳에 있었던 것처럼 자연친화적이다. 미술관 관람은 물론 주변 정원과 생태공원에서 즐기는 피크닉도 을숙도만의 매력이다. 회색빛 도시를 벗어나 초록초록한 자연으로 떠나 보는 건 어떨까?",
+          "reason": "place-subject",
+          "characters": 226
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -181,10 +226,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-1편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -201,9 +250,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-2편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "‘생태계의 보고’ 을숙도의 분위기와 어울리는 독특한 외관. 건물 자체가 ‘수직정원’이라는 작품명을 가지고 있는 현대미술관은 벽면을 따라 자라는 초록초록한 식물들로 지나가는 사람들의 눈길마저 사로잡는다. 전시 일정에 맞춰 방문하면 현대미술을 이끄는 작가들의 인상적인 작품을 폭넓게 감상할 수 있다.",
+          "reason": "place-heading",
+          "characters": 130
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -220,9 +279,29 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "예술이 머무는 순간, 전시로 만나는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "김채린, 하나인 27가지 목소리, 2025, 혼합재료, 95×95×110cm, 부산현대미술관 제작 지원, 협력 사운드 서혜민, 글 홍승택, 영상 김용현, 자문 이성수, 제작보조 박형조",
+          "reason": "place-heading",
+          "characters": 167
+        },
+        {
+          "text": "을숙도에 위치한 부산현대미술관은 아름다운 자연 속, 예술이 숨 쉬는 특별한 공간입니다. 2018년에 개관한 이 미술관은 자연과 예술이 조화를 이루는 독특한 건축미로 많은 이들의 발길을 사로잡고 있습니다.",
+          "reason": "place-subject",
+          "characters": 88
+        },
+        {
+          "text": "부산현대미술관은 회화, 조각, 설치, 미디어 아트 등 다양한 현대미술 작품을 전시하며, 한국 작가뿐 아니라 해외 작가들의 전시도 활발하게 진행되고 있어요. 특히 비엔날레 등 국제 전시가 열릴 때면 세계적인 예술가들의 작품을 한자리에서 만날 수 있는 기회도 생기죠.",
+          "reason": "place-subject",
+          "characters": 112
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -238,10 +317,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서만 만날 수 있는 특별한 공간, 부산 유니크베뉴",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -257,10 +340,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "2026 부산비엔날레 개막식 참석 후기, ‘불협하는 합창’ 전시정보까지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -276,10 +363,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "낙동강에서 바다까지, 부산의 가을을 따라",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },
@@ -295,10 +386,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "[서부산 생태·문화 코스] 자연과 예술이 숨 쉬는 섬, 을숙도 에코-아트 투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "현대미술관"
+        ],
         "placeName": "부산현대미술관",
         "review": "pending"
       },

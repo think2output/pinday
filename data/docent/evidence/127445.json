@@ -1,21 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "127445",
     "name": "금강공원",
     "lat": 35.2199956286,
     "lng": 129.0761907705
   },
-  "collectedAt": "2026-10-24T09:57:13.264Z",
+  "collectedAt": "2026-10-24T10:23:39.433Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1152",
-      "busan-theme:1182",
-      "busan-theme:1324",
-      "busan-theme:2590",
-      "busan-theme:2853"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -32,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=127445&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:06.684Z",
-      "modifiedAt": "20260709101835"
+      "modifiedAt": "20260709101835",
+      "passages": [
+        {
+          "text": "일본 상인이 금정산자락의 일부를 자신의 개인 정원으로 꾸며 만든 이곳이 광복 후 공원으로 지정되면서 ‘금강공원’이라는 이름을 갖게 되었다. ‘금강’이라는 이름은 금정산의 수려함이 금강산에 버금간다 하여 ‘소금강’이라고 불렸는데, 여기서 따온 이름이다. 도심 속에 위치해 있어 사계절 인적이 끊이지 않는 공원으로, 누구나 즐길 수 있는 휴식처로 사랑을 받고 있다. 공원 내에는 다양한 문화시설이 있다. 동래지역이 가진 전통민속예술의 발굴과 계승, 보급을 위해 1974년 9월에 개관한 부산민속예술관, 우리나라 최초의 세계 해양자연사 전문 박물관인 부산해양자연사박물관이 자리하고 있다. 금강공원 케이블카도 빼놓을 수 없는 명물이다. 1966년 만들어진 케이블카는 오랜 시간이 지났지만 빨갛고 노란 옛날 느낌 그대로 운행하고 있다. 이외에도 체육시설, 지방문화재기념물 제13호인 임진동래의총, 7개의 기념비도 볼 수 있다.",
+          "characters": 357,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0000040000000",
@@ -48,7 +50,14 @@
       "originalText": "이 누각은 1742년(영조 18) 동래부사 김석일(金錫一)이 동래부 청사인 동헌(東軒) 앞에 세운 문루이다.\n 옛날 한양으로부터 부임해온 어느 동래부사가 임금에 대한 그리움을 달래기 위해 이 누각을 망미루로 불렀다는 이야기가 전해온다. 1919년 동래의 3․1운동은 이 누각에서의 만세 삼창으로 시작되었다고 한다.\n 전면에는 동래도호아문(東萊都護衙門)라고 쓰여진 큰 편액이 걸려 있고, 후면에는 망미루(望美樓)라는 큰 편액이 걸려 있다. 1895년(고종 32) 동래도호부가 동래관찰사영(東萊觀察使營)으로 승격됨에 따라 일명 포정사(布政司)라고도 불렀다. 누각 위에는 동래성 4대문의 여는 시각과 정오를 알리기 위해 치는 큰 북이 걸려 있었다고 한다. 일제시대에 시가지 정리계획에 따라 아무런 연고도 없는 지금의 위치로 옮겨졌다.\n 이 건물은 정면 3칸, 측면 2칸으로 높은 주초석(柱礎石) 위에 놓여 있다. 팔작(八作)지붕으로 된 2층 누각이며, 두공(枓栱) 양식은 2익공(二翼工)이다. 마루는 귀틀마루이며, 주위에는 계자난간(鷄子欄干)을 둘렀다. 처마는 부연(浮椽)이 붙은 겹처마이다. 이 누각은 조선후기의 전형적인 관아 문루로 부산지방의 대표적인 건물이다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000040000000",
       "fetchedAt": "2026-10-24T09:53:06.903Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "이 누각은 1742년(영조 18) 동래부사 김석일(金錫一)이 동래부 청사인 동헌(東軒) 앞에 세운 문루이다.\n 옛날 한양으로부터 부임해온 어느 동래부사가 임금에 대한 그리움을 달래기 위해 이 누각을 망미루로 불렀다는 이야기가 전해온다. 1919년 동래의 3․1운동은 이 누각에서의 만세 삼창으로 시작되었다고 한다.\n 전면에는 동래도호아문(東萊都護衙門)라고 쓰여진 큰 편액이 걸려 있고, 후면에는 망미루(望美樓)라는 큰 편액이 걸려 있다. 1895년(고종 32) 동래도호부가 동래관찰사영(東萊觀察使營)으로 승격됨에 따라 일명 포정사(布政司)라고도 불렀다. 누각 위에는 동래성 4대문의 여는 시각과 정오를 알리기 위해 치는 큰 북이 걸려 있었다고 한다. 일제시대에 시가지 정리계획에 따라 아무런 연고도 없는 지금의 위치로 옮겨졌다.\n 이 건물은 정면 3칸, 측면 2칸으로 높은 주초석(柱礎石) 위에 놓여 있다. 팔작(八作)지붕으로 된 2층 누각이며, 두공(枓栱) 양식은 2익공(二翼工)이다. 마루는 귀틀마루이며, 주위에는 계자난간(鷄子欄干)을 둘렀다. 처마는 부연(浮椽)이 붙은 겹처마이다. 이 누각은 조선후기의 전형적인 관아 문루로 부산지방의 대표적인 건물이다.",
+          "characters": 471,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0000050000000",
@@ -64,7 +73,14 @@
       "originalText": "이 문은 조선후기 동래부의 군사적 중요성을 가장 잘 보여주는 유적이다. \n 조선후기에 동래부는 일본과 가까운 거리에 있었기 때문에 국방과 외교상 중요한 곳이었다. 때문에 다른 고을에 비해 관아의 수도 많았고, 규모도 컸다. 이 문의 첫 건립은 1636년(인조 14) 동래부사 정양필(鄭良弼)이 동래부동헌을 건립할 때 함께 건립하였을 것으로 추정된다. 그 후 여러 차례 중건을 거쳤으며, 현재의 건물은 1870년(고종 7) 동래부사 정현덕(鄭顯德)이 중건한 것이다. 원래 동래부동헌의 대문으로 망미루 뒤쪽에 있었던 것을 일제시대에 시가지 정리를 하면서 연고도 없는 금강공원 안으로 옮겨졌다가 2014년 8월 15일 동래부 동헌 경내 지금의 자리로 옮겨져 있다. 이것은 1655년(효종 6) 동래부의 군사권이 경사좌병영의 지휘 아래 있던 경주진관(慶州鎭管) 소속에서 독립하여 동래독진(東萊獨鎭)이 되었음을 알리는 것이다. 또 아래 좌우의 기둥에는 진변병마절제영(鎭邊兵馬節制營)과 교린연향선위사(交隣宴餉宣慰使)라는 현판이 걸려 있다. 그 뜻은 동래부가 진변의 병마절제영이고, 대일외교 때 일본사신을 접대하던 관아라는 것이다.\n 이 문은 우리 고장에 남아 있는 전형적인 관아 대문이다. 규모는 작으나, 3문형식의 흔하지 않은 건물이다. 구조는 정면 3칸, 측면 1칸이다. 지붕은 솟을대문이며, 처마는 홑처마이다. 천장의 밑에 홍살이 설치된 것으로 보아 원래 외삼문(外三門)이었던 것으로 보인다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000050000000",
       "fetchedAt": "2026-10-24T09:53:07.329Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "이 문은 조선후기 동래부의 군사적 중요성을 가장 잘 보여주는 유적이다. \n 조선후기에 동래부는 일본과 가까운 거리에 있었기 때문에 국방과 외교상 중요한 곳이었다. 때문에 다른 고을에 비해 관아의 수도 많았고, 규모도 컸다. 이 문의 첫 건립은 1636년(인조 14) 동래부사 정양필(鄭良弼)이 동래부동헌을 건립할 때 함께 건립하였을 것으로 추정된다. 그 후 여러 차례 중건을 거쳤으며, 현재의 건물은 1870년(고종 7) 동래부사 정현덕(鄭顯德)이 중건한 것이다. 원래 동래부동헌의 대문으로 망미루 뒤쪽에 있었던 것을 일제시대에 시가지 정리를 하면서 연고도 없는 금강공원 안으로 옮겨졌다가 2014년 8월 15일 동래부 동헌 경내 지금의 자리로 옮겨져 있다. 이것은 1655년(효종 6) 동래부의 군사권이 경사좌병영의 지휘 아래 있던 경주진관(慶州鎭管) 소속에서 독립하여 동래독진(東萊獨鎭)이 되었음을 알리는 것이다. 또 아래 좌우의 기둥에는 진변병마절제영(鎭邊兵馬節制營)과 교린연향선위사(交隣宴餉宣慰使)라는 현판이 걸려 있다. 그 뜻은 동래부가 진변의 병마절제영이고, 대일외교 때 일본사신을 접대하던 관아라는 것이다.\n 이 문은 우리 고장에 남아 있는 전형적인 관아 대문이다. 규모는 작으나, 3문형식의 흔하지 않은 건물이다. 구조는 정면 3칸, 측면 1칸이다. 지붕은 솟을대문이며, 처마는 홑처마이다. 천장의 밑에 홍살이 설치된 것으로 보아 원래 외삼문(外三門)이었던 것으로 보인다.",
+          "characters": 563,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000130000000",
@@ -80,7 +96,14 @@
       "originalText": "이 무덤은 임진왜란 때 일본군이 침입해 오자 동래부사 송상현(宋象賢)과 함께 궐기하여 동래성을 지키다가 순절한 군․관․민의 유해를 거두어 모신 곳이다.\n 1731년(영조 7) 동래부사 정언섭(鄭彦燮)이 동래읍성을 수축할 때, 임진왜란의 격전지였던 옛 남문터에서 전사한 많은 사람들의 유골이 포환(砲丸), 화살촉과 함께 발견되었다. 이 충절의 유해를 거두어 동래부의 남쪽에 있던 삼성대(三姓臺)의 서쪽 구릉지(내성중학교 부근)에 여섯 무덤을 만들어 안장하고, 임진전망유해지총(壬辰戰亡遺骸之塚)이라는 비를 세웠다. 비의 글은 부사 정언섭이 썼으며, 비의 높이는 103cm, 너비 45cm이다. 앞면에는 임진전망유해지총, 뒷면에는 10행으로 적은 육총(六塚)의 내력이 기록되어 있다.\n 또 국가에서는 제사 비용의 마련을 위해 제전(祭田)을 주고, 향교에 맡겨 매년 추석에 유생으로 하여금 제사를 지내게 하였다. 순절일에는 관에서 장사(壯士)를 보내어 제사를 모시게 했다.\n 일제시대에 토지개간으로 복천동 뒷산 영보단(永報壇 : 복천박물관) 부근으로 이장하였고, 이후 비석을 옮겨 세웠다. 1974년 아무런 연고도 없는 금강공원으로 옮겨 왔다. 지금은 성의 함락일인 음력 4월 15일 동래구에서 제향을 모시고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000130000000",
       "fetchedAt": "2026-10-24T09:53:07.754Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "이 무덤은 임진왜란 때 일본군이 침입해 오자 동래부사 송상현(宋象賢)과 함께 궐기하여 동래성을 지키다가 순절한 군․관․민의 유해를 거두어 모신 곳이다.\n 1731년(영조 7) 동래부사 정언섭(鄭彦燮)이 동래읍성을 수축할 때, 임진왜란의 격전지였던 옛 남문터에서 전사한 많은 사람들의 유골이 포환(砲丸), 화살촉과 함께 발견되었다. 이 충절의 유해를 거두어 동래부의 남쪽에 있던 삼성대(三姓臺)의 서쪽 구릉지(내성중학교 부근)에 여섯 무덤을 만들어 안장하고, 임진전망유해지총(壬辰戰亡遺骸之塚)이라는 비를 세웠다. 비의 글은 부사 정언섭이 썼으며, 비의 높이는 103cm, 너비 45cm이다. 앞면에는 임진전망유해지총, 뒷면에는 10행으로 적은 육총(六塚)의 내력이 기록되어 있다.\n 또 국가에서는 제사 비용의 마련을 위해 제전(祭田)을 주고, 향교에 맡겨 매년 추석에 유생으로 하여금 제사를 지내게 하였다. 순절일에는 관에서 장사(壯士)를 보내어 제사를 모시게 했다.\n 일제시대에 토지개간으로 복천동 뒷산 영보단(永報壇 : 복천박물관) 부근으로 이장하였고, 이후 비석을 옮겨 세웠다. 1974년 아무런 연고도 없는 금강공원으로 옮겨 왔다. 지금은 성의 함락일인 음력 4월 15일 동래구에서 제향을 모시고 있다.",
+          "characters": 489,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000140000000",
@@ -96,7 +119,14 @@
       "originalText": "이 비석은 동래부사 강필리(姜必履)가 온정을 대대적으로 수리한 공로를 기리기 위하여 1766년(영조 42)에 세웠는데, 송광적(宋光迪)이 썼다.\n 동래온천에 대한 최초의 기록은 신라의 재상 충원공(忠元公)이 이곳에서 목욕을 하고 돌아갔다는 삼국유사의 기록이다. 동래부읍지(東萊府邑誌) 산천조 온정란에 보면, 동래온천은 신라시대부터 알려져 있었음을 알 수 있다. 온천의 물이 계란을 익힐 만큼 뜨거웠으며, 병자가 목욕을 하면 병이 잘 나아 예로부터 많은 사람들이 찾았다고 한다.\n 비는 높이 144cm, 폭 61cm이다. 비문에 따르면, 1691년(숙종 17)에 고쳐 세운 온정은 ‘돌로 두 개의 탕을 만들었는데, 그 후 건물이 낡아 탕이 막힌 것을 새로 동래부사로 부임한 강필리가 다시 고쳐 짓고, 남탕과 여탕을 구획한 9칸짜리 건물을 지었는데, 그 모습이 상쾌하고 화려하여 마치 꿩이 나는 것과 같다.’고 하였다. 이후에도 이 온정은 여러 차례 중수되었다고 한다.\n 1878년에 처음으로 일본인의 전용 목욕탕이 생겼고, 일제시대에는 일본인이 온천장의 실권을 장악하였다. 이에 한국인은 이권을 박탈당하고 지내야만 했다. 지금은 온천동 용각(龍閣) 내에 보존되어 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000140000000",
       "fetchedAt": "2026-10-24T09:53:08.181Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "이 비석은 동래부사 강필리(姜必履)가 온정을 대대적으로 수리한 공로를 기리기 위하여 1766년(영조 42)에 세웠는데, 송광적(宋光迪)이 썼다.\n 동래온천에 대한 최초의 기록은 신라의 재상 충원공(忠元公)이 이곳에서 목욕을 하고 돌아갔다는 삼국유사의 기록이다. 동래부읍지(東萊府邑誌) 산천조 온정란에 보면, 동래온천은 신라시대부터 알려져 있었음을 알 수 있다. 온천의 물이 계란을 익힐 만큼 뜨거웠으며, 병자가 목욕을 하면 병이 잘 나아 예로부터 많은 사람들이 찾았다고 한다.\n 비는 높이 144cm, 폭 61cm이다. 비문에 따르면, 1691년(숙종 17)에 고쳐 세운 온정은 ‘돌로 두 개의 탕을 만들었는데, 그 후 건물이 낡아 탕이 막힌 것을 새로 동래부사로 부임한 강필리가 다시 고쳐 짓고, 남탕과 여탕을 구획한 9칸짜리 건물을 지었는데, 그 모습이 상쾌하고 화려하여 마치 꿩이 나는 것과 같다.’고 하였다. 이후에도 이 온정은 여러 차례 중수되었다고 한다.\n 1878년에 처음으로 일본인의 전용 목욕탕이 생겼고, 일제시대에는 일본인이 온천장의 실권을 장악하였다. 이에 한국인은 이권을 박탈당하고 지내야만 했다. 지금은 온천동 용각(龍閣) 내에 보존되어 있다.",
+          "characters": 462,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:17-21-0000180000000",
@@ -112,7 +142,14 @@
       "originalText": "야류(들놀음)는 경상남도 내륙지방에서 행해지던 오광대가 바닷길을 따라 수영·동래·부산진 등에 전래된 것으로, 야류란 이름은 넓은 들판같은 곳에서 놀기 때문에 붙여진 것이라고 한다. 오광대가 전문연예인에 의해 행해진 도시가면극이라면 야류는 비직업적인 연희자들, 즉 마을사람들에 의해 토착화된 놀이이다.\n 동래야류는 정월 대보름 저녁에 벌어졌는데, 그 해 농사를 점치거나 풍년을 기원하는 의미로 행해졌다고 한다. 정확한 시기는 알 수 없으나, 약 100년전 인근 수영야류를 보고 시작되었다고 전해지며, 근래에는 대중오락적인 놀이로 공연되고 있다. 놀이는 문둥이춤·양반과 말뚝이의 재담·영노춤·할미와 영감춤의 4과장으로 구성되어 있으며, 놀이에 앞서 가면과 의상을 갖추고 음악을 울리면서 공연장소까지 행렬하는 길놀이를 한다. 등장인물로는 원양반·둘째양반·모양반·영감·할미·제대각시·봉사·의원·무당·상도꾼 등이 있다. 줄거리는 양반에 대한 조롱과 모욕이 주를 이룬다. 탈은 대부분 바가지로 만드는데, 양반들 탈의 턱 부분을 움직이게 하여 재담을 할 때 마치 살아있는 사람의 얼굴처럼 턱이 움직이는 것이 특색이다. 반주악기는 대체로 타악기를 사용하며, 굿거리장단에 맞춰 추는 덧뵈기(탈놀이)춤이 주를 이루는데, 특히 말뚝이춤과 양반춤이 대표적이다. 동래야류는 같은 계통의 오광대 탈놀음과 달리 오방신장춤과 파계승에 대한 풍자, 사자춤 등이 빠져 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=17&ccbaCtcd=21&ccbaAsno=0000180000000",
       "fetchedAt": "2026-10-24T09:53:08.634Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "야류(들놀음)는 경상남도 내륙지방에서 행해지던 오광대가 바닷길을 따라 수영·동래·부산진 등에 전래된 것으로, 야류란 이름은 넓은 들판같은 곳에서 놀기 때문에 붙여진 것이라고 한다. 오광대가 전문연예인에 의해 행해진 도시가면극이라면 야류는 비직업적인 연희자들, 즉 마을사람들에 의해 토착화된 놀이이다.\n 동래야류는 정월 대보름 저녁에 벌어졌는데, 그 해 농사를 점치거나 풍년을 기원하는 의미로 행해졌다고 한다. 정확한 시기는 알 수 없으나, 약 100년전 인근 수영야류를 보고 시작되었다고 전해지며, 근래에는 대중오락적인 놀이로 공연되고 있다. 놀이는 문둥이춤·양반과 말뚝이의 재담·영노춤·할미와 영감춤의 4과장으로 구성되어 있으며, 놀이에 앞서 가면과 의상을 갖추고 음악을 울리면서 공연장소까지 행렬하는 길놀이를 한다. 등장인물로는 원양반·둘째양반·모양반·영감·할미·제대각시·봉사·의원·무당·상도꾼 등이 있다. 줄거리는 양반에 대한 조롱과 모욕이 주를 이룬다. 탈은 대부분 바가지로 만드는데, 양반들 탈의 턱 부분을 움직이게 하여 재담을 할 때 마치 살아있는 사람의 얼굴처럼 턱이 움직이는 것이 특색이다. 반주악기는 대체로 타악기를 사용하며, 굿거리장단에 맞춰 추는 덧뵈기(탈놀이)춤이 주를 이루는데, 특히 말뚝이춤과 양반춤이 대표적이다. 동래야류는 같은 계통의 오광대 탈놀음과 달리 오방신장춤과 파계승에 대한 풍자, 사자춤 등이 빠져 있다.",
+          "characters": 551,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:22-21-0000030000000",
@@ -128,7 +165,14 @@
       "originalText": "동래학춤은 동래지방에서 전승되어오는 학춤이다. 주로 정월대보름날 동래야류나 줄다리기를 할 때 추던 춤으로, 어떤 춤꾼이 도포에 갓을 쓰고서 덧배기 춤을 추는 모습이 “학이 춤추는 것과 같다”라고 한데서 학춤이라 이름 붙여졌다 한다.\n 동래학춤은 의상을 따로 갖추지 않고 일상의 옷인 도포에 갓을 쓰고 바지저고리, 버선과 미투리를 신고 즉흥적으로 춘다. 반주악기는 꽹과리와 장구, 징, 북 등의 농악편성으로 되어 있고 장단은 굿거리 장단이다. 춤사위에는 양손을 너울거리는 날아가는 사위, 한 발 들고 서 있는 발 드는 사위, 학이 날개를 폈다가 오므리는 모습의 펴는 사위와 오므리는 사위, 좌우 상하를 바라보는 보는 사위, 왼발은 무릎을 굽혀 앞으로 내밀고 오른발은 뒤로 편 상태에서 좌우로 흔들거나 상하로 가볍게 움직이는 배김새 사위 등이 있다. 구성을 보면, 일반 민속춤과 같이 일정한 순서로 짜여져 있지 않고, 자유분방한 즉흥성과 개인적 멋이 강조되고 있다.\n 동래학춤은 자연미와 예술미의 조화가 우아하고 격조높은 춤사위로 표현된 예술적 가치가 높은 춤이다.  예능보유자 김태형(악사:쇠), 이성훈(무수) 등이 그 맥을 이어가고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=22&ccbaCtcd=21&ccbaAsno=0000030000000",
       "fetchedAt": "2026-10-24T09:53:09.045Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동래학춤은 동래지방에서 전승되어오는 학춤이다. 주로 정월대보름날 동래야류나 줄다리기를 할 때 추던 춤으로, 어떤 춤꾼이 도포에 갓을 쓰고서 덧배기 춤을 추는 모습이 “학이 춤추는 것과 같다”라고 한데서 학춤이라 이름 붙여졌다 한다.\n 동래학춤은 의상을 따로 갖추지 않고 일상의 옷인 도포에 갓을 쓰고 바지저고리, 버선과 미투리를 신고 즉흥적으로 춘다. 반주악기는 꽹과리와 장구, 징, 북 등의 농악편성으로 되어 있고 장단은 굿거리 장단이다. 춤사위에는 양손을 너울거리는 날아가는 사위, 한 발 들고 서 있는 발 드는 사위, 학이 날개를 폈다가 오므리는 모습의 펴는 사위와 오므리는 사위, 좌우 상하를 바라보는 보는 사위, 왼발은 무릎을 굽혀 앞으로 내밀고 오른발은 뒤로 편 상태에서 좌우로 흔들거나 상하로 가볍게 움직이는 배김새 사위 등이 있다. 구성을 보면, 일반 민속춤과 같이 일정한 순서로 짜여져 있지 않고, 자유분방한 즉흥성과 개인적 멋이 강조되고 있다.\n 동래학춤은 자연미와 예술미의 조화가 우아하고 격조높은 춤사위로 표현된 예술적 가치가 높은 춤이다.  예능보유자 김태형(악사:쇠), 이성훈(무수) 등이 그 맥을 이어가고 있다.",
+          "characters": 440,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:22-21-0000040000000",
@@ -144,7 +188,14 @@
       "originalText": "동래지역에 전승되는 민속놀이의 하나로 지신을 진정시키고, 잡귀를 물리치는 민간신앙적 마을굿의 한 형태이다.\n 지신밟기는 옛부터 정월 대보름에 행해지던 일종의 가면행렬놀이로서 마을과 집안의 평안을 빌고 나아가서는 한해의 풍년을 기원하는 종교성을 띤다. 현재의 동래지신밟기는 조선 후기에 행해지던 것을 원형으로 재구성하여 1970년 경부터 민속놀이로 다듬은 것이다.\n 동래지신밟기는 음력 12월에 악기, 의상, 도구 등을 준비하며 조선시대 각 계층의 신분인 사대부, 포수, 하동, 각시 등 35명 내외의 인원을 구성하여 놀이연습을 한다. 사대부는 총지휘자격이고, 하동과 포수는 상대역으로서 흥을 돋우는 구실을 한다. 하동과 포수가 사대부를 상대로 하여 벌이는 해학적인 대사는 양반을 조롱하는 풍자성이 깃들여 있다.\n 놀이의 구성은 주산 지신풀이, 당산 지신풀이, 우물샘 지신풀이, 생원댁 지신풀이의 네 마당으로 이루어져 있다. 주산과 당산에 먼저 고사를 지내고, 마을로 내려와 마을 우물샘에 고사하고 풀이를 한다. 마지막으로 집집마다 돌며 지신밟기를 행한다. 지신을 밟아주면 집주인은 사례로 술, 곡식, 돈을 내놓는데 곡식과 돈은 마을의 공동사업에 쓰여진다.\n 다른 민속놀이가 풍물놀음을 위주로 하는 것과 달리 동래지신밟기는 굿거리 장단에 덧배기춤을 위주로 함이 특징이다. 현재는 부산민속예술보존협회와 전수학교에서 전승·보급에 힘쓰고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=22&ccbaCtcd=21&ccbaAsno=0000040000000",
       "fetchedAt": "2026-10-24T09:53:09.473Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동래지역에 전승되는 민속놀이의 하나로 지신을 진정시키고, 잡귀를 물리치는 민간신앙적 마을굿의 한 형태이다.\n 지신밟기는 옛부터 정월 대보름에 행해지던 일종의 가면행렬놀이로서 마을과 집안의 평안을 빌고 나아가서는 한해의 풍년을 기원하는 종교성을 띤다. 현재의 동래지신밟기는 조선 후기에 행해지던 것을 원형으로 재구성하여 1970년 경부터 민속놀이로 다듬은 것이다.\n 동래지신밟기는 음력 12월에 악기, 의상, 도구 등을 준비하며 조선시대 각 계층의 신분인 사대부, 포수, 하동, 각시 등 35명 내외의 인원을 구성하여 놀이연습을 한다. 사대부는 총지휘자격이고, 하동과 포수는 상대역으로서 흥을 돋우는 구실을 한다. 하동과 포수가 사대부를 상대로 하여 벌이는 해학적인 대사는 양반을 조롱하는 풍자성이 깃들여 있다.\n 놀이의 구성은 주산 지신풀이, 당산 지신풀이, 우물샘 지신풀이, 생원댁 지신풀이의 네 마당으로 이루어져 있다. 주산과 당산에 먼저 고사를 지내고, 마을로 내려와 마을 우물샘에 고사하고 풀이를 한다. 마지막으로 집집마다 돌며 지신밟기를 행한다. 지신을 밟아주면 집주인은 사례로 술, 곡식, 돈을 내놓는데 곡식과 돈은 마을의 공동사업에 쓰여진다.\n 다른 민속놀이가 풍물놀음을 위주로 하는 것과 달리 동래지신밟기는 굿거리 장단에 덧배기춤을 위주로 함이 특징이다. 현재는 부산민속예술보존협회와 전수학교에서 전승·보급에 힘쓰고 있다.",
+          "characters": 538,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:22-21-0000080000000",
@@ -160,7 +211,14 @@
       "originalText": "가야금산조는 가야금으로 연주하도록 짜여진 산조를 가리킨다. 산조란 악기를 혼자서 연주하는 형식을 말하며, 느린 장단으로 시작하여 차츰 빠른 장단으로 바뀌는데, 이는 듣는 사람을 서서히 긴장시키면서 흥겨움을 끌어올리게 한다.\n 가야금산조는 4∼6개의 장단으로 짜여진다. 각 장단의 느낌을 살펴보면 진양조는 아주 느려서 서정적이고, 중모리는 안정적이며, 중중모리는 흥취를 돋운다. 자진모리는 밝고 경쾌하고, 휘모리는 흥분과 급박감이 있다. 다른 악기로 연주하는 산조보다 먼저 만들어졌으며, 뛰어난 기교로 인해 사람들의 관심을 많이 끌어서 여러 유파가 형성되었다. \n 강태홍류 가야금산조는 막아내기, 눌러내기 등 어려운 기교가 많아 기교파의 총수로 평가된다. 특징을 보면 산조의 뿌리라고 할 수 있는 계면조(슬프고 처절한 느낌을 주는 음조)를 줄이고, 우조(맑고 씩씩한 느낌을 주는 음조)와 강산제(목소리가 분명하고 정교하여 화창하고 맑은 느낌을 주는 음조)를 많이 끌어들임으로써 호쾌하고 온화한 면이 많다. 가락은 복잡하고 불규칙적이며 엇박이 많이 나타난다. \n 강태홍류 가야금산조는 전통음악 중에서 순수한 음악미를 추구하는 독주곡으로, 다른 산조에 비해 경쾌한 느낌을 주는 귀중한 음악이다. 현재 강태홍류가야금산조보존회에서 전승·보존에 힘쓰고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=22&ccbaCtcd=21&ccbaAsno=0000080000000",
       "fetchedAt": "2026-10-24T09:53:09.928Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "가야금산조는 가야금으로 연주하도록 짜여진 산조를 가리킨다. 산조란 악기를 혼자서 연주하는 형식을 말하며, 느린 장단으로 시작하여 차츰 빠른 장단으로 바뀌는데, 이는 듣는 사람을 서서히 긴장시키면서 흥겨움을 끌어올리게 한다.\n 가야금산조는 4∼6개의 장단으로 짜여진다. 각 장단의 느낌을 살펴보면 진양조는 아주 느려서 서정적이고, 중모리는 안정적이며, 중중모리는 흥취를 돋운다. 자진모리는 밝고 경쾌하고, 휘모리는 흥분과 급박감이 있다. 다른 악기로 연주하는 산조보다 먼저 만들어졌으며, 뛰어난 기교로 인해 사람들의 관심을 많이 끌어서 여러 유파가 형성되었다. \n 강태홍류 가야금산조는 막아내기, 눌러내기 등 어려운 기교가 많아 기교파의 총수로 평가된다. 특징을 보면 산조의 뿌리라고 할 수 있는 계면조(슬프고 처절한 느낌을 주는 음조)를 줄이고, 우조(맑고 씩씩한 느낌을 주는 음조)와 강산제(목소리가 분명하고 정교하여 화창하고 맑은 느낌을 주는 음조)를 많이 끌어들임으로써 호쾌하고 온화한 면이 많다. 가락은 복잡하고 불규칙적이며 엇박이 많이 나타난다. \n 강태홍류 가야금산조는 전통음악 중에서 순수한 음악미를 추구하는 독주곡으로, 다른 산조에 비해 경쾌한 느낌을 주는 귀중한 음악이다. 현재 강태홍류가야금산조보존회에서 전승·보존에 힘쓰고 있다.",
+          "characters": 501,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:22-21-0000100000000",
@@ -176,17 +234,28 @@
       "originalText": "동래고무는 부산시 동래구에 전승되는 북춤이다. 고려 전기 궁중악을 관장했던 교방청(敎坊廳)의 기생들에 의해 추어졌으나, 조선시대 때 동래감영의 교방으로 전해지면서 지역의 특성에 따라 동래고무라는 이름으로 불리게 되었다. 『고려사』「악지」에 기록된 내용을 보면, 고려 충렬왕(재위 1274∼1308) 때 귀양살이를 하던 이혼이라는 양반이 바다에 떠내려오는 뗏목으로 북을 만든 것이 북춤의 기원이 되었다고 한다.\n 동래고무는 중앙에 큰 북을 놓고 4명의 무용수가 영산회상곡인 잔영산, 염불도드리, 타령군악에 맞추어 북을 치면서 춤을 추면, 다른 4명의 무용수가 지화자를 노래하면서 함께 어울려 춤을 춘다. 춤사위에는 머리사위·부림사위·맞춤사위·옆실이·평사위·팔수사위·상대무·북춤사위·팔자사위·인사태 등이 있다. 춤사위는 궁중의 영향을 받아 섬세하면서 단아한 편이고, 춤의 구성은 단조로우면서도 변화가 있고 화려한 것이 특징이다.\n 동래고무는 궁중의 정재(呈才)도 아니고 순수민속춤도 아닌 중간 장르의 춤으로서 교방무의 한 유형이라는 점에서 가치가 크다. 현재 부산민속예술보존협회에서 전승·보존에 힘쓰고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=22&ccbaCtcd=21&ccbaAsno=0000100000000",
       "fetchedAt": "2026-10-24T09:53:10.338Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동래고무는 부산시 동래구에 전승되는 북춤이다. 고려 전기 궁중악을 관장했던 교방청(敎坊廳)의 기생들에 의해 추어졌으나, 조선시대 때 동래감영의 교방으로 전해지면서 지역의 특성에 따라 동래고무라는 이름으로 불리게 되었다. 『고려사』「악지」에 기록된 내용을 보면, 고려 충렬왕(재위 1274∼1308) 때 귀양살이를 하던 이혼이라는 양반이 바다에 떠내려오는 뗏목으로 북을 만든 것이 북춤의 기원이 되었다고 한다.\n 동래고무는 중앙에 큰 북을 놓고 4명의 무용수가 영산회상곡인 잔영산, 염불도드리, 타령군악에 맞추어 북을 치면서 춤을 추면, 다른 4명의 무용수가 지화자를 노래하면서 함께 어울려 춤을 춘다. 춤사위에는 머리사위·부림사위·맞춤사위·옆실이·평사위·팔수사위·상대무·북춤사위·팔자사위·인사태 등이 있다. 춤사위는 궁중의 영향을 받아 섬세하면서 단아한 편이고, 춤의 구성은 단조로우면서도 변화가 있고 화려한 것이 특징이다.\n 동래고무는 궁중의 정재(呈才)도 아니고 순수민속춤도 아닌 중간 장르의 춤으로서 교방무의 한 유형이라는 점에서 가치가 크다. 현재 부산민속예술보존협회에서 전승·보존에 힘쓰고 있다.",
+          "characters": 450,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1152",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "혼자 하는 사색여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "금강공원"
+        ],
         "placeName": "금강공원",
         "review": "pending"
       },
@@ -198,33 +267,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1170",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "산들바람 솔솔 부산의 리틀 포레스트",
-      "relation": "same-place",
-      "match": {
-        "field": "PLACE",
-        "method": "exact-name",
-        "placeName": "금강공원",
-        "review": "pending"
-      },
-      "originalText": "<img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100595241.jpg\" alt=\"바람이 불어오는 곳, 그곳으로 가면/산들바람 솔솔/부산의 리틀 포레스트/여유롭게 흔들리는 억새풀 따라, 쉼표여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597006.jpg\" usemap=\"#planetmap\" alt=\"장산 억새바다, 그 사이 오솔길이 한 폭의 그림 같은 곳/승학산 억새평원, 은빛으로 하늘거리는 억새풀의 향연\"><map id=\"planetmap\" name=\"planetmap\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=432&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=445&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597748.jpg\" alt=\"가을 담긴 반짝이는 물빛을 보며, 힐링여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598170.jpg\" usemap=\"#planetmap2\" alt=\"성지곡수원지, 마음의 평온을 주는 가을종합선물세트/회동수우언지, 강과 호수, 숲이 어우러진 명품 산책로\"><map id=\"planetmap2\" name=\"planetmap2\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=430&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=436&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598778.jpg\" alt=\"붉은 빛이 일렁이는 그곳에서, 낭만여행\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=423&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599189.jpg\" alt=\"기장 불광산 숲길 황홀한 빛깔로 물드는 산 속 풍경 경건하게 마음을 씻 내며 사찰의 아름다움을 감상 할 수있는, 불광산 숲길을 함께 걸어보자.\" />\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=424&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599517.jpg\" alt=\"일광산테마길 느림의 미학을 추구하는 길 편안하게 걷기에만 집중할 수 있는 일광산테마길은 낙엽과 단풍이 아름다운 가을이면 더욱 걷기 좋다. 곱게 깔린 산책로를 따라 가벼운 발걸음으로 나서보자.\">\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599949.jpg\" alt=\"금강공원과 식물원 뉴트로 감성 가득한 나만의 휴식처 도심 속 울창한 숲과 기암괴석의 조화가 아름다운 공원. 일상 속 찰나의 행복을 아낌없이 내어주는 금강공원 케이블카와 금강식물원도 즐겨보자.\"></a>\n\n\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1170&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1182",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Visit Taste",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "금강공원"
+        ],
         "placeName": "금강공원",
         "review": "pending"
       },
@@ -236,33 +290,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "금강공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1324",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜지민편＞",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "금강공원"
+        ],
         "placeName": "금강공원",
         "review": "pending"
       },
@@ -278,10 +317,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "익숙한 듯 아닌 듯 새롭게 느껴지는 OTT 속 부산!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "금강공원"
+        ],
         "placeName": "금강공원",
         "review": "pending"
       },
@@ -293,33 +336,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2672",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "설 연휴에도 부산이 좋다",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "금강공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070692148437.jpg\" alt=\"설 연휴에도 부산이 좋다/지역별 관광 명소 추천\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625418822.jpg\" alt=\"부산의 역사와 풍경, 그리고 맛.원도심-영도 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=1444\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026653483.jpg\" alt=\"부산근현대역사관별관/한 해의 시작에 돌아보는 근현대 부산 아카이브\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=2098\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026654111.jpg\" alt=\"화국반점/간짜장 맛집! 분위기 맛집! 온가족이 함께 즐기는 노포 감성\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026654879.jpg\" alt=\"태종대/다누비열차를 타고 만나는 푸른 바다와 절경\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1440&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026655329.jpg\" alt=\"Drive in 영도/역시 연휴에는 영화지! 감성 넘치는 자동차 극장\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625419982.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625421209.jpg\" alt=\"낙동강과 해안을 따라 떠나는 서부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=333&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026656391.jpg\" alt=\"장림포구/알록달록 아름다운 작은 포구에서 남기는 추억\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=1523&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026656784.jpg\" alt=\"삼락하동재첩국/담백한 재첩국으로 속을 든든하게!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026657278.jpg\" alt=\"을숙도/아이도 어른도 둘러보기 좋은 생태적 보고\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026657934.jpg\" alt=\"다대포 해변/데크 산책로를 따라 걸어보는 부산 일몰 명소 NO.1\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625422088.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625422837.jpg\" alt=\"바다와 숲이 어우러진 동부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2095\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026658656.jpg\" alt=\"송정구덕포 길/깔끔하게 조성된 산책로를 따라 걸어보는 아름다운 송정 해변\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=577&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659099.jpg\" alt=\"영변횟집/신선한 제철 회를 즐길 수 있는 세꼬시 맛집\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659496.jpg\" alt=\"해동용궁사/다 이루어져라! 부산의 바닷가 사찰\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=260&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026659965.jpg\" alt=\"아홉산 숲/바람과 햇살 속 산책으로 새해에는 몸과 마음을 건강하게\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625423248.jpg\" alt=\"\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625423661.jpg\" alt=\"자연따라 맛따라 북부산 여행\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=396&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026660765.jpg\" alt=\"금정산/새해 다짐과 함께하는 첫 등산은 국내 최초 도심형 국립공원에서!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026661262.jpg\" alt=\"금강공원/케이블카를 타고 올라가 성광 따라 걷는 산책길\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=410&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026661770.jpg\" alt=\"동래파전/일반적인 파전과는 다르다! 동래하면 떠오르는 대표 음식\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=2212\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070026662158.jpg\" alt=\"서동미로시장/명절 분위기 가득! 일상과 예술이 공존하는 전통시장\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/177070625424706.jpg\" alt=\"\"></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2672&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2853",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 가을 여행 추천, 금강공원 케이블카 타고 만나는 금정산",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "금강공원"
+        ],
         "placeName": "금강공원",
         "review": "pending"
       },

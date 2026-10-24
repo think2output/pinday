@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2788422",
     "name": "감만시민부두",
     "lat": 35.1096686789499,
     "lng": 129.068721798909
   },
-  "collectedAt": "2026-10-24T09:57:12.952Z",
+  "collectedAt": "2026-10-24T10:23:38.690Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2788422&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:33.148Z",
-      "modifiedAt": "20260305102925"
+      "modifiedAt": "20260305102925",
+      "passages": [
+        {
+          "text": "감만시민부두는 항해하던 배가 정착하는 곳이기도 하며, 시민들의 쉼터가 되어주는 곳이다. 이곳에서는 부산항대교를 볼 수 있다. 덕분에 웅장한 모습의 배경으로 한 사진도 찍을 수 있는 부산의 숨겨진 사진 명소이다. 또한, 밤이 되면 대교에 무지개 빛의 불이 켜지고 그곳에서 바라보는 야경도 아름답다. 감만시민부두 방파제 내에서 취사와 야영, 낚시가 금지되어 있어 주의해야 한다.",
+          "characters": 160,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

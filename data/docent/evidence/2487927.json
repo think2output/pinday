@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2487927",
     "name": "맥도생태공원",
     "lat": 35.1498,
     "lng": 128.9558
   },
-  "collectedAt": "2026-10-24T09:57:13.776Z",
+  "collectedAt": "2026-10-24T10:23:40.782Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:306"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2487927&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:07.015Z",
-      "modifiedAt": "20260305173047"
+      "modifiedAt": "20260305173047",
+      "passages": [
+        {
+          "text": "맥도생태공원은 낙동강하구둑부터 공항램프까지 하천 내 자연적으로 형성된 둔치지역이며, 낙동강하구 천연기념물으로 지정된 지역이다. 이곳은 과거부터 벼농사 등의 농경지로 이용되어 아직까지 겨울철새의 먹이터 겸 쉼터로 관리되도록 하였다. 겨울철새에 대한 배려 이외에도 생태공원의 특징을 살려 갈대밭, 연꽃단지, 수생식물원 등을 조성하여 시민들의 볼거리를 만들었고, 그밖에 각종 체육시설과 휴게시설이 구비되어 있다.",
+          "characters": 182,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:306",
@@ -36,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2024년 가장 먼저 달려가서 봐야 할 부산 벚꽃 명소 모음zip",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "맥도생태공원은 겨울철새들이 날아드는 곳으로 탐방로, 습지데크, 연꽃단지, 수생식물원, 체육시설 등이 조성돼 있어 사시사철 시민들의 사랑을 받는 장소다. 이곳은 부산의 벚꽃 명소 중에서도 비교적 덜 알려져 있어 한산하게 봄을 만끽할 수 있다. 노점이 없어 호젓한 분위기에서 벚꽃을 즐기려는 사람들에게 안성맞춤이다.",
+          "reason": "place-heading",
+          "characters": 136
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "맥도생태공원"
+        ],
         "placeName": "맥도생태공원",
         "review": "pending"
       },

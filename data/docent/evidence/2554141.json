@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2554141",
     "name": "낙동강문화관",
     "lat": 35.1082471415,
     "lng": 128.9474137004
   },
-  "collectedAt": "2026-10-24T09:57:13.418Z",
+  "collectedAt": "2026-10-24T10:23:39.826Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:378",
-      "busan-theme:2705"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2554141&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:49.584Z",
-      "modifiedAt": "20261021085724"
+      "modifiedAt": "20261021085724",
+      "passages": [
+        {
+          "text": "부산광역시 사하구에 위치한 낙동강 문화관은 낙동강과 낙동강 살리기 사업의 올바른 이해를 물 위의 도시를 걷듯 큐브(CUBE) 하나하나에 이야기를 담아내고 있다. 어린이들이 감성적 체험을 할 수 있도록 다양한 체험 프로그램과 놀이시설을 마련하였으며, 강을 주제로 한 미디어작품은 관람객들과 문화적 소통과 공감을 형성하며 다양한 체험 시설은 수변도시의 문화와 미래를 경험할 수 있도록 도운다.",
+          "characters": 168,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:378",
@@ -37,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "유니크베뉴_수변‧전경시설",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강문화관은 낙동강에 관한 다양한 이야기를 전해주는 공간으로 강을 주제로 다양한 문화예술 프로그램을 운영하고 있다. 특히, 어린이들을 위한 체험프로그램을 통해 물과 강에 대한 소중함을 일깨워 주는 곳이다.",
+          "reason": "place-subject",
+          "characters": 90
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "낙동강문화관"
+        ],
         "placeName": "낙동강문화관",
         "review": "pending"
       },
@@ -55,10 +70,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 현지인만 아는 신상 야경 맛집, 을숙도 낙동강하굿둑",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "낙동강문화관"
+        ],
         "placeName": "낙동강문화관",
         "review": "pending"
       },

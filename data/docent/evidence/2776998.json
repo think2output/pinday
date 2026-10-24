@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2776998",
     "name": "석탑사",
     "lat": 35.3231,
     "lng": 129.1615
   },
-  "collectedAt": "2026-10-24T09:57:14.496Z",
+  "collectedAt": "2026-10-24T10:23:43.103Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2776998&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:40.289Z",
-      "modifiedAt": "20260309145830"
+      "modifiedAt": "20260309145830",
+      "passages": [
+        {
+          "text": "부산 기장군 정관 신도시가 내려다보이는 백운산 자락에 있는 석탑사는 도심 속 여유와 휴식이 필요할 때 찾을 수 있는 사찰이다. 원효대사와 의상대사가 정관읍 용수리 덕전마을을 지나다 동해에서 비치는 광명 속에 계시던 미륵부처님을 보고 백운산 가장 높은 봉우리에서 수도하였다는 것이 석탑사의 전설이다. 3층 석탑이 반기는 석탑사에서는 불교 기초교리 강좌와 경전 강좌를 진행하고 있어 부처님의 지혜와 자비에 대한 이해를 높일 수 있다. 작은 절이지만 파란 하늘을 향해 우뚝 솟은 소나무의 정기에 힘을 얻을 수 있다.",
+          "characters": 214,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

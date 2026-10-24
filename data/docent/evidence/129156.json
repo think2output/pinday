@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "129156",
     "name": "가덕도 등대",
     "lat": 35.0006471157,
     "lng": 128.8295937487
   },
-  "collectedAt": "2026-10-24T09:57:12.907Z",
+  "collectedAt": "2026-10-24T10:23:38.586Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:2296"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=129156&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:29.390Z",
-      "modifiedAt": "20250318220404"
+      "modifiedAt": "20250318220404",
+      "passages": [
+        {
+          "text": "조선 말기에 건설된 유인등대 중 하나로서 1909년 12월에 점등을 시작했으며, 2003년 9월 16일 부산광역시 유형문화재로 지정된 등대이다. 고딕형 양식을 갖고 있으며 이 때문에 프랑스 등탑 형식과 유사하다. 출입구에는 진입계단의 폭에 맞게 목재를 이용한 돌출형 경사 현관을 설치하였으며, 상부 현판에는 조선 황실의 상징인 오얏꽃 문양이 새겨져 있는 등 한국, 일본, 유럽의 건축양식이 혼합된 구조로 되어 있다. 근대 서구 건축의 양식, 재료 등이 최초로 사용되었던 건물 중 하나이고 다른 등대에 비해 원형을 상당 부분 잘 간직하고 있기 때문에 역사적, 건축사적 가치가 돋보이는 문화재이다.",
+          "characters": 252,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:2296",
@@ -36,9 +42,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 숨은 섬 여행: 자연과 바다를 품은 여유로운 힐링 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "사전 신청으로만 만날 수 있는 특별한 숙소! 역사적 의미와 경관을 모두 즐길 수 있는 ‘가덕도 등대 체험’을 소개합니다.",
+          "reason": "place-heading",
+          "characters": 50
+        },
+        {
+          "text": "가덕도 등대는 대한제국의 마지막 건축물 중 하나입니다. 대한제국의 상징인 오얏꽃 문양이 새겨진 입구와 2002년 (신)가덕도 등대 준공일을 기념해 묻혀 있는 ‘가덕도 등대 타임캡슐’이 이곳의 오랜 역사를 가늠케 합니다.",
+          "reason": "place-subject",
+          "characters": 95
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "가덕도등대"
+        ],
         "placeName": "가덕도 등대",
         "review": "pending"
       },

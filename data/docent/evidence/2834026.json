@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2834026",
     "name": "갤러리이알디 부산",
     "lat": 35.161028593,
     "lng": 129.163962252
   },
-  "collectedAt": "2026-10-24T09:57:13.007Z",
+  "collectedAt": "2026-10-24T10:23:38.831Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2834026&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:35.954Z",
-      "modifiedAt": "20260915100357"
+      "modifiedAt": "20260915100357",
+      "passages": [
+        {
+          "text": "갤러리이알디는 2016년 서울 이태원에 개관하여 동시대 현대미술과 다양한 디자이너들의 작업을 소개해 오고 있다. 개관 이래 국내외 작가들의 자체 전시 및 외부 프로젝트를 진행해 왔으며, 크고 작은 아트페어에 꾸준히 참여하여 작가들의 저변 확대를 도모하고 있다. 또한 아시아의 첫 ‘하우스 오브 핀 율’ (House of Finn Juhl Seoul)로써 디자이너 Finn Juhl의 가구들과 역량 있는 국내외 디자이너들의 작업을 나란히 소개하며 감각적이고 선구적인 기호를 선보여 왔다. 2019년부터는 갤러리이알디가 확장 이전하여 파인 아트와 디자인을 각각의 공간에서 선보이고 있는데, 기존의 하우스 오브 핀 율과의 협력은 유지하면서 더욱 다채로운 국내외 작가들의 전시 및 프로젝트를 기획하고 있다. \n2020년에는 갤러리이알디 부산 지점이 해운대에 개관하여 전시 플랫폼의 다변화 또한 꾀하고 있다.",
+          "characters": 346,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

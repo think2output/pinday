@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "987810",
     "name": "해운대 동백섬",
     "lat": 35.153951141,
     "lng": 129.152151687
   },
-  "collectedAt": "2026-10-24T09:57:15.618Z",
+  "collectedAt": "2026-10-24T10:23:46.725Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:515",
-      "busan-theme:2850"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=987810&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:26.592Z",
-      "modifiedAt": "20260903165639"
+      "modifiedAt": "20260903165639",
+      "passages": [
+        {
+          "text": "동백섬은 오랜 세월 퇴적작용으로 육지와 연결되었지만 아직도 동백섬이라고 부르고 있어 옛날 지형을 연상시켜 주고 있다. 일찍이 최치원 선생을 비롯한 많은 시인 묵객들은 바다와 숲이 어우러진 이곳의 절경을 찾아 노닐고 그 감흥을 읊어 후세에 전하고 있다. 동백섬을 둘러 산책로가 조성되어 시민들의 발길이 끊이지 않고 있으며 최치원의 해운대 각자, 동상, 시비를 비롯해서 황옥공주 전설의 주인공 인어상과 누리마루 APEC하우스 등 과거와 현재에 걸친 인적이 곳곳에 배어 있다. 또한, 동백섬에서 보는 부산의 전경은 인상적인데 건너편 미포 쪽 해안끝선과 달맞이 언덕, 바다와 하늘을 가로지르는 광안대교, 부산바다의 상징 오륙도 등이 한눈에 들어온다. 이름 그대로 예전에 말발굽에 차일 정도로 동백꽃이 지천으로 피고 지던 곳에는 지금도 변함없이 겨울에서 봄 사이에 꽃망울을 맺고 빨간 꽃이 통으로 떨어져 운치를 더하고 있다.",
+          "characters": 346,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000450000000",
@@ -45,17 +50,28 @@
       "originalText": "동백섬 내에 자리한 작은 바위 윗면에 ‘해운대(海雲臺)’라는 글씨를 새긴 것으로, 통일신라 후기의 학자였던 최치원 선생의 글씨로 전한다.\n 선생이 가야산으로 향하던 도중 이 주변의 자연경관이 너무도 아름다워 돌을 쌓아 대를 만든 후, 바다와 구름, 달과 산을 음미하면서 이 바위에 ‘해운대(海雲臺)’라는 글씨를 새기었는데, 이때 부터 ‘해운대’라는 지명이 생겨났다고 한다. \n 최치원 선생의 글씨라는 사실이 정확히 확인된 바는 없으나, 고려시대 당시 문신이었던 정포의 시에서 ‘대는 황폐하여 흔적이 없고 오직 해운의 이름만 남아 있구나’라고 읊고 있어, 이미 그 당시에도 이 석각이 있었음을 알 수 있다. \n 현재는 오랜 세월동안 비바람과 파도에 씻겨 나가 ‘운(雲)’자가 심하게 닳아있는 상태이다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000450000000",
       "fetchedAt": "2026-10-24T09:53:59.478Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동백섬 내에 자리한 작은 바위 윗면에 ‘해운대(海雲臺)’라는 글씨를 새긴 것으로, 통일신라 후기의 학자였던 최치원 선생의 글씨로 전한다.\n 선생이 가야산으로 향하던 도중 이 주변의 자연경관이 너무도 아름다워 돌을 쌓아 대를 만든 후, 바다와 구름, 달과 산을 음미하면서 이 바위에 ‘해운대(海雲臺)’라는 글씨를 새기었는데, 이때 부터 ‘해운대’라는 지명이 생겨났다고 한다. \n 최치원 선생의 글씨라는 사실이 정확히 확인된 바는 없으나, 고려시대 당시 문신이었던 정포의 시에서 ‘대는 황폐하여 흔적이 없고 오직 해운의 이름만 남아 있구나’라고 읊고 있어, 이미 그 당시에도 이 석각이 있었음을 알 수 있다. \n 현재는 오랜 세월동안 비바람과 파도에 씻겨 나가 ‘운(雲)’자가 심하게 닳아있는 상태이다.",
+          "characters": 296,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:515",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 황홀한 대교 풍경을 찾아",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대동백섬"
+        ],
         "placeName": "해운대 동백섬",
         "review": "pending"
       },
@@ -71,10 +87,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 이색 체험! 부산을 소리로 여행하다, 동백섬 사운드워킹",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대동백섬"
+        ],
         "placeName": "해운대 동백섬",
         "review": "pending"
       },

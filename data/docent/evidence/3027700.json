@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3027700",
     "name": "청사포 기찻길",
     "lat": 35.158158365,
     "lng": 129.1728230584
   },
-  "collectedAt": "2026-10-24T09:57:15.325Z",
+  "collectedAt": "2026-10-24T10:23:45.759Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3027700&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:16.898Z",
-      "modifiedAt": "20261001163847"
+      "modifiedAt": "20261001163847",
+      "passages": [
+        {
+          "text": "바닷물이 맑기로 알려진 청사포는 달맞이고개 아래쪽에 있는 작은 포구이며 바다로 나간 뒤 돌아오지 않는 남편을 기다리다 소나무가 되었다는 망부송의 애달픈 전설이 전해지는 마을이다. 청사포기찻길은 동해남부선 폐선부지를 활용한 해안선을 따라 걷는 도심 산책로이다. 산책로 방향에 따라 광안대교, 달맞이, 마린시티 등 대표 관광지를 한눈에 담을 수 있는 전국적인 사진 스팟 및 트레킹 장소이다. 동해남부선 옛 철도시설을 친환경적으로 재개발하여 해안절경을 따라 해운대 해변열차와 해운대 스카이캡슐을 운행하고 있다. 해변열차는 아름다운 동부산을 감상하며 해운대 미포에서 청사포를 거쳐 송정까지 왕복으로 운행하는 교통수단을 겸비한 관광열차이다. 해운대 스카이캡슐은 신비로운 해안절경을 공중 레일에서 관람하면서 해운대 미포에서 청사포까지의 구간을 자동으로 운행하는 낭만적인 캡슐이다.",
+          "characters": 338,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

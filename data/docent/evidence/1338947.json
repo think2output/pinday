@@ -1,29 +1,18 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1338947",
     "name": "삼락생태공원",
     "lat": 35.1691043434193,
     "lng": 128.973176285884
   },
-  "collectedAt": "2026-10-24T09:57:14.455Z",
+  "collectedAt": "2026-10-24T10:23:42.978Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:306",
-      "busan-theme:307",
-      "busan-theme:431",
-      "busan-theme:465",
       "busan-theme:471",
-      "busan-theme:775",
-      "busan-theme:791",
-      "busan-theme:831",
-      "busan-theme:1004",
-      "busan-theme:1182",
-      "busan-theme:1306",
-      "busan-theme:1407",
-      "busan-theme:1675",
-      "busan-theme:2835"
+      "busan-theme:791"
     ],
     "humanReview": "pending"
   },
@@ -41,7 +30,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1338947&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:38.989Z",
-      "modifiedAt": "20260311100340"
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "삼락은 가장 넓은 둔치지역을 자랑하는 곳으로, 다양한 자연환경과 시민들을 위한 친수공간이 조성되어 있는 체육 및 휴식공간이다. 삼락생태공원은 과거 비닐하우스 경작지였던 곳을 1998년 사상구청에서 삼락둔치 상단부 일부에 운동장을 조성하였고, 2006년 부산시 낙동강둔치 재정비사업으로 겨울철새 먹이터로 이용하기 위한 친환경영농원, 물놀이장, 인라인스케이트장 등 체육시설과 습지를 복원하였다. 삼락생태공원은 크게 세 부분으로 볼 수 있는데, 첫째는 최상단부와 중앙 부분에 시민들을 위한 체육시설, 둘째는 상단부 쪽에 갈대 및 갯버들 군락의 커다란 자연초지와 곳곳의 산책로, 셋째는 하단부의 갈대습지 형성과 철에 많은 철새들이 찾아오는 곳으로 구성되어 있다.",
+          "characters": 288,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:306",
@@ -49,9 +45,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2024년 가장 먼저 달려가서 봐야 할 부산 벚꽃 명소 모음zip",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "삼락생태공원은 철새 도래지로도 유명한데 야생화단지, 자전거도로, 산책코스, 오토캠핑장 등을 갖추고 있어 다양한 야외 활동이 가능하다. 특히 봄이면 낙동제방에 심어진 3.000여 그루의 벚나무가 하얀 꽃터널을 만들어 해가 지고 조명이 켜지면 로맨틱한 분위기가 절정에 달한다. 부산의 최고 벚꽃 명소를 꼽을 때 삼락생태공원을 빼놓고 이야기하기 힘든 이유다.",
+          "reason": "place-heading",
+          "characters": 154
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -68,9 +74,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 유채꽃명소 추천, 노란 꽃들의 절정",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "삼락생태공원은 사상구 삼락동 낙동강 둔치에 자리한 시민공원이다. 매년 봄이면 낙동강을 사이에 둔 벚꽃 터널과 유채꽃밭을 동시에 즐길 수 있는 장소로 유명하다. 4월 초에 ‘삼락유채꽃축제’가 열리면 부산은 물론 전국에서 행락객이 몰려든다. 축제 시즌이면 곳곳에 포토존이 마련되고 각종 거리공연 등이 열린다. 삼락생태공원은 자전거전용 도로를 비롯해 산책코스, 오토캠핑장, 수상레포츠타운 등 각종 여가시설이 잘 갖춰져 있다. 축제기간을 활용해 레저 활동을 함께 즐기는 것도 좋겠다.",
+          "reason": "place-heading",
+          "characters": 207
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -87,9 +103,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "봄에는 유채꽃, 여름엔 해바라기, 가을엔 코스모스가 피어나 향긋한 꽃향기를 전해주고, 겨울에는 갈대가 아름다운 장관을 선물하는 삼락생태공원. 계절마다 각기 다른 모습으로 우리에게 다가오는 이 곳은 한가로이 걷고 싶을 때, 혹은 자전거 질주본능이 피어오를 때 주저 없이 선택할 수 있는 곳이다.",
+          "reason": "place-heading",
+          "characters": 125
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -106,9 +132,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "갈대와 억새가 부르는 가을 노래",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "넓디넓은 삼락생태공원, 사계절 내내 한예쁨 하는 곳이지만 갈대와 억새가 늦가을의 풍경을 한껏 뽐낼 때면 그 살랑거림에 이끌려 많은 발걸음이 이곳에 머문다. 낙동강을 따라 조성된 산책로는 탁 트인 전망만큼이나 막혔던 속을 한껏 뚫어준다. 유유히 흐르는 물살과 여유롭게 걷는 걸음, 그리고 강나루 갈대숲길, 물아일체(物我一體)의 일상이 이곳에 있는 듯하다. 삼락생태공원의 하늘은 유달리 높고, 산들산들 부는 바람이 얼굴을 간질인다. 경사 없는 평탄한 산책길을 여유롭게 즐긴다. 바람에 서로 부대끼며 가을 낭만을 전해주는 곳, 키를 훌쩍 넘어서는 갈대와 억새가 아늑한 오솔길을 만들어 준다.",
+          "reason": "place-heading",
+          "characters": 251
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -125,9 +161,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "바다와 강, 그리고 호수를 품은 갈맷길 ",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "갈맷길 4코스는 절영해안산책로에서 송도해수욕장을 거쳐 몰운대와 다대포해수욕장을 지나 낙동강 하굿둑까지 이어지는 코스이다. 4코스의 시작점인 남항대교는 뒤로 돌아보면 영도 흰여울마을이 보이고 앞으로는 송도해수욕장이 보이는 천하절경을 뽐낸다. 금빛으로 일렁이는 먼 바다 위 묘박지의 신비로운 풍경은 남항대교가 선사하는 또 하나의 감동이다. 구름산책로와 해상케이블카로 새로운 전성기를 맞이한 송도해수욕장에서 잠시 숨을 돌리고 기암절벽을 따라 연결돼 있는 해안볼레길로 접어든다. 아찔한 절벽 산책로가 끝나는 순간 우거진 나무와 푸른 바다가 조화로운 암남공원에 도착한다. 서둘러 발길을 재촉하니 자연 그대로의 모습을 간직한 다대포해수욕장이 넓은 해변공원과 함께 우리를 반긴다. 낙동강 하굿둑에서 시작하는 5코스는 가덕도에 집중해본다. 가덕도의 최고 봉우리인 연대봉에 오르면 바다 너머 대마도가 지척이고 남해의 아름다운 해안선이 한눈에 들어온다. 작은 어촌마을 대항항의 산과 바다는 소박한 멋이 있다. 목가적인 마을 풍경이 그림처럼 바다와 어우러진다. 가덕도의 지난 시간들을 벽화에 담아낸 정거마을은 수많은 벽화마을 중에서도 휼륭한 퀄리티를 보여준다. 바다와 맞닿아 더욱 아름다운 정거마을의 벽화 속에서 가덕도의 지난 역사를 훑어볼 수 있다. 6코스는 낙동강 하굿둑에서 시작해 낙동강변을 따라 걷다가 백양산 속의 사찰인 운수사와 선암사를 지나 어린이대공원이 있는 성지곡수원지까지 이어지는 코스이다. 그리고 구포역에서 금정산성 동문까지 이어지는 6-4코스가 새롭게 생겼다. 여름이면 부산국제록페스티벌이 열리는 삼락생태공원은 평소에는 조용하게 강변의 여유를 즐기며 산책하거나 자전거를 타기에 참 좋은 곳이다. 낙동강을 따라 발걸음을 옮기면 구포역이 나타나고, 이어서 백양산을 오른다. 백양산에서 처음 만나게 되는 운수사는 산 속 언덕배기에 살포시 자리 잡은 곱고 단아한 모습의 사찰이다. 광활한 낙동강의 시원한 풍경이 내려다보이는 범종루는 이 사찰의 압권이다. 이곳에서는 누구나 범종을 치며 소원을 비는 시간을 가질 수 있다. 사찰의 정문인 일주문으로 올라가는 가파른 계단이 인상 깊은 선암사는 우거진 숲과 함께 큼직하게 사찰을 지키고 있는 암벽바위가 상징인 곳이다. 산 속에 평탄하게 자리 잡은 모습이 평화로운 선암사를 뒤로 하고 성지곡수원지로 향한다. 완만한 산책길이 이어지는 성지곡수원지는 하늘로 곧게 뻗은 나무들이 빼곡해 깊은 산중을 걷는 듯한 느낌을 준다. 온갖 종류의 나무들에 둘러진 잔잔한 호수의 모습이 마냥 평화롭다.",
+          "reason": "place-subject",
+          "characters": 966
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -143,10 +189,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "차박(차크닉)하기 좋은 부산의 인생샷 맛집",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -163,9 +213,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "우중산책",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "다소곳이 비가 내리는 날에 하염없이 연꽃을 바라봅니다. 삼락생태공원의 연꽃단지는 더욱 짙어진 색감으로 여행자를 반겨줍니다. 비와 연꽃이 어찌나 잘 어울리는지, 희고 붉은 연꽃에게서 눈을 뗄 수가 없습니다. 꽃잎 위로 옹기종기 모여 있는 빗방울을 보니 저절로 입가에 미소가 번집니다. 햇빛이 좋은 날 느꼈던 따스함은 없지만 차분하게 가라앉은 분위기가 마냥 싫지만은 않습니다. 비 오늘 날이 바로 연꽃 활짝 핀 삼락생태공원으로 우중산책을 떠날 적기입니다. 우산 위로 떨어지는 빗소리가 ‘타다닥, 탁탁’ 박자를 만들어 냅니다. 인적 없는 공원에서 들리는 규칙적인 빗소리는 심신을 더욱 편안하게 만듭니다. 다양한 산책로가 있는 넓은 공원은 발걸음이 닿는 곳마다 색다른 풍경을 보여줍니다. 차분히 여행자를 반기는 초록의 가로수 길을 걸으며 혼자만의 산책로를 가져보세요.",
+          "reason": "place-heading",
+          "characters": 326
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -182,9 +242,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "뜨거운 여름 도도한 연꽃 바다에 풍덩",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강을 따라 강변에 조성된 낙동강생태공원은 부산시민들이 즐겨 찾는 도심 속 생활공원이다. 화명에서 시작해 대저와 삼락, 맥도, 을숙도까지 이어지는 광활한 땅에 자전거길과 도보길, 운동시설, 휴게공간 등이 잘 조성되어 있어서 많은 시민들이 즐겨 찾는다.",
+          "reason": "place-heading",
+          "characters": 110
+        },
+        {
+          "text": "그 중 삼락생태공원은 지하철과 시내버스로 쉽게 접근할 수 있어서 더욱 많은 사랑을 받고 있다. 계절마다 꽃이 지천으로 피고 다양한 수생식물과 철새들도 만날 수 있어서 4계절 방문객이 끊이지 않는다. 공원 안 쪽으로 더 들어가면 무성한 나무들이 작은 숲을 이루고 낙동강과 샛강 사이에 수로가 여러 갈래로 이어지면서 색다른 풍경을 선사한다. 부산사람들도 놀랄 만큼 뜻밖의 운치다. 공원 한편엔 연꽃단지도 마련되어 있는데 여름이 시작되는 7월이면 연꽃이 한가득 피어나 장관을 이룬다. 그리 넓지 않은 공간이지만 홍련과 백련, 수련까지 다양한 연꽃을 한 번에 만날 수 있는데다 연꽃이 손에 닿을 듯 가까이 있기 때문에 사진을 찍기에도 더할 나위 없이 좋다. 덕분에 전국에서 찾아온 사진가들로 연꽃단지는 늘 북적인다.",
+          "reason": "place-subject",
+          "characters": 297
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -201,9 +276,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "낭만 가득 가을 꽃길 산책",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "을숙도 생태공원에서 자동차로 10여 분 떨어진 곳에 있는 삼락생태공원은 사시사철 색다른 풍경을 만날 수 있는 도심 속 생활 공원이다. 계절마다 예쁜 꽃들이 지천으로 피어나는데다 산책로와 운동시설을 잘 갖추고 있어서 부산 시민들뿐 아니라 관광객들도 즐겨 찾는 곳이다. 조금만 안쪽으로 들어가면 낙동강 샛강 사이로 무성한 나무들이 숲을 끝이 보이지 않을 정도로 드넓게 숲을 이루고 있어서 대도시가 아닌 한적한 시골에 와 있는 듯 한 착각마저 드는 이색적인 장소다.",
+          "reason": "place-heading",
+          "characters": 193
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -219,10 +304,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Visit Taste",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -234,33 +323,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1208",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산에도 봄이 왔나봄! ",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "삼락생태공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"> <table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694727344.jpg\" alt=\"부산에도 봄이 왔나봄! 부산으로 봄캉스 떠나요\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732233.jpg\" alt=\"꽃바람이 흩날리는 부산 꽃 명소\"></td></tr><tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1205&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732532.jpg\" alt=\"부산은 벌써 봄! 매화 여행지로 떠나요~ 이른 봄의 향기를 느끼며 매화의 아름다움을 느낄 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=307&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732942.jpg\" alt=\"부산 유채꽃 명소 추천, 노란 꽃들의 절정 커피 한 잔과 함께 여유로운 힐링을 느낄 수 있는 곳\"></a></td> </tr> <tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=306&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733341.jpg\" alt=\"부산 곳곳, 벚꽃이어라 부산 곳곳에 숨겨진 푸르고, 붉고, 청량한 자연을 만날 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=521&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733692.jpg\" alt=\"부산 곳곳에 숨어 있는 장미 명소를 찾아 노을과 트레킹, 카페, 야경까지 예쁜 포인트가 모여 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734088.jpg\" alt=\"따스한 햇살 품은 봄 힐링 산책 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=761&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734451.jpg\" alt=\"나의 힐링 버킷리스트, 허브랑힐링숲 바쁜 일상 속 여유로운 오후 힐링타임을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734761.jpg\" alt=\"철새와 함께하는 아름다운 문화의 향연, 을숙도 문화의 향기를 느끼며 조용히 산책을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=1079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694735074.jpg\" alt=\"기장의 숨은 산책길, 신평소공원 시원하게 펼쳐진 푸른바다를 보며 산책할 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846152.jpg\" alt=\"두근두근 설레이는 봄 나들이 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846560.jpg\" alt=\"봄, 여름, 가을, 겨울이 다 달라 삼락생태공원 삼락생태공원의 매력을 찾아서 유유히 흘러가는 낙동강 줄기 옆으로 삼락동 둔치에 넓게 자리 잡은 삼락생태공원. 계절마다 각기 다른 매력을 뽐낸다.\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=786&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846953.jpg\" alt=\"동화 속 풍경을 담은 화명수목원 부산 도심 속 공원의 재발견 금정산 고당봉을 뒤로하고 맑은 대천천이 흐르고 있어, 공기는 맑았고 귓가에는 물소리로 가득했다.\"></a></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1208&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1306",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "뜨거운 햇살 속 싱그러운 여름 꽃밭을 찾아서",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -276,10 +350,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "비건지향 감성사진가의 맛있는 촬영여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -296,9 +374,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "하루 종일 느긋하게, 구포 낭만 무장애 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "삼락생태공원은 부산의 대표적인 체육, 휴식공간으로 낙동강 둔치 좌우측으로 넓게 펼쳐져있다. 금빛노을브릿지와 연결되는 화명생태공원과도 가까이 위치한다. 각종 체육시설과 산책코스는 물론 계절마다 다양한 꽃을 만날 수 있는 꽃단지와 야생화 군락지 등 많은 볼거리를 가지고 있는 곳이다.",
+          "reason": "place-heading",
+          "characters": 123
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },
@@ -315,9 +403,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "낙동강에서 바다까지, 부산의 가을을 따라",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강변을 따라 이어지는 삼락생태공원은 가을이면 억새와 갈대가 바람에 흔들리며 은빛 풍경을 만든다. 습지와 연꽃단지, 야생화단지까지 다양한 자연이 이어져 걷는 길마다 새로운 풍경을 만날 수 있다. 가을의 삼락은 자연과 음악이 어우러져 더욱 활기차다. 억새와 갈대 사이를 천천히 걸으며 계절의 바람을 느껴보고, 부산국제록페스티벌이 열리는 시기에는 자연 속에서 국내외 아티스트의 음악을 즐겨보자. 자연과 음악이 함께하는 색다른 가을 여행을 경험할 수 있다. TRAVEL TIP ․ 부산국제록페스티벌(2026년 10월 2~4일)에서 국내외 아티스트의 음악과 낙동강변의 가을 풍경을 함께 즐겨보자. ․ 억새와 갈대가 어우러진 낙동강변을 자전거로 달리며 가을의 정취를 만끽해보자.",
+          "reason": "place-subject",
+          "characters": 294
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "삼락생태공원"
+        ],
         "placeName": "삼락생태공원",
         "review": "pending"
       },

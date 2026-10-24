@@ -1,21 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2684738",
     "name": "송도용궁구름다리",
     "lat": 35.0619131096,
     "lng": 129.021966188
   },
-  "collectedAt": "2026-10-24T09:57:14.576Z",
+  "collectedAt": "2026-10-24T10:23:43.358Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:790",
-      "busan-theme:1176",
-      "busan-theme:1317",
-      "busan-theme:1408",
-      "busan-theme:2403",
-      "busan-theme:2787"
+      "busan-theme:2403"
     ],
     "humanReview": "pending"
   },
@@ -33,17 +29,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2684738&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:44.630Z",
-      "modifiedAt": "20261022164621"
+      "modifiedAt": "20261022164621",
+      "passages": [
+        {
+          "text": "송도 용궁 구름다리는 2002년 태풍 셀마로 인해 철거된 송도 해수욕장의 동쪽 송림공원에서 거북섬을 연결했었던 송도구름다리를 18년 만에 다시 재건축한 것이다. 암남 공원에서 바다 건너 작은 무인도인 동 섬 상부를 연결하는 구름다리로 바다 위를 걷는 짜릿함과 시원스럽게 펼쳐지는 바다 풍광, 기암절벽이 빚어내는 경관을 감상할 수 있으며, 야간경관조명이 설치돼 밤에는 바다에 떠있는 신기루와 같은 환상적인 분위기를 연출해 관광도시 부산 서구의 새로운 랜드마크로 자리매김하고 있다.",
+          "characters": 206,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:790",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "초보라도 걱정 없는 방파제 낚시 명소",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },
@@ -60,9 +67,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "송도해수욕장 주변 가을산책, 서울워커의 부산여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "암남공원과 바다 건너 작은 무인도 동섬을 연결하는 송도용궁구름다리는 바닥이 철망으로 되어 있어 마치 바다 위를 걷는 듯한 짜릿한 기분이 든다. 동섬을 따라 이어진 원형 탐방로는 시원스럽게 펼쳐진 송도 바다의 풍광과 기암절벽이 빚어낸 천혜의 경관, 하늘을 가로지르는 형형색색의 케이블카를 한 눈에 조망할 수 있다.",
+          "reason": "place-heading",
+          "characters": 132
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },
@@ -74,33 +91,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "송도용궁구름다리",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1317",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "숨은 달빛 한 조각, 부산 달캉스 명소 4  ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },
@@ -116,10 +118,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },
@@ -136,9 +142,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 로컬을 즐겨봐! 부산의 숨은 보석 서구 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 서구 송도해수욕장에는 그 특별한 감동을 안겨주는 다리가 있습니다. 송도해수욕장의 4대 명물 중 하나인 송도용궁구름다리는 이름만큼이나 운치 있는 이곳은 바다 위를 걷는 듯한 짜릿한 체험과 아름다운 풍경을 동시에 선사하는 명소입니다. 암남공원 방향 해안 절벽을 따라 놓인 현수교 형식의 보행 전용 다리로 총 길이 약 127m, 높이 약 20m이며, 바다를 발 아래 두고 걷는 이색적인 체험 덕분에 많은 이들의 사랑을 받고 있습니다. 현재의 송도용궁구름다리는 2002년 태풍 셀마로 인해 철거됐던, 송림공원에서 거북섬을 잇는 옛 송도구름다리의 복원판입니다. 18년 만에 재건되어, 지금은 바다 건너의 작은 무인도인 동섬 상부를 연결하고 있습니다. 다리 위를 걷는 동안은 발 아래로 부서지는 파도, 수평선 너머로 펼쳐지는 탁 트인 바다, 오른편으로 이어지는 울창한 숲까지 어우러져 마치 ‘바다 위의 궁전’을 걷는 듯한 감각을 느끼게 합니다. 특히 야간 경관조명이 은은하게 밝혀주는 밤의 풍경은 또 다른 매력으로, 어둠 속 바다 위에 떠 있는 신기루처럼 환상적인 분위기를 연출합니다. 이처럼 송도용궁구름다리는 단순한 산책로를 넘어, 부산 서구의 새로운 랜드마크이자 시민과 관광객 모두에게 힐링을 선사하는 공간으로 자리잡고 있습니다. 일상에 지친 당신에게 바다 한 조각이 필요할 때, 송도용궁구름다리 위에서 짧지만 깊은 위로를 만나보세요. 도심 가까이에서 누리는 바다의 설렘, 꼭 한 번 걸어볼 만한 길입니다.",
+          "reason": "place-subject",
+          "characters": 555
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },
@@ -154,10 +170,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해운대 말고 여기 어때요? 올여름 가볼 만한 부산 해수욕장 3곳",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도용궁구름다리"
+        ],
         "placeName": "송도용궁구름다리",
         "review": "pending"
       },

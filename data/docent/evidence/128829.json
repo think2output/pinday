@@ -1,31 +1,18 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "128829",
     "name": "부산 암남공원",
     "lat": 35.0589,
     "lng": 129.0158
   },
-  "collectedAt": "2026-10-24T09:57:14.060Z",
+  "collectedAt": "2026-10-24T10:23:41.741Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:310",
-      "busan-theme:378",
-      "busan-theme:452",
-      "busan-theme:471",
-      "busan-theme:475",
-      "busan-theme:515",
       "busan-theme:790",
-      "busan-theme:1140",
-      "busan-theme:1176",
-      "busan-theme:1198",
-      "busan-theme:1317",
-      "busan-theme:1318",
-      "busan-theme:1320",
-      "busan-theme:2403",
-      "busan-theme:2590",
-      "busan-theme:2787"
+      "busan-theme:2403"
     ],
     "humanReview": "pending"
   },
@@ -43,17 +30,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=128829&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:25.270Z",
-      "modifiedAt": "20260430173138"
+      "modifiedAt": "20260430173138",
+      "passages": [
+        {
+          "text": "해안절경을 자랑하는 암남공원은 진정산 일대의 자연공원이다. 해안의 소나무 숲 사이로 바라다 보이는 바다풍경과 그 위에 유유히 떠 있는 배들의 모습으로 한 폭의 그림을 선사한다. 산책로를 따라 공원을 한 바퀴 둘러보는데 소요되는 시간은 1시간 정도 걸린다. 중간중간에 전망대와 벤치가 있는 휴게광장에 이르면 탁 트인 바다를 내려다볼 수 있다. 작은 섬 두도와 그곳에 우뚝 선 하얀 등대가 그림처럼 시야에 들어온다.",
+          "characters": 173,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:310",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "모든 이들에게 공평한 관광을 선사하는 부산 무장애 여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -69,10 +67,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "유니크베뉴_수변‧전경시설",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -88,10 +90,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -107,10 +113,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "바다와 강, 그리고 호수를 품은 갈맷길 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -126,10 +136,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "원시 자연을 간직한 부산 최남단의 섬, 가덕도를 걷다",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -145,10 +159,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 황홀한 대교 풍경을 찾아",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -165,9 +183,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "초보라도 걱정 없는 방파제 낚시 명소",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "평일에도 낚시 하는 사람이 많은 생활낚시 포인트 암남공원. 머리 위로는 송도해상케이블카가 지나다니고 암남공원 해안절벽을 따라 아름다운 산책로까지 조성되어 있어 낚시 뿐 아니라 가벼운 트레킹을 즐기기에도 정말 좋은 곳이랍니다. 최근에는 암남공원과 동섬을 잇는 송도용궁구름다리가 개통되면서 흔들거리는 출렁다리의 스릴까지 경험할 수 있다고 합니다. 대~박! 슬슬 해가 넘어갈 때쯤이면 전갱이들이 떼로 출몰하는 곳이라는데요, 풍부한 손맛을 느낄 수 있을 것 같은 느낌적인 느낌이 퐉퐉! 처음 하는 낚시에 고민이 앞선다고요? 걱정은 넣어두세요. 우물쭈물 초보 티내고 있으면 지나가는 고수분들께서 깨알 팁을 대방출해 주실 테니까요. 초보 낚시꾼이 뭐든 잡으면 박수치며 같이 좋아하는 훈훈한 낚시터라고 합니다. 다만 옆집 낚싯대는 감지 않도록 조심해야겠죠?",
+          "reason": "place-heading",
+          "characters": 323
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -183,10 +211,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "로케이션 인 부산 ＜영화의 거리＞",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -203,9 +235,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "송도해수욕장 주변 가을산책, 서울워커의 부산여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "오솔길 따라 울창한 소나무 숲 사이로 푸른 바다의 절경이 한 눈에 내다보이는 송도의 랜드마크, 암남공원이다. 깎아지를 듯 솟은 기암절벽으로 이루어진 암남공원은 오르는 중간 중간에 전망대와 벤치가 있어 한 폭의 그림처럼 펼쳐진 송도 바다의 아름다운 모습을 감상 할 수 있다. 시원하게 불어오는 해풍을 맞으며 1시간 정도 가볍게 트레킹을 즐기기에도 제격이다.",
+          "reason": "place-heading",
+          "characters": 150
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -221,10 +263,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "SF9 찬희 ♡ 채연의 부산 잠입 작전!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -236,33 +282,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산 암남공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1317",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "숨은 달빛 한 조각, 부산 달캉스 명소 4  ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -279,9 +310,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-1편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "우거진 수목과 기암절벽이 푸른 바다와 함께 어우러진 아름다운 풍경을 볼 수 있는 암남공원. 코스가 다양한 4가지 숲길 코스는 일상의 피로를 잊어버릴 수 있는 숲 속 쉼터가 되어 준다. 용이 바다에서 승천하는 듯 웅장함을 자랑하는 용궁구름다리에서 발아래 부서지는 하얀 파도와 해안절경을 더 가까이 감상할 수 있다.",
+          "reason": "place-heading",
+          "characters": 130
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -297,10 +338,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-2편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -317,9 +362,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 로컬을 즐겨봐! 부산의 숨은 보석 서구 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "푸른 바다를 따라 펼쳐진 암남공원은 태종대와 송도해수욕장 사이에 자리 잡은 자연공원으로 약 56만 2500㎡에 달하는 규모의 넓은 면적을 자랑합니다. 해안을 따라 조성된 산책로를 걸으면 소나무 사이로 바다가 펼쳐지고, 중간중간 설치된 전망대에서는 송도해수욕장과 영도의 전경을 한눈에 조망할 수 있어 산책과 힐링을 동시에 누릴 수 있는 것이 가장 큰 매력입니다. 암남공원은 원래 군사보호구역으로 일반인의 출입이 제한되던 곳이었습니다. 이후 2000년대 초반 개방되며 본격적인 공원 조성이 시작되었고, 지역 주민과 관광객 모두에게 열린 공간으로 탈바꿈했습니다. 한때 닫혀 있던 공간이 지금은 누구에게나 열린 자연 쉼터가 되었다는 점에서 더욱 특별합니다. 암남공원은 단순한 공원을 넘어, 부산의 로컬 감성을 오롯이 느낄 수 있는 공간입니다. 삼림욕을 즐길 수 있는 산길, 간단한 체육시설, 바다낚시터 등 다양한 즐길거리가 마련되어 있어 가족 단위 방문객부터 혼자 조용히 걷고 싶은 이들에게까지 두루 사랑받고 있습니다. 최근에는 SNS를 통해 ‘인생샷 명소’로도 떠오르며, 특히 젊은 층의 방문이 늘고 있습니다. 특히 바다 위를 가로지르는 흔들다리에서의 사진은 어느 각도로 찍어도 멋진 배경이 되어주며, 사진 촬영을 즐기는 이들에게 특히 추천할 만합니다. 도심의 소음과 일상을 잠시 벗어나고 싶다면, 부산의 해양미와 지역의 이야기를 품은 암남공원에서 여유로운 시간을 보내보세요. 자연과 함께 걷는 이 길 위에서, 진짜 부산을 마주하게 될지도 모릅니다.",
+          "reason": "place-subject",
+          "characters": 577
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -335,10 +390,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "익숙한 듯 아닌 듯 새롭게 느껴지는 OTT 속 부산!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },
@@ -354,10 +413,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해운대 말고 여기 어때요? 올여름 가볼 만한 부산 해수욕장 3곳",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "암남공원"
+        ],
         "placeName": "부산 암남공원",
         "review": "pending"
       },

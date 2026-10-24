@@ -1,24 +1,18 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2504464",
     "name": "부산 송도해상케이블카",
     "lat": 35.0766411637,
     "lng": 129.023396378
   },
-  "collectedAt": "2026-10-24T09:57:14.044Z",
+  "collectedAt": "2026-10-24T10:23:41.684Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:310",
-      "busan-theme:378",
-      "busan-theme:431",
-      "busan-theme:790",
       "busan-theme:983",
-      "busan-theme:1176",
-      "busan-theme:1198",
-      "busan-theme:1317",
-      "busan-theme:2787"
+      "busan-theme:1317"
     ],
     "humanReview": "pending"
   },
@@ -36,17 +30,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2504464&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:24.820Z",
-      "modifiedAt": "20260814013001"
+      "modifiedAt": "20260814013001",
+      "passages": [
+        {
+          "text": "송도해수욕장에 위치한 송도해상케이블카는 우리나라 제1호 공설해수욕장인 송도해수욕장의 옛 명성을 되살리기 위해 29년 만에 복원되었다. 부산에어크루즈는 해수욕장 동쪽 송림공원에서 서쪽 암남공원까지의 구간을 바닥이 투명한 크리스털캐빈을 포함하여 최신기종인 캐빈 39기가 운행된다. 특히, 바다 위를 가로질러 운행함으로써 부산 송도 일대의 빼어난 풍광을 즐길 수 있다.\n이 밖에 국내 최초의 케이블카 뮤지엄 ‘송도 도펠마이어 월드’, 아시아 최초의 공중그네 ‘스카이스윙’, ‘테마파크 포토서비스 ’등 다양한 테마시설과 볼거리를 제공한다.\n\n◎ 한류의 매력을 만나는 여행 정보 - 예능 \n바다와 산, 그리고 하늘을 한눈에 다 담고 싶다면 ‘송도 해상케이블카’가 모든 걸 충족시켜 줄 것이다. ‘뉴진스코드 IN 부산’에서는 뉴진스 멤버들이 이 케이블카에 탑승해 발밑으로 보이는 바다와 탁 트인 자연 풍경에 감탄하는 모습을 보인다. 부산을 한눈에 담고 싶다면 ‘송도 해상케이블카’에 올라타 보는 것을 추천한다.",
+          "characters": 389,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:310",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "모든 이들에게 공평한 관광을 선사하는 부산 무장애 여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -63,9 +68,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "유니크베뉴_수변‧전경시설",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "송림공원에서 암남공원까지 운행하는 송도해상케이블카는 바다 위를 가로지르며 발아래 펼쳐지는 아찔한 바다와 기암절벽을 맘껏 누릴 수 있는 관광코스다. 아울러 다양한 체험공간과 테마시설을 통해 최고의 즐거움을 선사한다.",
+          "reason": "place-subject",
+          "characters": 95
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -81,10 +96,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -100,10 +119,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "초보라도 걱정 없는 방파제 낚시 명소",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -120,9 +143,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "낭만이 가득한 부산 야경맛집",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "달빛과 조명으로 은은하게 빛나는 송도의 모습을 한 눈에 바라볼 수 있는 곳, 바로 송도해상 케이블카입니다. 케이블카를 타고 밤바다를 내려다보고, 부산 도심의 이색적인 야경도 즐겨보세요. 부드러운 노을, 거대한 산, 우뚝 솟은 고층 건물, 드넓은 바다, 모든 것이 완벽하답니다! 송도 해상케이블카는 크리스탈 크루즈와 에어크루즈로 나뉘어 있어요. 크리스탈 크루즈는 바닥이 투명한 프리미엄 캐빈이라 발 아래로 부서지는 하얀 파도를 보며 짜릿한 시간을 즐길 수 있습니다. 케이블카에서 내리면 송도베이스테이션과 스카이파크에서 구경해도 좋아요. 어린왕자와 같은 조형물을 비롯해 여러 테마파크가 멋지게 조성되어 있어 야경 이외에도 즐길거리, 볼거리가 많습니다. 케이블카와 해수욕장이 어우러진 아름다운 모습을 가장 잘 볼 수 있는 곳이기도 하죠. 사랑하는 사람과 함께 송도의 야경을 보러오세요. 부산은 당신을 기다리고 있습니다.",
+          "reason": "place-heading",
+          "characters": 353
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -139,9 +172,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "송도해수욕장 주변 가을산책, 서울워커의 부산여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "하늘 높이, 탁 트인 송도의 모습을 보고 싶다면 송도해상케이블카를 타보자. 단언컨대 지금까지 타 본 어떤 케이블카와도 비교할 수 없다. 최고 86m 높이의 바다 위 한가운데를 활공하는 케이블카는 짜릿함을 넘어 가슴 터질 듯 아찔한 기분마저 든다. 하지만 두려움도 잠시! 발밑에 광활하게 펼쳐진 바다의 모습에 어느 새 넋을 놓고 감탄사를 연발하는 내 모습을 발견할지도 모른다.",
+          "reason": "place-heading",
+          "characters": 157
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -157,10 +200,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "SF9 찬희 ♡ 채연의 부산 잠입 작전!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -177,9 +224,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "숨은 달빛 한 조각, 부산 달캉스 명소 4  ",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 송도엔 해수욕장, 케이블카는 물론 암남공원과 스카이파크도 있어서 볼거리가 많습니다. 스카이파크로 가는 방법에는 두 가지 방법이 있는데 송도해수욕장에서 케이블카를 타거나 직접 스카이파크까지 이동할 수 있습니다. 암남공원에 위치한 송도해상케이블카의 정류장에는 푸릇푸릇한 숲과 잘 어울리는 공원, 스카이파크를 조성해놓았습니다. 아이들이 좋아할만한 조형물들이 가득합니다. 인증사진 찍기 좋은 예쁜 달 조형물을 비롯해 노란 색감과 디자인이 돋보이는 달팽이가든 등은 스카이파크의 볼거리입니다. 또한 본관 건물 2층과 3층에는 오션뷰 테라스와 스카이하버 전망대가 마련되어 있습니다. 광활하게 펼쳐진 멋진 바다 전망을 배경으로 다양한 포토존이 꾸며져 있어요. 3층 전망대에 있는 달 조형물은 그냥 지나칠 수 없는 포토존입니다. 달과 함께 다양한 포즈를 연출해 보세요. 이외에 어린왕자 등 예쁜 포토존이 많으니 찬찬히 둘러보면 좋을 것 같아요. 스카이파크를 둘러본 다음에는 바로 근처에 있는 송도 용궁구름다리도 산책하기 좋습니다. 멀리 묘박지의 신기한 풍경도 즐기고, 발아래 스릴 가득 짜릿한 바다도 느껴보세요.",
+          "reason": "place-heading",
+          "characters": 437
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },
@@ -191,33 +248,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2253",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "설 연휴맞이 부산",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산 송도해상케이블카",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_01.jpg\" alt=\"설 연휴맞이 부산 종합 여행지 선물세트\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_02.jpg\" alt=\"부모님께 선물하고픈 따뜻한 겨울 여행코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1753&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_03.jpg\" alt=\"센텀 스파랜드. 쇼핑, 노천족탕, 찜질방을 한번에! 부모님 맞춤 힐링 스팟으로 제격.\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1938&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_04.jpg\" alt=\"해목. 몸보신에는 장어만 한게 없지, 미쉐린 선정 식당에서 기운 완충!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_05.jpg\" alt=\"해동용궁사. 숨막히는 해안 절경에 웅장한 사찰 뷰까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2068&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_06.jpg\" alt=\"프레스트. 운치 있는 한옥 카페에서 여유롭게 차 한잔~\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2195&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_07.jpg\" alt=\"해운대 일품한우. 고기에도 품격이 있다! 셀럽들의 '일품'한우 맛집 성지\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_08.jpg\" alt=\"한복을 입고 선물상자를 든 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_09.jpg\" alt=\"아이들과 즐길 거리 가득한 체험 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1937&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_10.jpg\" alt=\"딤타오 본점. 모양도 맛도 다채로운 딤섬 체험, 미쉐린 선정 식당에서 즐겨보자!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1680&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_11.jpg\" alt=\"클럽디오아시스. 겨울철에도 감기 걱정 없는 '온수 무한제공' 물놀이 스팟\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=980&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_12.jpg\" alt=\"해운대 블루라인파크. 해운대를 여행하는 가장 낭만적인 방법\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2108&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_13.jpg\" alt=\"도희네 조개구이. 부산 바다 한입에 정리 완료! 신선한 조개구이 전문점\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1322&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_14.jpg\" alt=\"현대 모터스튜디오 부산. 볼거리, 즐길거리가 한데 모인 모던한 복합문화공간\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_15.jpg\" alt=\"한복을 입은 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_16.jpg\" alt=\"커플끼리 설렘 가득한 낭만 데이트코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2087&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_17.jpg\" alt=\"까사데룩. 카페 데이트와 전시관 데이트, 둘 다 놓칠 수 없지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2145&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_18.jpg\" alt=\"도모헌. 복합문화공간으로 재탄생. 의미와 재미, 한 번에 잡자!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=1323&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_19.jpg\" alt=\"밀락더마켓.마냥 걷다 보면 두 손에 물건이 가득! 화려한 복합문화공간의 정석\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2219&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_20.jpg\" alt=\"아델라베일리 부산. 특별한 날을 더 특별하게 해줄 로맨틱한 식당\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2208&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_21.jpg\" alt=\"꼬쇼네. 귀여운 강아지 '꼬쇼'가 있는 아기자기한 감성 카페\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_22.jpg\" alt=\"한복을 입고 복주머니를 들고있는 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_23.jpg\" alt=\"혼자만의 시간, 나 홀로 떠나는 힐링 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_24.jpg\" alt=\"신발원. 만두 러버들의 성지. 중국 정통만두를 맛보고 싶다면 방문 필수!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1422&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_25.jpg\" alt=\"송도해상케이블카&용궁다리. 송도바다의 중심에서 힐링을 외치다\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=1967&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_26.jpg\" alt=\"EL16.52 카페. 파도를 쏙 빼닮은 멋진 건물 디자인에, 맛있는 베이커리까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=1527&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_27.jpg\" alt=\"이가네 떡볶이. 어나더 레벨 부산 떡볶이, 여기가 진짜다!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202008001000&uc_seq=2242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_28.jpg\" alt=\"망미블루스. 주인장이 직접 디깅한 LP 음악을 곁들인 혼술명당\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_29.jpg\" alt=\"한복을 입고 연꽃 위에 앉아 있는 이미지\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_30.jpg\" alt=\"\"></td> </tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2253&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2787",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해운대 말고 여기 어때요? 올여름 가볼 만한 부산 해수욕장 3곳",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도해상케이블카"
+        ],
         "placeName": "부산 송도해상케이블카",
         "review": "pending"
       },

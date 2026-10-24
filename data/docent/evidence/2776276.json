@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2776276",
     "name": "옥정사",
     "lat": 35.3112394946,
     "lng": 129.2224935086
   },
-  "collectedAt": "2026-10-24T09:57:14.865Z",
+  "collectedAt": "2026-10-24T10:23:44.323Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2776276&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:56.248Z",
-      "modifiedAt": "20260921182954"
+      "modifiedAt": "20260921182954",
+      "passages": [
+        {
+          "text": "옥정사(玉井寺)는 헌종 1년(1835)에 창건된 절이 절터만 남아 방치되었던 곳을 승려 박긍해(朴亘海)가 1907년에 다시 만든 사찰로 부산 달음산 기슭에 자리한 불국사의 말사이다. 달음산은 동해 해돋이의 햇살이 우리나라에서 가장 먼저 닿는 산으로 유명하다 한다. 당시 박긍해는 마을 친구에게 희사(喜捨) 받은 옛 절터 부지에 작은 초가집과 토굴을 만들어 참선하는 승려들이 찾아오도록 하였다 한다. 이후 증축, 개축이 이어졌고 1994년에는 스리랑카에서 부처님의 진신사리를 모셔와 3층 석탑에 모셨다. 2020년 기장군은 옥정사 인근에 편백숲 둘레길을 조성하여 산책길과 숲 속 쉼터 등의 힐링 공간을 만들어 관람객들의 힐링을 돕고 있다.",
+          "characters": 276,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2614725",
     "name": "송도반도 (부산 국가지질공원)",
     "lat": 35.0659655069,
     "lng": 129.019511576
   },
-  "collectedAt": "2026-10-24T09:57:14.560Z",
+  "collectedAt": "2026-10-24T10:23:43.315Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1064"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2614725&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:44.204Z",
-      "modifiedAt": "20251219092914"
+      "modifiedAt": "20251219092914",
+      "passages": [
+        {
+          "text": "8~7천만 년 전인 중생대 백악기 말 다대포-송도 지역의 동쪽에 있는 동래단층과 서쪽의 양산단층이 움직이면서 두 단층 사이의 땅이 벌어지고 움푹 꺼져 그릇 모양의 다대포 분지가 만들어졌다. 이 분지에는 큰 호수가 만들어지면서 두꺼운 퇴적층들이 쌓이게 되었고, 이 퇴적층을 다대포 층이라 한다. 다대포 층은 구성하고 있는 암석의 특징(붉은색 층의 존재 여부, 화산성 물질의 함량)과 퇴적환경의 차이에 따라 다시 하부 다대포 층과 상부 다대포 층으로 나뉜다. 송도 반도에서는 한국의 지질 노두 150선에 선정된 다대포 층이 해안가를 따라 하부부터 상부까지 연속으로 나타나며, 우리나라 제1호 해수욕장인 송도해수욕장 경관과 함께 공룡알 둥지 화석, 석회질 고토양, 암맥, 단층 등의 지질기록을 만끽할 수 있다.",
+          "characters": 299,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1064",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "지질공원해설사와 떠나는 지구시간여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도반도"
+        ],
         "placeName": "송도반도 (부산 국가지질공원)",
         "review": "pending"
       },

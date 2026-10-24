@@ -1,17 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2675032",
     "name": "청학배수지 전망대",
     "lat": 35.088351580481,
     "lng": 129.060042641103
   },
-  "collectedAt": "2026-10-24T09:57:15.348Z",
+  "collectedAt": "2026-10-24T10:23:45.830Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
       "busan-theme:999",
-      "busan-theme:1149",
       "busan-theme:1360"
     ],
     "humanReview": "pending"
@@ -30,7 +30,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2675032&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:17.555Z",
-      "modifiedAt": "20260318101005"
+      "modifiedAt": "20260318101005",
+      "passages": [
+        {
+          "text": "청학배수지 전망대는 청학배수지 공간을 전망대로 만든 것이다. 지대 자체가 높아 조금만 올라가도 전망대에 다다를 수 있어 누구나 쉽게 접근이 가능하다. 전망대에는 영도의 상징인 절영마가 자리잡고 있으며, 청학배수지 전망대에서 보는 야경과 부산항 대교의 불빛은 시민들에게 포토존으로 각광받고 있다. 또한 각종 운동기구가 설치되어 있어 산책, 조깅을 하기에도 좋다. 청학배수지 전망대 인근에는 조내기 고구마 역사 공원, 남파랑길 코스 산책로, 봉래산 등 관광지가 있어 함께 둘러볼 수 있다.",
+          "characters": 208,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:999",
@@ -38,9 +45,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 감성 가득한 부산의 노을과 야경",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "마천루가 뿜어내는 화려한 조명, 주황빛 부산항, 반짝이는 다리, 그리고 도심의 야경을 겹겹이 감싸 안은 산봉우리가 부산의 아름다운 밤을 만들어냅니다. 부산항대교의 아름다운 야경을 아낌없이 내어주는 이곳은 영도에 위치한 청학배수지 전망대랍니다. 탁 트인 시원한 전망에 작지만 아기자기한 잔디광장, 야간 조명도 설치되어 있어 짧은 산책도 가능한 곳이에요. 로맨틱 야경드라이브 코스를 찾고 있다면 영도 청학배수지 전망대가 제격이죠. 밤이 깊어갈수록 부산항대교는 그 화려함을 더합니다. 빠르게 옷을 갈아입는 경관조명이 매우 역동적입니다. 사계절의 변화를 모두 담아낸 부산항대교의 빛줄기가 분주하게 움직이며 시선을 사로잡습니다. 신선대 부두의 환한 오렌지 빛이 낭만적인 항구의 분위기도 자아내고 있어요. 차가운 듯 따뜻한 부산항의 야경을 마음 가득 담아가세요.",
+          "reason": "place-heading",
+          "characters": 328
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "청학배수지전망대"
+        ],
         "placeName": "청학배수지 전망대",
         "review": "pending"
       },
@@ -56,10 +73,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "보라보라한 가을 감성여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "청학배수지전망대"
+        ],
         "placeName": "청학배수지 전망대",
         "review": "pending"
       },
@@ -76,9 +97,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "그동안 몰랐던 인생스폿-산복야경 스냅투어편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "영도의 봉래산전망대, 청학배수지전망대는 부산에서도 멋진 야경 명소로 손꼽히는 곳이다. 오르막을 올라야 하지만 두 곳 모두 접근성이 좋은 편이라 평일이든 주말이든 많은 사람들이 다녀가는 곳이다. 반면, 해돋이전망대는 조용한 마을의 제일 위쪽에 위치하고 있어 오롯이 자신만의 시간을 즐기고 싶은 사람에게 딱 어울릴만한 장소이다. 마을의 골목길을 따라 천천히 오르면 하얀색 전망대 건물을 만날 수 있다. 건물 내부가 약간 어두워 조금은 무서울 수 있지만 들어가면 바로 센서등이 움직임을 감지해 환하게 불이 켜진다. 그렇게 계단을 타고 3층 높이의 옥상에 올라서는 순간 완전히 새로운 세상을 만나게 된다. 부산항대교가 보이는 뻥 뚫린 풍경에 무서웠던 감정이 사르르 녹아 내린다. 조금은 긴 듯한 오르막을 오르며 툴툴거렸던 시간도 기억 저편으로 사라진다. 바로 앞 청학동 일대와 오색으로 빛나는 부산항대교, 그리고 부산국제여객선터미널까지, 온기 넘치는 야경이 황홀하다. 아름다운 평온이 주위를 감싼다. 이제 조용한 자신만의 시간을 가질 일만 남았다.",
+          "reason": "place-subject",
+          "characters": 402
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "청학배수지전망대"
+        ],
         "placeName": "청학배수지 전망대",
         "review": "pending"
       },

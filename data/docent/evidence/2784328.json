@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2784328",
     "name": "다대포항",
     "lat": 35.0536,
     "lng": 128.9839
   },
-  "collectedAt": "2026-10-24T09:57:13.517Z",
+  "collectedAt": "2026-10-24T10:23:40.074Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:857",
-      "busan-theme:2184"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2784328&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:54.881Z",
-      "modifiedAt": "20260305105912"
+      "modifiedAt": "20260305105912",
+      "passages": [
+        {
+          "text": "다대포항은 부산에서도 가장 서쪽에 위치하고 있는 항구이다. 부산항처럼 무역항이 아니라 대형 어선은 없는 주로 중소형 어선이 많은 작고 아담한 항구이다. 바다에서 잡아온 수산물을 경매하는 위판장이 있고 수산시장이 함께 있어서 갓 잡아온 신선한 생선을 저렴한 가격으로 살 수도 있다. 어선이 많이 정박해 있는 곳이다 보니 주변에 대형 가공공장, 냉동공장이 위치하고 있고 회센터도 많이 자리하고 있어서 계절마다 신선한 수산물을 구경하고 맛볼 수 있는 곳이다. 다대포항은 갈맷길 4코스 2구간으로 감천항~ 몰운대로 이어져 워킹투어의 명소이다.",
+          "characters": 229,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:857",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 4코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "다대포항"
+        ],
         "placeName": "다대포항",
         "review": "pending"
       },
@@ -55,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 하늘 아래, 철새와 함께하는 생태여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "다대포항"
+        ],
         "placeName": "다대포항",
         "review": "pending"
       },

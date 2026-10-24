@@ -1,17 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2660770",
     "name": "부산 치유의 숲",
     "lat": 35.26896773,
     "lng": 129.1297811212
   },
-  "collectedAt": "2026-10-24T09:57:14.151Z",
+  "collectedAt": "2026-10-24T10:23:41.994Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:843",
-      "busan-theme:1745"
+      "busan-theme:843"
     ],
     "humanReview": "pending"
   },
@@ -29,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2660770&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:28.113Z",
-      "modifiedAt": "20260805152541"
+      "modifiedAt": "20260805152541",
+      "passages": [
+        {
+          "text": "부산 치유의 숲은 부산광역시 푸른도시가꾸기사업소가 운영하는 영남권 최초의 치유의 숲으로, 2017년 11월 부산대학교 학술림에 조성되었다. 153ha 규모에 해발 240m 안팎의 넓고 완만한 산세를 지녀 편안하게 걷기 좋다. 소나무와 참나무가 어우러진 숲에서는 나뭇잎을 스치는 바람과 개울물, 산새 소리가 걸음마다 따라온다. 평지와 언덕, 계곡과 바위산 등 다채로운 지형을 품고 있으며, 아홉산 숲을 만나는 힐링로드, 회동수원지 풍광을 즐기는 솔바람길, 짙은 숲의 생명력을 느끼는 큰바위길을 컨디션에 따라 선택할 수 있다. 흙길과 매트길, 데크길도 걷는 재미를 더한다. 산림치유·숲해설·유아숲 프로그램도 운영한다.",
+          "characters": 269,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:843",
@@ -37,9 +44,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "안녕한 부산 안녕한 언택트 힐링",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "초록이 무성한 숲길을 조용히 걸어보는 건 어떠세요? 계곡 사이로 불어오는 시원한 바람을 즐기며 천천히 산책하기 좋은 곳이 있답니다. 바로 부산치유의 숲인데요, 흙길과 데크길이 깔끔하게 조성되어 있어 편안하게 숲 속을 거닐 수 있답니다. 계곡을 가로지르는 나무다리 중간쯤에서 계곡물 흐르는 소리에 귀를 기울입니다. 온통 초록으로 둘러싸인 자연의 한가운데서 들리는 시원한 물소리가 기분을 상쾌하게 만들어줍니다. 피톤치드 가득한 부산치유의 숲은 맑은 공기와 더불어 여러 종류의 쉼터가 조성되어 있어요. 조용히 숲의 기운을 만끽하며 휴식과 여유를 즐기기에 이곳만큼 좋은 곳도 드물 것 같아요. 선선한 바람과 온화하게 내리쬐는 햇살은 나른한 행복감을 전해줍니다. 맑고 깨끗한 초록을 온 몸으로 느낄 수 있는 부산 치유의 숲, 자연이 주는 특별한 힐링과 함께 몸도 마음도 편안해 집니다.",
+          "reason": "place-heading",
+          "characters": 330
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "치유의숲"
+        ],
         "placeName": "부산 치유의 숲",
         "review": "pending"
       },
@@ -55,10 +72,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "여행과 힐링을 동시에, 부산 웰니스 관광지 선정",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "치유의숲"
+        ],
         "placeName": "부산 치유의 숲",
         "review": "pending"
       },

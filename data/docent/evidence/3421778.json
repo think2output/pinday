@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3421778",
     "name": "[부산 갈맷길] 5코스",
     "lat": 35.1065,
     "lng": 128.9575
   },
-  "collectedAt": "2026-10-24T09:57:12.822Z",
+  "collectedAt": "2026-10-24T10:23:38.381Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3421778&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:06.776Z",
-      "modifiedAt": "20260323163600"
+      "modifiedAt": "20260323163600",
+      "passages": [
+        {
+          "text": "부산에는 바다, 숲, 강, 도심을 잇는 길인 갈맷길이 있다. 이중 갈맷길 5코스는 총 3구간으로 나뉘며 1구간은 동양 최대의 철새도래지 낙동강 하구 을숙도를 가로질러 명지 갯벌에 도래하는 겨울 철새를 가까이 볼 수 있는 코스이다. 2구간은 부산 신호항에서 지양곡안내소까지의 길로 가덕도와 가덕도 연대봉, 해양파크휴게소를 관람할 수 있다. 3구간은 대항에서 외양포 쪽으로는 가덕등대와 해안 숲길로 이어지는 누릉령, 어음포의 비경과 동선새바지를 볼 수 있는 구간이다. 전 구간 모두 관광자원이 풍부하여 취향에 맞춰 산책하기에 좋다.",
+          "characters": 226,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

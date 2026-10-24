@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3027098",
     "name": "금정산성 동문",
     "lat": 35.2453,
     "lng": 129.0642
   },
-  "collectedAt": "2026-10-24T09:57:13.363Z",
+  "collectedAt": "2026-10-24T10:23:39.688Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:471",
-      "busan-theme:472"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3027098&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:47.623Z",
-      "modifiedAt": "20261001164139"
+      "modifiedAt": "20261001164139",
+      "passages": [
+        {
+          "text": "금정산성 네 개 문루 중 가장 규모가 크고, 전망이 뛰어난 동문은 금정산 주능선의 해발 415m의 고개에 위치하고 있으며, 주민들이 가장 근접하기 쉬운 편이라 금정산성의 으뜸 관문으로 자리하고 있다. 금정산성 부설비의 기록에 의하면 1807년 늦가을에 토목공사를 일으켜 한 달 만에 동문이 완성되었다고 전해진다. 동문은 홍예식문[虹霓式門]으로 정면 3칸, 측면 2칸의 팔작지붕의 단층 문루이다. 금정산성 동문의 창건 유래를 보면, 동래부사 정현덕이 동문과 서문의 재건에 힘쓰고 있을 때의 이야기가 있는데, 내용은 다음과 같다. 동래부사는 두 성문을 아주 완벽하게 세우기 위해 이름난 석공을 수소문한 끝에 사제지간인 두 석공을 찾아 스승에게는 동문을, 제자에게는 서문을 짓게 하였다. 동문을 맡은 스승은 야욕과 욕심이 많아 웅대하게만 짓고자 하였으나 서문을 맡은 제자는 기술이 앞서 정교한 아름다움을 살려 스승보다 먼저 짓게 되었다고 한다. 스승은 제자의 뛰어난 기술을 시기하고 질투하여 그 당시 사람들은 그 스승을 미워하고 제자의 기술을 칭송하였다. 그러나 이들 사제는 동문과 서문 공사가 끝난 뒤에는 힘을 합쳐 밀양 영남루 공사를 하였다.",
+          "characters": 442,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:471",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "바다와 강, 그리고 호수를 품은 갈맷길 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "금정산성동문"
+        ],
         "placeName": "금정산성 동문",
         "review": "pending"
       },
@@ -55,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "송글송글 땀방울이 기분 좋은 갈맷길 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "금정산성동문"
+        ],
         "placeName": "금정산성 동문",
         "review": "pending"
       },

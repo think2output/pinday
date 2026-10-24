@@ -1,22 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2733473",
     "name": "아미산 전망대",
     "lat": 35.0527511427,
     "lng": 128.9607806467
   },
-  "collectedAt": "2026-10-24T09:57:14.685Z",
+  "collectedAt": "2026-10-24T10:23:43.692Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:431",
-      "busan-theme:488",
       "busan-theme:1144",
-      "busan-theme:1151",
-      "busan-theme:1318",
-      "busan-theme:1320",
-      "busan-theme:2184",
       "busan-theme:2669"
     ],
     "humanReview": "pending"
@@ -35,17 +30,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2733473&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:48.720Z",
-      "modifiedAt": "20260706094004"
+      "modifiedAt": "20260706094004",
+      "passages": [
+        {
+          "text": "아미산 전망대는 낙동강과 바다가 만나 한 몸이 되는 지점을 내려다보며 환상적인 분위기를 느낄 수 있는 곳이다. 낙동강 하구만이 가진 특색 있는 모래섬들을 한눈에 조망할 수 있으며, 황금빛 낙조와 솔개의 아름다운 조합을 볼 수 있다. 아미산 전망대는 1층 안내데스크와 세미나실, 2층 전시관, 3층 실내 전망대와 카페테리아로 구성되어 있다. 전시관에는 각 테마별로 낙동강 하구에 대한 궁금증을 풀어주기 좋게 설명되어 있다. 낙동강 하구의 풍경, 생태계, 삼각주 형성과정, 인근 생태공원과 관광시설 정보 등은 관람객의 호기심을 충족시켜 준다. 3층 실내전망대에는 낙동강 하구를 자세히 살펴볼 수 있도록 망원경이 설치되어 있다. 전망대에서 내려다보는 도요등, 신자도, 백합등, 장자도 등 강물에 실려 온 토사가 퇴적되어 만들어진 사주가 장관이다. 바닷물과 바람에 흩어지고 쌓이고를 매일 반복하기 때문에 그 크기가 지속적으로 변하고 있다고 한다.",
+          "characters": 358,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:431",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -62,9 +68,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "선셋 투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강 하구와 다대포해수욕장을 동시에 조망할 수 있는 아미산전망대에 올라보자. 700리 낙동강이 바다로 흘러드는 마지막 지점에 다대포해수욕장이 있다. 강물에 실려 온 모래가 거대한 섬을 만들고 비옥한 땅은 철새들의 낙원이 되었다. 해질 무렵, 아미산전망대에 오르면 시간이 지남에 따라 석양의 색깔이 옅은 황금빛에서 진한 붉은빛으로 변해간다. 하늘과 바다는 빨갛게 물들고 산봉우리와 모래섬은 검은 실루엣을 뽐낸다. 높은 곳에서 내려다보는 경이로운 자연은 손에 닿을 수 없어 더욱 애틋하다. 태양과 바다, 그리고 강물의 경계를 이루는 모래섬이 이루어내는 장관, 그 신비한 자연의 섭리가 위대하다.",
+          "reason": "place-heading",
+          "characters": 255
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -81,9 +97,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산의 서쪽하늘 보러가자",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "언덕에 있는 아미산전망대는 낙조로 물든 낭만적인 저녁 하늘을 보기에 딱 좋은 곳이다. 날씨 운이 있다면 구름 사이로 쏟아지는 찬란한 빛줄기를 볼 수 있다. 하늘과 바다 그리고 땅까지, 오묘한 빛깔로 물드는 아미산전망대 풍경. 일상을 탈출하고 싶을 때 이곳보다 좋은 곳이 있을까 싶을 만큼 해지기 전 찾으면 마음의 평화를 얻을 수 있을지도 모른다. 저녁 바람이 조금 쌀쌀하게 느껴진다면 아미산전망대의 3층, 실내 전망대를 찾아보자. 파노라마처럼 펼쳐진 수평선에 감탄을 멈출 수 없을 것이다. 따로 조명이 필요 없을 만큼 은은하게 퍼지는 오렌지빛 물결은 이곳의 백미. 전망대에 있는 작은 카페에서 향긋한 커피를 마시며 두 눈에 낙조를 품으면 ‘이보다 더 좋을 수 없다’는 말이 절로 나올 것이다. 길게 뻗은 데크길이 한눈에 보이는 다대포 쪽으로 시선을 옮겨 일몰을 보면서 잠시 사색에 빠지는 것도 좋겠다.",
+          "reason": "place-heading",
+          "characters": 333
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -99,10 +125,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "쓰담쓰담 노을 속 줍깅 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -119,9 +149,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-1편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "기나 긴 세월을 유구히 흘러 온 낙동강이 마침내 먼 바다로 나가는 마지막 지점인 낙동강 하구, 그 곳에 아미산전망대가 위치한다. 전망대에서는 낙동강 하구만이 가진 특색 있는 모래섬들을 한눈에 조망할 수 있으며 떨어지는 낙조와 낮게 나는 철새의 아름다운 조합을 볼 수 있다.",
+          "reason": "place-heading",
+          "characters": 113
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -137,10 +177,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-2편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -157,9 +201,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 하늘 아래, 철새와 함께하는 생태여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "풍부한 먹이와 깨끗한 수질로 수많은 철새들의 터전이 되는 낙동강 하류. 강과 바다가 만나 이루는 환상적인 분위기를 느끼고 싶다면 아미산전망대를 추천드려요.",
+          "reason": "place-heading",
+          "characters": 67
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },
@@ -176,9 +230,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "철새 도래지 따라 서부산 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "아미산 전망대는 부산 사하구 다대낙조길에 위치한 조망 시설로, 낙동강 하구와 을숙도 그리고 도요등, 박합등과 같이 철새들이 머무는 모래섬이 한눈에 내려다 볼 수 있습니다. 전망대 내부에는 낙동강 하구의 형성과 생태를 설명하는 전시 공간이 마련되어 있으며, 3층에서는 통유리창과 망원경을 통해 철새의 이동 경로와 군집 활동을 관찰할 수 있습니다. 을숙도에서 철새를 가까이서 만났다면, 아미산 전망대에서는 그 움직임을 조금 떨어진 거리에서 바라보게 됩니다. 전망대에 서면 철새 한 마리 한 마리보다, 낙동강 하구 전체를 가로지르며 이동하는 대규모 철새의 군무가 파노라마처럼 펼쳐집니다. 왜 이곳이 철새의 쉼터가 되었는지를 이해하게 되는 순간입니다. 특히 일몰 시간이 가까워 지면 강과 갯벌 위의 윤곽이 또렷해지고 철새의 이동도 더욱 활발해지는데, 이동하는 철새와 변화하는 빛이 어우러진 특별한 풍경을 만나게 됩니다.",
+          "reason": "place-heading",
+          "characters": 348
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아미산전망대"
+        ],
         "placeName": "아미산 전망대",
         "review": "pending"
       },

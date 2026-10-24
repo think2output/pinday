@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "126674",
     "name": "해운대 달맞이길",
     "lat": 35.1576790506242,
     "lng": 129.182540419138
   },
-  "collectedAt": "2026-10-24T09:57:15.610Z",
+  "collectedAt": "2026-10-24T10:23:46.698Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:306",
-      "busan-theme:1214"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126674&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:26.377Z",
-      "modifiedAt": "20260309164757"
+      "modifiedAt": "20260309164757",
+      "passages": [
+        {
+          "text": "해운대는 부산 해운대구 동쪽 바닷가에 있는 동백[冬柏] 섬을 지칭하지만 오늘날에는 ‘달맞이길’이라 불리는 해안선 일대와 언덕을 포함한 곳을 말한다. 부산의 몽마르트라고도 불리는 달맞이길은 예로부터 푸른 바다, 백사장, 동백숲, 소나무숲이 어우러진 절경으로 이 지역을 대표하는 명소이며 부산팔경[釜山八景]의 하나이기도 하다. 해운대 달맞이 고개와 청사포[靑沙浦]에서 바라보는 저녁달은 운치가 있다고 하여 대한팔경에 포함시켰다. 해운대해수욕장을 지나 송정해수욕장으로 향하는 길목은 ‘15곡도[曲道]’라고도 하며 드라이브 코스를 형성하고 있다. 이곳에서는 특히 정월 대보름날에 달빛과 어우러진 바다의 정취를 마음껏 즐길 수 있다. 또한 길목 중간 부분에는 달맞이동산이 조성되어 있다. 이곳에는 자연석으로 건립된 동산비가 있고 특히 달맞이 정자 해월정[海月亭]은 옛날 정자식으로 건축되어 고풍스러운 분위기가 운치를 더하고 있다.",
+          "characters": 365,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:306",
@@ -37,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2024년 가장 먼저 달려가서 봐야 할 부산 벚꽃 명소 모음zip",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산의 인기 드라이브코스 해운대 달맞이길은 언덕 위에 조성된 카페 거리와 함께 연인들이 즐겨 찾는 데이트코스다. 특히 벚꽃이 만개한 저녁, 보름달까지 뜨면 달빛과 벚꽃의 몽환적 조화가 잊을 수 없는 아름다움을 만든다. 천천히 언덕길을 따라 걸으며 점점 화려해지는 벚꽃 군무를 달빛 아래서 감상하는 게 포인트다.",
+          "reason": "place-heading",
+          "characters": 131
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대달맞이길"
+        ],
         "placeName": "해운대 달맞이길",
         "review": "pending"
       },
@@ -56,9 +71,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "꽃가루를 날려~폭죽을 더 크게 터트려~ 꼭 가봐야 할 부산 벚꽃 명소",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "은은한 달빛처럼 평화로운 해운대 달맞이길은 봄이 되면 환상적인 분홍빛 물결로 뒤덮입니다. 알록달록 귀여운 해변 열차가 지나가는 모습도 달맞이길의 매력적인 뷰포인트랍니다. 달맞이고개에는 예쁜 카페와 맛있는 식당도 많으니 완연한 봄을 느끼며 알찬 봄 드라이브도 즐겨보시길 바랍니다!",
+          "reason": "place-subject",
+          "characters": 122
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대달맞이길"
+        ],
         "placeName": "해운대 달맞이길",
         "review": "pending"
       },

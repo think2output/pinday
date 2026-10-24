@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2714515",
     "name": "거가대교 홍보전시관",
     "lat": 35.0236,
     "lng": 128.8067
   },
-  "collectedAt": "2026-10-24T09:57:13.015Z",
+  "collectedAt": "2026-10-24T10:23:38.855Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2714515&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:36.167Z",
-      "modifiedAt": "20260428162720"
+      "modifiedAt": "20260428162720",
+      "passages": [
+        {
+          "text": "거가대교 홍보전시관은 부산-거제 간 연결도로의 기술력과 편의성을 홍보하기 위해 설립된 시설이다. 이 전시관은 부산 가덕도에 위치한 가덕해양파크(휴게소) 내에 위치하고 있다.\n국내 최대 수심인 48m에 건설된 가덕해저터널과 뛰어난 경관을 자랑하는 사장교의 건설 과정을 한눈에 볼 수 있도록 구성되어 있다. 1층은 사업 소개와 건설 과정을 담은 전시관으로 구성되어 있으며, 2층은 고객 휴식 공간으로, 남해 바다와 거가대교의 전경을 감상할 수 있는 장소이다. 전시관 투어는 사전 예약을 통해 진행되며, 전문 홍보요원의 설명과 함께 전시 관람이 가능하다.",
+          "characters": 236,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

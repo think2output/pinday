@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2775495",
     "name": "해동성취사",
     "lat": 35.338625818,
     "lng": 129.2752373809
   },
-  "collectedAt": "2026-10-24T09:57:15.554Z",
+  "collectedAt": "2026-10-24T10:23:46.539Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2775495&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:24.873Z",
-      "modifiedAt": "20251104163758"
+      "modifiedAt": "20251104163758",
+      "passages": [
+        {
+          "text": "부산광역시 기장군에 있는 해동 성취사는 2000년에 창건된 사찰로 대웅전, 지장전, 요사채 그리고 동굴 형태의 산신각을 갖추고 있다. 우암 주지스님은 한국 전통 불교 계승에 앞장서기 위하여 소리를 공양하는 범음범패(梵音梵唄)를 이수하고 불교의 가르침을 전해오고 있다. 소리로 부처님 말씀을 전하는 범음범패는 입에서 입으로 전해져 오는 한국 고유의 불교음악으로 예불과 불공 의식의 시간이 맞는다면 천상의 소리도 들을 수 있다.",
+          "characters": 183,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

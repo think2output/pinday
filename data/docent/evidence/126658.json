@@ -1,24 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "126658",
     "name": "태종대",
     "lat": 35.05969491904282,
     "lng": 129.07980569117214
   },
-  "collectedAt": "2026-10-24T09:57:15.442Z",
+  "collectedAt": "2026-10-24T10:23:46.164Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:305",
-      "busan-theme:452",
-      "busan-theme:484",
-      "busan-theme:780",
-      "busan-theme:860",
-      "busan-theme:1362",
-      "busan-theme:1408",
-      "busan-theme:1414"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -35,7 +27,18 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126658&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:20.768Z",
-      "modifiedAt": "20260309173051"
+      "modifiedAt": "20260309173051",
+      "passages": [
+        {
+          "text": "부산 영도구 태종대는 아름다운 자연경관과 풍부한 역사적 의미를 가진 관광지이다. 이곳은 부산의 대표적인 명승지로, 기암괴석과 울창한 숲이 어우러져 독특한 경관을 자랑한다. 태종대에는 전망대가 있어, 멀리 바다를 바라보며 경치를 즐길 수 있다. 또한, 태종대 일대에는 다양한 산책로와 해안선을 따라 펼쳐진 길이 있어 관광객들에게 자연 속에서 힐링할 수 있는 기회를 제공한다. 이곳은 태종대 등대와 태종사와 같은 역사적인 유적지들도 있어 방문객들이 찾는 명소이다. 태종대에서는 다누비 열차도 함께 즐길 수 있어 아이와 가족과 함께 주말 나들이 장소로도 추천한다.",
+          "characters": 239,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "heritage:15-21-0000170000000",
@@ -51,7 +54,18 @@
       "originalText": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=15&ccbaCtcd=21&ccbaAsno=0000170000000",
       "fetchedAt": "2026-10-24T09:54:51.721Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
+          "characters": 142,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:305",
@@ -59,9 +73,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "‘강다니엘 투어’ 따라 부산 구석구석",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "태종대는 옛 부터 영도 대표 유원지였다. 영도에서 자란 이들이라면 학창시절 태종대로 소풍을 가보지 않은 이가 없을 정도다. 분명 강다니엘도 소풍날 태종대에서 뛰어 놀지 않았을까. 드넓게 펼쳐진 바다와 기암괴석의 신비로움을 감상하기에 더 없이 좋은 장소인 태종대를 도보로 구경하려면 1시간 이상 잡아야 한다. 하지만 걷기가 부담스럽다면 저속 기차 ‘다누비 열차’를 타는 방법도 있다. 영도대교로 시작해 태종대까지 둘러 본 강다니엘 코스. 어린 시절 강다니엘이 가수를 꿈꾸며 걸었을 골목부터 영도를 대표하는 명소들까지. 이렇듯 영도는 오롯이 하루를 투자해도 될 만큼 다양하고 알찬 풍경을 간직하고 있다.",
+          "reason": "place-heading",
+          "characters": 256
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -70,17 +94,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:452",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -89,7 +121,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:484",
@@ -97,9 +133,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 드라이브는 즐거워!",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "동해바다와는 확실히 좀 다른 느낌, 남해 바다를 만끽하러 서쪽으로 이동해본다. 태종대는 깎아지른 벼랑과 기암괴석이 빼어난 풍경을 자랑 하는 곳이다. 주간에는 다누비열차 드라이브, 야간에는 차량 드라이브로 태종대를 마음껏 누빈다. 영도 영선동에서 남항대교를 타고 송도해수욕장으로 넘어간다. 교량 위를 시원하게 달리며 보이는 묘박지의 신비로운 풍경이 장관이다. 송도해수욕장에서는 잠시 쉬어가자. 국내 최장 구름산책로를 거닐어보기도 하고, 케이블카를 타고 바다 위를 가로지르며 휴식을 취한다. 드디어 황금빛 노을이 눈부신 다대포해수욕장이다. 해가 넘어가기 전까지만 볼 수 있는 짧은 황홀경을 마음껏 눈에 담을 수 있는 곳이다. 찰나의 풍경이지만 그 여운은 오래도록 남는다.",
+          "reason": "place-subject",
+          "characters": 291
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -108,7 +154,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:780",
@@ -116,9 +166,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "우리집 추억소환 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "태종대 ‘자유랜드’에서 바이킹 타 보신 분 있으신가요? 청룡열차, 대관람차, 회전목마 등등 화려한 놀이기구를 자랑했던 부산 최고의 가족여행지이자 연인들의 필수 데이트 코스였던 바로 이 곳, 태종대 유원지에도 즐거운 추억이 많이 남아있죠?",
+          "reason": "place-heading",
+          "characters": 103
+        },
+        {
+          "text": "태종대가 간직한 천혜의 자연은 언제나 사람들을 매혹시켜 왔어요. 순환도로를 걷다가 만나는 눈부신 햇살, 부서지는 파도, 스치는 바람소리, 시원한 바다전망까지 어느 것 하나 놓칠 것이 없죠. 그래서였을까요? 아이 둘 데리고 뾰족구두 신고도 힘든 줄 모르고 거닐었던 그 길, 순환도로에서의 행복한 시간이 소중한 추억으로 남았어요. 요즘엔 순환도로를 운행하는 다누비열차가 항시 대기하고 있답니다.",
+          "reason": "place-subject",
+          "characters": 169
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -127,7 +192,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:860",
@@ -135,9 +204,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "서울촌놈 부산편 따라잡기",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "태종대에는 태종대만의 특별한 장소가 있는데요, 바로 해녀촌입니다! 태종대 등대를 지나 계단을 조심조심 내려가면 깎아지른 절벽 위에 영도 해녀들의 신선한 해산물을 맛볼 수 있는 특별한 장소가 있습니다. 해녀들이 즉석에서 썰어주는 해산물은 정말 신선하답니다! 파도소리 음악 삼아 절벽에 앉아 해산물 먹어보기, 이건 바로 잊지 못할 태종대의 소중한 추억이 되지 않을까요?",
+          "reason": "place-subject",
+          "characters": 157
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -146,26 +225,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "PLACE",
-        "method": "exact-name",
-        "placeName": "태종대",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1362",
@@ -173,9 +237,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영도에 빠지다! 찐친 여행 메이트의 영도 여행법",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "해양 액티비티를 신나게 즐겼다면 든든하게 배를 채울 시간이다. 태종대 입구에 있는 '태종대짬뽕'은 가볍게 한 끼를 해결하기에 좋은 식당이다. 유명 관광지에 있는 식당이지만 현지인들에게도 좋은 평가를 받는 곳이다. 메뉴는 고민할 것 없이 짬뽕이다. 여러 가지 맛을 골고루 느끼고 싶다면 짬뽕과 짜장, 탕수육이 함께 나오는 2인 세트를 시키면 된다. 대표 메뉴인 짬뽕은 해물이 듬뿍 들었다. 첫맛은 달달한데 갈수록 시원하고 끝에는 칼칼함이 입에 남는다. 낙지가 한 마리 통째로 올려져 있어서 눈으로 먹는 맛도 좋다. 짬뽕이 주메뉴이지만 짜장면도 놓치기 아깝다. 쟁반짜장처럼 큰 접시에 담아낸 짜장에도 해물이 듬뿍 들었다. 짜지 않고 담백해서 자꾸만 손이 간다. 탕수육은 새콤달콤한 소스에 채 썬 양파를 듬뿍 올려 준다. 고소한 튀김옷과 잘 어울리는 조합이다.",
+          "reason": "place-heading",
+          "characters": 319
+        },
+        {
+          "text": "영도여행의 마지막 코스는 태종대다. 오늘의 미션은 태종대에서 인생샷 찍기! 울창한 숲과 해안절경이 어우러져 사시사철 관광객들의 발길이 끊이지 않는 부산의 대표 명소이지만 부산 시민들도 모르는 인생샷 성지들이 곳곳에 숨어 있다.",
+          "reason": "place-heading",
+          "characters": 98
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -184,7 +263,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1408",
@@ -192,9 +275,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는 곳. 오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳. 부산 영도 남쪽 끝에 자리하고 있는 태종대의 이야기다. 태종대는 바다를 조망할 수 있는 전망 포인트뿐만 아니라 해안 자갈마당과 이어지는 계단오솔길도 잘 조성되어 있다. 발걸음을 옮기는 곳마다 새로워지는 풍경에 여행자의 마음이 절로 설렌다. 도시와 얼마 떨어지지 않은 곳이건만 이곳만큼은 세상의 때가 덜 닿은 듯하다.",
+          "reason": "ai-reviewed-scope",
+          "characters": 204
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -203,7 +296,12 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "selected-scope",
+        "humanReview": "pending"
+      },
+      "autoRelation": "same-place"
     },
     {
       "id": "busan-theme:1414",
@@ -211,9 +309,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "드라마 촬영지 순례(ft.재벌집 막내아들)",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "애플티브이 오리지널 드라마 '파친코'는 4대에 걸친 재일조선인 가족들의 이야기를 통해 격동의 시대를 생생하게 보여주었습니다. 주인공인 '선자'의 고향이 부산으로 그려지면서 부산 곳곳이 드라마에 등장했었는데요. 드라마 첫 회에 등장했던 선자의 고향 바다는 바로 영도에 있는 태종대입니다. 어린 선자가 물질을 하던 곳은 태종대 내에 있는 태원자갈마당이란 곳인데, 자갈밭과 암벽, 울창한 숲과 푸른 바다가 어우러진 장소로 지금도 많은 관광객들이 찾는 곳입니다.",
+          "reason": "place-heading",
+          "characters": 198
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종대"
+        ],
         "placeName": "태종대",
         "review": "pending"
       },
@@ -222,7 +330,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     }
   ],
   "errors": []

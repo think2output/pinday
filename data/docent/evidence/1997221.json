@@ -1,35 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1997221",
     "name": "부산 감천문화마을",
     "lat": 35.0974606978,
     "lng": 129.0105969965
   },
-  "collectedAt": "2026-10-24T09:57:14.020Z",
+  "collectedAt": "2026-10-24T10:23:41.600Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:309",
-      "busan-theme:431",
-      "busan-theme:491",
-      "busan-theme:845",
-      "busan-theme:846",
-      "busan-theme:857",
-      "busan-theme:1149",
-      "busan-theme:1181",
-      "busan-theme:1199",
-      "busan-theme:1318",
-      "busan-theme:1320",
-      "busan-theme:1324",
-      "busan-theme:1334",
-      "busan-theme:1408",
-      "busan-theme:1413",
-      "busan-theme:2411",
-      "busan-theme:2710",
-      "busan-theme:2782",
-      "busan-theme:2869"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -46,7 +27,18 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1997221&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:24.170Z",
-      "modifiedAt": "20260929171053"
+      "modifiedAt": "20260929171053",
+      "passages": [
+        {
+          "text": "감천문화마을은 1950년대 6.25 피난민의 힘겨운 삶의 터전으로 시작되어 현재에 이르기까지 부산의 역사를 그대로 간직하고 있는 곳이다. 산자락을 따라 질서 정연하게 늘어선 계단식 집단 주거형태와 모든 길이 통하는 미로 같은 골목길의 경관은 감천만의 독특함을 보여준다. 부산의 낙후된 달동네였지만 문화예술을 가미한 도시재생사업을 추진하면서 지금은 연간 185만 명의 국내외 관광객이 다녀가는 대표 관광명소가 되었다. 산비탈을 따라 계단식으로 들어선 아름다운 파스텔톤의 집들과 미로와 같은 골목길이 있어 한국의 마추픽추, 산토리니로 불린다. 2016년 대한민국 공간문화대상 최고상인 대통령상을 수상하기도 했다. 감천문화마을에서는 아름다운 자연과 어우러진 그림 같은 마을의 풍경을 즐기면서, 골목골목 설치된 다양한 형태의 작품을 감상할 수 있으며, 감천문화마을 내 입주작가들의 공방을 통해 다양한 공예 체험도 가능하여 관광객들이 끊임없이 찾고 있다.",
+          "characters": 371,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "heritage:13-21-0005460000000",
@@ -62,7 +54,18 @@
       "originalText": "부산 임시수도 대통령관저는 한국전쟁 기간 중 피란수도인 부산에서 대통령 집무실 겸 관저로 사용된 곳으로, 국방· 정치· 외교 등 다양한 분야에서 중요한 정책이 결정되었던 역사적 현장으로서 당시의 모습을 비교적 잘 간직하고 있어 역사적․건축사적 가치가 높은 것으로 평가되고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=13&ccbaCtcd=21&ccbaAsno=0005460000000",
       "fetchedAt": "2026-10-24T09:54:03.956Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "부산 임시수도 대통령관저는 한국전쟁 기간 중 피란수도인 부산에서 대통령 집무실 겸 관저로 사용된 곳으로, 국방· 정치· 외교 등 다양한 분야에서 중요한 정책이 결정되었던 역사적 현장으로서 당시의 모습을 비교적 잘 간직하고 있어 역사적․건축사적 가치가 높은 것으로 평가되고 있다.",
+          "characters": 119,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:309",
@@ -70,9 +73,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기가 있는 알짜배기 여행, 부산원도심 스토리투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 사하구와 서구는 한국전쟁이 남긴 흔적 중 피란민의 삶을 피부로 느낄 수 있는 곳이다. 꼬불꼬불한 골목을 걸으며 다양한 벽화를 즐길 수 있는 곳으로 잘 알려진 감천문화마을은 원래 한국전쟁 당시 피란민이 산 능성에 다닥다닥 집을 짓고 살면서 생겨났다. 아픈 흔적만 남아있던 동네가 주민들과 예술가들의 노력으로 예술이 넘쳐나는 감성골목으로 변모하였다. 무덤 위라도 땅만 있으면 집을 짓고 살아야했던 비석문화마을도, 자갈치 막노동의 삶을 사진에 담은 최민식작가의 갤러리도, 그리고 대통령의 관저였던 임시수도기념관도 이제는 모두 피란수도 부산의 소중한 유산이 되었다.",
+          "reason": "place-subject",
+          "characters": 242
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -81,7 +94,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:431",
@@ -89,9 +106,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "자연과 문화, 그리고 역사가 공존하는 서부산투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "오랜 세월 피란민들의 삶의 터전이었던 감천문화마을. 마을입구에 들어서면 세월과 예술의 만남이 빚어낸 아름답고 살가운 풍경이 먼저 시선을 잡아끈다. 한복을 입고 골목길 투어에 나선 여행자들의 얼굴에는 활기가 가득하다. 삐뚤삐뚤 굽이굽이 두 사람이 지나가기에도 벅찬 좁은 골목길은 무척이나 복고스럽다. 어디로 통할지 모르는 길 곳곳마다 예쁘게 디자인 된 표지판이 여행자들을 인도한다.",
+          "reason": "place-heading",
+          "characters": 165
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -100,7 +127,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:491",
@@ -108,9 +139,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "도시철도 1호선 타고 누비는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "토성역은 부산의 마추픽추 감천문화마을과 이어진다. 푸른 하늘과 맞닿은 곳에 위치한 감천문화마을은 다닥다닥 붙은 작은 집들이 비탈을 이루며 독특한 풍경을 만들어내는 곳이다. 지역예술인과 마을 주민들의 노력 덕분에 마을 곳곳은 거리 미술관을 방불케 한다.",
+          "reason": "place-heading",
+          "characters": 109
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -119,17 +160,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:845",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "반려견과 함께 가볼 만한 부산 여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -138,17 +187,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:846",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "산복도로에서 만나는 멋진 부산 풍경 ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -157,17 +214,26 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "excluded",
+        "reason": "다른 전망대를 소개하며 감천문화마을을 비교 대상으로 언급. 직접 해설 근거에서 제외",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:857",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 4코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -176,7 +242,12 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "excluded",
+        "reason": "추가 확인으로 정정: 본문에 감천 문화마을도 아니고라는 부정·비교 언급이 있음. 감천문화마을 자체 설명이 아니므로 제외(기존 속성만 언급이라는 이유를 바로잡음)",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1149",
@@ -184,9 +255,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "보라보라한 가을 감성여행지",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "가을 햇살이 스며드는 감천문화마을도 가을 감성 여행지로 놓칠 수 없다. 경사가 심한 산비탈을 따라 마치 장난감처럼 보이는 아기자기한 집들이 산꼭대기까지 빼곡하게 들어선 모습이 무척 이국적이다. 모양만 신기한 것이 아니라 색깔까지 알록달록 화려하다. 각기 다른 모습을 집들을 하나씩 구경하는 재미가 쏠쏠하다. 보일듯 말듯 집들 사이로 난 좁은 골목길로 사람들이 지나다니는 풍경도 신기하다.",
+          "reason": "place-heading",
+          "characters": 166
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -195,7 +276,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1181",
@@ -203,9 +288,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Our History",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "한국전쟁 당시 피란민들이 산꼭대기까지 집을 짓고 살았던 부산의 주거문화를 지금껏 간직하고 있는 곳. 알록달록 다양한 색깔로 칠해진 집들이 산자락을 따라 계단식으로 자리한 모습이 이국적 풍경을 보여준다.",
+          "reason": "place-heading",
+          "characters": 87
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -214,7 +309,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1199",
@@ -222,9 +321,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "코카앤버터의 Street of fun in Busan",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "산비탈을 따라 빼곡하게 들어찬 알록달록한 집, 미로처럼 이어진 골목, 그 길을 따라 예쁘게 그려진 벽화. 부산의 옛 모습과 현대적인 예술이 어우러진 색다른 감성골목, 많은 사람들이 부산 여행지 원픽으로 꼽는 감천문화마을이다.",
+          "reason": "ai-reviewed-scope",
+          "characters": 96
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -233,26 +342,12 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산 감천문화마을",
-        "review": "pending"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "selected-scope",
+        "humanReview": "pending"
       },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "autoRelation": "same-place"
     },
     {
       "id": "busan-theme:1318",
@@ -260,9 +355,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-1편",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "계단식 주거형태와 미로 같은 골목길 등 독특한 경관을 자랑하는 감천문화마을은 피난민의 터전으로 시작되었지만 현재는 생활과 예술이 공존하는 이색명소가 됐다. 이리저리 휘고 오르락내리락 하는 골목을 따라 예술가들의 다양한 설치 작품과 예쁜 포토존을 발견하는 재미가 쏠쏠하다.",
+          "reason": "place-heading",
+          "characters": 118
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -271,17 +376,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1320",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산시티투어 버스 서부산 노선-2편",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -290,7 +403,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1324",
@@ -298,9 +415,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜지민편＞",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "사하구에 위치한 감천문화마을은 골목마다 알록달록 벽화가 그려져 있어 마치 동화 속 세상에 온 것 같은 느낌을 주는 부산의 유명 관광지인데요, 이곳 건물들 중 한쪽 벽면에는 SNS에 올리기 딱- 좋은 정국 & 지민의 벽화가 그려져 있어서 인증샷 명소로 더 사람들이 많이 찾는 곳이랍니다! 형형색색의 건물 곳곳에 카페, 기념품샵, 식당들이 즐비해서 쉬엄쉬엄 걸어보기 좋은 감천문화마을은 사진스폿이 여럿이라 카메라 셔터를 쉴 새 없이 누르게 되는데요, 벽화의 색감과 느낌 모두 너무 예뻐서 제대로 눈 호강 할 수 있어요! 부산즈 케미 지민 & 정국을 떠올리며 치미, 쿠키와 함께 감천문화마을의 분위기를 느껴보세요.",
+          "reason": "place-subject",
+          "characters": 255
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -309,7 +436,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1334",
@@ -317,9 +448,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜정국편＞",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "사하구에 위치한 감천문화마을은 골목마다 알록달록 벽화가 그려져 있어 마치 동화 속 세상에 온 것 같은 느낌을 주는 부산의 유명 관광지인데요, 이곳 건물들 중 한쪽 벽면에는 SNS에 올리기 딱- 좋은 정국 & 지민의 벽화가 그려져 있어서 인증샷 명소로 더 사람들이 많이 찾는 곳이랍니다! 형형색색의 건물 곳곳에 카페, 기념품샵, 식당들이 즐비해서 쉬엄쉬엄 걸어보기 좋은 감천문화마을은 사진스폿이 여럿이라 카메라 셔터를 쉴 새 없이 누르게 되는데요, 벽화의 색감과 느낌 모두 너무 예뻐서 제대로 눈 호강 할 수 있어요! 부산즈 케미 지민 & 정국을 떠올리며 치미, 쿠키와 함께 감천문화마을의 분위기를 느껴보세요.",
+          "reason": "place-subject",
+          "characters": 255
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -328,7 +469,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1408",
@@ -336,9 +481,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 서부산여행의 랜드마크가 된 감천문화마을은 보고 즐기는 체험관광지로 관광객들의 뜨거운 호응을 받고 있다. 마을안내센터에서 구매한 스탬프지도를 따라가기만 하면 골목길투어가 완성된다. 먼저, 입구에 위치한 감천문화마을 작은 박물관에 들러 마을의 이야기를 살펴본 후 투어를 시작하자.",
+          "reason": "place-heading",
+          "characters": 125
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -347,7 +502,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1413",
@@ -355,9 +514,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "반짝반짝 빛나는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낮에만 가던 감천문화마을이 추운 계절이 되면 밤에도 가야 할 곳으로 바뀐다. 바로 마을 곳곳에 걸리는 ‘감천집 등’ 때문인데 은은한 등 덕분에 밤에도 야경과 함께 산책을 하기 좋은 곳으로 바뀌었다. 계단식 주택의 옛 모습을 그대로 간직한 골목길마다 감천집 등이 달리면서 마을 전체가 따뜻한 온기로 가득하다. 골목을 따라 조용조용 발걸음을 옮겨본다. 저마다의 모습으로 환하게 등을 밝힌 채 여행자를 반기는 감천집 등, 매번 낮에만 방문했다면 이번에는 밤에 가서 색다른 감천문화마을을 충분히 느껴보는 것도 좋다.",
+          "reason": "place-heading",
+          "characters": 214
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -366,36 +535,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
-      "id": "busan-theme:1420",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "세계적인 관광도시 부산 5대 매력",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산 감천문화마을",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><tr><td colspan=\"3\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167961882067469.jpg\" alt=\"World EXPO 2030 BUSAN, KOREA 로고. 세계적인 관광 도시 BUSAN(Borderless 문화의 용광로/Urban 현재와 과거가 공존하는 도시/Sustainable 지속 가능한 도시/Attraction 예술과 축제의 도시 /Nature 자연친화 도시). BUSAN is Ready! 2030 세계박람회 유치를 응원합니다!\"></td></tr><!--타이틀--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=312&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462974971.jpg\" alt=\"BUSAN-Borderless 문화의 용광로.밀면 : 냉면(평양, 함흥) + 밀가루, 쫄깃하면서도 부드러운 면발, 묘하게 중독되는 부산 여름의 맛\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=494&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462975641.jpg\" alt=\"돼지국밥 : 국밥(함흥) + 돼지고기, 따뜻하고 든든한 한 끼, 정성 가득한 부산 대표 음식\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=355&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462976207.jpg\" alt=\"전포카페거리 : 커피도시 부산, 젊은이들의 핫플레이스, 커피향 가득한 부산 문화골목\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462977163.jpg\" alt=\"BUSAN-Urban 현재와 과거가 공존하는 도시. 해운대해수욕장, 바다의 도시 부산에서 가장 먼저 떠올리는 부산의 대표 바다\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462977580.jpg\" alt=\"감천문화마을, 미로처럼 이어진 골목마다 독특한 아름다움 간직한 아트 빌리지\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1180&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462978009.jpg\" alt=\"영화도시 부산, 예술 에너지 넘쳐나는 국제예술도시 부산\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1064&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462978547.jpg\" alt=\"BUSAN-Sustainable 지속 가능한 도시. 부산국가지질공원, 8천만년 된 중생대 백악기 유산을 껴안은 거대 지질공원 부산\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462979060.jpg\" alt=\"을숙도, 낙동강 하구의 절경과 철새 그리고 갈대가 선사하는 경이로운 자연\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=260&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462979744.jpg\" alt=\"아홉산숲, 아홉 개의 골짜기를 품은 싱그러운 대나무숲\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201005001000&uc_seq=524&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465238473.jpg\" alt=\"BUSAN-Attraction 예술과 축제의 도시. 부산국제영화제, 진한 영화의 감동을 선사하는 전 세계 영화예술의 허브\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201005001000&uc_seq=395&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465239331.jpg\" alt=\"부산불꽃축제, 음악과 불꽃 그리고 사람들의 함성, 대한민국 최대 불꽃놀이 축제\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201005001000&uc_seq=427&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465239954.jpg\" alt=\"부산비엔날레, 자연과 사람, 그리고 예술이 하나가 되는 평온한 시간\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465240339.jpg\" alt=\"BUSAN-Nature 자연친화 도시.태종대, 짙푸른 바다에 둘러싸인 기암괴석과 우거진 녹음이 발산하는 신비\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=396&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465240749.jpg\" alt=\"금정산, 병풍처럼 펼쳐진 골짜기마다 울창한 숲을 내어주는 부산 대표 명산\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465241224.jpg\" alt=\"다대포해수욕장, 자연이 주는 황홀경을 맘껏 즐길 수 있는 광활한 바다\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1420&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:2411",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "여름날 지치지 않게 아름다운 부산을 즐기는 방법 : 낮부터 밤까지 추천공간 4선",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -404,7 +562,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:2710",
@@ -412,9 +574,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 K-POP, 「B-POP」 ‘로컬’ 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "‘부산의 마추픽추’라는 별명으로 잘 알려진 감천문화마을은 부산을 대표하는 예술 감성 여행지다. 산비탈을 따라 이어진 형형색색의 집들과 벽화 골목은 이곳만의 독특한 분위기를 만들어낸다. 다대포의 노을이 부산의 낭만을 보여줬다면, 감천문화마을은 부산의 색채와 상상력을 보여주는 공간이다. 골목마다 전혀 다른 풍경이 펼쳐지고, 작은 계단조차 하나의 작품처럼 느껴진다.",
+          "reason": "place-subject",
+          "characters": 160
+        },
+        {
+          "text": "최근 K-POP은 음악을 넘어 패션과 비주얼, 아트 감성까지 하나의 문화로 확장되고 있다. 그런 점에서 감천문화마을은 부산의 예술적인 분위기를 가장 잘 담아낸 장소라고 할 수 있다. 다양한 화보와 영상 촬영지로도 사랑받는 이유 역시 이곳만의 독특한 컬러감 때문이다.",
+          "reason": "place-subject",
+          "characters": 113
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -423,17 +600,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:2782",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "외국인들에게도 사랑받고 있는 부산 디저트 카페 3",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -442,7 +627,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:2869",
@@ -450,9 +639,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 산복도로 명소탐방, 이색 코스 ‘아트 앤 네이처로드’",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "아미드림도서관으로부터 도보 20분이면 감천 문화마을에 도착할 수 있어요. 이 곳은 부산을 대표하는 관광지 중 한 곳으로 내외국인에게 인기 많은 곳으로 관광객들의 발길이 끊이지 않는 곳이죠! 유명한 관광지인 만큼 마을 골목 곳곳마다 숨겨진 포토존들과 다양한 상점과 먹거리, 볼거리로 시선을 사로잡아요.",
+          "reason": "place-heading",
+          "characters": 129
+        },
+        {
+          "text": "감천문화마을에는 어린왕자와 관련된 전시관이 하나 있는데요! 바로 리틀 프린스 하우스랍니다. 1층부터 옥상까지 되어 있는 구조로 층마다 각기 다른 컨셉의 어린왕자 전시를 만날 수 있는 곳이에요. 어린왕자 관련 기념품샵도 운영중이라 함께 방문하여 구경하기에도 좋답니다.",
+          "reason": "place-subject",
+          "characters": 116
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "감천문화마을"
+        ],
         "placeName": "부산 감천문화마을",
         "review": "pending"
       },
@@ -461,7 +665,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     }
   ],
   "errors": []

@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2674974",
     "name": "승학산",
     "lat": 35.1310381466,
     "lng": 128.9851266839
   },
-  "collectedAt": "2026-10-24T09:57:14.636Z",
+  "collectedAt": "2026-10-24T10:23:43.532Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
@@ -28,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2674974&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:47.214Z",
-      "modifiedAt": "20250509170424"
+      "modifiedAt": "20250509170424",
+      "passages": [
+        {
+          "text": "승학산은 구덕산과 시약산의 서쪽으로 당리동의 뒷산이다. 승학산의 정상으로 사하구와 사상구가 나누어진다. 승학산은 고려 말의 무학대사가 전국을 두루 돌아다니며 산세를 살폈는데 이곳에 오니 산세가 준엄하고 기세가 높아 마치 학이 나는 듯하다 하여 승학산이라는 이름을 붙였다는 전설이 있으며, 이곳 정상의 억새풀은 아름답기로 유명하여 가을철 산행의 백미로 등산객의 발길이 잦은 곳이다. 승학산의 주요 볼거리는 억새군락지, 제석골 산림공원, 편백나무림, 삼나무 명상치유의 숲, 기상관측소, 체육시설, 전망데크, 무대시설, 임도 등이 있다. 승학산 등산 코스는 다양하나, 동아대학교 뒤에서 출발하여 승학산 정상을 거쳐 서대신동 꽃마을에서 수정산으로 이르는 등산 코스는 부산 시내를 한눈에 내려다볼 수 있는 좋은 등산 코스이다.",
+          "characters": 312,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1019",
@@ -36,33 +44,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "하늘하늘한 부산 가을물결 패키지",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "가을이 되면 승학산 중턱에 자리 잡은 넓은 평원에는 온통 억새가 춤을 춥니다. 춤추는 억새 사이로 들어서는 발걸음이 한결 가볍습니다. 기분 좋은 바람맞으며 일렁이는 억새 물결을 가만히 바라보세요. 언제, 어떻게 이렇게나 넓은 억새군락이 형성되었는지는 모르지만, 자연이 선사하는 아름다운 선물임은 틀림없는 것 같아요. 햇빛을 받은 억새들이 눈이 부시도록 아름다워요. 느긋하게 흔들리는 억새의 바다가 잔잔한 물결을 일으킵니다. 햇빛을 받는 각도에 따라 은빛이었다가, 금빛이었다가, 말 그대로 아름다운 색채의 향연입니다. 황홀한 광경에 정신없이 빠져들다가 문득 고개를 돌리면 멀리 시원한 남해 바다의 풍경이 부산의 도심과 함께 펼쳐집니다. 고즈넉한 늦가을의 정취와 어우러진 평온한 풍경을 담고 싶다면 승학산 억새평원에 올라보세요.",
+          "reason": "place-heading",
+          "characters": 314
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "승학산"
+        ],
         "placeName": "승학산",
         "review": "pending"
       },
       "originalText": "늦가을의 부산은 더욱 하늘하늘하다는 거 아세요? 절정의 단풍은 시간이 지나면 그 아름다움이 퇴색해 가지만 주위를 둘러보면 어느새 새로운 색채의 향연을 펼치고 있는 갈대와 억새. 점점 깊어가는 가을의 끝자락, 더 늦기 전에 자연이 선사하는 늦가을 정취를 담으러 가는 건 어떠세요?\n<p class=\"font-size28 colorDarkBlue medium\">승학산</p>가을이 되면 승학산 중턱에 자리 잡은 넓은 평원에는 온통 억새가 춤을 춥니다. 춤추는 억새 사이로 들어서는 발걸음이 한결 가볍습니다. 기분 좋은 바람맞으며 일렁이는 억새 물결을 가만히 바라보세요. 언제, 어떻게 이렇게나 넓은 억새군락이 형성되었는지는 모르지만, 자연이 선사하는 아름다운 선물임은 틀림없는 것 같아요.\n햇빛을 받은 억새들이 눈이 부시도록 아름다워요. 느긋하게 흔들리는 억새의 바다가 잔잔한 물결을 일으킵니다. 햇빛을 받는 각도에 따라 은빛이었다가, 금빛이었다가, 말 그대로 아름다운 색채의 향연입니다. 황홀한 광경에 정신없이 빠져들다가 문득 고개를 돌리면 멀리 시원한 남해 바다의 풍경이 부산의 도심과 함께 펼쳐집니다. 고즈넉한 늦가을의 정취와 어우러진 평온한 풍경을 담고 싶다면 승학산 억새평원에 올라보세요.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">을숙도</p>낙동강 하구에 자리한 아름다운 섬 을숙도에도 늦가을의 정취가 가득합니다. 끝이 보이지 않는 갈대밭 사이를 여유롭게 거닐며 가을 낭만을 만끽해 봅니다. 소소한 일상의 여유가 바쁘게 지내온 삶에 위로를 전하는 듯합니다.\n강줄기를 따라 드넓게 펼쳐진 갈대밭은 감동을 자아내는 장관입니다. 언제 봐도 예쁜 갈대밭이지만 해가 지기 시작하는 시간에 맞춘다면 빛을 받은 갈대가 황금빛으로 빛나는 신비로운 풍경을 볼 수 있어요. 갈대밭 사이로 조성된 산책로를 걸으며 편안한 가을 오후를 만끽해 보세요. \n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포</p>이미 일몰 명소로 잘 알려진 다대포는 해질녘 고우니 생태길에서 만나는 석양과 갈대의 조화 또한 감동적인 곳입니다. 평지보다 높은 데크 산책로를 걷노라면 파노라마처럼 펼쳐지는 넓은 갈대밭에 시선을 뺏길 수밖에 없어요. 저 멀리 떨어지는 해는 갈대밭과 어우러져 가을의 운치를 한층 더해준답니다.\n갈대와 일몰, 그리고 다대포 바다의 환상적인 조합이 궁금하다면 고우니 생태길을 걸어보세요. 긴 데크 산책로 양쪽을 빼곡히 둘러싼 갈대가 가벼운 바람에도 스스스스- 특유의 소리를 냅니다. 끝없이 펼쳐진 하얀 갈대꽃이 시야에 한 가득 들어와 마음까지 힐링되는 시간을 즐길 수가 있답니다. 저녁 무렵, 하늘이 빨갛게 타오르면 황금빛으로 물드는 갈대의 향연도 놓치지 마세요.\n\n\n",
       "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1019&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
-      "id": "busan-theme:1170",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "산들바람 솔솔 부산의 리틀 포레스트",
-      "relation": "same-place",
-      "match": {
-        "field": "PLACE",
-        "method": "exact-name",
-        "placeName": "승학산",
-        "review": "pending"
-      },
-      "originalText": "<img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100595241.jpg\" alt=\"바람이 불어오는 곳, 그곳으로 가면/산들바람 솔솔/부산의 리틀 포레스트/여유롭게 흔들리는 억새풀 따라, 쉼표여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597006.jpg\" usemap=\"#planetmap\" alt=\"장산 억새바다, 그 사이 오솔길이 한 폭의 그림 같은 곳/승학산 억새평원, 은빛으로 하늘거리는 억새풀의 향연\"><map id=\"planetmap\" name=\"planetmap\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=432&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=445&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100597748.jpg\" alt=\"가을 담긴 반짝이는 물빛을 보며, 힐링여행\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598170.jpg\" usemap=\"#planetmap2\" alt=\"성지곡수원지, 마음의 평온을 주는 가을종합선물세트/회동수우언지, 강과 호수, 숲이 어우러진 명품 산책로\"><map id=\"planetmap2\" name=\"planetmap2\"><area shape=\"rect\" alt=\"\" title=\"\" coords=\"113,31,570,477\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=430&lang_cd=ko\" target=\"_blank\" /><area shape=\"rect\" alt=\"\" title=\"\" coords=\"627,34,1085,481\" href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=436&lang_cd=ko\" target=\"_blank\" /></map><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100598778.jpg\" alt=\"붉은 빛이 일렁이는 그곳에서, 낭만여행\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=423&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599189.jpg\" alt=\"기장 불광산 숲길 황홀한 빛깔로 물드는 산 속 풍경 경건하게 마음을 씻 내며 사찰의 아름다움을 감상 할 수있는, 불광산 숲길을 함께 걸어보자.\" />\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202004001000&uc_seq=424&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599517.jpg\" alt=\"일광산테마길 느림의 미학을 추구하는 길 편안하게 걷기에만 집중할 수 있는 일광산테마길은 낙엽과 단풍이 아름다운 가을이면 더욱 걷기 좋다. 곱게 깔린 산책로를 따라 가벼운 발걸음으로 나서보자.\">\n</a><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=397&lang_cd=ko\" target=\"_blank\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/163601100599949.jpg\" alt=\"금강공원과 식물원 뉴트로 감성 가득한 나만의 휴식처 도심 속 울창한 숲과 기암괴석의 조화가 아름다운 공원. 일상 속 찰나의 행복을 아낌없이 내어주는 금강공원 케이블카와 금강식물원도 즐겨보자.\"></a>\n\n\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1170&pageNo=1&numOfRows=1&resultType=json",
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",

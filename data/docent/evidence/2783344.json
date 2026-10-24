@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2783344",
     "name": "낙동강 생태탐방선",
     "lat": 35.110210832,
     "lng": 128.9491801483
   },
-  "collectedAt": "2026-10-24T09:57:13.410Z",
+  "collectedAt": "2026-10-24T10:23:39.806Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:353"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2783344&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:53:49.372Z",
-      "modifiedAt": "20260810152146"
+      "modifiedAt": "20260810152146",
+      "passages": [
+        {
+          "text": "낙동강 생태탐방선은 낙동강 물줄기를 따라 에코투어를 즐길 수 있는 프로그램이다. 물금과 대동 코스, 을숙도 일원 코스, 화명과 물금 코스가 있다. 낙동강 생태탐방선은 전화로 사전예약 또는 방문 후 승선이 가능하다. 승선신고서 작성을 위해 신분증을 반드시 지참해야 하며, 탑승 20분 전까지 탑승장에 도착해야 한다.\n여객 30명까지 승선이 가능한 탑승선은 쾌적하고 넓은 내부를 자랑한다. 탐방선이 출발하면 생태탐방 해설사가 낙동강의 생태와 역사에 관해 설명해 준다. 유익한 해설을 들은 후에는 탐방선 2층에서 따뜻한 햇볕과 시원한 강바람을 맞으며 아름다운 낙동강 풍광을 눈에 담을 수 있다. 낙동강 생태탐방선의 특징 중 하나는 친환경에너지를 사용한다는 것인데, 2층에서 태양광발전기와 풍력발전기를 통해 에너지를 얻는 모습을 직접 관찰할 수 있다. 또 선내에 망원경이 비치되어 멀리 있는 풍경까지 더욱 자세한 생태탐방이 가능하다.",
+          "characters": 354,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:353",
@@ -36,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "여긴 꼭 가야해! 아이와 함께 가기 좋은 곳",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "배를 타고 낙동강 주변의 생태환경을 보고 느낄 수 있는 탐방 프로그램이다. 날씨 좋은 어느 날, 아이와 함께 강 탐험에 나서보자. 바다와 강이 만나는 낙동강 하류 지역은 자연생태 체험의 보고다. 홈페이지 예약은 필수!",
+          "reason": "place-heading",
+          "characters": 90
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "낙동강생태탐방선"
+        ],
         "placeName": "낙동강 생태탐방선",
         "review": "pending"
       },

@@ -1,17 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1608751",
     "name": "태종사",
     "lat": 35.0560095813,
     "lng": 129.0897751849
   },
-  "collectedAt": "2026-10-24T09:57:15.460Z",
+  "collectedAt": "2026-10-24T10:23:46.231Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:798",
-      "busan-theme:1155"
+      "busan-theme:798"
     ],
     "humanReview": "pending"
   },
@@ -29,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1608751&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:21.408Z",
-      "modifiedAt": "20251023143000"
+      "modifiedAt": "20251023143000",
+      "passages": [
+        {
+          "text": "태종사는 태종대공원 안에 있는 사찰로 1976년에 건립된 대한불교 조계종 사찰이다. 1983년 9월 스리랑카 한국 유학생 오병문의 소개로 스리랑카 정부로부터 부처님 진신사리 1과와 보리수나무 2본을 기증받아 이곳에 봉안 및 생육하고 있으며, 태종사 경내에는 약 3,000그루의 수국이 군락을 지어 있으며, 개화기에 만개해 꽃들의 향연을 펼쳐지는 곳이다. 꽃 가꾸기를 좋아하는 도성스님께서 40여 년 동안 국내외 명승지 등 산사에서 수집하여 조금씩 심기 시작한 것이 수국꽃 군락지로 조성되었고, 2006년부터 매년 7월 초에 수국꽃 축제가 열리고 있다. 이 밖에도 탁발 법회 백중, 성도일 법회, 정기 예불 등의 예불과 특별행사가 열리고 있다.",
+          "characters": 275,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:15-21-0000170000000",
@@ -45,7 +52,14 @@
       "originalText": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=15&ccbaCtcd=21&ccbaAsno=0000170000000",
       "fetchedAt": "2026-10-24T09:54:51.721Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
+          "characters": 142,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:798",
@@ -53,9 +67,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "수국이 있는 풍경",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "울창한 나무숲 사이로 알록달록 수국이 태종사를 물들이기 시작합니다. 조금 이른 감이 없잖아 있지만 소담한 수국의 향연을 즐기기엔 부족함이 없지요. 오솔길을 따라 태종사에 오르는 길은 산 전체가 마치 수국꽃밭인 듯 착각을 일으킵니다. 며칠 지나면 만개한 꽃송이가 지천에 흐드러지겠지요.^^ 이 곳 태종사의 수국은 주지스님의 40년 넘는 정성이 고스란히 깃든 작품이라고 해요. 수국 모종을 구하기 위해 세계 많은 나라를 다녀오셨다고 하는데요, 현재 태종사에는 30여 종, 5000그루의 수국이 그 장관을 자랑하고 있어요. 매년 축제인파로 북적이던 모습은 간데 없고, 수국에 둘러싸인 조용한 사찰의 풍경이 전해집니다. 몽글몽글 피어 오르기 시작하는 수국의 모습도 싱그럽기 그지없네요. 조금 이른 시간에는 자욱한 안개 속 수국도 만나볼 수 있다고 해요. 코로나 여파가 지나고 나면 한번쯤 경험해 보고 싶은 장면이기도 합니다.",
+          "reason": "place-heading",
+          "characters": 349
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종사"
+        ],
         "placeName": "태종사",
         "review": "pending"
       },
@@ -72,9 +96,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "태고의 신비가 느껴지는 태종대 비밀의 숲",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "드라마틱했던 태종대 비밀의 숲의 대미를 장식할 태종사는 1970년대에 세워진 사찰이다. 대웅전을 중심으로 산신각과 그 외 부속 건물들이 태종산 자락에 자리하고 있는데 고즈넉한 분위기가 주변 풍경과 잘 어우러진다.",
+          "reason": "place-heading",
+          "characters": 92
+        }
+      ],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "태종사"
+        ],
         "placeName": "태종사",
         "review": "pending"
       },

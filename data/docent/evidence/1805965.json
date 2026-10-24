@@ -1,19 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1805965",
     "name": "전포카페거리",
     "lat": 35.15542,
     "lng": 129.067338
   },
-  "collectedAt": "2026-10-24T09:57:15.166Z",
+  "collectedAt": "2026-10-24T10:23:45.247Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:394",
-      "busan-theme:514",
-      "busan-theme:1400",
-      "busan-theme:2713"
+      "busan-theme:514"
     ],
     "humanReview": "pending"
   },
@@ -31,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1805965&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:11.481Z",
-      "modifiedAt": "20260311100340"
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "부산 서면은 다양한 볼거리와 먹거리, 쇼핑거리가 있는 곳이다. 번화가인 서면 1번가 맞은편 쪽에는 아기자기하게 꾸며놓은 개성 있는 카페 30여 곳이 들어서 있는 조용한 분위기의 카페 거리가 있다. 원래 부전동과 전포동은 공구, 철물 등 산업용품 및 자재를 파는 가게들이 많던 공구상가 거리였으나 2010년 이후 많은 수의 아기자기한 카페들이 들어서면서 이색적인 카페거리로 불리고 있다. 대부분 개인이 운영하는 소규모 카페로 다양한 원두와 커피 맛을 느낄 수 있다.",
+          "characters": 196,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0000180000000",
@@ -47,7 +52,14 @@
       "originalText": "동모는 동검과 함께 우리나라 청동기시대를 대표하는 유물로, 적을 찌르는데 쓰는 무기이다. 생긴 모양은 검과 비슷하지만 창날과 자루집 2부분으로 나뉘어 있고, 긴 나무를 꽂아 쓸 수 있도록 끼우는 부분의 속은 비어있다.\n 제작시기는 세형동검 후기인 BC. 3세기∼AD. 1세기 사이로, 그 출현시기가 검보다 매우 늦고 양도 많지 않아 최초의 유형을 밝히는데 어려움이 있다.\n 우리나라 동모의 특징은 자루집이 둥글거나, 그대로 몸통까지 연장되어 등대를 이루고 솟아 있다는 점이다. 길이는 20㎝에서 60㎝를 넘는 것도 있으며, 중국 전국시대의 연(燕)이나 하남(河南)지방의 영향을 받았다는 것이 일반적인 학설이다. 주로 널무덤 계통의 유적에서 발견되고 있으며, 세형동검 문화의 한 요소로 일본에 전파되어 일본 특유의 광봉동모를 출현시키기도 하였다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000180000000",
       "fetchedAt": "2026-10-24T09:53:05.792Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동모는 동검과 함께 우리나라 청동기시대를 대표하는 유물로, 적을 찌르는데 쓰는 무기이다. 생긴 모양은 검과 비슷하지만 창날과 자루집 2부분으로 나뉘어 있고, 긴 나무를 꽂아 쓸 수 있도록 끼우는 부분의 속은 비어있다.\n 제작시기는 세형동검 후기인 BC. 3세기∼AD. 1세기 사이로, 그 출현시기가 검보다 매우 늦고 양도 많지 않아 최초의 유형을 밝히는데 어려움이 있다.\n 우리나라 동모의 특징은 자루집이 둥글거나, 그대로 몸통까지 연장되어 등대를 이루고 솟아 있다는 점이다. 길이는 20㎝에서 60㎝를 넘는 것도 있으며, 중국 전국시대의 연(燕)이나 하남(河南)지방의 영향을 받았다는 것이 일반적인 학설이다. 주로 널무덤 계통의 유적에서 발견되고 있으며, 세형동검 문화의 한 요소로 일본에 전파되어 일본 특유의 광봉동모를 출현시키기도 하였다.",
+          "characters": 320,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:21-21-0000190000000",
@@ -63,7 +75,14 @@
       "originalText": "동모는 동검과 함께 우리나라 청동기시대를 대표하는 유물로, 적을 찌르는데 쓰는 무기이다. 생긴 모양은 검과 비슷하지만 창날과 자루집 2부분으로 나뉘어 있고, 긴 나무를 꽂아 쓸 수 있도록 끼우는 부분의 속은 비어있다.\n 제작시기는 세형동검 후기인 BC. 3세기∼AD. 1세기 사이로, 그 출현시기가 검보다 매우 늦고 양도 많지 않아 최초의 유형을 밝히는데 어려움이 있다.\n 우리나라 동모의 특징은 자루집이 둥글거나, 그대로 몸통까지 연장되어 등대를 이루고 솟아 있다는 점이다. 길이는 20㎝에서 60㎝를 넘는 것도 있으며, 중국 전국시대의 연(燕)이나 하남(河南)지방의 영향을 받았다는 것이 일반적인 학설이다. 주로 널무덤 계통의 유적에서 발견되고 있으며, 세형동검 문화의 한 요소로 일본에 전파되어 일본 특유의 광봉동모를 출현시키기도 하였다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=21&ccbaCtcd=21&ccbaAsno=0000190000000",
       "fetchedAt": "2026-10-24T09:53:06.233Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "동모는 동검과 함께 우리나라 청동기시대를 대표하는 유물로, 적을 찌르는데 쓰는 무기이다. 생긴 모양은 검과 비슷하지만 창날과 자루집 2부분으로 나뉘어 있고, 긴 나무를 꽂아 쓸 수 있도록 끼우는 부분의 속은 비어있다.\n 제작시기는 세형동검 후기인 BC. 3세기∼AD. 1세기 사이로, 그 출현시기가 검보다 매우 늦고 양도 많지 않아 최초의 유형을 밝히는데 어려움이 있다.\n 우리나라 동모의 특징은 자루집이 둥글거나, 그대로 몸통까지 연장되어 등대를 이루고 솟아 있다는 점이다. 길이는 20㎝에서 60㎝를 넘는 것도 있으며, 중국 전국시대의 연(燕)이나 하남(河南)지방의 영향을 받았다는 것이 일반적인 학설이다. 주로 널무덤 계통의 유적에서 발견되고 있으며, 세형동검 문화의 한 요소로 일본에 전파되어 일본 특유의 광봉동모를 출현시키기도 하였다.",
+          "characters": 320,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:16-21-0002670000000",
@@ -79,17 +98,28 @@
       "originalText": "구상암(球狀岩)이란 공처럼 둥근 암석으로 특수한 환경 조건에서 형성되며, 대부분 화강암 속에서 발견된다. 그러나 부산 전포동의 구상 반려암은 길이 400m, 폭 300m에 달하는 반려암 속에 구상암이 들어있는 형태를 하고 있으며, 이는 아시아에서는 유일하게 기록된 희귀암석의 종류이다. 구상암의 지름은 작게는 1㎝ 이하인 것부터 크게는 5∼10㎝인 것도 있다. 색깔은 암록회색 내지는 연한 회색이다.\n 부산 전포동의 구상 반려암은 암석의 생성과정을 연구하는데 매우 중요할 뿐만 아니라, 매우 드물고 특수한 암석으로서 지질학적 연구가치가 크다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=16&ccbaCtcd=21&ccbaAsno=0002670000000",
       "fetchedAt": "2026-10-24T09:52:46.915Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구상암(球狀岩)이란 공처럼 둥근 암석으로 특수한 환경 조건에서 형성되며, 대부분 화강암 속에서 발견된다. 그러나 부산 전포동의 구상 반려암은 길이 400m, 폭 300m에 달하는 반려암 속에 구상암이 들어있는 형태를 하고 있으며, 이는 아시아에서는 유일하게 기록된 희귀암석의 종류이다. 구상암의 지름은 작게는 1㎝ 이하인 것부터 크게는 5∼10㎝인 것도 있다. 색깔은 암록회색 내지는 연한 회색이다.\n 부산 전포동의 구상 반려암은 암석의 생성과정을 연구하는데 매우 중요할 뿐만 아니라, 매우 드물고 특수한 암석으로서 지질학적 연구가치가 크다.",
+          "characters": 235,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:394",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "의료관광의 성지, 서면메디컬스트리트",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "전포카페거리"
+        ],
         "placeName": "전포카페거리",
         "review": "pending"
       },
@@ -106,9 +136,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "뉴트로풍 골목과 반항아적 거리 이야기",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "단언컨대 부산에서 서면만큼 흥미로운 공간은 없다. 보이지 않는 선으로 나뉜 공간의 재발견쯤 될까, 길 하나 사이로 시장과 젊음의 거리가 갈리고 또 골목 하나 사이로 노포 식당과 레스토랑이 나뉜다. 게다가 연령대 별로 선호하는 공간도 방식도 다르다. 하지만 그렇다고 넘을 수 없는 선이 있는 것도 아니다. 단지 홈그라운드가 있을 뿐 경계를 넘나들며 각자의 영역을 즐기는데 아무런 문제가 없다. 이런 다이내믹한 서면에서도 전포카페거리는 요즘 시쳇말로 가장 ‘핫’한 장소다. 이미 이 거리의 독창적이고 재기 발랄한 에너지는 해외에서 먼저 알아볼 정도였다. 지난 2017년 뉴욕타임스는 ‘올해의 세계여행지 52곳’에 전포카페거리를 선정한 바 있다. 서면 놀이마루 옆 골목, 전포카페거리에 들어서 있는 건물들의 이상적 신구 조화가 가장 먼저 눈에 띈다. 낡고 허름했던 건물에 현대적 재해석이 더해지며 새로운 뉴트로(New-tro) 문화를 탄생시킨 풍경은 퍽이나 인상적이다. 새로 지어진 건물들도 주변 건물들과의 조화를 헤치지 않으면서 각자의 개성을 뽐낸다. 특히 기존에 있던 공구상 등과 레스토랑, 카페의 균형 잡힌 동거는 이 거리의 묘한 매력 포인트 중 하나다.",
+          "reason": "place-subject",
+          "characters": 449
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "전포카페거리"
+        ],
         "placeName": "전포카페거리",
         "review": "pending"
       },
@@ -120,33 +160,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1218",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산을 머무르는 다양한 방법",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "전포카페거리",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503399766.gif\" alt=\"부산을 머무르는 다양한 방법. 나에게 딱 맞는 부산여행 코스, 여기서 골라봐\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403652.gif\" alt=\"하루도 충분해! 부산 당일여행 추천 코스\"></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=317&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503403958.gif\" alt=\"부산 당일여행의 정석, 동.서로 가로지르기. 세 가지 색깔의 바다를 만날 수 있는 코스\"></a></td> <td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=809&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404492.gif\" alt=\"강서구 히든 플레이스. 나만 알고 싶은 예쁜 신호동을 만날 수 있는 코스\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1200&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503404909.gif\" alt=\"나 홀로 떠나는 광안리 여행. 부산의 랜드마크 광안리를 하루에 즐길 수 있는 코스\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1060&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405345.gif\" alt=\"다대포 하루 여행 코스. 몰운대 등산부터 노을, 야경까지 즐길 수 있는 코스\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503405853.gif\" alt=\"알차게 즐겨봐! 부산 1박2일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=997&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406179.gif\" alt=\"안심 여행지! 이번엔 영도,송도. 인생샷 찾아 떠나는 1박2일 언택트 부산여행. 1일차: 태중대-아미르공원-영도하늘전망대-흰여울문화마을/절영해안산책로/흰여울해안터널. 2일차: 송도해수욕장-해상케이블카-스카이파크-송도용궁구름다리/암남공원/송도해안볼레길\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1025&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503406672.gif\" alt=\"동부산 힐링 가족여행! 해운대, 기장. 부산여행 1박2일 알짜 루트. 1일차: 1일차: 해운대해수욕장/아쿠아리움/동백해안산책로-부산시립미술관/고은사진미술관-해운대해변열차-송정해수욕장/동백해안산책로. 2일차: 해동용궁사-아난티코브-국립부산과학관-연화리(기장해녀촌)-죽성성당-아홉산숲-장안사\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1020&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087503407024.gif\" alt=\"야외 힐링 여행지! 오륙도에서 금정산까지. 산과 바다, 힐링 충만 1박 2일 부산 여행. 1일차: 오륙도/스카이워크-광안대교-동백해안산책로-문탠로드-청사포/다릿돌전망대. 2일차: 금강공원-케이블카-금정산성\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141010.gif\" alt=\"제대로 느껴봐! 부산 2박 3일 추천 코스\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=392&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569141415.gif\" alt=\"2박 3일에 완성하는 부산 완전정복. 부산의 진면목을 발견할 수 있는 3일의 시간. 1일차: 범어사-동래읍성-복천박물관/복천동고분군-죽성성당-해동용궁사-송정해수욕장/죽도공원. 2일차: 해운대해수욕장/동백섬-오륙도-태종대-영도대교-용두산공원. 3일차: 감천문화마을-송도해수욕장/케이블카-다대포해수욕장-장림포구-을숙도-가덕도\"></a></td></tr><tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1211&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142114.gif\" alt=\"친구들과 함께하는 2박 3일 부산 뚜벅이 여행 코스 추천! 친구와 함께 여행의 설렘을 느낄 수 있는. 1일차: 부산역-삼정타워-전포카페거리-호천마을. 2일차: 해리단길-스카이캡슐-청사포다릿돌전망대-광안리해수욕장/민락수번공원. 3일차: 장림포구-몰운대해안데크길-다대포해수욕장/고우니생태길-부산역\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142568.gif\" alt=\"그래도 부족하다면 부산에서 소중한 일주일 살기\"></td> </tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=384&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569142830.gif\" alt=\"부산 일주일 살기. 여행은 살아보는거야. 아침에 눈 뜨면 바다를 품은 도시가 반갑게 인사하는 곳.마음 닿는 대로 길을 걷다 좁은 골목길 숨은 이야기를 만날 수 있는곳. 당신의 소중한 일주일이 부산에서 펼쳐진다면?\"></a></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/165087569143278.jpg\" alt=\"하부 여백\"></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1218&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1400",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "지구를 지키는 비건트래블!",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "전포카페거리"
+        ],
         "placeName": "전포카페거리",
         "review": "pending"
       },
@@ -158,33 +183,29 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1420",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "세계적인 관광도시 부산 5대 매력",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "전포카페거리",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><tr><td colspan=\"3\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167961882067469.jpg\" alt=\"World EXPO 2030 BUSAN, KOREA 로고. 세계적인 관광 도시 BUSAN(Borderless 문화의 용광로/Urban 현재와 과거가 공존하는 도시/Sustainable 지속 가능한 도시/Attraction 예술과 축제의 도시 /Nature 자연친화 도시). BUSAN is Ready! 2030 세계박람회 유치를 응원합니다!\"></td></tr><!--타이틀--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=312&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462974971.jpg\" alt=\"BUSAN-Borderless 문화의 용광로.밀면 : 냉면(평양, 함흥) + 밀가루, 쫄깃하면서도 부드러운 면발, 묘하게 중독되는 부산 여름의 맛\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=494&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462975641.jpg\" alt=\"돼지국밥 : 국밥(함흥) + 돼지고기, 따뜻하고 든든한 한 끼, 정성 가득한 부산 대표 음식\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202003001000&uc_seq=355&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462976207.jpg\" alt=\"전포카페거리 : 커피도시 부산, 젊은이들의 핫플레이스, 커피향 가득한 부산 문화골목\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=373&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462977163.jpg\" alt=\"BUSAN-Urban 현재와 과거가 공존하는 도시. 해운대해수욕장, 바다의 도시 부산에서 가장 먼저 떠올리는 부산의 대표 바다\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=365&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462977580.jpg\" alt=\"감천문화마을, 미로처럼 이어진 골목마다 독특한 아름다움 간직한 아트 빌리지\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1180&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462978009.jpg\" alt=\"영화도시 부산, 예술 에너지 넘쳐나는 국제예술도시 부산\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1064&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462978547.jpg\" alt=\"BUSAN-Sustainable 지속 가능한 도시. 부산국가지질공원, 8천만년 된 중생대 백악기 유산을 껴안은 거대 지질공원 부산\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462979060.jpg\" alt=\"을숙도, 낙동강 하구의 절경과 철새 그리고 갈대가 선사하는 경이로운 자연\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=260&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953462979744.jpg\" alt=\"아홉산숲, 아홉 개의 골짜기를 품은 싱그러운 대나무숲\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201005001000&uc_seq=524&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465238473.jpg\" alt=\"BUSAN-Attraction 예술과 축제의 도시. 부산국제영화제, 진한 영화의 감동을 선사하는 전 세계 영화예술의 허브\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201005001000&uc_seq=395&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465239331.jpg\" alt=\"부산불꽃축제, 음악과 불꽃 그리고 사람들의 함성, 대한민국 최대 불꽃놀이 축제\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201005001000&uc_seq=427&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465239954.jpg\" alt=\"부산비엔날레, 자연과 사람, 그리고 예술이 하나가 되는 평온한 시간\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=258&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465240339.jpg\" alt=\"BUSAN-Nature 자연친화 도시.태종대, 짙푸른 바다에 둘러싸인 기암괴석과 우거진 녹음이 발산하는 신비\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=396&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465240749.jpg\" alt=\"금정산, 병풍처럼 펼쳐진 골짜기마다 울창한 숲을 내어주는 부산 대표 명산\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/167953465241224.jpg\" alt=\"다대포해수욕장, 자연이 주는 황홀경을 맘껏 즐길 수 있는 광활한 바다\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1420&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2713",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 K-POP, 「B-POP」 ‘낭만’ 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산시민공원에서 여유로운 시간을 보냈다면, 이제 부산의 가장 감각적인 거리 중 하나인 전포카페거리로 이동해보자. 전포카페거리는 개성 있는 카페와 소품샵, 감성 편집숍들이 모여 있는 부산 대표 핫플레이스다. 골목마다 서로 다른 분위기의 공간들이 이어져 있어 걷는 것만으로도 부산의 트렌디한 감성을 느낄 수 있다. 특히 최근에는 K-POP 팬들 사이에서도 ‘감성 사진 명소’로 주목받고 있다. 빈티지한 골목 분위기와 감각적인 인테리어 덕분에 마치 화보 속 장면 같은 사진을 남기기 좋기 때문이다.",
+          "reason": "place-subject",
+          "characters": 211
+        },
+        {
+          "text": "전포카페거리의 감성적인 분위기를 지나 도착하는 곳은 황령산 전망대다. 부산 야경 명소를 이야기할 때 빠지지 않는 장소로, 광안대교와 해운대, 부산 도심 풍경을 한눈에 내려다볼 수 있는 곳이다. 해가 천천히 지기 시작하면 도시의 불빛과 바다가 어우러지며 부산 특유의 낭만적인 야경이 펼쳐진다. 특히 밤이 되면 부산 도심의 화려한 불빛이 한눈에 내려다보이며, 많은 여행객들이 찾는 대표 야경 명소로 분위기가 더욱 깊어진다.",
+          "reason": "place-subject",
+          "characters": 178
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "전포카페거리"
+        ],
         "placeName": "전포카페거리",
         "review": "pending"
       },

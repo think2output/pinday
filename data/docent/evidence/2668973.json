@@ -1,18 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2668973",
     "name": "부산엑스더스카이",
     "lat": 35.1613422355215,
     "lng": 129.16801389247
   },
-  "collectedAt": "2026-10-24T09:57:14.275Z",
+  "collectedAt": "2026-10-24T10:23:42.401Z",
   "classification": {
     "status": "sufficient-candidate",
     "supportingIds": [
-      "busan-theme:1408",
-      "busan-theme:2619",
-      "busan-theme:2679"
+      "busan-theme:2619"
     ],
     "humanReview": "pending"
   },
@@ -30,7 +29,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2668973&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:32.480Z",
-      "modifiedAt": "20260226145156"
+      "modifiedAt": "20260226145156",
+      "passages": [
+        {
+          "text": "부산 엑스 더 스카이(BUSAN X the SKY)는 국내 두 번째 높이(411.6m)인 해운대 엘시티 랜드마크타워에 위치하고 있으며, 대한 8경에 빛나는 드넓은 해운대의 오션뷰와 부산의 화려한 시티뷰를 함께 조망할 수 있는 국내 최대 규모 전망대이다. 전망대 각 층마다 특화된 해운대 해변과 도시 야경, 광안대교, 부산항 대교, 이기대, 달맞이 고개, 동백섬 등 부산의 명소를 조망할 수 있는 파노라믹 오션뷰를 자랑한다. 편안한 휴식 공간을 제공하는 엑스 더 라운지, 하늘 위의 바다를 배경으로 특별한 기억을 기록하는 엑스 더 포토, 추억을 오래도록 간직할 수 있는 기념품숍 엑스 더 기프트 등 부산 엑스 더 스카이만의 특화된 서비스를 제공한다.",
+          "characters": 272,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1408",
@@ -38,9 +44,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "2023-2024 한국관광 100선 선정 부산 우수관광지 8선",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "‘부산엑스더스카이(BUSAN X the SKY)’는 ‘해운대 엘시티 랜드마크타워’에 위치하고 있으며, 전망대 각 층마다 특화된 해운대 해변과 도시 야경, 광안대교, 부산항대교, 이기대, 달맞이 고개, 동백섬 등 부산의 명소를 조망할 수 있는 ‘파노라믹 오션뷰’를 자랑한다.",
+          "reason": "place-heading",
+          "characters": 121
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "엑스더스카이"
+        ],
         "placeName": "부산엑스더스카이",
         "review": "pending"
       },
@@ -52,33 +68,24 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2100",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "'비교불가' 부산의 기록적인 여행지 9선",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산엑스더스카이",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_01.jpg\" alt=\"'비교불가' 부산의 기록적인 여행지 9선.짜릿한 스케일에 한 번, 유서 깊은 역사에 두 번 반하는 세계적 스케이르이 부산 레전드 스팟 9곳, 지금 소개합니다!\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_02.jpg\" alt=\"Largest. 세계 최대(最大) 규모를 자랑하는 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2091&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_03.jpg\" alt=\"아르떼 뮤지엄. 약 1700평, 전 세계 아르떼 뮤지엄 여덟 곳 중 최대규모! 규모만큼 화려한 미디어 작품ㅇ르 선보이는 몰입형 미디어아트 전시관이다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2077&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_04.jpg\" alt=\"부산 수학문화관 연면적 9884m², 7층 규모의 공간! 수학 단일주제로는 세계 최대규모 문화관으로, 넓은 공간을 활용해 폭넓은 수학 콘텐츠를 제공한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=983&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_05.jpg\" alt=\"다대포 꿈의 낙조분수.세계최대 바닥분수로 기네스북에 오른 '꿈의 낙조분수'. 둘레 180m의 거대한 규모가 분수쇼의 화려함을 더한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=996&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_06.jpg\" alt=\"엑스더스카이. 씨티뷰와 씨사이드뷰(SEA SIDE VIEW)를 함께 조망할 수 있는 국내 최대 규모 전망대. 층마다 부산의 명소를 조망할 수 있는 특화된 '파노라믹 오션뷰'를 제공한다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_07.jpg\" alt=\"Earliest 세계/국내/부산 최초(最初)를 기록한 역사적인 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=257&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_08.jpg\" alt=\"국립해양박물관. 2012년 개관한 세계 최초 종합해양박물관. 해양 역사, 인물, 해양 문화, 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 관련 종합지식을 전달하고 있다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_09.jpg\" alt=\"송도해수욕장. 1913년 개장해 100년이 넘는 역사를 자랑하는 국내 최초 공설 해수욕장. 1970년대 이후 침체기를 겪다,2000년대 이후 송도 구름산책로와 케이블카가 생기며 관광지로서 새롭게 부상했다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2078&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_10.jpg\" alt=\"마하사. 5세기(삼국시대) 신라 아도화상이 창건했다고 기록돼있는 부산 최초의 사찰. 아름다운 자연경관과 역사적 상징성 덕에 많은 사람에게 삶의 안식처로 자리 잡았다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_11.jpg\" alt=\"Longest. 세계 최장(最長) 길이로 쭉 뻗은 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=421&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_12.jpg\" alt=\"영화의 전당 '빅루프'. 전체 길이 163m/너비 61m/ 높이 32m/무게 4,000톤의 초대형 지붕, 영화의 전당 '빅루프'! 기둥으로 받쳐지지 않은 부분만 85m로, 세계 최장 캔틸레버 지붕 타이틀을 보유하고 있다. *캔틸레버: 한쪽 끝은 고정되고 다른 끛은 받쳐지지 않은 보\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_13.jpg\" alt=\"Only.세계 유일(有一)의 공간\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=277&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_14.jpg\" alt=\"유엔기념공원.한국전쟁 참전국 장병 2,300여 유해가 안장되어있는 공간. 세계평화와 자유를 위해 공헌한 한국전쟁 영웅들을 기리고자 조성됐다.\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2100&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2619",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "반짝임이 가득한 겨울의 부산!",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산의 상징, 해운대의 압도적인 전경을 한눈에 담고 싶다면 엑스더스카이는 필수 코스입니다. 특히 12월의 엑스더스카이는 더욱 특별합니다. 국내에서 두 번째로 높은 빌딩인 엘시티 랜드마크 타워 98~100층에 위치한 이곳은 411.6m 높이에서 시티뷰와 오션뷰를 동시에 감상할 수 있습니다. 드넓은 해운대 바다와 스카이라인이 끝없이 펼쳐지는 장관은 가슴이 탁 트이는 시원함을 선사하며, 낮과 밤의 풍경이 각기 다른 매력으로 여행객들의 마음을 사로잡습니다. 마치 구름 위를 걷는 듯한 비현실적인 높이에서 만나는 부산의 모습은 감탄을 자아내기에 충분하죠. 이번 겨울, 엑스더스카이 98층부터 100층까지는 화려한 크리스마스 컨셉의 포토존들이 가득 꾸며져 있어, 마치 하늘 위 겨울 동화 속에 들어온 듯한 기분을 만끽할 수 있는데요!",
+          "reason": "place-subject",
+          "characters": 314
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "엑스더스카이"
+        ],
         "placeName": "부산엑스더스카이",
         "review": "pending"
       },
@@ -95,9 +102,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서만 만날 수 있는 특별한 공간, 부산 유니크베뉴",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산엑스더스카이는 국내 두 번째 높이(411.6m)인 '해운대 엘시티 랜드마크 타워'에 위치한 국내 최대 규모의 전망대입니다. 부산 랜드마크(광안대교, 마린시티) 외에도 부산의 오션뷰와 시티뷰를 한눈에 볼 수 있으며, 전망대 내 화려한 미디어 시설과 부산 최고층 레스토랑 '스카이99 그릴&파스타', 전세계 최고층 스타벅스 등 최고의 프리미엄 서비스를 지향합니다.",
+          "reason": "place-heading",
+          "characters": 161
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "엑스더스카이"
+        ],
         "placeName": "부산엑스더스카이",
         "review": "pending"
       },

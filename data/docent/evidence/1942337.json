@@ -1,23 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1942337",
     "name": "168계단",
     "lat": 35.1170894046269,
     "lng": 129.03533581582
   },
-  "collectedAt": "2026-10-24T09:57:12.835Z",
+  "collectedAt": "2026-10-24T10:23:38.415Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:58",
-      "busan-theme:309",
-      "busan-theme:452",
-      "busan-theme:513",
-      "busan-theme:787",
-      "busan-theme:1181",
-      "busan-theme:1182"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -34,7 +27,18 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1942337&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:07.024Z",
-      "modifiedAt": "20260527164719"
+      "modifiedAt": "20260527164719",
+      "passages": [
+        {
+          "text": "산복도로에서 부산항까지 가장 빨리 내려갈 수 있는 지름길이다. 산복도로의 대표적인 특징 중 하나인 세로로 난 지상 6층 높이의 아찔한 계단이다.",
+          "reason": "ai-reviewed-scope",
+          "characters": 61
+        }
+      ],
+      "review": {
+        "status": "selected-scope",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "heritage:79-21-0006470000000",
@@ -50,7 +54,18 @@
       "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
       "fetchedAt": "2026-10-24T09:52:07.235Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+          "characters": 164,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "heritage:79-21-0003490000000",
@@ -66,17 +81,32 @@
       "originalText": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003490000000",
       "fetchedAt": "2026-10-24T09:52:07.691Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
+          "characters": 343,
+          "reason": "source-description"
+        }
+      ],
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:58",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기로 피어난 어제의 기억 초량이바구길",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -85,7 +115,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:309",
@@ -93,9 +127,13 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기가 있는 알짜배기 여행, 부산원도심 스토리투어",
       "relation": "same-place",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -104,17 +142,26 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "excluded",
+        "reason": "모노레일 현재 체험 안내가 최신 공식 경사형 엘리베이터 안내와 맞지 않음. 원문 전체를 초안 입력에서 제외",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:452",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -123,17 +170,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:513",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "역동의 초량, 그 이야기를 담다",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -142,7 +197,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:787",
@@ -150,9 +209,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "6.25전쟁 70주년 ‘기억 함께 평화’",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "피란민들이 한꺼번에 부산으로 몰려들자 부산의 인구는 포화상태가 될 수밖에 없었다고 해요. 한국전쟁 전 28만이던 인구가 전쟁 후 거의 100만에 가까웠다니 그 많은 사람들이 터를 잡고 살 만한 땅은 당연히 모자랄 수밖에 없었겠지요. 도심의 산 중턱 비탈을 따라 판자로 이은 집이 다닥다닥 수도 없이 생겨났고, 그 중 제일 인구가 많았던 곳 중의 하나가 초량이바구길 입니다. 올려다보기만 해도 아찔한 168계단이 보이네요. 일감을 구하기 위해 하루에도 열 두 번씩 이 계단을 오르내려야 했던 피란민들의 삶은 그렇게 고되게 이어졌습니다. 고단한 하루 일과를 끝내고 집으로 향하는 길, 뽀얀 막걸리 한잔이 피란민들에게는 큰 위로가 되었을 겁니다. 계단 끝에서 만나는 막걸리 가게가 참으로 반갑습니다.",
+          "reason": "place-heading",
+          "characters": 292
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -161,7 +230,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1181",
@@ -169,9 +242,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Our History",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "숨이 턱 막힐 정도로 가파른 168개의 계단을 쉼 없이 오르내려야 했던 할매, 할배들의 이바구(이야기) 속에 피란민들의 아픔이 생생하게 묻어 있다. 가쁜 숨을 내쉬며 마지막 계단에 오르면 발 아래로 부산항 풍경이 시원스럽게 펼쳐진다.",
+          "reason": "place-heading",
+          "characters": 99
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -180,17 +263,25 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:1182",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Visit Taste",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "168계단"
+        ],
         "placeName": "168계단",
         "review": "pending"
       },
@@ -199,7 +290,11 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "unreviewed",
+        "humanReview": "pending"
+      }
     }
   ],
   "errors": []

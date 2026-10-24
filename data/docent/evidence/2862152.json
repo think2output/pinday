@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2862152",
     "name": "밀락더마켓",
     "lat": 35.1542200827,
     "lng": 129.1270373527
   },
-  "collectedAt": "2026-10-24T09:57:13.892Z",
+  "collectedAt": "2026-10-24T10:23:41.106Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2862152&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:12.447Z",
-      "modifiedAt": "20260619092458"
+      "modifiedAt": "20260619092458",
+      "passages": [
+        {
+          "text": "부산 수영구에 위치한 밀락더마켓은 보리에에서 운영하는 복합문화공간이다. 양옆에 에스컬레이터와 엘리베이터가 있어 편리하게 이용할 수 있으며, 들어서서 보이는 벽면의 그래피티들이 인상적인 포토존을 형성하고 있다. 차별화된 열린 광장형의 체험공간을 지향하는 이곳은 로컬과 문화를 연결하는 새로운 라이프스타일의 공간이며, 누구나 주인공이 될 수 있는 꿈의 무대 버스킹스퀘어와 부산바다를 느낄 수 있는 오션뷰스탠드, 수준 높은 국내외 외식브랜드를 경험할 수 있는 F&B존 등으로 공간이 구성되어 있다. 입점한 브랜드에 따라 팝업 스토어로 기간을 정해놓고 운영 중인 곳도 있기에 방문하고 싶었던 브랜드가 있다면 미리 확인해 보고 방문하면 좋을 듯하다.",
+          "characters": 278,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:31-21-0000070000000",
@@ -42,26 +50,14 @@
       "originalText": "옥련선원 내 삼성각(三聖閣) 뒷산에는 예로부터 인근 주민의 신앙대상으로 전해 오는 관덕암(觀德巖)이라는 바위군이 있는데, 이 바위군에서 벼락 때문에 떨어져 나온 바위면에 보살좌상 1구가 새겨져 있다. 보살좌상이 새겨진 바위는 거대한 바위 둘이 맞붙어 있었던 것인데 벼락을 맞아 깨어지면서 거꾸로 박혀있기 때문에 보살좌상은 아래위가 거꾸로 되어 있다.\n얕게 조각되었던 보살좌상은 근래에는 붉고 푸른 페인트가 칠해졌던 모습이 뚜렷한데, 바위가 떨어지면서 \n깨어졌는지 이후에 인위적으로 훼손을 했는지는 알 수 없으 나 거의 대부분 훼손되어 윤곽만 남아 있으나, 다행히 선각된 두광(頭光)과 신광(身光)은 남아 있어 성격 파악에 단서를 제공하고 있다.\n이 보살좌상은 상호(相好, 부처나 보살의 얼굴부분)와 머리 부분을 음각으로 표현하였는데, 머리 위에는 육계의 흔적이 전혀 보이지 않고 이마 윗 부분에 두건대(頭巾帶)가 뚜렷하여 머리에 두건을 쓰고 있음이 분명한 점으로 보아 지장보살상으로 보여진다. \n또한 상호와 머리 부분을 음각으로 표현한 이외에는 두광·신광과 동체의 각부, 연화좌 등 모든 부분을 양각으로 표현은 하였으나, 그 조각이 얕아서 암각화와도 같은 인상을 준다는 점에서 불화의 맥락에서 고찰해야 할 필요가 있는데, 광배의 처리를 볼 때 조선후기인 17∼18세기에 조성된 불화 광배에서 이 보살좌상의 광배에서 볼 수 있는 방사선 무늬의 표현을 볼 수 있어 이 마애지장보살좌상이 조선후기인 17∼18세기에 조성된 것으로 추정하게 한다. \n옥련선원이 위치한 백산은 경상좌수영이 있었고, 백산의 정상부에 첨이대가 있는 등 남해를 지키는 군사적 요충지일 뿐 아니라 임진왜란을 겪으면서 사명대사와도 관련이 깊은 곳이라는 역사적 배경을 가지고 있어 옥련선원이 「마애지장보살좌상」은 해난구제와 수군의 귀의불(歸依彿)로서 역사적 의의가 깊다고 하겠다. 아울러 부산지역에서는 흔히 볼 수 없는 마애불인 동시에 상호와 머리 부분을 음각으로 표현하고 다른 부분은 양각으로 표현하고 있는 점 등은 조선시대 뿐 아니라 우리나라 조각사 연구에 귀중한 자료라는 점에서 문화유산적 가치가 크게 평가된다고 하겠다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000070000000",
       "fetchedAt": "2026-10-24T09:52:43.625Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
-    },
-    {
-      "id": "busan-theme:2253",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "설 연휴맞이 부산",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "밀락더마켓",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_01.jpg\" alt=\"설 연휴맞이 부산 종합 여행지 선물세트\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_02.jpg\" alt=\"부모님께 선물하고픈 따뜻한 겨울 여행코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1753&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_03.jpg\" alt=\"센텀 스파랜드. 쇼핑, 노천족탕, 찜질방을 한번에! 부모님 맞춤 힐링 스팟으로 제격.\"></a></td><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1938&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_04.jpg\" alt=\"해목. 몸보신에는 장어만 한게 없지, 미쉐린 선정 식당에서 기운 완충!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=261&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_05.jpg\" alt=\"해동용궁사. 숨막히는 해안 절경에 웅장한 사찰 뷰까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2068&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_06.jpg\" alt=\"프레스트. 운치 있는 한옥 카페에서 여유롭게 차 한잔~\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2195&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_07.jpg\" alt=\"해운대 일품한우. 고기에도 품격이 있다! 셀럽들의 '일품'한우 맛집 성지\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_08.jpg\" alt=\"한복을 입고 선물상자를 든 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_09.jpg\" alt=\"아이들과 즐길 거리 가득한 체험 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202017001000&uc_seq=1937&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_10.jpg\" alt=\"딤타오 본점. 모양도 맛도 다채로운 딤섬 체험, 미쉐린 선정 식당에서 즐겨보자!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=1680&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_11.jpg\" alt=\"클럽디오아시스. 겨울철에도 감기 걱정 없는 '온수 무한제공' 물놀이 스팟\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=980&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_12.jpg\" alt=\"해운대 블루라인파크. 해운대를 여행하는 가장 낭만적인 방법\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2108&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_13.jpg\" alt=\"도희네 조개구이. 부산 바다 한입에 정리 완료! 신선한 조개구이 전문점\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1322&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_14.jpg\" alt=\"현대 모터스튜디오 부산. 볼거리, 즐길거리가 한데 모인 모던한 복합문화공간\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_15.jpg\" alt=\"한복을 입은 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_16.jpg\" alt=\"커플끼리 설렘 가득한 낭만 데이트코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2087&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_17.jpg\" alt=\"까사데룩. 카페 데이트와 전시관 데이트, 둘 다 놓칠 수 없지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2145&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_18.jpg\" alt=\"도모헌. 복합문화공간으로 재탄생. 의미와 재미, 한 번에 잡자!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=1323&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_19.jpg\" alt=\"밀락더마켓.마냥 걷다 보면 두 손에 물건이 가득! 화려한 복합문화공간의 정석\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2219&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_20.jpg\" alt=\"아델라베일리 부산. 특별한 날을 더 특별하게 해줄 로맨틱한 식당\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=2208&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_21.jpg\" alt=\"꼬쇼네. 귀여운 강아지 '꼬쇼'가 있는 아기자기한 감성 카페\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_22.jpg\" alt=\"한복을 입고 복주머니를 들고있는 사람 이미지\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_23.jpg\" alt=\"혼자만의 시간, 나 홀로 떠나는 힐링 코스\"></td></tr><!--2개짜리--><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_24.jpg\" alt=\"신발원. 만두 러버들의 성지. 중국 정통만두를 맛보고 싶다면 방문 필수!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1422&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_25.jpg\" alt=\"송도해상케이블카&용궁다리. 송도바다의 중심에서 힐링을 외치다\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202003001000&uc_seq=1967&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_26.jpg\" alt=\"EL16.52 카페. 파도를 쏙 빼닮은 멋진 건물 디자인에, 맛있는 베이커리까지!\"></a></td><td><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201002001000&uc_seq=1527&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_27.jpg\" alt=\"이가네 떡볶이. 어나더 레벨 부산 떡볶이, 여기가 진짜다!\"></a></td></tr><tr><td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202008001000&uc_seq=2242&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_28.jpg\" alt=\"망미블루스. 주인장이 직접 디깅한 LP 음악을 곁들인 혼술명당\"></a></td><td><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_29.jpg\" alt=\"한복을 입고 연꽃 위에 앉아 있는 이미지\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202501_02/graphic_kr_30.jpg\" alt=\"\"></td> </tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2253&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "옥련선원 내 삼성각(三聖閣) 뒷산에는 예로부터 인근 주민의 신앙대상으로 전해 오는 관덕암(觀德巖)이라는 바위군이 있는데, 이 바위군에서 벼락 때문에 떨어져 나온 바위면에 보살좌상 1구가 새겨져 있다. 보살좌상이 새겨진 바위는 거대한 바위 둘이 맞붙어 있었던 것인데 벼락을 맞아 깨어지면서 거꾸로 박혀있기 때문에 보살좌상은 아래위가 거꾸로 되어 있다.\n얕게 조각되었던 보살좌상은 근래에는 붉고 푸른 페인트가 칠해졌던 모습이 뚜렷한데, 바위가 떨어지면서 \n깨어졌는지 이후에 인위적으로 훼손을 했는지는 알 수 없으 나 거의 대부분 훼손되어 윤곽만 남아 있으나, 다행히 선각된 두광(頭光)과 신광(身光)은 남아 있어 성격 파악에 단서를 제공하고 있다.\n이 보살좌상은 상호(相好, 부처나 보살의 얼굴부분)와 머리 부분을 음각으로 표현하였는데, 머리 위에는 육계의 흔적이 전혀 보이지 않고 이마 윗 부분에 두건대(頭巾帶)가 뚜렷하여 머리에 두건을 쓰고 있음이 분명한 점으로 보아 지장보살상으로 보여진다. \n또한 상호와 머리 부분을 음각으로 표현한 이외에는 두광·신광과 동체의 각부, 연화좌 등 모든 부분을 양각으로 표현은 하였으나, 그 조각이 얕아서 암각화와도 같은 인상을 준다는 점에서 불화의 맥락에서 고찰해야 할 필요가 있는데, 광배의 처리를 볼 때 조선후기인 17∼18세기에 조성된 불화 광배에서 이 보살좌상의 광배에서 볼 수 있는 방사선 무늬의 표현을 볼 수 있어 이 마애지장보살좌상이 조선후기인 17∼18세기에 조성된 것으로 추정하게 한다. \n옥련선원이 위치한 백산은 경상좌수영이 있었고, 백산의 정상부에 첨이대가 있는 등 남해를 지키는 군사적 요충지일 뿐 아니라 임진왜란을 겪으면서 사명대사와도 관련이 깊은 곳이라는 역사적 배경을 가지고 있어 옥련선원이 「마애지장보살좌상」은 해난구제와 수군의 귀의불(歸依彿)로서 역사적 의의가 깊다고 하겠다. 아울러 부산지역에서는 흔히 볼 수 없는 마애불인 동시에 상호와 머리 부분을 음각으로 표현하고 다른 부분은 양각으로 표현하고 있는 점 등은 조선시대 뿐 아니라 우리나라 조각사 연구에 귀중한 자료라는 점에서 문화유산적 가치가 크게 평가된다고 하겠다.",
+          "characters": 813,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

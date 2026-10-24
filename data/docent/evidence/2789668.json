@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2789668",
     "name": "월전장어구이촌",
     "lat": 35.2381207407,
     "lng": 129.2441407653
   },
-  "collectedAt": "2026-10-24T09:57:14.975Z",
+  "collectedAt": "2026-10-24T10:23:44.661Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1682"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2789668&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:01.690Z",
-      "modifiedAt": "20260909174918"
+      "modifiedAt": "20260909174918",
+      "passages": [
+        {
+          "text": "기장 월전마을에 들어서면 장어구이집이 늘어서 있고 주차장을 낀 월전 활어판매장이 보인다. 이 근방의 장어구이 식당을 통칭하여 월전장어구이촌이라고 한다. 활어판매장에서는 그날 잡은 싱싱한 바닷장어(붕장어)들을 판매한다. 마음에 드는 매장에서 장어를 고르면 판매장 밖에 늘어선 포장마차들 중 구입한 매장 상호와 같은 포차에서 숯불에 구워 먹을 수 있다. 바다가 보이는 허름한 포장마차이지만 이 장어구이의 냄새와 어촌 분위기를 잊지 못해 다시 찾는 이가 많다. 상차림비만 내면 숯과 불판이 제공되고 먹고 싶은 만큼 활어판매장에서 구매해 먹을 수 있다. 얼큰한 매운탕도 장어구이와 함께 먹기에 좋다.",
+          "characters": 254,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:23-21-0000480000000",
@@ -44,17 +50,28 @@
       "originalText": "부산광역시 기장의 죽성리 마을 해안 가까이에 있는 구릉을 이용하여, 임진왜란 때 왜군의 장수 구로다가 조선·명나라 연합군의 공격을 방어하고 남해안에 장기간 머물기 위해 쌓은 성이다. 돌로 쌓았으며 둘레는 약 960m, 성벽높이는 약 4m이다.\n 왜성은 대개 강이나 바다에 가까운 구릉을 택하여 수송·통신 등에 자유롭고 선박의 출입이 편리한 장소에 성을 쌓는다.\n 이 성은 부산왜성과 형태가 비슷하며 일본에서는 기장성이라고도 불리어지고 있다. 또한 양산의 서생포성과 울산의 학성·부산성을 연결하는 요충지에 자리하고 있는데 현재 성곽이 남아 있지만 주위는 밭과 민가로 사용되고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000480000000",
       "fetchedAt": "2026-10-24T09:55:01.916Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "부산광역시 기장의 죽성리 마을 해안 가까이에 있는 구릉을 이용하여, 임진왜란 때 왜군의 장수 구로다가 조선·명나라 연합군의 공격을 방어하고 남해안에 장기간 머물기 위해 쌓은 성이다. 돌로 쌓았으며 둘레는 약 960m, 성벽높이는 약 4m이다.\n 왜성은 대개 강이나 바다에 가까운 구릉을 택하여 수송·통신 등에 자유롭고 선박의 출입이 편리한 장소에 성을 쌓는다.\n 이 성은 부산왜성과 형태가 비슷하며 일본에서는 기장성이라고도 불리어지고 있다. 또한 양산의 서생포성과 울산의 학성·부산성을 연결하는 요충지에 자리하고 있는데 현재 성곽이 남아 있지만 주위는 밭과 민가로 사용되고 있다.",
+          "characters": 248,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1682",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "테스형 나훈아와 함께 떠나는 기장 여행(ft. 기장갈매기 MV) ",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "월전장어구이촌"
+        ],
         "placeName": "월전장어구이촌",
         "review": "pending"
       },

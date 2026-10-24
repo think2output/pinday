@@ -1,24 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2605916",
     "name": "초량 이바구길",
     "lat": 35.1169,
     "lng": 129.0367
   },
-  "collectedAt": "2026-10-24T09:57:15.363Z",
+  "collectedAt": "2026-10-24T10:23:45.873Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:58",
-      "busan-theme:309",
-      "busan-theme:452",
-      "busan-theme:513",
-      "busan-theme:787",
-      "busan-theme:1414",
-      "busan-theme:2101",
-      "busan-theme:2869"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -35,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2605916&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:17.980Z",
-      "modifiedAt": "20260311100340"
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "부산시 동구의 초량 이바구길은 부산의 역사와 문화를 담고 있는 테마 거리이다. 이곳은 일제강점기 부산항 개항을 시작으로 해방 후 피난민의 생활터였던 1950~60년대, 산업 부흥기였던 1970~80년대 부산의 모습을 고스란히 담고 있는 이야기의 보고다. 이바구길은 부산역 건너편에 자리한 부산 최초 물류창고인 남선창고 터에서 출발해 옛 백제병원 건물, 초량초등학교 담장에 설치된 이바구 갤러리, 우물터, 168 계단, 김민부 전망대, 당산, 망양로까지 이어져 있다. 이 중 김민부 시인의 전망대는 부산항을 조망하기 더없이 좋은 장소로 경치가 아름답기로 유명하다. 이바구길의 끝자락에 위치한 지상 2층 규모의 이바구공작소는 지역의 역사관 역할을 하며, 마을 자료관, 전망 데크 등을 운영하고 있다.",
+          "characters": 301,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0006470000000",
@@ -51,7 +50,14 @@
       "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
       "fetchedAt": "2026-10-24T09:52:07.235Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+          "characters": 164,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0003490000000",
@@ -67,7 +73,14 @@
       "originalText": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003490000000",
       "fetchedAt": "2026-10-24T09:52:07.691Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "ㅇ 연혁\n- 1925년 4월 16일 당시 토목업에 종사했던 다나카(田中筆吉)는 1876년 오카야마현 출신으로 경부선 신설공사를 수행하기 위하여 한반도로 건너온 것으로 알려져 있다. 1914년에는 다나카구미(田中組)를 만들어 부산진 매축, 동해 남부선 공사 등에 참여하였다. (조선공로자명감 참조)에 의해 현재 중앙부에 위치한 1층 규모의 속복도형 목조 일식주택이 건립.\n- 1931년 6월 2층 규모의 목조 일식주택이 1차 증축.\n- 해방 이후 1층 목조주택의 동쪽으로 2층 규모의 RC조 주택 증축\n- 1971년 12월 11일 황성래 전 일맥재단 이사장이 구입하고 12월 20일 이전 등기함 폐쇄등기부등본 참조\nㅇ 남아 있는 수리기록은 없으나 1층과 2층의 목조주택의 상량문을 통하여 1931년에 증축된 것을 알 수 있고, 구조적인 차이로 보아 광복 이후에도 한차례의 증축과정이 있음을 알 수 있다.",
+          "characters": 343,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:58",
@@ -75,9 +88,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기로 피어난 어제의 기억 초량이바구길",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "세월이 느껴지는 골목마다 저마다의 이야기를 꽃피운다. 이야기를 따라가다 보니 이제 ‘이바구’가 이야기라는 걸, ‘까꼬막’이 오르기 힘든 고갯길이라는 걸 알게 된다. 초량이바구길은 피난민들이 그러했듯, 멈추지 않고 계속되는 우리네 삶의 여정이다.",
+          "reason": "place-subject",
+          "characters": 108
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -94,9 +117,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "이야기가 있는 알짜배기 여행, 부산원도심 스토리투어",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산 동구에 위치한 이바구길에서는 근대 부산의 흔적을 살펴볼 수 있다. 과거 개항 중심지였던 옛 영광을 드러내듯, 분위기 있는 카페로 변모한 옛 백제병원과 초량교회는 근대건축 양식을 그대로 간직하고 있다. 김민부전망대나 유치환우체통에서 내려다보는 부산항의 풍경은 갑갑했던 가슴을 한 번에 탁 트이게 할 만큼 시원하다. 산복도로 위아래를 연결하는 168계단은 옛 동네의 정감 있는 분위기를 그대로 간직하고 있다. 가파른 계단을 수도 없이 오르내리는 주민들을 위해 개통된 모노레일은 이곳을 찾는 이들에게 이바구길만의 특색 있는 체험거리를 제공한다.",
+          "reason": "place-heading",
+          "characters": 234
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -112,10 +145,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "남파랑길 부산구간 1~5코스",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -131,10 +168,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "역동의 초량, 그 이야기를 담다",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -151,9 +192,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "6.25전쟁 70주년 ‘기억 함께 평화’",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "피란민들이 한꺼번에 부산으로 몰려들자 부산의 인구는 포화상태가 될 수밖에 없었다고 해요. 한국전쟁 전 28만이던 인구가 전쟁 후 거의 100만에 가까웠다니 그 많은 사람들이 터를 잡고 살 만한 땅은 당연히 모자랄 수밖에 없었겠지요. 도심의 산 중턱 비탈을 따라 판자로 이은 집이 다닥다닥 수도 없이 생겨났고, 그 중 제일 인구가 많았던 곳 중의 하나가 초량이바구길 입니다. 올려다보기만 해도 아찔한 168계단이 보이네요. 일감을 구하기 위해 하루에도 열 두 번씩 이 계단을 오르내려야 했던 피란민들의 삶은 그렇게 고되게 이어졌습니다. 고단한 하루 일과를 끝내고 집으로 향하는 길, 뽀얀 막걸리 한잔이 피란민들에게는 큰 위로가 되었을 겁니다. 계단 끝에서 만나는 막걸리 가게가 참으로 반갑습니다.",
+          "reason": "place-heading",
+          "characters": 292
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -169,10 +220,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "드라마 촬영지 순례(ft.재벌집 막내아들)",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },
@@ -184,33 +239,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2101",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "여기 가려고 기차 예매함",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "초량 이바구길",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_01.jpg\" alt=\"기다림X 여행O 자투리 시간까지 남김없이 Get! 여기 가려고 기차 예매함\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_02.jpg\" alt=\"Theme. 과거+미래. 도보 15분내로 끝내는 부산역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1900&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_03.jpg\" alt=\"여행객들을 위한 원데이클래스가 있다?.부산 트래블라운지 원데이 클래스. 부산역 1번출구 > 도보 7분. 부산 트래블라운지가 말아주는 알찬 클래스로 기다리는 지루함 완전 타파!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=415&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_04.jpg\" alt=\"아아...보인다, 부산의 역사가 보인다! 차이나타운. 부산역 1번출구 > 도보 7분. 한국의 역사와 이국적 풍경을 모두 느낄 수 있는 부산 속 중국. 그 오묘한 분위기에 풍덩!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_05.jpg\" alt=\"추억을 찍어드려요. 이바구길 사진관. 부산역 3번출구 > 도보 5분. 과거의 향수가 잔뜩 묻어나는 사진관에서 부산여행 추억 한 컷 찰칵!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=58&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_06.jpg\" alt=\"엄마, 길이 말을 해요! 초량 이바구길. 부산역 1번 출구 > 도보 12분. 쌓여가는 세월 속 불어난 이야기보따리! 이바구길로 만나보는 생생한 근대사\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2082&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_07.jpg\" alt=\"오션부까지 신경 쓴 홍보관, 본 적 있어? 북항재개발 홍보관. 부산역 9번출구 > 도보 12분. 깔끔한 홍보관에서 부산항의 역사와 미래 비전을 한 번에. 부산의 미래? 완벽하게 이해 완료!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2086&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_08.jpg\" alt=\"도서관이 이렇게 예뻐도 되나요? 북두칠성 도서관. 부산역 9번 출구>도보 10분 예쁜 인테리어와 편안한 분위기로 북항의 랜드마크가 된 도서관 & 문화복합공간\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2081&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_09.jpg\" alt=\"화려한 조명에 흠뻑. 북항 친수공원. 부산역 9번출구 > 도보 9분. 밤이 깊을수록 더 빛이 나는 풍경! 심야 열차 타기 전 경치 감상하며 산책 한 바퀴\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_10.jpg\" alt=\"Theme. 자연+예술. 도보 15분 내로 끝내는 구포역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=2080&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_11.jpg\" alt=\"국수 만들기가 이렇게 재밌다니! 구포국수체험관. 구포역>도보 2분. 아이들이 좋아하는 오감만족 촉감놀이, 제면체험 등 다양한 놀이로 즐겨보자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2085&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_12.jpg\" alt=\"여기서는 우리 모두가 예술가. 문화예술플랫폼. 구포역 > 도보3분. 언제든지 만나볼 수 있는 가장 가까운 문화예술. 일상 속 예술 경험을 원한다면 방문 필수!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=363&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_13.jpg\" alt=\"없는 거 빼고는 다 있어! 구포시장. 구포역 > 도보 13분. 없는 게 없는 이곳. 전국 최대 오일장의 명성을 잇는 풍성한 즐길 거리!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1676&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_14.jpg\" alt=\"부산은 리버 뷰도 엄청나잖아? 금빛노을브릿지. 구포역>도보 15분 부산에서 즐기는 최적의 리버 뷰 최고의 일몰과 야경을 한 번에 즐기자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1434&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_15.jpg\" alt=\"상쾌하게 리프레시 완료! 화명생태공원.구포역 > 도보 15분. 낙동강변 딸 ㅏ조성된 깔끔한 산책로에서 자연과 함께 마음껏 힐링 산책\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2101&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2869",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 산복도로 명소탐방, 이색 코스 ‘아트 앤 네이처로드’",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "초량이바구길"
+        ],
         "placeName": "초량 이바구길",
         "review": "pending"
       },

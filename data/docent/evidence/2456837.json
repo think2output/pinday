@@ -1,28 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2456837",
     "name": "부산 영화의 전당",
     "lat": 35.170794647,
     "lng": 129.1270576924
   },
-  "collectedAt": "2026-10-24T09:57:14.101Z",
+  "collectedAt": "2026-10-24T10:23:41.867Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:382",
-      "busan-theme:417",
-      "busan-theme:1015",
-      "busan-theme:1180",
-      "busan-theme:1190",
-      "busan-theme:1198",
-      "busan-theme:1200",
-      "busan-theme:1372",
-      "busan-theme:2601",
-      "busan-theme:2617",
-      "busan-theme:2790",
-      "busan-theme:2856"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -39,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2456837&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:26.364Z",
-      "modifiedAt": "20251023173241"
+      "modifiedAt": "20251023173241",
+      "passages": [
+        {
+          "text": "영화의 전당은 다양한 장르의 영화와 품격 있는 공연을 감상할 수 있는 곳으로, 부산을 대표하는 영상복합문화공간이다. 2011년 개관 이후 유네스코 영화 창의도시 최고 등급 획득, 영화관 최초 ‘실내공기 우수시설’ 인증, 4회 연속 코리아유니크베뉴 선정 등을 통해 국내를 대표하는 문화예술 기관으로 자리매김했다. 부산국제영화제 개·폐막식이 열리는 4000석 규모의 야외극장을 포함하여 하늘연극장, 중극장, 소극장, 시네마테크, 인디플러스, 영화도서관 등의 다양한 규모의 극장을 갖추고 있다.",
+          "characters": 215,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:31-21-0000070000000",
@@ -55,7 +50,14 @@
       "originalText": "옥련선원 내 삼성각(三聖閣) 뒷산에는 예로부터 인근 주민의 신앙대상으로 전해 오는 관덕암(觀德巖)이라는 바위군이 있는데, 이 바위군에서 벼락 때문에 떨어져 나온 바위면에 보살좌상 1구가 새겨져 있다. 보살좌상이 새겨진 바위는 거대한 바위 둘이 맞붙어 있었던 것인데 벼락을 맞아 깨어지면서 거꾸로 박혀있기 때문에 보살좌상은 아래위가 거꾸로 되어 있다.\n얕게 조각되었던 보살좌상은 근래에는 붉고 푸른 페인트가 칠해졌던 모습이 뚜렷한데, 바위가 떨어지면서 \n깨어졌는지 이후에 인위적으로 훼손을 했는지는 알 수 없으 나 거의 대부분 훼손되어 윤곽만 남아 있으나, 다행히 선각된 두광(頭光)과 신광(身光)은 남아 있어 성격 파악에 단서를 제공하고 있다.\n이 보살좌상은 상호(相好, 부처나 보살의 얼굴부분)와 머리 부분을 음각으로 표현하였는데, 머리 위에는 육계의 흔적이 전혀 보이지 않고 이마 윗 부분에 두건대(頭巾帶)가 뚜렷하여 머리에 두건을 쓰고 있음이 분명한 점으로 보아 지장보살상으로 보여진다. \n또한 상호와 머리 부분을 음각으로 표현한 이외에는 두광·신광과 동체의 각부, 연화좌 등 모든 부분을 양각으로 표현은 하였으나, 그 조각이 얕아서 암각화와도 같은 인상을 준다는 점에서 불화의 맥락에서 고찰해야 할 필요가 있는데, 광배의 처리를 볼 때 조선후기인 17∼18세기에 조성된 불화 광배에서 이 보살좌상의 광배에서 볼 수 있는 방사선 무늬의 표현을 볼 수 있어 이 마애지장보살좌상이 조선후기인 17∼18세기에 조성된 것으로 추정하게 한다. \n옥련선원이 위치한 백산은 경상좌수영이 있었고, 백산의 정상부에 첨이대가 있는 등 남해를 지키는 군사적 요충지일 뿐 아니라 임진왜란을 겪으면서 사명대사와도 관련이 깊은 곳이라는 역사적 배경을 가지고 있어 옥련선원이 「마애지장보살좌상」은 해난구제와 수군의 귀의불(歸依彿)로서 역사적 의의가 깊다고 하겠다. 아울러 부산지역에서는 흔히 볼 수 없는 마애불인 동시에 상호와 머리 부분을 음각으로 표현하고 다른 부분은 양각으로 표현하고 있는 점 등은 조선시대 뿐 아니라 우리나라 조각사 연구에 귀중한 자료라는 점에서 문화유산적 가치가 크게 평가된다고 하겠다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=31&ccbaCtcd=21&ccbaAsno=0000070000000",
       "fetchedAt": "2026-10-24T09:52:43.625Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "옥련선원 내 삼성각(三聖閣) 뒷산에는 예로부터 인근 주민의 신앙대상으로 전해 오는 관덕암(觀德巖)이라는 바위군이 있는데, 이 바위군에서 벼락 때문에 떨어져 나온 바위면에 보살좌상 1구가 새겨져 있다. 보살좌상이 새겨진 바위는 거대한 바위 둘이 맞붙어 있었던 것인데 벼락을 맞아 깨어지면서 거꾸로 박혀있기 때문에 보살좌상은 아래위가 거꾸로 되어 있다.\n얕게 조각되었던 보살좌상은 근래에는 붉고 푸른 페인트가 칠해졌던 모습이 뚜렷한데, 바위가 떨어지면서 \n깨어졌는지 이후에 인위적으로 훼손을 했는지는 알 수 없으 나 거의 대부분 훼손되어 윤곽만 남아 있으나, 다행히 선각된 두광(頭光)과 신광(身光)은 남아 있어 성격 파악에 단서를 제공하고 있다.\n이 보살좌상은 상호(相好, 부처나 보살의 얼굴부분)와 머리 부분을 음각으로 표현하였는데, 머리 위에는 육계의 흔적이 전혀 보이지 않고 이마 윗 부분에 두건대(頭巾帶)가 뚜렷하여 머리에 두건을 쓰고 있음이 분명한 점으로 보아 지장보살상으로 보여진다. \n또한 상호와 머리 부분을 음각으로 표현한 이외에는 두광·신광과 동체의 각부, 연화좌 등 모든 부분을 양각으로 표현은 하였으나, 그 조각이 얕아서 암각화와도 같은 인상을 준다는 점에서 불화의 맥락에서 고찰해야 할 필요가 있는데, 광배의 처리를 볼 때 조선후기인 17∼18세기에 조성된 불화 광배에서 이 보살좌상의 광배에서 볼 수 있는 방사선 무늬의 표현을 볼 수 있어 이 마애지장보살좌상이 조선후기인 17∼18세기에 조성된 것으로 추정하게 한다. \n옥련선원이 위치한 백산은 경상좌수영이 있었고, 백산의 정상부에 첨이대가 있는 등 남해를 지키는 군사적 요충지일 뿐 아니라 임진왜란을 겪으면서 사명대사와도 관련이 깊은 곳이라는 역사적 배경을 가지고 있어 옥련선원이 「마애지장보살좌상」은 해난구제와 수군의 귀의불(歸依彿)로서 역사적 의의가 깊다고 하겠다. 아울러 부산지역에서는 흔히 볼 수 없는 마애불인 동시에 상호와 머리 부분을 음각으로 표현하고 다른 부분은 양각으로 표현하고 있는 점 등은 조선시대 뿐 아니라 우리나라 조각사 연구에 귀중한 자료라는 점에서 문화유산적 가치가 크게 평가된다고 하겠다.",
+          "characters": 813,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:382",
@@ -63,9 +65,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "유니크베뉴_이벤트‧문화시설",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "영화의 도시 부산을 대표하는 랜드마크 영화의 전당은 영화 관람은 물론 영화 관련 다양한 자료를 수집하여 시민들에게 공개하고 있다. 또한 각종 공연, 기획전시, 그리고 영화예술인 인재 양성을 위한 아카데미 프로그램도 운영하고 있다. 영화제 기간에는 부산국제영화제 개‧폐막식 등 중요 행사가 진행되고, 평상시에는 영화와 공연을 즐길 수 있는 복합문화공간이 된다.",
+          "reason": "place-subject",
+          "characters": 154
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -81,10 +93,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산인문학여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -100,10 +116,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "야외 독서 명당",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -120,9 +140,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산국제영화제의 무대인 영화의 전당. 건물 형태도 독특하지만 LED 패널로 덮인 지붕이 밤마다 멋진 야경을 연출한다. 수영강의 아름다운 풍경과도 잘 어울린다.",
+          "reason": "place-heading",
+          "characters": 69
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -139,9 +169,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "SEE네마 부산! 영화의 도시를 엿보다",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "영화 속 부산의 모습을 감상했다면 이제 영화 축제의 장으로 떠나 보자. 매년 10월이면 전 세계인의 관심이 집중되는 부산국제영화제가 이곳, ‘영화의전당’에서 열린다. 명실상부 부산 영화의 랜드마크가 된 영화의전당은 영화제가 없을 때에도 현재 개봉중인 상업영화부터 독립영화, 영화 관련 전시 등 다양한 프로그램을 관람할 수 있다. 부산 영화의 중심인 영화의 전당에서 오늘 영화 한 편 관람해 보는 건 어떨까?",
+          "reason": "place-heading",
+          "characters": 172
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -158,9 +198,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "SF9 찬희 ♡ 채연의 부산 잠입 작전!",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "많은 여행 테마 중에서도 MZ세대들에게 떠오르고 있는 것은 ‘영화의 도시, 부산’이다. 많은 영화와 드라마들이 부산에서 촬영됐을 뿐 아니라 세계가 주목하는 영화 축제의 장 ‘부산국제영화제’도 이곳 부산에서 매년 개최되고 있다. 영화의 도시 부산의 랜드마크 영화의 전당은 건물 그 자체가 그림이고 영화다. 각각 독립적으로 이루어진 3개의 건물이 구름다리로 서로 연결되어 곡선과 직선이 교차하는 역동적인 공간을 선사한다. 하늘을 연상시키는 영화의 전당 빅루프는 형형색색의 LED가 반짝일 때마다 마치 하늘에서 빛의 파도가 물결치는 듯하다. 미디어아트와도 같은 환상적인 야경을 가진 빅루프를 배경으로 나만의 인증샷도 찍어 보자.",
+          "reason": "place-heading",
+          "characters": 269
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -176,10 +226,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "나 홀로 떠나는 광안리 여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -195,10 +249,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "내셔널지오그래픽이 선정한 [2023 세계 최고 여행지 부산] 여행하기",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -210,33 +268,24 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2100",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "'비교불가' 부산의 기록적인 여행지 9선",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "부산 영화의 전당",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_01.jpg\" alt=\"'비교불가' 부산의 기록적인 여행지 9선.짜릿한 스케일에 한 번, 유서 깊은 역사에 두 번 반하는 세계적 스케이르이 부산 레전드 스팟 9곳, 지금 소개합니다!\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_02.jpg\" alt=\"Largest. 세계 최대(最大) 규모를 자랑하는 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2091&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_03.jpg\" alt=\"아르떼 뮤지엄. 약 1700평, 전 세계 아르떼 뮤지엄 여덟 곳 중 최대규모! 규모만큼 화려한 미디어 작품ㅇ르 선보이는 몰입형 미디어아트 전시관이다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2077&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_04.jpg\" alt=\"부산 수학문화관 연면적 9884m², 7층 규모의 공간! 수학 단일주제로는 세계 최대규모 문화관으로, 넓은 공간을 활용해 폭넓은 수학 콘텐츠를 제공한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=983&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_05.jpg\" alt=\"다대포 꿈의 낙조분수.세계최대 바닥분수로 기네스북에 오른 '꿈의 낙조분수'. 둘레 180m의 거대한 규모가 분수쇼의 화려함을 더한다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=996&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_06.jpg\" alt=\"엑스더스카이. 씨티뷰와 씨사이드뷰(SEA SIDE VIEW)를 함께 조망할 수 있는 국내 최대 규모 전망대. 층마다 부산의 명소를 조망할 수 있는 특화된 '파노라믹 오션뷰'를 제공한다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_07.jpg\" alt=\"Earliest 세계/국내/부산 최초(最初)를 기록한 역사적인 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=257&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_08.jpg\" alt=\"국립해양박물관. 2012년 개관한 세계 최초 종합해양박물관. 해양 역사, 인물, 해양 문화, 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 산업 등 다양한 분야를 전시하며 풍부한 해양 관련 종합지식을 전달하고 있다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_09.jpg\" alt=\"송도해수욕장. 1913년 개장해 100년이 넘는 역사를 자랑하는 국내 최초 공설 해수욕장. 1970년대 이후 침체기를 겪다,2000년대 이후 송도 구름산책로와 케이블카가 생기며 관광지로서 새롭게 부상했다.\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2078&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_10.jpg\" alt=\"마하사. 5세기(삼국시대) 신라 아도화상이 창건했다고 기록돼있는 부산 최초의 사찰. 아름다운 자연경관과 역사적 상징성 덕에 많은 사람에게 삶의 안식처로 자리 잡았다.\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_11.jpg\" alt=\"Longest. 세계 최장(最長) 길이로 쭉 뻗은 스팟\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=421&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_12.jpg\" alt=\"영화의 전당 '빅루프'. 전체 길이 163m/너비 61m/ 높이 32m/무게 4,000톤의 초대형 지붕, 영화의 전당 '빅루프'! 기둥으로 받쳐지지 않은 부분만 85m로, 세계 최장 캔틸레버 지붕 타이틀을 보유하고 있다. *캔틸레버: 한쪽 끝은 고정되고 다른 끛은 받쳐지지 않은 보\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_13.jpg\" alt=\"Only.세계 유일(有一)의 공간\"></td></tr><!--1개짜리--><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=277&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_01/graphic_kr_14.jpg\" alt=\"유엔기념공원.한국전쟁 참전국 장병 2,300여 유해가 안장되어있는 공간. 세계평화와 자유를 위해 공헌한 한국전쟁 영웅들을 기리고자 조성됐다.\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2100&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2601",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화와 현실의 경계를 허무는 체험형 페스티벌 <시네마 팝업:뮤직온>",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "마켓존은 영화와 예술이 만나는 또 하나의 무대입니다. 부스마다 영화에서 영감받은 핸드메이드 제품과 미니어처, 비즈 액세서리, 캐릭터 키링, 매듭 팔찌 등이 판매되어 눈길을 끕니다. 직접 만든 작품들이 영화 속 소품처럼 반짝이는 이곳에서, 영화의전당은 잠시 예술시장이 됩니다. 이곳은 단순한 축제가 아닌, 영화와 현실이 맞닿는 순간을 경험할 수 있는 무대입니다. 스크린을 넘어 직접 체험하고, 직접 느끼는 특별한 영화 축제 ‘시네마 팝업: 뮤직 온’. 이 가을, 부산 영화의전당으로 당신을 초대합니다.",
+          "reason": "place-subject",
+          "characters": 214
+        }
+      ],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -252,10 +301,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 겨울을 수놓는 빛의 축제 4선",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -264,17 +317,26 @@
       "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
       "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
       "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
+      "sourceSnapshotDate": "unknown",
+      "review": {
+        "status": "excluded",
+        "reason": "대표 검수: 2025~2026 겨울 행사 원문. 현재 안내의 근거에서 제외",
+        "humanReview": "pending"
+      }
     },
     {
       "id": "busan-theme:2790",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산에서 즐기는 책멍 여행, 이색 책 공간 3곳",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },
@@ -290,10 +352,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 10월 대표 축제, 영화와 함께 만나는 부산! 제31회 부산국제영화제",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영화의전당"
+        ],
         "placeName": "부산 영화의 전당",
         "review": "pending"
       },

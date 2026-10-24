@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2822343",
     "name": "해운대 그린레일웨이 (미포~송정 구간)",
     "lat": 35.1612857933,
     "lng": 129.1914273569
   },
-  "collectedAt": "2026-10-24T09:57:15.602Z",
+  "collectedAt": "2026-10-24T10:23:46.674Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:1027",
-      "busan-theme:1326"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2822343&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:26.165Z",
-      "modifiedAt": "20250814152348"
+      "modifiedAt": "20250814152348",
+      "passages": [
+        {
+          "text": "해운대 그린레일웨이는 동해남부선 옛 철도시설을 친환경적으로 재개발하여 수려한 해안 절경을 감상하며 산책할 수 있는 도심 산책로이다. 해운대 미포~청사포~송정 구간은 4.8㎞ 거리로 수려한 해안 절경을 따라 양방향으로 걸을 수 있으며 산책로 방향에 따라 광안대교, 달맞이, 마린시티 등 대표 관광지를 한눈에 담을 수 있는 명소이다. 산책로 구간 내 대표적 관광지로는 2017년 개장한 청사포 다릿돌 전망대, 2022년 1월 개장한 바다소리 갤러리가 있으며 미포~송정 구간은 2020년 10월에 개장한 해운대해변열차와 스카이 캡슐이 운행되는 구간으로 해운대 관광특구의 핵심 시설이 밀집된 구간이다.",
+          "characters": 258,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:1027",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해운대 해변열차의 낭만을 선사하는 부산그린레일웨이 산책로",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대그린레일웨이"
+        ],
         "placeName": "해운대 그린레일웨이 (미포~송정 구간)",
         "review": "pending"
       },
@@ -55,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "청사포 조개구이로 마무리하는 그린레일웨이 산책로 추천 여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "해운대그린레일웨이"
+        ],
         "placeName": "해운대 그린레일웨이 (미포~송정 구간)",
         "review": "pending"
       },

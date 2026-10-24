@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3015937",
     "name": "윗골공원",
     "lat": 35.32389935635918,
     "lng": 129.17761101818007
   },
-  "collectedAt": "2026-10-24T09:57:14.990Z",
+  "collectedAt": "2026-10-24T10:23:44.701Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:521"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3015937&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:02.621Z",
-      "modifiedAt": "20260427103638"
+      "modifiedAt": "20260427103638",
+      "passages": [
+        {
+          "text": "정관 윗골공원은 물놀이장으로 유명한 도심 속 공원이다. 물놀이장에는 워터 슬라이드와 워터드롭이 있어서 아이들이 즐겁게 물놀이를 즐길 수 있고 수심이 낮아서 유아들도 놀기 좋고 미끄럼틀과 다양한 형태의 분수가 있어서 재미있게 물놀이를 즐길 수 있는 공원이다. 30개 정도의 평상과 파라솔도 무료로 이용할 수 있으며 음식은 먹을 수 있고 취사는 불가능하다. 물놀이장 편의시설은 샤워장, 탈의실, 의무실, 화장실이 있고, 관리인도 상주하고 있어 안전하게 물놀이를 즐길 수 있는 무료 야외 물놀이장이다.\n정관 윗골공원에는 물놀이장 외에도 어린이 놀이터와 정관 어린이 도서관이 있어서 어린이가 하루 종일 알차게 보낼 수 있는 공원이다.",
+          "characters": 267,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:521",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 곳곳에 숨어 있는 장미 명소를 찾아서",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "윗골공원"
+        ],
         "placeName": "윗골공원",
         "review": "pending"
       },

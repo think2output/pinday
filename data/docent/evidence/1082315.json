@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "1082315",
     "name": "스포원파크재난안전체험관",
     "lat": 35.291781243,
     "lng": 129.105080011
   },
-  "collectedAt": "2026-10-24T09:57:14.633Z",
+  "collectedAt": "2026-10-24T10:23:43.513Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1082315&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:47.001Z",
-      "modifiedAt": "20260929161233"
+      "modifiedAt": "20260929161233",
+      "passages": [
+        {
+          "text": "스포원파크 재난안전체험관은 재난체험시설과 교육·전시시설로 구성된 종합 안전체험교육시설이다. 지진체험관, 연기체험관, 소화기작동 체험관, 응급처치 체험관 등 4개의 재난체험시설과 오리엔테이션홀, 재난역사 전시관, 생활안전전시관 등 3개의 교육·전시시설을 포함해 총 7개 주제 공간을 운영하고 있다. 전직 소방관 등으로 구성된 12명의 전문 자원봉사자가 재난 및 안전교육과 체험을 직접 진행하여 실제 상황에 대비한 안전의식과 대응능력을 기를 수 있도록 지원한다.",
+          "characters": 205,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []

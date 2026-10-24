@@ -1,17 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "3014406",
     "name": "황령산레포츠공원",
     "lat": 35.15704,
     "lng": 129.07644
   },
-  "collectedAt": "2026-10-24T09:57:15.763Z",
+  "collectedAt": "2026-10-24T10:23:47.145Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:2311"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -28,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3014406&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:30.877Z",
-      "modifiedAt": "20260427151311"
+      "modifiedAt": "20260427151311",
+      "passages": [
+        {
+          "text": "황령산레포츠공원에는 부산진구에서 운영하는 종합 체육 레포츠 시설로, 씨름장, 테니스장, 배드민턴장, 대운동장 등과 생태놀이공원이 있다. 체육시설은 누구나 부산진구청 홈페이지를 방문하여 대관 신청하여 이용할 수 있으며, 생태놀이공원에는 숲속 음악 대장, 둥지 놀이대, 징검다리, 도토리 놀이대 등 재미있고 신나는 어린이들 놀이터가 조성되어 있다. 황령산 기슭에 자리 잡고 있는 레포츠공원은 자연 속에서 스포츠를 즐길 수 있으며, 레포츠공원 옆에는 국민체육센터와 청소년문화의 집이 운영되고 있어서 실내체육과 문화강좌 등 다양한 문화 예술 활동을 할 수 있는 곳이다.",
+          "characters": 245,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:16-21-0002670000000",
@@ -44,7 +50,14 @@
       "originalText": "구상암(球狀岩)이란 공처럼 둥근 암석으로 특수한 환경 조건에서 형성되며, 대부분 화강암 속에서 발견된다. 그러나 부산 전포동의 구상 반려암은 길이 400m, 폭 300m에 달하는 반려암 속에 구상암이 들어있는 형태를 하고 있으며, 이는 아시아에서는 유일하게 기록된 희귀암석의 종류이다. 구상암의 지름은 작게는 1㎝ 이하인 것부터 크게는 5∼10㎝인 것도 있다. 색깔은 암록회색 내지는 연한 회색이다.\n 부산 전포동의 구상 반려암은 암석의 생성과정을 연구하는데 매우 중요할 뿐만 아니라, 매우 드물고 특수한 암석으로서 지질학적 연구가치가 크다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=16&ccbaCtcd=21&ccbaAsno=0002670000000",
       "fetchedAt": "2026-10-24T09:52:46.915Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구상암(球狀岩)이란 공처럼 둥근 암석으로 특수한 환경 조건에서 형성되며, 대부분 화강암 속에서 발견된다. 그러나 부산 전포동의 구상 반려암은 길이 400m, 폭 300m에 달하는 반려암 속에 구상암이 들어있는 형태를 하고 있으며, 이는 아시아에서는 유일하게 기록된 희귀암석의 종류이다. 구상암의 지름은 작게는 1㎝ 이하인 것부터 크게는 5∼10㎝인 것도 있다. 색깔은 암록회색 내지는 연한 회색이다.\n 부산 전포동의 구상 반려암은 암석의 생성과정을 연구하는데 매우 중요할 뿐만 아니라, 매우 드물고 특수한 암석으로서 지질학적 연구가치가 크다.",
+          "characters": 235,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:2311",
@@ -52,9 +65,24 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "열정의 부산! 스포츠로 더 뜨겁게 떠나는 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "청명한 자연 속 신나게 스포츠를 즐길 수 있는 곳, 황령산레포츠공원! 부산 도심과 가까우면서도 자연과 공존하는 생활체육시설로 인기를 끌고 있습니다. 축구장, 씨름장, 테니스장, 배드민턴장, 게이트볼장 등 다양한 체육시설을 갖추고 있어 여러 목적으로 활용하기 좋은 공간입니다.",
+          "reason": "place-heading",
+          "characters": 120
+        },
+        {
+          "text": "황령산레포츠공원의 일부 체육시설은 사전 예약이 필요한데요. 부산진구청 홈페이지를 통해 누구나 쉽게 원하는 장소를 예약할 수 있으니 참고해주세요!",
+          "reason": "place-subject",
+          "characters": 64
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "황령산레포츠공원"
+        ],
         "placeName": "황령산레포츠공원",
         "review": "pending"
       },

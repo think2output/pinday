@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "130606",
     "name": "국립수산과학관",
     "lat": 35.1911175294,
     "lng": 129.2222830065
   },
-  "collectedAt": "2026-10-24T09:57:13.189Z",
+  "collectedAt": "2026-10-24T10:23:39.273Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:310",
-      "busan-theme:352"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=130606&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:52:48.676Z",
-      "modifiedAt": "20260929082648"
+      "modifiedAt": "20260929082648",
+      "passages": [
+        {
+          "text": "수산과학관은 1997년 개관한 우리나라 수산업, 바다 전문 과학관이다. 해양수산에 관한 과학기술의 발전과정과 미래상을 소개하고 해양수산에 대한 청소년들의 탐구심 함양, 국민들에게 수산업, 바다를 홍보하는 것이 주목적이다. 관람 시설은 주제별로 나누어진 본관, 선박전시관과 영상실이 있으며 총 15개의 주제 아래 1,900여 개를 전시하고 있다. 유아부터 청소년에 이르는 다양한 연령을 대상으로 창의탐구, 생물탐구교실 등의 다양한 체험 프로그램을 운영하고 있으며 이를 통해 수산생물 지식과 수산해양물 자원보전의 중요성을 알리고 있다. 그리고 섬, 바다 물고기 등을 주제로 여러 전시를 열고 있으며 이를 통해 수산, 해양에 대한 지식과 재미를 함께 전달하고자 한다.",
+          "characters": 287,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:310",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "모든 이들에게 공평한 관광을 선사하는 부산 무장애 여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "국립수산과학관"
+        ],
         "placeName": "국립수산과학관",
         "review": "pending"
       },
@@ -55,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "슬로(slow)부산을 만난다. 기장 해안 산책로 유명 스폿 따라잡기",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "국립수산과학관"
+        ],
         "placeName": "국립수산과학관",
         "review": "pending"
       },

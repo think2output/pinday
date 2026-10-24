@@ -1,18 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2736392",
     "name": "청학수변공원",
     "lat": 35.0977293865,
     "lng": 129.0611626448
   },
-  "collectedAt": "2026-10-24T09:57:15.356Z",
+  "collectedAt": "2026-10-24T10:23:45.851Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:489",
-      "busan-theme:1149"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -29,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2736392&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:17.768Z",
-      "modifiedAt": "20250422095512"
+      "modifiedAt": "20250422095512",
+      "passages": [
+        {
+          "text": "청학 수변공원은 부산해양경찰서 청학 출장소 옆에 있는 바닷가 작은 공원으로, 지역주민을 중심으로, 부산항만공사와 부산 지방해양항만청이 함께 조성한 민간 최초의 수변공원이다. 부산항대교와 대교로 올라가는 경사도로를 가까이서 볼 수 있는 공원으로도 유명하다. 조경은 물론이고 체육시설까지 잘 갖추진 공원으로, 맨발로 발바닥 지압을 하면서 걸을 수 있는 지압 발판대도 있다. 부산항대교의 아름다운 야경 촬영 명소로 알려지면서 영도의 새로운 유명 관광지로 부상하고 있다.",
+          "characters": 202,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:489",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 야경 투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "청학수변공원"
+        ],
         "placeName": "청학수변공원",
         "review": "pending"
       },
@@ -55,10 +64,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "보라보라한 가을 감성여행지",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "청학수변공원"
+        ],
         "placeName": "청학수변공원",
         "review": "pending"
       },

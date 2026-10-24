@@ -1,27 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2487931",
     "name": "화명생태공원",
     "lat": 35.226662731912064,
     "lng": 129.00454069619033
   },
-  "collectedAt": "2026-10-24T09:57:15.730Z",
+  "collectedAt": "2026-10-24T10:23:47.042Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:468",
-      "busan-theme:521",
-      "busan-theme:1215",
-      "busan-theme:1334",
-      "busan-theme:1386",
-      "busan-theme:1407",
-      "busan-theme:1675",
-      "busan-theme:2101",
-      "busan-theme:2184",
-      "busan-theme:2835",
-      "busan-theme:2863"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -38,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2487931&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:55:29.796Z",
-      "modifiedAt": "20260309154130"
+      "modifiedAt": "20260309154130",
+      "passages": [
+        {
+          "text": "화명생태공원은 낙동강 좌안 북구 구포동 제2낙동강대교에서 금곡동 대동화명대교까지의 둔치 지역으로 낙동강 하구 둔치 중 면적은 가장 작다. 화명 신도시와 인접하고 있어 주민들의 접근성이 좋아 야구장, 축구장을 비롯하여 테니스장, 농구장, 인라인 스케이트장 등 체육시설(11종 38면)을 고루 갖추고 있다.  또한 최하단부에 연꽃습지, 수생 식물원과 산책로, 데크는 휴식과 자연 체험을 하기에 좋으며 수상레포츠타운, 야외수영장, 화명선착장 등이 갖추어져 있어 다양한 수상 레저를 즐길 수 있는 공간이다.",
+          "characters": 217,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:468",
@@ -46,9 +42,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "자전거로 즐기는 부산",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "곱게 뻗은 자전거 도로를 유유자적 달릴 수 있는 화명생태공원은 비단길 같은 길로 라이더들에게 사랑 받아 온 곳이다. 우거진 숲 사이 자전거 도로를 달리면 불어오는 시원한 강바람이 라이딩에 즐거움을 더하는 코스다. 특히 늘어지는 나무가 만들어주는 초록의 터널을 씽씽 달리는 경험은 화명생태공원만이 가진 매력이다.",
+          "reason": "place-heading",
+          "characters": 132
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -64,10 +70,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 곳곳에 숨어 있는 장미 명소를 찾아서",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -84,9 +94,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "눈부신 나의 봄날, 인생샷 찍기 좋은 부산 봄꽃 추천 여행지!",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "낙동강변에는 각기 다른 아름다움을 지닌 생태공원이 여럿 있는데요. 그 중 또 다른 봄꽃의 매력을 한창 발산하고 있는 곳인 화명생태공원은 튤립이 너무 아름다운 봄꽃 성지랍니다. 분홍색, 빨간색, 하얀색, 노란색, 보라색 등 알록달록한 튤립꽃 수만 송이가 피어나고 있어요. 본연의 선명한 색감을 뽐내는 튤립은 예쁜 인생샷을 위한 최고의 배경이 아닐까요? 지금 아름답게 피어난 튤립은 5월까지 만나볼 수 있으니 화명생태공원 방문 계획을 꼭 세워보세요. 유채꽃, 수선화, 벚꽃과는 다른 강렬한 매력을 지닌 튤립을 놓치지 마시길 바랍니다.",
+          "reason": "place-heading",
+          "characters": 226
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -102,10 +122,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "BTS 부산 콘서트 기념, 다시 찾은 부산여행 코스 ＜정국편＞",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -121,10 +145,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 힐링 산책",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -140,10 +168,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "비건지향 감성사진가의 맛있는 촬영여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -160,9 +192,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "하루 종일 느긋하게, 구포 낭만 무장애 여행",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "금빛노을브릿지는 휠체어나 유모차를 이용하는 사람들도 편하게 시설을 이용할 수 있도록 구포시장, 브릿지 중간지점, 북구관광안내소가 있는 전망대 이렇게 총 3곳에서 승강기를 운행 중이다. 시각장애인을 배려한 승강기 입구 점자블록과 승강기 버튼에 함께 표기되어있는 점자는 보다 많은 사람들이 편안하게 이곳을 이용할 수 있도록 해준다. 다리 위로 올라와 화명생태공원 방향으로 걷다 보면 구포철길, 강변도로 등의 색다른 풍경을 느낄 수 있으며 끝까지 걸어가면 나타나는 전망대에는 관광안내소 및 간단한 좌석이 마련되어 있어 편하게 앉아 휴식을 취할 수 있다. 전망대 데크에서 한눈에 내려다보이는 화명생태공원은 특유의 녹지와 풍부한 식물들 덕분에 보고 있으면 눈이 편안해지는 기분이 든다.",
+          "reason": "place-subject",
+          "characters": 291
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -174,33 +216,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:2101",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "여기 가려고 기차 예매함",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "화명생태공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"><table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"><!--타이틀--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_01.jpg\" alt=\"기다림X 여행O 자투리 시간까지 남김없이 Get! 여기 가려고 기차 예매함\"></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_02.jpg\" alt=\"Theme. 과거+미래. 도보 15분내로 끝내는 부산역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1900&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_03.jpg\" alt=\"여행객들을 위한 원데이클래스가 있다?.부산 트래블라운지 원데이 클래스. 부산역 1번출구 > 도보 7분. 부산 트래블라운지가 말아주는 알찬 클래스로 기다리는 지루함 완전 타파!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=415&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_04.jpg\" alt=\"아아...보인다, 부산의 역사가 보인다! 차이나타운. 부산역 1번출구 > 도보 7분. 한국의 역사와 이국적 풍경을 모두 느낄 수 있는 부산 속 중국. 그 오묘한 분위기에 풍덩!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000201001001000&uc_seq=2079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_05.jpg\" alt=\"추억을 찍어드려요. 이바구길 사진관. 부산역 3번출구 > 도보 5분. 과거의 향수가 잔뜩 묻어나는 사진관에서 부산여행 추억 한 컷 찰칵!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=58&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_06.jpg\" alt=\"엄마, 길이 말을 해요! 초량 이바구길. 부산역 1번 출구 > 도보 12분. 쌓여가는 세월 속 불어난 이야기보따리! 이바구길로 만나보는 생생한 근대사\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2082&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_07.jpg\" alt=\"오션부까지 신경 쓴 홍보관, 본 적 있어? 북항재개발 홍보관. 부산역 9번출구 > 도보 12분. 깔끔한 홍보관에서 부산항의 역사와 미래 비전을 한 번에. 부산의 미래? 완벽하게 이해 완료!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2086&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_08.jpg\" alt=\"도서관이 이렇게 예뻐도 되나요? 북두칠성 도서관. 부산역 9번 출구>도보 10분 예쁜 인테리어와 편안한 분위기로 북항의 랜드마크가 된 도서관 & 문화복합공간\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2081&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_09.jpg\" alt=\"화려한 조명에 흠뻑. 북항 친수공원. 부산역 9번출구 > 도보 9분. 밤이 깊을수록 더 빛이 나는 풍경! 심야 열차 타기 전 경치 감상하며 산책 한 바퀴\"></a></td></tr><!--소제목--><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_10.jpg\" alt=\"Theme. 자연+예술. 도보 15분 내로 끝내는 구포역 근처 관광명소\"></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202008001000&uc_seq=2080&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_11.jpg\" alt=\"국수 만들기가 이렇게 재밌다니! 구포국수체험관. 구포역>도보 2분. 아이들이 좋아하는 오감만족 촉감놀이, 제면체험 등 다양한 놀이로 즐겨보자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=2085&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_12.jpg\" alt=\"여기서는 우리 모두가 예술가. 문화예술플랫폼. 구포역 > 도보3분. 언제든지 만나볼 수 있는 가장 가까운 문화예술. 일상 속 예술 경험을 원한다면 방문 필수!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201003001000&uc_seq=363&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_13.jpg\" alt=\"없는 거 빼고는 다 있어! 구포시장. 구포역 > 도보 13분. 없는 게 없는 이곳. 전국 최대 오일장의 명성을 잇는 풍성한 즐길 거리!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1676&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_14.jpg\" alt=\"부산은 리버 뷰도 엄청나잖아? 금빛노을브릿지. 구포역>도보 15분 부산에서 즐기는 최적의 리버 뷰 최고의 일몰과 야경을 한 번에 즐기자!\"></a></td></tr><tr><td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=1434&lang_cd=ko\"><img style=\"width:100%\" src=\"https://visitbusan.net/images/graphicNews/202409_02/graphic_kr_15.jpg\" alt=\"상쾌하게 리프레시 완료! 화명생태공원.구포역 > 도보 15분. 낙동강변 딸 ㅏ조성된 깔끔한 산책로에서 자연과 함께 마음껏 힐링 산책\"></a></td></tr></table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=2101&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:2184",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "가을 하늘 아래, 철새와 함께하는 생태여행",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -216,10 +243,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "낙동강에서 바다까지, 부산의 가을을 따라",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "MAIN_PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },
@@ -235,10 +266,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 축제 추천, 가을밤 즐기기 좋은 2026 별바다부산 나이트마켓",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "화명생태공원"
+        ],
         "placeName": "화명생태공원",
         "review": "pending"
       },

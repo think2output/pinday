@@ -1,20 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2758477",
     "name": "신평소공원",
     "lat": 35.2937,
     "lng": 129.2606
   },
-  "collectedAt": "2026-10-24T09:57:14.646Z",
+  "collectedAt": "2026-10-24T10:23:43.575Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:453",
-      "busan-theme:1079",
-      "busan-theme:1180",
-      "busan-theme:1212"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -31,17 +27,28 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2758477&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:47.636Z",
-      "modifiedAt": "20260309150150"
+      "modifiedAt": "20260309150150",
+      "passages": [
+        {
+          "text": "바위에 부서지는 파도 소리 들으며 거닐 수 있는 수변공원인 신평소공원은 작고 아담한 규모의 공원이지만 리드미컬한 해안선, 암초와 갯바위, 빨간 등대들이 조화를 이루는 곳이다. 해변 위에 놓인 데크길은 부산을 대표하는 산책로인 갈맷길 중 일부다. 공원 중앙에 위풍당당하게 배 한 척이 자리 잡고 있다. 이곳 편하게 쉴 수 있는 정자도 있고, 식사하고 커피 한잔하면서 머물다 가도 좋고, 어린이들과 고동, 꽃게 등을 찾는 재미도 누려볼 수 있다. 신평소공원 뱃머리는 연인들의 타이타닉샷 스폿으로 유명한 곳으로 인증숏을 남기기에도 좋은 장소이다.",
+          "characters": 228,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:453",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "해파랑길 부산구간",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "신평소공원"
+        ],
         "placeName": "신평소공원",
         "review": "pending"
       },
@@ -58,9 +65,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 기장의 숨은 산책 코스",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "비대면 여행지로 많은 사랑을 받기 시작한 신평소공원은 집 주변에서 흔히 볼 수 있는 평범한 공원과 달리 이색적인 조형물이 시선을 사로 잡는 곳입니다. 높이 15m 폭 12m에 배조형물전망대는 이색적인 풍경으로 산책의 즐거움을 선물합니다. 산책로를 따라 걷다 보면 시원하게 펼쳐진 푸른바다가 있고 산책로 아래로는 퇴적층이 노출되어 있어서 더욱 특별합니다. 약 10분 정도면 모든 곳을 둘러볼 수 있는 작은 공원이지만 산책을 즐기는 내내 바다를 볼 수 있다는 점에서 부산에서 꼭 다녀와야 하는 산책로 중 하나입니다!",
+          "reason": "place-subject",
+          "characters": 215
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "신평소공원"
+        ],
         "placeName": "신평소공원",
         "review": "pending"
       },
@@ -76,10 +93,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "신평소공원"
+        ],
         "placeName": "신평소공원",
         "review": "pending"
       },
@@ -91,33 +112,18 @@
       "sourceSnapshotDate": "unknown"
     },
     {
-      "id": "busan-theme:1208",
-      "provider": "busan-theme",
-      "source": "부산광역시 부산테마여행정보",
-      "title": "부산에도 봄이 왔나봄! ",
-      "relation": "same-place",
-      "match": {
-        "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
-        "placeName": "신평소공원",
-        "review": "pending"
-      },
-      "originalText": "<div style=\"max-width:1200px;width:100%;margin:0 auto\"> <table style=\"max-width:1000px;width:100%;margin:0 auto\" cellspacing=\"0\" cellpadding=\"0\"> <tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694727344.jpg\" alt=\"부산에도 봄이 왔나봄! 부산으로 봄캉스 떠나요\"></td></tr><tr><td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732233.jpg\" alt=\"꽃바람이 흩날리는 부산 꽃 명소\"></td></tr><tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=1205&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732532.jpg\" alt=\"부산은 벌써 봄! 매화 여행지로 떠나요~ 이른 봄의 향기를 느끼며 매화의 아름다움을 느낄 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=307&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694732942.jpg\" alt=\"부산 유채꽃 명소 추천, 노란 꽃들의 절정 커피 한 잔과 함께 여유로운 힐링을 느낄 수 있는 곳\"></a></td> </tr> <tr> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=306&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733341.jpg\" alt=\"부산 곳곳, 벚꽃이어라 부산 곳곳에 숨겨진 푸르고, 붉고, 청량한 자연을 만날 수 있는 곳\"></a></td> <td><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=521&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694733692.jpg\" alt=\"부산 곳곳에 숨어 있는 장미 명소를 찾아 노을과 트레킹, 카페, 야경까지 예쁜 포인트가 모여 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734088.jpg\" alt=\"따스한 햇살 품은 봄 힐링 산책 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202002001000&uc_seq=761&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734451.jpg\" alt=\"나의 힐링 버킷리스트, 허브랑힐링숲 바쁜 일상 속 여유로운 오후 힐링타임을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=304&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694734761.jpg\" alt=\"철새와 함께하는 아름다운 문화의 향연, 을숙도 문화의 향기를 느끼며 조용히 산책을 즐길 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/index.do?menuCd=DOM_000000202004001000&uc_seq=1079&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688694735074.jpg\" alt=\"기장의 숨은 산책길, 신평소공원 시원하게 펼쳐진 푸른바다를 보며 산책할 수 있는 곳\"></a></td> </tr> <tr> <td colspan=\"2\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846152.jpg\" alt=\"두근두근 설레이는 봄 나들이 명소\"></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=325&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846560.jpg\" alt=\"봄, 여름, 가을, 겨울이 다 달라 삼락생태공원 삼락생태공원의 매력을 찾아서 유유히 흘러가는 낙동강 줄기 옆으로 삼락동 둔치에 넓게 자리 잡은 삼락생태공원. 계절마다 각기 다른 매력을 뽐낸다.\"></a></td> </tr> <tr> <td colspan=\"2\"><a href=\"https://www.visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=786&lang_cd=ko\"><img style=\"width:100%\" src=\"https://www.visitbusan.net/upload_data/board_data/BBS_0000014/164688697846953.jpg\" alt=\"동화 속 풍경을 담은 화명수목원 부산 도심 속 공원의 재발견 금정산 고당봉을 뒤로하고 맑은 대천천이 흐르고 있어, 공기는 맑았고 귓가에는 물소리로 가득했다.\"></a></td> </tr> </table></div>\n",
-      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1208&pageNo=1&numOfRows=1&resultType=json",
-      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
-      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
-      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
-      "sourceSnapshotDate": "unknown"
-    },
-    {
       "id": "busan-theme:1212",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "로맨틱 기장 드라이브",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "신평소공원"
+        ],
         "placeName": "신평소공원",
         "review": "pending"
       },

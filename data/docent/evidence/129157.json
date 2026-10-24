@@ -1,20 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "129157",
     "name": "영도 등대",
     "lat": 35.0523536391521,
     "lng": 129.092335072703
   },
-  "collectedAt": "2026-10-24T09:57:14.739Z",
+  "collectedAt": "2026-10-24T10:23:43.910Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:451",
-      "busan-theme:1141",
-      "busan-theme:1155",
-      "busan-theme:1362"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -31,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=129157&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:51.516Z",
-      "modifiedAt": "20260311100340"
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "1906년 12월 처음 불을 밝힌 영도등대는 1906년 당시에는 목도 등대라 불렸다. 일제의 대륙 진출에 필요한 병력, 군수물자 수송선박의 안전을 위한 것이었다. 이후 1948년 절영도 등대로 변경하였다가 1974년 영도등대로 개칭하였다. 영도등대가 첫 불빛을 밝힌 1906년 12월 당시에는 석유 백열등이었으나, 지금은 할로겐램프를 사용하고 있다. 등대 불빛은 11m 높이 콘크리트 탑 위에 18초마다 3회씩 깜박인다. 선박의 운항 상황을 화면에서 추적할 수 있는 항행 식별 시스템도 갖췄다. 2002년 부산해양수산청에 의해 대대적인 리모델링에 들어갔고 2004년 8월에 작업이 마무리되었다. 이 작업을 통해 영도등대는 해양도서실, 갤러리 등을 갖춘 해양문화공간으로 거듭났다.",
+          "characters": 297,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:15-21-0000170000000",
@@ -47,17 +50,28 @@
       "originalText": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=15&ccbaCtcd=21&ccbaAsno=0000170000000",
       "fetchedAt": "2026-10-24T09:54:51.721Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "아름다운 암석 절벽으로 이루어진 절경을 가진 명승으로 부산을 대표하는 해안경관이다. 울창한 해송 숲과 함께 기암절벽이 조화를 이루고 있으며 강한 파도가 부딛히며 생겨난 해식 동굴, 해식애 절벽 등 아름다운 지형을 형성하고 있다. 또한 우리나라 남부지역의 숲 특징을 잘 나타내고 있는 곰솔군락, 팽나무과 함께 훌륭한 경관을 보이고 있다.",
+          "characters": 142,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:451",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 바다의 든든한 지킴이, 등대투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영도등대"
+        ],
         "placeName": "영도 등대",
         "review": "pending"
       },
@@ -73,10 +87,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "색다른 부산바다! 몽글몽글 몽돌해변으로 떠나요~",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영도등대"
+        ],
         "placeName": "영도 등대",
         "review": "pending"
       },
@@ -92,10 +110,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "태고의 신비가 느껴지는 태종대 비밀의 숲",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영도등대"
+        ],
         "placeName": "영도 등대",
         "review": "pending"
       },
@@ -111,10 +133,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "영도에 빠지다! 찐친 여행 메이트의 영도 여행법",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "영도등대"
+        ],
         "placeName": "영도 등대",
         "review": "pending"
       },

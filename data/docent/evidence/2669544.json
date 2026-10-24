@@ -1,19 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "2669544",
     "name": "역사의 디오라마",
     "lat": 35.114466,
     "lng": 129.032977
   },
-  "collectedAt": "2026-10-24T09:57:14.728Z",
+  "collectedAt": "2026-10-24T10:23:43.863Z",
   "classification": {
-    "status": "sufficient-candidate",
-    "supportingIds": [
-      "busan-theme:489",
-      "busan-theme:846",
-      "busan-theme:1147"
-    ],
+    "status": "introduction-only",
+    "supportingIds": [],
     "humanReview": "pending"
   },
   "reviewNotes": [
@@ -30,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2669544&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:51.091Z",
-      "modifiedAt": "20260305134619"
+      "modifiedAt": "20260305134619",
+      "passages": [
+        {
+          "text": "역사의 디오라마는 부산 해양의 풍경과 시간을 조망할 수 있는 전망대이다. 또한 드라마의 배경으로 등장할 만큼 멋진 야경을 뽐내는 호천마을과 부산항의 멋진 야경을 품고 있다. 정면으로 보이는 부산항대교 바다 전망과 더불어 옆으로는 산복도로 위를 저마다의 색으로 빼곡하게 채우고 있는 건물들, 그 사이 굽은 길을 능숙하게 오가는 버스들은 오직 부산에서만 볼 수 있는 전망이다. 역사의 디오라마는 총 3개의 조망공간으로 이루어져 있으며 자연경관, 근대경관, 문화경관, 미래경관까지 해안가를 따라서 보이는 4가지 주제의 풍경들을 볼 수 있다.",
+          "characters": 228,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0006470000000",
@@ -46,7 +50,14 @@
       "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
       "fetchedAt": "2026-10-24T09:52:07.235Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+          "characters": 164,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "heritage:79-21-0003270000000",
@@ -62,17 +73,28 @@
       "originalText": "이 시설물은 성지곡수원지 물을 각 가정에 공급하기 위해 건립하였다. 배수지는 모두 3동으로 구성되어 있으며, 정면 왼쪽 저수 시설 2동은 1910년에 건립하였고, 오른쪽 1동은 1922년에 증축하였다. 1910년의 여과 시설 벽체는 붉은 벽돌로 쌓고 상부는 석재로 마감하였으며, 아치 형태의 석조 문틀로 된 입구 위에는 ‘선경(仙境)의 물처럼 마르지 말라’라는 뜻의 ‘요지무진(瑤池無盡)’이라는 현판이 남아 있다.",
       "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0003270000000",
       "fetchedAt": "2026-10-24T09:52:26.966Z",
-      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음"
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "이 시설물은 성지곡수원지 물을 각 가정에 공급하기 위해 건립하였다. 배수지는 모두 3동으로 구성되어 있으며, 정면 왼쪽 저수 시설 2동은 1910년에 건립하였고, 오른쪽 1동은 1922년에 증축하였다. 1910년의 여과 시설 벽체는 붉은 벽돌로 쌓고 상부는 석재로 마감하였으며, 아치 형태의 석조 문틀로 된 입구 위에는 ‘선경(仙境)의 물처럼 마르지 말라’라는 뜻의 ‘요지무진(瑤池無盡)’이라는 현판이 남아 있다.",
+          "characters": 181,
+          "reason": "source-description"
+        }
+      ]
     },
     {
       "id": "busan-theme:489",
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "부산 야경 투어",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "ITEMCNTNTS",
-        "method": "full-name-mention",
+        "method": "body-mention",
+        "matchedNames": [
+          "역사의디오라마"
+        ],
         "placeName": "역사의 디오라마",
         "review": "pending"
       },
@@ -89,9 +111,19 @@
       "source": "부산광역시 부산테마여행정보",
       "title": "산복도로에서 만나는 멋진 부산 풍경 ",
       "relation": "same-place",
+      "passages": [
+        {
+          "text": "역사의 디오라마는 부산 해안경관 조망공간이에요. 총 3개의 조망공간으로 이루어져 있으며 자연경관, 근대경관, 문화경관, 미래경관까지 해안가를 따라서 보이는 4가지 주제의 풍경들을 볼 수 있어요. 이곳은 야경이 정말 예쁘고, 부산의 알록달록 마을로 유명한 감천문화마을보다 여유롭게 부산의 근-현대적인 건물들을 바라볼 수 있는 공간으로 알려지고 있어요! 실제로도 부산 풍경을 속 시원하게 바라볼 수 있어서 좋았어요.",
+          "reason": "place-heading",
+          "characters": 180
+        }
+      ],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "역사의디오라마"
+        ],
         "placeName": "역사의 디오라마",
         "review": "pending"
       },
@@ -107,10 +139,14 @@
       "provider": "busan-theme",
       "source": "부산광역시 부산테마여행정보",
       "title": "길 위의 풍경, 바다냄새 스민 부산의 골목",
-      "relation": "same-place",
+      "relation": "mentioned-only",
+      "passages": [],
       "match": {
         "field": "PLACE",
-        "method": "exact-name",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "역사의디오라마"
+        ],
         "placeName": "역사의 디오라마",
         "review": "pending"
       },

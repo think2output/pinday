@@ -1,12 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
   "place": {
     "id": "337435",
     "name": "약수암(부산)",
     "lat": 35.1782275148,
     "lng": 128.9965271813
   },
-  "collectedAt": "2026-10-24T09:57:14.706Z",
+  "collectedAt": "2026-10-24T10:23:43.787Z",
   "classification": {
     "status": "introduction-only",
     "supportingIds": [],
@@ -26,7 +27,14 @@
       "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=337435&MobileOS=ETC&MobileApp=PinDay&_type=json",
       "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
       "fetchedAt": "2026-10-24T09:54:50.445Z",
-      "modifiedAt": "20250306142840"
+      "modifiedAt": "20250306142840",
+      "passages": [
+        {
+          "text": "약수암은 부산광역시 사상구 백양산 자락에 자리한 대한 불교법화종 소속 사찰이다. 1890년경 승려 경파가 조청정화, 박보리화, 서본성월이라는 보살과 함께 창건했다고 전해진다. 1950년대부터 청명 스님이 55년간 주석하면서 불사를 이루어 지금의 모습을 갖추게 되었다. 약수암은 대웅전과 약사전, 삼성각, 종각 그리고 요사로 이루어져 있다. 대웅전은 정면 3칸, 측면 2칸의 규모로 팔작지붕에 주심포 형식이며 1950년대 초에 건립한 전각이다. 대웅전 건립 시기와 같은 1950년대 초반에 지어진 삼성각은 정면 3칸, 측면 1칸의 팔작지붕 건물로 주심포 형식이다. 외벽화는 없으며 오른쪽 외벽에 창방이 하나 나 있다. 1999년 팔각형의 시멘트 건물로 지어진 약사전은 외부 단청까지 되어 있으며 외벽에는 산수, 화훼, 화조 등을 내용으로 하는 벽화가 8면에 그려져 있다.",
+          "characters": 333,
+          "reason": "source-description"
+        }
+      ]
     }
   ],
   "errors": []
