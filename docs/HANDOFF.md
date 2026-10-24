@@ -1,13 +1,14 @@
 # HANDOFF — 지금 상태
 
 마지막 업데이트: 2026-10-24 · 작성: Codex
-마지막 확인: `npm test`(63개), `npm run lint`(경고 없음), `npm run build` 모두 통과. 빌드된 서버의 장소 API 실제 HTTP 조회·400/404/405 응답 확인. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음. 이번 작업은 서버 API만 변경해 390px/데스크톱 화면 확인은 해당 없음.
+마지막 확인: `npm test`(80개), `npm run lint`(경고 없음), `npm run build` 모두 통과. 실제 기상청 자료로 부산·해운대 14일 요청(예보 5일+예보 전 9일), 캐시 재사용, 400/404·장소 API 정상 동작 확인. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음. 이번 작업은 서버 API만 변경해 390px/데스크톱 화면 확인은 해당 없음.
 
 ## 현재 브랜치
-`feat/places-api` (← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). API·수정·검수·수집 브랜치는 로컬 커밋 상태이며 아직 push하지 않음. `docs/design-exploration`까지는 GitHub에 올림(push). 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). 마지막 브랜치가 앞의 것을 모두 포함한다.
+`feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
 - `docs/tech-stack`, `feat/project-setup`은 이전 단계 브랜치(로컬에만 있음, 위 브랜치에 포함)
 
 ## 끝낸 것
+- 날씨 API: `GET /api/weather?placeId=...&startDate=YYYY-MM-DD&days=1~14`. 기상청 API허브 단기예보 전체 페이지·KST 최신 발표·공식 좌표 변환·5분 성공 캐시·동시 요청 합치기·오류 구분 구현. 예보 기간 이후와 기간 안 결측을 구별하고 온도/강수 결측은 null로 보존. 일정은 변경하지 않음. 사용법·공식 근거·실제 응답 확인: `docs/WEATHER_API.md`. 날씨 테스트 17개 추가, 전체 80개 통과.
 - 장소 API: `GET /api/places` 목록·조건 필터·취향순·페이지 나누기, `GET /api/places/[id]` 상세. JSON 408곳을 서버 전용 모듈에서 제공하며 외부 API·키·브라우저 여행 정보에 의존하지 않음. 정확한 지역 비교·지도 경계·오류·정렬 등 새 테스트 33개, 전체 63개 통과. 사용법·HTTP 확인 기록: `docs/PLACE_API.md`. 도슨트 해설/원문은 이 API에 포함하지 않음.
 - 기획서·와이어프레임·에이전트 규칙, 기술 스택 결정(Next.js + TypeScript + Tailwind + Vercel, DB 없이 JSON 파일)
 - 기본 폴더 구조(AGENTS.md "폴더 구조"), `.env.example`, `.gitattributes`, 디자인 값 파일 `src/styles/tokens.css`(값은 임시), `npm run lint`·`npm run build` 통과
@@ -33,7 +34,7 @@
 
 ## 다음 할 일 (디자인과 상관없는 것부터)
 1. 도슨트 후속: 대표 검수의 선택 문단·제한을 사용자에게 확인받고, OpenAI 키 준비 후 소수 장소부터 해설 시험 생성·검수. 생성기는 선택 문단·제외/재검수/미검수 상태·출처 해시를 반드시 적용해야 함. 백제병원 건립/개원 연혁·석당박물관 별칭 연결 자료의 상세 검수는 아직. 부산근현대역사관 아카이브는 승인 후 추가.
-2. 다음 서버 API: 날씨(기상청 API허브 단기예보 + 짧은 캐시). 장소 목록·상세는 완료(`docs/PLACE_API.md`).
+2. 장소 목록·상세와 날씨 API 완료. 이후 각 화면에서 연결(`docs/PLACE_API.md`, `docs/WEATHER_API.md`).
 3. 디자인 다시 잡기 (`docs/design/README.md`의 "다시 잡을 때 할 일" 따를 것) → 공통 화면 조각·홈 화면
 4. 이후 기획서 12장 개발 순서대로 (어디 갈까? → 언제 갈까? → 도슨트 목록·상세 …)
 
