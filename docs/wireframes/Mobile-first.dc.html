@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 홈 · 휴대폰 · 처음 온 사람</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 2020px; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF">
+
+<header style="padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #D4D4D4">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 18px">
+<span style="width: 24px; height: 24px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</header>
+<nav aria-label="주요 메뉴" style="display: flex; gap: 4px; padding: 10px 16px; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #EDEDED">
+<a href="#" aria-current="page" style="padding: 10px 14px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">홈</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까? →</a>
+</nav>
+
+<main style="padding: 28px 16px 32px; display: flex; flex-direction: column; gap: 28px">
+<section aria-labelledby="m-hero" style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; align-self: flex-start; padding: 5px 12px; border: 1px solid #BDBDBD; border-radius: 999px; font-size: 12px; color: #444444">부산 여행 플래너</p>
+<h1 id="m-hero" style="margin: 0; font-size: 34px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em">부산 여행,<br>핀 하나부터.</h1>
+<p style="margin: 0; font-size: 15px; color: #444444">가고 싶은 곳을 모아, 나만의 날짜에 담아보세요.</p>
+</section>
+
+<section aria-labelledby="m-trip" style="border: 1px solid #D4D4D4; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 18px">
+<h2 id="m-trip" style="margin: 0; font-size: 18px; font-weight: 700">어디로, 언제 떠날까요?</h2>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700">지역 <span style="font-weight: 400; color: #555555">· 지도에서 눌러 고르기</span></p>
+<div role="group" aria-label="부산 구 지도" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(5, 52px); gap: 4px; padding: 8px; margin: 0 -8px; background: #F4F4F4; border-radius: 16px">
+<sc-for list="{{districts}}" as="d" hint-placeholder-count="16">
+<button type="button" aria-pressed="{{d.pressed}}" style="{{d.tileStyle}}">{{d.short}}</button>
+</sc-for>
+</div>
+<p style="margin: 0; font-size: 12px; color: #555555">칸 하나가 손가락 크기 이상(44px+) · 누르면 구 이름과 대표 명소가 잠깐 보여요</p>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700">선택한 지역</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" aria-label="수영구 선택 해제" style="min-height: 44px; padding: 0 12px 0 16px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 14px; font-weight: 700">수영구 ✕</button>
+<button type="button" aria-label="해운대구 선택 해제" style="min-height: 44px; padding: 0 12px 0 16px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 14px; font-weight: 700">해운대구 ✕</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700">기간 <span style="margin-left: 6px; padding: 4px 10px; border-radius: 999px; background: #EDEDED; font-size: 13px">2박 3일</span></p>
+<button type="button" style="min-height: 48px; padding: 0 16px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; text-align: left; font-size: 15px">출발 10.24 (토)</button>
+<button type="button" style="min-height: 48px; padding: 0 16px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; text-align: left; font-size: 15px">도착 10.26 (월)</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<button type="button" style="min-height: 56px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 16px; font-weight: 700">선택한 2곳으로 시작하기 ↗</button>
+<p style="margin: 0; text-align: center; font-size: 12px; color: #555555">지역을 고르지 않으면 부산 전체에서 찾아요</p>
+</div>
+</section>
+
+<section aria-labelledby="m-story" style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="m-story" style="margin: 0; font-size: 20px; font-weight: 900; letter-spacing: -0.02em">수영구 · 해운대구의 이야기</h2>
+<p style="margin: 0; font-size: 13px; color: #555555">고른 지역이 바뀌면 이야기도 바뀌어요 · 옆으로 넘겨보기</p>
+</div>
+<div style="display: flex; gap: 12px; overflow-x: auto; margin: 0 -16px; padding: 0 16px 4px">
+<sc-for list="{{stories}}" as="s" hint-placeholder-count="2">
+<article style="flex: 0 0 280px; border: 1px solid #D4D4D4; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="height: 140px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">장소 사진</div>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; color: #555555">{{s.district}}</p>
+<h3 style="margin: 0; font-size: 17px; font-weight: 700">{{s.place}}</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #333333">[도슨트 해설 첫 문장 · 1~2줄]</p>
+<p style="margin: 0; padding: 10px 12px; background: #F4F4F4; border-radius: 10px; font-size: 13px"><strong>현장 포인트</strong> · [현장 관람 포인트 1개]</p>
+<p style="margin: 0; font-size: 12px; color: #555555">근거: [자료 출처]</p>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">이야기 전체 보기 →</a>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section aria-label="어디 갈지 모르겠다면" style="display: flex; flex-direction: column; gap: 12px">
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: center">
+<div style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">그림</div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+<h3 style="margin: 0; font-size: 16px">내 여행 스타일은?</h3>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">테스트 하기</a>
+</div>
+</div>
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: center">
+<div style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">그림</div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+<h3 style="margin: 0; font-size: 16px">어디 갈지 모르겠다면</h3>
+<button type="button" style="min-height: 44px; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700">랜덤 뽑기</button>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #D4D4D4; padding-top: 14px; font-size: 12px; color: #555555">관광정보 출처: [데이터 출처 표기]</footer>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2020}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var list = [
+      ['buk', '북구', '화명생태공원', 3, 1], ['geumjeong', '금정구', '범어사', 4, 1], ['gijang', '기장군', '해동용궁사', 6, 1],
+      ['gangseo', '강서구', '가덕도', 1, 2], ['sasang', '사상구', '삼락생태공원', 2, 2], ['busanjin', '부산진구', '서면', 3, 2],
+      ['dongnae', '동래구', '동래읍성', 4, 2], ['haeundae', '해운대구', '해운대', 6, 2],
+      ['saha', '사하구', '감천문화마을', 2, 3], ['dong', '동구', '초량이바구길', 3, 3], ['yeonje', '연제구', '온천천', 4, 3], ['suyeong', '수영구', '광안리', 5, 3],
+      ['seo', '서구', '송도', 2, 4], ['jung', '중구', '자갈치시장', 3, 4], ['nam', '남구', '이기대', 5, 4],
+      ['yeongdo', '영도구', '태종대', 4, 5]
+    ];
+    var selected = ['suyeong', 'haeundae'];
+    return {
+      stories: [{ district: '수영구', place: '광안리' }, { district: '해운대구', place: '해운대' }],
+      districts: list.map(function (row) {
+        var on = selected.indexOf(row[0]) !== -1;
+        return {
+          name: row[1], spot: row[2], short: row[1].replace('구', '').replace('군', ''), pressed: on ? 'true' : 'false',
+          chipStyle: 'min-height: 44px; padding: 0 10px; border-radius: 999px; font-size: 13px; text-align: left; ' +
+            (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111; font-weight: 700' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD'),
+          tileStyle: 'grid-column: ' + row[3] + '; grid-row: ' + row[4] + '; display: grid; place-items: center; padding: 0; border-radius: 8px; font-size: 12px; font-weight: 700; ' +
+            (on ? 'background: #111111; color: #FFFFFF' : 'background: #FFFFFF; color: #444444; border: 1px solid #CFCFCF')
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

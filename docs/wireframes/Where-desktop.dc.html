@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 어디 갈까 · 데스크톱</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; min-height: 100%">
+
+<header style="border-bottom: 1px solid #D4D4D4">
+<div style="max-width: 1360px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 20px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">홈</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">어디 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">날씨 대안</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">AI 도슨트</a>
+</nav>
+<a href="#" style="padding: 12px 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</div>
+</header>
+
+<main style="max-width: 1360px; margin: 0 auto; padding: 20px 24px 40px; display: flex; flex-direction: column; gap: 16px">
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid #D4D4D4; border-radius: 999px">
+<span style="font-size: 15px"><strong>수영구 · 해운대구</strong> <span style="color: #555555">/ 10.24 (토) – 10.26 (월) · 2박 3일</span></span>
+<button type="button" style="min-height: 40px; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700">조건 바꾸기</button>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+<sc-for list="{{catChips}}" as="c" hint-placeholder-count="5">
+<button type="button" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+<span style="width: 1px; height: 28px; background: #D4D4D4" aria-hidden="true"></span>
+<button type="button" aria-pressed="{{storyPressed}}" onClick="{{toggleStory}}" style="{{storyStyle}}">▶ 이야기 있는 곳만</button>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch">
+
+<section aria-labelledby="w-list" style="flex: 1 1 320px; max-width: 360px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="padding: 12px 14px; background: #F4F4F4; border-radius: 14px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px">내 취향 <strong>느긋한 골목 탐험가</strong> · 잘 맞는 곳을 위로</span>
+<div role="group" aria-label="정렬" style="display: flex; gap: 6px">
+<button type="button" aria-pressed="{{tastePressed}}" onClick="{{sortTaste}}" style="{{tasteSortStyle}}">내 취향순</button>
+<button type="button" aria-pressed="{{namePressed}}" onClick="{{sortName}}" style="{{nameSortStyle}}">이름순</button>
+</div>
+</div>
+<h2 id="w-list" style="margin: 4px 0 0; font-size: 15px; font-weight: 700">{{countLabel}}</h2>
+<div style="display: flex; flex-direction: column; gap: 8px; max-height: 560px; overflow-y: auto; padding-right: 4px">
+<sc-for list="{{rows}}" as="p" hint-placeholder-count="6">
+<button type="button" onClick="{{p.select}}" style="{{p.rowStyle}}">
+<span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 3px; text-align: left; min-width: 0">
+<span style="font-size: 11px; color: #555555">{{p.gu}} · {{p.cat}}</span>
+<strong style="font-size: 15px">{{p.name}}</strong>
+<span style="font-size: 12px; color: #333333">{{p.reason}}</span>
+</span>
+</button>
+</sc-for>
+</div>
+</section>
+
+<section aria-label="지도" style="flex: 999 1 480px; min-width: 0; position: relative; min-height: 640px; border-radius: 24px; background: #E9E9E9; overflow: hidden">
+<span style="position: absolute; left: 16px; top: 14px; padding: 6px 12px; border-radius: 999px; background: #FFFFFF; font-size: 12px; color: #444444">카카오맵 · 고른 구 범위로 확대</span>
+<span aria-hidden="true" style="position: absolute; left: 8%; top: 58%; width: 84%; height: 2px; background: #CFCFCF; transform: rotate(-8deg)"></span>
+<span aria-hidden="true" style="position: absolute; left: 30%; top: 10%; width: 2px; height: 80%; background: #CFCFCF"></span>
+<sc-for list="{{pins}}" as="p" hint-placeholder-count="6">
+<button type="button" aria-label="{{p.name}}" onClick="{{p.select}}" style="{{p.pinStyle}}">{{p.pinLabel}}</button>
+</sc-for>
+<span style="position: absolute; left: 70%; top: 18%; width: 48px; height: 48px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 15px; font-weight: 700">5</span>
+<span style="position: absolute; left: calc(70% + 54px); top: calc(18% + 12px); font-size: 11px; color: #444444">묶음 핀</span>
+
+<sc-if value="{{hasPreview}}" hint-placeholder-val="{{ true }}">
+<div style="position: absolute; left: 16px; right: 16px; bottom: 16px; max-width: 420px; padding: 16px; background: #FFFFFF; border-radius: 20px; border: 1px solid #D4D4D4; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; gap: 14px">
+<span style="width: 88px; height: 88px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0">
+<span style="font-size: 12px; color: #555555">{{preview.gu}} · {{preview.cat}}</span>
+<strong style="font-size: 18px">{{preview.name}}</strong>
+<span style="font-size: 13px; color: #333333">{{preview.line}}</span>
+<span style="{{preview.badgeStyle}}">{{preview.badge}}</span>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<button type="button" onClick="{{preview.toggleCandidate}}" style="{{preview.addStyle}}">{{preview.addLabel}}</button>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">이야기 보기 →</a>
+</div>
+</div>
+</sc-if>
+</section>
+
+<aside aria-labelledby="w-cand" style="flex: 1 1 260px; max-width: 300px; min-width: 0; border: 1px solid #D4D4D4; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="w-cand" style="margin: 0; font-size: 17px; font-weight: 700">후보함 <span style="color: #555555; font-weight: 400">{{candCount}}곳</span></h2>
+<sc-if value="{{hasCand}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<sc-for list="{{candRows}}" as="c" hint-placeholder-count="2">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; background: #F4F4F4; border-radius: 12px">
+<span style="font-size: 14px; font-weight: 500">{{c.name}}</span>
+<button type="button" aria-label="{{c.removeLabel}}" onClick="{{c.remove}}" style="min-width: 36px; min-height: 36px; border: 0; border-radius: 50%; background: #FFFFFF; font-size: 13px; cursor: pointer">✕</button>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{noCand}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 16px; border: 1px dashed #BDBDBD; border-radius: 12px; font-size: 14px; color: #444444">마음에 드는 곳을 담아보세요</p>
+</sc-if>
+<a href="#" style="margin-top: auto; min-height: 52px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700">날짜에 배치하기 →</a>
+</aside>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { cat: '전체', storyOnly: false, sort: 'taste', sel: 'gwangalli', cand: ['haeundae', 'dongbaek'] };
+  }
+  renderVals() {
+    var self = this;
+    var s = this.state;
+    var places = [
+      { id: 'gwangalli', name: '광안리해수욕장', gu: '수영구', cat: '해수욕장', story: true, match: 1, x: 38, y: 64 },
+      { id: 'millak', name: '민락수변공원', gu: '수영구', cat: '공원', story: true, match: 3, x: 50, y: 56 },
+      { id: 'suyeong', name: '수영사적공원', gu: '수영구', cat: '유적', story: true, match: 2, x: 34, y: 30 },
+      { id: 'haeundae', name: '해운대해수욕장', gu: '해운대구', cat: '해수욕장', story: true, match: 1, x: 80, y: 60 },
+      { id: 'dongbaek', name: '동백섬', gu: '해운대구', cat: '공원', story: true, match: 3, x: 70, y: 72 },
+      { id: 'dalmaji', name: '해운대 달맞이길', gu: '해운대구', cat: '거리', story: true, match: 3, x: 88, y: 76 },
+      { id: 'weak', name: '[근거가 부족한 장소 예시]', gu: '해운대구', cat: '공원', story: false, match: 3, x: 60, y: 40 }
+    ];
+    var cats = ['전체', '해수욕장', '공원', '거리', '유적'];
+    function chip(on) {
+      return 'min-height: 44px; padding: 0 16px; border-radius: 999px; font-size: 14px; cursor: pointer; ' +
+        (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111; font-weight: 700' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD');
+    }
+    function small(on) {
+      return 'min-height: 36px; padding: 0 12px; border-radius: 999px; font-size: 13px; cursor: pointer; ' +
+        (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111; font-weight: 700' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD');
+    }
+    var shown = places.filter(function (p) {
+      return (s.cat === '전체' || p.cat === s.cat) && (!s.storyOnly || p.story);
+    });
+    shown = shown.slice().sort(function (a, b) {
+      if (s.sort === 'taste') return b.match - a.match;
+      return a.name < b.name ? -1 : 1;
+    });
+    function reason(p) {
+      if (s.sort !== 'taste') return p.story ? '▶ 이야기 있음' : '소개만 있어요';
+      return p.match === 3 ? '내 취향과 잘 맞아요 · 골목 산책' : (p.match === 2 ? '내 취향과 어울려요 · 동네 구경' : (p.story ? '▶ 이야기 있음' : '소개만 있어요'));
+    }
+    var selPlace = places.filter(function (p) { return p.id === s.sel; })[0];
+    var inCand = selPlace ? s.cand.indexOf(selPlace.id) !== -1 : false;
+    function select(id) { return function () { self.setState({ sel: id }); }; }
+    return {
+      catChips: cats.map(function (c) { return { label: c, pressed: c === s.cat ? 'true' : 'false', style: chip(c === s.cat), pick: function () { self.setState({ cat: c }); } }; }),
+      storyPressed: s.storyOnly ? 'true' : 'false',
+      storyStyle: chip(s.storyOnly),
+      toggleStory: function () { self.setState({ storyOnly: !s.storyOnly }); },
+      tastePressed: s.sort === 'taste' ? 'true' : 'false', namePressed: s.sort === 'name' ? 'true' : 'false',
+      tasteSortStyle: small(s.sort === 'taste'), nameSortStyle: small(s.sort === 'name'),
+      sortTaste: function () { self.setState({ sort: 'taste' }); },
+      sortName: function () { self.setState({ sort: 'name' }); },
+      countLabel: '지금 지도 범위의 장소 ' + shown.length + '곳',
+      rows: shown.map(function (p) {
+        var on = p.id === s.sel;
+        return {
+          name: p.name, gu: p.gu, cat: p.cat, reason: reason(p), select: select(p.id),
+          rowStyle: 'display: flex; gap: 12px; align-items: center; width: 100%; padding: 10px; border-radius: 14px; cursor: pointer; ' +
+            (on ? 'background: #EDEDED; border: 1px solid #111111' : 'background: #FFFFFF; border: 1px solid #D4D4D4')
+        };
+      }),
+      pins: shown.map(function (p) {
+        var on = p.id === s.sel;
+        var inC = s.cand.indexOf(p.id) !== -1;
+        return {
+          name: p.name, select: select(p.id), pinLabel: inC ? '✓' : (p.story ? '▶' : '·'),
+          pinStyle: 'position: absolute; left: ' + p.x + '%; top: ' + p.y + '%; transform: translate(-50%, -50%); width: ' + (on ? 48 : 40) + 'px; height: ' + (on ? 48 : 40) + 'px; border-radius: 50%; cursor: pointer; font-size: 14px; font-weight: 700; ' +
+            (on ? 'background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF' : 'background: #FFFFFF; color: #111111; border: 2px solid #111111')
+        };
+      }),
+      hasPreview: !!selPlace,
+      preview: selPlace ? {
+        name: selPlace.name, gu: selPlace.gu, cat: selPlace.cat,
+        line: selPlace.story ? '[해설 첫 문장]' : '[공공데이터 소개 원문 일부]',
+        badge: selPlace.story ? '▶ 듣기 가능' : '소개만 있어요',
+        badgeStyle: 'align-self: flex-start; padding: 3px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; ' + (selPlace.story ? 'background: #111111; color: #FFFFFF' : 'background: #EDEDED; color: #333333'),
+        addLabel: inCand ? '✓ 후보함에 담김' : '♡ 후보함 담기',
+        addStyle: 'min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 700; cursor: pointer; ' + (inCand ? 'background: #FFFFFF; color: #111111; border: 1px solid #111111' : 'background: #111111; color: #FFFFFF; border: 1px solid #111111'),
+        toggleCandidate: function () {
+          self.setState({ cand: inCand ? s.cand.filter(function (id) { return id !== selPlace.id; }) : s.cand.concat([selPlace.id]) });
+        }
+      } : { name: '', gu: '', cat: '', line: '', badge: '', badgeStyle: '', addLabel: '', addStyle: '', toggleCandidate: function () {} },
+      candCount: s.cand.length,
+      hasCand: s.cand.length > 0,
+      noCand: s.cand.length === 0,
+      candRows: s.cand.map(function (id) {
+        var p = places.filter(function (x) { return x.id === id; })[0];
+        return { name: p.name, removeLabel: p.name + ' 후보함에서 빼기', remove: function () { self.setState({ cand: s.cand.filter(function (c) { return c !== id; }) }); } };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

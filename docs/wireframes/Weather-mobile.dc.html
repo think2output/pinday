@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 날씨 대안 · 휴대폰</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF">
+<header style="padding: 10px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #D4D4D4">
+<a href="#" aria-label="뒤로" style="min-width: 44px; min-height: 44px; display: grid; place-items: center; text-decoration: none; font-size: 18px">←</a>
+<strong style="font-size: 16px">날씨 대안</strong>
+</header>
+<div role="tablist" aria-label="날짜별 날씨" style="display: flex; gap: 6px; padding: 12px 12px 0">
+<button type="button" role="tab" aria-selected="false" style="flex: 1; min-height: 84px; border: 1px solid #BDBDBD; border-radius: 14px; background: #FFFFFF; font-size: 13px; font-weight: 700">1일차<span style="display: block; font-size: 20px">☀</span><span style="display: block; font-size: 11px; font-weight: 400">맑음</span></button>
+<button type="button" role="tab" aria-selected="true" style="flex: 1; min-height: 84px; border: 0; border-radius: 14px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700">2일차<span style="display: block; font-size: 20px">☂</span><span style="display: block; font-size: 11px; font-weight: 400">비 [N]%</span></button>
+<button type="button" role="tab" aria-selected="false" style="flex: 1; min-height: 84px; border: 1px solid #BDBDBD; border-radius: 14px; background: #FFFFFF; font-size: 13px; font-weight: 700">3일차<span style="display: block; font-size: 20px">…</span><span style="display: block; font-size: 11px; font-weight: 400">예보 전</span></button>
+</div>
+<p style="margin: 12px; padding: 10px 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px">비 예보가 있어요. 야외 장소마다 근처 실내 대안을 준비했어요.</p>
+<section aria-label="2일차 일정" style="padding: 0 12px; display: flex; flex-direction: column; gap: 10px">
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 8px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 11px; font-weight: 700">1</span><strong style="font-size: 15px">광안리해수욕장</strong><span style="padding: 2px 8px; border-radius: 999px; background: #EDEDED; font-size: 11px; font-weight: 700">야외</span></div>
+<p style="margin: 0; font-size: 12px; font-weight: 700">근처 실내 대안</p>
+<div style="display: flex; align-items: center; gap: 10px; padding: 8px; background: #F4F4F4; border-radius: 12px">
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0"><strong style="font-size: 13px">[근처 실내 장소 1]</strong><span style="font-size: 11px; color: #444444">직선 약 [N]km · ▶ 이야기</span></span>
+<button type="button" style="min-height: 40px; padding: 0 12px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 12px; font-weight: 700">바꾸기</button>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 8px; background: #F4F4F4; border-radius: 12px">
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0"><strong style="font-size: 13px">[근처 실내 장소 2]</strong><span style="font-size: 11px; color: #444444">직선 약 [N]km · ▶ 이야기</span></span>
+<button type="button" style="min-height: 40px; padding: 0 12px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 12px; font-weight: 700">바꾸기</button>
+</div>
+</div>
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 12px; display: flex; align-items: center; gap: 8px">
+<span style="width: 24px; height: 24px; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 11px; font-weight: 700">2</span><strong style="font-size: 15px">[실내 장소]</strong><span style="padding: 2px 8px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 11px; font-weight: 700">실내 · 바꾼 장소</span>
+<button type="button" style="margin-left: auto; min-height: 36px; padding: 0 10px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 11px">되돌리기</button>
+</div>
+</section>
+<p style="position: absolute; left: 12px; right: 12px; bottom: 16px; margin: 0; font-size: 11px; color: #555555">날씨 출처: 기상청 예보 · 일정은 직접 바꿀 때만 바뀌어요</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

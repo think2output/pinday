@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 홈 · 휴대폰 · 다시 온 사람</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1720px; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF">
+
+<header style="padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #D4D4D4">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 18px">
+<span style="width: 24px; height: 24px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</header>
+<nav aria-label="주요 메뉴" style="display: flex; gap: 4px; padding: 10px 16px; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #EDEDED">
+<a href="#" aria-current="page" style="padding: 10px 14px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">홈</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" style="padding: 10px 14px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까? →</a>
+</nav>
+
+<main style="padding: 24px 16px 32px; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 22px; font-weight: 900; letter-spacing: -0.02em">다시 오셨네요. 이어서 계획해볼까요?</p>
+
+<section aria-labelledby="card-title" style="background: #111111; color: #FFFFFF; border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<h2 id="card-title" style="margin: 0; font-size: 14px; font-weight: 500; color: #D9D9D9">내 여행</h2>
+<span style="font-size: 13px; color: #D9D9D9">수영구 · 해운대구</span>
+</div>
+<div role="img" aria-label="모은 핀 3개" style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; max-width: 220px">
+<sc-for list="{{dots}}" as="dot" hint-placeholder-count="14">
+<span style="{{dot.style}}"></span>
+</sc-for>
+</div>
+<p style="margin: 0; font-size: 44px; line-height: 1; font-weight: 900; letter-spacing: -0.03em">2박 3일</p>
+<p style="margin: 0; font-size: 14px; color: #D9D9D9">10.24 (토) – 10.26 (월) · 후보 3곳 · 일정 2곳</p>
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #444444; padding-top: 14px">
+<sc-for list="{{days}}" as="day" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px">
+<span style="width: 40px; color: #D9D9D9">{{day.label}}</span>
+<span style="height: 10px; border-radius: 999px; background: #333333; flex: 1; display: flex">
+<span style="{{day.barStyle}}"></span>
+</span>
+<span style="width: 28px; text-align: right">{{day.count}}곳</span>
+</div>
+</sc-for>
+</div>
+<a href="#" style="min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: #FFFFFF; color: #111111; text-decoration: none; font-size: 15px; font-weight: 700">이어서 계획하기 →</a>
+</section>
+
+<section aria-labelledby="cond-title" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="cond-title" style="margin: 0; font-size: 14px; font-weight: 700">여행 조건</h2>
+<p style="margin: 0; font-size: 13px; color: #555555">수영구 · 해운대구 / 10.24 – 10.26</p>
+</div>
+<button type="button" style="min-height: 44px; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700">바꾸기</button>
+</section>
+<p style="margin: -12px 0 0; font-size: 12px; color: #555555">'바꾸기'를 누르면 처음 온 사람 화면의 지역·기간 입력이 펼쳐져요</p>
+
+<section aria-labelledby="r-story" style="display: flex; flex-direction: column; gap: 12px">
+<h2 id="r-story" style="margin: 0; font-size: 18px; font-weight: 900">내 여행 지역의 이야기</h2>
+<div style="display: flex; gap: 12px; overflow-x: auto; margin: 0 -16px; padding: 0 16px 4px">
+<article style="flex: 0 0 240px; border: 1px solid #D4D4D4; border-radius: 16px; padding: 14px; display: flex; gap: 12px; align-items: center">
+<div style="width: 64px; height: 64px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h3 style="margin: 0; font-size: 15px">광안리</h3>
+<p style="margin: 0; font-size: 12px; color: #555555">[해설 첫 줄]</p>
+<a href="#" style="font-size: 13px; font-weight: 700">이야기 보기 →</a>
+</div>
+</article>
+<article style="flex: 0 0 240px; border: 1px solid #D4D4D4; border-radius: 16px; padding: 14px; display: flex; gap: 12px; align-items: center">
+<div style="width: 64px; height: 64px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h3 style="margin: 0; font-size: 15px">해운대</h3>
+<p style="margin: 0; font-size: 12px; color: #555555">[해설 첫 줄]</p>
+<a href="#" style="font-size: 13px; font-weight: 700">이야기 보기 →</a>
+</div>
+</article>
+</div>
+</section>
+
+<section aria-label="더 둘러보기" style="display: flex; flex-direction: column; gap: 12px">
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: center">
+<div style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">그림</div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+<h3 style="margin: 0; font-size: 16px">내 여행 스타일은?</h3>
+<a href="#" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">테스트 하기</a>
+</div>
+</div>
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: center">
+<div style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">그림</div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+<h3 style="margin: 0; font-size: 16px">어디 갈지 모르겠다면</h3>
+<button type="button" style="min-height: 44px; padding: 0 16px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700">랜덤 뽑기</button>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #D4D4D4; padding-top: 14px; font-size: 12px; color: #555555">관광정보 출처: [데이터 출처 표기]</footer>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1720}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var dots = [];
+    for (var i = 0; i < 14; i++) {
+      dots.push({ style: 'width: 18px; height: 18px; border-radius: 50%; ' + (i < 3 ? 'background: #FFFFFF' : 'border: 1px solid #777777') });
+    }
+    var days = [['1일차', 2], ['2일차', 0], ['3일차', 0]].map(function (d) {
+      return { label: d[0], count: d[1], barStyle: 'height: 10px; border-radius: 999px; background: #FFFFFF; width: ' + (d[1] * 25) + '%' };
+    });
+    return { dots: dots, days: days };
+  }
+}
+</script>
+</body>
+</html>

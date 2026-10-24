@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay AI 도슨트 목록 · 데스크톱</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button,input{font-family:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; min-height: 100%">
+
+<header style="border-bottom: 1px solid #D4D4D4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 20px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">홈</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">날씨 대안</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">AI 도슨트</a>
+</nav>
+<a href="#" style="padding: 12px 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: flex; flex-direction: column; gap: 48px">
+
+<section aria-labelledby="l-title" style="display: flex; flex-direction: column; gap: 10px">
+<h1 id="l-title" style="margin: 0; font-size: 48px; font-weight: 900; letter-spacing: -0.03em">부산을 이야기로 만나보세요</h1>
+<p style="margin: 0; font-size: 17px; color: #444444">근거 자료로 만든 장소 해설을 읽고, 들어보세요.</p>
+</section>
+
+<section aria-labelledby="l-mine" style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="l-mine" style="margin: 0; font-size: 22px; font-weight: 900">내 여행 장소의 이야기</h2>
+<p style="margin: 0; font-size: 13px; color: #555555">후보함·일정에 담은 장소예요 · 담은 곳이 없으면 이 영역은 숨겨요</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 14px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 64px; height: 64px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #555555">일정 1일차</span><strong style="font-size: 16px">광안리해수욕장</strong><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 14px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 64px; height: 64px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #555555">일정 1일차</span><strong style="font-size: 16px">해운대해수욕장</strong><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 14px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 64px; height: 64px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; color: #555555">후보함</span><strong style="font-size: 16px">이기대</strong><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="l-week" style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="l-week" style="margin: 0; font-size: 22px; font-weight: 900">이번 주 부산 이야기</h2>
+<p style="margin: 0; font-size: 13px; color: #555555">PinDay가 고른 이야기예요</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none">
+<span style="height: 180px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">장소 사진</span>
+<span style="padding: 16px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #555555">사하구 · 문화마을</span><strong style="font-size: 18px">감천문화마을</strong><span style="font-size: 14px; color: #333333">[해설 첫 문장]</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none">
+<span style="height: 180px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">장소 사진</span>
+<span style="padding: 16px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #555555">영도구 · 공원</span><strong style="font-size: 18px">태종대</strong><span style="font-size: 14px; color: #333333">[해설 첫 문장]</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none">
+<span style="height: 180px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">장소 사진</span>
+<span style="padding: 16px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 12px; color: #555555">동래구 · 유적</span><strong style="font-size: 18px">동래읍성</strong><span style="font-size: 14px; color: #333333">[해설 첫 문장]</span></span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="l-browse" style="display: flex; flex-direction: column; gap: 16px; padding-top: 32px; border-top: 1px solid #D4D4D4">
+<h2 id="l-browse" style="margin: 0; font-size: 22px; font-weight: 900">모든 이야기 둘러보기</h2>
+
+<label style="display: flex; flex-direction: column; gap: 6px; max-width: 480px">
+<span style="font-size: 13px; font-weight: 700">장소 이름 찾기</span>
+<input type="search" placeholder="예: 해운대, 범어사" style="min-height: 48px; padding: 0 18px; border: 1px solid #BDBDBD; border-radius: 999px; font-size: 15px">
+</label>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 700">지역 <span style="font-weight: 400; color: #555555">· 홈에서 고른 구가 있으면 미리 선택돼요</span></span>
+<div role="group" aria-label="지역 거르기" style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px">
+<sc-for list="{{guChips}}" as="g" hint-placeholder-count="17">
+<button type="button" aria-pressed="{{g.pressed}}" onClick="{{g.pick}}" style="{{g.style}}">{{g.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 700">분류 <span style="font-weight: 400; color: #555555">· 관광 데이터에 원래 있는 분류만 써요</span></span>
+<div role="group" aria-label="분류 거르기" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{catChips}}" as="c" hint-placeholder-count="8">
+<button type="button" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<p style="margin: 0; font-size: 14px; color: #444444" aria-live="polite">{{countLabel}}</p>
+
+<sc-if value="{{hasResults}}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+<sc-for list="{{results}}" as="p" hint-placeholder-count="6">
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none">
+<span style="height: 140px; background: #E6E6E6; display: grid; place-items: center; font-size: 12px; color: #555555">장소 사진</span>
+<span style="padding: 14px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; color: #555555">{{p.gu}} · {{p.cat}}</span>
+<strong style="font-size: 17px">{{p.name}}</strong>
+<span style="font-size: 13px; color: #333333">{{p.line}}</span>
+<span style="{{p.badgeStyle}}">{{p.badge}}</span>
+</span>
+</a>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
+<div style="padding: 32px; border: 1px dashed #BDBDBD; border-radius: 18px; text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center">
+<p style="margin: 0; font-size: 16px; font-weight: 700">이 조건의 이야기가 아직 없어요</p>
+<button type="button" onClick="{{resetFilters}}" style="min-height: 44px; padding: 0 18px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700; cursor: pointer">조건 초기화</button>
+</div>
+</sc-if>
+</section>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { gu: '전체', cat: '전체' };
+  }
+  renderVals() {
+    var self = this;
+    var gus = ['전체', '중구', '서구', '동구', '영도구', '부산진구', '동래구', '남구', '북구', '해운대구', '사하구', '금정구', '강서구', '연제구', '수영구', '사상구', '기장군'];
+    var cats = ['전체', '해수욕장', '사찰', '공원', '문화마을', '유적', '시장', '거리'];
+    var places = [
+      ['광안리해수욕장', '수영구', '해수욕장', true], ['해운대해수욕장', '해운대구', '해수욕장', true],
+      ['감천문화마을', '사하구', '문화마을', true], ['태종대', '영도구', '공원', true],
+      ['동래읍성', '동래구', '유적', true], ['범어사', '금정구', '사찰', true],
+      ['해동용궁사', '기장군', '사찰', true], ['자갈치시장', '중구', '시장', true],
+      ['이기대', '남구', '공원', true], ['송도해수욕장', '서구', '해수욕장', true],
+      ['초량이바구길', '동구', '거리', true], ['[근거가 부족한 장소 예시]', '수영구', '공원', false]
+    ];
+    var gu = this.state.gu;
+    var cat = this.state.cat;
+    function chipStyle(on) {
+      return 'flex-shrink: 0; min-height: 44px; padding: 0 16px; border-radius: 999px; font-size: 14px; cursor: pointer; white-space: nowrap; ' +
+        (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111; font-weight: 700' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD');
+    }
+    var results = places.filter(function (p) {
+      return (gu === '전체' || p[1] === gu) && (cat === '전체' || p[2] === cat);
+    }).map(function (p) {
+      return {
+        name: p[0], gu: p[1], cat: p[2],
+        line: p[3] ? '[해설 첫 문장]' : '[공공데이터 소개 원문 일부]',
+        badge: p[3] ? '▶ 듣기 가능' : '소개만 있어요',
+        badgeStyle: 'align-self: flex-start; margin-top: 4px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; ' +
+          (p[3] ? 'background: #111111; color: #FFFFFF' : 'background: #EDEDED; color: #333333')
+      };
+    });
+    return {
+      guChips: gus.map(function (g) {
+        return { label: g, pressed: g === gu ? 'true' : 'false', style: chipStyle(g === gu), pick: function () { self.setState({ gu: g }); } };
+      }),
+      catChips: cats.map(function (c) {
+        return { label: c, pressed: c === cat ? 'true' : 'false', style: chipStyle(c === cat), pick: function () { self.setState({ cat: c }); } };
+      }),
+      results: results,
+      hasResults: results.length > 0,
+      noResults: results.length === 0,
+      countLabel: (gu === '전체' ? '부산 전체' : gu) + (cat === '전체' ? '' : ' · ' + cat) + ' 이야기 ' + results.length + '편 (예시 데이터)',
+      resetFilters: function () { self.setState({ gu: '전체', cat: '전체' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 언제 갈까 · 휴대폰</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF">
+
+<header style="padding: 10px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #D4D4D4">
+<a href="#" aria-label="뒤로" style="min-width: 44px; min-height: 44px; display: grid; place-items: center; text-decoration: none; font-size: 18px">←</a>
+<div style="display: flex; flex-direction: column; flex: 1; min-width: 0">
+<strong style="font-size: 16px">언제 갈까?</strong>
+<span style="font-size: 12px; color: #555555">수영구 · 해운대구 · 10.24–10.26</span>
+</div>
+</header>
+
+<div role="tablist" aria-label="날짜" style="display: flex; gap: 6px; padding: 12px 12px 0">
+<button type="button" role="tab" aria-selected="true" style="flex: 1; min-height: 56px; border: 0; border-radius: 14px; background: #111111; color: #FFFFFF; font-size: 15px; font-weight: 700">1일차<span style="display: block; font-size: 11px; font-weight: 400">10.24 · 2곳</span></button>
+<button type="button" role="tab" aria-selected="false" style="flex: 1; min-height: 56px; border: 1px solid #BDBDBD; border-radius: 14px; background: #FFFFFF; font-size: 15px; font-weight: 700">2일차<span style="display: block; font-size: 11px; font-weight: 400; color: #555555">10.25 · 1곳</span></button>
+<button type="button" role="tab" aria-selected="false" style="flex: 1; min-height: 56px; border: 1px solid #BDBDBD; border-radius: 14px; background: #FFFFFF; font-size: 15px; font-weight: 700">3일차<span style="display: block; font-size: 11px; font-weight: 400; color: #555555">10.26 · 0곳</span></button>
+</div>
+
+<div style="position: relative; margin: 12px; height: 160px; border-radius: 18px; background: #E9E9E9; overflow: hidden">
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><polyline points="38,70 72,38" fill="none" stroke="#111111" stroke-width="0.8" stroke-dasharray="2 1.5"></polyline></svg>
+<span style="position: absolute; left: 38%; top: 70%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 12px; font-weight: 700">1</span>
+<span style="position: absolute; left: 72%; top: 38%; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 12px; font-weight: 700">2</span>
+</div>
+
+<section aria-label="1일차 일정" style="padding: 0 12px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid #D4D4D4; border-radius: 14px">
+<span aria-hidden="true" style="color: #777777">⋮⋮</span>
+<span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">1</span>
+<strong style="flex: 1; font-size: 16px">동백섬</strong>
+<button type="button" aria-label="동백섬 더보기" style="width: 44px; height: 44px; border: 1px solid #BDBDBD; border-radius: 50%; background: #FFFFFF; font-size: 18px">⋯</button>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid #D4D4D4; border-radius: 14px">
+<span aria-hidden="true" style="color: #777777">⋮⋮</span>
+<span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">2</span>
+<strong style="flex: 1; font-size: 16px">해운대해수욕장</strong>
+<button type="button" aria-label="해운대해수욕장 더보기" style="width: 44px; height: 44px; border: 1px solid #BDBDBD; border-radius: 50%; background: #FFFFFF; font-size: 18px">⋯</button>
+</div>
+<p style="margin: 0; font-size: 11px; color: #555555">⋮⋮를 꾹 눌러 끌면 순서가 바뀌어요</p>
+</section>
+
+<section aria-labelledby="mw-left" style="margin: 14px 12px 0; padding-top: 14px; border-top: 1px solid #D4D4D4; display: flex; flex-direction: column; gap: 8px">
+<h2 id="mw-left" style="margin: 0; font-size: 15px; font-weight: 700">아직 날짜 없는 곳 <span style="font-weight: 400; color: #555555">3곳</span></h2>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 8px 8px 8px 14px; background: #F4F4F4; border-radius: 999px"><span style="font-size: 14px">민락수변공원</span><button type="button" style="min-height: 40px; padding: 0 14px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700">+ 1일차에 넣기</button></div>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 8px 8px 8px 14px; background: #F4F4F4; border-radius: 999px"><span style="font-size: 14px">수영사적공원</span><button type="button" style="min-height: 40px; padding: 0 14px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700">+ 1일차에 넣기</button></div>
+</section>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 12px 14px; background: #FFFFFF; border-top: 1px solid #D4D4D4; display: flex; gap: 8px">
+<a href="#" style="flex: 1; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">이동 확인 →</a>
+<a href="#" style="flex: 1; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">날씨 확인 →</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 어디 갈까 · 휴대폰 · 핀 누름</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #E9E9E9">
+
+<span aria-hidden="true" style="position: absolute; left: 0; top: 420px; width: 100%; height: 2px; background: #CFCFCF; transform: rotate(-8deg)"></span>
+<span aria-hidden="true" style="position: absolute; left: 120px; top: 120px; width: 2px; height: 420px; background: #CFCFCF"></span>
+<span style="position: absolute; left: 165px; top: 330px; width: 52px; height: 52px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 15px; font-weight: 700">▶</span>
+<span style="position: absolute; left: 140px; top: 390px; padding: 4px 10px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700">광안리해수욕장</span>
+<span style="position: absolute; left: 250px; top: 250px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">✓</span>
+<span style="position: absolute; left: 300px; top: 360px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">▶</span>
+<span style="position: absolute; left: 60px; top: 230px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">▶</span>
+
+<div style="position: absolute; left: 12px; right: 12px; top: 12px; display: flex; align-items: center; gap: 8px; padding: 6px 6px 6px 8px; background: #FFFFFF; border-radius: 999px; border: 1px solid #D4D4D4">
+<a href="#" aria-label="뒤로" style="min-width: 40px; min-height: 40px; display: grid; place-items: center; text-decoration: none; font-size: 18px">←</a>
+<span style="flex: 1; font-size: 13px; min-width: 0"><strong>수영구 · 해운대구</strong> <span style="color: #555555">· 10.24–10.26</span></span>
+<button type="button" style="min-height: 40px; padding: 0 12px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 13px; font-weight: 700">바꾸기</button>
+</div>
+
+<div style="position: absolute; left: 12px; right: 12px; bottom: 88px; padding: 14px; background: #FFFFFF; border-radius: 20px; border: 1px solid #D4D4D4; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; gap: 12px">
+<span style="width: 80px; height: 80px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1">
+<span style="font-size: 11px; color: #555555">수영구 · 해수욕장</span>
+<strong style="font-size: 17px">광안리해수욕장</strong>
+<span style="font-size: 13px; color: #333333">[해설 첫 문장]</span>
+<span style="align-self: flex-start; padding: 3px 8px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 11px; font-weight: 700">▶ 듣기 가능</span>
+</div>
+<button type="button" aria-label="미리보기 닫기" style="width: 36px; height: 36px; flex-shrink: 0; border: 0; border-radius: 50%; background: #F4F4F4; font-size: 13px">✕</button>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<button type="button" style="min-height: 48px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 14px; font-weight: 700">♡ 후보함 담기</button>
+<a href="#" style="min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">이야기 보기 →</a>
+</div>
+<p style="margin: 0; font-size: 11px; color: #555555">핀을 누르면 목록 서랍 대신 이 카드가 떠요 · 바깥을 누르거나 ✕로 닫기</p>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 76px; box-sizing: border-box; padding: 10px 12px 14px; background: #FFFFFF; border-top: 1px solid #D4D4D4">
+<a href="#" style="height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700"><span>후보 2곳</span><span>날짜에 배치하기 →</span></a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

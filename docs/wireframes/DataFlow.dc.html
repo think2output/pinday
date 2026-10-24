@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 데이터 연결 지도</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+</style>
+</helmet>
+<div style="width: 1840px; height: 1640px; box-sizing: border-box; padding: 64px; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; display: flex; flex-direction: column; gap: 20px">
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-size: 40px; font-weight: 900; letter-spacing: -0.02em">데이터가 어떻게 연결되나요</h1>
+<p style="margin: 0; font-size: 17px; color: #444444">위에서 아래로 흘러요: 바깥 데이터 → 우리 서버에 정리해 저장 → 사용자의 '내 여행 정보' → 각 화면</p>
+</div>
+
+<section aria-labelledby="b1" style="padding: 20px; border: 1px solid #D4D4D4; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="b1" style="margin: 0; font-size: 18px; font-weight: 700">① 바깥 데이터 (API)</h2>
+<div style="display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>한국관광공사 TourAPI</b><br>장소 목록·설명·사진</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>부산관광아카이브</b><br>사진·기록<br><span style="color: #555555">API 제공 여부 확인 필요</span></div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>국가유산청</b><br>근처 유산 (도슨트 근거)</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>OpenAI</b><br>도슨트 해설·들려주기 원고</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>부산 지역 언론</b><br>최근 소식 제목</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>카카오맵</b><br>지도 표시</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>카카오모빌리티</b><br>자동차 경로</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>ODsay</b><br>대중교통 경로</div>
+<div style="padding: 12px; background: #F4F4F4; border-radius: 12px; font-size: 13px; line-height: 1.5"><b>기상청</b><br>날씨 예보</div>
+</div>
+</section>
+
+<p aria-hidden="true" style="margin: -8px 0; text-align: center; font-size: 22px">↓</p>
+
+<section aria-labelledby="b2" style="padding: 20px; border: 1px solid #D4D4D4; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="b2" style="margin: 0; font-size: 18px; font-weight: 700">② 우리 서버에 정리해 저장하는 것 <span style="font-weight: 400; color: #555555">· 사용자가 기다리지 않고, API 비용도 줄이려고</span></h2>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 14px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>장소 목록</b> (부산 관광지 정리본)<br>TourAPI에서 받아 정리 · 월 1회 갱신</div>
+<div style="padding: 14px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>도슨트 해설 묶음</b><br>해설·현장 포인트·들려주기 원고 · 월 1회 미리 만들기</div>
+<div style="padding: 14px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>경로 결과</b><br>같은 구간은 한 번 받은 결과를 다시 사용</div>
+<div style="padding: 14px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>날씨·최근 소식</b><br>자주 바뀌어서 짧게만 저장</div>
+</div>
+</section>
+
+<p aria-hidden="true" style="margin: -8px 0; text-align: center; font-size: 22px">↓</p>
+
+<section aria-labelledby="b3" style="padding: 20px; background: #111111; color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; gap: 12px">
+<h2 id="b3" style="margin: 0; font-size: 18px; font-weight: 700">③ 내 여행 정보 <span style="font-weight: 400; color: #D9D9D9">· 사용자의 브라우저에 저장 (계정 없음) · 모든 화면이 같은 정보를 함께 봐요</span></h2>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 14px; border: 1px solid #555555; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>지역·기간</b><br>고른 구 (없으면 부산 전체), 출발일·도착일</div>
+<div style="padding: 14px; border: 1px solid #555555; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>취향 유형</b><br>취향 테스트 결과</div>
+<div style="padding: 14px; border: 1px solid #555555; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>후보함</b><br>담은 장소들</div>
+<div style="padding: 14px; border: 1px solid #555555; border-radius: 12px; font-size: 14px; line-height: 1.6"><b>일정</b><br>날짜별 장소와 순서 (같은 장소는 하루에만)</div>
+</div>
+</section>
+
+<p aria-hidden="true" style="margin: -8px 0; text-align: center; font-size: 22px">↓</p>
+
+<section aria-labelledby="b4" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="b4" style="margin: 0; font-size: 18px; font-weight: 700">④ 화면별로 무엇을 읽고 바꾸나요 <span style="font-weight: 400; color: #555555">· 쓰기 = 이 화면에서 바뀜 · 읽기 = 보여주기만</span></h2>
+<table style="width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5">
+<thead>
+<tr style="background: #EDEDED">
+<th scope="col" style="padding: 10px 12px; text-align: left; width: 170px">화면</th>
+<th scope="col" style="padding: 10px 12px; text-align: left; width: 170px">지역·기간</th>
+<th scope="col" style="padding: 10px 12px; text-align: left; width: 120px">취향 유형</th>
+<th scope="col" style="padding: 10px 12px; text-align: left; width: 170px">후보함</th>
+<th scope="col" style="padding: 10px 12px; text-align: left; width: 190px">일정</th>
+<th scope="col" style="padding: 10px 12px; text-align: left">서버·바깥 데이터</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">홈</th><td style="padding: 10px 12px"><b>쓰기</b> · 읽기</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">읽기 (내 여행 카드)</td><td style="padding: 10px 12px">읽기 (내 여행 카드)</td><td style="padding: 10px 12px">장소 목록 (구별 장소 수) · 도슨트 해설 (이야기 카드)</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">랜덤 뽑기 <span style="font-weight: 400; color: #555555">(홈 안)</span></th><td style="padding: 10px 12px">읽기</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px"><b>쓰기</b> (담기)</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">장소 목록 · 해설 첫 문장</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">취향 테스트</th><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px"><b>쓰기</b></td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">장소 목록 · 해설 (어울리는 이야기 3편)</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">어디 갈까?</th><td style="padding: 10px 12px">읽기 · <b>쓰기</b> (바꾸기)</td><td style="padding: 10px 12px">읽기 (취향순)</td><td style="padding: 10px 12px">읽기 · <b>쓰기</b></td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">장소 목록 · 카카오맵 · 해설 첫 문장</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">언제 갈까?</th><td style="padding: 10px 12px">읽기</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">읽기 (날짜 없는 곳)</td><td style="padding: 10px 12px"><b>쓰기</b> (넣기·옮기기·빼기·순서)</td><td style="padding: 10px 12px">카카오맵 · 날씨 (☂ 표시)</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">어떻게 갈까?</th><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">읽기 (구간 = 이웃한 두 장소)</td><td style="padding: 10px 12px">ODsay · 카카오모빌리티 · 카카오맵 (경로 결과 저장분)</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">날씨 대안</th><td style="padding: 10px 12px">읽기</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px"><b>쓰기</b> (장소만 교체, 날짜·순서 유지)</td><td style="padding: 10px 12px">기상청 · 장소 목록 (실내 장소) · 해설</td></tr>
+<tr style="border-bottom: 1px solid #E4E4E4"><th scope="row" style="padding: 10px 12px; text-align: left">도슨트 목록</th><td style="padding: 10px 12px">읽기 (구 미리 선택)</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px">읽기 (내 여행 장소)</td><td style="padding: 10px 12px">읽기 (내 여행 장소)</td><td style="padding: 10px 12px">도슨트 해설 묶음 · 장소 목록</td></tr>
+<tr><th scope="row" style="padding: 10px 12px; text-align: left">도슨트 상세</th><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px; color: #555555">—</td><td style="padding: 10px 12px"><b>쓰기</b> (담기)</td><td style="padding: 10px 12px"><b>쓰기</b> (일차 고르기 창)</td><td style="padding: 10px 12px">해설·들려주기 원고 · 사진 · 국가유산 · 최근 소식 · 카카오맵 길찾기 링크</td></tr>
+</tbody>
+</table>
+<p style="margin: 6px 0 0; padding: 14px 16px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.6">예시: 도슨트 상세에서 <b>후보함에 담기</b>를 누르면 → 어디 갈까? 지도 핀이 ✓로, 홈 '내 여행 카드'의 점이 하나 켜지고, 언제 갈까?의 '아직 날짜 없는 곳'에 나타나요. 같은 정보를 함께 보기 때문에 따로 맞출 필요가 없어요.</p>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1840,"height":1640}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

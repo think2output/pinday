@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>빈 상태 · 어디 갈까 첫 진입</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #E9E9E9">
+<span style="position: absolute; left: 80px; top: 230px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">▶</span>
+<span style="position: absolute; left: 220px; top: 200px; width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 14px; font-weight: 700">12</span>
+<span style="position: absolute; left: 280px; top: 320px; width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 14px; font-weight: 700">8</span>
+
+<div style="position: absolute; left: 12px; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; background: #FFFFFF; border-radius: 18px; border: 1px solid #D4D4D4">
+<div style="display: flex; align-items: center; gap: 8px">
+<span style="flex: 1; font-size: 13px"><strong>부산 전체</strong> · 10.24–10.26</span>
+<button type="button" style="min-height: 40px; padding: 0 12px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 13px; font-weight: 700">바꾸기</button>
+</div>
+<span style="font-size: 11px; color: #555555">자동으로 정했어요 · 장소를 처음 담을 때 내 여행으로 저장돼요</span>
+</div>
+
+<section aria-labelledby="ew-list" style="position: absolute; left: 0; right: 0; top: 430px; bottom: 76px; background: #FFFFFF; border-radius: 24px 24px 0 0; border-top: 1px solid #D4D4D4; padding: 10px 16px 0; display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="align-self: center; width: 44px; height: 5px; border-radius: 999px; background: #BDBDBD"></span>
+<div style="display: flex; align-items: center; justify-content: space-between">
+<h2 id="ew-list" style="margin: 0; font-size: 16px; font-weight: 700">장소 [N]곳</h2>
+<button type="button" style="min-height: 36px; padding: 0 12px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px">이름순 ▾</button>
+</div>
+<a href="#" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 14px; background: #F4F4F4; border-radius: 14px; text-decoration: none">
+<span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 14px">내 취향순으로 보고 싶다면</strong><span style="font-size: 12px; color: #444444">1분 취향 테스트로 맞춤 순서를 켜요</span></span>
+<span style="font-size: 13px; font-weight: 700">테스트 →</span>
+</a>
+<div style="display: flex; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid #EDEDED">
+<span style="width: 52px; height: 52px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; color: #555555">[구] · [분류]</span><strong style="font-size: 15px">[장소 이름]</strong></span>
+<button type="button" aria-label="후보함 담기" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #111111; background: #FFFFFF; font-size: 16px">♡</button>
+</div>
+</section>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 76px; box-sizing: border-box; padding: 10px 12px 14px; background: #FFFFFF; border-top: 1px solid #D4D4D4">
+<div style="height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 999px; background: #EDEDED; color: #444444; font-size: 14px">마음에 드는 곳을 ♡로 담아보세요</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

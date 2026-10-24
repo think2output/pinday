@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 어떻게 갈까 · 데스크톱</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; min-height: 100%">
+
+<header style="border-bottom: 1px solid #D4D4D4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 20px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">홈</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">어떻게 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">날씨 대안</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">AI 도슨트</a>
+</nav>
+<a href="#" style="padding: 12px 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div role="tablist" aria-label="날짜" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{t.selected}}" onClick="{{t.pick}}" style="{{t.style}}"><span style="display: block; font-size: 17px; font-weight: 700">{{t.label}}</span><span style="display: block; margin-top: 2px; font-size: 12px; font-weight: 400">{{t.sub}}</span></button>
+</sc-for>
+</div>
+
+<sc-if value="{{noSegments}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 28px; border: 1px dashed #BDBDBD; border-radius: 16px; text-align: center; font-size: 15px; color: #444444">{{emptyNote}} · <a href="#">언제 갈까?에서 장소 넣기</a></p>
+</sc-if>
+
+<sc-if value="{{hasSegments}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 22px; font-weight: 900; letter-spacing: -0.02em">{{dayTitle}}</h2>
+<span style="font-size: 14px; color: #444444">이동 합계 약 [N]분 · 대중교통 기준</span>
+</div>
+</sc-if>
+
+<sc-for list="{{segments}}" as="g" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #F4F4F4; border-radius: 14px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">{{g.fromNo}}</span>
+<strong style="font-size: 16px">{{g.from}}</strong>
+</div>
+<div style="margin-left: 28px; padding: 14px 16px; border: 1px solid #D4D4D4; border-radius: 16px; display: flex; flex-direction: column; gap: 12px">
+<div role="group" aria-label="이동 방법" style="display: flex; gap: 6px; flex-wrap: wrap">
+<button type="button" aria-pressed="{{g.transitPressed}}" onClick="{{g.pickTransit}}" style="{{g.transitStyle}}">대중교통</button>
+<button type="button" aria-pressed="{{g.carPressed}}" onClick="{{g.pickCar}}" style="{{g.carStyle}}">자동차</button>
+<button type="button" aria-pressed="{{g.walkPressed}}" onClick="{{g.pickWalk}}" style="{{g.walkStyle}}">도보</button>
+</div>
+<p style="margin: 0; font-size: 16px; font-weight: 700">{{g.summary}}</p>
+<p style="margin: 0; font-size: 13px; color: #444444">{{g.detail}}</p>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap">
+<span style="font-size: 12px; color: #555555">{{g.source}}</span>
+<a href="#" style="min-height: 40px; display: inline-flex; align-items: center; padding: 0 14px; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 700">카카오맵에서 열기 ↗</a>
+</div>
+</div>
+</div>
+</sc-for>
+
+<sc-if value="{{hasSegments}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #F4F4F4; border-radius: 14px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">{{lastNo}}</span>
+<strong style="font-size: 16px">{{lastName}}</strong>
+</div>
+</sc-if>
+</div>
+
+<aside aria-label="경로 지도" style="flex: 1 1 320px; max-width: 400px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="position: relative; height: 420px; border-radius: 20px; background: #E9E9E9; overflow: hidden">
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><polyline points="{{mapLine}}" fill="none" stroke="#111111" stroke-width="0.9"></polyline></svg>
+<sc-for list="{{pins}}" as="p" hint-placeholder-count="3">
+<span style="{{p.style}}">{{p.no}}</span>
+</sc-for>
+<span style="position: absolute; left: 12px; bottom: 12px; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; font-size: 11px; color: #444444">실제 경로선 (고른 이동 방법 기준)</span>
+</div>
+<p style="margin: 0; font-size: 12px; color: #555555">같은 구간 결과는 저장해두고 다시 써서 API 호출을 줄여요</p>
+</aside>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { active: 0, modes: {} };
+  }
+  renderVals() {
+    var self = this;
+    var s = this.state;
+    var places = {
+      dongbaek: { name: '동백섬', x: 30, y: 70 }, haeundae: { name: '해운대해수욕장', x: 52, y: 50 },
+      dalmaji: { name: '해운대 달맞이길', x: 80, y: 62 }, gwangalli: { name: '광안리해수욕장', x: 40, y: 50 }
+    };
+    var days = [['dongbaek', 'haeundae', 'dalmaji'], ['gwangalli'], []];
+    var near = { 'dongbaek-haeundae': true, 'haeundae-dalmaji': false };
+    var dates = ['10.24 (토)', '10.25 (일)', '10.26 (월)'];
+    var ids = days[s.active];
+    function btn(on) {
+      return 'min-height: 40px; padding: 0 16px; border-radius: 999px; font-size: 13px; cursor: pointer; ' + (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111; font-weight: 700' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD');
+    }
+    var segs = [];
+    for (var i = 0; i < ids.length - 1; i++) {
+      (function (i) {
+        var key = ids[i] + '-' + ids[i + 1];
+        var mode = s.modes[key] || 'transit';
+        var isNear = !!near[key];
+        function setMode(m) { return function () { var n = {}; for (var k in s.modes) n[k] = s.modes[k]; n[key] = m; self.setState({ modes: n }); }; }
+        var summary = mode === 'transit' ? '대중교통 약 [N]분 · 환승 [N]회 · [요금]원'
+          : mode === 'car' ? '자동차 약 [N]분 · [N]km'
+          : (isNear ? '도보 약 [N]분 · 직선거리 기준' : '도보: 거리가 멀어 추정하지 않아요');
+        var detail = mode === 'transit' ? '[버스 번호 / 지하철 노선] 탑승 → [정류장]에서 하차 · 걷는 거리 약 [N]m'
+          : mode === 'car' ? '[주요 도로] 경유 · 통행료 [N]원'
+          : (isNear ? '약 1km 이내 구간만 직선거리로 추정해요. 정확한 길은 카카오맵에서 확인하세요.' : '1km가 넘는 구간은 대중교통이나 자동차를 확인하세요.');
+        var source = mode === 'transit' ? '출처: ODsay 대중교통 API' : mode === 'car' ? '출처: 카카오모빌리티 길찾기' : '계산: 두 장소 좌표의 직선거리';
+        segs.push({
+          fromNo: i + 1, from: places[ids[i]].name, summary: summary, detail: detail, source: source,
+          transitPressed: mode === 'transit' ? 'true' : 'false', carPressed: mode === 'car' ? 'true' : 'false', walkPressed: mode === 'walk' ? 'true' : 'false',
+          transitStyle: btn(mode === 'transit'), carStyle: btn(mode === 'car'), walkStyle: btn(mode === 'walk'),
+          pickTransit: setMode('transit'), pickCar: setMode('car'), pickWalk: setMode('walk')
+        });
+      })(i);
+    }
+    return {
+      tabs: dates.map(function (dt, di) {
+        var on = di === s.active;
+        return {
+          label: (di + 1) + '일차', sub: dt + ' · ' + days[di].length + '곳', selected: on ? 'true' : 'false',
+          pick: function () { self.setState({ active: di }); },
+          style: 'min-height: 64px; border-radius: 16px; cursor: pointer; ' + (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD')
+        };
+      }),
+      dayTitle: (s.active + 1) + '일차 · ' + dates[s.active],
+      segments: segs,
+      hasSegments: segs.length > 0,
+      noSegments: segs.length === 0,
+      emptyNote: ids.length === 1 ? '이 날은 장소가 하나라 이동할 구간이 없어요' : '이 날은 아직 장소가 없어요',
+      lastNo: ids.length,
+      lastName: ids.length ? places[ids[ids.length - 1]].name : '',
+      mapLine: ids.map(function (id) { return places[id].x + ',' + places[id].y; }).join(' '),
+      pins: ids.map(function (id, i) {
+        return { no: i + 1, style: 'position: absolute; left: ' + places[id].x + '%; top: ' + places[id].y + '%; transform: translate(-50%, -50%); width: 34px; height: 34px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700' };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

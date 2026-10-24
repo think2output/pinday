@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay AI 도슨트 · 데스크톱</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; min-height: 100%">
+
+<header style="border-bottom: 1px solid #D4D4D4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 20px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">홈</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">언제 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">날씨 대안</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">AI 도슨트</a>
+</nav>
+<a href="#" style="padding: 12px 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 48px; display: flex; flex-direction: column; gap: 32px">
+<a href="#" style="align-self: flex-start; font-size: 14px">← 수영구의 이야기로 돌아가기</a>
+
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+<div style="flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="position: relative; height: 380px; border-radius: 24px; background: #E6E6E6; display: grid; place-items: center; font-size: 14px; color: #555555">장소 사진 (넘겨보기)
+<span style="position: absolute; right: 16px; bottom: 16px; padding: 6px 12px; border-radius: 999px; background: #FFFFFF; font-size: 12px; color: #333333">1 / 5 · 사진 출처 [기관] · 공공누리 [유형]</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-size: 14px; color: #555555">수영구 · 해수욕장</p>
+<h1 style="margin: 0; font-size: 44px; font-weight: 900; letter-spacing: -0.03em">광안리해수욕장</h1>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #111111; border-radius: 999px">
+<button type="button" aria-label="이전 부분" onClick="{{prev}}" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #BDBDBD; background: #FFFFFF; font-size: 14px; cursor: pointer">⏮</button>
+<button type="button" aria-label="{{playLabel}}" onClick="{{togglePlay}}" style="width: 52px; height: 52px; border-radius: 50%; border: 0; background: #111111; color: #FFFFFF; font-size: 16px; cursor: pointer">{{playIcon}}</button>
+<button type="button" aria-label="다음 부분" onClick="{{next}}" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #BDBDBD; background: #FFFFFF; font-size: 14px; cursor: pointer">⏭</button>
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<strong style="font-size: 15px">{{playerTitle}}</strong>
+<span style="font-size: 13px; color: #555555">{{playerSub}}</span>
+</div>
+</div>
+
+<section aria-label="한 줄 요약" style="{{s0}}">
+<p style="margin: 0; font-size: 20px; line-height: 1.6; font-weight: 500">[한 줄 요약 · 이 장소를 한두 문장으로]</p>
+</section>
+
+<section aria-labelledby="h-history" style="{{s1}}">
+<h2 id="h-history" style="margin: 0 0 10px; font-size: 19px; font-weight: 700">역사와 문화</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.8">[역사 해설 문장 1] <button type="button" onClick="{{toggleR1}}" aria-expanded="{{r1Open}}" style="min-width: 32px; min-height: 32px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; cursor: pointer">1</button> [역사 해설 문장 2] <button type="button" onClick="{{toggleR2}}" aria-expanded="{{r2Open}}" style="min-width: 32px; min-height: 32px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; cursor: pointer">2</button></p>
+<sc-if value="{{showR1}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top: 12px; padding: 14px 16px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.7">
+<strong>[1] 한국관광공사 TourAPI · 광안리해수욕장 관광정보</strong> · [갱신일]<br>[근거 원문 중 이 문장과 관련된 부분]
+</div>
+</sc-if>
+<sc-if value="{{showR2}}" hint-placeholder-val="{{ false }}">
+<div style="margin-top: 12px; padding: 14px 16px; background: #F4F4F4; border-radius: 12px; font-size: 14px; line-height: 1.7">
+<strong>[2] 부산관광아카이브 · [자료 이름]</strong> · [날짜] · 공공누리 [유형]<br>[근거 원문 중 이 문장과 관련된 부분]
+</div>
+</sc-if>
+</section>
+
+<section aria-labelledby="h-feature" style="{{s2}}">
+<h2 id="h-feature" style="margin: 0 0 10px; font-size: 19px; font-weight: 700">동네의 특징</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.8">[동네 특징 해설 2~3문장] <button type="button" onClick="{{toggleR1}}" aria-expanded="{{r1Open}}" style="min-width: 32px; min-height: 32px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; cursor: pointer">1</button></p>
+</section>
+
+<section aria-labelledby="h-tip" style="{{s3}}">
+<h2 id="h-tip" style="margin: 0 0 10px; font-size: 19px; font-weight: 700">방문 전 알아두기</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #444444">근거 자료에 관련 내용이 없어요.</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #555555">근거가 없는 부분은 이렇게 솔직하게 표시해요</p>
+</section>
+</div>
+
+<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<section aria-labelledby="h-points" style="{{s4}}">
+<div style="border: 1px solid #D4D4D4; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+<h2 id="h-points" style="margin: 0; font-size: 18px; font-weight: 700">현장 관람 포인트</h2>
+<div style="display: flex; gap: 12px"><span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">1</span><p style="margin: 0; font-size: 14px; line-height: 1.6">[도착하면 볼 곳 · 근거 안에서]</p></div>
+<div style="display: flex; gap: 12px"><span style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">2</span><p style="margin: 0; font-size: 14px; line-height: 1.6">[두 번째 관람 포인트]</p></div>
+<p style="margin: 0; font-size: 12px; color: #555555">근거가 없으면 이 상자 자체를 숨겨요</p>
+</div>
+</section>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<button type="button" style="min-height: 48px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 14px; font-weight: 700">♡ 후보함에 담기</button>
+<button type="button" style="min-height: 48px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 700">일정에 넣기</button>
+<button type="button" style="min-height: 48px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 14px">지도에서 보기</button>
+<a href="#" style="min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #BDBDBD; border-radius: 999px; text-decoration: none; font-size: 14px">길찾기 (카카오맵) ↗</a>
+</div>
+
+<section aria-labelledby="h-sources" style="border: 1px solid #D4D4D4; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<h2 id="h-sources" style="margin: 0; font-size: 16px; font-weight: 700">이 해설의 근거 자료</h2>
+<p style="margin: 0; font-size: 13px; line-height: 1.6">[1] 한국관광공사 TourAPI · 광안리해수욕장 관광정보</p>
+<p style="margin: 0; font-size: 13px; line-height: 1.6">[2] 부산관광아카이브 · [자료 이름]</p>
+<p style="margin: 0; font-size: 12px; color: #555555">해설은 위 자료에 있는 내용만으로 AI가 만들었어요 · [생성일]</p>
+</section>
+</aside>
+</div>
+
+<section aria-labelledby="h-near" style="display: flex; flex-direction: column; gap: 14px">
+<h2 id="h-near" style="margin: 0; font-size: 22px; font-weight: 900; letter-spacing: -0.02em">이어지는 이야기 · 근처에 이런 곳도 있어요</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 16px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 16px">민락수변공원</strong><span style="font-size: 13px; color: #555555">직선거리 약 [OOO]m · [한 줄 소개]</span><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 16px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 16px">수영사적공원</strong><span style="font-size: 13px; color: #555555">직선거리 약 [O.O]km · [한 줄 소개]</span><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+<a href="#" style="border: 1px solid #D4D4D4; border-radius: 16px; padding: 16px; display: flex; gap: 14px; align-items: center; text-decoration: none">
+<span style="width: 72px; height: 72px; flex-shrink: 0; border-radius: 12px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 16px">[근처 국가유산]</strong><span style="font-size: 13px; color: #555555">직선거리 약 [OOO]m · [한 줄 소개]</span><span style="font-size: 13px; font-weight: 700">이야기 보기 →</span></span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="h-news" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="h-news" style="margin: 0; font-size: 22px; font-weight: 900; letter-spacing: -0.02em">최근 소식</h2>
+<p style="margin: 0; font-size: 13px; color: #555555">부산 지역 언론·관광 사이트의 최근 6개월 기사 제목이에요. 누르면 원문으로 이동해요.</p>
+<div style="border: 1px solid #D4D4D4; border-radius: 16px; overflow: hidden">
+<a href="#" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 18px; border-bottom: 1px solid #E4E4E4; text-decoration: none"><span style="font-size: 15px; font-weight: 500">[기사 제목] ↗</span><span style="font-size: 13px; color: #555555">[출처] · [날짜]</span></a>
+<a href="#" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 18px; text-decoration: none"><span style="font-size: 15px; font-weight: 500">[기사 제목] ↗</span><span style="font-size: 13px; color: #555555">[출처] · [날짜]</span></a>
+</div>
+<p style="margin: 0; font-size: 12px; color: #555555">소식이 없으면: "최근 6개월 동안 관련 소식이 없어요"</p>
+</section>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { playing: false, part: 0, ref: '' };
+  }
+  renderVals() {
+    var self = this;
+    var parts = ['한 줄 요약', '역사와 문화', '동네의 특징', '방문 전 알아두기', '현장 관람 포인트'];
+    var playing = this.state.playing;
+    var part = this.state.part;
+    var ref = this.state.ref;
+    function sectionStyle(i) {
+      var base = 'padding: 16px 18px; margin: 0 -18px; border-radius: 16px; ';
+      return base + (playing && part === i ? 'background: #EDEDED' : 'background: transparent');
+    }
+    function toggleRef(id) {
+      return function () { self.setState({ ref: ref === id ? '' : id }); };
+    }
+    return {
+      s0: sectionStyle(0), s1: sectionStyle(1), s2: sectionStyle(2), s3: sectionStyle(3),
+      s4: 'border-radius: 20px; ' + (playing && part === 4 ? 'background: #EDEDED' : 'background: transparent'),
+      playIcon: playing ? '❚❚' : '▶',
+      playLabel: playing ? '일시정지' : '이야기 듣기',
+      playerTitle: playing ? '재생 중 · ' + parts[part] : '이야기 듣기',
+      playerSub: playing ? '지금 읽는 부분이 회색으로 표시돼요 · ' + (part + 1) + ' / ' + parts.length : '도슨트가 이 장소 이야기를 읽어드려요 · 약 [N]분',
+      togglePlay: function () { self.setState({ playing: !playing }); },
+      prev: function () { self.setState({ playing: true, part: Math.max(0, part - 1) }); },
+      next: function () { self.setState({ playing: true, part: Math.min(parts.length - 1, part + 1) }); },
+      toggleR1: toggleRef('r1'), toggleR2: toggleRef('r2'),
+      showR1: ref === 'r1', showR2: ref === 'r2',
+      r1Open: ref === 'r1' ? 'true' : 'false', r2Open: ref === 'r2' ? 'true' : 'false'
+    };
+  }
+}
+</script>
+</body>
+</html>

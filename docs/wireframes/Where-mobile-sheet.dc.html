@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 어디 갈까 · 휴대폰 · 목록 서랍</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #E9E9E9">
+
+<span aria-hidden="true" style="position: absolute; left: 0; top: 420px; width: 100%; height: 2px; background: #CFCFCF; transform: rotate(-8deg)"></span>
+<span aria-hidden="true" style="position: absolute; left: 120px; top: 120px; width: 2px; height: 420px; background: #CFCFCF"></span>
+<span style="position: absolute; left: 150px; top: 290px; width: 40px; height: 40px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700">▶</span>
+<span style="position: absolute; left: 230px; top: 250px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">✓</span>
+<span style="position: absolute; left: 300px; top: 330px; width: 36px; height: 36px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 13px; font-weight: 700">▶</span>
+<span style="position: absolute; left: 270px; top: 170px; width: 42px; height: 42px; border-radius: 50%; background: #FFFFFF; border: 2px solid #111111; display: grid; place-items: center; font-size: 14px; font-weight: 700">5</span>
+
+<div style="position: absolute; left: 12px; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; gap: 8px; padding: 6px 6px 6px 8px; background: #FFFFFF; border-radius: 999px; border: 1px solid #D4D4D4">
+<a href="#" aria-label="뒤로" style="min-width: 40px; min-height: 40px; display: grid; place-items: center; text-decoration: none; font-size: 18px">←</a>
+<span style="flex: 1; font-size: 13px; min-width: 0"><strong>수영구 · 해운대구</strong> <span style="color: #555555">· 10.24–10.26</span></span>
+<button type="button" style="min-height: 40px; padding: 0 12px; border: 1px solid #111111; border-radius: 999px; background: #FFFFFF; font-size: 13px; font-weight: 700">바꾸기</button>
+</div>
+<div style="display: flex; gap: 6px; overflow-x: auto">
+<button type="button" aria-pressed="true" style="flex-shrink: 0; min-height: 40px; padding: 0 14px; border: 1px solid #111111; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700">전체</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; min-height: 40px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px">해수욕장</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; min-height: 40px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px">공원</button>
+<button type="button" aria-pressed="false" style="flex-shrink: 0; min-height: 40px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px">▶ 이야기만</button>
+</div>
+</div>
+
+<section aria-labelledby="ms-list" style="position: absolute; left: 0; right: 0; top: 440px; bottom: 76px; background: #FFFFFF; border-radius: 24px 24px 0 0; border-top: 1px solid #D4D4D4; padding: 10px 16px 0; display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+<span aria-hidden="true" style="align-self: center; width: 44px; height: 5px; border-radius: 999px; background: #BDBDBD"></span>
+<div style="display: flex; align-items: center; justify-content: space-between">
+<h2 id="ms-list" style="margin: 0; font-size: 16px; font-weight: 700">장소 7곳</h2>
+<button type="button" style="min-height: 36px; padding: 0 12px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px">내 취향순 ▾</button>
+</div>
+<p style="margin: 0; font-size: 11px; color: #555555">위로 끌어올리면 목록이 화면을 채워요 · 내리면 지도만 보여요</p>
+<div style="display: flex; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid #EDEDED">
+<span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0"><span style="font-size: 11px; color: #555555">수영구 · 공원</span><strong style="font-size: 15px">민락수변공원</strong><span style="font-size: 12px">내 취향과 잘 맞아요 · 골목 산책</span></span>
+<button type="button" aria-label="민락수변공원 후보함 담기" style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; border: 1px solid #111111; background: #FFFFFF; font-size: 16px">♡</button>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid #EDEDED">
+<span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0"><span style="font-size: 11px; color: #555555">해운대구 · 공원</span><strong style="font-size: 15px">동백섬</strong><span style="font-size: 12px">내 취향과 잘 맞아요 · 골목 산책</span></span>
+<button type="button" aria-label="동백섬 후보함에서 빼기" style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; border: 0; background: #111111; color: #FFFFFF; font-size: 15px">✓</button>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; padding: 8px 0">
+<span style="width: 56px; height: 56px; flex-shrink: 0; border-radius: 10px; background: #E6E6E6"></span>
+<span style="display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0"><span style="font-size: 11px; color: #555555">해운대구 · 거리</span><strong style="font-size: 15px">해운대 달맞이길</strong><span style="font-size: 12px">내 취향과 잘 맞아요 · 골목 산책</span></span>
+<button type="button" aria-label="해운대 달맞이길 후보함 담기" style="width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; border: 1px solid #111111; background: #FFFFFF; font-size: 16px">♡</button>
+</div>
+</section>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 76px; box-sizing: border-box; padding: 10px 12px 14px; background: #FFFFFF; border-top: 1px solid #D4D4D4">
+<a href="#" style="height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700"><span>후보 2곳</span><span>날짜에 배치하기 →</span></a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

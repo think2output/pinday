@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PinDay 언제 갈까 · 데스크톱</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#111111}a:hover{color:#444444}
+button{font-family:inherit}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #111111; background: #FFFFFF; min-height: 100%">
+
+<header style="border-bottom: 1px solid #D4D4D4">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 900; font-size: 20px">
+<span style="width: 28px; height: 28px; border-radius: 50%; background: #111111; display: inline-block" aria-hidden="true"></span>PinDay</a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">홈</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어디 갈까?</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 999px; background: #EDEDED; text-decoration: none; font-size: 14px; font-weight: 700">언제 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">어떻게 갈까?</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">날씨 대안</a>
+<a href="#" style="padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: 14px">AI 도슨트</a>
+</nav>
+<a href="#" style="padding: 12px 20px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">내 여행 ↗</a>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 24px 24px 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; color: #555555">수영구 · 해운대구 / 10.24 – 10.26 · 2박 3일 <a href="#" style="margin-left: 8px; font-weight: 700">바꾸기</a></p>
+
+<div role="tablist" aria-label="날짜" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{t.selected}}" onClick="{{t.pick}}" style="{{t.style}}"><span style="display: block; font-size: 17px; font-weight: 700">{{t.label}}</span><span style="display: block; margin-top: 2px; font-size: 12px; font-weight: 400">{{t.sub}}</span></button>
+</sc-for>
+</div>
+
+<section aria-labelledby="day-title" style="display: flex; flex-direction: column; gap: 10px">
+<h2 id="day-title" style="margin: 0; font-size: 22px; font-weight: 900; letter-spacing: -0.02em">{{dayTitle}}</h2>
+<sc-if value="{{dayEmpty}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 28px; border: 1px dashed #BDBDBD; border-radius: 16px; text-align: center; font-size: 15px; color: #444444">이 날은 아직 비어 있어요 · 아래에서 넣어보세요</p>
+</sc-if>
+<sc-for list="{{items}}" as="it" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; border: 1px solid #D4D4D4; border-radius: 16px">
+<div style="display: flex; align-items: center; gap: 14px; padding: 14px 16px">
+<span aria-hidden="true" title="끌어서 순서 바꾸기" style="font-size: 16px; color: #777777; cursor: grab">⋮⋮</span>
+<span style="width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%; background: #111111; color: #FFFFFF; display: grid; place-items: center; font-size: 14px; font-weight: 700">{{it.no}}</span>
+<strong style="flex: 1; min-width: 0; font-size: 17px">{{it.name}}</strong>
+<button type="button" aria-label="{{it.menuLabel}}" aria-expanded="{{it.menuExpanded}}" onClick="{{it.toggleMenu}}" style="width: 44px; height: 44px; border: 1px solid #BDBDBD; border-radius: 50%; background: #FFFFFF; font-size: 18px; cursor: pointer">⋯</button>
+</div>
+<sc-if value="{{it.menuOpen}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding: 0 16px 14px 76px">
+<a href="#" style="min-height: 40px; display: inline-flex; align-items: center; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; text-decoration: none; font-size: 13px">▶ 이야기 보기</a>
+<sc-for list="{{it.moves}}" as="m" hint-placeholder-count="2">
+<button type="button" onClick="{{m.go}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px; cursor: pointer">{{m.label}}</button>
+</sc-for>
+<button type="button" onClick="{{it.remove}}" style="min-height: 40px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 999px; background: #FFFFFF; font-size: 13px; cursor: pointer">일정에서 빼기</button>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</section>
+
+<section aria-labelledby="left-title" style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 1px solid #D4D4D4">
+<h2 id="left-title" style="margin: 0; font-size: 17px; font-weight: 700">아직 날짜 없는 곳 <span style="font-weight: 400; color: #555555">{{leftCount}}곳</span></h2>
+<sc-if value="{{noneLeft}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; font-size: 14px; color: #444444">모든 후보를 날짜에 넣었어요 · <a href="#">어디 갈까?에서 더 모으기</a></p>
+</sc-if>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px">
+<sc-for list="{{left}}" as="l" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 10px 10px 16px; background: #F4F4F4; border-radius: 999px">
+<span style="font-size: 14px; font-weight: 500">{{l.name}}</span>
+<button type="button" onClick="{{l.add}}" style="min-height: 40px; padding: 0 14px; border: 0; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap">{{addLabel}}</button>
+</div>
+</sc-for>
+</div>
+</section>
+</div>
+
+<aside aria-labelledby="map-title" style="flex: 1 1 320px; max-width: 400px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 id="map-title" style="margin: 0; font-size: 15px; font-weight: 700">{{mapTitle}}</h2>
+<div style="position: relative; height: 380px; border-radius: 20px; background: #E9E9E9; overflow: hidden">
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><polyline points="{{mapLine}}" fill="none" stroke="#111111" stroke-width="0.6" stroke-dasharray="2 1.5"></polyline></svg>
+<sc-for list="{{pins}}" as="p" hint-placeholder-count="2">
+<span style="{{p.style}}">{{p.no}}</span>
+</sc-for>
+</div>
+<a href="#" style="min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #111111; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 700">이 날 이동 확인 → 어떻게 갈까?</a>
+<a href="#" style="min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #BDBDBD; border-radius: 999px; text-decoration: none; font-size: 14px">이 날 날씨 확인 → 날씨 대안</a>
+</aside>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { days: [['dongbaek', 'haeundae'], ['gwangalli'], []], active: 0, menu: null };
+  }
+  renderVals() {
+    var self = this;
+    var s = this.state;
+    var places = {
+      gwangalli: { name: '광안리해수욕장', x: 30, y: 62 }, millak: { name: '민락수변공원', x: 44, y: 52 },
+      suyeong: { name: '수영사적공원', x: 26, y: 24 }, haeundae: { name: '해운대해수욕장', x: 76, y: 50 },
+      dongbaek: { name: '동백섬', x: 62, y: 72 }, dalmaji: { name: '해운대 달맞이길', x: 88, y: 76 }
+    };
+    var order = ['gwangalli', 'millak', 'suyeong', 'haeundae', 'dongbaek', 'dalmaji'];
+    var dates = ['10.24 (토)', '10.25 (일)', '10.26 (월)'];
+    var placed = [].concat(s.days[0], s.days[1], s.days[2]);
+    var left = order.filter(function (id) { return placed.indexOf(id) === -1; });
+    var ids = s.days[s.active];
+    function copy() { return s.days.map(function (d) { return d.slice(); }); }
+    return {
+      tabs: dates.map(function (dt, di) {
+        var on = di === s.active;
+        return {
+          label: (di + 1) + '일차', sub: dt + ' · ' + s.days[di].length + '곳', selected: on ? 'true' : 'false',
+          pick: function () { self.setState({ active: di, menu: null }); },
+          style: 'min-height: 64px; border-radius: 16px; cursor: pointer; ' + (on ? 'background: #111111; color: #FFFFFF; border: 1px solid #111111' : 'background: #FFFFFF; color: #111111; border: 1px solid #BDBDBD')
+        };
+      }),
+      dayTitle: (s.active + 1) + '일차 · ' + dates[s.active],
+      dayEmpty: ids.length === 0,
+      items: ids.map(function (id, i) {
+        var open = s.menu === id;
+        return {
+          no: i + 1, name: places[id].name, menuOpen: open, menuExpanded: open ? 'true' : 'false',
+          menuLabel: places[id].name + ' 더보기',
+          toggleMenu: function () { self.setState({ menu: open ? null : id }); },
+          moves: dates.map(function (dt, di) { return di; }).filter(function (di) { return di !== s.active; }).map(function (di) {
+            return { label: (di + 1) + '일차로 옮기기', go: function () { var n = copy(); n[s.active] = n[s.active].filter(function (x) { return x !== id; }); n[di].push(id); self.setState({ days: n, menu: null }); } };
+          }),
+          remove: function () { var n = copy(); n[s.active] = n[s.active].filter(function (x) { return x !== id; }); self.setState({ days: n, menu: null }); }
+        };
+      }),
+      leftCount: left.length,
+      noneLeft: left.length === 0,
+      addLabel: '+ ' + (s.active + 1) + '일차에 넣기',
+      left: left.map(function (id) {
+        return { name: places[id].name, add: function () { var n = copy(); n[s.active].push(id); self.setState({ days: n }); } };
+      }),
+      mapTitle: (s.active + 1) + '일차 지도',
+      mapLine: ids.map(function (id) { return places[id].x + ',' + places[id].y; }).join(' '),
+      pins: ids.map(function (id, i) {
+        return { no: i + 1, style: 'position: absolute; left: ' + places[id].x + '%; top: ' + places[id].y + '%; transform: translate(-50%, -50%); width: 34px; height: 34px; border-radius: 50%; background: #111111; color: #FFFFFF; border: 3px solid #FFFFFF; display: grid; place-items: center; font-size: 13px; font-weight: 700' };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>
