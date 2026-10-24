@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { activeSwaps, dayCard, indoorAlternatives, type WeatherPlace } from "./weatherModel";
+import { activeSwaps, dayCard, indoorAlternatives, rainTimeline, tripSummary, type WeatherPlace } from "./weatherModel";
 import type { WeatherState } from "../../schedule/_components/scheduleModel";
 
 const place = (id: string, lat: number, lng: number, indoor: boolean): WeatherPlace =>
@@ -62,6 +62,41 @@ describe("실내 대안", () => {
   it("기준 장소 좌표가 잘못됐으면 찾지 않는다", () => {
     expect(indoorAlternatives(places.banbong, places, new Set(), new Set())).toBeNull();
     expect(indoorAlternatives(undefined, places, new Set(), new Set())).toBeNull();
+  });
+});
+
+describe("시간별 비 예보", () => {
+  const period = (time: string, pty: number | null) => ({ time, precipitationType: pty, precipitationProbability: 60 });
+  it("비 구간과 그 뒤 비 소식이 없는 시각을 알려준다", () => {
+    const state = ready([forecast("2026-10-26", { condition: "rain", precipitationExpected: true, periods: [period("07:00", 1), period("08:00", 1), period("09:00", 0), period("10:00", 0)] })]);
+    expect(rainTimeline("2026-10-26", state)!.summary).toBe("7시~8시에 비 예보가 있어요. 9시부터는 비 소식이 없어요.");
+  });
+  it("떨어진 구간은 나눠 적고, 자료가 빈 시각을 비 없음으로 채우지 않는다", () => {
+    const state = ready([forecast("2026-10-26", { periods: [period("00:00", 1), period("03:00", 0), period("06:00", 4), period("09:00", null)] })]);
+    const timeline = rainTimeline("2026-10-26", state)!;
+    expect(timeline.summary).toBe("0시, 6시에 비 예보가 있어요.");
+    expect(timeline.cells.at(-1)!.rain).toBeNull();
+  });
+  it("예보 전이거나 시각 자료가 없으면 막대를 그리지 않는다", () => {
+    expect(rainTimeline("2026-10-30", ready([]))).toBeNull();
+    expect(rainTimeline("2026-10-26", { kind: "loading" })).toBeNull();
+  });
+});
+
+describe("여행 요약", () => {
+  const short = (date: string) => date.slice(5);
+  const dates = ["2026-10-26", "2026-10-27"];
+  it("비 오는 날과 그날 정할 야외 장소 수를 알려준다", () => {
+    const state = ready([forecast(dates[0], { condition: "rain", precipitationExpected: true }), forecast(dates[1], {})]);
+    const cards = dates.map((date) => dayCard(date, "2026-10-25", state));
+    const result = tripSummary(dates, cards, [["beach", "museum", "park"], []], places, state, short);
+    expect(result.title).toBe("1일차 10-26에 비 예보가 있어요");
+    expect(result.body).toContain("야외 장소 2곳");
+  });
+  it("비 소식이 없으면 예보 전 날 수를 함께 알려준다", () => {
+    const state = ready([forecast(dates[0], {})]);
+    const cards = dates.map((date) => dayCard(date, "2026-10-25", state));
+    expect(tripSummary(dates, cards, [[], []], places, state, short)).toMatchObject({ title: "예보가 나온 날엔 비 소식이 없어요", body: "1일은 아직 예보 전이에요.", rain: false });
   });
 });
 
