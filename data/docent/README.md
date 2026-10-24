@@ -4,7 +4,7 @@
 
 ## 해설 초안 (2026-10-25)
 
-- `drafts/{장소id}.json`: 대표검수에서 '범위 제한 초안 후보'로 고른 7곳(25의용단·범어사·감천문화마을·168계단·해운대해수욕장·태종대·복천박물관)의 초안. `status: ai-draft`, `humanReview: pending`, `publishable: false`. 사람 검수 전에는 화면에 공개하지 않는다.
+- `drafts/{장소id}.json`: 대표검수에서 '범위 제한 초안 후보'로 고른 7곳의 해설. 2026-10-25 사용자 승인으로 6곳 `status: approved`·`publishable: true`, 해운대해수욕장은 한 문장뿐이라 `publishable: false`. `humanReview`에 방법·날짜, `display.notes`에 화면 안내(자료 기준 연도). 화면은 승인된 것만 읽는다. 생성 스크립트는 승인된 해설을 `--force` 없이 덮어쓰지 않는다(덮어쓰면 다시 검수).
 - 사람이 읽는 검수 문서: `docs/docent-drafts-review.md`(문장마다 근거 번호, 바로 아래 근거 원문과 체크칸).
 - 만들기: `node scripts/generate-docent-drafts.mjs`(미리보기, 호출 없음) → `--run`(실제 호출) · `--only=장소id` · `--budget=달러` · `--report`(호출 없이 검사·검수 문서만 다시).
 - 입력은 검수 기록의 선택 문단뿐이다. 원문 해시·선택 범위·`selected-scope` 상태가 맞지 않으면 그 장소를 건너뛴다. 미검수·제외·주변 유산 자료는 들어가지 않는다.
