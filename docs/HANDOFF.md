@@ -1,10 +1,10 @@
 # HANDOFF — 지금 상태
 
-마지막 업데이트: 2026-10-24 · 작성: Codex (홈 동작 점검)
-마지막 확인: 홈 구 선택·개별/전체 해제·기간 오류/적용/취소·새로고침 유지, 키보드·터치, 기간 축소 알림을 Chrome 390px·1440px에서 확인. `npm test` 85개·린트·빌드 통과. 홈 가로 넘침과 기간 창 닫기 버튼의 작은 누름 영역 수정. 공통 헤더도 사용자 승인 후 로고·홈 메뉴·내 여행 누름 영역을 44px 이상으로 확대하고 두 화면 크기에서 재확인. 자세한 결과는 `docs/HOME_QA.md`. 수정 후 사용자 화면 확인은 대기. 이전 날씨 API 실제 확인은 `docs/WEATHER_API.md`. `.vscode/`는 개인 설정으로 커밋하지 않음.
+마지막 업데이트: 2026-10-25 · 작성: Codex (홈 내 여행 카드)
+마지막 확인: 내 여행 카드 표시·기간/지역/후보/일정 요약·초기화 취소/실행·10초 되돌리기·기간 축소 연동을 Chrome 개발/배포용 서버의 390px·1440px에서 확인. 다른 탭의 변경 반영과 이전 되돌리기 무효화도 확인. `npm test` 85개·린트·빌드 통과. 기존 홈 동작 점검을 포함한 자세한 결과는 `docs/HOME_QA.md`. 수정 후 사용자 화면 확인은 대기. 이전 날씨 API 실제 확인은 `docs/WEATHER_API.md`. `.vscode/`는 개인 설정으로 커밋하지 않음.
 
 ## 현재 브랜치
-`fix/home-interactions` (← `feat/home-design`)에서 홈 동작 점검. 새 브랜치 사용은 사용자 승인받음. 2026-10-24 `git fetch origin` 확인 결과 원격 main `8f98ab8`은 PR #6을 병합했지만 부모가 `7d7ea37`이라 시안까지만 포함. 디자인 값·글꼴 `6c789f4`, 홈 구현 `54ccf09`, 문서 `84551eb`·`dd2253d`는 main에 없으므로 `feat/home-design`에서 분기함. 이번 변경은 로컬 커밋하며, push·main 병합은 하지 않음.
+`feat/home-trip-card` (← `fix/home-interactions` ← `feat/home-design`). 사용자 승인 후 내 여행 카드 작업으로 분기. 이전 홈 동작 수정 `c180eaf`·공통 헤더 수정 `16d6066` 포함. 2026-10-24 `git fetch origin` 확인 결과 원격 main `8f98ab8`은 PR #6을 병합했지만 부모가 `7d7ea37`이라 시안까지만 포함. 디자인 값·글꼴 `6c789f4`, 홈 구현 `54ccf09`, 문서 `84551eb`·`dd2253d`는 main에 없었음. 이번 변경은 로컬 커밋하며, push·main 병합은 하지 않음.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
@@ -13,6 +13,7 @@
 - 사용자 요청으로 이 세션을 마무리함. 구현 변경은 모두 커밋·푸시했고, 마지막으로 인계 문서만 갱신·커밋·푸시한다. 다음 세션 시작 시 원격 main의 최신 병합 상태를 다시 확인하고, 미병합이면 이 브랜치를 기준으로 새 작업 브랜치를 만든다.
 
 ## 끝낸 것
+- 홈 내 여행 카드: `src/app/_home/TripCard.tsx`, 초기화/되돌리기 `TripReset.tsx`. 저장된 여행이 있으면 헤더 아래 표시. 지역·기간·취향·후보·일정 초기화와 10초 되돌리기를 기존 저장소로 처리. 기간 창에도 초기화 진입점 연결. 공통 파일 변경 없이 구현. 사용자 시각 확인은 남음.
 - 홈 동작 점검: 두 화면 크기에서 구 선택·전체 해제·기간 창·저장 유지 확인. 키보드·터치·기간 축소도 확인. 조명으로 생기는 가로 넘침과 닫기 버튼 누름 영역 수정. 사용자 승인 후 공통 헤더 누름 영역 44px 이상으로 확대. 결과 `docs/HOME_QA.md`.
 - 홈 화면 구현(시안 C): `src/app/page.tsx` → `src/app/_home/`(HomeView·BusanMap·TripConditions·StoryShelf·regions). 공통 상단 메뉴 `src/components/SiteHeader.tsx`. 지역은 여행 저장소 setRegions, 기간은 그 자리의 작은 창에서 setPeriod. 시작 버튼은 /explore(아직 없음). 홈 데이터 `src/lib/server/home.ts`(+테스트 5개), 이야기 데이터 `scripts/build-stories.mjs` → `data/stories/stories.json`.
 - 홈 디자인 재정리: 시안 3개(A 백색 전시실·B 아웃라인·C 어두운 전시실) 비교 → **C 확정**, 휴대폰·데스크톱 시안 완성. 원본 `docs/design/home-c-mobile.dc.html`, `home-c-desktop.dc.html`, 캔버스 링크와 좋았던 것·뺀 것은 `docs/design/README.md` 2차 정리, 확정 값은 DECISIONS "디자인".
@@ -25,7 +26,7 @@
 - 분류표 확정 `docs/분류표.md` (취향 유형 → 분류, 실내/야외, DECISIONS "장소 분류")
 - 서비스용 장소 목록 `scripts/build-places.mjs` → `data/places/places.json` (408곳: 관광지 345 + 문화시설 63, 취향·실내 태그 포함)
 - 기상청 API허브 단기예보 활용신청 완료, 키 확인 정상
-- 내 여행 정보 저장소 `src/lib/trip/` (사용법은 그 폴더 README). 규칙 테스트 21개 `npm test` 통과. 화면에 붙여 브라우저에서 확인하는 건 아직(홈·어디 갈까? 작업 때)
+- 내 여행 정보 저장소 `src/lib/trip/` (사용법은 그 폴더 README). 규칙 테스트 21개 `npm test` 통과. 홈에 연결해 지역·기간·카드·초기화·되돌리기는 브라우저 확인 완료. 후보 담기·일정 편집은 어디 갈까?·언제 갈까? 구현 때 확인
 - 도슨트 근거 수집(기획서 8장 1단계): `scripts/probe-heritage.mjs`로 국가유산청 3곳 소량 시험 후 `scripts/collect-docent-evidence.mjs`로 408곳 전체 수집. TourAPI detailCommon2 설명 + 1km 내 국가유산 XML 설명 + 부산 이야기 장소명 연결. 파라미터·필드는 실제 응답 확인. 사용법·출처·분류 규칙: `data/docent/README.md`.
 - `data/docent/evidence/` 장소별 JSON 408개(스키마 v2), 연결 자료 2,658건(주변·언급·제외 포함). 충분 후보(검수 전) 83곳 / 소개만 324곳 / 직접 소개 원문 없음 1곳(해성아트베이) / 수집 오류 0곳. `data/docent/evidence-summary.json` 집계. 전체 글 기준 191곳에서 문단 기준 83곳으로 보완. 이전 연결 80건 제거·11건 추가(확인된 별칭 연결 7건 포함). `data/docent/evidence-comparison.json` 비교표. 로컬 캐시 `data/docent/cache/`는 Git 제외.
 - 대표 10곳 AI 1차 검수: `docs/docent-evidence-review.md`와 `data/docent/reviews/representative-2026-10-24.json`. 범위 제한 초안 후보 7곳·자료 보완 2곳·보류 1곳. 선택 문단·출처 제외 이유·원문 SHA-256 기록. 검수의 선택 범위는 유지하고 수집 규칙 v2의 자동 집계는 별도로 갱신함. 사람 최종 검수·해설 생성은 아직.
@@ -43,12 +44,13 @@
 
 ## 다음 할 일
 1. (끝남) tokens.css·글꼴 반영, 홈 구현. 디자인 값 이름은 `src/styles/tokens.css` 맨 위 설명 참고. 화면 코드에 색 코드 직접 쓰지 말 것.
-2. 홈 동작 점검과 공통 헤더 누름 영역 수정 완료. 수정 화면 사용자 확인이 남음(`docs/HOME_QA.md`). 이후 다시 온 사람용 내 여행 카드 → 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. 홈 지도 칸은 그림 자리를 두되 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
+2. 홈 동작 점검·공통 헤더 누름 영역·내 여행 카드 구현 완료. 카드 화면 사용자 확인이 남음(`docs/HOME_QA.md`). 다음 구현은 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. /explore·/schedule이 아직 없어 시작/이어서 계획하기의 실제 이동 흐름은 해당 화면 구현 때 확인. 홈 지도 칸은 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
 3. 나머지 13칸 지도 선 그림, 홈 첫 문구(사용자가 다시 쓰기로 함)는 홈 구현 중이나 후에.
 4. 도슨트는 별도 후속: 대표 검수의 선택 문단·제한을 사용자에게 확인받고, OpenAI 키 준비 후 소수 장소부터 해설 시험 생성·검수. 생성기는 선택 문단·제외/재검수/미검수 상태·출처 해시를 반드시 적용해야 함. 자동 충분 후보 83곳을 공개 가능한 이야기로 취급하지 않는다. 백제병원 연혁·석당박물관 연결 자료의 상세 검수와 부산근현대역사관 아카이브 승인 후 보완은 아직.
 5. 이후 기획서 12장의 개발 순서·QA 기준대로 진행.
 
 ## 이번 세션 결정 기록
+- 2026-10-25 내 여행 카드 표시 조건·10초 되돌리기·핀 표시 개수·일정 막대 기준은 DECISIONS "홈 내 여행 카드"에 기록.
 - 2026-10-24 홈 디자인 방향(C 어두운 전시실)·색·모서리·지도 칸 그림 방식은 DECISIONS "디자인"에 추가. 첫 문구와 간격 체계는 미정으로 남김.
 - 근거 수집 규칙 v2, 장소 API 계약, 날씨 API·캐시 동작은 `docs/DECISIONS.md`에 2026-10-24 날짜로 반영돼 있음. 세션 종료 정리에서 새로 추가한 제품 결정은 없음.
 
