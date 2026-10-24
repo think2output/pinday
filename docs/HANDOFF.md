@@ -1,10 +1,10 @@
 # HANDOFF — 지금 상태
 
-마지막 업데이트: 2026-10-24 · 작성: Claude Code (홈 디자인 재정리)
-마지막 확인: 2026-10-24 홈 구현 후 `npm test`(85개)·`npm run lint`(경고 없음)·`npm run build` 통과. 헤드리스 크롬으로 390px(390 폭 iframe 안)·1440px 첫 화면 확인, 사용자가 화면 확인 후 괜찮다고 함. 구 선택·기간 창 등 누르는 동작은 자동 확인 못 함(브라우저에서 직접 확인). 이전 세션의 날씨 API 실제 호출 확인 기록은 `docs/WEATHER_API.md`. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음.
+마지막 업데이트: 2026-10-24 · 작성: Codex (홈 동작 점검)
+마지막 확인: 홈 구 선택·개별/전체 해제·기간 오류/적용/취소·새로고침 유지, 키보드·터치, 기간 축소 알림을 Chrome 390px·1440px에서 확인. `npm test` 85개·린트·빌드 통과. 홈 가로 넘침과 기간 창 닫기 버튼의 작은 누름 영역 수정. 자세한 결과와 남은 항목은 `docs/HOME_QA.md`. 공통 헤더 누름 영역 수정은 사용자에게 질문 후 답변 대기. 수정 후 사용자 화면 확인도 대기. 이전 날씨 API 실제 확인은 `docs/WEATHER_API.md`. `.vscode/`는 개인 설정으로 커밋하지 않음.
 
 ## 현재 브랜치
-`feat/home-design` (← `feat/weather-api`). 원격 main에는 날씨·장소 API까지 PR #4·#5로 합쳐졌고, main에 없는 것은 인계 문서 커밋 `b9ae786`뿐이라 이 브랜치에 함께 포함됨. 이번 세션: 홈 디자인 확정 → tokens.css·글꼴 → 홈 화면 구현. 이 브랜치의 커밋은 모두 GitHub에 push함. main에 합치는 PR은 사용자가 만든다.
+`fix/home-interactions` (← `feat/home-design`)에서 홈 동작 점검. 새 브랜치 사용은 사용자 승인받음. 2026-10-24 `git fetch origin` 확인 결과 원격 main `8f98ab8`은 PR #6을 병합했지만 부모가 `7d7ea37`이라 시안까지만 포함. 디자인 값·글꼴 `6c789f4`, 홈 구현 `54ccf09`, 문서 `84551eb`·`dd2253d`는 main에 없으므로 `feat/home-design`에서 분기함. 이번 변경은 로컬 커밋하며, push·main 병합은 하지 않음.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
@@ -13,6 +13,7 @@
 - 사용자 요청으로 이 세션을 마무리함. 구현 변경은 모두 커밋·푸시했고, 마지막으로 인계 문서만 갱신·커밋·푸시한다. 다음 세션 시작 시 원격 main의 최신 병합 상태를 다시 확인하고, 미병합이면 이 브랜치를 기준으로 새 작업 브랜치를 만든다.
 
 ## 끝낸 것
+- 홈 동작 점검: 두 화면 크기에서 구 선택·전체 해제·기간 창·저장 유지 확인. 키보드·터치·기간 축소도 확인. 조명으로 생기는 가로 넘침과 닫기 버튼 누름 영역 수정. 결과 `docs/HOME_QA.md`.
 - 홈 화면 구현(시안 C): `src/app/page.tsx` → `src/app/_home/`(HomeView·BusanMap·TripConditions·StoryShelf·regions). 공통 상단 메뉴 `src/components/SiteHeader.tsx`. 지역은 여행 저장소 setRegions, 기간은 그 자리의 작은 창에서 setPeriod. 시작 버튼은 /explore(아직 없음). 홈 데이터 `src/lib/server/home.ts`(+테스트 5개), 이야기 데이터 `scripts/build-stories.mjs` → `data/stories/stories.json`.
 - 홈 디자인 재정리: 시안 3개(A 백색 전시실·B 아웃라인·C 어두운 전시실) 비교 → **C 확정**, 휴대폰·데스크톱 시안 완성. 원본 `docs/design/home-c-mobile.dc.html`, `home-c-desktop.dc.html`, 캔버스 링크와 좋았던 것·뺀 것은 `docs/design/README.md` 2차 정리, 확정 값은 DECISIONS "디자인".
 - 날씨 API: `GET /api/weather?placeId=...&startDate=YYYY-MM-DD&days=1~14`. 기상청 API허브 단기예보 전체 페이지·KST 최신 발표·공식 좌표 변환·5분 성공 캐시·동시 요청 합치기·오류 구분 구현. 예보 기간 이후와 기간 안 결측을 구별하고 온도/강수 결측은 null로 보존. 일정은 변경하지 않음. 사용법·공식 근거·실제 응답 확인: `docs/WEATHER_API.md`. 날씨 테스트 17개 추가, 전체 80개 통과.
@@ -42,7 +43,7 @@
 
 ## 다음 할 일
 1. (끝남) tokens.css·글꼴 반영, 홈 구현. 디자인 값 이름은 `src/styles/tokens.css` 맨 위 설명 참고. 화면 코드에 색 코드 직접 쓰지 말 것.
-2. (홈 끝남) 사용자 브라우저 확인 후 수정 → 다시 온 사람용 내 여행 카드 → 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. 홈 지도 칸은 그림 자리를 두되 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
+2. 홈 동작 점검 완료. 공통 헤더 누름 영역 44px 미달의 수정 허용 답변과 수정 화면 사용자 확인이 남음(`docs/HOME_QA.md`). 이후 다시 온 사람용 내 여행 카드 → 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. 홈 지도 칸은 그림 자리를 두되 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
 3. 나머지 13칸 지도 선 그림, 홈 첫 문구(사용자가 다시 쓰기로 함)는 홈 구현 중이나 후에.
 4. 도슨트는 별도 후속: 대표 검수의 선택 문단·제한을 사용자에게 확인받고, OpenAI 키 준비 후 소수 장소부터 해설 시험 생성·검수. 생성기는 선택 문단·제외/재검수/미검수 상태·출처 해시를 반드시 적용해야 함. 자동 충분 후보 83곳을 공개 가능한 이야기로 취급하지 않는다. 백제병원 연혁·석당박물관 연결 자료의 상세 검수와 부산근현대역사관 아카이브 승인 후 보완은 아직.
 5. 이후 기획서 12장의 개발 순서·QA 기준대로 진행.
@@ -61,7 +62,7 @@
 
 ## 주의
 - 여행 저장소 `useTrip()`은 오늘 날짜(new Date)를 읽어서, cacheComponents 설정에서는 미리 만드는 화면에 넣으면 빌드가 실패한다. 그 화면을 `<Suspense>`로 감쌀 것(홈 page.tsx 참고). 저장소 쪽에서 근본적으로 고치려면 공통 파일이라 사용자 확인 후.
-- 헤드리스 크롬은 창 폭 500px 아래로 줄지 않는다. 390px 확인은 390 폭 iframe 안에 띄워 찍는다.
+- 헤드리스 크롬의 기본 창 폭은 500px 아래로 줄지 않는다. 이전에는 390px iframe을 사용했고, 이번에는 DevTools Protocol의 기기 화면 크기 모의 기능으로 390px 확인함.
 - 키는 레포에 없음. 서버 코드는 `requireEnv()`(`src/lib/server/env.ts`)로, 스크립트는 `process.loadEnvFile(".env")`로 키를 읽는다.
 - 공공데이터포털 키는 Decoding 키. 호출 주소는 `URLSearchParams`로 만들어 한 번만 인코딩할 것(이중 인코딩하면 인증 오류).
 - 공공데이터포털은 가끔 `APPLICATION_ERROR`를 돌려준다. 다시 시도하면 된다(`fetch-places.mjs`의 `getJson` 참고).

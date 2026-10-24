@@ -112,7 +112,7 @@ export function TripConditions({ trip, saved, onRemoveRegion }: Props) {
             </label>
           </div>
           <div className="flex items-center justify-end gap-4">
-            <button type="button" onClick={() => setEditing(false)} className="min-h-tap px-1 text-sm text-on-room-muted">
+            <button type="button" onClick={() => setEditing(false)} className="min-h-tap min-w-tap px-1 text-sm text-on-room-muted">
               닫기
             </button>
             <button type="button" onClick={apply} className="min-h-tap rounded-control bg-on-room px-5 text-sm font-bold text-ink">

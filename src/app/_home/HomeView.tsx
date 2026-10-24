@@ -35,7 +35,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
 
   return (
     <main className="flex flex-1 flex-col">
-      <div className={`transition-colors duration-500 ${selected.length > 0 ? "bg-room-dim" : "bg-room"}`}>
+      <div className={`overflow-x-clip transition-colors duration-500 ${selected.length > 0 ? "bg-room-dim" : "bg-room"}`}>
         <div className="mx-auto max-w-page px-gutter pb-8 lg:box-content lg:px-gutter-wide lg:pb-22">
           <SiteHeader tone="room" />
           {/* 휴대폰: 첫 문구 → 지도 → 어디·언제 / 데스크톱: 왼쪽 첫 문구·어디·언제, 오른쪽 지도 */}
