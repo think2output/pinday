@@ -34,6 +34,8 @@
   /* 조명 번짐 */
   --shadow-glow: 0 0 30px 8px rgb(255 201 77 / 0.5);      /* 켜진 지도 칸 */
   --shadow-glow-soft: 0 0 40px -6px rgb(255 201 77 / 0.55); /* 전시실 위 흰 시작 버튼 */
+  --shadow-photo: 0 16px 28px -12px rgb(17 18 20 / 0.45);   /* 벽에 건 사진 */
+  --shadow-paper: 0 12px 24px -10px rgb(17 18 20 / 0.35);   /* 사진 옆 종이 조각(지도 조각) */
 
   /* 둥글기: 각지게 */
   --radius-card: 0px;

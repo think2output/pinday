@@ -6,3 +6,35 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
 }
+
+:focus-visible {
+  outline: 2px solid var(--color-light);
+  outline-offset: 2px;
+}
+
+/* 옆으로 넘기는 줄(메뉴·이야기 카드)의 스크롤 막대 숨김 */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* 지도 조명: 켜질 때 빛이 퍼지고(pd-ignite) 칸이 살짝 깜빡인다(pd-flick). 움직임 줄이기 설정이면 연출 없음 */
+@keyframes pd-ignite {
+  0% { opacity: 0; transform: scale(0.55); }
+  35% { opacity: 1; transform: scale(1.12); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes pd-flick {
+  0% { filter: brightness(0.8); }
+  30% { filter: brightness(1.2); }
+  45% { filter: brightness(0.95); }
+  60% { filter: brightness(1.1); }
+  100% { filter: brightness(1); }
+}
+.pd-ignite { animation: pd-ignite 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.pd-flick { animation: pd-flick 0.6s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .pd-ignite, .pd-flick { animation: none; }
+}

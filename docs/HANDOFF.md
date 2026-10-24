@@ -1,7 +1,7 @@
 # HANDOFF — 지금 상태
 
 마지막 업데이트: 2026-10-24 · 작성: Claude Code (홈 디자인 재정리)
-마지막 확인: 2026-10-24 tokens.css·글꼴 반영 후 `npm test`(80개)·`npm run lint`·`npm run build` 통과. 이전: 세션 종료 직전 `npm test`(80개), `npm run lint`(경고 없음), `npm run build` 재실행 모두 통과. 실제 기상청 자료로 부산·해운대 14일 요청(검증 당시 예보 5일+예보 전 9일), 캐시 재사용, 400/404·장소 API 정상 동작 확인도 완료. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음. 이번 세션은 데이터·서버 기능만 변경해 390px/데스크톱 화면 확인은 해당 없음. 앱 화면은 임시 홈 상태.
+마지막 확인: 2026-10-24 홈 구현 후 `npm test`(85개)·`npm run lint`·`npm run build` 통과, 헤드리스 크롬으로 390px(390 폭 틀 안)·1440px 첫 화면 확인. 구 선택 등 누르는 동작은 브라우저에서 사용자 확인 필요. 그 전: tokens.css·글꼴 반영 후 `npm test`(80개)·`npm run lint`·`npm run build` 통과. 이전: 세션 종료 직전 `npm test`(80개), `npm run lint`(경고 없음), `npm run build` 재실행 모두 통과. 실제 기상청 자료로 부산·해운대 14일 요청(검증 당시 예보 5일+예보 전 9일), 캐시 재사용, 400/404·장소 API 정상 동작 확인도 완료. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음. 이번 세션은 데이터·서버 기능만 변경해 390px/데스크톱 화면 확인은 해당 없음. 앱 화면은 임시 홈 상태.
 
 ## 현재 브랜치
 `feat/home-design` (← `feat/weather-api`). 원격 main에는 날씨·장소 API까지 PR #4·#5로 합쳐졌고, main에 없는 것은 인계 문서 커밋 `b9ae786`뿐이라 이 브랜치에 함께 포함됨. 이번 세션은 디자인 문서만 바꿈(코드 변경 없음).
@@ -13,6 +13,7 @@
 - 사용자 요청으로 이 세션을 마무리함. 구현 변경은 모두 커밋·푸시했고, 마지막으로 인계 문서만 갱신·커밋·푸시한다. 다음 세션 시작 시 원격 main의 최신 병합 상태를 다시 확인하고, 미병합이면 이 브랜치를 기준으로 새 작업 브랜치를 만든다.
 
 ## 끝낸 것
+- 홈 화면 구현(시안 C): `src/app/page.tsx` → `src/app/_home/`(HomeView·BusanMap·TripConditions·StoryShelf·regions). 공통 상단 메뉴 `src/components/SiteHeader.tsx`. 지역은 여행 저장소 setRegions, 기간은 그 자리의 작은 창에서 setPeriod. 시작 버튼은 /explore(아직 없음). 홈 데이터 `src/lib/server/home.ts`(+테스트 5개), 이야기 데이터 `scripts/build-stories.mjs` → `data/stories/stories.json`.
 - 홈 디자인 재정리: 시안 3개(A 백색 전시실·B 아웃라인·C 어두운 전시실) 비교 → **C 확정**, 휴대폰·데스크톱 시안 완성. 원본 `docs/design/home-c-mobile.dc.html`, `home-c-desktop.dc.html`, 캔버스 링크와 좋았던 것·뺀 것은 `docs/design/README.md` 2차 정리, 확정 값은 DECISIONS "디자인".
 - 날씨 API: `GET /api/weather?placeId=...&startDate=YYYY-MM-DD&days=1~14`. 기상청 API허브 단기예보 전체 페이지·KST 최신 발표·공식 좌표 변환·5분 성공 캐시·동시 요청 합치기·오류 구분 구현. 예보 기간 이후와 기간 안 결측을 구별하고 온도/강수 결측은 null로 보존. 일정은 변경하지 않음. 사용법·공식 근거·실제 응답 확인: `docs/WEATHER_API.md`. 날씨 테스트 17개 추가, 전체 80개 통과.
 - 장소 API: `GET /api/places` 목록·조건 필터·취향순·페이지 나누기, `GET /api/places/[id]` 상세. JSON 408곳을 서버 전용 모듈에서 제공하며 외부 API·키·브라우저 여행 정보에 의존하지 않음. 정확한 지역 비교·지도 경계·오류·정렬 등 새 테스트 33개, 전체 63개 통과. 사용법·HTTP 확인 기록: `docs/PLACE_API.md`. 도슨트 해설/원문은 이 API에 포함하지 않음.
@@ -40,7 +41,7 @@
 
 ## 다음 할 일
 1. (끝남) tokens.css·글꼴 반영. 이름 목록은 `src/styles/tokens.css` 맨 위 설명과 DECISIONS "디자인". 임시 홈은 새 이름으로만 바꿔 둠.
-2. 공통 화면 조각·홈 구현 → 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. 홈 지도 칸은 그림 자리를 두되 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
+2. (홈 끝남) 사용자 브라우저 확인 후 수정 → 다시 온 사람용 내 여행 카드 → 어디 갈까? → 언제 갈까? 순서로 여행 저장소와 API 연결. 홈 지도 칸은 그림 자리를 두되 그림 없이도 동작. 화면마다 390px·데스크톱 확인. API 계약은 `docs/PLACE_API.md`, `docs/WEATHER_API.md`.
 3. 나머지 13칸 지도 선 그림, 홈 첫 문구(사용자가 다시 쓰기로 함)는 홈 구현 중이나 후에.
 4. 도슨트는 별도 후속: 대표 검수의 선택 문단·제한을 사용자에게 확인받고, OpenAI 키 준비 후 소수 장소부터 해설 시험 생성·검수. 생성기는 선택 문단·제외/재검수/미검수 상태·출처 해시를 반드시 적용해야 함. 자동 충분 후보 83곳을 공개 가능한 이야기로 취급하지 않는다. 백제병원 연혁·석당박물관 연결 자료의 상세 검수와 부산근현대역사관 아카이브 승인 후 보완은 아직.
 5. 이후 기획서 12장의 개발 순서·QA 기준대로 진행.
@@ -58,6 +59,8 @@
 - 아직: OpenAI(월 한도 먼저 설정), 카카오모빌리티, Vercel 가입·GitHub 연결(배포 단계에서)
 
 ## 주의
+- 여행 저장소 `useTrip()`은 오늘 날짜(new Date)를 읽어서, cacheComponents 설정에서는 미리 만드는 화면에 넣으면 빌드가 실패한다. 그 화면을 `<Suspense>`로 감쌀 것(홈 page.tsx 참고). 저장소 쪽에서 근본적으로 고치려면 공통 파일이라 사용자 확인 후.
+- 헤드리스 크롬은 창 폭 500px 아래로 줄지 않는다. 390px 확인은 390 폭 iframe 안에 띄워 찍는다.
 - 키는 레포에 없음. 서버 코드는 `requireEnv()`(`src/lib/server/env.ts`)로, 스크립트는 `process.loadEnvFile(".env")`로 키를 읽는다.
 - 공공데이터포털 키는 Decoding 키. 호출 주소는 `URLSearchParams`로 만들어 한 번만 인코딩할 것(이중 인코딩하면 인증 오류).
 - 공공데이터포털은 가끔 `APPLICATION_ERROR`를 돌려준다. 다시 시도하면 된다(`fetch-places.mjs`의 `getJson` 참고).
