@@ -1,0 +1,32 @@
+/*
+ * PinDay 디자인 값 — 색·글꼴·둥글기·간격은 이 파일 한 곳에서만 정한다.
+ * 화면 코드에서는 색 코드(#…)를 직접 쓰지 말고 아래 이름을 Tailwind 클래스로 쓴다.
+ *   예: bg-bg, bg-surface, text-ink, text-ink-muted, border-line,
+ *       bg-accent, text-accent-ink, rounded-card, rounded-control, min-h-tap
+ * 값을 바꾸면 모든 화면에 바로 반영된다.
+ *
+ * 지금 값은 임시다. 기획서 10장 방향(흰 여백 + 진한 먹색 글씨 + 부산 바다 청록)만 따랐고,
+ * 디자인 시안을 고르면 이 파일의 값만 바꾼다. 확정 값은 docs/DECISIONS.md에 기록한다.
+ */
+
+@theme {
+  /* 색 */
+  --color-bg: #ffffff;           /* 화면 바탕 */
+  --color-surface: #f5f6f7;      /* 카드·상자 바탕 */
+  --color-ink: #1f2328;          /* 본문 글씨 (먹색) */
+  --color-ink-muted: #5f6670;    /* 보조 글씨 */
+  --color-line: #e3e5e8;         /* 테두리·구분선 */
+  --color-accent: #0f7c86;       /* 포인트 색 (부산 바다 청록), 화면당 강조 하나 */
+  --color-accent-ink: #ffffff;   /* 포인트 색 위 글씨 */
+  --color-danger: #c4352b;       /* 오류·삭제 */
+
+  /* 글꼴 (임시: 기기 기본 글꼴) */
+  --font-sans: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+
+  /* 둥글기 */
+  --radius-card: 16px;
+  --radius-control: 12px;        /* 버튼·칩·입력칸 */
+
+  /* 누르는 크기 최소값 (기획서 10장: 44px 이상) */
+  --spacing-tap: 44px;
+}
