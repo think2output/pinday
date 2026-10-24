@@ -1,0 +1,6 @@
+# 운영체제가 달라도 줄바꿈을 LF로 통일한다
+* text=auto eol=lf
+*.ico binary
+*.png binary
+*.jpg binary
+*.webp binary

@@ -1,26 +1,45 @@
 # HANDOFF — 지금 상태
 
-마지막 업데이트: 2026-10-24 · 작성: Claude (claude.ai 채팅)
+마지막 업데이트: 2026-10-24 · 작성: Claude Code
 
 ## 현재 브랜치
-main
+`docs/design-exploration` (← `feat/trip-store` ← `feat/place-data`). 모두 GitHub에 올림(push). main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨). 마지막 브랜치가 앞의 것을 모두 포함하므로 PR은 `docs/design-exploration` → main 하나면 된다.
+- `docs/tech-stack`, `feat/project-setup`은 이전 단계 브랜치(로컬에만 있음, 위 브랜치에 포함)
 
 ## 끝낸 것
-- 레포 생성, `docs/기획서.md`, `docs/wireframes/`(화면 25개 + 안내서), 에이전트 규칙 파일 추가
+- 기획서·와이어프레임·에이전트 규칙, 기술 스택 결정(Next.js + TypeScript + Tailwind + Vercel, DB 없이 JSON 파일)
+- 기본 폴더 구조(AGENTS.md "폴더 구조"), `.env.example`, `.gitattributes`, 디자인 값 파일 `src/styles/tokens.css`(값은 임시), `npm run lint`·`npm run build` 통과
+- 키 확인 스크립트 `scripts/check-keys.mjs`: 공공데이터포털 키(TourAPI, 부산테마여행정보), 기상청 API허브 키 모두 정상
+- 장소 원본 데이터 받기 `scripts/fetch-places.mjs` → `data/places/raw/` (관광지 351, 문화시설 125, 레포츠 60, 부산테마여행 247, 분류 이름표)
+- 분류표 확정 `docs/분류표.md` (취향 유형 → 분류, 실내/야외, DECISIONS "장소 분류")
+- 서비스용 장소 목록 `scripts/build-places.mjs` → `data/places/places.json` (408곳: 관광지 345 + 문화시설 63, 취향·실내 태그 포함)
+- 기상청 API허브 단기예보 활용신청 완료, 키 확인 정상
+- 내 여행 정보 저장소 `src/lib/trip/` (사용법은 그 폴더 README). 규칙 테스트 21개 `npm test` 통과. 화면에 붙여 브라우저에서 확인하는 건 아직(홈·어디 갈까? 작업 때)
+- 홈 화면 디자인 시안 탐색 → 기록 `docs/design/README.md`(좋았던 것·싫었던 것), 확정 항목은 DECISIONS "디자인". **사용자가 디자인을 나중에 다시 잡기로 함**
 
 ## 하다 만 것
-- 없음
+- 디자인: 컨셉(핀 조명)·글꼴·홈 지도 인터랙션만 확정. 색·간격 최종값은 다시 잡을 때 정함. `src/styles/tokens.css`는 아직 예전 임시 값(청록 포인트) — 디자인 확정 때 바꾼다
+- 임시 홈(`src/app/page.tsx`)은 홈 화면 작업 때 교체
+- 실내/야외 예외 장소 확인은 날씨 대안 작업 때 (`docs/분류표.md` 확인 후보 목록)
 
-## 다음 할 일 (순서대로)
-1. 기술 스택 정하기 (화면·서버·배포). 결정하면 DECISIONS에 기록
-2. 기본 폴더 구조 만들기 + `.env.example`
-3. TourAPI·부산테마여행정보로 부산 장소 목록 받아보기 → 실제 분류 이름 확인 → 취향 분류표·실내/야외 분류표 초안
-4. 내 여행 정보 저장소 (지역·기간, 취향, 후보함, 일정 + 초기화·되돌리기 + 기간 변경 규칙)
-5. 이후 기획서 12장 개발 순서대로
+## 다음 할 일 (디자인과 상관없는 것부터)
+1. 도슨트 근거 모으기 스크립트 (기획서 8장 1단계): 장소별 TourAPI 상세 설명(`detailCommon2`), 국가유산청 근처 유산(반경 1km, XML), 부산테마여행 이야기 연결 → `data/docent/evidence/`. 해설 생성(2단계)은 OpenAI 키가 생긴 뒤
+2. 서버 API: 장소 목록·상세(`data/places/places.json` 제공), 날씨(기상청 API허브 단기예보 + 짧은 캐시)
+3. 디자인 다시 잡기 (`docs/design/README.md`의 "다시 잡을 때 할 일" 따를 것) → 공통 화면 조각·홈 화면
+4. 이후 기획서 12장 개발 순서대로 (어디 갈까? → 언제 갈까? → 도슨트 목록·상세 …)
 
 ## 사용자가 해둔 것
-- 공공데이터포털 승인: 한국관광공사 국문 관광정보(TourAPI), 부산테마여행정보, 관광 빅데이터 지역별 방문자수, 기상청 단기예보(신청)
-- 아직: 부산근현대역사관 아카이브 신청, 카카오맵 API 활성화(대중교통·도보 포함), OpenAI, 카카오모빌리티
+- 공공데이터포털 승인: 한국관광공사 국문 관광정보(TourAPI), 부산테마여행정보, 관광 빅데이터 지역별 방문자수
+- 기상청 API허브(apihub.kma.go.kr) 키 → `.env`의 `KMA_APIHUB_AUTH_KEY`. 동네예보(단기예보) `VilageFcstInfoService_2.0` 등 활용신청 완료
+- 카카오: 무료 기능만 켬. 대중교통·도보 경로 API는 유료라 안 켬 → 어떻게 갈까? 대중교통·도보 방식 다시 정해야 함(기획서 6-6, 개발 10단계 전까지). 사이트 도메인 `http://localhost:3000` 등록 여부 확인 필요
+- 부산근현대역사관 아카이브 API 신청(승인 대기)
+- `.env` 만들고 공공데이터포털·카카오·기상청 API허브 키 넣음
+- 아직: OpenAI(월 한도 먼저 설정), 카카오모빌리티, Vercel 가입·GitHub 연결(배포 단계에서)
 
 ## 주의
-- 키는 아직 레포에 없음. `.env`는 사용자가 직접 만든다.
+- 키는 레포에 없음. 서버 코드는 `requireEnv()`(`src/lib/server/env.ts`)로, 스크립트는 `process.loadEnvFile(".env")`로 키를 읽는다.
+- 공공데이터포털 키는 Decoding 키. 호출 주소는 `URLSearchParams`로 만들어 한 번만 인코딩할 것(이중 인코딩하면 인증 오류).
+- 공공데이터포털은 가끔 `APPLICATION_ERROR`를 돌려준다. 다시 시도하면 된다(`fetch-places.mjs`의 `getJson` 참고).
+- 사진 공공누리 3유형(변경금지)이 190곳. 자르거나 덧칠 금지.
+- 디자인: 와이어프레임은 배치만 따르고, 색·글꼴은 tokens.css 이름만 쓴다. 화면 작업마다 390px·데스크톱 모습을 사용자에게 확인받을 것. 사용자가 싫어하는 것(구분선 남발, 둥근 모서리, 형광펜, 영문 모노 라벨 등)은 `docs/design/README.md` 표 참고.
+- `npm run dev`가 AGENTS.md 맨 아래 Next.js 안내 블록을 자동으로 다시 쓴다. 이미 커밋돼 있으니 지우지 말 것.

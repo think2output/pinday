@@ -11,6 +11,15 @@ PinDay: 부산 여행을 계획하는 사람이 지도에서 장소를 모아 �
 3. `docs/기획서.md` — 서비스 전체 기획
 4. `docs/wireframes/README.md` — 화면 와이어프레임 읽는 법과 파일 목록
 
+## 폴더 구조 (Next.js + TypeScript + Tailwind)
+- `src/app/` — 화면. 주소별 폴더(`explore/`, `schedule/`, `docent/[id]/` …). 서버 기능은 `src/app/api/`
+- `src/components/` — 공통 화면 조각
+- `src/lib/trip/` — 내 여행 정보 저장소(브라우저 저장)
+- `src/lib/server/` — 서버 전용 코드(외부 API 호출, 키 읽기). 파일 맨 위에 `import "server-only"`
+- `src/styles/tokens.css` — 디자인 값(색·글꼴·둥글기). 화면 코드에 색 코드를 직접 쓰지 않고 이 이름만 쓴다
+- `data/` — 미리 만든 장소 목록·도슨트 해설 JSON, `scripts/` — 그것을 만드는 로컬 스크립트
+- 확인 명령: `npm test`, `npm run lint`, `npm run build`
+
 ## 세션 시작할 때
 - 위 기준 문서를 읽고, `git status`와 최근 커밋 5개를 확인한다.
 - 지금 상태와 이번에 할 일을 사용자에게 짧게 요약하고, 사용자가 OK 하면 시작한다.
@@ -39,3 +48,13 @@ PinDay: 부산 여행을 계획하는 사람이 지도에서 장소를 모아 �
 ## 사용자와 대화
 - 한국어로 답한다. 사용자는 PM이고 코딩 초보라 어려운 용어는 쉽게 풀어서 설명한다.
 - 놓친 정보가 있거나 방향이 불분명하면 먼저 질문한다. 답변은 핵심부터.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
