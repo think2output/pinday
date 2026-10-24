@@ -196,7 +196,7 @@ export function ScheduleView({ places, stories }: { places: Record<string, Sched
               </p>
               <div className="mt-4 grid grid-cols-2 gap-2 lg:grid-cols-1">
                 <button type="button" disabled className="min-h-12 bg-room px-3 text-sm font-semibold text-on-room opacity-50">이동 확인 · 준비 중</button>
-                <button type="button" disabled className="min-h-12 px-3 text-sm font-semibold text-ink-muted ring-1 ring-line ring-inset">날씨 확인 · 준비 중</button>
+                <Link href={`/weather?day=${day}`} className="flex min-h-12 items-center justify-center px-3 text-sm font-semibold text-ink ring-1 ring-line ring-inset">날씨 확인</Link>
               </div>
             </section>
 
