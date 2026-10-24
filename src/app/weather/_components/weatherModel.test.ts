@@ -49,6 +49,12 @@ describe("실내 대안", () => {
     const result = indoorAlternatives(places.beach, places, new Set(), new Set(["story", "far"]))!;
     expect(result.map((entry) => [entry.place.id, entry.story])).toEqual([["story", true], ["museum", false], ["far", true]]);
   });
+  it("웰니스는 더 가까워도 뒤로 미룬다", () => {
+    const spa = { ...place("spa", 35.1505, 129.11, true), category: "웰니스관광 > 뷰티스파" };
+    const result = indoorAlternatives(places.beach, { ...places, spa }, new Set(), new Set())!;
+    expect(result.map((entry) => entry.place.id)).toEqual(["museum", "story", "far"]);
+    expect(indoorAlternatives(places.beach, { ...places, spa }, new Set(), new Set(), 4)!.at(-1)!.place.id).toBe("spa");
+  });
   it("이미 일정에 있는 곳과 좌표가 잘못된 곳은 빼고, 최대 개수를 지킨다", () => {
     const result = indoorAlternatives(places.beach, places, new Set(["museum"]), new Set(), 1)!;
     expect(result.map((entry) => entry.place.id)).toEqual(["story"]);

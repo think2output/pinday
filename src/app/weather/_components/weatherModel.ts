@@ -56,9 +56,12 @@ export function dayCard(date: string, today: string, state: WeatherState): DayCa
 
 export type Alternative = { place: WeatherPlace; km: number; story: boolean };
 
+/** 요가·스파 같은 웰니스는 관광 대안으로 덜 어울려 뒤로 미룬다(사용자 결정) */
+const isWellness = (place: WeatherPlace) => place.category.startsWith("웰니스관광");
+
 /**
  * 야외 장소 대신 갈 실내 장소. 거리 제한 없이 가까운 순으로 고르되,
- * 직선 NEARBY_KM 안에 이야기 있는 곳이 있으면 앞에 둔다. 이미 일정에 있는 곳은 뺀다.
+ * 직선 NEARBY_KM 안에 이야기 있는 곳을 맨 앞, 웰니스는 맨 뒤에 둔다. 이미 일정에 있는 곳은 뺀다.
  * 기준 장소의 좌표를 믿을 수 없으면 null.
  */
 export function indoorAlternatives(
@@ -69,14 +72,11 @@ export function indoorAlternatives(
   limit = 3,
 ): Alternative[] | null {
   if (!target || !canMapPlace(target)) return null;
+  const rank = (entry: Alternative) => (entry.story && entry.km <= NEARBY_KM ? 0 : isWellness(entry.place) ? 2 : 1);
   return Object.values(places)
     .filter((place) => place.indoor && place.id !== target.id && !scheduled.has(place.id) && canMapPlace(place))
     .map((place) => ({ place, km: distanceKm(target, place), story: stories.has(place.id) }))
-    .sort((a, b) => {
-      const aFirst = a.story && a.km <= NEARBY_KM;
-      const bFirst = b.story && b.km <= NEARBY_KM;
-      return aFirst === bFirst ? a.km - b.km : aFirst ? -1 : 1;
-    })
+    .sort((a, b) => rank(a) - rank(b) || a.km - b.km)
     .slice(0, limit);
 }
 
