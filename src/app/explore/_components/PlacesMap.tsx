@@ -29,6 +29,8 @@ export function PlacesMap({ places, fitKey, selected, candidates, onSelect, onBo
     loadKakaoMaps().then((maps) => {
       if (cancelled || !element) return;
       const instance = new maps.Map(element, { center: new maps.LatLng(35.18, 129.07), level: 9 });
+      // 지도 위에서도 마우스 휠은 페이지를 스크롤한다. 확대·축소는 별도 버튼으로 제공한다.
+      instance.setZoomable(false);
       const colors = getComputedStyle(document.documentElement);
       const clusters = new maps.MarkerClusterer({ map: instance, averageCenter: true, minLevel: 5, gridSize: 60,
         styles: [{ width: "44px", height: "44px", lineHeight: "44px", textAlign: "center", fontWeight: "700",
@@ -75,7 +77,11 @@ export function PlacesMap({ places, fitKey, selected, candidates, onSelect, onBo
     const markers = mappedPlaces.map((place) => {
       const active = selected?.id === place.id;
       const added = candidates.includes(place.id);
-      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"><rect x="3" y="3" width="38" height="38" fill="${color(active ? "light" : "room")}" stroke="${color("bg")}" stroke-width="2"/><text x="22" y="28" text-anchor="middle" font-size="18" font-family="sans-serif" fill="${color(active ? "ink" : "on-room")}">${added ? "✓" : "·"}</text></svg>`;
+      const foreground = color(active ? "ink" : "on-room");
+      const symbol = added
+        ? `<path d="m16 18 4 4 8-9" fill="none" stroke="${foreground}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
+        : `<circle cx="22" cy="18" r="5" fill="${foreground}"/>`;
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"><path d="M22 3C13.7 3 7 9.7 7 18c0 11 15 23 15 23s15-12 15-23C37 9.7 30.3 3 22 3Z" fill="${color(active ? "light" : "room")}" stroke="${color("bg")}" stroke-width="2"/>${symbol}</svg>`;
       const marker = new maps.Marker({ position: new maps.LatLng(place.lat, place.lng), title: place.name,
         image: new maps.MarkerImage(`data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`, new maps.Size(44, 44)) });
       const click = () => callbacks.current.onSelect(place.id);
@@ -107,6 +113,18 @@ export function PlacesMap({ places, fitKey, selected, candidates, onSelect, onBo
   return (
     <>
       <div ref={container} role="region" aria-label="카카오 장소 지도. 같은 장소를 목록에서도 고를 수 있어요" className="absolute inset-0" />
+      {status === "ready" && (
+        <div role="group" aria-label="지도 확대·축소" className="absolute top-3 right-3 z-10 flex flex-col bg-bg shadow-paper">
+          <button type="button" aria-label="지도 확대" onClick={() => {
+            const instance = map.current;
+            if (instance) instance.setLevel(Math.max(1, instance.getLevel() - 1));
+          }} className="min-h-tap min-w-tap text-xl text-ink">+</button>
+          <button type="button" aria-label="지도 축소" onClick={() => {
+            const instance = map.current;
+            if (instance) instance.setLevel(Math.min(14, instance.getLevel() + 1));
+          }} className="min-h-tap min-w-tap text-xl text-ink">−</button>
+        </div>
+      )}
       {status !== "ready" && (
         <div role="status" className="absolute top-4 right-4 left-4 z-10 bg-bg p-4 text-sm text-ink-muted shadow-paper">
           {status === "loading" ? "부산 지도를 불러오고 있어요" : "지도를 불러오지 못했어요. 목록에서 장소를 고를 수 있어요."}

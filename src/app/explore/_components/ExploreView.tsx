@@ -82,7 +82,7 @@ export function ExploreView({ categories, names }: { categories: Category[]; nam
   ) : <p className="text-sm leading-relaxed text-ink-muted">마음에 드는 곳을 ♡로 담아보세요.</p>;
 
   return (
-    <div className="mx-auto flex h-dvh min-h-150 w-full max-w-page flex-col px-gutter lg:box-content lg:px-gutter-wide">
+    <div className="mx-auto flex min-h-dvh w-full max-w-page flex-col px-gutter lg:max-w-[calc(var(--container-page)+2*var(--spacing-gutter-wide))] lg:px-gutter-wide">
       <SiteHeader />
       <main className="flex min-h-0 flex-1 flex-col">
         <div className="flex items-center justify-between gap-3 pt-3 lg:pt-7">
@@ -113,7 +113,7 @@ export function ExploreView({ categories, names }: { categories: Category[]; nam
           ))}
         </div>
         <p role="status" className={notice ? "pb-2 text-xs text-ink-muted" : "sr-only"}>{notice}</p>
-        <div className="relative min-h-0 flex-1 lg:grid lg:grid-cols-[minmax(230px,0.9fr)_minmax(0,1.7fr)_minmax(190px,0.7fr)] lg:grid-rows-[minmax(0,1fr)] lg:gap-6 lg:pb-4">
+        <div className="relative h-[70dvh] min-h-120 shrink-0 lg:grid lg:h-[72dvh] lg:max-h-200 lg:grid-cols-[minmax(230px,0.9fr)_minmax(0,1.7fr)_minmax(190px,0.7fr)] lg:grid-rows-[minmax(0,1fr)] lg:gap-6 lg:pb-4">
           <section aria-label="장소 목록" data-map-bounds={bounds ? JSON.stringify(bounds) : undefined} className={`absolute right-0 bottom-0 left-0 z-20 flex min-h-0 flex-col bg-bg px-3 shadow-paper lg:relative lg:inset-auto lg:z-auto lg:h-full lg:px-0 lg:shadow-none ${selected ? "hidden lg:flex" : "flex"} ${sheet === "closed" ? "h-14" : sheet === "full" ? "h-[92%]" : mapFailed ? "h-[65%]" : "h-[48%]"}`}>
             <button type="button" aria-expanded={sheet !== "closed"} aria-label={sheet === "full" ? "장소 목록 접기" : "장소 목록 펼치기"}
               onPointerDown={(event) => { drag.current = { y: event.clientY, moved: false }; event.currentTarget.setPointerCapture(event.pointerId); }}
@@ -167,11 +167,11 @@ export function ExploreView({ categories, names }: { categories: Category[]; nam
             <button type="button" disabled className="mt-5 min-h-tap bg-room px-3 text-sm font-semibold text-on-room opacity-50">날짜에 배치하기 · 준비 중</button>
           </aside>
         </div>
-        <div className="flex min-h-18 shrink-0 items-center justify-between gap-3 bg-bg pb-[env(safe-area-inset-bottom)] lg:hidden">
+        <div className="fixed right-0 bottom-0 left-0 z-30 flex min-h-18 items-center justify-between gap-3 bg-bg px-gutter pb-[env(safe-area-inset-bottom)] lg:hidden">
           <button type="button" onClick={() => setShowCandidates(true)} className="min-h-tap text-sm font-bold">후보 {trip.candidates.length}곳 보기</button>
           <button type="button" disabled className="min-h-tap bg-room px-3 text-sm font-semibold text-on-room opacity-50">날짜에 배치하기 · 준비 중</button>
         </div>
-        <p className="sr-only">장소 정보 한국관광공사 TourAPI · 지도 카카오</p>
+        <footer className="pt-6 pb-24 text-xs text-ink-subtle lg:pb-6">장소 정보 한국관광공사 TourAPI · 지도 카카오</footer>
       </main>
       {editing && <ConditionsEditor trip={trip} onClose={() => setEditing(false)} onNotice={setNotice} />}
       <dialog ref={candidateDialog} onCancel={() => setShowCandidates(false)} onClose={() => setShowCandidates(false)} aria-labelledby="mobile-candidates-title" className="fixed inset-0 m-auto max-h-[80dvh] w-[calc(100%-32px)] max-w-md overflow-y-auto bg-bg p-5 text-ink shadow-paper backdrop:bg-room/80">

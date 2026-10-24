@@ -4,7 +4,7 @@ export type LatLng = { getLat(): number; getLng(): number };
 export type LatLngBounds = { extend(point: LatLng): void; getSouthWest(): LatLng; getNorthEast(): LatLng };
 export type MapInstance = {
   setBounds(bounds: LatLngBounds, top?: number, right?: number, bottom?: number, left?: number): void;
-  getBounds(): LatLngBounds; setLevel(level: number): void; panTo(point: LatLng): void; relayout(): void;
+  getBounds(): LatLngBounds; getLevel(): number; setLevel(level: number): void; setZoomable(zoomable: boolean): void; panTo(point: LatLng): void; relayout(): void;
 };
 export type Marker = { setMap(map: MapInstance | null): void };
 export type Clusterer = { addMarkers(markers: Marker[]): void; clear(): void };
