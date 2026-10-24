@@ -41,11 +41,10 @@ function RainBar({ timeline }: { timeline: RainTimeline }) {
   );
 }
 
-/** 대안 하나를 고르는 목록. tone="room"은 어두운 카드 위 */
-function AlternativePicker({ fromName, alternatives, chosen, onChoose, tone }: {
-  fromName: string; alternatives: Alternative[]; chosen: string; onChoose: (id: string) => void; tone: "plain" | "room";
+/** 대안 하나를 고르는 목록 */
+function AlternativePicker({ fromName, alternatives, chosen, onChoose }: {
+  fromName: string; alternatives: Alternative[]; chosen: string; onChoose: (id: string) => void;
 }) {
-  const room = tone === "room";
   return (
     <ul role="radiogroup" aria-label={`${fromName} 대신 갈 실내 장소`} className="flex flex-col gap-1.5">
       {alternatives.map((alt) => {
@@ -53,19 +52,18 @@ function AlternativePicker({ fromName, alternatives, chosen, onChoose, tone }: {
         return (
           <li key={alt.place.id} className="flex items-stretch gap-1">
             <button type="button" role="radio" aria-checked={on} onClick={() => onChoose(alt.place.id)}
-              className={`flex min-h-14 flex-1 items-center gap-3 px-3 py-2 text-left ${
-                on ? (room ? "bg-on-room text-ink" : "bg-room text-on-room") : room ? "ring-1 ring-on-room-subtle/40 ring-inset" : "ring-1 ring-line ring-inset"}`}>
-              <span aria-hidden="true" className={`grid size-5 shrink-0 place-items-center text-xs font-bold ${on ? (room ? "bg-room text-on-room" : "bg-on-room text-ink") : "ring-1 ring-current ring-inset opacity-50"}`}>{on ? "✓" : ""}</span>
+              className={`flex min-h-14 flex-1 items-center gap-3 px-3 py-2 text-left ${on ? "bg-room text-on-room" : "ring-1 ring-line ring-inset"}`}>
+              <span aria-hidden="true" className={`grid size-5 shrink-0 place-items-center text-xs font-bold ${on ? "bg-on-room text-ink" : "ring-1 ring-current ring-inset opacity-50"}`}>{on ? "✓" : ""}</span>
               <span className="min-w-0 flex-1">
                 <span className="block text-sm font-semibold break-words">{alt.place.name}</span>
-                <span className={`block text-xs ${on ? (room ? "text-ink-muted" : "text-on-room-muted") : room ? "text-on-room-muted" : "text-ink-muted"}`}>
+                <span className={`block text-xs ${on ? "text-on-room-muted" : "text-ink-muted"}`}>
                   직선 {distanceLabel(alt.km)} · {alt.place.category.split(" > ").at(-1)}{alt.story ? " · 이야기 있음" : ""}
                 </span>
               </span>
             </button>
             {alt.story && (
               <Link href={`/docent/${alt.place.id}`} aria-label={`${alt.place.name} 이야기 보기`}
-                className={`flex min-w-tap items-center justify-center text-sm font-semibold ${room ? "text-on-room" : "text-ink"}`}>▶</Link>
+                className="flex min-w-tap items-center justify-center text-sm font-semibold text-ink">▶</Link>
             )}
           </li>
         );
@@ -77,18 +75,16 @@ function AlternativePicker({ fromName, alternatives, chosen, onChoose, tone }: {
 export function WeatherView({ places, stories }: { places: Record<string, WeatherPlace>; stories: string[] }) {
   const { trip, saved } = useTrip();
   const mounted = useSyncExternalStore(subscribeMounted, () => true, () => false);
-  const params = useSearchParams();
-  const variant = params.get("v") === "b" ? "b" : "a";
-  const requestedDay = Number(params.get("day"));
+  const requestedDay = Number(useSearchParams().get("day"));
   const [pickedDay, setPickedDay] = useState<number | null>(Number.isInteger(requestedDay) && requestedDay > 0 ? requestedDay : null);
   const [notice, setNotice] = useState<string | null>(null);
   const [editing, setEditing] = useState(false);
   const [choices, setChoices] = useState<Record<string, string>>({});
-  const [focusId, setFocusId] = useState<string | null>(null);
   const [sheetId, setSheetId] = useState<string | null>(null);
   const sheet = useRef<HTMLDialogElement>(null);
   const sheetTrigger = useRef<HTMLButtonElement | null>(null);
   const tabs = useRef(new Map<number, HTMLButtonElement>());
+  const dayHeading = useRef<HTMLHeadingElement>(null);
   const storySet = useMemo(() => new Set(stories), [stories]);
 
   const today = mounted ? todayLocal() : trip.startDate;
@@ -117,9 +113,8 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
   const undecided = toDecide.filter((id) => !isKept(id));
   const altsOf = (id: string) => indoorAlternatives(places[id], places, scheduled, storySet);
   const choiceOf = (id: string, alternatives: Alternative[]) => alternatives.find((alt) => alt.place.id === choices[id])?.place.id ?? alternatives[0].place.id;
-  const current = focusId && undecided.includes(focusId) ? focusId : undecided[0] ?? null;
 
-  const pickDay = (n: number) => { setPickedDay(n); setNotice(null); setFocusId(null); };
+  const pickDay = (n: number) => { setPickedDay(n); setNotice(null); };
   const onTabKey = (event: KeyboardEvent<HTMLButtonElement>) => {
     const next = { ArrowRight: day + 1, ArrowLeft: day - 1, Home: 1, End: total }[event.key];
     if (next === undefined) return;
@@ -137,7 +132,8 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
   const closeSheet = () => {
     if (sheet.current?.open) sheet.current.close();
     setSheetId(null);
-    requestAnimationFrame(() => sheetTrigger.current?.focus());
+    // 바꾼 뒤에는 누른 '바꾸기' 버튼이 사라지므로 그날 제목으로 초점을 옮긴다
+    requestAnimationFrame(() => (sheetTrigger.current?.isConnected ? sheetTrigger.current : dayHeading.current)?.focus());
   };
 
   const swap = (fromId: string, toId: string) => {
@@ -145,12 +141,10 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     const addedCandidate = !trip.candidates.includes(toId);
     tripActions.replaceInDay(day, fromId, toId);
     rememberSwap({ day, fromId, toId, addedCandidate });
-    setFocusId(null);
     setNotice(`${nameOf(fromId)} 대신 ${withObject(nameOf(toId))} ${day}일차 ${index + 1}번째에 넣었어요`);
   };
   const keep = (id: string) => {
     keepPlace({ day, placeId: id });
-    setFocusId(null);
     setNotice(`${withObject(nameOf(id))} 그대로 두기로 했어요`);
   };
   const undo = (entry: Swap) => {
@@ -164,11 +158,6 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     forgetSwap(entry);
     setNotice(`${nameOf(entry.fromId)}(으)로 되돌렸어요`);
   };
-  const reopen = (id: string) => {
-    unkeepPlace({ day, placeId: id });
-    setFocusId(id);
-  };
-
   const weatherCaption = () => {
     const state = weather.state;
     if (state.kind === "error") return (
@@ -191,8 +180,7 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
     const swapped = swapOf(id);
     const outdoor = isOutdoor(id);
     const deciding = card.rain && outdoor && !swapped && !isKept(id);
-    const active = variant === "b" && deciding && id === current;
-    const tag = swapped ? "실내로 바꿈" : !place ? "확인 불가" : outdoor ? (card.rain ? (isKept(id) ? "야외 · 그대로" : active ? "위에서 정하는 중" : "☂ 야외") : "야외") : "실내";
+    const tag = swapped ? "실내로 바꿈" : !place ? "확인 불가" : outdoor ? (card.rain ? (isKept(id) ? "야외 · 그대로" : "☂ 야외") : "야외") : "실내";
     const sub = swapped ? `원래 ${nameOf(swapped.fromId)}` : place ? `${regionName(place.region)} · ${place.category.split(" > ").at(-1)}` : "";
     return (
       <li key={id} className="flex min-h-14 items-center gap-3 py-1.5">
@@ -206,57 +194,12 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
           <button type="button" onClick={() => undo(swapped)} aria-label={`${nameOf(id)}을(를) ${nameOf(swapped.fromId)}(으)로 되돌리기`}
             className="min-h-tap shrink-0 px-2 text-sm font-semibold underline underline-offset-4">되돌리기</button>
         ) : card.rain && outdoor && isKept(id) ? (
-          <button type="button" onClick={() => reopen(id)} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted underline underline-offset-4">다시 정하기</button>
-        ) : deciding && variant === "a" ? (
+          <button type="button" onClick={() => unkeepPlace({ day, placeId: id })} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted underline underline-offset-4">다시 정하기</button>
+        ) : deciding ? (
           <button type="button" onClick={(event) => openSheet(id, event.currentTarget)} aria-haspopup="dialog"
             className="min-h-tap shrink-0 px-3 text-sm font-semibold ring-1 ring-ink ring-inset">바꾸기</button>
-        ) : deciding && variant === "b" && !active ? (
-          <button type="button" onClick={() => setFocusId(id)} className="min-h-tap shrink-0 px-2 text-sm text-ink-muted underline underline-offset-4">정하기</button>
         ) : null}
       </li>
-    );
-  };
-
-  /** B안: 정할 장소를 하나씩 보여주는 어두운 카드 */
-  const stepCard = () => {
-    if (!card.rain || toDecide.length === 0) return null;
-    if (!current) {
-      return (
-        <div className="mt-6 flex items-center gap-3 bg-room px-4 py-4 text-on-room lg:max-w-160">
-          <span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />
-          <p className="text-sm font-semibold">{day}일차 야외 장소를 모두 정했어요</p>
-        </div>
-      );
-    }
-    const alternatives = altsOf(current);
-    const position = toDecide.indexOf(current) + 1;
-    const decidedCount = toDecide.length - undecided.length;
-    const next = undecided[(undecided.indexOf(current) + 1) % undecided.length];
-    return (
-      <section aria-label="비 오는 날 바꿀지 정하기" className="mt-6 bg-room px-4 py-5 text-on-room lg:max-w-160 lg:px-6">
-        <div className="flex items-center justify-between gap-3 text-xs text-on-room-muted">
-          <span>정할 곳 {decidedCount + 1} / {toDecide.length}</span>
-          {undecided.length > 1 && <button type="button" onClick={() => setFocusId(next)} className="min-h-tap px-1 text-sm text-on-room">나중에 · 다음 장소 ›</button>}
-        </div>
-        <p className="mt-1 font-display text-xl font-extrabold">{nameOf(current)}</p>
-        <p className="text-xs text-on-room-muted">{position}번째 장소 · 야외{timeline ? ` · ${timeline.summary.split(".")[0]}` : ""}</p>
-        {alternatives === null || alternatives.length === 0 ? (
-          <>
-            <p className="mt-4 text-sm text-on-room-muted">{alternatives === null ? "지도 위치를 확인할 수 없는 장소라 가까운 실내 장소를 찾지 못했어요." : "바꿀 수 있는 실내 장소가 없어요."}</p>
-            <button type="button" onClick={() => keep(current)} className="mt-3 min-h-12 w-full px-4 text-sm font-semibold ring-1 ring-on-room-subtle/60 ring-inset sm:w-auto">그대로 갈게요</button>
-          </>
-        ) : (
-          <>
-            <p className="mt-4 mb-2 flex items-center gap-2 text-sm font-semibold"><span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />대신 갈 실내 장소</p>
-            <AlternativePicker fromName={nameOf(current)} alternatives={alternatives} chosen={choiceOf(current, alternatives)}
-              onChoose={(altId) => setChoices((value) => ({ ...value, [current]: altId }))} tone="room" />
-            <div className="mt-4 grid grid-cols-2 gap-2">
-              <button type="button" onClick={() => swap(current, choiceOf(current, alternatives))} className="min-h-12 bg-on-room px-4 text-sm font-bold text-ink shadow-glow-soft">이 장소로 바꾸기</button>
-              <button type="button" onClick={() => keep(current)} className="min-h-12 px-4 text-sm font-semibold ring-1 ring-on-room-subtle/60 ring-inset">그대로 갈게요</button>
-            </div>
-          </>
-        )}
-      </section>
     );
   };
 
@@ -320,12 +263,11 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
               </section>
             ) : (
               <section id="weather-panel" role="tabpanel" aria-labelledby={`weather-tab-${day}`} className="mt-8">
-                <h2 className="font-display text-xl font-extrabold tracking-tight lg:text-2xl">{day}일차 · {shortDate(dates[day - 1])}</h2>
+                <h2 ref={dayHeading} tabIndex={-1} className="font-display text-xl font-extrabold tracking-tight outline-offset-4 lg:text-2xl">{day}일차 · {shortDate(dates[day - 1])}</h2>
                 <p className="mt-1 text-sm text-ink-muted">{card.icon} {card.label}{card.detail ? ` · ${card.detail}` : ""}</p>
                 {timeline ? <div className="mt-4 lg:max-w-160"><RainBar timeline={timeline} /></div> : <p className="mt-3 text-sm text-ink">{card.note}</p>}
 
                 <p role="status" className={notice ? "mt-4 text-sm font-semibold text-ink" : "sr-only"}>{notice}</p>
-                {variant === "b" && stepCard()}
 
                 {ids.length === 0 ? (
                   <p className="mt-6 text-sm text-ink-muted">
@@ -363,7 +305,7 @@ export function WeatherView({ places, stories }: { places: Record<string, Weathe
               <>
                 <div className="mt-4">
                   <AlternativePicker fromName={nameOf(sheetId)} alternatives={sheetAlternatives} chosen={choiceOf(sheetId, sheetAlternatives)}
-                    onChoose={(altId) => setChoices((value) => ({ ...value, [sheetId]: altId }))} tone="plain" />
+                    onChoose={(altId) => setChoices((value) => ({ ...value, [sheetId]: altId }))} />
                 </div>
                 <button type="button" onClick={() => { swap(sheetId, choiceOf(sheetId, sheetAlternatives)); closeSheet(); }}
                   className="mt-4 min-h-12 bg-room px-4 text-sm font-bold text-on-room">이 장소로 바꾸기</button>
