@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "126098",
+    "name": "일광해수욕장",
+    "lat": 35.2598,
+    "lng": 129.234
+  },
+  "collectedAt": "2026-10-24T10:23:44.974Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:454"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:126098",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "일광해수욕장",
+      "relation": "same-place",
+      "originalText": "일광해수욕장은 기장군에 위치한 해수욕장으로 기장 8경 중 하나로 꼽힐 만큼 아름다운 곳이다. 모래사장은 이천강과 이천포가 맞닿은 곳에서부터 시작하여 학리 어구까지 마치 원을 이루며 펼쳐져 있다. 백사장의 주위에는 수백 년이 넘은 노송들이 우거져 있었는데 지금은 그 모습이 사라졌다. 그리고 백사장 오른쪽 끝자리에 위치한 학리마을에서는 이름 그대로 학이 노송 위를 무리 지어 날기도 하였으나 현재 그 모습 또한 많이 사라졌다. 이 밖에 백사장 한가운데에 고려 말 정몽주, 이색, 이숭인 세 성인들이 유람하였다고 전해지는 삼성대가 있다. 주변 관광지로는 국수당, 남산봉수대, 황학대 등이 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126098&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:05.259Z",
+      "modifiedAt": "20260701105452",
+      "passages": [
+        {
+          "text": "일광해수욕장은 기장군에 위치한 해수욕장으로 기장 8경 중 하나로 꼽힐 만큼 아름다운 곳이다. 모래사장은 이천강과 이천포가 맞닿은 곳에서부터 시작하여 학리 어구까지 마치 원을 이루며 펼쳐져 있다. 백사장의 주위에는 수백 년이 넘은 노송들이 우거져 있었는데 지금은 그 모습이 사라졌다. 그리고 백사장 오른쪽 끝자리에 위치한 학리마을에서는 이름 그대로 학이 노송 위를 무리 지어 날기도 하였으나 현재 그 모습 또한 많이 사라졌다. 이 밖에 백사장 한가운데에 고려 말 정몽주, 이색, 이숭인 세 성인들이 유람하였다고 전해지는 삼성대가 있다. 주변 관광지로는 국수당, 남산봉수대, 황학대 등이 있다.",
+          "characters": 251,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "busan-theme:398",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "멋진 바다풍경과 함께 걷는 갈맷길",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "갈맷길 1코스는 임랑해수욕장에서 송정해수욕장에 이르는 코스이다. 동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장 멋진 코스라고 할 수 있다. 1코스의 초반을 알리는 일광해수욕장은 해안선이 둥글게 말려있는 모습이 꼭 초승달 같은 곳이다. 조용하고 한적한 해수욕장이지만, 웬만한 편의시설은 모두 갖추고 있어 쉬어가기 좋은 해수욕장이다. 파도가 잔잔해 안전한 물놀이를 즐기기에도 적당하다.",
+          "reason": "place-subject",
+          "characters": 171
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "부산의 매력인 바다와 강, 산과 온천을 모두 담고 있는 갈맷길은 경치뿐만 아니라, 걷다보면 부산의 역사와 문화, 축제까지 만나게 되는 기분 좋은 길이다. 부산의 지형에 맞게 크게 해안길, 숲길, 강변길, 도심길로 구분된 총 9개의 코스를 내딛다보면 부산의 속살 구석구석을 만날 수 있다. \n\n<p class=\"font-size28 colorDarkBlue medium\">1코스</p><p class=\"font-size20 medium\">1-1구간  / 4시간 : 임랑해수욕장 ~ 기장군청<br>1-2구간 / 5시간 : 기장군청 ~ 송정해수욕장</p>\n<p class=\"font-size28 colorDarkBlue medium\">2코스</p><p class=\"font-size20 medium\">2-1구간  /3시간 : 송정해수욕장 ~ 민락교<br>2-2구간  / 4시간 : 민락교 ~ 오륙도 진입데크</p>\n<p class=\"font-size28 colorDarkBlue medium\">3코스</p><p class=\"font-size20 medium\">3-1구간  / 4시간 : 오륙도 진입데크 ~ 부산진시장<br>3-2구간/ 5시간 : 부산진시장 ~ 남항대교<br>3-3구간  / 5시간 : 남항대교 ~ 아미르공원</p>\n갈맷길 1코스는 임랑해수욕장에서 송정해수욕장에 이르는 코스이다. 동해바다를 끼고 걷게 되는 코스인 만큼 바다 풍경이 가장 멋진 코스라고 할 수 있다.\n1코스의 초반을 알리는 일광해수욕장은 해안선이 둥글게 말려있는 모습이 꼭 초승달 같은 곳이다. 조용하고 한적한 해수욕장이지만, 웬만한 편의시설은 모두 갖추고 있어 쉬어가기 좋은 해수욕장이다. 파도가 잔잔해 안전한 물놀이를 즐기기에도 적당하다.\n\n부산의 가장 대표적인 해수욕장인 해운대와 광안리를 거치는 코스인 갈맷길 2코스는 송정해수욕장에서 오륙도 진입데크까지 이어진다.\n무슨 수식어가 더 필요할까. 부산을 넘어 대한민국 대표 해수욕장인 해운대 해수욕장을 거쳐 맞닿아있는 동백섬까지 걸어 가본다. 이국적인 야경으로 널리 알려진 마린시티와 더베이101도 걷다보면 만날 수 있다.\n광안대교가 보이기 시작하면 광안리 해수욕장에 다 왔다는 뜻이다. 광안리 해수욕장 옆으로는 젊은이들의 핫플레이스인 민락수변공원과, 봄이 되면 끝없는 벚꽃터널을 선사해주는 남천동 벚꽃거리를 지나, 해운대와 광안대교를 한 시야에 담을 수 있는 이기대의 동생말 전망대에 서서 넓은 바다를 조망한다.\n오륙도 진입데크에서 아미르공원까지 이어지는 갈맷길 3코스는 부산에만 있는 것을 많이 만나볼 수 있는 코스이다.\n세계유일의 유엔군 묘지가 있는 유엔기념공원은 정갈하고 단정한 모습으로 우리를 기다리고 있다. 이역만리 먼 나라를 도와 목숨을 바친 분들에 대한 감사함이 절로 느껴진다.\n동명의 영화로 전국구로 유명해진 국제시장은 ‘이런 것 까지 있어?’ 싶은 물건들까지 모두 볼 수 있다. 영화와는 달리 깔끔하게 새 단장한 모습이지만 전통시장답게 와글와글, 시끌벅적한 것은 매한가지다.\n바다에 거대한 배들이 점점이 떠있는 이국적인 바다 풍경은 바로 영도 절영해안로에서 만나볼 수 있다. 영화 ‘변호인’ 촬영지로 유명해진 흰여울문화마을 바로 밑에서 태종대까지 이어지는 절영해안로는 투박한 해안선을 따라 걷는 진정한 해안트레킹의 성지이다. 영도의 끝에서 만나게 되는 태종대에서 기암괴석과 망망대해의 정수를 느끼며 갈맷길의 여정을 잠시 쉬어간다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=398&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:453",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "해파랑길 부산구간",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "부산 오륙도해맞이공원에서 강원도 고성 통일전망대에 이르는 770km를 묶은 해파랑길은 10개의 구간, 50개의 여행지로 이루어져 있다. ‘부파랑길’ 이라고 불리는 해파랑길 부산구간은 3구간으로 이루어져 있다. 오륙도부터 해운대까지, 미포부터 기장 대변항까지, 그리고 대변항부터 임랑해수욕장까지 이어지는 ‘부파랑길’로 떠나보자.\n\n<p class=\"font-size28 colorDarkBlue medium\">해파랑길 부산구간</p>\n<p class=\"font-size20 colorDarkBlue medium\">1코스(17.8Km / 6시간)</p><p class=\"font-size20 medium\">오륙도해맞이공원 – 이기대해안산책로 – 광안리해수욕장 - 동백해안산책로- 미포</p>\n<p class=\"font-size20 colorDarkBlue medium\">2코스(16.3 km / 5 hr)</p><p class=\"font-size20 medium\">미포 – 달맞이고개– 문탠로드 – 청사포 – 송정해수욕장 – 해동용궁사 – 대변항</p>\n<p class=\"font-size20 colorDarkBlue medium\">3코스(16.9 km / 6 hr)</p><p class=\"font-size20 medium\">대변항 – 일광해수욕장 – 칠암항 – 임랑해수욕장</p>\n오륙도에서 시작되는 1코스는 한 쪽은 녹음이 가득, 다른 한 쪽은 깎아지는 절벽과 하얀 파도, 파란 바다가 마주하는 ‘이기대 해안산책로’ 로 이어진다. 거친 벼랑을 듣기 좋은 나무 데크 소리로 채우며 걸어 나간다. 부산의 상징 광안대교는 어디서 보느냐에 따라 또 달라 보인다. 발걸음을 옮기며 각도에 따라 달라지는 ‘광안대교’를 눈에 담는다. 걷다보니 다시 해안 벼랑과 나무 데크길을 만나게 된다. 바로 ‘동백섬 해안산책로’이다. 이기대 해안산책로보다 훨씬 평탄한 동백섬 해안산책로를 따라 걷다보면 점점 사람도 많아지고 건물도 많아진다. 그렇게 해운대의 끝자락을 향해 걸어 나가면 1코스는 마무리된다.\n해운대 해수욕장의 끝을 장식하는 ‘미포’부터 2코스가 시작된다. 화려한 해운대와 대비되는 소박한 포구인 미포를 지나 달맞이 고개로 방향을 잡는다. 소나무향 진한 ‘문탠로드’를 자박자박 걸으며 자연 속 힐링을 경험한다. 달맞이 고개 정상에 자리한 ‘해월정’에 오르면 바다와 숲을 동시에 마주할 수 있다. 달모양의 예쁜 포토존이 여행자의 발걸음을 잠시 쉬어가게 한다. 이어지는 내리막길을 따라 발길을 옮겨보자. 푸른 청사포 바다를 배경으로 더욱 푸르게 뻗어나간 ‘청사포 다릿돌 전망대’ 가 기다리고 있다. 동해바다의 기운을 간직한 ‘송정해수욕장과 죽도공원’, 그리고 바다를 품은 사찰 ‘해동용궁사’가 차례로 이어진다. 바다 위로 솟아오른 바위 위 용왕단의 모습이 기이한 ‘오랑대’가 보인다. 어부들의 안녕을 기원하던 용왕단 주위에는 이름 모를 들꽃들이 만발하고 저만치 가까이 보이는 대변항에서 2코스를 마무리한다.\n3코스는 멸치로 유명한 대변항부터 시작이다. 대변항에 늘어선 건어물과 횟집을 지나쳐 대변 숲속길로 향한다. 산길을 걷고 마을길도 걷다보면 동그랗게 바다를 둘러싼 모양의 ‘일광해수욕장’ 에 다다른다. 음식점도 많고 카페도 많은 이곳에서 잠시 쉬어가도 좋겠다. 범선 모양으로 바다를 향해 뻗어있는 작은 공원은 바로 ‘신평소공원’이다. 범선의 끝에서 포즈를 취하니 곧 출항하는 것 마냥 가슴이 설렌다. 이윽고 방파제와 함께 등대 3개가 나란히 자리한 ‘칠암항’에 도착한다. 하얀 등대는 자세히 보니 야구방망이 모양에 까만색 헬멧을 쓰고 양 옆으로 야구공과 글러브를 낀 야구등대다. 해파랑길 부산구간 3코스는 다양한 모양의 등대를 만나볼 수 있어 등대코스라고도 불린다. 코스의 마지막은 ‘임랑해수욕장’이다. 평화로운 작은 바닷가 마을 임랑에서 ‘부파랑길’의 여정이 마무리 된다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=453&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:454",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화 속 부산을 찾아가는 쏠쏠한 재미",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "영화를 보는 것에서 벗어나 영화 속 인물들의 발자취를 따라 걷는 일, 마치 내가 주인공이 된 듯 그 장면 그 장소에 함께 있는 기분을 느낄 수 있는 것. 영화 촬영의 성지, 부산이라면 가능하다. 기장 아홉산숲은 영화 ＜군도＞의 촬영지다. 빽빽한 대나무 숲은 하정우와 강동원이 액션을 펼치던 곳으로 바람에 스치는 대나무 잎의 소리가 배경음악이 된다. 대나무뿐만 아니라 금강송과 같은 귀한 소나무도 군락을 이루고 있어 산책길로 안성맞춤이다. 흰여울문화마을은 영화 ＜변호인＞의 촬영지로 유명하다. 진우네 담벼락에 쓰인 영화 대사들이 구구절절해서 마음 한구석이 짠해진다. 영화 속 송강호가 찾았던 그 골목을 그대로 따라가면 나지막한 담벼락 넘어 시원하게 트여있는 바다가 눈이 부시다. 남포동 입구의 부산데파트는 영화 ＜도둑들＞의 촬영지다. 40년 이상의 역사를 간직한 이곳은 부산의 근대화를 상징하는 건물이기도 하다. 건물을 한 바퀴 돌다보면 빽빽한 창들 사이를 넘나들며 총격전을 벌이던 배우들의 치열한 음성이 들려오는 듯하다. 영화 ＜국제시장＞에서 6.25 피란민들의 생생한 삶을 보여준 국제시장. 주인공 덕수의 고모가 운영하던 꽃분이네의 인기는 지금도 여전하다. 꽃분이네 외에도 수많은 상점과 먹거리가 있으며, 부산 상인들의 넘쳐나는 정을 느낄 수 있다. 영화 ＜올드보이＞하면 만두가 가장 먼저 떠오를 것이다. 차이나타운에는 배우 최민식이 만두를 먹었던 중화요리집이 있다. 김이 모락모락 오르는 군만두를 비롯해 윤기가 좌르르 흐르는 자장면까지. 제대로 된 중화요리를 맛보고 싶다면 차이나타운을 추천한다. 수영만 요트경기장은 많은 영화의 촬영지로 유명하다. 영화 ＜무방비도시＞에서 손예진이 일본으로 도주하다 남자주인공에게 쫓기는 클라이맥스 장면의 배경도 이곳이다. 부산 영화 촬영소도 위치해있어 많은 영화인들의 사랑을 받는 곳이다. “고마해라~ 마이 무따 아이가~” 영화 ＜친구＞의 명대사는 모르는 사람이 없다. 영화에서 네 친구의 단단한 우정을 열정적으로 보여준 곳이 바로 범일동 철도건널목, 구름다리이다. 배우 장동건과 유오성이 교복을 입고 열심히 달리던 그 장소, 영화 속 그 장면처럼 포즈나 한번 잡아볼까. 영화 ＜파랑주의보＞에서 수호와 수은이 함께 걸었던 낭만적인 장소가 미포철길이다. 바다를 배경으로 쭉 뻗은 철길이 아름다운 이곳. 레트로 감성 물씬 풍기는 미포철길 위에 낭만 추억이 하나 둘 쌓여 간다. 해운대 끝자락에 있는 작은 포구 미포는 영화 ＜해운대＞ 속 횟집이 있던 장소이자, 바닷물이 밀려오던 철길건널목이 있던 장소이다. 영화에서는 쓰나미로 인해 아수라장이 되었던 현장이지만, 실제로는 하늘과 바다가 만나 예쁜 수평선을 선사하는 곳이다. 기장의 일광해수욕장은 영화 ＜보안관＞의 주인공 대호의 고향이다. 고향 ‘기장’을 수호하기 위한 그의 노력이 코믹하면서도 눈물겨운 영화다. 대호의 시선으로 기장 일광해수욕장을 바라다보면 잔잔한 감동의 물결이 밀려오는 듯하다.",
+          "reason": "place-subject",
+          "characters": 1112
+        }
+      ],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "영화를 보는 것에서 벗어나 영화 속 인물들의 발자취를 따라 걷는 일, 마치 내가 주인공이 된 듯 그 장면 그 장소에 함께 있는 기분을 느낄 수 있는 것. 영화 촬영의 성지, 부산이라면 가능하다.\n기장 아홉산숲은 영화 ＜군도＞의 촬영지다. 빽빽한 대나무 숲은 하정우와 강동원이 액션을 펼치던 곳으로 바람에 스치는 대나무 잎의 소리가 배경음악이 된다. 대나무뿐만 아니라 금강송과 같은 귀한 소나무도 군락을 이루고 있어 산책길로 안성맞춤이다.\n흰여울문화마을은 영화 ＜변호인＞의 촬영지로 유명하다. 진우네 담벼락에 쓰인 영화 대사들이 구구절절해서 마음 한구석이 짠해진다. 영화 속 송강호가 찾았던 그 골목을 그대로 따라가면 나지막한 담벼락 넘어 시원하게 트여있는 바다가 눈이 부시다.\n남포동 입구의 부산데파트는 영화 ＜도둑들＞의 촬영지다. 40년 이상의 역사를 간직한 이곳은 부산의 근대화를 상징하는 건물이기도 하다. 건물을 한 바퀴 돌다보면 빽빽한 창들 사이를 넘나들며 총격전을 벌이던 배우들의 치열한 음성이 들려오는 듯하다.\n영화 ＜국제시장＞에서 6.25 피란민들의 생생한 삶을 보여준 국제시장. 주인공 덕수의 고모가 운영하던 꽃분이네의 인기는 지금도 여전하다. 꽃분이네 외에도 수많은 상점과 먹거리가 있으며, 부산 상인들의 넘쳐나는 정을 느낄 수 있다.\n영화 ＜올드보이＞하면 만두가 가장 먼저 떠오를 것이다. 차이나타운에는 배우 최민식이 만두를 먹었던 중화요리집이 있다. 김이 모락모락 오르는 군만두를 비롯해 윤기가 좌르르 흐르는 자장면까지. 제대로 된 중화요리를 맛보고 싶다면 차이나타운을 추천한다.\n수영만 요트경기장은 많은 영화의 촬영지로 유명하다. 영화 ＜무방비도시＞에서 손예진이 일본으로 도주하다 남자주인공에게 쫓기는 클라이맥스 장면의 배경도 이곳이다. 부산 영화 촬영소도 위치해있어 많은 영화인들의 사랑을 받는 곳이다.\n“고마해라~ 마이 무따 아이가~” 영화 ＜친구＞의 명대사는 모르는 사람이 없다. 영화에서 네 친구의 단단한 우정을 열정적으로 보여준 곳이 바로 범일동 철도건널목, 구름다리이다. 배우 장동건과 유오성이 교복을 입고 열심히 달리던 그 장소, 영화 속 그 장면처럼 포즈나 한번 잡아볼까.\n영화 ＜파랑주의보＞에서 수호와 수은이 함께 걸었던 낭만적인 장소가 미포철길이다. 바다를 배경으로 쭉 뻗은 철길이 아름다운 이곳. 레트로 감성 물씬 풍기는 미포철길 위에 낭만 추억이 하나 둘 쌓여 간다.\n해운대 끝자락에 있는 작은 포구 미포는 영화 ＜해운대＞ 속 횟집이 있던 장소이자, 바닷물이 밀려오던 철길건널목이 있던 장소이다. 영화에서는 쓰나미로 인해 아수라장이 되었던 현장이지만, 실제로는 하늘과 바다가 만나 예쁜 수평선을 선사하는 곳이다.\n기장의 일광해수욕장은 영화 ＜보안관＞의 주인공 대호의 고향이다. 고향 ‘기장’을 수호하기 위한 그의 노력이 코믹하면서도 눈물겨운 영화다. 대호의 시선으로 기장 일광해수욕장을 바라다보면 잔잔한 감동의 물결이 밀려오는 듯하다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=454&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:490",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "동해선 투어",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "동해선의 마지막 일광역에서 10여분만 걸어가면 둥근 항아리 같은 해안선이 바다를 감싸고 있는 일광해수욕장에 닿을 수 있다. 수심이 얕고 잔잔한 일광해수욕장은 특히 가족단위로 안전하게 물놀이를 즐기기 좋은 곳이다. 개장 시즌에는 다양한 해양레포츠를 경험할 수 있는 곳이며, 캠핑할 수 있는 공간이 따로 마련되어 있어 바닷가 캠핑의 매력 또한 즐길 수 있다.",
+          "reason": "place-heading",
+          "characters": 150
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "부산진구 부전역에서 기장군 일광역까지 이어주는 동해선. 동해선이 생기기 전까지만 해도 부산 시내에서 일광까지 대중교통으로 이동하기에 상당한 어려움이 있었다. 하지만 동해선이 개통되면서 약 30분 정도면 기장과 일광을 찾을 수 있게 되었고 부산의 매력을 즐길 수 있는 범주가 더 넓어졌다고도 할 수 있다. 동해선을 타면 만나게 되는 부산의 명소는 어떤 곳들이 있을까.\n\n<p class=\"font-size28 colorDarkBlue medium\">추천코스</p><p class=\"font-size20 medium\">부전시장(부전역) - 온천천 카페거리(안락역) - 송정해수욕장(송정역) - 죽성성당(기장역) - 일광해수욕장(일광역)</p>\n<p class=\"font-size23 colorDarkBlue bold\">부전시장(부전역)</p>먼저 만나볼 곳은 동해선의 시작, 부전역에 있는 부전시장이다. 부전시장과 함께 붙어있는 8개의 시장을 합쳐 ‘부전마켓타운’이라고도 부르는데, 워낙에 규모가 크다 보니 시장은 하나의 작은 마을 같은 느낌이다. 없는 것이 없는 부전시장이지만 역시 전통시장의 묘미는 다양한 먹거리에 있겠다. 먹음직스런 빛깔의 각종 과일들부터 군밤, 군고구마, 어묵, 붕어빵, 떡볶이, 순대, 튀김 등등 소개하자면 끝이 없을 정도로 수많은 먹거리를 갖춘 부전시장에서 든든하게 속을 채우고 본격적인 동해선 투어에 나선다.\n<p class=\"font-size23 colorDarkBlue bold\">온천천 카페거리(안락역)</p>안락역에서 내려 10분 정도 걸어 내려오면 부산시민의 쉼터 온천천이 보인다. 그리고 온천천을 따라 길게 온천천 카페거리가 조성되어 있다. 카페와 브런치 위주의 가게들이 줄지어있는 온천천 카페거리. 산책로가 잘 조성 돼 있는 온천천변을 산책하고 나서 맛보는 브런치와 커피는 산뜻한 힐링으로 우리에게 다가올 것이다.\n<p class=\"font-size23 colorDarkBlue bold\">송정해수욕장(송정역)</p>안락역에서 센텀시티를 지나 송정역에 도착한다. 송정역에 내려 여유 있게 걸어 20분 정도면 송정해수욕장을 만날 수 있다. 송정해수욕장은 대학생들의 MT시즌을 제외하면 그리 붐비지 않아 조용한 바다의 매력을 느낄 수 있는 곳이다. 해변을 거닐다 대표적인 간식거리 해변 토스트도 맛보고, 전망 좋은 카페에서 편안한 시간을 보내도 좋다. 해변 끝에 위치한 죽도공원은 송림사이로 짧은 산책구간이 이어진 곳으로 송일정에서 바라보는 광활한 바다의 시원함을 만끽할 수 있다. 한적한 바닷가의 소소한 행복을 즐기고 싶은 이에게 송정해수욕장은 탁월한 선택이다.\n<p class=\"font-size23 colorDarkBlue bold\">죽성성당(기장역)</p>기장역에서 마을버스를 타고 20분, 작은 바닷가 마을에 그림처럼 내려앉은 이색적인 건물 하나, 바로 죽성성당이다. 바다와 맞닿은 바위 끝에 자리 잡은 죽성성당은 한 드라마의 세트장으로 지어진 곳이지만, 아름다운 기장바다와 어우러져 이국적인 아름다움을 보이는 덕분에 많은 사람들의 추억의 장소로 담기고 있는 곳이다. 짙푸른 바다와 잘 어우러진 작은 성당 곳곳은 서 있는 그곳이 바로 포토존이 되기 때문이다.\n<p class=\"font-size23 colorDarkBlue bold\">일광해수욕장(일광역)</p>동해선의 마지막 일광역에서 10여분만 걸어가면 둥근 항아리 같은 해안선이 바다를 감싸고 있는 일광해수욕장에 닿을 수 있다. 수심이 얕고 잔잔한 일광해수욕장은 특히 가족단위로 안전하게 물놀이를 즐기기 좋은 곳이다. 개장 시즌에는 다양한 해양레포츠를 경험할 수 있는 곳이며, 캠핑할 수 있는 공간이 따로 마련되어 있어 바닷가 캠핑의 매력 또한 즐길 수 있다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=490&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1079",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "부산 기장의 숨은 산책 코스",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "부산에서 걷기 여행 해보는 거 어떤가요? \n부산 기장에는 숨은 공원과 산책로가 많은데요!​\n\n일반적인 공원부터 숲뷰와 바다뷰까지! 예쁜 걷기 길로 가득한 기장입니다.\n주말에 가족들과 함께 나들이 하기도 좋고, 남녀노소 걷기에도 좋은 기장의 숨은 산책 코스 알려드립니다!\n\n<p class=\"font-size24 colorDarkBlue medium\">[1] 도심 속에서 찾은 숨은 산책 코스 \"용소웰빙공원\"</p>\n사계절 내내 아름다운 자연풍경을 느끼며 숲길 산책로를 따라 걷고 용소골저수지를 즐길 수 있는 숨은 산책 코스 중 하나입니다. \n저수지에서 은은하게 불어오는 바람을 느끼며 여유롭게 봄 내음을 맡으며 즐기는 산책의 즐거움은 또 다른 기장을 느낄 수 있는 공간입니다.\n주말이면 아이들과 함께 나들이를 즐길 수 있고, 아름다운 수변 데크를 따라 걸으면서 운동도 하고 건강도 지킬 수 있는 남녀노소가 행복하게 산책할 수 있는 곳입니다.\n어린아이부터 어르신까지 모두가 즐길 수 있는 가족 단위 산책러분들에게 추천드립니다!\n\n\n<p class=\"font-size24 colorDarkBlue medium\">[2] 이색적인 산책을 즐기고 싶다면 \"신평소공원\"</p>\n비대면 여행지로 많은 사랑을 받기 시작한 신평소공원은 집 주변에서 흔히 볼 수 있는 평범한 공원과 달리 이색적인 조형물이 시선을 사로 잡는 곳입니다.\n높이 15m 폭 12m에 배조형물전망대는 이색적인 풍경으로 산책의 즐거움을 선물합니다.\n산책로를 따라 걷다 보면 시원하게 펼쳐진 푸른바다가 있고 산책로 아래로는 퇴적층이 노출되어 있어서 더욱 특별합니다.\n약 10분 정도면 모든 곳을 둘러볼 수 있는 작은 공원이지만 산책을 즐기는 내내 바다를 볼 수 있다는 점에서 부산에서 꼭 다녀와야 하는 산책로 중 하나입니다!\n\n\n<p class=\"font-size24 colorDarkBlue medium\">[3] 바다 위를 걷는 아름다운 산책 \"일광해수욕장 데크길\"</p>\n일광해수욕장에서 학리방파제에 이르는 구간까지 예쁜 바다 위를 걸을 수 있는 데크길이 조성되면서 현재는 산책하기 좋은 곳으로 사랑을 받고 있습니다.\n일광역에서 가깝게 찾을 수 있는 곳으로, 남녀노소 누구나 쉽게 접할 수 있는 산책코스입니다. \n일광해수욕장과 함께 데크길을 걸으면 시원하게 펼쳐진 바다를 보고 바다 위까지 걸을 수 있는 재미있는 산책코스를 즐길 수 있는 곳입니다.\n사계절 내내 푸른 바다와 푸른 해송은 또 다른 산책의 이유를 선물하기도 합니다.\n주말 나들이로 일광해수욕장 데크길 어떠세요?\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1079&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1180",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n영상보러가기 <a href=\"https://youtu.be/R-U6-EIvKbs\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://youtu.be/R-U6-EIvKbs</a>\n<p class=\"font-size28 colorDarkBlue medium\">Move, Mile in Movie</p>영화보다 더 영화 같은 부산 드라이브\n\n산과 바다, 강이 함께 어우러지는 도시는 흔치 않다. 남해바다와 동해바다가 만나고 낙동강이 흐르며 금정산이 우뚝 솟은 부산이야 말로 천혜의 자연을 갖춘 도시다. 산과 바다, 강을 넘나들며 영화 속 감동을 차창 밖 와이드 스크린으로 다시 느껴볼 수 있는 4개의 드라이브 코스가 여기 있다. \n김해공항에서 강변을 따라 다대포해수욕장까지 이어지는 ‘강변드라이브’ 코스는 아직 개발의 손길이 닿지 않은 낙동강변의 아름다운 풍광을 만끽할 수 있다. 다대포에서 출발해 남항대교와 부산항대교, 광안대교를 잇따라 달리는 ‘브릿지드라이브’는 바다 위를 달리는 짜릿함와 바다 위에서 보는 부산 풍경이 압권이다. 해운대 마린시티를 지나 송정과 기장의 해안도로를 따라 임랑해수욕장까지 가는 ‘해안드라이브’는 부산 바다의 정수가 모두 담겨 있다. 장안사와 아홉산숲을 둘러보는 ‘숲드라이브’는 대도시의 번잡함을 떠나 힐링을 경험하는 비타민 같은 코스다. \n\n어떤 코스를 선택해도 좋다. 4개의 드라이브 코스는 유기적으로 연결되어 있어서 어느 방향으로든 이동할 수 있다. 자동차를 타고 달리면서 부산의 바다와 산, 강을 두루 둘러보는 것만으로도 부산이란 도시의 매력이 온 몸으로 느껴질 것이다. \n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">강변드라이브</p></div><ul class=\"course1\"><li><span>김해공항</span></li><li><span>낙동강하굿둑</span></li><li><span>장림포구</span></li><li><span>다대포해수욕장(더 킹 : 영원의 군주, 2020 / 마이 네임, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">브릿지드라이브</p></div><ul class=\"course1\"><li><span>남항대교</span></li><li><span>부산항대교(공작, 2018 / 마이 네임, 2021)</span></li><li><span>광안대교(DP, 2021 / 블랙 팬서, 2018)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">해안드라이브</p></div><ul class=\"course1\"><li><span>마린시티(발신제한, 2021 / 더 킹 : 영원의 군주, 2020)</span></li><li><span>해운대해수욕장(영화의 거리, 2021)</span></li><li><span>달맞이길(발신제한, 2021 / 버닝, 2018) </span></li><li><span>송정해수욕장(당신, 거기 있어줄래요, 2016 / 오케이 마담, 2020)</span></li><li><span>해동용궁사(마이 네임, 2021)</span></li><li><span>오랑대공원</span></li><li><span>연화리</span></li><li><span>대변항</span></li><li><span>죽성드림세트장(드림, 2009)</span></li><li><span>일광해수욕장</span></li><li><span>신평 소공원</span></li><li><span>임랑해수욕장(당신의 부탁, 2018 / 비와 당신의 이야기, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">숲드라이브</p></div><ul class=\"course1\"><li><span>장안사</span></li><li><span>아홉산숲(더 킹 : 영원의 군주, 2020 / 핸섬 가이즈, 2021)</span></li><li><span>영화의전당(더 킹 : 영원의 군주, 2020)</span></li></ul></div>\n\n<p class=\"font-size25 colorDarkBlue medium\">강변드라이브↔브릿지드라이브↔해안드라이브↔숲드라이브\n *양방향 소통 가능한 드라이브 코스입니다.</p>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장</p>부산에서 유일하게 남해바다를 끼고 있는 해수욕장이다. 수심이 얕고 모래사장이 넓어서 아이들과 물놀이를 하기에 안성맞춤이다. 바다 건너 서쪽 하늘로 해가 질 때는 해수욕장 전체가 오렌지빛으로 물들어 장관을 이룬다. \n\n위치\n부산광역시 사하구 다대동 / 다대포해수욕장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p><p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항대교</p>대형 컨테이너 선박이 정박해 있는 부산항을 가로지르는 다리다. 거대한 주탑에 화려한 조명이 켜지면 부산 사람들도 놀라는 ‘하버 뷰’가 완성된다. 자동차를 타고 달리면서 봐도 좋고 멀리서 바라봐도 좋다. \n\n위치\n부산광역시 남구 북항로 176\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">공작(2018) <span style=\"font-size: 18px;color: #000;\">황정민, 이성민, 조진웅, 주지훈 주연</span></p>주인공이 북의 고위층 내부로 잠입해 북핵의 실체를 캐기 위해 공작을 수행하는 영화\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안대교</p>광안리 앞바다를 지나는 해상교량으로 명실상부 부산의 랜드마크다. 광안대교를 빼놓고 부산야경을 말할 수 없을 만큼 낮보다 밤이 아름다운 다리다. 매년 가을 열리는 부산불꽃축제의 무대이기도 하다.\n\n위치\n부산광역시 수영구 남천동 / 민락해변공원 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">DP(2021) <span style=\"font-size: 18px;color: #000;\">정해인, 구교환, 김성균 주연</span></p><p>군무이탈 체포조(D.P.)가 탈영병을 쫓으며 알게 되는 이야기를 그린 드라마</p><p class=\"font-size25 colorDarkBlue medium\">블랙 팬서(2018) <span style=\"font-size: 18px;color: #000;\">채드윅 보스만, 마이클 B. 조던 주연</span></p><p>와칸다의 왕좌를 지키고자 적에게 맞서는 ‘블랙 팬서’의 활약상을 담은 SF 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">마린시티</p>대한민국의 초고층빌딩은 모두 여기에 모여 있다. 홍콩을 연상시키는 마천루의 향연은 건물들이 형형색색의 빛을 뿜는 밤에 절정을 이룬다. \n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p><p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대해수욕장</p>대한민국을 넘어 세계에서도 손꼽히는 해수욕장. 하와이 와이키키보다 더 번화한 도심과 맞닿은 해변은 이국적이면서도 세련미가 넘친다. 드넓은 백사장과 맑은 바닷물까지 갖춘 팔방미인.\n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">이완, 한선화 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길</p>해운대해수욕장 끝자락 미포에서 송정까지 이어지는 언덕길. 해운대 바다를 한눈에 내려다볼 수 있는 멋진 전망에 밤에는 달빛을 벗 삼아 걸을 수 있는 산책로도 잘 조성되어 있어서 부산 사람들도 즐겨 찾는 곳이다.\n\n위치\n부산광역시 해운대구 달맞이길 190 / 해월정 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화<p class=\"font-size25 colorDarkBlue medium\">버닝(2018) <span style=\"font-size: 18px;color: #000;\">유아인, 스티븐연, 전종서 주연</span></p>주인공이 어릴 적 친구를 우연히 만나면서 벌어지는 이야기를 그린 미스터리 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송정해수욕장</p>관광객들로 번잡한 해운대를 대신해 로컬들이 즐겨 찾는 해수욕장. 전국에서 사진가들이 찾아올 만큼 일출 명소로 유명하다. 최근에는 서핑 성지로도 각광받고 있다. \n\n위치\n부산광역시 해운대구 송정동 / 송정해수욕장 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">오케이 마담(2020) <span style=\"font-size: 18px;color: #000;\">엄정화, 박성웅 주연</span></p>한 부부가 비행기 납치 사건의 인질이 된 승객을 구하는 코미디액션 영화<p class=\"font-size25 colorDarkBlue medium\">당신, 거기 있어줄래요(2016) <span style=\"font-size: 18px;color: #000;\">김윤석, 변요한 주연</span></p>30년 전 자신과 만나게 된 한 남자의 시간여행을 그린 판타지 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해동용궁사</p>파도가 철썩이는 바닷가 바위 위에 세워진 사찰. 소박한 절집 건물과 바다 풍경의 조화가 이채롭다. 아침에는 마당에서 바다 위로 불쑥 솟아오르는 태양을 마주할 수 있다. \n\n위치\n부산광역시 기장군 기장읍 용궁길 86 / 해동용궁사 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">죽성드림세트장</p>SBS 드라마 ‘드림’ 촬영지로 짙푸른 바다와 예쁜 성당 건물이 영화보다 더 드라마틱한 풍경을 연출한다. 누구나 카메라만 들면 작품이 되는 공간이다.  \n\n위치\n부산광역시 기장군 기장읍 죽성리 134-7 / 죽성드림세트장 앞 공용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">드림(2009) <span style=\"font-size: 18px;color: #000;\">주진모, 김범, 손담비 주연</span></p>회사에서 버려진 남자가 우여곡절 끝에 성공과 사랑을 쟁취하는 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임랑해수욕장</p>부산에 있는 7개 해수욕장 중 가장 북단에 있다. 해운대나 광안리에 비하면 작고 소박한 해수욕장이지만 그래서 한적하고 여유롭다. 어선이 정박해 있는 포구와 물고기 모양의 등대도 볼거리.  \n\n위치\n부산광역시 기장군 장안읍 / 임랑해수욕장 주변 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 된 두 주인공이 그려가는 아날로그 감성 영화</p><p class=\"font-size25 colorDarkBlue medium\">당신의 부탁(2018) <span style=\"font-size: 18px;color: #000;\">임수정, 윤찬영 주연</span></p><p>주인공 앞에 나타난 의붓 아들. 남남인 두 사람이 진정한 가족이 되는 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">아홉산숲</p>오래도록 그린벨트와 상수원보호구역으로 지정되어 있던 덕에 울창한 숲을 만날 수 있다. 특히 영화나 드라마 촬영지로 자주 활용된 대나무숲이 인기다. 도심의 번잡함을 벗어나 잠시 여유를 가질 수 있는 힐링 스폿이다. \n\n위치\n부산광역시 기장군 철마면 미동길 37-1 / 아홉산숲 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">핸섬 가이즈(2021) <span style=\"font-size: 18px;color: #000;\">이성민, 이희준 주연</span></p>산장으로 이사 온 두 남자가 그곳에 얽힌 전설을 알게 되면서 전개되는 코미디영화<p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의전당</p>부산국제영화제의 무대인 영화의 전당. 건물 형태도 독특하지만 LED 패널로 덮인 지붕이 밤마다 멋진 야경을 연출한다. 수영강의 아름다운 풍경과도 잘 어울린다.\n\n위치\n부산광역시 해운대구 수영강변대로 120 / 영화의전당 주차장 \n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1180&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1321",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "일러스트로 만나는 부산의 바다",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산광역시 기장군 일광면 삼성3길 17 쪽빛바다와 아늑한 해안선이 한 폭의 그림 같은 해변에서 캠핑하며 찾는 망중한의 여유",
+          "reason": "place-heading",
+          "characters": 52
+        }
+      ],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "저마다의 독특한 매력으로 다채로운 풍경을 선사하는 부산의 일곱 바다가 엽서에 담겼어요. 동쪽 끝 임랑해수욕장에서부터 서쪽 끝 다대포해수욕장까지 취향맞춤 일곱 빛깔 바다를 감상해 보세요. 감성적인 일러스트로 만나는 부산의 바다는 또 다른 즐거움을 선사합니다.\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안리해수욕장</p>부산광역시 수영구 광안해변로 219\n광안대교를 바라보며 잔잔한 바다 위 패들보드를 즐기는 하루\n\n광안대교라는 랜드마크와 함께 부산을 대표하는 해수욕장 중 하나로 꼽히는 광안리 해수욕장. 도심과 가장 가까운 해변이자 부산 젊은이들의 성지라 할 수 있다.\n전국에서 모여드는 이들의 입맛을 모두 충족시킬 수 있는 다양한 맛집의 향연, 바다가 보이는 카페, 골목 곳곳에 위치한 이색 공간, 봄이면 온 거리를 분홍빛으로 물들이는 남천동 벚꽃거리까지. 새하얀 백사장과 푸르른 바다 말고도, 광안리가 간직한 매력은 무궁무진하다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=377&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송정해수욕장</p>부산광역시 해운대구 송정해변로 62\n새하얀 파도를 가르며 열정적으로 바다를 즐기는 서퍼들의 천국\n\n해운대를 지나 달맞이길 따라 돌아 내려오면 넓고 길게 펼쳐진 백사장이 보인다. 그곳이 바로 서퍼들이 사랑하는 바다, 송정해수욕장이다. 동해와 남해가 맞닿아 있는 위치 덕분에 북풍과 남풍의 영향을 동시에 받는데, 이는 사시사철 높은 파도가 끊임없이 들어오는 좋은 조건을 만들어준다. 낮은 수심 덕분에 서핑 입문자들에게는 더 없이 좋은 장소이다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=280&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=280&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">일광해수욕장</p>부산광역시 기장군 일광면 삼성3길 17\n쪽빛바다와 아늑한 해안선이 한 폭의 그림 같은 해변에서 캠핑하며 찾는 망중한의 여유\n\n부산의 오래된 바닷가 마을의 모습부터 새로운 해양 레포츠 체험까지. 부산 바다의 옛 모습과 트렌디함을 동시에 만날 수 있는 일광해수욕장. 부산 바다의 과거와 미래가 공존하는 공간, 일광해수욕장의 매력은 사계절을 가리지 않는다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=265&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=265&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임랑해수욕장</p>부산광역시 기장군 장안읍 임랑리\n갈매기 노니는 소박한 해수욕장에서 가족과 함께 낚시 힐링 제대로\n\n입에 머무르는 느낌마저 따뜻한 ‘임랑’이라는 이름은 아름다운 송림(松林)과 달빛에 반짝이는 은빛 파랑(波浪)의 두 글자에서 유래되었다. 임랑해수욕장의 백사장은 1km 이상 이어지며 바다를 감싸고 있는데 그 색이 매우 밝은 게 특징이다. 이곳을 처음 방문하는 이들이라면 첫눈에 하얀 백사장에 반하고 말 것이다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=262&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=262&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장</p>부산광역시 사하구 다대동\n자연이 주는 눈부신 황홀경, 낙조가 가장 아름다운 몽환의 바다\n\n낙동강과 남해안이 만나 양질의 모래밭을 만든 곳, 일출과 일몰 조망지로 부산 최고인 곳, 다대포해수욕장은 자연이 주는 황홀경을 맘껏 즐길 수 있는 기분 좋은 장소이다. 화려한 금빛이 바다 한가운데로 떨어지며 사람들의 검은 실루엣조차 하나의 작품으로 만들어준다. 금가루를 뿌려놓은 듯 낙조의 빛은 눈이 부시다. \n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=366&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송도해수욕장</p>부산광역시 서구 송도해변로 100\n구름산책로에서 만나는 드넓은 바다와 그림처럼 떠다니는 해상케이블카, 송도앓이의 시작\n\n짙푸른 송도 바다를 좀 더 가까이 느끼기 위해 송도스카이워크 구름산책로로 나간다. 조용한 바다 위를 유영하는 돛단배를 연상시키는 송도호를 지나 구름산책로로 들어서면 넓은 송도 앞바다를 품에 가득 안을 수 있다. 다리 곳곳에 자리한 투명바닥 아래로 출렁이는 바닷물이 시선을 사로잡고, 머리 위로 지나가는 해상케이블카를 보면 저절로 손을 흔들게 된다.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000201001001000&uc_seq=286&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대와 누리마루 APEC하우스</p>부산광역시 해운대구 동백로 99\n해운대와 광안대교를 동시에 조망할 수 있는 낭만 가득 핫플 동백섬\n\n해운대해수욕장에서 탁 트인 바다를 바라보며 사색에 잠겨 걷다 보면 백사장 끝자락에 아담하게 자리하고 있는 동백섬에 다다르게 된다. 해안산책로는 넓은 전망대와 함께 하얀 등대로 이어진다. 전망대에서 바다를 바라보면 누리마루 APEC하우스와 광안대교를 동시에 조망할 수 있다. \n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=284&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=284&lang_cd=ko</a>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">미포와 해운대해변열차</p>부산광역시 해운대구 달맞이길62번길\n고풍스러운 해운대해변열차와 작은 포구가 어우러져 아름다운 풍경을 자아내는 힐링 산책로\n\n해운대 동쪽 끝에 위치한 미포, 해운대 해변열차의 미포정거장이 있는 곳이기도 합니다. 줄지어 늘어선 작은 고깃배와 화려한 고층빌딩을 카메라의 한 프레임에 담을 수 있는 아름다운 포구입니다. 미포에서 송정까지의 긴 구간이 모두 나무데크로 조성된 산책로로 이어져 있습니다. 나무계단이 해안절벽을 따라 이어져 있는 곳도 있어 바다를 한층 가까이에서 만날 수 있어요.\n\n<p class=\"font-size25 colorBlack medium\">바로가기</p><a href=\"https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1027&lang_cd=ko\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://visitbusan.net/kr/index.do?menuCd=DOM_000000202002001000&uc_seq=1027&lang_cd=ko</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1321&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1325",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "그동안 몰랐던 인생스폿-부산이색등대 편",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "일광해수욕장"
+        ],
+        "placeName": "일광해수욕장",
+        "review": "pending"
+      },
+      "originalText": "푸른 바다와 늘 함께 하는 해양도시 부산에는 100여 개가 넘는 등대가 있습니다. 그중에서 특이한 모습과 재미있는 이야기를 담은 이색 등대들이 여행 명소로 각광받고 있는데요. 이런 등대들은 배가 안전하게 항구로 들어올 수 있도록 길을 안내할 뿐만 아니라 색다른 볼거리를 제공하고 있어 관광지로서의 매력도 더해주고 있습니다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\"> 청사포어항남·북방파제등대(쌍둥이등대)</p>송정 사이에 자리한 포구로 아름다운 바다 풍경과 한적한 분위기가 매력적인 곳입니다. 청사포의 상징과도 같은 쌍둥이등대는 이곳의 대표적인 포토존입니다.\n안타깝게도 지난 8월 방파제에 균열이 생기면서 안전을 위해 쌍둥이 등대 중 흰색 등대는 잠시 철거된 상태입니다. 붉은색 등대는 에메랄드빛 바다와 대비되어 바로 눈에 띄는 예쁜 건축물이라 청사포를 방문하는 여행객들의 사랑을 가득 받고 있어요.\n등대 근처에는 바다 전망을 감상할 수 있는 카페와 음식점들이 즐비하고, 흰색 등대가 있는 버스 정류장도 만나볼 수 있습니다. 여러모로 사진 찍을 데가 많아서 친구들과 우정여행 코스로 다녀오기 좋은 청사포입니다.\n미포에서 청사포를 지나 송정까지 해변열차가 지나가는 철로 옆에는 ‘그린레일웨이’ 산책로가 조성되어 있습니다. 평탄한 데크산책로를 걷는 동안 해변열차는 물론 초록이 우거진 숲길과 푸른 바다가 어우러진 싱그러운 풍경을 감상할 수 있어요. 청사포에서 그린레일웨이를 따라 걷다 보면 금세 다릿돌전망대에 도착하게 됩니다. 높이 20m, 길이 72.5m에 달하는 다릿돌전망대에서는 아름다운 바다 풍경이 시원하게 펼쳐집니다.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\"> 서암항남방파제등대(젖병등대)</p>기장군 연화리 서암항에서 만날 수 있는 이색등대입니다. 아기자기한 조형물처럼 보이지만 밤이 되면 빛을 내는 실제 등대인데요. 부산지방해양항만청이 2009년 출산 장려를 기원하기 위해 조성했는데 정식 명칭은 서암항남방파제등대입니다.\n높이 5.8m의 젖병등대는 부산 어린이 만 2세 이하 144명의 손과 발을 프린트해 구운 도자기로 장식됐는데 지금은 귀여운 가족 그림도 그려져 있습니다. 디자인이 예쁘고 특별한 이색등대라서 포토존으로 안성맞춤입니다. 젖병등대를 마주 보는 곳에는 붉은 색의 차전등대가 있는데 특이한 형상 때문에 ‘닭볏등대’라는 별명을 갖고 있습니다. \n이색등대들을 둘러본 다음에는 길을 따라 조금 걸어보세요. 얼마 가지 않아 기장군의 유일한 섬, 연화리 죽도를 만날 수 있습니다. 육지와 연결된 다리를 통해 죽도로 이동이 가능한데요. 대나무와 동백나무가 가득하여 상쾌한 기분을 만끽할 수 있습니다. 멋진 바다 전망을 감상할 수 있는 카페와 음식점들이 여럿 있어서 낮부터 밤까지 머물기 좋은 곳이에요. 고즈넉한 분위기 덕분에 커플들에게 인기가 많은 기장 연화리입니다.\n\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\"> 칠암항남방파제등대(야구등대)</p>일광해수욕장에서 해안도로를 따라 조금 더 올라가면 도착하게 되는 칠암항에서는 부산의 이색등대 여럿을 한꺼번에 만나볼 수 있습니다.\n야구 방망이 모양의 등탑 옆에 글러브와 야구공을 붙인 모양인 ‘야구등대’를 비롯하여 부산을 상징하는 빨간색 ‘갈매기등대’, 칠암항을 상징하는 노란색 ‘장어등대’까지 그 모양과 색깔이 각양각색입니다. 야구도시 부산의 분위기가 물씬 느껴지는 ‘야구등대’는 2008 베이징올림픽 야구 우승을 기념하기 위해 세워졌습니다. 야구공 안쪽 벽면에는 롯데 자이언츠의 전설적 투수, 고 최동원 선수의 사진과 업적도 장식되어 있습니다. \n칠암항 입구에서 야구등대까지 이어지는 산책로를 통해 시원한 바닷바람 쏘이며 가벼운 산책을 해보세요. 특히 아이를 동반한 가족 여행객들은 이곳에서 이색등대와 함께 특별한 추억을 많이 만들 수 있을 것 같습니다. 해가 떨어지는 일몰 시간이 되면 야구등대에 빛이 들어오면서 칠암항을 환하게 밝혀줍니다. 야경도 멋지기 때문에 여행의 마무리 코스로 이곳에 들러 사진을 찍는 여행객도 많은 편입니다. 부산의 이색등대와 함께 예쁜 사진과 특별한 추억을 남겨보세요.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1325&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

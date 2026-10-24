@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2614725",
+    "name": "송도반도 (부산 국가지질공원)",
+    "lat": 35.0659655069,
+    "lng": 129.019511576
+  },
+  "collectedAt": "2026-10-24T10:23:43.315Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2614725",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "송도반도 (부산 국가지질공원)",
+      "relation": "same-place",
+      "originalText": "8~7천만 년 전인 중생대 백악기 말 다대포-송도 지역의 동쪽에 있는 동래단층과 서쪽의 양산단층이 움직이면서 두 단층 사이의 땅이 벌어지고 움푹 꺼져 그릇 모양의 다대포 분지가 만들어졌다. 이 분지에는 큰 호수가 만들어지면서 두꺼운 퇴적층들이 쌓이게 되었고, 이 퇴적층을 다대포 층이라 한다. 다대포 층은 구성하고 있는 암석의 특징(붉은색 층의 존재 여부, 화산성 물질의 함량)과 퇴적환경의 차이에 따라 다시 하부 다대포 층과 상부 다대포 층으로 나뉜다. 송도 반도에서는 한국의 지질 노두 150선에 선정된 다대포 층이 해안가를 따라 하부부터 상부까지 연속으로 나타나며, 우리나라 제1호 해수욕장인 송도해수욕장 경관과 함께 공룡알 둥지 화석, 석회질 고토양, 암맥, 단층 등의 지질기록을 만끽할 수 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2614725&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:44.204Z",
+      "modifiedAt": "20251219092914",
+      "passages": [
+        {
+          "text": "8~7천만 년 전인 중생대 백악기 말 다대포-송도 지역의 동쪽에 있는 동래단층과 서쪽의 양산단층이 움직이면서 두 단층 사이의 땅이 벌어지고 움푹 꺼져 그릇 모양의 다대포 분지가 만들어졌다. 이 분지에는 큰 호수가 만들어지면서 두꺼운 퇴적층들이 쌓이게 되었고, 이 퇴적층을 다대포 층이라 한다. 다대포 층은 구성하고 있는 암석의 특징(붉은색 층의 존재 여부, 화산성 물질의 함량)과 퇴적환경의 차이에 따라 다시 하부 다대포 층과 상부 다대포 층으로 나뉜다. 송도 반도에서는 한국의 지질 노두 150선에 선정된 다대포 층이 해안가를 따라 하부부터 상부까지 연속으로 나타나며, 우리나라 제1호 해수욕장인 송도해수욕장 경관과 함께 공룡알 둥지 화석, 석회질 고토양, 암맥, 단층 등의 지질기록을 만끽할 수 있다.",
+          "characters": 299,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "busan-theme:1064",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "지질공원해설사와 떠나는 지구시간여행",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "송도반도"
+        ],
+        "placeName": "송도반도 (부산 국가지질공원)",
+        "review": "pending"
+      },
+      "originalText": "2020년 12월 유네스코 세계지질공원 후보지로 선정된 부산국가지질공원은 바다와 산 그리고 강하구를 아우르는 천혜의 경관 속에서 해양도시 부산의 고유한 멋과 지질역사를 고스란히 간직하고 있는 국내 유일의 도시형 지질공원입니다.\n\n부산국가지질공원에는 낙동강하구, 몰운대, 두송반도, 송도반도, 두도, 태종대, 오륙도, 이기대, 장산, 금정산, 구상반려암, 백양산의 12개 지질명소가 있습니다.\n\n지질공원해설사와 함께 지구시간여행을 떠나보는 건 어떨까요?\n\n\n<p class=\"font-size24 colorDarkBlue medium\">바다를 향한 불의 신! - 이기대</p>약 8천만 년 전 격렬했던 안산암질 화산활동으로 분출된 용암과 화산재, 화쇄류가 쌓여 만들어진 다양한 화산암과 퇴적암 지층들과 파도의 침식으로 만들어진 해식절벽, 파식대지, 해식동굴과 함께 천혜의 절경을 이루고 있습니다.\n<p class=\"font-size24 colorDarkBlue medium\">호수에서 태어나 바다와 맞선 바위들 – 태종대</p>명승 제17호인 태종대는 백악기말 호수에서 쌓인 퇴적층이 해수면 상승으로 파도에 깎여 만들어진 해식절벽, 파식대지, 해안동굴 등의 암벽해안이 구상혼펠스, 꽃다발구조, 슬럼프구조 등 신비로운 지질구조와 함께 절경을 이루고 있는 부산의 대표 해안경관지입니다. \n<p class=\"font-size24 colorDarkBlue medium\">마그마가 빚어낸 천연의 공예품 - 구상반려암</p>지하 깊은 곳에서 마그마가 서서히 굳어 만들어진 황령산 일대의 반려암의 표면에 핵을 중심으로 동심원을 그리며 광물들이 배열된 구상조직을 보여주는 구상반려암!\n천연기념물 제267호인 구상반려암은 아시아에서 유일하며 세계적으로도 희귀하다고 알려진 연구 가치가 높은 부산국가지질공원의 대표 지질명소입니다. \n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1064&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

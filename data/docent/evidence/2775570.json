@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2775570",
+    "name": "칠암항",
+    "lat": 35.2985805894268,
+    "lng": 129.260259786681
+  },
+  "collectedAt": "2026-10-24T10:23:46.010Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2775570",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "칠암항",
+      "relation": "same-place",
+      "originalText": "칠암항은 야구 방망이와 글러브, 야구공을 형상화 한 야구 등대가 세워지면서 유명해진 곳이다. 야구팬이라면 한 번쯤 찾아가 볼 만한 곳으로 한국 야구사에 길이길이 남을 명승부였던 2008년 베이징 올림픽에서 금메달 신화를 만든 것을 기념하여 세운 이색 등대이다. 롯데 자이언츠의 무쇠팔 투수 故 최동원 선수를 기리는 추모관도 있다. 야구등대로 가는 방파제와 탐방도로도 잘 정비돼 있다. 참고로 하얀 야구등대 가까이 노란 등대와 빨간 등대도 있는데, 빨간 등대는 갈매기 등대, 노란 등대는 붕장어 등대로 불린다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2775570&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:19.279Z",
+      "modifiedAt": "20260311100340",
+      "passages": [
+        {
+          "text": "칠암항은 야구 방망이와 글러브, 야구공을 형상화 한 야구 등대가 세워지면서 유명해진 곳이다. 야구팬이라면 한 번쯤 찾아가 볼 만한 곳으로 한국 야구사에 길이길이 남을 명승부였던 2008년 베이징 올림픽에서 금메달 신화를 만든 것을 기념하여 세운 이색 등대이다. 롯데 자이언츠의 무쇠팔 투수 故 최동원 선수를 기리는 추모관도 있다. 야구등대로 가는 방파제와 탐방도로도 잘 정비돼 있다. 참고로 하얀 야구등대 가까이 노란 등대와 빨간 등대도 있는데, 빨간 등대는 갈매기 등대, 노란 등대는 붕장어 등대로 불린다.",
+          "characters": 215,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

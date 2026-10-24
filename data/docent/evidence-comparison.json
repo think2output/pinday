@@ -1,0 +1,767 @@
+{
+  "baselineCommit": "3f64d88f5a6ad786f2edc8d4f3df848f63a0c46f",
+  "comparedOn": "2026-10-24",
+  "before": {
+    "counts": {
+      "sufficient-candidate": 191,
+      "introduction-only": 216,
+      "no-direct-evidence": 1,
+      "failed": 0
+    },
+    "totalEvidence": 2727
+  },
+  "after": {
+    "counts": {
+      "sufficient-candidate": 83,
+      "introduction-only": 324,
+      "no-direct-evidence": 1,
+      "failed": 0
+    },
+    "totalEvidence": 2658
+  },
+  "removedLinks": [
+    "126028/busan-theme:1218",
+    "126078/busan-theme:1218",
+    "126079/busan-theme:854",
+    "126079/busan-theme:1218",
+    "126079/busan-theme:1420",
+    "126080/busan-theme:1218",
+    "126081/busan-theme:1218",
+    "126081/busan-theme:1420",
+    "126121/busan-theme:1218",
+    "126122/busan-theme:1154",
+    "126122/busan-theme:1218",
+    "126122/busan-theme:2100",
+    "126195/busan-theme:1158",
+    "126195/busan-theme:2100",
+    "126196/busan-theme:1218",
+    "126658/busan-theme:1218",
+    "126848/busan-theme:1218",
+    "126848/busan-theme:2253",
+    "126848/busan-theme:2672",
+    "127151/busan-theme:2101",
+    "127445/busan-theme:1170",
+    "127445/busan-theme:1218",
+    "127445/busan-theme:2672",
+    "127771/busan-theme:1208",
+    "128164/busan-theme:1218",
+    "128829/busan-theme:1218",
+    "128830/busan-theme:1170",
+    "129197/busan-theme:1218",
+    "129597/busan-theme:1218",
+    "130145/busan-theme:1218",
+    "130166/busan-theme:1218",
+    "1338947/busan-theme:1208",
+    "1608633/busan-theme:2160",
+    "1805965/busan-theme:1218",
+    "1805965/busan-theme:1420",
+    "1825843/busan-theme:2100",
+    "1997221/busan-theme:1218",
+    "1997221/busan-theme:1420",
+    "231945/busan-theme:1218",
+    "2385666/busan-theme:1218",
+    "2385686/busan-theme:1218",
+    "2385686/busan-theme:1420",
+    "2385686/busan-theme:2672",
+    "2456837/busan-theme:2100",
+    "2487925/busan-theme:1208",
+    "2487931/busan-theme:2101",
+    "2504464/busan-theme:2253",
+    "252561/busan-theme:1218",
+    "2554070/busan-theme:2160",
+    "2605916/busan-theme:2101",
+    "2606204/busan-theme:1218",
+    "2606204/busan-theme:2672",
+    "2607943/busan-theme:1218",
+    "2614714/busan-theme:1420",
+    "2614727/busan-theme:1170",
+    "2661446/busan-theme:1218",
+    "2661475/busan-theme:1170",
+    "2662531/busan-theme:1218",
+    "2668973/busan-theme:2100",
+    "2672393/busan-theme:2253",
+    "2674974/busan-theme:1170",
+    "2684712/busan-theme:1218",
+    "2684712/busan-theme:2160",
+    "2684738/busan-theme:1218",
+    "2718728/busan-theme:1170",
+    "2740063/busan-theme:1218",
+    "2756696/busan-theme:1208",
+    "2758477/busan-theme:1208",
+    "2783306/busan-theme:1218",
+    "2784363/busan-theme:2672",
+    "2862152/busan-theme:2253",
+    "2994680/busan-theme:2253",
+    "3011182/busan-theme:1420",
+    "3028653/busan-theme:1218",
+    "3032396/busan-theme:306",
+    "3083767/busan-theme:2160",
+    "3426656/busan-theme:2101",
+    "3426656/busan-theme:2160",
+    "3545436/busan-theme:2101",
+    "769761/busan-theme:2100"
+  ],
+  "addedLinks": [
+    "128164/busan-theme:2679",
+    "130521/busan-theme:303",
+    "130521/busan-theme:1178",
+    "130521/busan-theme:1318",
+    "130521/busan-theme:1320",
+    "2617724/busan-theme:2679",
+    "1608633/busan-theme:1318",
+    "1942237/busan-theme:58",
+    "1942237/busan-theme:309",
+    "1942237/busan-theme:1178",
+    "1608530/busan-theme:1318"
+  ],
+  "changedClassifications": [
+    {
+      "id": "1942337",
+      "name": "168계단",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "128698",
+      "name": "40계단 문화관광테마거리",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "130663",
+      "name": "40계단문화관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "129156",
+      "name": "가덕도 등대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2726843",
+      "name": "가덕도 연대봉",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2785289",
+      "name": "감지해변",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3032396",
+      "name": "개금벚꽃길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3028653",
+      "name": "고은사진미술관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3027738",
+      "name": "고흐의 길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126857",
+      "name": "광복로패션거리",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126078",
+      "name": "광안리해수욕장",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2744597",
+      "name": "구덕문화공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2614712",
+      "name": "구상반려암 (부산 국가지질공원)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2662991",
+      "name": "구포만세거리",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2385666",
+      "name": "국립부산과학관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "130606",
+      "name": "국립수산과학관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2551424",
+      "name": "국립일제강제동원역사관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127445",
+      "name": "금강공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126028",
+      "name": "금정산",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3027098",
+      "name": "금정산성 동문",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2789678",
+      "name": "금정산성 막걸리",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1942245",
+      "name": "김민부전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2783344",
+      "name": "낙동강 생태탐방선",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2554141",
+      "name": "낙동강문화관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "630874",
+      "name": "낙동강하구에코센터",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1942299",
+      "name": "남선창고터",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "777057",
+      "name": "내원정사(부산)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2784328",
+      "name": "다대포항",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2875837",
+      "name": "달맞이동산",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2350092",
+      "name": "더베이101",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3017112",
+      "name": "동래읍성 임진왜란 역사관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2456224",
+      "name": "렛츠런파크 부산경남",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2617724",
+      "name": "마린시티",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3017067",
+      "name": "망양로 산복도로전시관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2487927",
+      "name": "맥도생태공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3011182",
+      "name": "문화골목",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1607286",
+      "name": "문화공감 수정(부산 수정동 일본식 가옥)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2650801",
+      "name": "뮤지엄 원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3014437",
+      "name": "민락해변공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127149",
+      "name": "민주공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126148",
+      "name": "범어사(부산)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "130145",
+      "name": "복천박물관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3544138",
+      "name": "부네치아 선셋 전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1997221",
+      "name": "부산 감천문화마을",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2946508",
+      "name": "부산 영화의 거리",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2456837",
+      "name": "부산 영화의 전당",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127151",
+      "name": "부산 차이나타운(상해문,상해거리)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2784363",
+      "name": "부산근현대역사관 별관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3083767",
+      "name": "부산근현대역사관 본관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "130252",
+      "name": "부산해양자연사박물관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2605688",
+      "name": "부산현대미술관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2785762",
+      "name": "사상근린공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2650232",
+      "name": "산복도로",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3064931",
+      "name": "색채마을",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1046349",
+      "name": "서면1번가",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "128053",
+      "name": "선암사(부산)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3545373",
+      "name": "소망계단 모노레일",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2614725",
+      "name": "송도반도 (부산 국가지질공원)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2994364",
+      "name": "송도스카이파크",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3027780",
+      "name": "송림공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "128108",
+      "name": "스포원파크",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2758477",
+      "name": "신평소공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2669544",
+      "name": "역사의 디오라마",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "129157",
+      "name": "영도 등대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3017282",
+      "name": "영도해녀문화전시관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2763832",
+      "name": "오륜대전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2782658",
+      "name": "오시리아 해안산책로",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "128134",
+      "name": "옥련선원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2789280",
+      "name": "온천천시민공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126121",
+      "name": "용두산공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2729918",
+      "name": "용소웰빙공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "346661",
+      "name": "운수사(부산)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2789668",
+      "name": "월전장어구이촌",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3015937",
+      "name": "윗골공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2558329",
+      "name": "유엔평화기념관",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1945300",
+      "name": "유치환 우체통 전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127974",
+      "name": "을숙도 공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1942314",
+      "name": "이바구공작소",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1939570",
+      "name": "임랑해수욕장",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2606204",
+      "name": "장림포구",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126831",
+      "name": "장안사(부산)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2994179",
+      "name": "전포공구길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "129597",
+      "name": "죽도공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2663155",
+      "name": "죽성드림세트장",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3016775",
+      "name": "증산공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3028538",
+      "name": "책마루전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2607943",
+      "name": "청사포 다릿돌전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2736392",
+      "name": "청학수변공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2605916",
+      "name": "초량 이바구길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "1942239",
+      "name": "초량교회",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3544248",
+      "name": "추억보물섬",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2994680",
+      "name": "클럽디 오아시스",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2496023",
+      "name": "키자니아 부산",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126658",
+      "name": "태종대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2867579",
+      "name": "통일아시아드 공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126848",
+      "name": "해동용궁사",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2783306",
+      "name": "해리단길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127004",
+      "name": "해운대 관광특구",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2822343",
+      "name": "해운대 그린레일웨이 (미포~송정 구간)",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126674",
+      "name": "해운대 달맞이길",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "987810",
+      "name": "해운대 동백섬",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2672393",
+      "name": "해운대 블루라인파크",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2705325",
+      "name": "해운대리버크루즈",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "126081",
+      "name": "해운대해수욕장",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2487931",
+      "name": "화명생태공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "2733472",
+      "name": "황령산 전망대",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "3014406",
+      "name": "황령산레포츠공원",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    },
+    {
+      "id": "127488",
+      "name": "BIFF 광장",
+      "before": "sufficient-candidate",
+      "after": "introduction-only"
+    }
+  ]
+}

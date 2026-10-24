@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "3112467",
+    "name": "부산정중앙공원",
+    "lat": 35.170371,
+    "lng": 129.036929
+  },
+  "collectedAt": "2026-10-24T10:23:42.574Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3112467",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "부산정중앙공원",
+      "relation": "same-place",
+      "originalText": "부산정중앙공원은 부산진구 부암동에 위치한 공원이다. 정중앙공원은 지역 주민들과 재개발조합, 시공사 등이 꾸준히 협력하고 뜻을 모아 2023년 ‘부산정중앙표지석’을 더욱 웅장히 설치하고 부산정중앙공원을 새롭게 조성하였다. 산의 정중앙 이곳은 부산의 진산(鎭山)인 금정산(801.5m)에서 이어진 백양산(642m)의 용맥 중에서 좌청룡(左靑龍) 기운(氣運)을 받는 명당자리라고 한다. 많은 사람들이 부산의 중심, 부산정중앙공원을 방문하여 좋은 기운을 받아 갈 수 있기를 염원하는 공간이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3112467&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:34.673Z",
+      "modifiedAt": "20260406094239",
+      "passages": [
+        {
+          "text": "부산정중앙공원은 부산진구 부암동에 위치한 공원이다. 정중앙공원은 지역 주민들과 재개발조합, 시공사 등이 꾸준히 협력하고 뜻을 모아 2023년 ‘부산정중앙표지석’을 더욱 웅장히 설치하고 부산정중앙공원을 새롭게 조성하였다. 산의 정중앙 이곳은 부산의 진산(鎭山)인 금정산(801.5m)에서 이어진 백양산(642m)의 용맥 중에서 좌청룡(左靑龍) 기운(氣運)을 받는 명당자리라고 한다. 많은 사람들이 부산의 중심, 부산정중앙공원을 방문하여 좋은 기운을 받아 갈 수 있기를 염원하는 공간이다.",
+          "characters": 220,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

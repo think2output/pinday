@@ -1,0 +1,80 @@
+# 도슨트 근거 자료
+
+해설 생성 전 단계의 원문 모음이다. AI 해설·음성은 생성하지 않았다.
+
+대표 10곳의 AI 1차 검수: `docs/docent-evidence-review.md`와 `reviews/representative-2026-10-24.json`. 범위 제한 초안 후보 7곳·자료 보완 2곳·보류 1곳이며 사람 최종 검수는 아직이다. 그 검수 결과를 반영한 수집 규칙 v2로 408곳을 다시 집계했다. 전후 비교는 `evidence-comparison.json` 참고.
+
+## 실행
+
+프로젝트 루트에서 Node.js로 실행한다. 브라우저에서는 실행하거나 가져오지 않는다.
+
+```sh
+node scripts/probe-heritage.mjs
+node scripts/collect-docent-evidence.mjs --limit=3
+node scripts/collect-docent-evidence.mjs
+```
+
+- `.env`의 `DATA_GO_KR_SERVICE_KEY`(Decoding 키)가 필요하다. 국가유산 API는 키 없이 XML로 호출한다.
+- `--limit=N`: 목록 앞 N곳 시험. 집계는 `evidence-summary-sample.json`에 따로 저장한다.
+- 기본은 `cache/`의 성공 응답 재사용. 월 갱신은 `--refresh`로 다시 받는다. 테마여행 원본은 `node scripts/fetch-places.mjs`로 먼저 갱신한다.
+- 타임아웃 30초, 오류 최대 4회 재시도. 개별 상세 실패는 장소의 `errors`에 남기고 계속 수집하며 마지막 종료코드는 1이다. 목록 전체 수집 실패는 즉시 중단한다.
+- 캐시는 로컬 실행 산출물로 Git에 넣지 않는다. 검수 대상인 장소별 JSON·집계·소량 시험 결과만 커밋한다.
+
+## 파일과 필드
+
+- `evidence/{장소id}.json`: 장소별 `evidence` 배열, 분류, 검수 주의, 수집 오류.
+- 근거마다 `id`, `provider`, `source`, `title`, `originalText`, `url`, `relation`을 저장한다. 원문 HTML은 보존한다. 화면에서 표시할 때 원문을 그대로 HTML로 실행하면 안 된다.
+- `same-place`: 장소를 직접 설명하는 문단 후보가 있는 자료. `mentioned-only`: 본문에 이름은 있지만 직접 설명 문단으로 잡히지 않은 이야기. `nearby-only`: 좌표로만 가까운 유산. 언급·주변 자료를 해당 장소의 역사로 옮겨 쓰면 안 된다.
+- 스키마 v2는 `passages`에 장소별 설명 문단을 원문과 별도로 저장한다. 원문 전체는 `originalText`에 보존한다. 문단은 HTML 엔티티를 풀고 공백을 정리한 텍스트이며, 원문 문자열의 위치를 뜻하지 않는다.
+- TourAPI·부산테마여행 링크는 키를 뺀 API 원문 주소로, 직접 호출하려면 개인 인증키가 필요하다. 테마여행은 UC_SEQ로 원문을 조회할 수 있음을 실제 확인했다. 외부 공개 웹페이지 주소는 추측해 만들지 않았다.
+- 부산테마여행은 기존 `data/places/raw/busan-theme-travel.json`(247편)을 사용한다. 원본 수집 일시 필드가 없어 `unknown`으로 두고 SHA-256으로 사용한 파일을 식별한다.
+- 국가유산은 본문만 수집한다. 이미지·나레이션은 이용 조건을 확인하기 전에는 사용하지 않는다.
+
+## 분류 기준 — 자동 집계이며 사람 검수 전
+
+| 저장 값 | 의미 |
+| --- | --- |
+| `sufficient-candidate` | 근거가 충분한 **검수 후보**. TourAPI 외 직접 설명 문단 하나가 공백 제외 300자 이상 있음. 제외·재검수·대표검수의 미선택 자료는 충분 근거에서 뺌 |
+| `introduction-only` | 위 추가 근거 기준을 만족하지 않음. 주변 유산이 있어도 소개만 분류에 남을 수 있음 |
+| `no-direct-evidence` | 장소를 직접 설명하는 원문이 없음. 주변 유산 자료만 있는 경우도 포함 |
+| `collection-incomplete` | API 수집 오류가 남아 있어 분류 보류 |
+
+300자는 작업용 보수적 분류 기준이며 사실 정확성·해설 완성도를 보증하지 않는다. `humanReview: pending` 상태다. 글 전체 길이나 서로 다른 문단의 길이를 더해서 세지 않는다. ‘소개만’에는 짧은 추가 자료가 있는 곳도 포함된다. 대표검수에서 선택한 짧은 문단도 300자 기준에는 못 미칠 수 있으므로 ‘범위 제한 초안 후보 7곳’과 자동 집계는 별개다.
+
+## 수집 규칙 v2
+
+- [htmlparser2 공식 사용법](https://github.com/fb55/htmlparser2#usage)의 텍스트 노드 콜백으로 HTML을 읽는다. alt/title/href 같은 속성·주석·script/style/template/noscript 내용은 장소 연결에 쓰지 않는다. 엔티티를 풀고 인라인 태그 사이 글자는 이어 읽는다.
+- 장소 이름은 괄호 설명·공백·이름 앞 ‘부산’을 정규화한다. 본문에서는 괄호 안 내용을 통째로 지우지 않는다. 국가유산은 이름 일치, 부산 이야기는 본문 언급과 메타데이터 이름 일치 또는 4글자 이상 본문 이름으로 연결한다. 메타데이터만 있고 본문에 이름이 없으면 연결하지 않는다.
+- 이야기의 소제목·문단을 구분한다. 장소 소제목 바로 다음 문단 또는 해당 장소가 주어인 문단을 직접 설명 후보로 잡는다. 소제목 문맥은 뒤의 다른 장소 문단까지 이어 붙이지 않는다. 경로 나열·주소·주차장·비교/방향 기준으로 쓰인 문단은 충분 근거에서 뺀다. 이름만 남은 자료는 `mentioned-only`로 보존한다.
+- 확인된 별칭만 `evidence-rules.json`에 명시한다. ‘석당박물관’과 ‘옛백제병원’의 확인 근거 이야기 ID도 기록했다. 유사도나 거리로 별칭을 추측하지 않는다.
+- 검수 JSON의 선택 문단과 제외 출처를 실제 적용한다. 선택된 이야기 문단은 자동 연결 결과보다 우선하지만 주변 유산 관계를 같은 장소로 바꾸지는 않는다. 대표검수에서 선택하지 않은 출처는 `review.status=unreviewed`로 두고 충분 근거에서 뺀다. 직접 소개의 존재 여부만 집계할 수 있으며, 초안 생성 허용이라는 뜻은 아니다.
+- 알려진 오류가 있는 이야기 1363과 지난 겨울 행사 이야기 2617은 출처 단위로 격리한다. 장소별 제외와 함께 원문 SHA-256이 일치하면 `excluded`, 바뀌면 `needs-revalidation`으로 표시하고 양쪽 모두 충분 근거에서 뺀다. 대표검수의 `evidenceFileSha256`은 당시 파일 전체의 역사적 기록이고, 재수집 적용 시에는 출처별 원문 해시와 선택 범위를 확인한다.
+- 자동 문단 판별은 제한된 한국어 패턴에 따른 후보 선별이다. 모든 비교·오연결·사실 오류를 해결한 것은 아니다. 특히 이름이 생략된 긴 설명을 놓칠 수 있으므로 사람 검수로 보완한다.
+
+**알려진 충돌:** 25의용단(`126814`)은 TourAPI의 ‘일제강점기 독립운동’ 설명과 국가유산청의 ‘임진왜란 순절 제단’ 설명이 충돌한다. 양쪽 원문을 보존하고 `reviewNotes`에 표시했다. 해설 생성 전에 반드시 확인한다.
+
+## API 확인 기록 (2026-10-24)
+
+공식 공개 API의 실제 응답으로 필드·파라미터·페이지 처리를 확인했다. 인증키가 든 요청은 저장·출력하지 않는다.
+
+- [TourAPI detailCommon2](https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=126814&MobileOS=ETC&MobileApp=PinDay&_type=json): `contentId`, `MobileOS`, `MobileApp`, `_type=json`, 별도 `serviceKey`. `response.header.resultCode=0000`, `body.items.item`의 `contentid`, `overview`, `modifiedtime` 확인. 예전 버전의 overviewYN 같은 파라미터는 사용하지 않음.
+- [국가유산 부산 목록](https://www.khs.go.kr/cha/SearchKindOpenapiList.do?ccbaCtcd=21&pageUnit=100&pageIndex=1): `totalCnt`, `pageUnit`, `pageIndex`, `item`의 식별자 3개·좌표·해제 여부 확인. 부산 633건. 인접 울산(`26`) 179건·경남(`38`) 2,639건도 실제 지역명 응답으로 확인.
+- [국가유산 상세 예시](https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000120000000): `ccbaKdcd`, `ccbaCtcd`, `ccbaAsno`를 목록 값 그대로 전달. 13자리 번호의 앞자리 0 보존. XML `item.content`는 CDATA. 상세 식별자가 요청과 같은지도 검사.
+- 국가유산 API에 반경 파라미터를 추측해서 넣지 않았다. 부산·울산·경남 목록의 위도·경도로 Haversine 직선거리를 계산해 **계산값 1,000m 이하**만 연결한다. 표시 거리만 반올림한다. `0,0`/비정상 좌표·해제 유산은 제외한다. 좌표 없는 자료는 근처 검색에서 빠지는 제한이 있다.
+- [부산테마여행 개별 원문 예시](https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=58&pageNo=1&numOfRows=1&resultType=json): 별도 `ServiceKey` 필요. 실제 응답 `totalCount=1`, `UC_SEQ=58` 확인. 기존 전체 수집 원본의 PLACE, MAIN_PLACE, TITLE, ITEMCNTNTS 필드를 사용.
+
+`heritage-probe.json`에 대표 3곳의 상세 XML 원문·거리·요청 주소를 남겼다. 범어사 55건(당간지주 52m·조계문 53m), 25의용단 8건(25의용단 56m·수영야류 82m), 해운대해수욕장 0건을 먼저 시험한 뒤 전체 수집했다.
+
+## 전체 수집 결과 (2026-10-24)
+
+| 분류 | 장소 수 |
+| --- | ---: |
+| 근거 충분 후보 — 사람 검수 전 | 83 |
+| 소개만 있음 — 추가 근거 기준 미달 | 324 |
+| 직접 소개 원문 없음 | 1 |
+| 수집 실패 | 0 |
+| 합계 | 408 |
+
+연결된 자료 2,658건(언급·주변·검수 제외 자료도 포함). TourAPI 소개가 있는 장소 407곳, 1km 이내 국가유산 원문이 연결된 장소 243곳, 부산 이야기와 연결된 장소 187곳(중복 포함). 직접 소개 원문이 없는 1곳은 해성아트베이(`3451794`). 상세 집계는 `evidence-summary.json` 참고.
+
+기존 전체 글 기준 191/216/1에서 문단 기준 83/324/1로 변경됐다. 108곳이 충분 후보에서 소개만으로 바뀌었다. 이전 연결 80건을 제거하고 별칭·본문 문자 해석으로 11건을 추가했다(그중 별칭 두 장소의 연결 7건). 이야기 1218의 이미지/링크 중심 연결 32건은 모두 빠졌다. 전체 원본 이야기 파일은 보존했다. 검수에서 제외한 원문도 연결이 남은 경우 삭제하지 않고 사용 제한을 기록한다. 제외 표시 13건·선택 문단 적용 9건이며 원문 변경으로 인한 재검수 표시는 0건이다.

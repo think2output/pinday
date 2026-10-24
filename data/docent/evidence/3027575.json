@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "3027575",
+    "name": "청사포 횟집촌",
+    "lat": 35.161615,
+    "lng": 129.193851
+  },
+  "collectedAt": "2026-10-24T10:23:45.807Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3027575",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "청사포 횟집촌",
+      "relation": "same-place",
+      "originalText": "청사포 횟집촌은 옛날부터 청사포 어촌에서 운영되고 있는 횟집거리이다. 해운대 도심과 가까워 방문객들이 많이 찾는 청사포 해안가 주변에 형성되어 있으며 횟집촌의 주요 메뉴는 조개구이, 장어구이, 회, 대게, 해산물 등 다양하게 마련되어 있다. 청사포 횟집촌에 있는 대부분의 음식점이 탁 트인 바다 전망을 자랑하고 있어 부산의 아름다운 해안선을 바라보며 싱싱한 회를 즐길 수 있다. 가족들과 부모님과 함께 방문하기 좋은 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3027575&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:17.329Z",
+      "modifiedAt": "20260420165804",
+      "passages": [
+        {
+          "text": "청사포 횟집촌은 옛날부터 청사포 어촌에서 운영되고 있는 횟집거리이다. 해운대 도심과 가까워 방문객들이 많이 찾는 청사포 해안가 주변에 형성되어 있으며 횟집촌의 주요 메뉴는 조개구이, 장어구이, 회, 대게, 해산물 등 다양하게 마련되어 있다. 청사포 횟집촌에 있는 대부분의 음식점이 탁 트인 바다 전망을 자랑하고 있어 부산의 아름다운 해안선을 바라보며 싱싱한 회를 즐길 수 있다. 가족들과 부모님과 함께 방문하기 좋은 곳이다.",
+          "characters": 181,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

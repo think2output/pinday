@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "aliases": {
+    "130521": {
+      "names": [
+        "석당박물관"
+      ],
+      "verifiedStoryIds": [
+        303,
+        1178
+      ],
+      "note": "대표 검수에서 동아대학교 석당박물관과 동일 장소 문단 확인"
+    },
+    "1942237": {
+      "names": [
+        "옛백제병원",
+        "옛 백제병원"
+      ],
+      "verifiedStoryIds": [
+        58,
+        1178
+      ],
+      "note": "대표 검수에서 부산 구 백제병원과 동일 장소 문단 확인"
+    }
+  },
+  "quarantines": [
+    {
+      "sourceId": "busan-theme:1363",
+      "originalTextSha256": "95c0d1088a2e490042135f72387457b83930e4ed247e00ddd0bbfec3eda7d728",
+      "reason": "대표 검수: 범어사 조계문 국보 표기가 국가유산포털 보물 지정과 충돌. 원문 수정 확인까지 분류 근거에서 제외"
+    },
+    {
+      "sourceId": "busan-theme:2617",
+      "originalTextSha256": "749a4dc6ca1d2d71cfb3d8581ddbbba200364516275214c751b47834d13b31db",
+      "reason": "대표 검수: 2025~2026 겨울 행사 원문. 현재 안내의 근거에서 제외"
+    }
+  ]
+}

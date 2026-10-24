@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2606230",
+    "name": "국립달음산자연휴양림",
+    "lat": 35.3027147997,
+    "lng": 129.1854138742
+  },
+  "collectedAt": "2026-10-24T10:23:39.236Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2606230",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "국립달음산자연휴양림",
+      "relation": "same-place",
+      "originalText": "해발 588미터의 달음산은 기장 8경 중에 제1경이며, 기장군의 2대 명산 중의 하나이다. 달음산 정산에 거대한 바위가 있어 독수리처럼 굽어본다하여 취봉 또는 수리봉으로 불린다. 국립달음산자연휴양림은 달음산 서쪽 자락에 위치하고 있으며, 부산광역시 최초의 국립 자연휴양림으로 산과 바다를 모두 보고 즐길 수 있는 최적의 휴양림이다. 발아래 철썩대는 바닷물을 볼 수 있는 한국의 삼대 관음성지중의 한곳인 해동용궁사를 비롯해 일광해수욕장, 기장대변 멸치축제 등 접근성과 편의성을 두루 갖추고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2606230&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:48.219Z",
+      "modifiedAt": "20260807095156",
+      "passages": [
+        {
+          "text": "해발 588미터의 달음산은 기장 8경 중에 제1경이며, 기장군의 2대 명산 중의 하나이다. 달음산 정산에 거대한 바위가 있어 독수리처럼 굽어본다하여 취봉 또는 수리봉으로 불린다. 국립달음산자연휴양림은 달음산 서쪽 자락에 위치하고 있으며, 부산광역시 최초의 국립 자연휴양림으로 산과 바다를 모두 보고 즐길 수 있는 최적의 휴양림이다. 발아래 철썩대는 바닷물을 볼 수 있는 한국의 삼대 관음성지중의 한곳인 해동용궁사를 비롯해 일광해수욕장, 기장대변 멸치축제 등 접근성과 편의성을 두루 갖추고 있다.",
+          "characters": 214,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

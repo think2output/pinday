@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2661452",
+    "name": "안데르센 동화마을",
+    "lat": 35.3601199691,
+    "lng": 129.2399148578
+  },
+  "collectedAt": "2026-10-24T10:23:43.741Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2661452",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "안데르센 동화마을",
+      "relation": "same-place",
+      "originalText": "부산 기장군 장안읍에 있는 도예 관광 힐링촌에 들어선 안데르센 동화마을은 어린이뿐 아니라 어른들도 아우르는 힐링 체험 공간이다. 수많은 동화를 집필해 전 세계 아동들에게 사랑받는 안데르센의 생애와 그의 작품 세계를 한눈에 알 수 있다. 18세기 바로크 양식으로 재현한 안데르센 정원, 아이들과 함께하는 다양한 놀이시설이 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2661452&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:49.149Z",
+      "modifiedAt": "20250319185442",
+      "passages": [
+        {
+          "text": "부산 기장군 장안읍에 있는 도예 관광 힐링촌에 들어선 안데르센 동화마을은 어린이뿐 아니라 어른들도 아우르는 힐링 체험 공간이다. 수많은 동화를 집필해 전 세계 아동들에게 사랑받는 안데르센의 생애와 그의 작품 세계를 한눈에 알 수 있다. 18세기 바로크 양식으로 재현한 안데르센 정원, 아이들과 함께하는 다양한 놀이시설이 있다.",
+          "characters": 139,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

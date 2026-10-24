@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-24",
+  "reviewer": "Codex (AI 1차 검수)",
+  "humanReview": "pending",
+  "generationPerformed": false,
+  "status": "drafting-scope-proposed",
+  "limitation": "장소 연결·일부 출처 충돌을 확인한 대표 표본 검수. 408곳 전체 검수나 사람의 최종 승인 아님. 파일 전체 해시는 최초 검수 시점 기록이며 수집 규칙 v2 적용 시에는 출처별 원문 해시와 선택 문단을 검사함. 원문은 보존하고 자동 집계는 별도 갱신함.",
+  "counts": {
+    "scoped-draft-candidate": 7,
+    "supplement-needed": 2,
+    "hold-no-direct-evidence": 1
+  },
+  "reviews": [
+    {
+      "placeId": "126814",
+      "placeName": "25의용단",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "국가유산청 설명을 근거로 임진왜란의 25인과 의용단의 의미만 다룬다.",
+      "evidenceFile": "data/docent/evidence/126814.json",
+      "evidenceFileSha256": "2f6ac0cbc69ac6a6bd2df0f68694105fb45b1c465b7180aad01a12e7df4a081b",
+      "selectedExcerpts": [
+        {
+          "sourceId": "heritage:23-21-0000120000000",
+          "sourceUrl": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000120000000",
+          "originalRelation": "same-place",
+          "start": 0,
+          "end": 574,
+          "originalText": "임진왜란 때 수영성을 지키며 왜적과 장렬히 싸우다 순절한 25명의 의로운 충절을 기리고 있는 제단이다.\n 조선 선조 25년(1592) 임진왜란이 일어나자 경상좌수사로 있던 박홍은 성을 버리고 달아났다. 이 때 수병(守兵)과 성민(城民) 25인이 성문 밖의 선서바위에 모여 피로써 맹세한 후, 바다와 육지에서 적을 상대로 7년간 대항하였다. 이러한 사연은 광해군 원년(1609) 지방민들의 청원으로 알려지게 되어, 동래부사 이안눌이 이 때의 일들을 모아『정방록』을 만들고, 이들의 집 문에 ‘의용(義勇)’이라는 두 글자를 써붙여 그 뜻을 기리도록 하였다. 순조 때에는 동래부사 오한원이 이들의 후손들에게 역(役)의 의무를 면제시키고 글을 지어 포상하였다.\n 철종 4년(1853) 경상좌수사 장인식이 비를 세우고, ‘의용단’이라 이름하였으며, 제실·의용단을 설치하여 음력 3월과 9월 말정일(末丁日) 두 차례에 걸쳐 제향을 봉행하였다. 제사는 원래 경상좌수사가 주관하였으나 고종 31년(1894) 관제개혁으로 좌수영이 폐지되면서 수영면의 면장이 이를 맡아하였고, 일제시대에 일본 면장이 부임한 이후에는 수영기로회에서 주관하였다. ",
+          "originalTextSha256": "bb4e63b35c64a1f20e14f6f77fddfcb5461f0d3c55f0b7b347a02743cc43060c",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "tourapi:126814",
+          "reason": "독립운동 기념관이라는 설명이 국가유산청·부산시 설명과 충돌",
+          "originalTextSha256": "b0119259d9751455f34bee5351ae299e6a5f218c6965634481da53baea767d68"
+        }
+      ],
+      "notes": [
+        "부산시 충렬사관리사무소 설명도 임진왜란 관련 제단으로 안내한다.",
+        "현재 제향 일정은 별도 최신 확인 전 사용 금지."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [
+        {
+          "url": "https://www.busan.go.kr/cys/coremains04",
+          "finding": "임진왜란 때 수군·성민 25인의 항전을 기리는 제단이라는 설명 확인(공식 검색 결과)."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "126148",
+      "placeName": "범어사(부산)",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "범어사 경내 조계문을 관람하는 포인트. 사찰 전체 건립 연혁과 개별 전각 연혁을 혼동하지 않는다.",
+      "evidenceFile": "data/docent/evidence/126148.json",
+      "evidenceFileSha256": "f5a477b160229a7ab85733ba6738be85f95269ff2f5b061d617f447e18c71b9a",
+      "selectedExcerpts": [
+        {
+          "sourceId": "heritage:12-21-0014610000000",
+          "sourceUrl": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=12&ccbaCtcd=21&ccbaAsno=0014610000000",
+          "originalRelation": "nearby-only",
+          "start": 266,
+          "end": 630,
+          "originalText": "앞면 3칸 규모이며 지붕은 옆면에서 볼 때 사람 인(人)자 모양을 한 맞배지붕으로 꾸몄다.\n 지붕 처마를 받치기 위해 장식한 공포는 기둥 위와 기둥 사이에도 있는 다포 양식이다.\n 기둥은 높은 돌 위에 짧은 기둥을 세운 것이 특이하며 모든 나무재료들은 단청을 하였다. 부산 범어사 조계문은 모든 법이 하나로 통한다는 법리를 담고 있어 삼해탈문이라고도 부른다. \n 부산 범어사 조계문은 사찰의 일주문이 가지는 기능적인 건물로서의 가치와 함께 모든 구성 부재들의 적절한 배치와 결구를 통한 구조적인 합리성 등이 시각적으로 안정된 조형 및 의장성을 돋보이게 한다. 한국전통 건축의 구조미를 잘 표현하여 우리나라 일주문 중에서 걸작품으로 평가할 수 있다.\n ",
+          "originalTextSha256": "0e46b286d69b8df36d26e03eed24038463333bb68cce20fdcaddb752aaa3489f",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:1363",
+          "reason": "조계문·대웅전·삼층석탑을 국보로 서술. 적어도 조계문은 공식 국가유산포털의 보물 지정과 충돌하므로 글 전체를 초안 입력에서 제외",
+          "originalTextSha256": "95c0d1088a2e490042135f72387457b83930e4ed247e00ddd0bbfec3eda7d728"
+        }
+      ],
+      "notes": [
+        "선별한 유산은 기존 relation=nearby-only를 유지한다. 조계문에 관한 문단만 범어사 경내 개별 관람 대상으로 수동 범위 지정.",
+        "추정 건립연도는 확정 사실로 바꾸지 않는다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [
+        {
+          "url": "https://www.heritage.go.kr/heri/cul/culGuidePostDetail.do?ccbaCpno=1122114610000&ccgbGbtype=IND&ccgbGbtypeNo=1&pageNo=1_5_0_0",
+          "finding": "부산 범어사 조계문은 보물로 안내됨."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "1997221",
+      "placeName": "부산 감천문화마을",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "산비탈의 계단식 주거·골목·벽화라는 경관. 형성사는 태극도 신도와 피란민 양쪽을 추가 확인한 뒤 작성.",
+      "evidenceFile": "data/docent/evidence/1997221.json",
+      "evidenceFileSha256": "c34a870c8a8e64b4e1ad070cc91e60c3d76d69c8d8bd8cc765f732c20c0d61bb",
+      "selectedExcerpts": [
+        {
+          "sourceId": "busan-theme:1199",
+          "sourceUrl": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1199&pageNo=1&numOfRows=1&resultType=json",
+          "originalRelation": "same-place",
+          "start": 1401,
+          "end": 1528,
+          "originalText": "산비탈을 따라 빼곡하게 들어찬 알록달록한 집, 미로처럼 이어진 골목, 그 길을 따라 예쁘게 그려진 벽화. 부산의 옛 모습과 현대적인 예술이 어우러진 색다른 감성골목, 많은 사람들이 부산 여행지 원픽으로 꼽는 감천문화마을이다.\n\n",
+          "originalTextSha256": "8e0994f6efbe49c3c5495c0b3ed3a1af7e24dd41c01e36c75e043afb8b8ea6d7",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:846",
+          "reason": "다른 전망대를 소개하며 감천문화마을을 비교 대상으로 언급. 직접 해설 근거에서 제외",
+          "originalTextSha256": "87574382334c534cc7462d2983af1fbf7c02bf3ac4ef4a5ac1d76fea81f3531b"
+        },
+        {
+          "sourceId": "busan-theme:857",
+          "reason": "추가 확인으로 정정: 본문에 감천 문화마을도 아니고라는 부정·비교 언급이 있음. 감천문화마을 자체 설명이 아니므로 제외(기존 속성만 언급이라는 이유를 바로잡음)",
+          "originalTextSha256": "5094daba1ea64e19eb203add29102b9a9b7158a0ca87381f09ca0100e32e5a00"
+        },
+        {
+          "sourceId": "busan-theme:1218",
+          "reason": "본문 텍스트가 사실상 없고 이미지 속성·코스 링크 중심",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
+        }
+      ],
+      "notes": [
+        "TourAPI 연간 방문객 수는 기준 연도가 없어 제외.",
+        "피란민만으로 마을 형성을 설명하면 사하구 공식 설명의 태극도 신앙촌 맥락이 빠진다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [
+        {
+          "url": "https://saha.go.kr/tour/contents.do?mId=0101010000",
+          "finding": "1950년대 태극도 신도와 피란민의 집단 거주지 형성 및 계단식 주거·골목 경관 설명 확인."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "1942337",
+      "placeName": "168계단",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "산복도로와 부산항을 잇는 계단 동선. 현재 탑승시설·운영시간은 제외.",
+      "evidenceFile": "data/docent/evidence/1942337.json",
+      "evidenceFileSha256": "925b612dc83bf87dfbecb94fed6cbeb4a5955743d54f625070c82b22dbb618b8",
+      "selectedExcerpts": [
+        {
+          "sourceId": "tourapi:1942337",
+          "sourceUrl": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=1942337&MobileOS=ETC&MobileApp=PinDay&_type=json",
+          "originalRelation": "same-place",
+          "start": 0,
+          "end": 81,
+          "originalText": "산복도로에서 부산항까지 가장 빨리 내려갈 수 있는 지름길이다. 산복도로의 대표적인 특징 중 하나인 세로로 난 지상 6층 높이의 아찔한 계단이다. ",
+          "originalTextSha256": "b1fbf504a2f360dfb8930b7cc6eee1cf6c1d46972bf52e2740a090c577165f89",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:309",
+          "reason": "모노레일 현재 체험 안내가 최신 공식 경사형 엘리베이터 안내와 맞지 않음. 원문 전체를 초안 입력에서 제외",
+          "originalTextSha256": "bb0f77d22fbda999e3813eb2eaa29ceb8e83c4f93a053dfbadc0c28978b8c72b"
+        }
+      ],
+      "notes": [
+        "우물의 현재 상태 및 시설 이용 조건은 현행 안내 확인 전 확정하지 않는다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [
+        {
+          "url": "https://www.busan.go.kr/news/totalnews01/view?curPage=2&dataNo=72876",
+          "finding": "부산시보는 초량 168계단 경사형 엘리베이터를 소개한다(공식 검색 결과)."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "126081",
+      "placeName": "해운대해수욕장",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "해운대해수욕장의 해변 풍경과 도시 분위기에 한정한 짧은 소개. 풍부한 역사 해설은 추가 수집 필요.",
+      "evidenceFile": "data/docent/evidence/126081.json",
+      "evidenceFileSha256": "29e6106dfeb29dfa835d926b477f12e83a334c3db27a345d2dac6447a77ed071",
+      "selectedExcerpts": [
+        {
+          "sourceId": "busan-theme:1408",
+          "sourceUrl": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1408&pageNo=1&numOfRows=1&resultType=json",
+          "originalRelation": "same-place",
+          "start": 831,
+          "end": 1033,
+          "originalText": "부산하면 가장 먼저 떠오르는 것, 바다! 그중에서도 부산 바다의 정석으로 불리는 곳은 단연 해운대해수욕장이다. 여름은 물론이요, 사시사철 부산을 찾는 관광객들의 발걸음이 한 번쯤은 머무르다 가는 곳, 해운대 해수욕장은 다른 어떤 곳보다 다이내믹한 부산의 분위기를 느낄 수 있는 장소다.\n\n<p class=\"font-size25 colorBlack medium\">",
+          "originalTextSha256": "9c69e1adfa342614f4008eea1c99a03653476b146be4bb50fc2dba9db936b2be",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:795",
+          "reason": "해당 문단의 중심은 미포이며 해수욕장을 비교·위치 기준으로 언급. 미포의 특징을 해수욕장 전체로 옮기지 않음",
+          "originalTextSha256": "50798857a29bceebeeb65125270871599bf98d47ef6da0292c670515f04dd0b6"
+        },
+        {
+          "sourceId": "busan-theme:1218",
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
+        },
+        {
+          "sourceId": "busan-theme:2617",
+          "reason": "2025~2026 겨울 행사 일정은 2026-10-24 기준 현재 안내에 재사용 불가",
+          "originalTextSha256": "749a4dc6ca1d2d71cfb3d8581ddbbba200364516275214c751b47834d13b31db"
+        }
+      ],
+      "notes": [
+        "TourAPI의 수심·물결 묘사를 수영 안전 보장으로 쓰지 않는다.",
+        "개장기간·축제·주변 장소 거리·최대 인파 표현은 최신 확인 전 제외.",
+        "한국관광 100선 선정은 2023~2024 기간 정보이며 현재 선정으로 표현하지 않는다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "126658",
+      "placeName": "태종대",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "태종대의 숲·바위해안·바다 경관. 이름 유래·열차 운행 정보는 추가 확인 전 제외.",
+      "evidenceFile": "data/docent/evidence/126658.json",
+      "evidenceFileSha256": "db52fb6e34c28b30c50e7854676ae0e2a7926efa8c36b786b1f050c0fdbfaaf4",
+      "selectedExcerpts": [
+        {
+          "sourceId": "busan-theme:1408",
+          "sourceUrl": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1408&pageNo=1&numOfRows=1&resultType=json",
+          "originalRelation": "same-place",
+          "start": 207,
+          "end": 521,
+          "originalText": "초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는 곳. 오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳. 부산 영도 남쪽 끝에 자리하고 있는 태종대의 이야기다. 태종대는 바다를 조망할 수 있는 전망 포인트뿐만 아니라 해안 자갈마당과 이어지는 계단오솔길도 잘 조성되어 있다. 발걸음을 옮기는 곳마다 새로워지는 풍경에 여행자의 마음이 절로 설렌다. 도시와 얼마 떨어지지 않은 곳이건만 이곳만큼은 세상의 때가 덜 닿은 듯하다.\n\n<p class=\"font-size25 colorBlack medium\">",
+          "originalTextSha256": "9c69e1adfa342614f4008eea1c99a03653476b146be4bb50fc2dba9db936b2be",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:1218",
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
+        }
+      ],
+      "notes": [
+        "2023~2024 관광지 선정 제목을 현재 선정 사실로 쓰지 않는다.",
+        "다누비열차 운행·요금과 상업시설 상태는 원문만으로 현재 운영을 단정하지 않는다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "130145",
+      "placeName": "복천박물관",
+      "decision": "scoped-draft-candidate",
+      "draftingScope": "복천동 고분군 출토 유물과 박물관 전시의 관계. 고분군과 박물관은 구분한다.",
+      "evidenceFile": "data/docent/evidence/130145.json",
+      "evidenceFileSha256": "009acaff1da452e890f0aead6e456ae585416b05156db90c6193b8bdd91098a1",
+      "selectedExcerpts": [
+        {
+          "sourceId": "busan-theme:417",
+          "sourceUrl": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=417&pageNo=1&numOfRows=1&resultType=json",
+          "originalRelation": "same-place",
+          "start": 202,
+          "end": 281,
+          "originalText": "고분에서 출토된 많은 유물을 전시하고 있는 복천박물관에서는 가야의 뛰어난 철기문화와 더불어 고대 무덤 형식의 변천과정을 상세히 알 수 있다.\n",
+          "originalTextSha256": "fa476d59d90bf136b5b41fe078fdf08f7d3e4a1f971cf578a934736dfd1ca677",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [
+        {
+          "sourceId": "busan-theme:1184",
+          "reason": "복천박물관은 다른 명소의 위치·주차장 안내로 언급될 뿐이라 해설 근거로 제외",
+          "originalTextSha256": "912793ec633688cf9452840e730ddfe220b9c65410b2cd58d56019e5e93de363"
+        },
+        {
+          "sourceId": "busan-theme:1218",
+          "reason": "이미지 속성·코스 링크 중심이라 텍스트 해설 근거로 부족",
+          "originalTextSha256": "0016a5efb72814ab090755688c72ae4cb71ee5e809c94869fbf1574cfd4017fa"
+        }
+      ],
+      "notes": [
+        "TourAPI 무덤 수 200여 기와 박물관 공식 고분군 안내의 조사 유구 191기는 범위 차이 가능성이 있어 개수 단정 보류.",
+        "임진왜란역사관의 수안역 발굴 이야기를 복천박물관 이야기로 혼합하지 않는다."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [
+        {
+          "url": "https://museum.busan.go.kr/bokcheon/tumbpark",
+          "finding": "공식 검색 결과에서 조사 유구 191기와 출토 유물 전시 안내 확인. 본문 직접 열기는 시간 초과하여 숫자 차이 원인은 확정하지 않음."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "1942237",
+      "placeName": "부산 구 백제병원",
+      "decision": "supplement-needed",
+      "draftingScope": "국가유산청의 근대 의료기관·건물 보존 가치에 관한 짧은 소개만 가능. 별칭 자료 연결 후 장문 재검수.",
+      "evidenceFile": "data/docent/evidence/1942237.json",
+      "evidenceFileSha256": "64ea4d5236d88366e8e51045c77a0acb53f7226793e333068efc63d455711545",
+      "selectedExcerpts": [
+        {
+          "sourceId": "heritage:79-21-0006470000000",
+          "sourceUrl": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=79&ccbaCtcd=21&ccbaAsno=0006470000000",
+          "originalRelation": "same-place",
+          "start": 0,
+          "end": 215,
+          "originalText": "구 백제병원은 부산 최초의 근대식 개인 종합병원으로 당시 부산부립병원, 철도병원과 함께 지역에서 중요한 의료기관 건물로 근대 의료사적으로 가치가 있음\n1927년 2월, 12월에 각각 건립된 두동이 하나로 합쳐진 건물로 내부 평면이 사각형, 마름모꼴 형태의 다양한 실들로 구성되어 있으며 최초 건립되었던 1, 2, 3층에는 목조계단과 장식, 디테일 등 목재로 마감된 원형이 잘 남아 있음",
+          "originalTextSha256": "62b1d626c388e3a157058e060dcaa53b1341bb6041aada251ea43d9caf8cbda7",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [],
+      "notes": [
+        "자동 연결에서 옛백제병원 별칭이 누락. 부산테마여행 58·1178에 연결 후보가 있음.",
+        "1178의 1922년 표현과 국가유산청 상세의 두 동 건립 1927년 표현은 대상·연혁 구분 확인 전 병합 금지.",
+        "현재 입점 카페·상가 상태는 별도 확인 전 제외."
+      ],
+      "aliasCandidateStoryIds": [
+        58,
+        1178
+      ],
+      "externalChecks": [],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "130521",
+      "placeName": "동아대학교 석당박물관",
+      "decision": "supplement-needed",
+      "draftingScope": "박물관 연혁에 관한 짧은 소개. 개별 소장유물의 역사와 박물관 자체 연혁을 구분한다.",
+      "evidenceFile": "data/docent/evidence/130521.json",
+      "evidenceFileSha256": "fa6e6315ebc5f463dc4356d2bb18a472207f863c4e368a162e86f42c47dd118a",
+      "selectedExcerpts": [
+        {
+          "sourceId": "tourapi:130521",
+          "sourceUrl": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=130521&MobileOS=ETC&MobileApp=PinDay&_type=json",
+          "originalRelation": "same-place",
+          "start": 0,
+          "end": 172,
+          "originalText": "동아대학교 석당박물관은 한국의 역사, 민속, 예술, 자연 및 과학과 산업에 관한 여러 자료를 수집·정리·전시하여 한국의 전통적 고유문화를 이해하고 계승·발전시켜 학술 연구에 기여하는 것을 목표로 1959년에 개관하였다. 이후 여러 차례의 이전 후 2009년 동아대학교 부민캠퍼스 박물관으로 이전 개관하였다. ",
+          "originalTextSha256": "f8cfae626d5584f1932bc9afba461d58656df36e71dca0f8a419338bafb1a903",
+          "reviewScope": "이 문단의 장소 관련성·명시된 제한만 검토. 문단 안 모든 사실의 독립 검증을 뜻하지 않음"
+        }
+      ],
+      "excludedSources": [],
+      "notes": [
+        "자동 연결에서 석당박물관 별칭이 누락. 부산테마여행 303·1178에 박물관 설명이 있음.",
+        "가까운 소장유물 자료 27건을 모두 박물관 건물의 역사로 사용하면 안 됨.",
+        "1178의 문화유산 지정종류·번호 표기는 별도 공식 확인 전 사용하지 않음."
+      ],
+      "aliasCandidateStoryIds": [
+        303,
+        1178
+      ],
+      "externalChecks": [
+        {
+          "url": "https://www.donga.ac.kr/museum/CMS/HistoryMgr/list.do?mCode=MN071",
+          "finding": "1959년 박물관 창설 및 2009년 부민캠퍼스 이전 개관을 공식 연혁과 대조."
+        }
+      ],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    },
+    {
+      "placeId": "3451794",
+      "placeName": "해성아트베이",
+      "decision": "hold-no-direct-evidence",
+      "draftingScope": "해설 작성 보류.",
+      "evidenceFile": "data/docent/evidence/3451794.json",
+      "evidenceFileSha256": "dbcdca81dbcf0e245fe4a6d7077d0f2444b2fa391604263a39fab89ec8504f28",
+      "selectedExcerpts": [],
+      "excludedSources": [],
+      "notes": [
+        "TourAPI 소개가 비어 있고 직접 연결된 부산 이야기 없음.",
+        "이덕성가 문적은 572m 근처 유산일 뿐 해성아트베이의 역사 근거가 아님."
+      ],
+      "aliasCandidateStoryIds": [],
+      "externalChecks": [],
+      "unlistedSourcePolicy": "미검수. 자동 사용 금지"
+    }
+  ]
+}

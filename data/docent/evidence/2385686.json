@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2385686",
+    "name": "아홉산숲",
+    "lat": 35.2871407693,
+    "lng": 129.1715589466
+  },
+  "collectedAt": "2026-10-24T10:23:43.717Z",
+  "classification": {
+    "status": "sufficient-candidate",
+    "supportingIds": [
+      "busan-theme:454"
+    ],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2385686",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "아홉산숲",
+      "relation": "same-place",
+      "originalText": "부산 기장 철마면 아홉산 자락에 위치한 숲으로, 훼손되지 않은 자연환경과 생태를 만날 수 있는 곳이다. 대나무숲, 편백나무 숲, 삼나무, 은행나무 등의 인공림과 수령 100~300년 되는 금강송 등을 포함한 천연림이 아홉산숲을 구성한다. 총면적이 무려 52만 ㎡에 이르며, 약 400년의 세월을 지켜온 사유림으로, 자연보호를 위하여 사전 예약된 제한된 인원만이 출입이 가능하다. 놀이공원이나 유원지와 다르게 자연을 훼손하지 않는 선에서만 관람이 가능하지만, 아이들을 위한 숲 속 체험 및 놀이 프로그램도 마련되어 있으며, 숲 해설을 들을 수도 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2385686&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:48.933Z",
+      "modifiedAt": "20250305102252",
+      "passages": [
+        {
+          "text": "부산 기장 철마면 아홉산 자락에 위치한 숲으로, 훼손되지 않은 자연환경과 생태를 만날 수 있는 곳이다. 대나무숲, 편백나무 숲, 삼나무, 은행나무 등의 인공림과 수령 100~300년 되는 금강송 등을 포함한 천연림이 아홉산숲을 구성한다. 총면적이 무려 52만 ㎡에 이르며, 약 400년의 세월을 지켜온 사유림으로, 자연보호를 위하여 사전 예약된 제한된 인원만이 출입이 가능하다. 놀이공원이나 유원지와 다르게 자연을 훼손하지 않는 선에서만 관람이 가능하지만, 아이들을 위한 숲 속 체험 및 놀이 프로그램도 마련되어 있으며, 숲 해설을 들을 수도 있다.",
+          "characters": 235,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "busan-theme:454",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화 속 부산을 찾아가는 쏠쏠한 재미",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "영화를 보는 것에서 벗어나 영화 속 인물들의 발자취를 따라 걷는 일, 마치 내가 주인공이 된 듯 그 장면 그 장소에 함께 있는 기분을 느낄 수 있는 것. 영화 촬영의 성지, 부산이라면 가능하다. 기장 아홉산숲은 영화 ＜군도＞의 촬영지다. 빽빽한 대나무 숲은 하정우와 강동원이 액션을 펼치던 곳으로 바람에 스치는 대나무 잎의 소리가 배경음악이 된다. 대나무뿐만 아니라 금강송과 같은 귀한 소나무도 군락을 이루고 있어 산책길로 안성맞춤이다. 흰여울문화마을은 영화 ＜변호인＞의 촬영지로 유명하다. 진우네 담벼락에 쓰인 영화 대사들이 구구절절해서 마음 한구석이 짠해진다. 영화 속 송강호가 찾았던 그 골목을 그대로 따라가면 나지막한 담벼락 넘어 시원하게 트여있는 바다가 눈이 부시다. 남포동 입구의 부산데파트는 영화 ＜도둑들＞의 촬영지다. 40년 이상의 역사를 간직한 이곳은 부산의 근대화를 상징하는 건물이기도 하다. 건물을 한 바퀴 돌다보면 빽빽한 창들 사이를 넘나들며 총격전을 벌이던 배우들의 치열한 음성이 들려오는 듯하다. 영화 ＜국제시장＞에서 6.25 피란민들의 생생한 삶을 보여준 국제시장. 주인공 덕수의 고모가 운영하던 꽃분이네의 인기는 지금도 여전하다. 꽃분이네 외에도 수많은 상점과 먹거리가 있으며, 부산 상인들의 넘쳐나는 정을 느낄 수 있다. 영화 ＜올드보이＞하면 만두가 가장 먼저 떠오를 것이다. 차이나타운에는 배우 최민식이 만두를 먹었던 중화요리집이 있다. 김이 모락모락 오르는 군만두를 비롯해 윤기가 좌르르 흐르는 자장면까지. 제대로 된 중화요리를 맛보고 싶다면 차이나타운을 추천한다. 수영만 요트경기장은 많은 영화의 촬영지로 유명하다. 영화 ＜무방비도시＞에서 손예진이 일본으로 도주하다 남자주인공에게 쫓기는 클라이맥스 장면의 배경도 이곳이다. 부산 영화 촬영소도 위치해있어 많은 영화인들의 사랑을 받는 곳이다. “고마해라~ 마이 무따 아이가~” 영화 ＜친구＞의 명대사는 모르는 사람이 없다. 영화에서 네 친구의 단단한 우정을 열정적으로 보여준 곳이 바로 범일동 철도건널목, 구름다리이다. 배우 장동건과 유오성이 교복을 입고 열심히 달리던 그 장소, 영화 속 그 장면처럼 포즈나 한번 잡아볼까. 영화 ＜파랑주의보＞에서 수호와 수은이 함께 걸었던 낭만적인 장소가 미포철길이다. 바다를 배경으로 쭉 뻗은 철길이 아름다운 이곳. 레트로 감성 물씬 풍기는 미포철길 위에 낭만 추억이 하나 둘 쌓여 간다. 해운대 끝자락에 있는 작은 포구 미포는 영화 ＜해운대＞ 속 횟집이 있던 장소이자, 바닷물이 밀려오던 철길건널목이 있던 장소이다. 영화에서는 쓰나미로 인해 아수라장이 되었던 현장이지만, 실제로는 하늘과 바다가 만나 예쁜 수평선을 선사하는 곳이다. 기장의 일광해수욕장은 영화 ＜보안관＞의 주인공 대호의 고향이다. 고향 ‘기장’을 수호하기 위한 그의 노력이 코믹하면서도 눈물겨운 영화다. 대호의 시선으로 기장 일광해수욕장을 바라다보면 잔잔한 감동의 물결이 밀려오는 듯하다.",
+          "reason": "place-subject",
+          "characters": 1112
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "아홉산숲"
+        ],
+        "placeName": "아홉산숲",
+        "review": "pending"
+      },
+      "originalText": "영화를 보는 것에서 벗어나 영화 속 인물들의 발자취를 따라 걷는 일, 마치 내가 주인공이 된 듯 그 장면 그 장소에 함께 있는 기분을 느낄 수 있는 것. 영화 촬영의 성지, 부산이라면 가능하다.\n기장 아홉산숲은 영화 ＜군도＞의 촬영지다. 빽빽한 대나무 숲은 하정우와 강동원이 액션을 펼치던 곳으로 바람에 스치는 대나무 잎의 소리가 배경음악이 된다. 대나무뿐만 아니라 금강송과 같은 귀한 소나무도 군락을 이루고 있어 산책길로 안성맞춤이다.\n흰여울문화마을은 영화 ＜변호인＞의 촬영지로 유명하다. 진우네 담벼락에 쓰인 영화 대사들이 구구절절해서 마음 한구석이 짠해진다. 영화 속 송강호가 찾았던 그 골목을 그대로 따라가면 나지막한 담벼락 넘어 시원하게 트여있는 바다가 눈이 부시다.\n남포동 입구의 부산데파트는 영화 ＜도둑들＞의 촬영지다. 40년 이상의 역사를 간직한 이곳은 부산의 근대화를 상징하는 건물이기도 하다. 건물을 한 바퀴 돌다보면 빽빽한 창들 사이를 넘나들며 총격전을 벌이던 배우들의 치열한 음성이 들려오는 듯하다.\n영화 ＜국제시장＞에서 6.25 피란민들의 생생한 삶을 보여준 국제시장. 주인공 덕수의 고모가 운영하던 꽃분이네의 인기는 지금도 여전하다. 꽃분이네 외에도 수많은 상점과 먹거리가 있으며, 부산 상인들의 넘쳐나는 정을 느낄 수 있다.\n영화 ＜올드보이＞하면 만두가 가장 먼저 떠오를 것이다. 차이나타운에는 배우 최민식이 만두를 먹었던 중화요리집이 있다. 김이 모락모락 오르는 군만두를 비롯해 윤기가 좌르르 흐르는 자장면까지. 제대로 된 중화요리를 맛보고 싶다면 차이나타운을 추천한다.\n수영만 요트경기장은 많은 영화의 촬영지로 유명하다. 영화 ＜무방비도시＞에서 손예진이 일본으로 도주하다 남자주인공에게 쫓기는 클라이맥스 장면의 배경도 이곳이다. 부산 영화 촬영소도 위치해있어 많은 영화인들의 사랑을 받는 곳이다.\n“고마해라~ 마이 무따 아이가~” 영화 ＜친구＞의 명대사는 모르는 사람이 없다. 영화에서 네 친구의 단단한 우정을 열정적으로 보여준 곳이 바로 범일동 철도건널목, 구름다리이다. 배우 장동건과 유오성이 교복을 입고 열심히 달리던 그 장소, 영화 속 그 장면처럼 포즈나 한번 잡아볼까.\n영화 ＜파랑주의보＞에서 수호와 수은이 함께 걸었던 낭만적인 장소가 미포철길이다. 바다를 배경으로 쭉 뻗은 철길이 아름다운 이곳. 레트로 감성 물씬 풍기는 미포철길 위에 낭만 추억이 하나 둘 쌓여 간다.\n해운대 끝자락에 있는 작은 포구 미포는 영화 ＜해운대＞ 속 횟집이 있던 장소이자, 바닷물이 밀려오던 철길건널목이 있던 장소이다. 영화에서는 쓰나미로 인해 아수라장이 되었던 현장이지만, 실제로는 하늘과 바다가 만나 예쁜 수평선을 선사하는 곳이다.\n기장의 일광해수욕장은 영화 ＜보안관＞의 주인공 대호의 고향이다. 고향 ‘기장’을 수호하기 위한 그의 노력이 코믹하면서도 눈물겨운 영화다. 대호의 시선으로 기장 일광해수욕장을 바라다보면 잔잔한 감동의 물결이 밀려오는 듯하다.\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=454&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1180",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "오래도록 그린벨트와 상수원보호구역으로 지정되어 있던 덕에 울창한 숲을 만날 수 있다. 특히 영화나 드라마 촬영지로 자주 활용된 대나무숲이 인기다. 도심의 번잡함을 벗어나 잠시 여유를 가질 수 있는 힐링 스폿이다.",
+          "reason": "place-heading",
+          "characters": 90
+        }
+      ],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아홉산숲"
+        ],
+        "placeName": "아홉산숲",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n영상보러가기 <a href=\"https://youtu.be/R-U6-EIvKbs\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://youtu.be/R-U6-EIvKbs</a>\n<p class=\"font-size28 colorDarkBlue medium\">Move, Mile in Movie</p>영화보다 더 영화 같은 부산 드라이브\n\n산과 바다, 강이 함께 어우러지는 도시는 흔치 않다. 남해바다와 동해바다가 만나고 낙동강이 흐르며 금정산이 우뚝 솟은 부산이야 말로 천혜의 자연을 갖춘 도시다. 산과 바다, 강을 넘나들며 영화 속 감동을 차창 밖 와이드 스크린으로 다시 느껴볼 수 있는 4개의 드라이브 코스가 여기 있다. \n김해공항에서 강변을 따라 다대포해수욕장까지 이어지는 ‘강변드라이브’ 코스는 아직 개발의 손길이 닿지 않은 낙동강변의 아름다운 풍광을 만끽할 수 있다. 다대포에서 출발해 남항대교와 부산항대교, 광안대교를 잇따라 달리는 ‘브릿지드라이브’는 바다 위를 달리는 짜릿함와 바다 위에서 보는 부산 풍경이 압권이다. 해운대 마린시티를 지나 송정과 기장의 해안도로를 따라 임랑해수욕장까지 가는 ‘해안드라이브’는 부산 바다의 정수가 모두 담겨 있다. 장안사와 아홉산숲을 둘러보는 ‘숲드라이브’는 대도시의 번잡함을 떠나 힐링을 경험하는 비타민 같은 코스다. \n\n어떤 코스를 선택해도 좋다. 4개의 드라이브 코스는 유기적으로 연결되어 있어서 어느 방향으로든 이동할 수 있다. 자동차를 타고 달리면서 부산의 바다와 산, 강을 두루 둘러보는 것만으로도 부산이란 도시의 매력이 온 몸으로 느껴질 것이다. \n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">강변드라이브</p></div><ul class=\"course1\"><li><span>김해공항</span></li><li><span>낙동강하굿둑</span></li><li><span>장림포구</span></li><li><span>다대포해수욕장(더 킹 : 영원의 군주, 2020 / 마이 네임, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">브릿지드라이브</p></div><ul class=\"course1\"><li><span>남항대교</span></li><li><span>부산항대교(공작, 2018 / 마이 네임, 2021)</span></li><li><span>광안대교(DP, 2021 / 블랙 팬서, 2018)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">해안드라이브</p></div><ul class=\"course1\"><li><span>마린시티(발신제한, 2021 / 더 킹 : 영원의 군주, 2020)</span></li><li><span>해운대해수욕장(영화의 거리, 2021)</span></li><li><span>달맞이길(발신제한, 2021 / 버닝, 2018) </span></li><li><span>송정해수욕장(당신, 거기 있어줄래요, 2016 / 오케이 마담, 2020)</span></li><li><span>해동용궁사(마이 네임, 2021)</span></li><li><span>오랑대공원</span></li><li><span>연화리</span></li><li><span>대변항</span></li><li><span>죽성드림세트장(드림, 2009)</span></li><li><span>일광해수욕장</span></li><li><span>신평 소공원</span></li><li><span>임랑해수욕장(당신의 부탁, 2018 / 비와 당신의 이야기, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">숲드라이브</p></div><ul class=\"course1\"><li><span>장안사</span></li><li><span>아홉산숲(더 킹 : 영원의 군주, 2020 / 핸섬 가이즈, 2021)</span></li><li><span>영화의전당(더 킹 : 영원의 군주, 2020)</span></li></ul></div>\n\n<p class=\"font-size25 colorDarkBlue medium\">강변드라이브↔브릿지드라이브↔해안드라이브↔숲드라이브\n *양방향 소통 가능한 드라이브 코스입니다.</p>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장</p>부산에서 유일하게 남해바다를 끼고 있는 해수욕장이다. 수심이 얕고 모래사장이 넓어서 아이들과 물놀이를 하기에 안성맞춤이다. 바다 건너 서쪽 하늘로 해가 질 때는 해수욕장 전체가 오렌지빛으로 물들어 장관을 이룬다. \n\n위치\n부산광역시 사하구 다대동 / 다대포해수욕장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p><p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항대교</p>대형 컨테이너 선박이 정박해 있는 부산항을 가로지르는 다리다. 거대한 주탑에 화려한 조명이 켜지면 부산 사람들도 놀라는 ‘하버 뷰’가 완성된다. 자동차를 타고 달리면서 봐도 좋고 멀리서 바라봐도 좋다. \n\n위치\n부산광역시 남구 북항로 176\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">공작(2018) <span style=\"font-size: 18px;color: #000;\">황정민, 이성민, 조진웅, 주지훈 주연</span></p>주인공이 북의 고위층 내부로 잠입해 북핵의 실체를 캐기 위해 공작을 수행하는 영화\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안대교</p>광안리 앞바다를 지나는 해상교량으로 명실상부 부산의 랜드마크다. 광안대교를 빼놓고 부산야경을 말할 수 없을 만큼 낮보다 밤이 아름다운 다리다. 매년 가을 열리는 부산불꽃축제의 무대이기도 하다.\n\n위치\n부산광역시 수영구 남천동 / 민락해변공원 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">DP(2021) <span style=\"font-size: 18px;color: #000;\">정해인, 구교환, 김성균 주연</span></p><p>군무이탈 체포조(D.P.)가 탈영병을 쫓으며 알게 되는 이야기를 그린 드라마</p><p class=\"font-size25 colorDarkBlue medium\">블랙 팬서(2018) <span style=\"font-size: 18px;color: #000;\">채드윅 보스만, 마이클 B. 조던 주연</span></p><p>와칸다의 왕좌를 지키고자 적에게 맞서는 ‘블랙 팬서’의 활약상을 담은 SF 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">마린시티</p>대한민국의 초고층빌딩은 모두 여기에 모여 있다. 홍콩을 연상시키는 마천루의 향연은 건물들이 형형색색의 빛을 뿜는 밤에 절정을 이룬다. \n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p><p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대해수욕장</p>대한민국을 넘어 세계에서도 손꼽히는 해수욕장. 하와이 와이키키보다 더 번화한 도심과 맞닿은 해변은 이국적이면서도 세련미가 넘친다. 드넓은 백사장과 맑은 바닷물까지 갖춘 팔방미인.\n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">이완, 한선화 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길</p>해운대해수욕장 끝자락 미포에서 송정까지 이어지는 언덕길. 해운대 바다를 한눈에 내려다볼 수 있는 멋진 전망에 밤에는 달빛을 벗 삼아 걸을 수 있는 산책로도 잘 조성되어 있어서 부산 사람들도 즐겨 찾는 곳이다.\n\n위치\n부산광역시 해운대구 달맞이길 190 / 해월정 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화<p class=\"font-size25 colorDarkBlue medium\">버닝(2018) <span style=\"font-size: 18px;color: #000;\">유아인, 스티븐연, 전종서 주연</span></p>주인공이 어릴 적 친구를 우연히 만나면서 벌어지는 이야기를 그린 미스터리 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송정해수욕장</p>관광객들로 번잡한 해운대를 대신해 로컬들이 즐겨 찾는 해수욕장. 전국에서 사진가들이 찾아올 만큼 일출 명소로 유명하다. 최근에는 서핑 성지로도 각광받고 있다. \n\n위치\n부산광역시 해운대구 송정동 / 송정해수욕장 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">오케이 마담(2020) <span style=\"font-size: 18px;color: #000;\">엄정화, 박성웅 주연</span></p>한 부부가 비행기 납치 사건의 인질이 된 승객을 구하는 코미디액션 영화<p class=\"font-size25 colorDarkBlue medium\">당신, 거기 있어줄래요(2016) <span style=\"font-size: 18px;color: #000;\">김윤석, 변요한 주연</span></p>30년 전 자신과 만나게 된 한 남자의 시간여행을 그린 판타지 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해동용궁사</p>파도가 철썩이는 바닷가 바위 위에 세워진 사찰. 소박한 절집 건물과 바다 풍경의 조화가 이채롭다. 아침에는 마당에서 바다 위로 불쑥 솟아오르는 태양을 마주할 수 있다. \n\n위치\n부산광역시 기장군 기장읍 용궁길 86 / 해동용궁사 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">죽성드림세트장</p>SBS 드라마 ‘드림’ 촬영지로 짙푸른 바다와 예쁜 성당 건물이 영화보다 더 드라마틱한 풍경을 연출한다. 누구나 카메라만 들면 작품이 되는 공간이다.  \n\n위치\n부산광역시 기장군 기장읍 죽성리 134-7 / 죽성드림세트장 앞 공용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">드림(2009) <span style=\"font-size: 18px;color: #000;\">주진모, 김범, 손담비 주연</span></p>회사에서 버려진 남자가 우여곡절 끝에 성공과 사랑을 쟁취하는 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임랑해수욕장</p>부산에 있는 7개 해수욕장 중 가장 북단에 있다. 해운대나 광안리에 비하면 작고 소박한 해수욕장이지만 그래서 한적하고 여유롭다. 어선이 정박해 있는 포구와 물고기 모양의 등대도 볼거리.  \n\n위치\n부산광역시 기장군 장안읍 / 임랑해수욕장 주변 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 된 두 주인공이 그려가는 아날로그 감성 영화</p><p class=\"font-size25 colorDarkBlue medium\">당신의 부탁(2018) <span style=\"font-size: 18px;color: #000;\">임수정, 윤찬영 주연</span></p><p>주인공 앞에 나타난 의붓 아들. 남남인 두 사람이 진정한 가족이 되는 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">아홉산숲</p>오래도록 그린벨트와 상수원보호구역으로 지정되어 있던 덕에 울창한 숲을 만날 수 있다. 특히 영화나 드라마 촬영지로 자주 활용된 대나무숲이 인기다. 도심의 번잡함을 벗어나 잠시 여유를 가질 수 있는 힐링 스폿이다. \n\n위치\n부산광역시 기장군 철마면 미동길 37-1 / 아홉산숲 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">핸섬 가이즈(2021) <span style=\"font-size: 18px;color: #000;\">이성민, 이희준 주연</span></p>산장으로 이사 온 두 남자가 그곳에 얽힌 전설을 알게 되면서 전개되는 코미디영화<p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의전당</p>부산국제영화제의 무대인 영화의 전당. 건물 형태도 독특하지만 LED 패널로 덮인 지붕이 밤마다 멋진 야경을 연출한다. 수영강의 아름다운 풍경과도 잘 어울린다.\n\n위치\n부산광역시 해운대구 수영강변대로 120 / 영화의전당 주차장 \n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1180&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1207",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "대숲바람에 실려 오는 봄! ",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "울창한 대나무숲을 보고 싶다면 기장 아홉산숲이 좋다. 개인 소유의 숲이라 최근까지도 일반에 공개되지 않았었는데, 무려 400년이나 숲을 관리해온 소유자 가족이 최근에 문을 열면서 세상에 알려지게 됐다. 오래도록 그린벨트와 상수원보호구역으로 지정돼 있었던 덕에 잘 보존된 숲을 만날 수 있는데 압권은 단연 대나무숲이다. 햇빛이 잘 들지 않을 정도로 굵은 대나무들이 빼곡하게 들어차 있는 숲은 저절로 발걸음을 멈추게 한다. 깊은 숲에서 느낄 수 있는 적막함마저 느껴지는 신비로운 대나무숲을 사람들이 가만히 둘 리 없다. '군도'를 비롯해서 '대호', '협녀', '더 킹, 영원의 군주' 등 숱한 영화와 드라마의 촬영지로 유명세를 탄 덕에 아홉산숲은 전국에서 관광객들이 찾는 명소가 됐다.",
+          "reason": "place-heading",
+          "characters": 291
+        },
+        {
+          "text": "아홉산숲에는 모두 2개의 대나무 군락지가 있는데 두 곳 모두 규모가 어마어마하다. 두 번째 대나무숲은 숲 사이로 산책로가 나 있어서 대나무를 더욱 가까이에서 즐길 수 있다. 어쩌다 대나무숲에 나 혼자 남겨지면 마치 진공상태처럼 아무 소리도 들리지 않는 신기한 체험을 할 수 있다.",
+          "reason": "place-subject",
+          "characters": 116
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "아홉산숲"
+        ],
+        "placeName": "아홉산숲",
+        "review": "pending"
+      },
+      "originalText": "이제 제법 따뜻한 봄바람이 불어옵니다. 걷기 좋은 계절이 다시 돌아왔습니다. 오늘은 봄바람이 솔솔 불어오는 부산의 대나무숲길로 안내합니다. 혼자 걸어도 좋고 친구나 연인, 가족과 함께 걸어도 좋은 대숲길로 지금 함께 떠나보시죠!\n<p class=\"font-size28 colorDarkBlue medium\" >회동수원지 대나무숲길</p>금정구와 기장군, 양산시 3개 자치단체에 걸쳐 있는 회동수원지는 1964년부터 상수원보호구역으로 엄격하게 관리되던 곳이다. 일반인들의 출입이 제한돼 수십 년 동안 마치 비무장지대처럼 남아 있던 덕에 자연 그대로의 모습을 지금껏 잘 간직하고 있다.\n금단의 땅이 일반에 공개된 것은 무려 45년이 지난 2010년. 20km에 달하는 호수 주변을 따라 산책로가 조성되면서 단숨에 부산 최고의 걷기 코스로 자리매김했다. 울창한 편백숲과 맨발로 걸을 수 있는 황톳길, 갈대가 하늘거리는 호숫길 등 오감이 즐거운 비경들을 즐기다보면 도무지 지루할 틈이 없다.\n\n회동댐에서 출발해 오륜본동을 지나 상현마을로 이어지는 5.9km의 오륜대 구간은 호수와 숲이 어우러져 부산에서 보기 힘든 독특한 분위기를 연출한다. 오륜본동을 지나는 길에는 대나무숲이 있는데, 잘 가꾼 산책로가 걷는 재미를 더한다. 마치 터널처럼 산책로 양 옆을 에워싼 대나무 사이로 봄바람이 스윽 지나가면 댓잎들이 부딪히며 서걱서걱 고운 소리를 낸다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\" >기장 아홉산숲</p>울창한 대나무숲을 보고 싶다면 기장 아홉산숲이 좋다. 개인 소유의 숲이라 최근까지도 일반에 공개되지 않았었는데, 무려 400년이나 숲을 관리해온 소유자 가족이 최근에 문을 열면서 세상에 알려지게 됐다. 오래도록 그린벨트와 상수원보호구역으로 지정돼 있었던 덕에 잘 보존된 숲을 만날 수 있는데 압권은 단연 대나무숲이다.\n햇빛이 잘 들지 않을 정도로 굵은 대나무들이 빼곡하게 들어차 있는 숲은 저절로 발걸음을 멈추게 한다. 깊은 숲에서 느낄 수 있는 적막함마저 느껴지는 신비로운 대나무숲을 사람들이 가만히 둘 리 없다. '군도'를 비롯해서 '대호', '협녀', '더 킹, 영원의 군주' 등 숱한 영화와 드라마의 촬영지로 유명세를 탄 덕에 아홉산숲은 전국에서 관광객들이 찾는 명소가 됐다.\n\n아홉산숲에는 모두 2개의 대나무 군락지가 있는데 두 곳 모두 규모가 어마어마하다. 두 번째 대나무숲은 숲 사이로 산책로가 나 있어서 대나무를 더욱 가까이에서 즐길 수 있다. 어쩌다 대나무숲에 나 혼자 남겨지면 마치 진공상태처럼 아무 소리도 들리지 않는 신기한 체험을 할 수 있다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\" >F1963 맹종죽숲</p>부산의 외곽에 위치한 회동수원지, 아홉산숲과 달리 'F1963 맹종죽숲'은 도심에 위치한 대나무숲이다. 고려제강의 와이어 제조설비가 있던 땅에 맹종죽을 심어 작은 숲을 만들었는데, 규모는 그리 크지 않지만 굵은 맹종죽들이 꽤나 빼곡하게 자라면서 깊은 숲 속에 와 있는 듯한 느낌을 들게 한다.\n대숲길 바닥에는 페인트칠이 벗겨진 낡은 콘크리트 조각들이 놓여 있는데 와이어 제조 공장에 있던 바닥을 잘라서 만들었다. 처음에는 대나무숲과 어울리지 않는 듯 보이지만 숲을 다 걷고 나면 그 어디에서도 볼 수 없는 색다른 숲길로 느껴진다. 키가 큰 대나무들을 오래된 대나무들로 다시 얼기설기 엮어 놓은 것도 재미있는 포인트다.\n\n대나무숲은 산소 발생량이 높아서 주변보다 온도가 낮다고 한다. 덕분에 대숲에선 언제나 시원하고 청량한 기분을 느끼게 된다. 봄바람이 솔솔 불어오는 대숲길을 걷다보면 여행의 피로쯤은 말끔히 사라진다.﻿\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1207&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1682",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "테스형 나훈아와 함께 떠나는 기장 여행(ft. 기장갈매기 MV) ",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "아홉산숲"
+        ],
+        "placeName": "아홉산숲",
+        "review": "pending"
+      },
+      "originalText": "트로트의 황제 가수 나훈아(77)가 지난 7월 새 앨범 ‘새벽(SIX STORIES)’을 통해 선보인 ‘기장갈매기’가 화제입니다. 부산 초량 출신으로서 대중들에게 비치는 부산 사나이의 강인한 이미지를 신곡에 녹여냈다고 합니다. 의리를 첫 번째 덕목으로 삼는다는 부산 사나이의 모습을 그린 ‘기장갈매기’를 따라가 볼까요?\n\n\n<p class=\"font-size28 colorDarkBlue medium\">나훈아 '기장갈매기' 여행 코스</p><p class=\"font-size20 medium\">서암항(짚불곰장어/등대) - 연화리(해녀촌/전복죽/해산물) - 대변항(멸치쌈밥) - 월전마을(장어구이) – 두호마을(죽성드림세트장) - 아홉산숲</p>\n\n<img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000015/169155935418586.png\" alt=\"나훈아 '기장갈매기' 여행코스. 서암항 짚불곰장어(기장곰장어촌)/등대-연화리 해녀촌/전복죽/해산물-대변항 멸치쌈밥-월전마을 장어구이 - 두호마을 죽성드림세트장 - 아홉산숲 드라마 '더 킹: 영원의 군주'촬영지\"></a>\n<p class=\"font-size25 colorDarkBlue medium\" >서암항(짚불곰장어/등대)</p>갈매기 한 마리가 나훈아의 어깨에 살포시 안착하며 곡이 시작되는 장소는 바로 서암항입니다. 독특한 모양의 등대가 있는 곳으로 유명하지요. 서암항의 남방파제 등대는 젖병 모양을 하고 있어 ‘젖병 등대’라고도 불립니다. 출산 장려를 기원하며 아기 울음소리를 들어보자는 소망이 담긴 등대입니다. 기장의 이색 등대를 품고 있는 서암항, 이곳에서 기장 갈매기가 여러분을 초대합니다. 본격적인 여행에 앞서 든든하게 배를 채우고 싶다면, 기장곰장어촌의 짚불곰장어를 추천합니다. 서암항을 가기 전 오시리아관광단지를 중심으로 곰장어촌이 형성되어 있는데요. 기장 앞바다에서 잡아올린 싱싱한 곰장어를 짚불구이로 맛볼 수 있습니다.\n\n기장 서암항\n주소: 부산광역시 기장군 기장읍 연화리\n\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >연화리(해녀촌/전복죽/해산물)</p>연화리는 해산물 먹거리가 조성되어 있는 해녀촌으로 유명합니다. 기장 바다에서 갓 잡아 올린 싱싱한 해산물로 로컬 맛집의 감성을 물씬 느낄 수 있지요. 앞서 서암항을 드라이브하거나, 항구를 산책하면서 허기가 질 때 연화리 해녀촌으로 발길을 옮겨보는 건 어떨까요? 지역의 제철 해산물을 한상차림으로 누릴 수 있어 신선함이 입안 가득 퍼진답니다.\n\n기장 해녀촌\n주소: 부산광역시 기장군 기장읍 연화1길 184 어선등제소\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >대변항(멸치쌈밥)</p>남해와 만나는 곳에 자리한 대변항은 다양한 어종을 만날 수 있는데, 그중에서도 멸치가 압도적입니다. 멸치의 중심지로 불리는 대변항에서는 매년 멸치축제도 열립니다. 항구에는 많은 멸치잡이 어선들이 정박해있는데, 멸치와 각종 생선들을 말리는 풍경도 포착할 수 있답니다. 일대에는 멸치를 활용한 맛집들이 즐비해 있으니 기장 멸치의 참맛을 느껴볼 수 있습니다.\n\n기장 대변항\n주소: 부산광역시 기장군 기장읍 대변리\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >월전마을(장어구이)</p>기장의 월전마을은 마을 전체가 ‘장어마을’로 불립니다. 기장 앞바다의 물살이 세서 과거부터 붕장어의 주요 생산지라고 하는데요. 회, 구이, 탕 등 다양하게 조리해서 먹는데 월전마을은 특히나 붕장어구이가 유명합니다. 싱싱한 장어로 몸보신은 물론, 작은 어촌 마을의 한적한 풍경을 바라보면 달콤한 디저트가 필요 없을 정도라고 하네요.\n\n기장 월전마을\n주소: 부산광역시 기장군 기장읍 기장해안로 940\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >두호마을(죽성드림세트장)</p>두호마을은 드라마와 영화의 촬영지로 익히 알려져 있는 죽성드림세트장이 있습니다. 아름다운 바다의 물결을 배경으로 추억의 한 장면을 남길 수 있는 포토존도 빼놓을 수 없지요. 이외에도 산책길이 조성되어 있어 방파제를 바라보며 조용히 걷기에 제격입니다. 기장의 풍경을 좀 더 진득이 느끼고 싶다면 앞선 월전마을에서부터 이어지는 산책로를 추천합니다. 바닷바람을 벗 삼아, 바다의 물결을 따라 걸으며 해안 산책로의 절경을 느껴보세요.\n\n기장 두호마을\n주소: 부산광역시 기장군 기장읍 죽성리\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >아홉산숲</p>아홉 골짜기를 품고 있다고 해서 붙여진 이름, 아홉산숲. 광활한 자연을 그대로 보존하여 시민들을 위한 도심 속 힐링 공간 중 하나로 꼽힙니다. 거대한 대남 군락지로 이루어진 숲은 도시가 뿜어내는 열기를 잠시 잊기에 제격입니다. \n\n대숲 가운데에는 두 개의 큰 돌기둥이 세워져 있는데요. 드라마 ‘더 킹:영원의 군주’ 촬영을 위해 세웠던 것으로, 지금은 아홉산숲의 인증숏을 남기는 포토존으로 인기입니다. 이외에도 숲을 지켜오고 있는 문 씨 가문의 종택인 ‘관미헌’도 눈길을 끕니다. 지은 지 60여 년 된 고택으로 전통방식의 한옥의 멋을 느낄 수 있지요. 관미헌은 ‘고사리 같은 하찮은 풀도 눈여겨본다’라는 의미를 담고 있어, 자연을 소중히 여기는 마음을 고스란히 느낄 수 있습니다. 웅장한 숲의 품 안에서 자연이 내어주는 여유를 느껴보세요. 선물 같은 여행지가 되어 줄 것입니다.\n\n아홉산숲\n주소: 부산광역시 기장군 철마면 웅천리 520-10\n\n\n‘기장갈매기’를 따라가 본 곳들은 노랫말을 그대로 닮아있습니다. 쉼 없이 몰아치는 파도의 물결에 지친 마음을 흘려보내기에도 좋고, 자연이 선사하는 광활한 풍경에 취하기에도 더없이 좋을 것 같은 이곳. \n\n올여름, 기장갈매기의 노랫말을 따라 진한 부산의 감성에 빠져보는 건 어떨까요? \n\n갈매기의 날갯짓을 흉내 내는 갈매기 춤이 여행 메이트가 되어줄 것입니다.\n\n※ 월전장어구이촌 사진 출처 : 한국관광콘텐츠랩 / 뮤직비디오 캡처 이미지 출처 : <a href=\"https://www.youtube.com/watch?v=NL2W7DKzZV4\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> MV | 나훈아(Na Hoon-A) - 기장갈매기</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1682&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1745",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "여행과 힐링을 동시에, 부산 웰니스 관광지 선정",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "부산의 대표적인 숲, 아홉산숲! 산림교육전문가, 숲해설가 등 웰니스 관련 종사자 인프라까지 갖추고 있는 이곳은 웰니스 관광에 아주 적합한 관광지입니다. 오랜 시간동안 자연 그대로의 모습을 간직해온 아홉산숲은 대나무 군락지뿐만 아니라 편백나무, 금강소나무 등 풍부한 생태 자원으로 유명한 곳입니다.",
+          "reason": "place-subject",
+          "characters": 129
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "아홉산숲"
+        ],
+        "placeName": "아홉산숲",
+        "review": "pending"
+      },
+      "originalText": "여행과 힐링을 동시에 경험할 수 있는 웰니스 관광, 최근 그 관심도가 급격히 증가하고 있는데요.\n\n천혜의 자연경관과 풍부한 인프라가 가득한 부산, 올해 부산광역시와 부산관광공사는 6곳의 웰니스 관광지를 선정하였습니다.\n\n자연 자원부터 뷰티·스파, 요가·명상까지 다양한 테마로 부산의 웰니스 관광을 즐겨보세요!\n\n<p class=\"font-size25 colorDarkBlue medium\" >1) [자연(숲·해양) 테마] 크레이지서퍼스 (광안리 SUP Zone)</p>\n도심 속 잔잔한 바다, 광안리 해수욕장에서 웰니스 관광 체험이 가능하다는 점 알고 계셨나요?\nSUP(스탠드업 패들보드) 체험과 요가를 결합한 ‘SUP 요가’에 아름다운 일출과 일몰까지 더해져, 몸도 마음도 건강하게 가꿀 수 있도록 도와준답니다.\n\n특히 광안리 SUP Zone에서의 체험이 끝난 뒤에는, 샤워장과 쉼터가 갖추어져 있어 마무리까지 편리하게 가능합니다.\n자세한 내용은 크레이지서퍼스 홈페이지 또는 인스타 @crazy_surfers를 참고 부탁드립니다.\n<p class=\"font-size25 colorDarkBlue medium\" >2) [자연(숲·해양) 테마] 부산어린이대공원 치유의 숲</p>\n웰니스하면 도심에서 동떨어진 자연만 생각하시는 분, 계신가요? 도심 한가운데에서도 숲을 만나볼 수 있습니다.\n부산진구에 위치한 부산어린이대공원 내부에는 치유의 숲이 자리잡고 있는데요, 이곳에서는 넓은 규모의 편백림을 만나볼 수 있습니다. \n\n발길이 닿는 곳마다 자연의 아름다움을 만끽해 보고, 어린이대공원 내부에 위치한 국가문화재인 성지곡수원지도 방문해 보는건 어떨까요?\n자세한 내용은 부산어린이대공원 홈페이지를 참고 부탁드립니다.\n<p class=\"font-size25 colorDarkBlue medium\" >3) [자연(숲·해양) 테마] 아홉산숲</p>\n부산의 대표적인 숲, 아홉산숲! 산림교육전문가, 숲해설가 등 웰니스 관련 종사자 인프라까지 갖추고 있는 이곳은 웰니스 관광에 아주 적합한 관광지입니다.\n오랜 시간동안 자연 그대로의 모습을 간직해온 아홉산숲은 대나무 군락지뿐만 아니라 편백나무, 금강소나무 등 풍부한 생태 자원으로 유명한 곳입니다.\n\n울창한 숲속에서 아름다운 경관을 바라보며 천천히 걷다 보면, 일상 속 스트레스가 자연스레 줄어드는 것을 경험하실 수 있을 것입니다.\n자세한 내용은 아홉산숲 홈페이지를 참고 부탁드립니다.\n<p class=\"font-size25 colorDarkBlue medium\" >4) [요가·명상 테마] 내원정사</p>\n웰니스 관광하면 빠질 수 없는 대표 힐링 체험 중 하나인 템플스테이! 부산에서도 가능하다는 사실 알고 계셨나요?\n구덕산 자락에 위치한 내원정사에는 템플스테이 생활관과 국제명상힐링센터가 조성되어 있어 다양한 웰니스 체험이 가능합니다.\n\n도심에서 멀지 않아 높은 접근성을 지니면서도 자연 속 맑은 공기를 마실 수 있는 내원정사에서, 일상을 벗어나 나 자신에게 집중할 수 있는 템플스테이만의 매력을 느껴볼 수 있습니다.\n자세한 내용은 내원정사 홈페이지를 참고 부탁드립니다.\n<p class=\"font-size25 colorDarkBlue medium\" >5) [요가·명상 테마] 홍법사</p>\n홍법사는 국내 최대 대형 좌불상이 위치해 있는 사찰입니다. \n이곳에서는 싱잉볼 힐링 명상과 템플스테이가 가능한데요, 티베트의 전통 악기인 싱잉볼은 표면을 두드리거나 문지를 때 울려 퍼지는 소리가 편안함을 안겨주어 대표적인 웰니스 체험 중 하나이기도 합니다.\n\n특히 홍법사는 영어 통역사와 국외여행인솔자 인프라를 갖추어 외국인도 얼마든지 방문하여 웰니스 체험이 가능합니다.\n자세한 내용은 홍법사 홈페이지를 참고 부탁드립니다.\n<p class=\"font-size25 colorDarkBlue medium\" >6) [뷰티·스파 테마] 클럽디오아시스</p>\n지난 2023년 7월 오픈한 따끈따끈한 신상 관광지, 해운대 클럽디오아시스는 올해 선정된 곳 중 유일한 뷰티·스파 테마의 웰니스 관광지인데요.\n일상에서 여유를 찾는 사람들에게 소중한 오아시스가 되어줄 클럽디오아시스에는 워터파크뿐만 아니라 스파, 찜질방 등 웰니스 체험 요소가 가득한 공간이 갖추어져 있습니다.\n\n다양한 테마로 구성된 찜질방과 스파에서 해운대 해수욕장의 아름다운 뷰와 함께 휴식을 취한다면, 진정한 웰니스 관광을 체험하게 될 것입니다.\n자세한 내용은 클럽디오아시스 홈페이지를 참고 부탁드립니다.\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1745&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

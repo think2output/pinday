@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2785271",
+    "name": "부산항 영도 크루즈터미널",
+    "lat": 35.0807603675,
+    "lng": 129.079169363
+  },
+  "collectedAt": "2026-10-24T10:23:42.708Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2785271",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "부산항 영도 크루즈터미널",
+      "relation": "same-place",
+      "originalText": "2007년 4월 개장한 국제크루즈터미널은 초대형 여객선이 안전하게 취항할 수 있도록 11.8m의 깊은 수심을 확보하고 있으며, 입출국 관련 시설 및 세관 시설까지 편리한 서비스를 갖춘 곳이다. 부산항만공사가 관리하고 있는 국제크루즈터미널은 26,839.57㎡의 대지면적에, 2,568.78㎡의 건물이 들어서 있다. 건물 1층은 CIQ (세관(Customs), 출입국관리(Immigration), 검역(Quarantine)의 약칭으로 출입국 때 반드시 거쳐야 하는 3대 수속) 시설과 1층 대합실 등이 있고, 2층은 매표소, 2층 대합실, 업무용 사무실 등이 있어 편리하게 이용할 수 있다. 또한 수하물 검색장과 면세물 인도장은 별관 2동에 따로 있다. 국제크루즈터미널은 부산항을 기점으로 한 관광에 새로운 성장 동력이 되고 있다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2785271&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:54:35.953Z",
+      "modifiedAt": "20261016150328",
+      "passages": [
+        {
+          "text": "2007년 4월 개장한 국제크루즈터미널은 초대형 여객선이 안전하게 취항할 수 있도록 11.8m의 깊은 수심을 확보하고 있으며, 입출국 관련 시설 및 세관 시설까지 편리한 서비스를 갖춘 곳이다. 부산항만공사가 관리하고 있는 국제크루즈터미널은 26,839.57㎡의 대지면적에, 2,568.78㎡의 건물이 들어서 있다. 건물 1층은 CIQ (세관(Customs), 출입국관리(Immigration), 검역(Quarantine)의 약칭으로 출입국 때 반드시 거쳐야 하는 3대 수속) 시설과 1층 대합실 등이 있고, 2층은 매표소, 2층 대합실, 업무용 사무실 등이 있어 편리하게 이용할 수 있다. 또한 수하물 검색장과 면세물 인도장은 별관 2동에 따로 있다. 국제크루즈터미널은 부산항을 기점으로 한 관광에 새로운 성장 동력이 되고 있다.",
+          "characters": 324,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

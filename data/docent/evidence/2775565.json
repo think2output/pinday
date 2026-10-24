@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2775565",
+    "name": "학리항(학리방파제)",
+    "lat": 35.2599730111,
+    "lng": 129.2477530679
+  },
+  "collectedAt": "2026-10-24T10:23:46.412Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2775565",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "학리항(학리방파제)",
+      "relation": "same-place",
+      "originalText": "부산광역시 기장군 일광면 학리에 있는 어항으로 기장 해안가의 오래된 포구이다. 멸치로 유명한 대변항과 회로 유명한 칠암항 다음으로 기장군내에서는 규모가 큰 항이기 때문에 어선을 보호하기 위해 만들어진 방파제가 있다. 활어를 유통, 판매하고 있으며 어촌 마을인 학리마을, 북쪽의 일광 해수욕장과 연결된 해변로를 따라 산책할 수 있다. 전국에서 처음으로 미역과 다시마를 양식하기 위하여 기르는 종묘를 생산하고 양식에 성공을 거둔 곳이기도 하다. 크고 작은 방파제와 빨갛고 하얀 등대가 어촌의 풍경을 자아내는 포구이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2775565&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:23.605Z",
+      "modifiedAt": "20250305103704",
+      "passages": [
+        {
+          "text": "부산광역시 기장군 일광면 학리에 있는 어항으로 기장 해안가의 오래된 포구이다. 멸치로 유명한 대변항과 회로 유명한 칠암항 다음으로 기장군내에서는 규모가 큰 항이기 때문에 어선을 보호하기 위해 만들어진 방파제가 있다. 활어를 유통, 판매하고 있으며 어촌 마을인 학리마을, 북쪽의 일광 해수욕장과 연결된 해변로를 따라 산책할 수 있다. 전국에서 처음으로 미역과 다시마를 양식하기 위하여 기르는 종묘를 생산하고 양식에 성공을 거둔 곳이기도 하다. 크고 작은 방파제와 빨갛고 하얀 등대가 어촌의 풍경을 자아내는 포구이다.",
+          "characters": 220,
+          "reason": "source-description"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

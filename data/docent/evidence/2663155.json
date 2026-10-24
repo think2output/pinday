@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "2663155",
+    "name": "죽성드림세트장",
+    "lat": 35.240969,
+    "lng": 129.248501
+  },
+  "collectedAt": "2026-10-24T10:23:45.457Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:2663155",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "죽성드림세트장",
+      "relation": "same-place",
+      "originalText": "부산 기장군 죽성리에 위치한 죽성성당은 2009년 SBS 드라마 을 촬영하기 위해 지어진 드라마 세트장이다. 오래전 방영된 드라마는 잊혔지만 잘 만들어진 이 공간만큼은 기장을 찾는 여행객의 필수 코스라고 할 정도로 명소가 되었다. 성당 내부는 갤러리로 운영되고 있어서 운 좋게 전시일정과 겹친다면 뜻하지 않은 볼거리를 경험할 수 있다. 작은 어촌마을에 위치한 지리적 특성 덕분인지 남다른 분위기를 간직하고 있다. 중세시대의 어느 바닷가 마을을 그대로 옮겨 놓은 것 같은 풍경은 마치 한 폭의 그림 같다. 바위 위로 부서지는 하얀 포말은 성당의 붉은 지붕과 대비되어 이곳을 찾는 이들의 시선을 한눈에 사로잡는다. 죽성성당에서 가장 많은 이들이 줄을 서서 기다리는 곳은 마치 액자의 프레임을 그대로 옮겨 놓은 듯한 포토존이다. 액자 속으로 들어간 푸른 바다와 하늘이 더없이 아름다운 배경을 만들어 준다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=2663155&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:55:13.630Z",
+      "modifiedAt": "20260916225815",
+      "passages": [
+        {
+          "text": "부산 기장군 죽성리에 위치한 죽성성당은 2009년 SBS 드라마 을 촬영하기 위해 지어진 드라마 세트장이다. 오래전 방영된 드라마는 잊혔지만 잘 만들어진 이 공간만큼은 기장을 찾는 여행객의 필수 코스라고 할 정도로 명소가 되었다. 성당 내부는 갤러리로 운영되고 있어서 운 좋게 전시일정과 겹친다면 뜻하지 않은 볼거리를 경험할 수 있다. 작은 어촌마을에 위치한 지리적 특성 덕분인지 남다른 분위기를 간직하고 있다. 중세시대의 어느 바닷가 마을을 그대로 옮겨 놓은 것 같은 풍경은 마치 한 폭의 그림 같다. 바위 위로 부서지는 하얀 포말은 성당의 붉은 지붕과 대비되어 이곳을 찾는 이들의 시선을 한눈에 사로잡는다. 죽성성당에서 가장 많은 이들이 줄을 서서 기다리는 곳은 마치 액자의 프레임을 그대로 옮겨 놓은 듯한 포토존이다. 액자 속으로 들어간 푸른 바다와 하늘이 더없이 아름다운 배경을 만들어 준다.",
+          "characters": 335,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "heritage:23-21-0000480000000",
+      "provider": "heritage",
+      "source": "국가유산청 국가유산 상세정보",
+      "title": "기장죽성리왜성",
+      "relation": "nearby-only",
+      "distanceMeters": 666,
+      "coordinates": {
+        "lat": 35.2428407056104,
+        "lng": 129.241532962265
+      },
+      "originalText": "부산광역시 기장의 죽성리 마을 해안 가까이에 있는 구릉을 이용하여, 임진왜란 때 왜군의 장수 구로다가 조선·명나라 연합군의 공격을 방어하고 남해안에 장기간 머물기 위해 쌓은 성이다. 돌로 쌓았으며 둘레는 약 960m, 성벽높이는 약 4m이다.\n 왜성은 대개 강이나 바다에 가까운 구릉을 택하여 수송·통신 등에 자유롭고 선박의 출입이 편리한 장소에 성을 쌓는다.\n 이 성은 부산왜성과 형태가 비슷하며 일본에서는 기장성이라고도 불리어지고 있다. 또한 양산의 서생포성과 울산의 학성·부산성을 연결하는 요충지에 자리하고 있는데 현재 성곽이 남아 있지만 주위는 밭과 민가로 사용되고 있다.",
+      "url": "https://www.khs.go.kr/cha/SearchKindOpenapiDt.do?ccbaKdcd=23&ccbaCtcd=21&ccbaAsno=0000480000000",
+      "fetchedAt": "2026-10-24T09:55:01.916Z",
+      "license": "이용 조건 별도 확인 필요; 이미지·음성은 수집하지 않음",
+      "passages": [
+        {
+          "text": "부산광역시 기장의 죽성리 마을 해안 가까이에 있는 구릉을 이용하여, 임진왜란 때 왜군의 장수 구로다가 조선·명나라 연합군의 공격을 방어하고 남해안에 장기간 머물기 위해 쌓은 성이다. 돌로 쌓았으며 둘레는 약 960m, 성벽높이는 약 4m이다.\n 왜성은 대개 강이나 바다에 가까운 구릉을 택하여 수송·통신 등에 자유롭고 선박의 출입이 편리한 장소에 성을 쌓는다.\n 이 성은 부산왜성과 형태가 비슷하며 일본에서는 기장성이라고도 불리어지고 있다. 또한 양산의 서생포성과 울산의 학성·부산성을 연결하는 요충지에 자리하고 있는데 현재 성곽이 남아 있지만 주위는 밭과 민가로 사용되고 있다.",
+          "characters": 248,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "busan-theme:1180",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "영화가 있는 부산, Movie and the City - Move, Mile in Movie",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "SBS 드라마 ‘드림’ 촬영지로 짙푸른 바다와 예쁜 성당 건물이 영화보다 더 드라마틱한 풍경을 연출한다. 누구나 카메라만 들면 작품이 되는 공간이다.",
+          "reason": "place-heading",
+          "characters": 64
+        }
+      ],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "죽성드림세트장"
+        ],
+        "placeName": "죽성드림세트장",
+        "review": "pending"
+      },
+      "originalText": "전 세계 영화 팬들을 사로잡은 헐리우드 영화 ‘블랙 팬서’와 천만 관객을 돌파한 영화 ‘올드보이’. 드라마 ‘더 킹 : 영원의 군주’와 여행 예능 ‘짠내투어. 그리고 ‘최근 넷플릭스 오리지널로 사랑받고 있는 ‘마이 네임’까지. 수많은 영화와 드라마의 배경이 되었던 부산. 영화 속에 등장했던 이국적인 풍경을 찾아 떠나는 여행이야 말로 부산의 매력을 제대로 느껴볼 기회다. 영화보다 더 영화 같은 5개의 여행코스를 테마별로 마련했다. 영화 속 주인공이 되어 진짜 부산을 탐험해보자.  \n\n\n영상보러가기 <a href=\"https://youtu.be/R-U6-EIvKbs\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\">https://youtu.be/R-U6-EIvKbs</a>\n<p class=\"font-size28 colorDarkBlue medium\">Move, Mile in Movie</p>영화보다 더 영화 같은 부산 드라이브\n\n산과 바다, 강이 함께 어우러지는 도시는 흔치 않다. 남해바다와 동해바다가 만나고 낙동강이 흐르며 금정산이 우뚝 솟은 부산이야 말로 천혜의 자연을 갖춘 도시다. 산과 바다, 강을 넘나들며 영화 속 감동을 차창 밖 와이드 스크린으로 다시 느껴볼 수 있는 4개의 드라이브 코스가 여기 있다. \n김해공항에서 강변을 따라 다대포해수욕장까지 이어지는 ‘강변드라이브’ 코스는 아직 개발의 손길이 닿지 않은 낙동강변의 아름다운 풍광을 만끽할 수 있다. 다대포에서 출발해 남항대교와 부산항대교, 광안대교를 잇따라 달리는 ‘브릿지드라이브’는 바다 위를 달리는 짜릿함와 바다 위에서 보는 부산 풍경이 압권이다. 해운대 마린시티를 지나 송정과 기장의 해안도로를 따라 임랑해수욕장까지 가는 ‘해안드라이브’는 부산 바다의 정수가 모두 담겨 있다. 장안사와 아홉산숲을 둘러보는 ‘숲드라이브’는 대도시의 번잡함을 떠나 힐링을 경험하는 비타민 같은 코스다. \n\n어떤 코스를 선택해도 좋다. 4개의 드라이브 코스는 유기적으로 연결되어 있어서 어느 방향으로든 이동할 수 있다. 자동차를 타고 달리면서 부산의 바다와 산, 강을 두루 둘러보는 것만으로도 부산이란 도시의 매력이 온 몸으로 느껴질 것이다. \n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">강변드라이브</p></div><ul class=\"course1\"><li><span>김해공항</span></li><li><span>낙동강하굿둑</span></li><li><span>장림포구</span></li><li><span>다대포해수욕장(더 킹 : 영원의 군주, 2020 / 마이 네임, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">브릿지드라이브</p></div><ul class=\"course1\"><li><span>남항대교</span></li><li><span>부산항대교(공작, 2018 / 마이 네임, 2021)</span></li><li><span>광안대교(DP, 2021 / 블랙 팬서, 2018)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">해안드라이브</p></div><ul class=\"course1\"><li><span>마린시티(발신제한, 2021 / 더 킹 : 영원의 군주, 2020)</span></li><li><span>해운대해수욕장(영화의 거리, 2021)</span></li><li><span>달맞이길(발신제한, 2021 / 버닝, 2018) </span></li><li><span>송정해수욕장(당신, 거기 있어줄래요, 2016 / 오케이 마담, 2020)</span></li><li><span>해동용궁사(마이 네임, 2021)</span></li><li><span>오랑대공원</span></li><li><span>연화리</span></li><li><span>대변항</span></li><li><span>죽성드림세트장(드림, 2009)</span></li><li><span>일광해수욕장</span></li><li><span>신평 소공원</span></li><li><span>임랑해수욕장(당신의 부탁, 2018 / 비와 당신의 이야기, 2021)</span></li></ul></div>\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">숲드라이브</p></div><ul class=\"course1\"><li><span>장안사</span></li><li><span>아홉산숲(더 킹 : 영원의 군주, 2020 / 핸섬 가이즈, 2021)</span></li><li><span>영화의전당(더 킹 : 영원의 군주, 2020)</span></li></ul></div>\n\n<p class=\"font-size25 colorDarkBlue medium\">강변드라이브↔브릿지드라이브↔해안드라이브↔숲드라이브\n *양방향 소통 가능한 드라이브 코스입니다.</p>\n\n\n<p class=\"font-size28 colorDarkBlue medium\">다대포해수욕장</p>부산에서 유일하게 남해바다를 끼고 있는 해수욕장이다. 수심이 얕고 모래사장이 넓어서 아이들과 물놀이를 하기에 안성맞춤이다. 바다 건너 서쪽 하늘로 해가 질 때는 해수욕장 전체가 오렌지빛으로 물들어 장관을 이룬다. \n\n위치\n부산광역시 사하구 다대동 / 다대포해수욕장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p><p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">부산항대교</p>대형 컨테이너 선박이 정박해 있는 부산항을 가로지르는 다리다. 거대한 주탑에 화려한 조명이 켜지면 부산 사람들도 놀라는 ‘하버 뷰’가 완성된다. 자동차를 타고 달리면서 봐도 좋고 멀리서 바라봐도 좋다. \n\n위치\n부산광역시 남구 북항로 176\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">공작(2018) <span style=\"font-size: 18px;color: #000;\">황정민, 이성민, 조진웅, 주지훈 주연</span></p>주인공이 북의 고위층 내부로 잠입해 북핵의 실체를 캐기 위해 공작을 수행하는 영화\n<p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">광안대교</p>광안리 앞바다를 지나는 해상교량으로 명실상부 부산의 랜드마크다. 광안대교를 빼놓고 부산야경을 말할 수 없을 만큼 낮보다 밤이 아름다운 다리다. 매년 가을 열리는 부산불꽃축제의 무대이기도 하다.\n\n위치\n부산광역시 수영구 남천동 / 민락해변공원 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">DP(2021) <span style=\"font-size: 18px;color: #000;\">정해인, 구교환, 김성균 주연</span></p><p>군무이탈 체포조(D.P.)가 탈영병을 쫓으며 알게 되는 이야기를 그린 드라마</p><p class=\"font-size25 colorDarkBlue medium\">블랙 팬서(2018) <span style=\"font-size: 18px;color: #000;\">채드윅 보스만, 마이클 B. 조던 주연</span></p><p>와칸다의 왕좌를 지키고자 적에게 맞서는 ‘블랙 팬서’의 활약상을 담은 SF 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">마린시티</p>대한민국의 초고층빌딩은 모두 여기에 모여 있다. 홍콩을 연상시키는 마천루의 향연은 건물들이 형형색색의 빛을 뿜는 밤에 절정을 이룬다. \n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p><p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화\n</p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p><p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해운대해수욕장</p>대한민국을 넘어 세계에서도 손꼽히는 해수욕장. 하와이 와이키키보다 더 번화한 도심과 맞닿은 해변은 이국적이면서도 세련미가 넘친다. 드넓은 백사장과 맑은 바닷물까지 갖춘 팔방미인.\n\n위치\n부산광역시 해운대구 우동 / 해운대해수욕장광장 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">영화의 거리(2021) <span style=\"font-size: 18px;color: #000;\">이완, 한선화 주연</span></p>영화 로케이션 매니저와 감독으로 다시 만난 헤어진 연인의 밀당 로맨스를 그린 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">달맞이길</p>해운대해수욕장 끝자락 미포에서 송정까지 이어지는 언덕길. 해운대 바다를 한눈에 내려다볼 수 있는 멋진 전망에 밤에는 달빛을 벗 삼아 걸을 수 있는 산책로도 잘 조성되어 있어서 부산 사람들도 즐겨 찾는 곳이다.\n\n위치\n부산광역시 해운대구 달맞이길 190 / 해월정 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">발신제한(2021) <span style=\"font-size: 18px;color: #000;\">조우진 주연</span></p>의문의 발신번호 표시제한 전화 한통으로 도심 속 추격전이 벌어지는 액션 영화<p class=\"font-size25 colorDarkBlue medium\">버닝(2018) <span style=\"font-size: 18px;color: #000;\">유아인, 스티븐연, 전종서 주연</span></p>주인공이 어릴 적 친구를 우연히 만나면서 벌어지는 이야기를 그린 미스터리 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">송정해수욕장</p>관광객들로 번잡한 해운대를 대신해 로컬들이 즐겨 찾는 해수욕장. 전국에서 사진가들이 찾아올 만큼 일출 명소로 유명하다. 최근에는 서핑 성지로도 각광받고 있다. \n\n위치\n부산광역시 해운대구 송정동 / 송정해수욕장 노상공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">오케이 마담(2020) <span style=\"font-size: 18px;color: #000;\">엄정화, 박성웅 주연</span></p>한 부부가 비행기 납치 사건의 인질이 된 승객을 구하는 코미디액션 영화<p class=\"font-size25 colorDarkBlue medium\">당신, 거기 있어줄래요(2016) <span style=\"font-size: 18px;color: #000;\">김윤석, 변요한 주연</span></p>30년 전 자신과 만나게 된 한 남자의 시간여행을 그린 판타지 영화\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">해동용궁사</p>파도가 철썩이는 바닷가 바위 위에 세워진 사찰. 소박한 절집 건물과 바다 풍경의 조화가 이채롭다. 아침에는 마당에서 바다 위로 불쑥 솟아오르는 태양을 마주할 수 있다. \n\n위치\n부산광역시 기장군 기장읍 용궁길 86 / 해동용궁사 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">마이 네임(2021) <span style=\"font-size: 18px;color: #000;\">한소희, 박희순, 안보현 주연</span></p>아버지를 죽인 범인을 찾기 위해 범죄조직원이 된 주인공의 복수를 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">죽성드림세트장</p>SBS 드라마 ‘드림’ 촬영지로 짙푸른 바다와 예쁜 성당 건물이 영화보다 더 드라마틱한 풍경을 연출한다. 누구나 카메라만 들면 작품이 되는 공간이다.  \n\n위치\n부산광역시 기장군 기장읍 죽성리 134-7 / 죽성드림세트장 앞 공용주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">드림(2009) <span style=\"font-size: 18px;color: #000;\">주진모, 김범, 손담비 주연</span></p>회사에서 버려진 남자가 우여곡절 끝에 성공과 사랑을 쟁취하는 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">임랑해수욕장</p>부산에 있는 7개 해수욕장 중 가장 북단에 있다. 해운대나 광안리에 비하면 작고 소박한 해수욕장이지만 그래서 한적하고 여유롭다. 어선이 정박해 있는 포구와 물고기 모양의 등대도 볼거리.  \n\n위치\n부산광역시 기장군 장안읍 / 임랑해수욕장 주변 공영주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">비와 당신의 이야기(2021) <span style=\"font-size: 18px;color: #000;\">강하늘, 천우희 주연</span></p><p>우연히 시작된 편지 한 통으로 서로의 삶에 위로가 된 두 주인공이 그려가는 아날로그 감성 영화</p><p class=\"font-size25 colorDarkBlue medium\">당신의 부탁(2018) <span style=\"font-size: 18px;color: #000;\">임수정, 윤찬영 주연</span></p><p>주인공 앞에 나타난 의붓 아들. 남남인 두 사람이 진정한 가족이 되는 영화</p>\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">아홉산숲</p>오래도록 그린벨트와 상수원보호구역으로 지정되어 있던 덕에 울창한 숲을 만날 수 있다. 특히 영화나 드라마 촬영지로 자주 활용된 대나무숲이 인기다. 도심의 번잡함을 벗어나 잠시 여유를 가질 수 있는 힐링 스폿이다. \n\n위치\n부산광역시 기장군 철마면 미동길 37-1 / 아홉산숲 주차장\n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">핸섬 가이즈(2021) <span style=\"font-size: 18px;color: #000;\">이성민, 이희준 주연</span></p>산장으로 이사 온 두 남자가 그곳에 얽힌 전설을 알게 되면서 전개되는 코미디영화<p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">영화의전당</p>부산국제영화제의 무대인 영화의 전당. 건물 형태도 독특하지만 LED 패널로 덮인 지붕이 밤마다 멋진 야경을 연출한다. 수영강의 아름다운 풍경과도 잘 어울린다.\n\n위치\n부산광역시 해운대구 수영강변대로 120 / 영화의전당 주차장 \n\n<p class=\"font-size24 colorDarkBlue medium\"><img style=\"width:20px\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000014/163754563058176.png\" alt=\"카메라아이콘\">  촬영작품 </p><p class=\"font-size25 colorDarkBlue medium\">더 킹 : 영원의 군주(2020) <span style=\"font-size: 18px;color: #000;\">이민호, 김고은 주연</span></p>대한제국 황제와 대한민국 형사의 차원을 넘나드는 사랑을 그린 드라마\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1180&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1212",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "로맨틱 기장 드라이브",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "죽성드림세트장"
+        ],
+        "placeName": "죽성드림세트장",
+        "review": "pending"
+      },
+      "originalText": "봄기운이 완연한 요즘, 창문만 열어도 향긋한 꽃내음과 싱그러운 바람이 코 끝을 스친다. 화사한 봄날의 즐거움을 온몸으로 만끽할 시기다. 초록빛 자연과 푸른 바다가 눈부시게 선명한 그곳, 기장으로 로맨틱 드라이브를 떠나보자. \n\n\n<div class=\"type1\"><div class=\"headWrap\"><p class=\"font-size28 colorDarkBlue medium\">로맨틱 드라이브 추천코스</p></div><ul class=\"course1\"><li><span>철마 백양농원</span></li><li><span>임랑해수욕장</span></li><li><span>신평소공원</span></li><li><span>죽성드림세트장</span></li></ul></div>\n\n<p class=\"font-size25 colorDarkBlue medium\" >철마 백양농원</p>온화한 바람 느끼며 기분 좋게 드라이브를 할 수 있는 부산 기장 코스, 그 중 첫 번째는 푸르른 자연을 만끽할 수 있는 백양농원이다. 해발 522m의 백운산 정상 가까이에 자리 잡고 있어 공기부터 상쾌하다.\n아름다운 백양농원에는 보기 좋게 관리된 나무들과 드넓은 잔디평원이 펼쳐져 있다. 입장료는 단돈 3,000원, 방문객들은 유유자적 여유로운 산책을 즐기거나 텐트를 설치해 하루 종일 캠핑 분위기를 만끽할 수 있다.\n\n아직 겨울의 흔적이 남아있는 잔디밭은 여름이 가까워질수록 선명한 초록빛으로 물들며 특유의 싱그러움을 뽐낸다. 사방이 초록으로 둘러싸인 곳에서 즐기는 피크닉, 좀 더 기분을 내고 싶다면 텐트나 돗자리를 꼭 준비하자. 동글동글 모양도 예쁜 나무 그늘 아래 자리를 잡는다면 푸른 하늘을 내 것으로 만들기에 안성맞춤! 취사는 불가하므로 미리 음식을 준비해 오는 게 좋다.\n\n백양농원 곳곳에서 봄 내음이 물씬 풍긴다. 곧게 뻗은 대나무숲 사이로 탐스러운 꽃들이 인사한다. 이곳저곳 구석구석 산책하며 봄날의 소소한 재미를 느껴보자. 가볍게 당일 캠핑이나 피크닉을 즐기고 싶은 분에게 강력 추천!\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >임랑해수욕장</p>백양농원에서 자동차로 25분 정도 달리면 시원한 바다를 만날 수 있다. 이곳 임랑해수욕장은 동해바다를 더욱 가까이에서 즐길 수 있는 아담한 해변이다.\n금빛 고운 모래사장과 나란히 드라이브가 가능해 바다풍경 1열 직관이 허락되는 매력적인 곳이다. 임랑해수욕장 공영주차장이 따로 마련되어 있으니 잠깐 주차하고 모래 해변을 걸어봐도 좋다.\n해수욕장 근처에 뛰어난 건축미와 바다 전망이 돋보이는 카페도 있으니, 이 곳에서 커피 한잔의 여유를 즐기는 것도 임랑해수욕장을 즐기는 좋은 방법이다.\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >신평소공원</p>남쪽으로 이어지는 해안 도로를 드라이브하다가 잠시 쉬어가기 좋은 신평소공원을 만난다. 작고 아담한 규모이지만 한 폭의 그림처럼 펼쳐지는 아름다운 기장 바다를 한눈에 담기에 이곳만 한곳도 없다.\n해파랑길과 갈맷길의 길목이기도 한 신평소공원에는 이색적인 전망대가 눈에 띈다. 거친 파도가 일렁이는 망망대해를 향해 힘차게 출항하는 배의 모습이 역동적이다.\n전망대 아래로 이어지는 나무데크길을 따라 바다로 산책을 나가보자. 작은 몽돌해변과 모양도 다양한 기암괴석이 반갑게 맞이해 줄 것이다.\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >죽성드림세트장</p>TV 드라마 ＜드림＞을 촬영한 곳으로 이국적인 성당 건물이 에메랄드빛 바다와 어우러져 그림 같은 풍경을 선사한다. 드라마가 종방된 지 13년이나 지났지만 지금까지 많은 사람들의 발걸음이 이어지고 있다.\n죽성성당을 감싸고 있는 거친 암석 지형도 쉽게 찾아볼 수 없는 귀한 볼거리 중 하나이다. 울퉁불퉁 터프한 질감도 경험해 보고 또 한편 깔끔하게 정돈된 산책길의 편안함도 느껴보자. 차창 밖으로 보이는 빨간 뾰족 지붕이 너무나 예쁜 죽성성당 역시 기장 드라이브의 필수 코스!\n\n\n\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1212&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1414",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "드라마 촬영지 순례(ft.재벌집 막내아들)",
+      "relation": "same-place",
+      "passages": [
+        {
+          "text": "시한부 할머니의 행복한 여생을 위해 비밀 연극을 펼치는 이야기 '커튼콜'도 요즘 핫한 드라마죠. 주인공인 자금순(고두심) 할머니의 손녀로 등장하는 세연(하지원)이 이복 사촌 동생(강하늘)을 데리고 개인 화실로 가는 장면이 있는데요. 푸른 바다를 배경으로 서 있는 이국적인 건물이 무척 인상적이었죠? 바로 기장에 있는 죽성드림성당입니다.",
+          "reason": "place-heading",
+          "characters": 147
+        }
+      ],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "죽성드림세트장"
+        ],
+        "placeName": "죽성드림세트장",
+        "review": "pending"
+      },
+      "originalText": "영화나 드라마에서 부산의 풍경을 발견하는 건 이제 너무나 흔한 일이 됐습니다. 바다와 항구, 골목길, 산복도로 등 부산에서만 만날 수 있는 독특한 장면과 분위기는 영화보다 더 영화 같고 드라마보다 더 드라마 같으니까요.\n\n인기리에 방영된 드라마 '재벌집 막내아들'에도 부산이 등장합니다.  칸 국제영화에서 감독상을 받은 박찬욱 감독의 영화 '헤어질 결심'에도 부산이 등장하지요. 오늘은 이처럼 영화나 드라마에 등장한 부산을 소개합니다. 마치 영상 속 주인공처럼 부산을 누비며 부산의 매력에 흠뻑 취해보시기 바랍니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘재벌집 막내아들’ 정심재</p>20%가 넘는 시청률을 기록하며 주말 안방을 사로잡은 드라마 '재벌집 막내아들'. 실제 우리나라에서 있었던 굵직한 경제 사건들을 배경으로 진행되는 재벌가의 암투가 손에 땀을 쥐게 할 만큼 흥미진진합니다. 특히 주인공 진양철 회장 역할을 맡은 이성민 배우의 카리스마 넘치는 연기가 회를 거듭할수록 드라마에 빠져들게 합니다.\n\n진양철 회장이 살고 있는 '정심재'란 집도 눈길을 끌었습니다. 넓은 마당에 단아하면서도 기품 있는 2층 양옥집이 진짜 재벌이 사는 저택처럼 보였기 때문인데요. 부산에 실제 건물이 있습니다. 바로 남천동 KBS 뒤편에 있는 부산시장 옛 관사인데요, 보통의 집과 달리 입구에서 산책로를 따라 제법 걸어 올라가야 건물이 나타날 만큼 부지가 상당히 넓습니다. 2만 그루가 넘는 나무들이 심어져 있어서 집이라기보다 수목원 같은 느낌도 듭니다. 정원 한편에 마련된 전망대에 서면 해운대 마린시티와 광안대교도 내려다보입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘헤어질 결심’ 초원아파트</p>제75회 칸 영화제에서 감독상을 수상한 박찬욱 감독의 영화 '헤어질 결심'은 부산을 주 무대로 촬영됐습니다. 워낙 많은 장소가 영화에 등장하기 때문에 일일이 다 열거하기도 쉽지 않은데요. 그 중에서도 추격신에 등장했던 수많은 계단과 좁은 골목길은 부산에서만 만날 수 있는 독특한 풍경이라 관객들의 눈길을 끌었습니다. 지금은 많은 여행자들에게 알려진 초량 이바구길인데요. 한국전쟁 때 많은 피란민들이 부산으로 모여들면서 자연스럽게 만들어진 산복도로 문화가 고스란히 남아 있는 곳입니다.\n\n초량이바구길과 망양로 사이에 있는 초원아파트 주변은 추격신의 하이라이트였죠. 너무 힘들어 널브러질 수밖에 없는 긴 계단과 벽화가 그려진 골목길, 형사가 결국 용의자를 체포하는 옥상까지. 모두가 부산이기에 가능했던 장면이었습니다. 마치 80년대로 되돌아간 듯한 풍경들이 아직도 많이 남아 있는데다 부산항이 한눈에 내려다보이는 옥상에 차를 주차시켜 놓은 진귀한 모습까지 만날 수 있는, 부산여행의 보물과도 같은 장소입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘파친코’ 태종대</p>애플티브이 오리지널 드라마 '파친코'는 4대에 걸친 재일조선인 가족들의 이야기를 통해 격동의 시대를 생생하게 보여주었습니다. 주인공인 '선자'의 고향이 부산으로 그려지면서 부산 곳곳이 드라마에 등장했었는데요. 드라마 첫 회에 등장했던 선자의 고향 바다는 바로 영도에 있는 태종대입니다. 어린 선자가 물질을 하던 곳은 태종대 내에 있는 태원자갈마당이란 곳인데, 자갈밭과 암벽, 울창한 숲과 푸른 바다가 어우러진 장소로 지금도 많은 관광객들이 찾는 곳입니다.\n\n할머니가 된 선자가 아들과 함께 고향으로 돌아와 달려간 곳은 감지해변입니다. 고향에 대한 그리움이 담긴 이 장면 속에 등장한 조개구이촌은 감지해변의 명물이지요. 싱싱한 해산물을 파도소리를 들으며 먹을 수 있어서 부산 사람들도 즐겨 찾는 곳입니다.﻿\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">‘커튼콜’ 죽성드림세트장</p>시한부 할머니의 행복한 여생을 위해 비밀 연극을 펼치는 이야기 '커튼콜'도 요즘 핫한 드라마죠. 주인공인 자금순(고두심) 할머니의 손녀로 등장하는 세연(하지원)이 이복 사촌 동생(강하늘)을 데리고 개인 화실로 가는 장면이 있는데요. 푸른 바다를 배경으로 서 있는 이국적인 건물이 무척 인상적이었죠? 바로 기장에 있는 죽성드림성당입니다.\n\n2009년 드라마 '드림' 촬영을 위해 만든 세트장이었지만 해안 절벽 위에 서 있는 예쁜 성당 건물이 너무나도 예뻐서 지금까지 관광객들의 사랑을 듬뿍 받고 있습니다. 로맨틱한 성당 뒤로 붉은 태양이 불쑥 솟아오르는 아침 풍경은 흡사 멜로 영화의 한 장면과도 같습니다. 구름 없는 맑은 밤에는 초롱초롱한 별들도 볼 수 있어서 밤낮을 가리지 않고 관광객들이 찾는 기장의 대표 명소입니다.﻿\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1414&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    },
+    {
+      "id": "busan-theme:1682",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "테스형 나훈아와 함께 떠나는 기장 여행(ft. 기장갈매기 MV) ",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "ITEMCNTNTS",
+        "method": "body-mention",
+        "matchedNames": [
+          "죽성드림세트장"
+        ],
+        "placeName": "죽성드림세트장",
+        "review": "pending"
+      },
+      "originalText": "트로트의 황제 가수 나훈아(77)가 지난 7월 새 앨범 ‘새벽(SIX STORIES)’을 통해 선보인 ‘기장갈매기’가 화제입니다. 부산 초량 출신으로서 대중들에게 비치는 부산 사나이의 강인한 이미지를 신곡에 녹여냈다고 합니다. 의리를 첫 번째 덕목으로 삼는다는 부산 사나이의 모습을 그린 ‘기장갈매기’를 따라가 볼까요?\n\n\n<p class=\"font-size28 colorDarkBlue medium\">나훈아 '기장갈매기' 여행 코스</p><p class=\"font-size20 medium\">서암항(짚불곰장어/등대) - 연화리(해녀촌/전복죽/해산물) - 대변항(멸치쌈밥) - 월전마을(장어구이) – 두호마을(죽성드림세트장) - 아홉산숲</p>\n\n<img style=\"width:100%\" src=\"https://visitbusan.net/upload_data/board_data/BBS_0000015/169155935418586.png\" alt=\"나훈아 '기장갈매기' 여행코스. 서암항 짚불곰장어(기장곰장어촌)/등대-연화리 해녀촌/전복죽/해산물-대변항 멸치쌈밥-월전마을 장어구이 - 두호마을 죽성드림세트장 - 아홉산숲 드라마 '더 킹: 영원의 군주'촬영지\"></a>\n<p class=\"font-size25 colorDarkBlue medium\" >서암항(짚불곰장어/등대)</p>갈매기 한 마리가 나훈아의 어깨에 살포시 안착하며 곡이 시작되는 장소는 바로 서암항입니다. 독특한 모양의 등대가 있는 곳으로 유명하지요. 서암항의 남방파제 등대는 젖병 모양을 하고 있어 ‘젖병 등대’라고도 불립니다. 출산 장려를 기원하며 아기 울음소리를 들어보자는 소망이 담긴 등대입니다. 기장의 이색 등대를 품고 있는 서암항, 이곳에서 기장 갈매기가 여러분을 초대합니다. 본격적인 여행에 앞서 든든하게 배를 채우고 싶다면, 기장곰장어촌의 짚불곰장어를 추천합니다. 서암항을 가기 전 오시리아관광단지를 중심으로 곰장어촌이 형성되어 있는데요. 기장 앞바다에서 잡아올린 싱싱한 곰장어를 짚불구이로 맛볼 수 있습니다.\n\n기장 서암항\n주소: 부산광역시 기장군 기장읍 연화리\n\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >연화리(해녀촌/전복죽/해산물)</p>연화리는 해산물 먹거리가 조성되어 있는 해녀촌으로 유명합니다. 기장 바다에서 갓 잡아 올린 싱싱한 해산물로 로컬 맛집의 감성을 물씬 느낄 수 있지요. 앞서 서암항을 드라이브하거나, 항구를 산책하면서 허기가 질 때 연화리 해녀촌으로 발길을 옮겨보는 건 어떨까요? 지역의 제철 해산물을 한상차림으로 누릴 수 있어 신선함이 입안 가득 퍼진답니다.\n\n기장 해녀촌\n주소: 부산광역시 기장군 기장읍 연화1길 184 어선등제소\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >대변항(멸치쌈밥)</p>남해와 만나는 곳에 자리한 대변항은 다양한 어종을 만날 수 있는데, 그중에서도 멸치가 압도적입니다. 멸치의 중심지로 불리는 대변항에서는 매년 멸치축제도 열립니다. 항구에는 많은 멸치잡이 어선들이 정박해있는데, 멸치와 각종 생선들을 말리는 풍경도 포착할 수 있답니다. 일대에는 멸치를 활용한 맛집들이 즐비해 있으니 기장 멸치의 참맛을 느껴볼 수 있습니다.\n\n기장 대변항\n주소: 부산광역시 기장군 기장읍 대변리\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >월전마을(장어구이)</p>기장의 월전마을은 마을 전체가 ‘장어마을’로 불립니다. 기장 앞바다의 물살이 세서 과거부터 붕장어의 주요 생산지라고 하는데요. 회, 구이, 탕 등 다양하게 조리해서 먹는데 월전마을은 특히나 붕장어구이가 유명합니다. 싱싱한 장어로 몸보신은 물론, 작은 어촌 마을의 한적한 풍경을 바라보면 달콤한 디저트가 필요 없을 정도라고 하네요.\n\n기장 월전마을\n주소: 부산광역시 기장군 기장읍 기장해안로 940\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >두호마을(죽성드림세트장)</p>두호마을은 드라마와 영화의 촬영지로 익히 알려져 있는 죽성드림세트장이 있습니다. 아름다운 바다의 물결을 배경으로 추억의 한 장면을 남길 수 있는 포토존도 빼놓을 수 없지요. 이외에도 산책길이 조성되어 있어 방파제를 바라보며 조용히 걷기에 제격입니다. 기장의 풍경을 좀 더 진득이 느끼고 싶다면 앞선 월전마을에서부터 이어지는 산책로를 추천합니다. 바닷바람을 벗 삼아, 바다의 물결을 따라 걸으며 해안 산책로의 절경을 느껴보세요.\n\n기장 두호마을\n주소: 부산광역시 기장군 기장읍 죽성리\n\n\n\n<p class=\"font-size25 colorDarkBlue medium\" >아홉산숲</p>아홉 골짜기를 품고 있다고 해서 붙여진 이름, 아홉산숲. 광활한 자연을 그대로 보존하여 시민들을 위한 도심 속 힐링 공간 중 하나로 꼽힙니다. 거대한 대남 군락지로 이루어진 숲은 도시가 뿜어내는 열기를 잠시 잊기에 제격입니다. \n\n대숲 가운데에는 두 개의 큰 돌기둥이 세워져 있는데요. 드라마 ‘더 킹:영원의 군주’ 촬영을 위해 세웠던 것으로, 지금은 아홉산숲의 인증숏을 남기는 포토존으로 인기입니다. 이외에도 숲을 지켜오고 있는 문 씨 가문의 종택인 ‘관미헌’도 눈길을 끕니다. 지은 지 60여 년 된 고택으로 전통방식의 한옥의 멋을 느낄 수 있지요. 관미헌은 ‘고사리 같은 하찮은 풀도 눈여겨본다’라는 의미를 담고 있어, 자연을 소중히 여기는 마음을 고스란히 느낄 수 있습니다. 웅장한 숲의 품 안에서 자연이 내어주는 여유를 느껴보세요. 선물 같은 여행지가 되어 줄 것입니다.\n\n아홉산숲\n주소: 부산광역시 기장군 철마면 웅천리 520-10\n\n\n‘기장갈매기’를 따라가 본 곳들은 노랫말을 그대로 닮아있습니다. 쉼 없이 몰아치는 파도의 물결에 지친 마음을 흘려보내기에도 좋고, 자연이 선사하는 광활한 풍경에 취하기에도 더없이 좋을 것 같은 이곳. \n\n올여름, 기장갈매기의 노랫말을 따라 진한 부산의 감성에 빠져보는 건 어떨까요? \n\n갈매기의 날갯짓을 흉내 내는 갈매기 춤이 여행 메이트가 되어줄 것입니다.\n\n※ 월전장어구이촌 사진 출처 : 한국관광콘텐츠랩 / 뮤직비디오 캡처 이미지 출처 : <a href=\"https://www.youtube.com/watch?v=NL2W7DKzZV4\" target=\"_blank\" alt=\"새창열림\" class=\"link-style1\"> MV | 나훈아(Na Hoon-A) - 기장갈매기</a>\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1682&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}

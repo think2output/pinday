@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "rulesVersion": "paragraph-v2",
+  "place": {
+    "id": "3032396",
+    "name": "개금벚꽃길",
+    "lat": 35.146244,
+    "lng": 129.016413
+  },
+  "collectedAt": "2026-10-24T10:23:38.812Z",
+  "classification": {
+    "status": "introduction-only",
+    "supportingIds": [],
+    "humanReview": "pending"
+  },
+  "reviewNotes": [
+    "자동 수집 원문이며 사실 검증·장소 연결 검수 전. nearby-only 자료를 해당 장소의 역사로 사용하지 말 것."
+  ],
+  "evidence": [
+    {
+      "id": "tourapi:3032396",
+      "provider": "tourapi",
+      "source": "한국관광공사 국문 관광정보 TourAPI 4.3",
+      "title": "개금벚꽃길",
+      "relation": "same-place",
+      "originalText": "개금벚꽃길은 개금동 764번지부터 개금동 765번지까지 있는 벚꽃 명소 길이다. 벚꽃이 피는 3월 말부터 4월까지는 많은 사람들이 찾는 곳이며, 벚꽃길 데크로드가 조성되어 있어 사진 찍을 수 있는 포토존이 많은 곳이다. 개금벚꽃길은 코스는 짧지만 오래된 벚꽃나무들이 높은 곳에 심어져 있는데, 오래된 벚꽃 가지들이 길 아래로 늘어져 길 아래 있는 알록달록한 이국적인 주택과 어울려 멋진 풍경을 연출하는 곳이다. 이곳은 최근 입소문을 타고 젊은 층이 많이 찾는 곳으로 벚꽃철이면 관광객들로 붐비는 곳이다.",
+      "url": "https://apis.data.go.kr/B551011/KorService2/detailCommon2?contentId=3032396&MobileOS=ETC&MobileApp=PinDay&_type=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 인증키 필요",
+      "fetchedAt": "2026-10-24T09:52:35.744Z",
+      "modifiedAt": "20260427164714",
+      "passages": [
+        {
+          "text": "개금벚꽃길은 개금동 764번지부터 개금동 765번지까지 있는 벚꽃 명소 길이다. 벚꽃이 피는 3월 말부터 4월까지는 많은 사람들이 찾는 곳이며, 벚꽃길 데크로드가 조성되어 있어 사진 찍을 수 있는 포토존이 많은 곳이다. 개금벚꽃길은 코스는 짧지만 오래된 벚꽃나무들이 높은 곳에 심어져 있는데, 오래된 벚꽃 가지들이 길 아래로 늘어져 길 아래 있는 알록달록한 이국적인 주택과 어울려 멋진 풍경을 연출하는 곳이다. 이곳은 최근 입소문을 타고 젊은 층이 많이 찾는 곳으로 벚꽃철이면 관광객들로 붐비는 곳이다.",
+          "characters": 214,
+          "reason": "source-description"
+        }
+      ]
+    },
+    {
+      "id": "busan-theme:1214",
+      "provider": "busan-theme",
+      "source": "부산광역시 부산테마여행정보",
+      "title": "꽃가루를 날려~폭죽을 더 크게 터트려~ 꼭 가봐야 할 부산 벚꽃 명소",
+      "relation": "mentioned-only",
+      "passages": [],
+      "match": {
+        "field": "PLACE",
+        "method": "exact-name-and-body",
+        "matchedNames": [
+          "개금벚꽃길"
+        ],
+        "placeName": "개금벚꽃길",
+        "review": "pending"
+      },
+      "originalText": "꽃가루를 날려~ 폭죽을 더 크게 터트려~\nFeel My Rhythm 멈추지 말아줘~ 이 순간을 놓지 마~\n\n최근 유행하는 노래 가사처럼 연분홍빛 벚꽃잎이 폭죽처럼 터지는 봄~!!\n부산 곳곳을 화사하게 물들이며, 아름답게 흩날리는 벚꽃의 향기를 따라\n내적 댄스 유발하는 봄 노래를 따라 리듬에 몸을 맡기고 부산 벚꽃 성지로 지금 함께 떠나보실래요?\n\n\n<p class=\"font-size28 colorDarkBlue medium\">로맨틱한 꽃길을 걸어요, 낙동강변30리벚꽃길</p>대저에서 명지까지 낙동강 둑길을 따라 30리(약 12km)의 긴 벚꽃 터널을 만날 수 있는 곳. 하늘을 가릴 듯 빼곡히 늘어선 벚꽃 나무를 보며 산책을 하거나 자전거를 타고 봄의 정취를 느껴보세요. 봄 햇살에 일렁이는 낙동강의 잔물결도 만날 수 있으니 일석이조겠죠?\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">봄기운 가득 담은, 달맞이길</p>은은한 달빛처럼 평화로운 해운대 달맞이길은 봄이 되면 환상적인 분홍빛 물결로 뒤덮입니다. 알록달록 귀여운 해변 열차가 지나가는 모습도 달맞이길의 매력적인 뷰포인트랍니다. 달맞이고개에는 예쁜 카페와 맛있는 식당도 많으니 완연한 봄을 느끼며 알찬 봄 드라이브도 즐겨보시길 바랍니다!\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">소소한 행복, 개금 벚꽃길</p>부산의 숨겨진 벚꽃 명소인 개금벚꽃길, 엄광산 자락에 위치한 개금동 마을 언덕 까꼬막을 열심히 올라가야 만날 수 있는 보물 같은 곳이랍니다. 벚꽃 나무가 그림처럼 펼쳐진 데크길에서 봄맞이 인생샷을 남겨보세요. 벚꽃 아래 포근한 골목길 풍경이 마음까지 따뜻하게 만들어준답니다.\n\n\n\n<p class=\"font-size28 colorDarkBlue medium\">봄의 향연, 온천천 벚꽃터널</p>온천천 양쪽으로 즐비하게 만개한 벚꽃 나무를 만날 수 있는 온천천벚꽃터널, 따스하게 불어오는 봄바람을 느끼며 아름다운 봄 풍경에 취해보세요. 근처 마음에 드는 카페에서 커피를 테이크 아웃해 꽃멍도 즐겨보세요! 활짝 핀 벚꽃 아래에서의 힐링 타임, 너무 낭만적이지 않나요?\n\n아름답게 흐드러진 벚꽃을 만날 수 있는 부산 벚꽃여행지 4곳. 행복한 설렘을 전해주는 부산 벚꽃 성지로 봄나들이 떠나세요~ \n지금 다들 피크닉 매트 챙기셨죠? 절대 지금 이 순간을 놓치지 마세요~!!\n\n\n",
+      "url": "https://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr?UC_SEQ=1214&pageNo=1&numOfRows=1&resultType=json",
+      "linkNote": "API 원문 주소. 호출 시 별도 ServiceKey 필요",
+      "sourceSnapshot": "data/places/raw/busan-theme-travel.json",
+      "sourceSnapshotSha256": "f1b5e53d07d04f12b528f08d430ff960b319b776e7b6acf2589dc1323ef9e151",
+      "sourceSnapshotDate": "unknown"
+    }
+  ],
+  "errors": []
+}
