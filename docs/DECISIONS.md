@@ -66,7 +66,7 @@
 - 2026-10-24 모서리는 0(각짐). 조명·핀 색은 노란빛(#FFC94D) 하나. 켜진 지도 칸은 크림빛(#FFF8E6) 바탕에 먹색 글자. 구분선은 쓰지 않고 여백과 밝고 어두운 면으로 나눈다.
 - 2026-10-24 시작 버튼은 먹색 영역 위의 흰 버튼(조명 번짐 그림자). 어디·언제 값은 휴대폰 16px·데스크톱 18px로 작게. "전체 해제"는 지도 아래 안내 줄 오른쪽 끝, 구를 하나 이상 골랐을 때만.
 - 2026-10-24 지도 칸 그림: 대표 명소 선 그림을 칸 안에 넣는다. 기본은 조명이 켜질 때 명소 이름 대신 나타나는 방식(시안 Tweak으로 '늘 보임'과 비교 가능). 시험 3칸(수영 광안대교·영도 태종대 등대·사하 감천마을)만 그렸고 나머지 13칸은 홈 구현 때 채운다. 그림이 없어도 글자로 동작해야 한다.
-- 2026-10-24 tokens.css 반영: 흰 영역(bg·ink·ink-muted·ink-subtle·line), 전시실 영역(room·room-dim·room-cell·on-room 3단계), 조명(light·lit·lit-ink, shadow-glow 2종), 모서리 0, 간격(tap 44·gutter 16·gutter-wide 64·container-page 1312). 기존 accent·surface는 없앴다. 글꼴은 next/font/local로 `src/app/fonts/`의 가변 글꼴(Pretendard 본문 font-sans, Wanted Sans 제목 font-display)을 불러온다. 라이선스 원문(OFL) 함께 보관.
+- 2026-10-24 tokens.css 반영: 흰 영역(bg·ink·ink-muted·ink-subtle·line), 전시실 영역(room·room-dim·room-cell·on-room 3단계), 조명(light·lit·lit-ink, shadow-glow 2종), 사진 그림자(shadow-photo·shadow-paper), 모서리 0, 간격(tap 44·gutter 16·gutter-wide 64·container-page 1312). 기존 accent·surface는 없앴다. 글꼴은 next/font/local로 `src/app/fonts/`의 가변 글꼴(Pretendard 본문 font-sans, Wanted Sans 제목 font-display)을 불러온다. 라이선스 원문(OFL) 함께 보관.
 - 2026-10-24 홈 이야기 카드 데이터: 부산테마여행정보에서 `scripts/build-stories.mjs` → `data/stories/stories.json`. 카드 글은 부제목(없으면 원본 제목). 사진은 부산테마여행 사진의 이용 조건이 확인되지 않아, 근거 수집의 same-place로 연결된 장소의 TourAPI 사진과 공공누리 유형을 쓴다(연결 없으면 사진 없이). 사진은 자르거나 기울이지 않고 원래 비율 그대로 건다. 격리 이야기는 제외.
 - 2026-10-24 "이번 주 부산 이야기"는 임시 목록(사진·부제목 있는 서로 다른 구 4편, 스크립트가 자동 선택). 사용자가 고르면 교체.
 - 2026-10-24 도슨트 화면이 없는 동안 이야기 카드의 "이야기 듣기"·"전체 보기"는 숨기고, 랜덤 뽑기는 입구만 둔다(준비 중 표시).
@@ -75,6 +75,7 @@
 
 ## 아직 안 정한 것
 - 세로 간격·글자 크기 단계는 홈 구현하며 정리(지금은 시안 값을 화면에서 직접 씀)
+- "이번 주 부산 이야기" 고르는 기준과 담당 (지금은 스크립트가 고른 임시 4편)
 - 홈 첫 문구: 시안은 "부산을 PIN 해볼까요?" / "풍성한 여행이 될 수 있도록 도와드려요". 사용자가 나중에 바꿀 예정
 - 실내/야외 예외 장소(전망대·테마파크 등) 확인
 - 방문 기록 도구 넣을지
