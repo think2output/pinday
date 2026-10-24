@@ -4,7 +4,7 @@
 마지막 확인: 2026-10-24 홈 구현 후 `npm test`(85개)·`npm run lint`(경고 없음)·`npm run build` 통과. 헤드리스 크롬으로 390px(390 폭 iframe 안)·1440px 첫 화면 확인, 사용자가 화면 확인 후 괜찮다고 함. 구 선택·기간 창 등 누르는 동작은 자동 확인 못 함(브라우저에서 직접 확인). 이전 세션의 날씨 API 실제 호출 확인 기록은 `docs/WEATHER_API.md`. `.vscode/`는 사용자 개인 편집기 설정이라 커밋하지 않음.
 
 ## 현재 브랜치
-`feat/home-design` (← `feat/weather-api`). 원격 main에는 날씨·장소 API까지 PR #4·#5로 합쳐졌고, main에 없는 것은 인계 문서 커밋 `b9ae786`뿐이라 이 브랜치에 함께 포함됨. 이번 세션: 홈 디자인 확정 → tokens.css·글꼴 → 홈 화면 구현. GitHub push는 `6c789f4`(tokens)까지, 홈 구현 커밋은 push 여부를 git log로 확인.
+`feat/home-design` (← `feat/weather-api`). 원격 main에는 날씨·장소 API까지 PR #4·#5로 합쳐졌고, main에 없는 것은 인계 문서 커밋 `b9ae786`뿐이라 이 브랜치에 함께 포함됨. 이번 세션: 홈 디자인 확정 → tokens.css·글꼴 → 홈 화면 구현. 이 브랜치의 커밋은 모두 GitHub에 push함. main에 합치는 PR은 사용자가 만든다.
 
 이전 기록:
 `feat/weather-api` (← `feat/places-api` ← `fix/docent-evidence-matching` ← `docs/docent-evidence-review` ← `feat/docent-evidence` ← `docs/design-exploration` ← `feat/trip-store` ← `feat/place-data`). 현재 작업 브랜치를 GitHub에 올림(push). `feat/places-api`도 push했으며 이전 단계의 모든 커밋을 포함함. 로컬 main은 아직 첫 기획 커밋 상태. main에 합치는 PR은 사용자가 만들고 합친다(gh CLI는 읽기 권한만 있고 git push는 가능). 마지막 브랜치가 앞의 작업을 모두 포함한다.
