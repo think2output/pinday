@@ -3,7 +3,8 @@
 마지막 업데이트: 2026-10-24 · 작성: Claude Code
 
 ## 현재 브랜치
-`feat/place-data` (← `feat/project-setup` ← `docs/tech-stack` ← main). 모두 아직 GitHub에 안 올림(push 전), main에 합치기 전.
+`feat/place-data` — 기술 스택·기본 구조·장소 데이터 작업이 모두 들어 있음. GitHub에 올림(push), main에 합치는 PR은 사용자가 만들고 합친다(gh CLI 계정은 레포 읽기 권한만 있음, git push는 됨).
+- `docs/tech-stack`, `feat/project-setup`은 `feat/place-data`에 포함된 이전 단계 브랜치(로컬에만 있음)
 
 ## 끝낸 것
 - 기획서·와이어프레임·에이전트 규칙, 기술 스택 결정(Next.js + TypeScript + Tailwind + Vercel, DB 없이 JSON 파일)
