@@ -70,7 +70,7 @@ try {
   const click = (text, selector = "button") => evaluate(`[...document.querySelectorAll(${JSON.stringify(selector)})].find(el => el.textContent.trim() === ${JSON.stringify(text)})?.click()`);
   const assertLayout = async () => {
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false, "화면 가로 넘침");
-    assert.deepEqual(await evaluate("[...document.querySelectorAll('main button, main a')].filter(el => { if (el.closest('[role=region]')) return false; const r=el.getBoundingClientRect(); return r.width && r.height && (r.height < 44 || r.width < 44); }).map(el => el.textContent.trim())"), [], "44px 미만 자체 버튼");
+    assert.deepEqual(await evaluate("[...document.querySelectorAll('main button, main a, main summary')].filter(el => { if (el.closest('[role=region]')) return false; const r=el.getBoundingClientRect(); return r.width && r.height && (r.height < 44 || r.width < 44); }).map(el => el.textContent.trim())"), [], "44px 미만 자체 버튼");
   };
   mkdirSync(out, { recursive: true });
   const screenshot = async (name, width) => {
@@ -83,12 +83,17 @@ try {
     await send("Emulation.setDeviceMetricsOverride", { width, height: 900, deviceScaleFactor: 1, mobile: width === 390 });
     await store(trip);
     await navigate("/route?day=1");
+    await waitFor(textHas("시험 버스 61"));
+    assert.equal(await evaluate("document.querySelector('details').open"), false, "승하차 기본 접힘");
+    await evaluate("document.querySelector('summary').click()");
     await waitFor(textHas("시험 승차 A에서 타고 4정류장 → 시험 하차 B에서 내려요"));
     assert(await evaluate(textHas("시험 환승 C에서 타고 2정류장 → 시험 하차 D에서 내려요")), "환승별 안내");
     await assertLayout();
     await waitFor("!document.body.innerText.includes('지도를 불러오고 있어요')");
     console.log(JSON.stringify({ width, mapSdkLoaded: await evaluate("!!window.kakao?.maps?.Map"), mapFailureMessage: await evaluate(textHas("지도를 불러오지 못했어요")) }));
-    await screenshot(`qa-transit-${width}`, width);
+    await screenshot(`qa-compact-expanded-${width}`, width);
+    await evaluate("document.querySelector('summary').click()");
+    await screenshot(`qa-compact-transit-${width}`, width);
     await click("도보");
     await waitFor(textHas("2,400m"));
     assert.equal(await evaluate("localStorage.getItem('pinday:trip')"), JSON.stringify(trip), "수단 선택으로 여행 저장값이 바뀌면 안 됨");
@@ -97,7 +102,15 @@ try {
     await assertLayout();
     await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').click()");
     assert.equal(await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').getAttribute('aria-pressed')"), "true", "구간 강조 선택");
-    await screenshot(`qa-mixed-${width}`, width);
+    await screenshot(`qa-compact-mixed-${width}`, width);
+    await evaluate("[...document.querySelectorAll('button')].filter(el => el.textContent.trim() === '도보').forEach(el => el.click())");
+    await waitFor("!document.body.innerText.includes('경로를 찾고 있어요') && document.body.innerText.includes('걸어서 2번')");
+    const heights = await evaluate("[...document.querySelectorAll('ol[aria-label*=\"장소와 이동 구간\"] > li:nth-child(even)')].map(el => el.getBoundingClientRect().height)");
+    assert(heights.every((height) => height <= 80), "도보 구간은 80px 안에 표시");
+    console.log(JSON.stringify({ width, walkingRowHeights: heights }));
+    await screenshot(`qa-compact-walk-${width}`, width);
+    if (width === 390) assert(await evaluate("document.getElementById('route-panel').getBoundingClientRect().top < document.querySelector('section[aria-label*=\"경로 지도\"]').getBoundingClientRect().top"), "휴대폰은 목록 먼저");
+    else assert(await evaluate("document.getElementById('route-panel').getBoundingClientRect().top - document.querySelector('section[aria-live]').getBoundingClientRect().bottom <= 24"), "데스크톱 요약 아래 빈 공간 없음");
     await evaluate("document.querySelector('[role=tab][aria-selected=true]').focus()");
     await send("Input.dispatchKeyEvent", { type: "keyDown", key: "ArrowRight", code: "ArrowRight" });
     await waitFor(textHas("이동할 구간이 없어요"));
@@ -111,11 +124,11 @@ try {
   await navigate("/route?day=2");
   await waitFor(textHas("시험 경로 오류"));
   await click("다시 시도");
-  await waitFor(textHas("시험 승차 A"));
+  await waitFor(textHas("시험 버스 61"));
   const longTrip = { ...trip, endDate: "2026-11-08", days: Array.from({ length: 14 }, (_, i) => i === 13 ? trip.days[0] : []) };
   await store(longTrip);
   await navigate("/route?day=14");
-  await waitFor(textHas("시험 승차 A"));
+  await waitFor(textHas("시험 버스 61"));
   await assertLayout();
   await evaluate("localStorage.removeItem('pinday:trip')");
   await navigate("/route");

@@ -160,7 +160,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
         {!mounted ? (
           <p role="status" className="py-16 text-sm text-ink-muted">내 여행을 불러오고 있어요</p>
         ) : (
-          <div className="mt-5 grid grid-cols-1 gap-y-5 lg:mt-8 lg:grid-cols-[minmax(0,1fr)_minmax(400px,560px)] lg:gap-x-12">
+          <div className="mt-5 grid grid-cols-1 gap-y-5 lg:mt-8 lg:grid-cols-[minmax(0,1fr)_minmax(400px,560px)] lg:grid-rows-[auto_1fr] lg:gap-x-12">
             <div className="min-w-0 lg:col-start-1">
               <div role="tablist" aria-label="날짜" className="no-scrollbar -mx-gutter flex gap-2 overflow-x-auto px-gutter lg:mx-0 lg:flex-wrap lg:px-0">
                 {dates.map((date, index) => {
@@ -200,7 +200,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
             </div>
 
             {ids.length > 0 && (
-              <section aria-label={`${day}일차 경로 지도`} className="min-w-0 lg:sticky lg:top-6 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-start">
+              <section aria-label={`${day}일차 경로 지도`} className="order-2 min-w-0 lg:order-none lg:sticky lg:top-6 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-start">
                 <div className="relative h-60 overflow-hidden bg-line lg:h-140">
                   <RouteMap stops={stops} legs={mapLegs} focus={focus} label={`${day}일차 경로 지도. 같은 내용을 구간 목록에서도 볼 수 있어요`} />
                 </div>
@@ -212,7 +212,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
             )}
 
             {ids.length > 1 && (
-              <section id="route-panel" role="tabpanel" aria-labelledby={`route-tab-${day}`} className="min-w-0 lg:col-start-1">
+              <section id="route-panel" role="tabpanel" aria-labelledby={`route-tab-${day}`} className="order-1 min-w-0 lg:order-none lg:col-start-1">
                 <ol aria-label={`${day}일차 장소와 이동 구간`}>
                   {ids.map((id, index) => (
                     <Fragment key={id}>
