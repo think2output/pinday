@@ -56,7 +56,6 @@ try {
   const map = "document.querySelector('[aria-label=\"부산 구·군 지도. 여러 곳을 고를 수 있어요\"]')";
   const paths = `${map}.querySelectorAll('[data-map-region]')`;
   const selectedCount = `Array.from(${paths}).filter(p=>p.dataset.selected==='true').length`;
-  const chooser = `${map}.querySelector('select')`;
   const screenshot = async (name, mapOnly = false) => {
     await evaluate("document.fonts.ready.then(()=>true)");
     const clip = mapOnly ? await evaluate(`(()=>{const r=${map}.getBoundingClientRect();return {x:r.x+scrollX,y:r.y+scrollY,width:r.width,height:r.height,scale:1}})()`) : undefined;
@@ -81,14 +80,15 @@ try {
     await waitFor(`!!${map} && ${paths}.length === 16 && !document.querySelector('a[href=\"/explore\"]')?.hasAttribute('aria-disabled')`);
     await pause(800);
     assert.equal(await evaluate(selectedCount), 0);
-    assert.deepEqual(await evaluate(`Array.from(${map}.querySelectorAll('button,select,a')).filter(b=>{const r=b.getBoundingClientRect();return r.width<44||r.height<44}).map(b=>b.getAttribute('aria-label'))`), [], "이름 선택·확대 등 대체 조작 44px 이상");
-    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 16, "명소 그림 16개");
-    assert.equal(await evaluate(`${chooser}.options.length`), 17, "16개 구·군 이름으로 선택 가능");
+    assert.deepEqual(await evaluate(`Array.from(${map}.querySelectorAll('button,a')).filter(b=>{const r=b.getBoundingClientRect();return r.width<44||r.height<44}).map(b=>b.getAttribute('aria-label'))`), [], "확대 등 조작 44px 이상");
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 9, "넓은 9개 구에만 명소 그림");
+    assert.equal(await evaluate(`${map}.querySelector('select')===null`), true, "드롭다운 없음");
+    assert.equal(await evaluate(`${map}.querySelectorAll('[data-map-region][role=button][tabindex="0"]').length`), 16, "구·군 직접 키보드 선택");
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
     await screenshot(`map-default-${width}`);
     await screenshot(`map-detail-${width}`, true);
     const centers = await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-label')).map((g,i)=>{const m=g.getScreenCTM();return {x:m.e,y:m.f,name:${paths}[i].dataset.mapRegion}})`);
-    // 실제 좌표로 누르므로 16개 경계의 직접 선택을 확인한다. 작은 구에는 이름 선택도 제공한다.
+    // 실제 좌표로 16개 경계를 직접 선택한다. 작은 구는 확대할 수 있다.
     for (const c of centers) {
       await evaluate(`scrollTo(0, ${Math.max(0, c.y - 300)})`);
       const scroll = await evaluate("scrollY");
@@ -107,6 +107,8 @@ try {
       await waitFor(`Array.from(${paths}).find(p=>p.dataset.mapRegion===${JSON.stringify(c.name)})?.dataset.selected==='true'`);
     }
     await waitFor(`${selectedCount}===16`);
+    await waitFor(`${map}.querySelectorAll('.pd-map-pin-drop').length===16`);
+    assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "pd-map-pin-drop");
     assert.equal(await evaluate("JSON.parse(localStorage.getItem('pinday:trip')).regions.length"), 16);
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
     await evaluate("scrollTo(0,0)"); await pause(650);
@@ -114,29 +116,45 @@ try {
     await evaluate(`Array.from(document.querySelectorAll('button')).find(b=>b.textContent.trim()==='전체 해제').click()`);
     await waitFor(`${selectedCount}===0`);
     await send("Emulation.setTouchEmulationEnabled", { enabled: false });
-    await evaluate(`${chooser}.focus()`);
-    assert(await evaluate(`document.activeElement===${chooser}`), "지역 이름 선택 키보드 포커스");
-    await key("ArrowDown", "ArrowDown", 40);
+    await evaluate(`${paths}[0].focus()`);
+    assert(await evaluate(`document.activeElement===${paths}[0]`), "지역 경계 키보드 포커스");
+    await key("Enter", "Enter", 13);
     await waitFor(`${selectedCount}===1`);
-    await key("ArrowDown", "ArrowDown", 40);
+    const falling = await evaluate(`(()=>{const pin=${map}.querySelector('.pd-map-pin-drop');const animation=pin.getAnimations()[0];animation.pause();animation.currentTime=150;return new DOMMatrix(getComputedStyle(pin).transform).m42})()`);
+    assert(falling < -10, "핀은 위에서 떨어진다");
+    await screenshot(`map-drop-${width}`, true);
+    assert.equal(await evaluate(`(()=>{const pin=${map}.querySelector('.pd-map-pin-drop');pin.getAnimations()[0].finish();return new DOMMatrix(getComputedStyle(pin).transform).m42})()`), 0, "핀 착지");
+    await key(" ", "Space", 32);
     await waitFor(`${selectedCount}===0`);
     await key("Tab", "Tab", 9);
-    assert(await evaluate(`document.activeElement.getAttribute('aria-label')==='지도 확대'`), "이름 선택 뒤 확대 버튼으로 이동");
+    assert(await evaluate(`document.activeElement===${paths}[1]`), "지역 경계의 키보드 순서");
     await screenshot(`map-focus-${width}`);
     await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
     await evaluate(`${paths}[1].dispatchEvent(new MouseEvent('click',{bubbles:true}))`);
     await waitFor(`${selectedCount}===1`);
     assert.equal(await evaluate(`getComputedStyle(${paths}[1]).animationName`), "none");
+    assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "none", "움직임 줄이기 핀 즉시 표시");
     await evaluate(`${paths}[3].dispatchEvent(new MouseEvent('click',{bubbles:true})); scrollTo(0,0)`); await waitFor(`${selectedCount}===2`);
     await screenshot(`map-selected-${width}`);
     await evaluate(`${map}.querySelector('[aria-label="지도 확대"]').click()`);
     await waitFor(`Math.abs(${map}.querySelector('.pd-map-svg').getBoundingClientRect().width / ${map}.querySelector('.pd-map').clientWidth - 2)<.02`);
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 9, "확대해도 작은 구 아이콘 없음");
     await screenshot(`map-zoom-${width}`);
     await send("Page.reload");
     await waitFor(`!!${map} && ${selectedCount}===2`);
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-pin-drop').length`), 0, "저장된 핀은 다시 떨어지지 않음");
     await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "no-preference" }] });
-    report.push({ width, regions: 16, icons: 16, selection: "pointer/native select keyboard", zoom: true, persistence: true, overflow: false });
+    const rect = await evaluate(`(()=>{const r=${map}.querySelector('.pd-map').getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}})()`);
+    await evaluate(`scrollTo(0,${Math.max(0,rect.y-150)})`);
+    const scroll = await evaluate("scrollY");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: rect.x+rect.width*.7, y: rect.y-scroll+rect.height*.3 });
+    await waitFor(`!!${map}.querySelector('radialGradient') && ${map}.querySelectorAll('.pd-map-cursor-light').length===2`);
+    const lightX = await evaluate(`${map}.querySelector('radialGradient').getAttribute('cx')`);
+    await screenshot(`map-light-${width}`, true);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: rect.x+rect.width*.4, y: rect.y-scroll+rect.height*.6 });
+    assert.notEqual(await evaluate(`${map}.querySelector('radialGradient').getAttribute('cx')`), lightX, "조명 마우스 추적");
+    report.push({ width, regions: 16, icons: 9, selection: "pointer/Enter/Space", pinDrop: true, coloredLight: true, zoom: true, persistence: true, overflow: false });
   }
   assert.deepEqual(errors, []);
   assert.equal(externalRequests, 0);

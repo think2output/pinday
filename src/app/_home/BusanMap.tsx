@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type PointerEvent } from "react";
+import { useId, useRef, useState, type PointerEvent } from "react";
 import { MAP_REGIONS, type MapRegion } from "./regions";
 import { MapIconArt, PinMark } from "./MapIconArt";
 import { MAP_WIDTH, MAP_HEIGHT, mapPiece } from "./mapLayout";
@@ -8,15 +8,28 @@ import "./busanMap.css";
 
 type Props = { selected: string[]; counts: Record<string, number>; onToggle: (region: string) => void; onClear: () => void };
 
-// 실제 해안선과 행정 경계를 유지한다. 작은 구는 확대·이름 선택으로도 고를 수 있다.
+// 실제 경계는 유지한다. 작은 구는 이름만 표시하고 경계 자체를 키보드로도 선택한다.
 export function BusanMap({ selected, counts, onToggle, onClear }: Props) {
   const [light, setLight] = useState<{ x: number; y: number } | null>(null);
   const [hovered, setHovered] = useState<MapRegion | null>(null);
   const [zoom, setZoom] = useState(1);
+  const [pinDrops, setPinDrops] = useState<Record<string, number>>({});
+  const pinSequence = useRef(0);
+  const lightId = useId();
   const viewport = useRef<HTMLDivElement>(null);
   const follow = (e: PointerEvent<HTMLDivElement>) => {
     const box = e.currentTarget.getBoundingClientRect();
-    setLight({ x: e.clientX - box.left, y: e.clientY - box.top });
+    setLight({ x: (e.clientX - box.left + e.currentTarget.scrollLeft) / (box.width * zoom) * MAP_WIDTH,
+      y: (e.clientY - box.top + e.currentTarget.scrollTop) / (box.height * zoom) * MAP_HEIGHT });
+  };
+  const toggle = (region: MapRegion) => {
+    if ((counts[region.region] ?? 0) === 0) return;
+    if (!selected.includes(region.region)) {
+      const sequence = ++pinSequence.current;
+      setPinDrops(previous => ({ ...previous, [region.region]: sequence }));
+    }
+    onToggle(region.region);
+    setHovered(region);
   };
   const changeZoom = (next: number) => {
     const box = viewport.current;
@@ -37,36 +50,49 @@ export function BusanMap({ selected, counts, onToggle, onClear }: Props) {
     <div role="group" aria-label="부산 구·군 지도. 여러 곳을 고를 수 있어요" className="flex min-w-0 flex-col gap-2">
       <div ref={viewport} onPointerMove={follow} onPointerDown={follow}
         onPointerLeave={() => { setLight(null); setHovered(null); }} className="pd-map" data-zoom={zoom}
-        style={light ? { background: `radial-gradient(circle 150px at ${light.x}px ${light.y}px, color-mix(in srgb, var(--color-lit) 16%, transparent), transparent)` } : undefined}>
-        {/* 키보드/화면 읽기용 선택은 아래 기본 select가 담당한다. 경계는 왜곡하지 않는다. */}
-        <svg aria-hidden="true" className="pd-map-svg" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%` }}>
+        >
+        <svg role="group" aria-label="지도에서 구·군 선택" className="pd-map-svg" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%` }}>
+          <defs>
+            <radialGradient id={lightId} gradientUnits="userSpaceOnUse" cx={light?.x ?? 0} cy={light?.y ?? 0} r="180">
+              <stop offset="0%" stopColor="var(--color-light)" stopOpacity=".72" />
+              <stop offset="42%" stopColor="var(--color-light)" stopOpacity=".32" />
+              <stop offset="100%" stopColor="var(--color-light)" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          {light && <circle aria-hidden="true" className="pd-map-cursor-light" cx={light.x} cy={light.y} r="180" fill={`url(#${lightId})`} />}
           {MAP_REGIONS.map(r => {
             const on = selected.includes(r.region), count = counts[r.region] ?? 0, piece = mapPiece(r.name);
             return <path key={r.region} d={piece.path} fillRule="evenodd" data-map-region={r.region}
+              role="button" tabIndex={count > 0 ? 0 : -1} aria-pressed={on} aria-disabled={count === 0}
+              aria-label={`${r.name}, ${r.spot} 등 장소 ${count}곳`}
               data-selected={on} data-disabled={count === 0}
-              onClick={() => { if (count > 0) { onToggle(r.region); setHovered(r); } }}
+              onClick={() => toggle(r)}
+              onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); if (!e.repeat) toggle(r); } }}
+              onFocus={() => setHovered(r)}
               onPointerEnter={() => setHovered(r)} className={`pd-map-region ${on ? "pd-flick" : ""}`} vectorEffect="non-scaling-stroke">
               <title>{`${r.name} · ${r.spot} · 장소 ${count}곳`}</title>
             </path>;
           })}
+          {light && <g aria-hidden="true" className="pd-map-cursor-light">
+            {MAP_REGIONS.filter(r => !selected.includes(r.region) && (counts[r.region] ?? 0) > 0).map(r =>
+              <path key={r.region} d={mapPiece(r.name).path} fillRule="evenodd" fill={`url(#${lightId})`} />)}
+          </g>}
           {MAP_REGIONS.map(r => {
             const piece = mapPiece(r.name), on = selected.includes(r.region), [x, y] = piece.center;
-            const width = piece.tiny ? 20 : piece.compact ? 30 : 44;
-            return <g key={r.region} transform={`translate(${x},${y})`} className="pd-map-label" data-selected={on} data-compact={piece.compact} data-tiny={piece.tiny}>
-              <text y={piece.compact && zoom === 1 ? 5 : piece.tiny ? -4 : -8} textAnchor="middle" className="pd-map-name font-display">{r.name}</text>
-              <svg x={-width / 2} y={0} width={width} height={width * .75} viewBox="0 0 32 24" overflow="visible"><MapIconArt icon={r.icon} className="pd-map-art" /></svg>
-              {on && <svg x={piece.tiny ? 12 : 23} y={piece.tiny ? -19 : -27} width="11" height="15" viewBox="0 0 14 18"><PinMark className="pd-map-pin" /></svg>}
+            return <g aria-hidden="true" key={r.region} transform={`translate(${x},${y})`} className="pd-map-label" data-selected={on} data-compact={piece.compact} data-tiny={piece.tiny}>
+              <text y={piece.compact ? 5 : -8} textAnchor="middle" className="pd-map-name font-display">{r.name}</text>
+              {!piece.compact && <svg x="-22" y="0" width="44" height="33" viewBox="0 0 32 24" overflow="visible"><MapIconArt icon={r.icon} className="pd-map-art" /></svg>}
+              {on && <g key={pinDrops[r.region] ?? "saved"}>
+                {pinDrops[r.region] !== undefined && <ellipse className="pd-map-pin-ring" cx={piece.tiny ? 17 : 28} cy={piece.compact ? -8 : -12} rx="12" ry="4" />}
+                <g className={pinDrops[r.region] !== undefined ? "pd-map-pin-drop" : undefined}>
+                  <svg x={piece.tiny ? 12 : 23} y={piece.compact ? -24 : -27} width="11" height="15" viewBox="0 0 14 18"><PinMark className="pd-map-pin" /></svg>
+                </g>
+              </g>}
             </g>;
           })}
         </svg>
       </div>
-      <div className="flex items-center gap-2">
-        <select value="" aria-label="구·군 이름으로 선택 또는 해제"
-          className="min-h-tap min-w-0 flex-1 appearance-auto rounded-control bg-room-cell px-3 text-sm text-on-room"
-          onChange={e => { const region = MAP_REGIONS.find(r => r.region === e.target.value); if (region) { onToggle(region.region); setHovered(region); } }}>
-          <option value="" disabled className="bg-room">이름으로 선택·해제</option>
-          {MAP_REGIONS.map(r => <option key={r.region} value={r.region} disabled={(counts[r.region] ?? 0) === 0} className="bg-room">{`${selected.includes(r.region) ? "✓ " : ""}${r.name} · ${r.spot}`}</option>)}
-        </select>
+      <div className="flex items-center justify-end gap-2">
         <button type="button" onClick={() => changeZoom(Math.max(1, zoom - 1))} disabled={zoom === 1} aria-label="지도 축소" className="flex min-h-tap min-w-tap items-center justify-center bg-room-cell text-xl text-on-room disabled:opacity-40">−</button>
         <span aria-live="polite" className="w-6 text-center text-xs text-on-room-muted">{zoom}×</span>
         <button type="button" onClick={() => changeZoom(Math.min(4, zoom + 1))} disabled={zoom === 4} aria-label="지도 확대" className="flex min-h-tap min-w-tap items-center justify-center bg-room-cell text-xl text-on-room disabled:opacity-40">+</button>
@@ -75,7 +101,7 @@ export function BusanMap({ selected, counts, onToggle, onClear }: Props) {
         <p aria-live="polite" className="text-xs text-on-room-muted lg:text-[13px]">{status}</p>
         {selected.length > 0 && <button type="button" onClick={onClear} className="flex min-h-tap shrink-0 items-center px-1 text-[13px] font-semibold text-on-room">전체 해제</button>}
       </div>
-      <p className="text-[11px] text-on-room-subtle">작은 구는 지도를 확대하거나 이름으로 골라보세요.</p>
+      <p className="text-[11px] text-on-room-subtle">작은 구는 지도를 확대해서 골라보세요.</p>
       <a href="https://github.com/swcho/korea-maps" target="_blank" rel="noreferrer" className="inline-flex min-h-tap w-fit items-center text-[10px] text-on-room-subtle">지도 경계 SGIS(2020) · StatGarten</a>
     </div>
   );

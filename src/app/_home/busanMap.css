@@ -19,15 +19,36 @@
   transition: fill .25s;
 }
 .pd-map-region:hover { fill: color-mix(in srgb, var(--color-on-room) 18%, var(--color-room)); }
+.pd-map-region:focus-visible { outline: none; stroke: var(--color-light); stroke-width: 2.5; }
 .pd-map-region[data-selected="true"] { fill: var(--color-lit); stroke: var(--color-light); filter: drop-shadow(0 0 7px color-mix(in srgb, var(--color-light) 40%, transparent)); }
 .pd-map-region[data-disabled="true"] { opacity: .4; cursor: default; }
 .pd-map-label { pointer-events: none; }
 .pd-map-name { fill: var(--color-on-room); font-size: 22px; font-weight: 650; letter-spacing: -.5px; }
 .pd-map-label[data-compact="true"] .pd-map-name { font-size: 18px; }
 .pd-map-label[data-tiny="true"] .pd-map-name { font-size: 15px; }
-.pd-map[data-zoom="1"] .pd-map-label[data-compact="true"] .pd-map-art { visibility: hidden; }
+.pd-map-cursor-light { pointer-events: none; }
 .pd-map-art { width: 32px; height: 24px; color: var(--color-on-room-subtle); }
 .pd-map-pin { width: 14px; height: 18px; }
 .pd-map-label[data-selected="true"] .pd-map-name { fill: var(--color-ink); font-weight: 800; }
 .pd-map-label[data-selected="true"] .pd-map-art { color: var(--color-lit-ink); }
-@media (prefers-reduced-motion: reduce) { .pd-map-region { transition: none; } }
+
+@keyframes pd-map-pin-drop {
+  0% { transform: translateY(-95px) rotate(-12deg); opacity: 0; }
+  12% { opacity: 1; }
+  62% { transform: translateY(3px) rotate(3deg); opacity: 1; }
+  78% { transform: translateY(-9px) rotate(-2deg); }
+  92% { transform: translateY(1px) rotate(0); }
+  100% { transform: translateY(0) rotate(0); opacity: 1; }
+}
+.pd-map-pin-drop { transform-box: fill-box; transform-origin: center bottom; animation: pd-map-pin-drop .7s cubic-bezier(.3,.7,.4,1) both; }
+@keyframes pd-map-pin-ring {
+  0%, 56% { transform: scale(.4); opacity: 0; }
+  65% { transform: scale(.6); opacity: .9; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.pd-map-pin-ring { fill: none; stroke: var(--color-light); stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: pd-map-pin-ring .7s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .pd-map-region { transition: none; }
+  .pd-map-pin-drop { animation: none; }
+  .pd-map-pin-ring { display: none; animation: none; }
+}
