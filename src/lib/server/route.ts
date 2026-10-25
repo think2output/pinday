@@ -5,8 +5,7 @@ import { requireEnv } from "./env";
 import { parseTransit, parseWalk, type RouteLeg } from "./route-model";
 import { canMapPlace } from "../../app/explore/_components/mapCoordinates";
 
-// 카카오맵 경로 API는 대중교통·도보 각각 하루 1,000건 무료(https://developers.kakao.com/docs/ko/getting-started/quota).
-// 같은 구간은 서버에서 다시 쓰고, 넘으면 429가 온다.
+// 같은 구간은 서버에서 다시 쓴다. 앱별 이용 한도는 카카오 앱 관리 화면에서 확인한다.
 const TRANSIT = "https://dapi.kakao.com/v2/routing/publictraffic";
 const WALK = "https://dapi.kakao.com/v2/routing/walk";
 const TTL = 6 * 60 * 60000;
