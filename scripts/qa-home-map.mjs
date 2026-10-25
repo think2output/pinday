@@ -96,6 +96,24 @@ try {
       assert(await evaluate(`fetch(${JSON.stringify(story.href)}).then(async r=>r.ok&&(await r.text()).includes(${JSON.stringify(story.title)}))`), "이야기 상세 응답과 장소 일치");
     }
     assert(await evaluate(`!!document.querySelector('[aria-labelledby=story-heading] a[href="/docent"]')`), "전체 보기는 도슨트 목록");
+    assert.equal(await evaluate("document.querySelectorAll('[data-home-story] svg').length"), 0, "썸네일 앞 지도·핀 아이콘 없음");
+    await send("Emulation.setTouchEmulationEnabled", { enabled: false });
+    await evaluate("document.querySelector('[data-home-story]').scrollIntoView({block:'center'})");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: 2, y: 2 });
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='0'");
+    const imageBefore = await evaluate("(()=>{const r=document.querySelector('[data-home-story] img').getBoundingClientRect();return{width:r.width,height:r.height}})()");
+    const hoverPoint = await evaluate("(()=>{const r=document.querySelector('[data-home-story]').getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+100}})()");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", ...hoverPoint });
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='1'");
+    assert.deepEqual(await evaluate("(()=>{const r=document.querySelector('[data-home-story] img').getBoundingClientRect();return{width:r.width,height:r.height}})()"), imageBefore, "호버해도 원본 사진 크기·비율 유지");
+    await screenshot(`home-story-hover-${width}`);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: 2, y: 2 });
+    await evaluate("document.querySelector('[data-home-story]').focus()");
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='1'");
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
+    assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-story-glow]')).transitionProperty"), "none", "움직임 줄이기 조명 즉시 전환");
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "no-preference" }] });
+    await evaluate("document.activeElement.blur();scrollTo(0,0)");
     await screenshot(`home-stories-${width}`);
     await evaluate("document.querySelector('[data-home-story]').click()");
     await waitFor(`location.pathname===${JSON.stringify(stories[0].href)} && !!document.querySelector('h1')`);
