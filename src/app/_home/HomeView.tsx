@@ -8,15 +8,18 @@ import { StoryShelf } from "./StoryShelf";
 import { TripConditions } from "./TripConditions";
 import { regionName } from "./regions";
 import { TasteLauncher } from "../taste/_components/TasteLauncher";
+import { PinDraw } from "./PinDraw";
+import type { PinPlace } from "./pinModel";
 
 type Props = {
   regionCounts: Record<string, number>;
   weekly: StoryCard[];
   storiesByRegion: Record<string, StoryCard[]>;
+  pinPlaces: PinPlace[];
 };
 
 // 홈 (기획서 6-1, 시안 C "어두운 전시실"): 메뉴 → 첫 문구 → 여행 조건(지도·어디·언제·시작) → 이야기 → 취향 테스트·랜덤 뽑기 → 출처
-export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
+export function HomeView({ regionCounts, weekly, storiesByRegion, pinPlaces }: Props) {
   const { trip, saved } = useTrip();
   const selected = trip.regions;
 
@@ -78,16 +81,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
               <br className="lg:hidden" /> 부산의 이야기
             </span>
           </TasteLauncher>
-          {/* 랜덤 뽑기(기획서 6-2)는 다음 작업. 입구만 둔다 */}
-          <div className="relative flex min-h-42 flex-col justify-end gap-1.5 overflow-hidden rounded-card bg-room p-4 text-on-room lg:min-h-55 lg:p-8">
-            <span aria-hidden="true" className="absolute top-4.5 left-12.5 h-13 w-10 -rotate-8 bg-on-room-subtle lg:top-8.5 lg:right-30 lg:left-auto lg:h-19.5 lg:w-15" />
-            <span aria-hidden="true" className="absolute top-6 left-19 h-13 w-10 rotate-9 bg-lit shadow-glow lg:top-11 lg:right-19.5 lg:left-auto lg:h-19.5 lg:w-15" />
-            <span className="relative text-xs text-on-room-muted lg:text-[13px]">기회 3번 · 준비 중</span>
-            <span className="relative font-display text-[19px] leading-tight font-extrabold tracking-[-0.045em] lg:text-[28px]">
-              오늘의
-              <br className="lg:hidden" /> 핀 뽑기
-            </span>
-          </div>
+          <PinDraw places={pinPlaces} />
         </section>
 
         <footer className="px-gutter pt-16 pb-8 lg:px-0 lg:pt-24 lg:pb-10">
