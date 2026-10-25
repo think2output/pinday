@@ -1,7 +1,7 @@
 import "server-only";
 
 import placesData from "../../../data/places/places.json";
-import storiesData from "../../../data/stories/stories.json";
+import { listDocents, type Docent } from "./docent";
 
 export type StoryCard = {
   id: string;
@@ -9,6 +9,7 @@ export type StoryCard = {
   subtitle: string;
   region: string;
   kind: string;
+  href: string;
   /** 연결된 장소의 TourAPI 사진. 없으면 null */
   photo: { url: string; credit: string; placeName: string; noDerivs: boolean } | null;
 };
@@ -22,21 +23,20 @@ const LICENSE_LABEL: Record<string, string> = {
 /** 구를 골랐을 때 보여줄 그 구의 이야기 수 */
 const STORIES_PER_REGION = 4;
 
-type RawStory = (typeof storiesData.stories)[number];
-
-function toCard(story: RawStory): StoryCard {
-  const { photo } = story;
+function toCard(story: Docent): StoryCard {
+  const photo = story.image;
   return {
-    id: story.id,
-    title: story.title,
-    subtitle: story.subtitle,
+    id: story.placeId,
+    title: story.placeName,
+    subtitle: story.draft.summary[0]?.text ?? "",
     region: story.region,
-    kind: story.kind,
+    kind: story.category.split(" > ").at(-1) ?? story.category,
+    href: `/docent/${story.placeId}`,
     photo: photo
       ? {
           url: photo.url,
           credit: ["사진 한국관광공사", LICENSE_LABEL[photo.license]].filter(Boolean).join(" · "),
-          placeName: photo.placeName,
+          placeName: story.placeName,
           noDerivs: photo.license === "Type3",
         }
       : null,
@@ -48,15 +48,20 @@ export function homeData() {
   const regionCounts: Record<string, number> = {};
   for (const place of placesData) regionCounts[place.region] = (regionCounts[place.region] ?? 0) + 1;
 
-  const byId = new Map(storiesData.stories.map((story) => [story.id, story]));
-  const weekly = storiesData.weekly.flatMap((id) => {
-    const story = byId.get(id);
-    return story ? [toCard(story)] : [];
-  });
+  // 카드와 열리는 해설이 같은 장소가 되도록 공개 승인된 도슨트만 쓴다.
+  const stories = listDocents().map(toCard);
+  const weekly: StoryCard[] = [];
+  const usedRegions = new Set<string>();
+  for (const story of stories) {
+    if (weekly.length === 4) break;
+    if (!story.photo || usedRegions.has(story.region)) continue;
+    weekly.push(story);
+    usedRegions.add(story.region);
+  }
 
   // 구마다 사진 있는 이야기를 먼저, 그다음 원본 순서
   const storiesByRegion: Record<string, StoryCard[]> = {};
-  for (const story of storiesData.stories) (storiesByRegion[story.region] ??= []).push(toCard(story));
+  for (const story of stories) (storiesByRegion[story.region] ??= []).push(story);
   for (const region of Object.keys(storiesByRegion)) {
     const list = storiesByRegion[region];
     storiesByRegion[region] = [...list.filter((s) => s.photo), ...list.filter((s) => !s.photo)].slice(0, STORIES_PER_REGION);

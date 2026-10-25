@@ -1,15 +1,12 @@
 .pd-map {
   position: relative;
   width: 100%;
-  max-width: 40rem;
+  max-width: 32rem;
   aspect-ratio: 800 / 757;
   margin-inline: auto;
-  overflow: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-on-room-subtle) var(--color-room);
+  overflow: visible;
 }
-.pd-map-svg { display: block; max-width: none; }
+.pd-map-svg { display: block; width: 100%; height: 100%; }
 .pd-map-region {
   fill: color-mix(in srgb, var(--color-on-room) 9%, var(--color-room));
   stroke: color-mix(in srgb, var(--color-on-room-subtle) 55%, var(--color-room));

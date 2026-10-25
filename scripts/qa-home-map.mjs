@@ -80,15 +80,40 @@ try {
     await waitFor(`!!${map} && ${paths}.length === 16 && !document.querySelector('a[href=\"/explore\"]')?.hasAttribute('aria-disabled')`);
     await pause(800);
     assert.equal(await evaluate(selectedCount), 0);
-    assert.deepEqual(await evaluate(`Array.from(${map}.querySelectorAll('button,a')).filter(b=>{const r=b.getBoundingClientRect();return r.width<44||r.height<44}).map(b=>b.getAttribute('aria-label'))`), [], "확대 등 조작 44px 이상");
+    assert.deepEqual(await evaluate(`Array.from(${map}.querySelectorAll('button,a')).filter(b=>{const r=b.getBoundingClientRect();return r.width<44||r.height<44}).map(b=>b.getAttribute('aria-label'))`), [], "조작 버튼 44px 이상");
+    assert.equal(await evaluate(`${map}.querySelector('[aria-label="지도 확대"],[aria-label="지도 축소"]')===null`), true, "확대/축소 없음");
     assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 9, "넓은 9개 구에만 명소 그림");
     assert.equal(await evaluate(`${map}.querySelector('select')===null`), true, "드롭다운 없음");
     assert.equal(await evaluate(`${map}.querySelectorAll('[data-map-region][role=button][tabindex="0"]').length`), 16, "구·군 직접 키보드 선택");
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
     await screenshot(`map-default-${width}`);
     await screenshot(`map-detail-${width}`, true);
+    const initialLayout = await evaluate(`({heroHeight:Math.round(document.querySelector('main > div:first-child').getBoundingClientRect().height),storyTop:Math.round(document.querySelector('#story-heading').getBoundingClientRect().top+scrollY)})`);
+    const stories = await evaluate(`Array.from(document.querySelectorAll('[data-home-story]')).map(a=>({href:a.getAttribute('href'),title:a.querySelector('h3').textContent}))`);
+    assert.equal(stories.length, 4, "홈 이야기 4편");
+    for (const story of stories) {
+      assert.match(story.href, /^\/docent\/\d+$/);
+      assert(await evaluate(`fetch(${JSON.stringify(story.href)}).then(async r=>r.ok&&(await r.text()).includes(${JSON.stringify(story.title)}))`), "이야기 상세 응답과 장소 일치");
+    }
+    assert(await evaluate(`!!document.querySelector('[aria-labelledby=story-heading] a[href="/docent"]')`), "전체 보기는 도슨트 목록");
+    await screenshot(`home-stories-${width}`);
+    await evaluate("document.querySelector('[data-home-story]').click()");
+    await waitFor(`location.pathname===${JSON.stringify(stories[0].href)} && !!document.querySelector('h1')`);
+    assert(await evaluate(`document.querySelector('h1').textContent.includes(${JSON.stringify(stories[0].title)})`), "카드 클릭으로 같은 장소 설명 열기");
+    await evaluate(`Array.from(document.querySelectorAll('a')).find(a=>a.getAttribute('href')==='/docent'&&a.textContent.includes('모든 이야기')).click()`);
+    await waitFor("location.pathname==='/docent'");
+    await send("Page.navigate", { url: "http://localhost:3000/" });
+    await waitFor(`location.pathname==='/' && !!${map} && ${paths}.length===16 && ${map}.getBoundingClientRect().width>300`);
+    await pause(300);
+    await evaluate("scrollTo(0,0)");
+    const wheelPoint = await evaluate(`(()=>{const r=${map}.querySelector('.pd-map').getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: wheelPoint.x, y: wheelPoint.y });
+    await send("Input.dispatchMouseEvent", { type: "mouseWheel", x: wheelPoint.x, y: wheelPoint.y, deltaX: 0, deltaY: 220 });
+    await waitFor("scrollY>100");
+    assert.equal(await evaluate(`${map}.querySelector('.pd-map').scrollTop`), 0, "지도 위 휠은 지도 대신 페이지 스크롤");
+    await evaluate("scrollTo(0,0)");
     const centers = await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-label')).map((g,i)=>{const m=g.getScreenCTM();return {x:m.e,y:m.f,name:${paths}[i].dataset.mapRegion}})`);
-    // 실제 좌표로 16개 경계를 직접 선택한다. 작은 구는 확대할 수 있다.
+    // 실제 좌표로 16개 경계를 직접 선택한다.
     for (const c of centers) {
       await evaluate(`scrollTo(0, ${Math.max(0, c.y - 300)})`);
       const scroll = await evaluate("scrollY");
@@ -141,11 +166,9 @@ try {
     assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "none", "움직임 줄이기 핀 즉시 표시");
     await evaluate(`${paths}[3].dispatchEvent(new MouseEvent('click',{bubbles:true})); scrollTo(0,0)`); await waitFor(`${selectedCount}===2`);
     await screenshot(`map-selected-${width}`);
-    await evaluate(`${map}.querySelector('[aria-label="지도 확대"]').click()`);
-    await waitFor(`Math.abs(${map}.querySelector('.pd-map-svg').getBoundingClientRect().width / ${map}.querySelector('.pd-map').clientWidth - 2)<.02`);
+    assert(await evaluate(`!!document.querySelector('[aria-labelledby=story-heading] a[href="/explore"]')`), "해설이 없는 지역은 선택 지역 탐색으로 연결");
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
-    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 9, "확대해도 작은 구 아이콘 없음");
-    await screenshot(`map-zoom-${width}`);
+    assert(await evaluate(`(()=>{const m=${map}.querySelector('.pd-map');return m.scrollWidth<=m.clientWidth+1&&m.scrollHeight<=m.clientHeight+1})()`), "지도 내부 스크롤 없음");
     await send("Page.reload");
     await waitFor(`!!${map} && ${selectedCount}===2`);
     assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-pin-drop').length`), 0, "저장된 핀은 다시 떨어지지 않음");
@@ -159,7 +182,7 @@ try {
     await screenshot(`map-light-${width}`, true);
     await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: rect.x+rect.width*.4, y: rect.y-scroll+rect.height*.6 });
     assert.notEqual(await evaluate(`${map}.querySelector('radialGradient').getAttribute('cx')`), lightX, "조명 마우스 추적");
-    report.push({ width, regions: 16, icons: 9, selection: "pointer/Enter/Space", pinDrop: true, coloredLight: true, zoom: true, persistence: true, overflow: false });
+    report.push({ width, ...initialLayout, regions: 16, icons: 9, selection: "pointer/Enter/Space", pinDrop: true, coloredLight: true, zoom: false, persistence: true, overflow: false });
   }
   assert.deepEqual(errors, []);
   assert.equal(externalRequests, 0);
