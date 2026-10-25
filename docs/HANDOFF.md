@@ -4,7 +4,8 @@
 
 ## 최신 작업 — PC 경로 A안
 - 현재 브랜치 **`feat/route-desktop-a`**. 사용자가 A안 채택. 시안 브랜치 `design/route-desktop-ux`에서 분기했다.
-- 원격 백업 대기: 사용자가 푸시 요청했으나 자동 승인 검토가 `origin`(GitHub `think2output/pinday`)으로 소스·문서를 전송하는 구체적 승인이 필요하다고 차단했다. 명령 실행 전에 거절돼 fetch/push 모두 실행되지 않았다. 해당 저장소의 `feat/route-desktop-a` 브랜치로 전송하는 승인 질문을 사용자에게 전달했다. main 푸시·병합·이력 변경은 하지 않는다.
+- 원격 백업 완료: 사용자가 GitHub `think2output/pinday`의 `feat/route-desktop-a`로 코드·문서·검증 사진 전송을 명시적으로 승인한 뒤 푸시했다. `origin/feat/route-desktop-a` 추적 설정 완료. main 푸시·병합·이력 변경은 하지 않았다.
+- PR은 생성하지 못했다. GitHub 연결 도구는 403(Resource not accessible by integration), 로컬 gh는 must be a collaborator로 거절했다. 권한 있는 계정에서 `https://github.com/think2output/pinday/pull/new/feat/route-desktop-a`로 생성 가능. 실제 경로 API 재확인이 남아 있으므로 초안 PR 권장.
 - 완료: PC는 가로 하루 동선 → 선택 구간 설명 + 지도. 구간을 고르면 선과 양 끝 번호가 노란색으로 강조된다. 환승은 탈 것마다 따로 표시, 수단은 구간별로 유지. 모바일은 기존 목록→지도 흐름.
 - 구현: `RouteJourney.tsx`(가로 동선·키보드·자동 가로 이동), `RouteLegDetails.tsx`(선택 구간), `RouteView.tsx`(연결), `RouteMap.tsx`(강조·창 크기 변경 대응). 모두 경로 폴더 안의 변경이며 공통 컴포넌트·디자인 토큰·여행 저장소는 수정하지 않았다.
 - 선택은 장소 쌍 기준. 일정 변경으로 선택 구간이 사라지면 첫 구간으로 복구. 날짜 이동은 첫 구간으로. 구간 없는 날에는 설명을 숨긴다. PC/모바일 전환 후에도 선택 구간이 보이도록 지도·가로 동선 크기에 대응.
