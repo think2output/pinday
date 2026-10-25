@@ -105,11 +105,14 @@ try {
         await send("Input.dispatchMouseEvent", { type: "mouseReleased", x: c.x, y, button: "left", clickCount: 1 });
       }
       await waitFor(`Array.from(${paths}).find(p=>p.dataset.mapRegion===${JSON.stringify(c.name)})?.dataset.selected==='true'`);
+      assert.equal(await evaluate(`getComputedStyle(Array.from(${paths}).find(p=>p.dataset.mapRegion===${JSON.stringify(c.name)})).outlineStyle`), "none", "클릭 흰 테두리 없음");
     }
     await waitFor(`${selectedCount}===16`);
     await waitFor(`${map}.querySelectorAll('.pd-map-pin-drop').length===16`);
     assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "pd-map-pin-drop");
     assert.equal(await evaluate("JSON.parse(localStorage.getItem('pinday:trip')).regions.length"), 16);
+    assert(await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-label[data-selected=true]')).every(g=>{const p=g.querySelector('[data-map-pin]'),t=g.querySelector('text');return p&&Number(p.getAttribute('x'))+Number(p.getAttribute('width'))/2===0&&Number(p.getAttribute('y'))+Number(p.getAttribute('height'))<t.getBBox().y})`), "핀은 모든 구 이름 바로 위 가운데");
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-pin-ring').length`), 32, "구마다 두 겹 물결");
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
     await evaluate("scrollTo(0,0)"); await pause(650);
     await screenshot(`map-all-${width}`);
@@ -124,6 +127,8 @@ try {
     assert(falling < -10, "핀은 위에서 떨어진다");
     await screenshot(`map-drop-${width}`, true);
     assert.equal(await evaluate(`(()=>{const pin=${map}.querySelector('.pd-map-pin-drop');pin.getAnimations()[0].finish();return new DOMMatrix(getComputedStyle(pin).transform).m42})()`), 0, "핀 착지");
+    await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-pin-ring')).forEach(r=>{const a=r.getAnimations()[0];a.pause();a.currentTime=620})`);
+    await screenshot(`map-ripple-${width}`, true);
     await key(" ", "Space", 32);
     await waitFor(`${selectedCount}===0`);
     await key("Tab", "Tab", 9);

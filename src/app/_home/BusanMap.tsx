@@ -79,13 +79,17 @@ export function BusanMap({ selected, counts, onToggle, onClear }: Props) {
           </g>}
           {MAP_REGIONS.map(r => {
             const piece = mapPiece(r.name), on = selected.includes(r.region), [x, y] = piece.center;
+            const pinY = piece.tiny ? -46 : piece.compact ? -49 : -62;
             return <g aria-hidden="true" key={r.region} transform={`translate(${x},${y})`} className="pd-map-label" data-selected={on} data-compact={piece.compact} data-tiny={piece.tiny}>
               <text y={piece.compact ? 5 : -8} textAnchor="middle" className="pd-map-name font-display">{r.name}</text>
               {!piece.compact && <svg x="-22" y="0" width="44" height="33" viewBox="0 0 32 24" overflow="visible"><MapIconArt icon={r.icon} className="pd-map-art" /></svg>}
               {on && <g key={pinDrops[r.region] ?? "saved"}>
-                {pinDrops[r.region] !== undefined && <ellipse className="pd-map-pin-ring" cx={piece.tiny ? 17 : 28} cy={piece.compact ? -8 : -12} rx="12" ry="4" />}
+                {pinDrops[r.region] !== undefined && <g>
+                  <ellipse className="pd-map-pin-ring" cx="0" cy={pinY + 30} rx="15" ry="4.5" />
+                  <ellipse className="pd-map-pin-ring pd-map-pin-ring-second" cx="0" cy={pinY + 30} rx="15" ry="4.5" />
+                </g>}
                 <g className={pinDrops[r.region] !== undefined ? "pd-map-pin-drop" : undefined}>
-                  <svg x={piece.tiny ? 12 : 23} y={piece.compact ? -24 : -27} width="11" height="15" viewBox="0 0 14 18"><PinMark className="pd-map-pin" /></svg>
+                  <svg data-map-pin="" x="-11" y={pinY} width="22" height="30" viewBox="0 0 14 18"><PinMark className="pd-map-pin" /></svg>
                 </g>
               </g>}
             </g>;
