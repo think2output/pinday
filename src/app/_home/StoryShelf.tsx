@@ -20,22 +20,19 @@ export function StoryShelf({ heading, stories }: { heading: string; stories: Sto
       ) : (
       <ul className="no-scrollbar flex snap-x snap-mandatory overflow-x-auto pb-2 lg:grid lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:gap-8 lg:overflow-visible">
         {stories.map((story) => (
-          <li key={story.id} className="flex w-75 shrink-0 snap-center flex-col items-center gap-2.5 text-center lg:w-auto">
-            <Link href={story.href} prefetch={false} aria-label={`${story.title} 이야기 읽고 듣기`} data-home-story="" className="group flex w-full flex-col items-center gap-2.5 focus-visible:outline-offset-[-2px]">
+          <li key={story.id} className="flex w-75 shrink-0 snap-center flex-col lg:w-auto">
+            <Link href={story.href} prefetch={false} aria-label={`${story.title} 이야기 들으러 가기`} data-home-story="" className="group flex w-full flex-col gap-4 focus-visible:outline-offset-[-2px]">
             <StoryArt story={story} />
-            <div className="flex max-w-85 flex-col items-center gap-1.5 px-5">
+            <div data-story-copy="" className="flex w-full flex-col gap-2 px-5 lg:px-4">
               <span className="text-xs text-ink-muted lg:text-[13px]">
-                {regionName(story.region)} · {story.kind}
+                {regionName(story.region)}
               </span>
-              <h3 className="font-display text-xl leading-tight font-bold tracking-[-0.04em] group-hover:underline group-focus-visible:underline lg:text-[22px]">{story.title}</h3>
-              <p className="line-clamp-2 text-sm leading-relaxed text-ink-muted lg:text-[15px]">{story.subtitle}</p>
-              <p className="mt-1 text-[11px] text-ink-subtle">
-                AI 도슨트
-                {story.photo && ` · ${story.photo.credit} (${story.photo.placeName})`}
-              </p>
-              <span className="inline-flex min-h-tap items-center text-sm font-semibold">이야기 읽고 듣기 <span aria-hidden="true" className="ml-2">→</span></span>
+              <h3 className="min-h-7 font-display text-xl leading-7 font-bold tracking-[-0.04em] group-hover:underline group-focus-visible:underline lg:text-[22px]">{story.title}</h3>
+              <p data-story-description="" className="line-clamp-2 h-12 text-sm leading-6 text-ink-muted lg:text-[15px]">{story.subtitle}</p>
+              <span className="inline-flex min-h-tap items-center text-sm font-semibold">이야기 들으러 가기 <span aria-hidden="true" className="ml-2">→</span></span>
             </div>
             </Link>
+            {story.photo && <p className="mt-2 px-5 text-[10px] leading-4 text-ink-subtle lg:px-4">{story.photo.credit}</p>}
           </li>
         ))}
       </ul>
@@ -46,7 +43,7 @@ export function StoryShelf({ heading, stories }: { heading: string; stories: Sto
 
 function StoryArt({ story }: { story: StoryCard }) {
   return (
-    <div className="relative h-62.5 w-67.5 lg:h-70 lg:w-75">
+    <div data-story-art="" className="relative flex h-48 w-full items-center justify-center px-5 py-3 lg:h-52 lg:px-4">
       <div
         aria-hidden="true"
         className="absolute inset-0 rounded-full"
@@ -61,15 +58,15 @@ function StoryArt({ story }: { story: StoryCard }) {
         className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none"
         style={{ background: "radial-gradient(closest-side, color-mix(in srgb, var(--color-light) 65%, transparent), transparent 85%)" }}
       />
-      <div aria-hidden="true" className="absolute top-7 left-41 size-18 rotate-9 bg-lit lg:left-45 lg:size-20" />
+      <div aria-hidden="true" className="absolute top-5 right-6 h-24 w-20 rotate-9 bg-lit" />
       {story.photo ? (
         <Image
           src={story.photo.url}
           alt={`${story.photo.placeName} 사진`}
-          width={240}
-          height={180}
+          width={480}
+          height={320}
           unoptimized
-          className="absolute top-12 left-1/2 h-auto w-36 -translate-x-1/2 shadow-photo lg:w-40"
+          className="relative h-full w-full object-contain shadow-photo"
         />
       ) : (
         <div aria-hidden="true" className="absolute top-10 left-14 h-37.5 w-29.5 -rotate-5 bg-lit" />

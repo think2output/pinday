@@ -77,8 +77,8 @@ export function HomeView({ regionCounts, weekly, storiesByRegion, pinPlaces }: P
             />
             <span className="relative text-xs text-on-room-muted lg:text-[13px]">다섯 장면 · 나의 이야기 취향</span>
             <span className="relative font-display text-[19px] leading-tight font-extrabold tracking-[-0.045em] lg:text-[28px]">
-              나에게 켜지는
-              <br className="lg:hidden" /> 부산의 이야기
+              어디로 가야 할지
+              <br /> 모르겠다면?
             </span>
           </TasteLauncher>
           <PinDraw places={pinPlaces} />

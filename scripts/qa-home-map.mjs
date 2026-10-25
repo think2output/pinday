@@ -1,11 +1,12 @@
 // 홈 일러스트 지도: 별도 Chrome 프로필로 확인하며 사용자 여행 정보는 건드리지 않는다.
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 
 const out = "docs/design/home-map";
+const approvedIds = readdirSync("data/docent/drafts").map(file=>JSON.parse(readFileSync(`data/docent/drafts/${file}`,"utf8"))).filter(d=>d.publishable===true&&d.humanReview?.status==="approved"&&!d.checks?.issues?.length).map(d=>d.placeId);
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 const chrome = spawn("C:/Program Files/Google/Chrome/Application/chrome.exe", [
   "--headless=new", "--remote-debugging-port=9341",
@@ -91,6 +92,10 @@ try {
     const initialLayout = await evaluate(`({heroHeight:Math.round(document.querySelector('main > div:first-child').getBoundingClientRect().height),storyTop:Math.round(document.querySelector('#story-heading').getBoundingClientRect().top+scrollY)})`);
     const stories = await evaluate(`Array.from(document.querySelectorAll('[data-home-story]')).map(a=>({href:a.getAttribute('href'),title:a.querySelector('h3').textContent}))`);
     assert.equal(stories.length, 4, "홈 이야기 4편");
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-story-copy]')).every(c=>c.children.length===4&&c.children[0].tagName==='SPAN'&&c.children[1].tagName==='H3'&&c.children[2].tagName==='P'&&c.children[3].textContent.includes('이야기 들으러 가기')&&!c.children[0].textContent.includes('·'))`), "구 → 장소명 → 두 줄 설명 → 이야기 들으러 가기");
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-story-description]')).every(p=>getComputedStyle(p).webkitLineClamp==='2'&&Math.abs(p.getBoundingClientRect().height-48)<1)`), "설명 두 줄 고정/말줄임");
+    assert(await evaluate(`(()=>{const rects=Array.from(document.querySelectorAll('[data-home-story] img')).map(i=>i.getBoundingClientRect());return rects.every(r=>Math.abs(r.width-rects[0].width)<1&&Math.abs(r.height-rects[0].height)<1)})()`), "홈 썸네일 영역 크기 동일");
+    assert(await evaluate(`document.querySelector('[aria-label="여행 시작 도우미"]').textContent.includes('어디로 가야 할지')&&document.querySelector('button[aria-controls=pin-draw-panel]').textContent.includes('오늘의 부산')&&document.querySelector('button[aria-controls=pin-draw-panel]').textContent.includes('이야기 듣기')`), "두 배너 문구");
     for (const story of stories) {
       assert.match(story.href, /^\/docent\/\d+$/);
       assert(await evaluate(`fetch(${JSON.stringify(story.href)}).then(async r=>r.ok&&(await r.text()).includes(${JSON.stringify(story.title)}))`), "이야기 상세 응답과 장소 일치");
@@ -118,6 +123,17 @@ try {
     await evaluate("document.querySelector('[data-home-story]').click()");
     await waitFor(`location.pathname===${JSON.stringify(stories[0].href)} && !!document.querySelector('h1')`);
     assert(await evaluate(`document.querySelector('h1').textContent.includes(${JSON.stringify(stories[0].title)})`), "카드 클릭으로 같은 장소 설명 열기");
+    const detailPhotos = [];
+    for (const id of approvedIds) {
+      await send("Page.navigate", {url:`http://localhost:3000/docent/${id}`});
+      await waitFor(`location.pathname==='/docent/${id}'&&!!document.querySelector('[data-docent-photo]')&&document.querySelector('[data-docent-photo]').getBoundingClientRect().width>300&&getComputedStyle(document.querySelector('[data-docent-photo]')).display==='flex'&&document.querySelector('[data-docent-photo]').getBoundingClientRect().height>200`);
+      const photo = await evaluate(`(()=>{const f=document.querySelector('[data-docent-photo]'),i=f.querySelector('img'),r=f.getBoundingClientRect(),p=i?.getBoundingClientRect();return{width:r.width,height:r.height,imgWidth:p?.width,imgHeight:p?.height,fit:i?getComputedStyle(i).objectFit:null,hasImage:!!i,text:f.textContent}})()`);
+      if(photo.hasImage){assert.equal(photo.fit,'contain');assert(Math.abs(photo.imgWidth-photo.width)<1&&Math.abs(photo.imgHeight-photo.height)<1)}
+      else assert(photo.text.includes('등록된 사진이 없어요'),"사진 없는 장소 안내");
+      detailPhotos.push(photo);
+      if (id===approvedIds[0]) {const s=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});writeFileSync(join(out,`docent-photo-${width}.png`),Buffer.from(s.data,'base64'));}
+    }
+    assert(detailPhotos.every(p=>Math.abs(p.height-detailPhotos[0].height)<1&&Math.abs(p.width-detailPhotos[0].width)<1),"6개 도슨트 상세 사진 영역 동일");
     await evaluate(`Array.from(document.querySelectorAll('a')).find(a=>a.getAttribute('href')==='/docent'&&a.textContent.includes('모든 이야기')).click()`);
     await waitFor("location.pathname==='/docent'");
     await send("Page.navigate", { url: "http://localhost:3000/" });

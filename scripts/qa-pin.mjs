@@ -36,6 +36,10 @@ try {
     await send("Emulation.setDeviceMetricsOverride",{width,height:900,deviceScaleFactor:1,mobile:width===390});await send("Emulation.setEmulatedMedia",{features:[{name:"prefers-reduced-motion",value:"no-preference"}]});
     await navigate();await store(trip);await navigate();
     const height=await evaluate("document.documentElement.scrollHeight");await open();await waitFor("document.querySelectorAll('[data-pin-card]').length===3");
+    await waitFor("document.querySelectorAll('[data-shuffling=true]').length===3");
+    assert(await evaluate("[...document.querySelectorAll('[data-pin-card]')].every(b=>b.disabled)"),"셔플 중 선택 방지");
+    assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-pin-card]')).animationName"),"pin-card-shuffle");
+    await shot(`cards-shuffle-${width}`);await waitFor("!!document.querySelector('[data-pin-card]:not([disabled])')");
     assert(await evaluate(textHas("남은 기회 3번")),"열기만 해서는 차감 없음");assert.equal(await evaluate("document.documentElement.scrollHeight"),height,"홈이 아래로 늘어나지 않음");
     const scroll=await evaluate("scrollY");await layout();await shot(`cards-choose-${width}`);await escape();await waitFor("document.activeElement.getAttribute('aria-controls')==='pin-draw-panel'");
     assert(await evaluate(`Math.abs(scrollY-${scroll})<3`));assert.equal(await evaluate("document.body.style.overflow"),"");await open();assert(await evaluate(textHas("남은 기회 3번")));
@@ -47,7 +51,7 @@ try {
     await again();await choose();const third=await result();assert.notEqual(third,second);assert(await evaluate(textHas("남은 기회 0번")));await shot(`cards-exhausted-${width}`);await escape();await open();assert.equal(await resultId(),third,"기회 소진 후에도 마지막 핀 다시 보기");await escape();
     await store({...trip,regions:["부산광역시 강서구"]});await navigate();await open();await waitFor(textHas("아직 공개된 도슨트가 없어요"));assert(await evaluate(textHas("남은 기회 3번")));await shot(`cards-empty-${width}`);await escape();
     await store({...trip,regions:["부산광역시 동구"]});await navigate();await open();assert.equal(await evaluate("document.querySelectorAll('[data-pin-card]').length"),1);await choose();assert.equal(await result(),"1942337");assert(await evaluate(textHas("남은 기회 2번")));assert(await evaluate(textHas("이 지역의 공개 이야기는 이 장소 하나뿐")));await shot(`cards-single-${width}`);await escape();
-    await store(trip);await navigate();await open();await evaluate("for(let i=0;i<6;i++)document.querySelector('[data-pin-card]').click()");await result();assert(await evaluate(textHas("남은 기회 2번")),"같은 카드 연타는 1회만 사용");await escape();
+    await store(trip);await navigate();await open();await waitFor("!!document.querySelector('[data-pin-card]:not([disabled])')");await evaluate("for(let i=0;i<6;i++)document.querySelector('[data-pin-card]').click()");await result();assert(await evaluate(textHas("남은 기회 2번")),"같은 카드 연타는 1회만 사용");await escape();
     await store(trip);await navigate();await open();assert(await evaluate(textHas("남은 기회 3번")),"새로고침 초기화");await escape();
   }
   assert.equal(blocked,0);console.log(JSON.stringify({passed:true,widths:[390,1440],checks:["3장 중 한 장 선택","뒤집기·나머지 물러남","홈 높이 유지","닫기·포커스·스크롤 복구","열기는 차감 없음","같은 카드 연타 1회","3회 후 결과 재열기","직전 중복 제외","0/1곳 안내","움직임 줄이기","후보만 저장·일정 유지","사진 비율·44px·넘침"],routeAndWeatherRequests:blocked}));

@@ -121,14 +121,13 @@ export function DocentDetail({ docent, nearby }: { docent: Docent; nearby: Nearb
   return (
     <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
       <article className="min-w-0 pb-56 lg:pb-0">
-        {docent.image && (
           <figure className="flex flex-col items-start">
-            <span className="flex h-64 w-full items-center justify-center bg-line lg:h-96">
-              <Image src={docent.image.url} alt={`${docent.placeName} 사진`} width={960} height={640} unoptimized priority className="h-full w-auto max-w-full object-contain" />
+            <span data-docent-photo="" className="flex h-60 w-full items-center justify-center bg-line lg:h-90">
+              {docent.image ? <Image src={docent.image.url} alt={`${docent.placeName} 사진`} width={960} height={640} unoptimized priority className="h-full w-full object-contain" />
+                : <span className="text-sm text-ink-muted">등록된 사진이 없어요.</span>}
             </span>
-            <figcaption className="mt-2 text-xs text-ink-subtle">사진 한국관광공사 TourAPI · 공공누리 {docent.image.license === "Type3" ? "제3유형(변경금지)" : "제1유형"}</figcaption>
+            {docent.image && <figcaption className="mt-2 text-xs text-ink-subtle">사진 한국관광공사 TourAPI · 공공누리 {docent.image.license === "Type3" ? "제3유형(변경금지)" : "제1유형"}</figcaption>}
           </figure>
-        )}
         <p className="mt-6 text-sm text-ink-muted">{regionName(docent.region)} · {docent.category.split(" > ").at(-1)}</p>
         <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight lg:text-5xl">{docent.placeName}</h1>
         {docent.notes.map((note) => <p key={note} className="mt-2 text-xs text-ink-subtle">{note}</p>)}
