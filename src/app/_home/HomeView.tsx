@@ -42,7 +42,7 @@ export function HomeView({ regionCounts, weekly, storiesByRegion, pinPlaces }: P
         <div className="mx-auto max-w-page px-gutter pb-8 lg:box-content lg:px-gutter-wide lg:pb-22">
           <SiteHeader tone="room" />
           {/* 휴대폰: 첫 문구 → 지도 → 어디·언제 / 데스크톱: 왼쪽 첫 문구·어디·언제, 오른쪽 지도 */}
-          <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] lg:items-start lg:gap-x-16 lg:pt-18">
+          <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)] lg:grid-rows-[auto_1fr] lg:items-start lg:gap-x-16 lg:pt-18">
             <div className="pt-12 lg:col-start-1 lg:row-start-1 lg:pt-0">
               <h1 className="font-display text-[38px] leading-[1.16] font-extrabold tracking-[-0.05em] whitespace-pre-line text-on-room lg:text-[68px] lg:leading-[1.1] lg:tracking-[-0.055em]">
                 {"부산을\nPIN 해볼까요?"}
