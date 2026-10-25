@@ -12,7 +12,14 @@ export function RouteJourney({ names, states, selected, onSelect }: {
   const signature = names.join("|");
   useEffect(() => {
     const button = buttons.current.get(selected), container = scroller.current;
-    if (button && container) container.scrollTo({ left: button.offsetLeft - (container.clientWidth - button.clientWidth) / 2 });
+    if (!button || !container) return;
+    const reveal = () => container.scrollTo({
+      left: container.scrollLeft + button.getBoundingClientRect().left - container.getBoundingClientRect().left - (container.clientWidth - button.clientWidth) / 2,
+    });
+    reveal();
+    const resize = new ResizeObserver(reveal);
+    resize.observe(container);
+    return () => resize.disconnect();
   }, [selected, signature]);
 
   const onKey = (event: KeyboardEvent<HTMLButtonElement>) => {

@@ -3,7 +3,7 @@
 // ROUTE_QA_URL로 다른 로컬 주소 지정 가능. 지도는 카카오에 등록된 주소에서 확인한다.
 import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
@@ -63,55 +63,67 @@ try {
   await send("Fetch.enable", { patterns: [{ urlPattern: "*/api/route?*", requestStage: "Request" }] });
   await send("Page.navigate", { url: `${base}/route` });
   await waitFor("document.readyState === 'complete'");
-  const trip = { version: 1, regions: [], startDate: "2026-10-26", endDate: "2026-10-28", periodSource: "user", taste: null, candidates: ["1997221", "126122", "2684712", "2907087"], days: [["1997221", "126122", "2684712"], [], ["2907087"]] };
+  const trip = { version: 1, regions: [], startDate: "2026-10-26", endDate: "2026-10-28", periodSource: "user", taste: null, candidates: ["1997221", "126122", "2684712", "1825843", "2907087"], days: [["1997221", "126122", "2684712", "1825843"], [], ["2907087"]] };
   const store = async (value) => evaluate(`localStorage.setItem('pinday:trip', ${JSON.stringify(JSON.stringify(value))})`);
   const navigate = async (path) => { await send("Page.navigate", { url: `${base}${path}` }); await waitFor("document.readyState === 'complete' && !!document.querySelector('main h1')"); };
   const textHas = (text) => `document.body.innerText.includes(${JSON.stringify(text)})`;
-  const click = (text, selector = "button") => evaluate(`[...document.querySelectorAll(${JSON.stringify(selector)})].find(el => el.textContent.trim() === ${JSON.stringify(text)})?.click()`);
+  const click = (text, selector = "button") => evaluate(`[...document.querySelectorAll(${JSON.stringify(selector)})].find(el => el.getClientRects().length && el.textContent.trim() === ${JSON.stringify(text)})?.click()`);
   const assertLayout = async () => {
     assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false, "화면 가로 넘침");
     assert.deepEqual(await evaluate("[...document.querySelectorAll('main button, main a, main summary')].filter(el => { if (el.closest('[role=region]')) return false; const r=el.getBoundingClientRect(); return r.width && r.height && (r.height < 44 || r.width < 44); }).map(el => el.textContent.trim())"), [], "44px 미만 자체 버튼");
   };
   mkdirSync(out, { recursive: true });
   const screenshot = async (name, width) => {
+    await evaluate("document.activeElement?.blur()");
     await evaluate("(() => { document.getElementById('qa-note')?.remove(); const note=document.createElement('div'); note.id='qa-note'; note.textContent='QA 시험 응답 · 실제 경로 정보 아님'; note.style.cssText='position:fixed;bottom:0;left:0;z-index:9999;background:white;color:black;padding:4px;font-size:12px';document.body.append(note); })()");
     const height = await evaluate("Math.min(document.documentElement.scrollHeight, 3000)");
     const shot = await send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true, clip: { x: 0, y: 0, width, height, scale: 1 } });
     writeFileSync(join(out, `${name}.png`), Buffer.from(shot.data, "base64"));
   };
-  for (const width of [390, 1440]) {
+  for (const width of [390, 1050, 1440]) {
     await send("Emulation.setDeviceMetricsOverride", { width, height: 900, deviceScaleFactor: 1, mobile: width === 390 });
     await store(trip);
     await navigate("/route?day=1");
     await waitFor(textHas("시험 버스 61"));
-    assert.equal(await evaluate("document.querySelector('details').open"), false, "승하차 기본 접힘");
-    await evaluate("document.querySelector('summary').click()");
-    await waitFor(textHas("시험 승차 A에서 타고 4정류장 → 시험 하차 B에서 내려요"));
-    assert(await evaluate(textHas("시험 환승 C에서 타고 2정류장 → 시험 하차 D에서 내려요")), "환승별 안내");
+    if (width === 390) {
+      assert.equal(await evaluate("document.querySelector('details').open"), false, "휴대폰 승하차 기본 접힘");
+      await evaluate("document.querySelector('summary').click()");
+      await waitFor(textHas("시험 승차 A에서 타고 4정류장 → 시험 하차 B에서 내려요"));
+      assert(await evaluate(textHas("시험 환승 C에서 타고 2정류장 → 시험 하차 D에서 내려요")), "환승별 안내");
+      await evaluate("document.querySelector('summary').click()");
+    } else {
+      assert(await evaluate("document.getElementById('route-leg-detail').innerText.includes('시험 환승 C에서 타고')"), "PC 환승별 안내");
+      assert.equal(await evaluate("[...document.querySelectorAll('section[aria-label=\"장소와 이동 구간\"]')].filter(el => el.getClientRects().length).length"), 0, "PC 세로 목록 숨김");
+      await evaluate("document.getElementById('route-leg-tab-0').focus()");
+      await send("Input.dispatchKeyEvent", { type: "keyDown", key: "ArrowRight", code: "ArrowRight" });
+      await waitFor("document.getElementById('route-leg-tab-1').getAttribute('aria-selected') === 'true'");
+      assert(await evaluate("document.getElementById('route-leg-detail').innerText.includes('선택한 구간 2 / 3')"));
+      await click("← 이전 구간");
+    }
     await assertLayout();
     await waitFor("!document.body.innerText.includes('지도를 불러오고 있어요')");
     console.log(JSON.stringify({ width, mapSdkLoaded: await evaluate("!!window.kakao?.maps?.Map"), mapFailureMessage: await evaluate(textHas("지도를 불러오지 못했어요")) }));
-    await screenshot(`qa-compact-expanded-${width}`, width);
-    await evaluate("document.querySelector('summary').click()");
-    await screenshot(`qa-compact-transit-${width}`, width);
+    await screenshot(`qa-a-transit-${width}`, width);
     await click("도보");
     await waitFor(textHas("2,400m"));
     assert.equal(await evaluate("localStorage.getItem('pinday:trip')"), JSON.stringify(trip), "수단 선택으로 여행 저장값이 바뀌면 안 됨");
-    assert.equal(await evaluate("document.querySelector('a[href*=\"map.kakao.com/link/by\"]').href.includes('/walk/')"), true);
-    assert.equal(await evaluate("document.querySelectorAll('[role=group]')[1].querySelector('button').getAttribute('aria-pressed')"), "true", "다른 구간 수단 유지");
+    assert.equal(await evaluate("[...document.querySelectorAll('a[href*=\"map.kakao.com/link/by\"]')].find(el => el.getClientRects().length).href.includes('/walk/')"), true);
+    if (width > 390) {
+      await click("다음 구간 →");
+      assert.equal(await evaluate("document.querySelector('#route-leg-detail button').getAttribute('aria-pressed')"), "true", "다른 구간 수단 유지");
+      await waitFor("document.querySelectorAll('[data-route-stop][data-selected=true]').length === 2");
+      assert.deepEqual(await evaluate("[...document.querySelectorAll('[data-route-stop][data-selected=true]')].map(el=>el.dataset.routeStop)"), ["2", "3"], "선택한 구간 지도 번호 강조");
+      await click("← 이전 구간");
+      assert.equal(await evaluate("document.getElementById('route-leg-detail').innerText.includes('2,400m')"), true, "앞 구간 도보 선택 유지");
+    }
     await assertLayout();
-    await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').click()");
-    assert.equal(await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').getAttribute('aria-pressed')"), "true", "구간 강조 선택");
-    await screenshot(`qa-compact-mixed-${width}`, width);
-    await evaluate("[...document.querySelectorAll('button')].filter(el => el.textContent.trim() === '도보').forEach(el => el.click())");
-    await waitFor("!document.body.innerText.includes('경로를 찾고 있어요') && document.body.innerText.includes('걸어서 2번')");
-    const heights = await evaluate("[...document.querySelectorAll('ol[aria-label*=\"장소와 이동 구간\"] > li:nth-child(even)')].map(el => el.getBoundingClientRect().height)");
-    assert(heights.every((height) => height <= 80), "도보 구간은 80px 안에 표시");
-    console.log(JSON.stringify({ width, walkingRowHeights: heights }));
-    await screenshot(`qa-compact-walk-${width}`, width);
-    if (width === 390) assert(await evaluate("document.getElementById('route-panel').getBoundingClientRect().top < document.querySelector('section[aria-label*=\"경로 지도\"]').getBoundingClientRect().top"), "휴대폰은 목록 먼저");
-    else assert(await evaluate("document.getElementById('route-panel').getBoundingClientRect().top - document.querySelector('section[aria-live]').getBoundingClientRect().bottom <= 24"), "데스크톱 요약 아래 빈 공간 없음");
-    await evaluate("document.querySelector('[role=tab][aria-selected=true]').focus()");
+    if (width === 390) {
+      await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').click()");
+      assert.equal(await evaluate("document.querySelector('button[aria-label*=\"누르면 지도\"]').getAttribute('aria-pressed')"), "true", "휴대폰 구간 강조 선택");
+      assert(await evaluate("document.querySelector('section[aria-label=\"장소와 이동 구간\"]').getBoundingClientRect().top < document.querySelector('section[aria-label*=\"경로 지도\"]').getBoundingClientRect().top"), "휴대폰은 목록 먼저");
+    }
+    await screenshot(`qa-a-mixed-${width}`, width);
+    await evaluate("document.querySelector('[role=tablist][aria-label=날짜] [aria-selected=true]').focus()");
     await send("Input.dispatchKeyEvent", { type: "keyDown", key: "ArrowRight", code: "ArrowRight" });
     await waitFor(textHas("이동할 구간이 없어요"));
     assert.equal(await evaluate("document.activeElement.getAttribute('aria-selected')"), "true");
@@ -125,15 +137,49 @@ try {
   await waitFor(textHas("시험 경로 오류"));
   await click("다시 시도");
   await waitFor(textHas("시험 버스 61"));
+  const places = JSON.parse(readFileSync("data/places/places.json", "utf8"));
+  const manyIds = places.filter((place) => place.lat >= 34 && place.lat <= 36 && place.lng >= 128 && place.lng <= 130).slice(0, 12).map((place) => place.id);
+  await store({ ...trip, candidates: manyIds, days: [manyIds, [], []] });
+  await navigate("/route?day=1");
+  await waitFor(textHas("시험 버스 61"));
+  await evaluate("document.getElementById('route-leg-tab-0').focus()");
+  await send("Input.dispatchKeyEvent", { type: "keyDown", key: "End", code: "End" });
+  await waitFor("document.getElementById('route-leg-tab-10').getAttribute('aria-selected') === 'true'");
+  await waitFor("(() => {const el=document.getElementById('route-leg-tab-10');const parent=el.closest('[role=tablist]');const a=el.getBoundingClientRect(),b=parent.getBoundingClientRect();return a.left>=b.left && a.right<=b.right;})()");
+  await assertLayout();
+  await screenshot("qa-a-12places-1440", 1440);
+  await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 900, deviceScaleFactor: 1, mobile: true });
+  await assertLayout();
+  await send("Emulation.setDeviceMetricsOverride", { width: 1050, height: 900, deviceScaleFactor: 1, mobile: false });
+  await waitFor("(() => {const el=document.getElementById('route-leg-tab-10');const parent=el.closest('[role=tablist]');const a=el.getBoundingClientRect(),b=parent.getBoundingClientRect();return a.left>=b.left && a.right<=b.right;})()");
+  assert.equal(await evaluate("document.querySelector('[role=region]').getBoundingClientRect().width > 300"), true, "지도 크기 변경 반영");
+  await assertLayout();
+  await send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+  await store(trip);
+  await evaluate("window.dispatchEvent(new StorageEvent('storage',{key:'pinday:trip'}))");
+  await waitFor("document.getElementById('route-leg-tab-0').getAttribute('aria-selected') === 'true'");
+  assert(await evaluate("document.getElementById('route-leg-detail').innerText.includes('선택한 구간 1 / 3')"), "일정 변경으로 사라진 구간의 선택 복구");
+  await store({ ...trip, days: [[], [], ["2907087"]] });
+  await navigate("/route?day=1");
+  await waitFor(textHas("이동할 구간이 없어요"));
+  assert.equal(await evaluate("!!document.getElementById('route-leg-detail')"), false, "구간이 사라지면 선택 설명 제거");
   const longTrip = { ...trip, endDate: "2026-11-08", days: Array.from({ length: 14 }, (_, i) => i === 13 ? trip.days[0] : []) };
   await store(longTrip);
   await navigate("/route?day=14");
   await waitFor(textHas("시험 버스 61"));
   await assertLayout();
+  await send("Network.enable");
+  await send("Network.setBlockedURLs", { urls: ["*dapi.kakao.com/v2/maps/sdk.js*"] });
+  await store(trip);
+  await navigate("/route?day=1");
+  await waitFor(textHas("지도를 불러오지 못했어요"));
+  await click("다음 구간 →");
+  assert(await evaluate("document.getElementById('route-leg-detail').innerText.includes('선택한 구간 2 / 3')"), "지도 실패에도 구간 선택 가능");
+  await screenshot("qa-a-map-failure-1440", 1440);
   await evaluate("localStorage.removeItem('pinday:trip')");
   await navigate("/route");
   await waitFor(textHas("자동으로 정했어요"));
-  console.log(JSON.stringify({ passed: true, widths: [390, 1440], checks: ["환승별 승하차", "구간별 수단 독립", "도보 외부 링크", "키보드 날짜 이동", "빈 날", "좌표 오류", "오류 재시도", "14일 일정", "자동 여행", "가로 넘침 없음", "주요 버튼 44px"], interceptedRouteRequests: requests.length, liveKakaoRouteRequests: 0 }));
+  console.log(JSON.stringify({ passed: true, widths: [390, 1050, 1440], checks: ["PC A안 구간 선택·지도 번호 강조", "키보드 구간·날짜 이동", "12곳 가로 이동", "휴대폰 목록 유지", "환승별 승하차", "구간별 수단 독립", "도보 외부 링크", "빈 날", "좌표 오류", "오류 재시도", "지도 실패", "14일 일정", "자동 여행", "가로 넘침 없음", "주요 버튼 44px"], interceptedRouteRequests: requests.length, liveKakaoRouteRequests: 0 }));
 } finally {
   ws?.close();
   chrome.kill();

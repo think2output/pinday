@@ -188,7 +188,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
                       ref={(node) => { if (node) tabs.current.set(n, node); else tabs.current.delete(n); }}
                       onClick={() => pickDay(n)} onKeyDown={onTabKey}
                       aria-label={`${n}일차, ${shortDate(date)}, 장소 ${trip.days[index].length}곳`}
-                      className={`flex min-h-14 min-w-24 flex-1 shrink-0 flex-col items-start justify-center px-3 py-2 text-left lg:max-w-40 ${on ? "bg-room text-on-room" : "bg-bg text-ink ring-1 ring-line ring-inset"}`}>
+                      className={`flex min-h-14 min-w-24 flex-1 shrink-0 flex-col items-start justify-center px-3 py-2 text-left lg:min-w-32 lg:flex-none lg:max-w-40 ${on ? "bg-room text-on-room" : "bg-bg text-ink ring-1 ring-line ring-inset"}`}>
                       <span className="font-display text-base font-bold">{n}일차</span>
                       <span className={`text-xs ${on ? "text-on-room-muted" : "text-ink-muted"}`}>{shortDate(date)} · {trip.days[index].length}곳</span>
                     </button>
