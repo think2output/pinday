@@ -33,7 +33,7 @@ describe("부산 대표 이야기 코스", () => {
     }
   });
   it("장소가 사라지거나 좌표가 틀리면 가짜로 채우지 않는다", () => {
-    const broken = { ...byId, "1942337": { ...byId["1942337"], lat: 0 } };
+    const broken: Record<string, TastePlace> = { ...byId, "1942337": { ...byId["1942337"], lat: 0 } };
     delete broken["1997221"];
     expect(resolveCourse("alley", broken).map((place) => place.id)).toEqual(["2684712"]);
   });

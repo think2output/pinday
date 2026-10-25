@@ -41,7 +41,7 @@ export function TasteResult({ taste, places, stories, onRestart }: { taste: Tast
   const outside = trip.regions.length > 0 && !trip.regions.includes("부산광역시") && course.some((place) => !trip.regions.includes(place.region));
   return <div className="mx-auto min-h-dvh w-full max-w-page px-gutter pb-14 lg:box-content lg:px-gutter-wide">
     <SiteHeader />
-    <main className="pt-8 lg:pt-12">
+    <main className="pt-8 break-keep lg:pt-12">
       <section className="grid items-center gap-5 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-12">
         <div className="mx-auto w-56 lg:w-full"><TasteArt kind={taste} className="w-full text-ink" /></div>
         <div><p className="text-sm text-ink-muted">다섯 장면을 지나, 당신에게 켜진 이야기</p>
@@ -55,7 +55,7 @@ export function TasteResult({ taste, places, stories, onRestart }: { taste: Tast
       <section aria-labelledby="taste-course-title" className="mt-10 lg:mt-14">
         <p className="flex items-center gap-2 text-xs text-ink-muted"><span aria-hidden="true" className="size-2 rounded-full bg-light" />당신의 취향으로 엮은 부산 대표 코스</p>
         <h2 id="taste-course-title" className="mt-3 font-display text-2xl leading-snug font-extrabold tracking-tight lg:text-3xl">{result.courseTitle}</h2>
-        <p className="mt-3 text-sm leading-relaxed text-ink-muted">부산 전체에서 고른 대표 장소 {course.length}곳이에요. 가까운 도보 코스는 아니며, 장소 사이 이동이 필요해요.</p>
+        <p className="mt-3 text-sm leading-relaxed text-ink-muted">부산 전체에서 고른 대표 장소 {course.length}곳이에요. 여러 지역을 잇는 코스인 만큼, 장소 사이 교통편도 함께 계획해주세요.</p>
         {outside && <p className="mt-2 text-sm leading-relaxed text-ink-muted">지금 고른 지역 밖의 장소도 포함돼요. 내 지역 설정은 그대로 유지돼요.</p>}
         {course.length < 3 && <p role="status" className="mt-2 text-sm text-ink-muted">일부 장소 정보가 없어 확인 가능한 곳만 보여드려요.</p>}
         <ol className="mt-6 grid gap-7 lg:grid-cols-3 lg:gap-8" aria-label="추천 코스 순서">
@@ -75,6 +75,7 @@ export function TasteResult({ taste, places, stories, onRestart }: { taste: Tast
       </section>
       {firstStory && <FirstStory key={firstStory.id} story={firstStory} inCourse={!!inCourseStory} />}
       <div className="mt-6 flex flex-wrap items-center gap-6"><button type="button" onClick={onRestart} className="min-h-tap text-sm text-ink-muted underline underline-offset-4">다른 장면으로 다시 해보기</button><p className="text-xs text-ink-subtle">취향은 저장됐어요. 추천 코스는 직접 담을 때만 일정에 들어가요.</p></div>
+      <p className="mt-6 text-xs leading-relaxed text-ink-subtle">장소 정보 한국관광공사 TourAPI · 도슨트는 공개 검수된 해설만 연결해요.</p>
     </main>
     {picking && <TasteCoursePicker course={course} onClose={() => setPicking(false)} onNotice={setNotice} />}
   </div>;

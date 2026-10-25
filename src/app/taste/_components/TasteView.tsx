@@ -35,7 +35,7 @@ export function TasteView({ places, stories }: { places: Record<string, TastePla
   return <div className="min-h-dvh bg-room text-on-room">
     <div className="mx-auto w-full max-w-page px-gutter pb-10 lg:box-content lg:px-gutter-wide lg:pb-16">
       <SiteHeader tone="room" />
-      <main className="pt-7 lg:pt-12">
+      <main className="pt-7 break-keep lg:pt-12">
         {!started ? <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)] lg:gap-20 lg:pt-8">
           <div>
             <p className="flex items-center gap-2 text-sm text-on-room-muted"><span aria-hidden="true" className="size-2 rounded-full bg-light shadow-glow" />당신의 부산, 첫 번째 이야기</p>
