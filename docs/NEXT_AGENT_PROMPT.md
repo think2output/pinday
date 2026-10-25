@@ -3,10 +3,11 @@ PinDay 작업을 이어받아줘.
 ## 시작 순서
 1. AGENTS.md → docs/HANDOFF.md → docs/DECISIONS.md → docs/기획서.md → docs/wireframes/README.md 순서로 읽어줘.
 2. 맡을 화면의 QA와 docs/design/README.md를 읽고 git status·최근 커밋 5개·원격 병합 상태를 확인해줘.
-3. 현재 작업 브랜치는 feat/home-map-illustrations야. main에 병합됐다고 가정하지 말고, 기존 변경을 보존해줘.
+3. 화면 수정 브랜치 feat/home-map-illustrations는 PR #21로 main(a973334)에 병합됐어. 현재 비교 문서 브랜치는 feat/service-evolution-docs야. 문서 브랜치의 병합 여부는 다시 확인하고 기존 변경을 보존해줘.
 4. 현재 상태를 짧게 알려주고 다음 범위는 나와 정해줘. 내가 요청한 작업은 그 범위 안에서 진행해줘.
 
 ## 지금 상태
+- 내가 지정한 이전 PinDay는 https://pinday-web.vercel.app/야. 현재와의 차이는 docs/SERVICE_EVOLUTION.md에 정리했어. 기존 기능도 많았으니 전부 새로 만들었다고 설명하지 마.
 - 주요 화면은 모두 구현됐어: 홈, 어디 갈까?, 언제 갈까?, 어떻게 갈까?, 날씨 대안, 취향 테스트, AI 도슨트 목록/상세, 내 여행.
 - Vercel 첫 배포 주소는 https://pinday-five.vercel.app/. 배포 후 카카오 지도 표시를 확인했어. 작업 브랜치의 최신 수정이 운영에 반영됐는지는 별도 확인이 필요해.
 - 최근 작업은 실제 부산 윤곽 지도·핀/물결·노란 조명, 홈 사진/카피/이야기 연결, 카드 셔플, 도슨트 사진 정리야.
