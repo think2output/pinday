@@ -12,7 +12,7 @@ import { ConditionsEditor } from "../../explore/_components/ConditionsEditor";
 import { mapStops, shortDate, tripDates, type SchedulePlace } from "../../schedule/_components/scheduleModel";
 import { RouteMap, type MapLeg } from "./RouteMap";
 import { daySummary, kakaoRouteUrl, minutesLabel } from "./routeModel";
-import { useRouteLegs } from "./useRouteLegs";
+import { useRouteLegs, type RouteMode } from "./useRouteLegs";
 
 const subscribeMounted = () => () => {};
 const NO_PLACES: string[] = [];
@@ -37,6 +37,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
   const [focus, setFocus] = useState<number | null>(null);
   const [editing, setEditing] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
+  const [modes, setModes] = useState<Record<string, RouteMode>>({});
   const tabs = useRef(new Map<number, HTMLButtonElement>());
 
   const total = trip.days.length;
@@ -45,8 +46,10 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
   const ids = trip.days[day - 1] ?? NO_PLACES;
   const stops = useMemo(() => mapStops(ids, places), [ids, places]);
   const pairs = useMemo(() => ids.slice(1).map((toId, index) => [ids[index], toId] as [string, string]), [ids]);
-  const { stateOf, retry } = useRouteLegs(mounted ? pairs : []);
-  const states = pairs.map(([from, to]) => stateOf(from, to));
+  const modeOf = (from: string, to: string) => modes[`${from}>${to}`] ?? "transit";
+  const requests: [string, string, RouteMode][] = pairs.map(([from, to]) => [from, to, modeOf(from, to)]);
+  const { stateOf, retry } = useRouteLegs(mounted ? requests : []);
+  const states = requests.map(([from, to, mode]) => stateOf(from, to, mode));
   const summary = daySummary(states);
   const mapLegs: (MapLeg | null)[] = pairs.map(([from, to], index) => {
     const state = states[index];
@@ -74,14 +77,21 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
     const state = states[index];
     const on = focus === index;
     const leg = state.kind === "ready" ? state.leg : null;
-    const rides = leg?.steps.filter((step) => step.type !== "WALKING") ?? [];
-    const board = rides[0]?.board, alight = rides.at(-1)?.alight;
-    const stopCount = rides.reduce((sum, step) => sum + step.stopCount, 0);
+    const mode = modeOf(fromId, toId);
     const time = leg ? minutesLabel(leg.minutes) : state.kind === "loading" ? "…" : "?";
     return (
       <li className="flex gap-3">
         <span aria-hidden="true" className="flex w-8 shrink-0 justify-center"><span className={`w-0.5 ${on ? "bg-light" : "bg-line"}`} /></span>
         <div className={`my-1.5 min-w-0 flex-1 ${on ? "ring-2 ring-room" : "ring-1 ring-line"} ring-inset`}>
+          <div role="group" aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 이동수단`} className="flex gap-2 px-3 pt-3">
+            {(["transit", "walk"] as const).map((option) => (
+              <button key={option} type="button" aria-pressed={mode === option}
+                onClick={() => { setModes((value) => ({ ...value, [`${fromId}>${toId}`]: option })); setFocus(null); }}
+                className={`min-h-tap min-w-tap px-3 text-sm font-semibold ${mode === option ? "bg-room text-on-room" : "text-ink-muted ring-1 ring-line ring-inset"}`}>
+                {option === "transit" ? "대중교통" : "도보"}
+              </button>
+            ))}
+          </div>
           <button type="button" aria-pressed={on} disabled={!leg} onClick={() => setFocus(on ? null : index)}
             aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지${leg ? ` ${minutesLabel(leg.minutes)}` : ""}. 누르면 지도에서 이 구간을 노랗게 보여줘요`}
             className="flex w-full items-start gap-3 px-3 pt-3 text-left">
@@ -94,38 +104,37 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
               ) : state.leg.kind === "walk" ? (
                 <>
                   <span className="flex"><span className="px-2 py-1 text-sm font-bold ring-1 ring-ink ring-inset">걸어서</span></span>
-                  <span className="mt-1.5 block text-xs text-ink-muted">{state.leg.meters.toLocaleString()}m · 대중교통 경로가 없어 걷는 길로 찾았어요</span>
+                  <span className="mt-1.5 block text-xs text-ink-muted">{state.leg.meters.toLocaleString()}m</span>
                 </>
               ) : (
                 <>
-                  <span className="flex flex-wrap items-center gap-1.5">
+                  <span className="flex flex-col gap-3">
                     {state.leg.steps.map((step, stepIndex) => (
                       <Fragment key={stepIndex}>
-                        {stepIndex > 0 && <span aria-hidden="true" className="text-xs text-ink-subtle">›</span>}
-                        <Ride step={step} />
+                        <span className="block">
+                          <span className="inline-flex"><Ride step={step} /></span>
+                          {step.type !== "WALKING" && <span className="mt-1 block text-xs leading-relaxed text-ink-muted">
+                            {step.board && step.alight ? `${step.board}에서 타고 ${step.stopCount}정류장 → ${step.alight}에서 내려요` : "승차·하차 정보는 카카오맵에서 확인해주세요"}
+                          </span>}
+                        </span>
                       </Fragment>
                     ))}
                     {state.leg.transfers > 0 && <span className="text-xs text-ink-muted">환승 {state.leg.transfers}번</span>}
                   </span>
-                  {board && alight && (
-                    <span className="mt-1.5 block text-xs leading-relaxed text-ink-muted">
-                      <strong className="font-semibold text-ink">{board}</strong>에서 타고 {stopCount}정류장 → <strong className="font-semibold text-ink">{alight}</strong>에서 내려요
-                    </span>
-                  )}
                 </>
               )}
             </span>
           </button>
           <div className="flex flex-wrap items-center gap-x-4 pr-3 pl-20">
             {from && to && (
-              <a href={kakaoRouteUrl(leg?.kind === "walk" ? "walk" : "traffic", from, to)} target="_blank" rel="noreferrer"
+              <a href={kakaoRouteUrl(mode === "walk" ? "walk" : "traffic", from, to)} target="_blank" rel="noreferrer"
                 aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 카카오맵에서 길 보기, 새 창`}
                 className="inline-flex min-h-tap items-center gap-1 text-sm font-semibold underline underline-offset-4">
                 카카오맵에서 길 보기 <span aria-hidden="true">↗</span>
               </a>
             )}
             {state.kind === "error" && state.retry && (
-              <button type="button" onClick={() => retry(fromId, toId)} className="min-h-tap text-sm font-semibold text-ink-muted">다시 시도</button>
+              <button type="button" onClick={() => retry(fromId, toId, mode)} className="min-h-tap text-sm font-semibold text-ink-muted">다시 시도</button>
             )}
           </div>
         </div>
