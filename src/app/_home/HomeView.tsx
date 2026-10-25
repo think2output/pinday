@@ -73,10 +73,10 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
               className="absolute -top-7.5 left-1/2 size-37.5 -translate-x-1/2 rounded-full lg:-top-15 lg:left-auto lg:right-10 lg:size-65 lg:translate-x-0"
               style={{ background: "radial-gradient(closest-side, color-mix(in srgb, var(--color-light) 55%, transparent), transparent)" }}
             />
-            <span className="relative text-xs text-on-room-muted lg:text-[13px]">1분 테스트</span>
+            <span className="relative text-xs text-on-room-muted lg:text-[13px]">다섯 장면 · 나의 이야기 취향</span>
             <span className="relative font-display text-[19px] leading-tight font-extrabold tracking-[-0.045em] lg:text-[28px]">
-              나는 어떤
-              <br className="lg:hidden" /> 부산 여행자일까?
+              나에게 켜지는
+              <br className="lg:hidden" /> 부산의 이야기
             </span>
           </Link>
           {/* 랜덤 뽑기(기획서 6-2)는 다음 작업. 입구만 둔다 */}

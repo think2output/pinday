@@ -134,7 +134,7 @@ export function ExploreView({ categories, names }: { categories: Category[]; nam
                   <option value="name">이름순</option><option value="taste" disabled={!trip.taste}>내 취향순</option>
                 </select>
               </div>
-              <p className="mb-3 text-xs text-ink-subtle">{trip.taste ? TASTE_NAMES[trip.taste] : "취향 테스트는 준비 중이에요"} · 이야기 필터 준비 중</p>
+              <div className="mb-3 flex flex-wrap items-center gap-x-2 text-xs text-ink-subtle">{trip.taste ? <span>{TASTE_NAMES[trip.taste]}</span> : <Link href="/taste" className="inline-flex min-h-tap items-center font-semibold text-ink">내 이야기 취향 찾기 →</Link>}<span>· 이야기 필터 준비 중</span></div>
               <div className="min-h-0 flex-1 overflow-y-auto pb-3">
                 {loading ? <p role="status" className="py-6 text-sm text-ink-muted">장소를 불러오고 있어요</p> : error ? (
                   <div role="alert" className="py-6 text-sm"><p>장소를 불러오지 못했어요.</p><button type="button" onClick={retry} className="min-h-tap font-semibold">다시 시도</button></div>
