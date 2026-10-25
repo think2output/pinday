@@ -1,40 +1,49 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { StoryCard } from "@/lib/server/home";
 import { regionName } from "./regions";
 
 // 홈 이야기 카드 (기획서 6-1, 시안 C). 조명 원 안에 사진을 건다.
-// 사진은 공공누리 3유형(변경금지)이 있어 자르거나 기울이지 않고 원래 비율 그대로 보여준다. 기울이는 건 장식 조각만.
+// 사진은 공공누리 3유형(변경금지)이 있어 원래 비율 그대로 보여준다. 호버는 사진 뒤 조명만 바꾼다.
 export function StoryShelf({ heading, stories }: { heading: string; stories: StoryCard[] }) {
   return (
     <section aria-labelledby="story-heading" className="flex flex-col gap-2 lg:gap-6">
-      <h2 id="story-heading" className="px-gutter font-display text-2xl font-extrabold tracking-[-0.045em] lg:px-0 lg:text-[34px]">
-        {heading}
-      </h2>
+      <div className="flex items-center justify-between gap-3 px-gutter lg:px-0">
+        <h2 id="story-heading" className="font-display text-2xl font-extrabold tracking-[-0.045em] lg:text-[34px]">{heading}</h2>
+        <Link href="/docent" className="inline-flex min-h-tap shrink-0 items-center gap-2 text-sm font-semibold">전체 보기 <span aria-hidden="true">→</span></Link>
+      </div>
+      {stories.length === 0 ? (
+        <div className="px-gutter py-6 lg:px-0">
+          <p className="text-sm text-ink-muted">이 지역의 이야기는 준비 중이에요.</p>
+          <Link href="/explore" className="mt-2 inline-flex min-h-tap items-center text-sm font-semibold">선택한 지역의 장소 보기 →</Link>
+        </div>
+      ) : (
       <ul className="no-scrollbar flex snap-x snap-mandatory overflow-x-auto pb-2 lg:grid lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] lg:gap-8 lg:overflow-visible">
         {stories.map((story) => (
-          <li key={story.id} className="flex w-75 shrink-0 snap-center flex-col items-center gap-2.5 text-center lg:w-auto">
+          <li key={story.id} className="flex w-75 shrink-0 snap-center flex-col lg:w-auto">
+            <Link href={story.href} prefetch={false} aria-label={`${story.title} 이야기 들으러 가기`} data-home-story="" className="group flex w-full flex-col gap-4 focus-visible:outline-offset-[-2px]">
             <StoryArt story={story} />
-            <div className="flex max-w-85 flex-col items-center gap-1.5 px-5">
+            <div data-story-copy="" className="flex w-full flex-col gap-2 px-5 lg:px-4">
               <span className="text-xs text-ink-muted lg:text-[13px]">
-                {regionName(story.region)} · {story.kind}
+                {regionName(story.region)}
               </span>
-              <h3 className="font-display text-xl leading-tight font-bold tracking-[-0.04em] lg:text-[22px]">{story.title}</h3>
-              <p className="line-clamp-2 text-sm leading-relaxed text-ink-muted lg:text-[15px]">{story.subtitle}</p>
-              <p className="mt-1 text-[11px] text-ink-subtle">
-                이야기 부산테마여행정보
-                {story.photo && ` · ${story.photo.credit} (${story.photo.placeName})`}
-              </p>
+              <h3 className="min-h-7 font-display text-xl leading-7 font-bold tracking-[-0.04em] group-hover:underline group-focus-visible:underline lg:text-[22px]">{story.title}</h3>
+              <p data-story-description="" className="line-clamp-2 h-12 text-sm leading-6 text-ink-muted lg:text-[15px]">{story.subtitle}</p>
+              <span className="inline-flex min-h-tap items-center text-sm font-semibold">이야기 들으러 가기 <span aria-hidden="true" className="ml-2">→</span></span>
             </div>
+            </Link>
+            {story.photo && <p className="mt-2 px-5 text-[10px] leading-4 text-ink-subtle lg:px-4">{story.photo.credit}</p>}
           </li>
         ))}
       </ul>
+      )}
     </section>
   );
 }
 
 function StoryArt({ story }: { story: StoryCard }) {
   return (
-    <div className="relative h-62.5 w-67.5 lg:h-70 lg:w-75">
+    <div data-story-art="" className="relative flex h-48 w-full items-center justify-center px-5 py-3 lg:h-52 lg:px-4">
       <div
         aria-hidden="true"
         className="absolute inset-0 rounded-full"
@@ -43,25 +52,25 @@ function StoryArt({ story }: { story: StoryCard }) {
             "radial-gradient(closest-side, color-mix(in srgb, var(--color-light) 45%, transparent) 0%, color-mix(in srgb, var(--color-lit) 60%, transparent) 60%, transparent 100%)",
         }}
       />
-      <div aria-hidden="true" className="absolute top-7 left-41 size-18 rotate-9 bg-lit lg:left-45 lg:size-20" />
+      <div
+        aria-hidden="true"
+        data-story-glow=""
+        className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none"
+        style={{ background: "radial-gradient(closest-side, color-mix(in srgb, var(--color-light) 65%, transparent), transparent 85%)" }}
+      />
+      <div aria-hidden="true" className="absolute top-5 right-6 h-24 w-20 rotate-9 bg-lit" />
       {story.photo ? (
         <Image
           src={story.photo.url}
           alt={`${story.photo.placeName} 사진`}
-          width={240}
-          height={180}
+          width={480}
+          height={320}
           unoptimized
-          className="absolute top-12 left-10 h-auto w-36 shadow-photo lg:left-11 lg:w-40"
+          className="relative h-full w-full object-contain shadow-photo"
         />
       ) : (
         <div aria-hidden="true" className="absolute top-10 left-14 h-37.5 w-29.5 -rotate-5 bg-lit" />
       )}
-      <div aria-hidden="true" className="absolute top-31.5 left-38 flex size-20 -rotate-4 items-center justify-center bg-bg shadow-paper lg:top-35.5 lg:left-42.5 lg:size-22">
-        <svg viewBox="0 0 50 50" className="size-14.5 text-ink lg:size-16">
-          <path d="M6 40 C14 34 12 22 22 20 S34 12 42 8" fill="none" stroke="currentColor" strokeWidth="2.4" strokeDasharray="1 4.5" strokeLinecap="round" />
-          <path d="M42 3C39.2 3 37 5.2 37 7.9 37 11.6 42 16 42 16s5-4.4 5-8.1C47 5.2 44.8 3 42 3z" fill="var(--color-light)" stroke="currentColor" strokeWidth="1.3" />
-        </svg>
-      </div>
     </div>
   );
 }

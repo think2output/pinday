@@ -27,16 +27,16 @@ export default function DocentListPage() {
           <h2 id="all-stories" className="font-display text-xl font-extrabold">모든 이야기 <span className="text-base font-bold text-ink-muted">{docents.length}곳</span></h2>
           <ul className="mt-5 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {docents.map((docent) => (
-              <li key={docent.placeId}>
-                <Link href={`/docent/${docent.placeId}`} className="group block">
-                  <span className="flex h-48 items-center justify-center overflow-hidden bg-line">
+              <li key={docent.placeId} className="min-w-0">
+                <Link href={`/docent/${docent.placeId}`} data-docent-card={docent.placeId} className="group flex h-full min-w-0 flex-col">
+                  <span data-docent-thumbnail="" className="relative flex aspect-[3/2] w-full shrink-0 items-center justify-center overflow-hidden bg-line">
                     {docent.image ? (
-                      <Image src={docent.image.url} alt="" width={480} height={320} unoptimized className="h-full w-auto max-w-full object-contain" />
-                    ) : <span className="text-xs text-ink-subtle">사진 없음</span>}
+                      <Image src={docent.image.url} alt="" fill sizes="(min-width: 1440px) 416px, (min-width: 1024px) 30vw, (min-width: 640px) 46vw, 92vw" unoptimized className="object-contain" />
+                    ) : <span className="text-xs text-ink-subtle">등록된 사진이 없어요.</span>}
                   </span>
                   <span className="mt-3 block text-xs text-ink-muted">{regionName(docent.region)} · {docent.category.split(" > ").at(-1)}</span>
-                  <span className="mt-1 block font-display text-lg font-bold group-hover:underline">{docent.placeName}</span>
-                  {docent.draft.summary[0] && <span className="mt-1 line-clamp-2 block text-sm text-ink-muted">{docent.draft.summary[0].text}</span>}
+                  <span className="mt-1 block min-h-7 font-display text-lg leading-7 font-bold group-hover:underline group-focus-visible:underline">{docent.placeName}</span>
+                  <span data-docent-description="" className="mt-1 line-clamp-2 h-12 text-sm leading-6 text-ink-muted">{docent.draft.summary[0]?.text ?? ""}</span>
                 </Link>
               </li>
             ))}

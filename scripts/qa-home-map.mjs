@@ -1,0 +1,224 @@
+// 홈 일러스트 지도: 별도 Chrome 프로필로 확인하며 사용자 여행 정보는 건드리지 않는다.
+import assert from "node:assert/strict";
+import { spawn } from "node:child_process";
+import { mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
+
+const out = "docs/design/home-map";
+const approvedIds = readdirSync("data/docent/drafts").map(file=>JSON.parse(readFileSync(`data/docent/drafts/${file}`,"utf8"))).filter(d=>d.publishable===true&&d.humanReview?.status==="approved"&&!d.checks?.issues?.length).map(d=>d.placeId);
+const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+const chrome = spawn("C:/Program Files/Google/Chrome/Application/chrome.exe", [
+  "--headless=new", "--remote-debugging-port=9341",
+  `--user-data-dir=${mkdtempSync(join(tmpdir(), "pinday-home-map-"))}`,
+  "--no-first-run", "about:blank",
+], { stdio: "ignore" });
+let ws;
+try {
+  let target;
+  for (let n = 0; n < 40 && !target; n++) {
+    await pause(200);
+    try { target = (await (await fetch("http://127.0.0.1:9341/json")).json()).find(t => t.type === "page"); } catch {}
+  }
+  assert(target, "Chrome 연결");
+  ws = new WebSocket(target.webSocketDebuggerUrl);
+  await new Promise(resolve => ws.addEventListener("open", resolve));
+  let sequence = 0;
+  const pending = new Map(), errors = [];
+  let externalRequests = 0;
+  const send = (method, params = {}) => new Promise((resolve, reject) => {
+    const id = ++sequence;
+    const timer = setTimeout(() => { pending.delete(id); reject(new Error(`CDP timeout: ${method}`)); }, 15000);
+    pending.set(id, m => {
+      clearTimeout(timer);
+      if (m.error) reject(new Error(m.error.message));
+      else resolve(m.result);
+    });
+    ws.send(JSON.stringify({ id, method, params }));
+  });
+  ws.addEventListener("message", async event => {
+    const m = JSON.parse(event.data);
+    if (m.id) { pending.get(m.id)?.(m); pending.delete(m.id); }
+    if (m.method === "Runtime.exceptionThrown") errors.push(m.params.exceptionDetails.text);
+    if (m.method === "Fetch.requestPaused") {
+      externalRequests++;
+      await send("Fetch.failRequest", { requestId: m.params.requestId, errorReason: "BlockedByClient" });
+    }
+  });
+  const evaluate = async expression => {
+    const r = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true });
+    assert(!r.exceptionDetails, `실행 오류: ${expression}`);
+    return r.result.value;
+  };
+  const waitFor = async expression => {
+    for (let n = 0; n < 150; n++) { if (await evaluate(expression)) return; await pause(100); }
+    throw new Error(`대기 실패: ${expression}`);
+  };
+  const map = "document.querySelector('[aria-label=\"부산 구·군 지도. 여러 곳을 고를 수 있어요\"]')";
+  const paths = `${map}.querySelectorAll('[data-map-region]')`;
+  const selectedCount = `Array.from(${paths}).filter(p=>p.dataset.selected==='true').length`;
+  const screenshot = async (name, mapOnly = false) => {
+    await evaluate("document.fonts.ready.then(()=>true)");
+    const clip = mapOnly ? await evaluate(`(()=>{const r=${map}.getBoundingClientRect();return {x:r.x+scrollX,y:r.y+scrollY,width:r.width,height:r.height,scale:1}})()`) : undefined;
+    const shot = await send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true, ...(clip ? {clip} : {}) });
+    writeFileSync(join(out, name + ".png"), Buffer.from(shot.data, "base64"));
+  };
+  const key = async (key, code, vk) => {
+    for (const type of ["keyDown", "keyUp"]) await send("Input.dispatchKeyEvent", {
+      type, key, code, windowsVirtualKeyCode: vk, nativeVirtualKeyCode: vk,
+      ...(type === "keyDown" && (key === "Enter" || key === " ") ? { text: key === "Enter" ? "\r" : key } : {}),
+    });
+  };
+  mkdirSync(out, { recursive: true });
+  await send("Page.enable"); await send("Runtime.enable");
+  await send("Fetch.enable", { patterns: [{ urlPattern: "*/api/route?*" }, { urlPattern: "*/api/weather?*" }] });
+  const report = [];
+  for (const width of [390, 1440]) {
+    await send("Emulation.setDeviceMetricsOverride", { width, height: 1000, deviceScaleFactor: 1, mobile: width === 390 });
+    await send("Page.navigate", { url: "http://localhost:3000/" });
+    await waitFor(`!!${map} && ${paths}.length === 16`);
+    await evaluate("localStorage.clear(); location.reload()");
+    await waitFor(`!!${map} && ${paths}.length === 16 && !document.querySelector('a[href=\"/explore\"]')?.hasAttribute('aria-disabled')`);
+    await pause(800);
+    assert.equal(await evaluate(selectedCount), 0);
+    assert.deepEqual(await evaluate(`Array.from(${map}.querySelectorAll('button,a')).filter(b=>{const r=b.getBoundingClientRect();return r.width<44||r.height<44}).map(b=>b.getAttribute('aria-label'))`), [], "조작 버튼 44px 이상");
+    assert.equal(await evaluate(`${map}.querySelector('[aria-label="지도 확대"],[aria-label="지도 축소"]')===null`), true, "확대/축소 없음");
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-art').length`), 9, "넓은 9개 구에만 명소 그림");
+    assert.equal(await evaluate(`${map}.querySelector('select')===null`), true, "드롭다운 없음");
+    assert.equal(await evaluate(`${map}.querySelectorAll('[data-map-region][role=button][tabindex="0"]').length`), 16, "구·군 직접 키보드 선택");
+    assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
+    await screenshot(`map-default-${width}`);
+    await screenshot(`map-detail-${width}`, true);
+    const initialLayout = await evaluate(`({heroHeight:Math.round(document.querySelector('main > div:first-child').getBoundingClientRect().height),storyTop:Math.round(document.querySelector('#story-heading').getBoundingClientRect().top+scrollY)})`);
+    const stories = await evaluate(`Array.from(document.querySelectorAll('[data-home-story]')).map(a=>({href:a.getAttribute('href'),title:a.querySelector('h3').textContent}))`);
+    assert.equal(stories.length, 4, "홈 이야기 4편");
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-story-copy]')).every(c=>c.children.length===4&&c.children[0].tagName==='SPAN'&&c.children[1].tagName==='H3'&&c.children[2].tagName==='P'&&c.children[3].textContent.includes('이야기 들으러 가기')&&!c.children[0].textContent.includes('·'))`), "구 → 장소명 → 두 줄 설명 → 이야기 들으러 가기");
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-story-description]')).every(p=>getComputedStyle(p).webkitLineClamp==='2'&&Math.abs(p.getBoundingClientRect().height-48)<1)`), "설명 두 줄 고정/말줄임");
+    assert(await evaluate(`(()=>{const rects=Array.from(document.querySelectorAll('[data-home-story] img')).map(i=>i.getBoundingClientRect());return rects.every(r=>Math.abs(r.width-rects[0].width)<1&&Math.abs(r.height-rects[0].height)<1)})()`), "홈 썸네일 영역 크기 동일");
+    assert(await evaluate(`document.querySelector('[aria-label="여행 시작 도우미"]').textContent.includes('어디로 가야 할지')&&document.querySelector('button[aria-controls=pin-draw-panel]').textContent.includes('오늘의 부산')&&document.querySelector('button[aria-controls=pin-draw-panel]').textContent.includes('이야기 듣기')`), "두 배너 문구");
+    for (const story of stories) {
+      assert.match(story.href, /^\/docent\/\d+$/);
+      assert(await evaluate(`fetch(${JSON.stringify(story.href)}).then(async r=>r.ok&&(await r.text()).includes(${JSON.stringify(story.title)}))`), "이야기 상세 응답과 장소 일치");
+    }
+    assert(await evaluate(`!!document.querySelector('[aria-labelledby=story-heading] a[href="/docent"]')`), "전체 보기는 도슨트 목록");
+    assert.equal(await evaluate("document.querySelectorAll('[data-home-story] svg').length"), 0, "썸네일 앞 지도·핀 아이콘 없음");
+    await send("Emulation.setTouchEmulationEnabled", { enabled: false });
+    await evaluate("document.querySelector('[data-home-story]').scrollIntoView({block:'center'})");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: 2, y: 2 });
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='0'");
+    const imageBefore = await evaluate("(()=>{const r=document.querySelector('[data-home-story] img').getBoundingClientRect();return{width:r.width,height:r.height}})()");
+    const hoverPoint = await evaluate("(()=>{const r=document.querySelector('[data-home-story]').getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+100}})()");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", ...hoverPoint });
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='1'");
+    assert.deepEqual(await evaluate("(()=>{const r=document.querySelector('[data-home-story] img').getBoundingClientRect();return{width:r.width,height:r.height}})()"), imageBefore, "호버해도 원본 사진 크기·비율 유지");
+    await screenshot(`home-story-hover-${width}`);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: 2, y: 2 });
+    await evaluate("document.querySelector('[data-home-story]').focus()");
+    await waitFor("getComputedStyle(document.querySelector('[data-story-glow]')).opacity==='1'");
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
+    assert.equal(await evaluate("getComputedStyle(document.querySelector('[data-story-glow]')).transitionProperty"), "none", "움직임 줄이기 조명 즉시 전환");
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "no-preference" }] });
+    await evaluate("document.activeElement.blur();scrollTo(0,0)");
+    await screenshot(`home-stories-${width}`);
+    await evaluate("document.querySelector('[data-home-story]').click()");
+    await waitFor(`location.pathname===${JSON.stringify(stories[0].href)} && !!document.querySelector('h1')`);
+    assert(await evaluate(`document.querySelector('h1').textContent.includes(${JSON.stringify(stories[0].title)})`), "카드 클릭으로 같은 장소 설명 열기");
+    const detailPhotos = [];
+    for (const id of approvedIds) {
+      await send("Page.navigate", {url:`http://localhost:3000/docent/${id}`});
+      await waitFor(`location.pathname==='/docent/${id}'&&!!document.querySelector('[data-docent-photo]')&&document.querySelector('[data-docent-photo]').getBoundingClientRect().width>300&&getComputedStyle(document.querySelector('[data-docent-photo]')).display==='flex'&&document.querySelector('[data-docent-photo]').getBoundingClientRect().height>200`);
+      const photo = await evaluate(`(()=>{const f=document.querySelector('[data-docent-photo]'),i=f.querySelector('img'),r=f.getBoundingClientRect(),p=i?.getBoundingClientRect();return{width:r.width,height:r.height,imgWidth:p?.width,imgHeight:p?.height,fit:i?getComputedStyle(i).objectFit:null,hasImage:!!i,text:f.textContent}})()`);
+      if(photo.hasImage){assert.equal(photo.fit,'contain');assert(Math.abs(photo.imgWidth-photo.width)<1&&Math.abs(photo.imgHeight-photo.height)<1)}
+      else assert(photo.text.includes('등록된 사진이 없어요'),"사진 없는 장소 안내");
+      detailPhotos.push(photo);
+      if (id===approvedIds[0]) {const s=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});writeFileSync(join(out,`docent-photo-${width}.png`),Buffer.from(s.data,'base64'));}
+    }
+    assert(detailPhotos.every(p=>Math.abs(p.height-detailPhotos[0].height)<1&&Math.abs(p.width-detailPhotos[0].width)<1),"6개 도슨트 상세 사진 영역 동일");
+    await evaluate(`Array.from(document.querySelectorAll('a')).find(a=>a.getAttribute('href')==='/docent'&&a.textContent.includes('모든 이야기')).click()`);
+    await waitFor("location.pathname==='/docent'");
+    await send("Page.navigate", { url: "http://localhost:3000/" });
+    await waitFor(`location.pathname==='/' && !!${map} && ${paths}.length===16 && ${map}.getBoundingClientRect().width>300`);
+    await pause(300);
+    await evaluate("scrollTo(0,0)");
+    const wheelPoint = await evaluate(`(()=>{const r=${map}.querySelector('.pd-map').getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: wheelPoint.x, y: wheelPoint.y });
+    await send("Input.dispatchMouseEvent", { type: "mouseWheel", x: wheelPoint.x, y: wheelPoint.y, deltaX: 0, deltaY: 220 });
+    await waitFor("scrollY>100");
+    assert.equal(await evaluate(`${map}.querySelector('.pd-map').scrollTop`), 0, "지도 위 휠은 지도 대신 페이지 스크롤");
+    await evaluate("scrollTo(0,0)");
+    const centers = await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-label')).map((g,i)=>{const m=g.getScreenCTM();return {x:m.e,y:m.f,name:${paths}[i].dataset.mapRegion}})`);
+    // 실제 좌표로 16개 경계를 직접 선택한다.
+    for (const c of centers) {
+      await evaluate(`scrollTo(0, ${Math.max(0, c.y - 300)})`);
+      const scroll = await evaluate("scrollY");
+      const y = c.y - scroll;
+      const hit = await evaluate(`document.elementFromPoint(${c.x},${y})?.closest('[data-map-region]')?.dataset.mapRegion`);
+      assert.equal(hit, c.name, `지도 조각 누름 위치: ${c.name}`);
+      if (width === 390) {
+        await send("Emulation.setTouchEmulationEnabled", { enabled: true });
+        await send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: [{ x: c.x, y }] });
+        await send("Input.dispatchTouchEvent", { type: "touchEnd", touchPoints: [] });
+      } else {
+        await send("Emulation.setTouchEmulationEnabled", { enabled: false });
+        await send("Input.dispatchMouseEvent", { type: "mousePressed", x: c.x, y, button: "left", clickCount: 1 });
+        await send("Input.dispatchMouseEvent", { type: "mouseReleased", x: c.x, y, button: "left", clickCount: 1 });
+      }
+      await waitFor(`Array.from(${paths}).find(p=>p.dataset.mapRegion===${JSON.stringify(c.name)})?.dataset.selected==='true'`);
+      assert.equal(await evaluate(`getComputedStyle(Array.from(${paths}).find(p=>p.dataset.mapRegion===${JSON.stringify(c.name)})).outlineStyle`), "none", "클릭 흰 테두리 없음");
+    }
+    await waitFor(`${selectedCount}===16`);
+    await waitFor(`${map}.querySelectorAll('.pd-map-pin-drop').length===16`);
+    assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "pd-map-pin-drop");
+    assert.equal(await evaluate("JSON.parse(localStorage.getItem('pinday:trip')).regions.length"), 16);
+    assert(await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-label[data-selected=true]')).every(g=>{const p=g.querySelector('[data-map-pin]'),t=g.querySelector('text');return p&&Number(p.getAttribute('x'))+Number(p.getAttribute('width'))/2===0&&Number(p.getAttribute('y'))+Number(p.getAttribute('height'))<t.getBBox().y})`), "핀은 모든 구 이름 바로 위 가운데");
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-pin-ring').length`), 32, "구마다 두 겹 물결");
+    assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
+    await evaluate("scrollTo(0,0)"); await pause(650);
+    await screenshot(`map-all-${width}`);
+    await evaluate(`Array.from(document.querySelectorAll('button')).find(b=>b.textContent.trim()==='전체 해제').click()`);
+    await waitFor(`${selectedCount}===0`);
+    await send("Emulation.setTouchEmulationEnabled", { enabled: false });
+    await evaluate(`${paths}[0].focus()`);
+    assert(await evaluate(`document.activeElement===${paths}[0]`), "지역 경계 키보드 포커스");
+    await key("Enter", "Enter", 13);
+    await waitFor(`${selectedCount}===1`);
+    const falling = await evaluate(`(()=>{const pin=${map}.querySelector('.pd-map-pin-drop');const animation=pin.getAnimations()[0];animation.pause();animation.currentTime=150;return new DOMMatrix(getComputedStyle(pin).transform).m42})()`);
+    assert(falling < -10, "핀은 위에서 떨어진다");
+    await screenshot(`map-drop-${width}`, true);
+    assert.equal(await evaluate(`(()=>{const pin=${map}.querySelector('.pd-map-pin-drop');pin.getAnimations()[0].finish();return new DOMMatrix(getComputedStyle(pin).transform).m42})()`), 0, "핀 착지");
+    await evaluate(`Array.from(${map}.querySelectorAll('.pd-map-pin-ring')).forEach(r=>{const a=r.getAnimations()[0];a.pause();a.currentTime=620})`);
+    await screenshot(`map-ripple-${width}`, true);
+    await key(" ", "Space", 32);
+    await waitFor(`${selectedCount}===0`);
+    await key("Tab", "Tab", 9);
+    assert(await evaluate(`document.activeElement===${paths}[1]`), "지역 경계의 키보드 순서");
+    await screenshot(`map-focus-${width}`);
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
+    await evaluate(`${paths}[1].dispatchEvent(new MouseEvent('click',{bubbles:true}))`);
+    await waitFor(`${selectedCount}===1`);
+    assert.equal(await evaluate(`getComputedStyle(${paths}[1]).animationName`), "none");
+    assert.equal(await evaluate(`getComputedStyle(${map}.querySelector('.pd-map-pin-drop')).animationName`), "none", "움직임 줄이기 핀 즉시 표시");
+    await evaluate(`${paths}[3].dispatchEvent(new MouseEvent('click',{bubbles:true})); scrollTo(0,0)`); await waitFor(`${selectedCount}===2`);
+    await screenshot(`map-selected-${width}`);
+    assert(await evaluate(`!!document.querySelector('[aria-labelledby=story-heading] a[href="/explore"]')`), "해설이 없는 지역은 선택 지역 탐색으로 연결");
+    assert.equal(await evaluate("document.documentElement.scrollWidth > innerWidth"), false);
+    assert(await evaluate(`(()=>{const m=${map}.querySelector('.pd-map');return m.scrollWidth<=m.clientWidth+1&&m.scrollHeight<=m.clientHeight+1})()`), "지도 내부 스크롤 없음");
+    await send("Page.reload");
+    await waitFor(`!!${map} && ${selectedCount}===2`);
+    assert.equal(await evaluate(`${map}.querySelectorAll('.pd-map-pin-drop').length`), 0, "저장된 핀은 다시 떨어지지 않음");
+    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "no-preference" }] });
+    const rect = await evaluate(`(()=>{const r=${map}.querySelector('.pd-map').getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}})()`);
+    await evaluate(`scrollTo(0,${Math.max(0,rect.y-150)})`);
+    const scroll = await evaluate("scrollY");
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: rect.x+rect.width*.7, y: rect.y-scroll+rect.height*.3 });
+    await waitFor(`!!${map}.querySelector('radialGradient') && ${map}.querySelectorAll('.pd-map-cursor-light').length===2`);
+    const lightX = await evaluate(`${map}.querySelector('radialGradient').getAttribute('cx')`);
+    await screenshot(`map-light-${width}`, true);
+    await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: rect.x+rect.width*.4, y: rect.y-scroll+rect.height*.6 });
+    assert.notEqual(await evaluate(`${map}.querySelector('radialGradient').getAttribute('cx')`), lightX, "조명 마우스 추적");
+    report.push({ width, ...initialLayout, regions: 16, icons: 9, selection: "pointer/Enter/Space", pinDrop: true, coloredLight: true, zoom: false, persistence: true, overflow: false });
+  }
+  assert.deepEqual(errors, []);
+  assert.equal(externalRequests, 0);
+  console.log(JSON.stringify({ passed: true, report, routeAndWeatherRequests: externalRequests }));
+} finally { ws?.close(); chrome.kill(); }

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import places from "../../../data/places/places.json";
-import rules from "../../../data/docent/evidence-rules.json";
+import { readdirSync, readFileSync } from "node:fs";
 
 vi.mock("server-only", () => ({}));
 
@@ -30,9 +30,13 @@ describe("홈 데이터", () => {
     }
   });
 
-  it("격리된 이야기는 나오지 않는다", () => {
-    const shown = [...data.weekly, ...Object.values(data.storiesByRegion).flat()].map((s) => s.id);
-    for (const q of rules.quarantines) expect(shown).not.toContain(q.sourceId);
+  it("홈 카드는 공개 승인된 해설만 쓰고 같은 장소의 도슨트로 연결된다", () => {
+    const approved = new Set(readdirSync("data/docent/drafts").map(file => JSON.parse(readFileSync(`data/docent/drafts/${file}`, "utf8"))).filter(d => d.publishable === true && d.humanReview?.status === "approved" && !d.checks?.issues?.length).map(d => d.placeId));
+    for (const story of [...data.weekly, ...Object.values(data.storiesByRegion).flat()]) {
+      expect(approved.has(story.id)).toBe(true);
+      expect(story.href).toBe(`/docent/${story.id}`);
+      expect(story.subtitle).not.toBe("");
+    }
   });
 
   it("사진에는 출처와 공공누리 유형이 붙고, 3유형은 변경금지로 표시된다", () => {
