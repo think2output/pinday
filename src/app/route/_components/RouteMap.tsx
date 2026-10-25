@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { loadKakaoMaps, type KakaoMaps, type LatLng, type MapInstance } from "../../explore/_components/kakao";
+import { loadKakaoMaps, type KakaoMaps, type LatLng, type LatLngBounds, type MapInstance } from "../../explore/_components/kakao";
 import type { SchedulePlace } from "../../schedule/_components/scheduleModel";
 
 // 카카오 지도 JS SDK 공개 API 중 길찾기 지도에서 더 쓰는 부분 (https://apis.map.kakao.com/web/documentation/)
@@ -17,19 +17,30 @@ export function RouteMap({ stops, legs, focus, label }: { stops: { no: number; p
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapInstance | null>(null);
   const api = useRef<RouteMaps | null>(null);
+  const fittedBounds = useRef<LatLngBounds | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
 
   useEffect(() => {
     let cancelled = false;
+    let resize: ResizeObserver | null = null;
+    let frame = 0;
     const element = container.current;
     loadKakaoMaps().then((loaded) => {
       if (cancelled || !element) return;
       api.current = loaded as RouteMaps;
       map.current = new loaded.Map(element, { center: new loaded.LatLng(35.18, 129.07), level: 9 });
       map.current.setZoomable(false);
+      resize = new ResizeObserver(() => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => {
+          map.current?.relayout();
+          if (fittedBounds.current) map.current?.setBounds(fittedBounds.current, 40, 56, 40, 40);
+        });
+      });
+      resize.observe(element);
       setStatus("ready");
     }).catch(() => { if (!cancelled) setStatus("error"); });
-    return () => { cancelled = true; element?.replaceChildren(); };
+    return () => { cancelled = true; resize?.disconnect(); cancelAnimationFrame(frame); element?.replaceChildren(); };
   }, []);
 
   useEffect(() => {
@@ -62,7 +73,10 @@ export function RouteMap({ stops, legs, focus, label }: { stops: { no: number; p
 
     stops.forEach((stop) => {
       const pin = document.createElement("span");
-      pin.className = "grid size-8 place-items-center bg-room font-display text-sm font-bold text-on-room shadow-paper ring-2 ring-bg";
+      const active = focus !== null && (legs[focus]?.from.id === stop.place.id || legs[focus]?.to.id === stop.place.id);
+      pin.className = `grid size-8 place-items-center font-display text-sm font-bold shadow-paper ring-2 ring-bg ${active ? "bg-light text-ink" : "bg-room text-on-room"}`;
+      pin.dataset.routeStop = String(stop.no);
+      pin.dataset.selected = String(active);
       pin.textContent = String(stop.no);
       const point = at(stop.place.lat, stop.place.lng);
       bounds.extend(point);
@@ -70,6 +84,7 @@ export function RouteMap({ stops, legs, focus, label }: { stops: { no: number; p
     });
 
     overlays.forEach((overlay) => overlay.setMap(instance));
+    fittedBounds.current = stops.length ? bounds : null;
     if (stops.length) instance.setBounds(bounds, 40, 56, 40, 40);
     return () => overlays.forEach((overlay) => overlay.setMap(null));
   }, [stops, legs, focus, status]);

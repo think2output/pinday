@@ -13,9 +13,19 @@ import { mapStops, shortDate, tripDates, type SchedulePlace } from "../../schedu
 import { RouteMap, type MapLeg } from "./RouteMap";
 import { daySummary, kakaoRouteUrl, minutesLabel } from "./routeModel";
 import { useRouteLegs, type RouteMode } from "./useRouteLegs";
+import { RouteJourney } from "./RouteJourney";
+import { RouteLegDetails } from "./RouteLegDetails";
 
 const subscribeMounted = () => () => {};
 const NO_PLACES: string[] = [];
+const desktopQuery = "(min-width: 1024px)";
+const subscribeDesktop = (listener: () => void) => {
+  const query = window.matchMedia(desktopQuery);
+  query.addEventListener("change", listener);
+  return () => query.removeEventListener("change", listener);
+};
+const desktopSnapshot = () => window.matchMedia(desktopQuery).matches;
+const serverDesktopSnapshot = () => false;
 
 /** 타는 것 한 덩어리: [버스 61 외 2] [지하철 1호선] [걷기 3분] */
 function Ride({ step }: { step: RouteStep }) {
@@ -35,6 +45,8 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
   const requestedDay = Number(useSearchParams().get("day"));
   const [pickedDay, setPickedDay] = useState(Number.isInteger(requestedDay) && requestedDay > 0 ? requestedDay : 1);
   const [focus, setFocus] = useState<number | null>(null);
+  const [selectedPair, setSelectedPair] = useState<string | null>(null);
+  const desktop = useSyncExternalStore(subscribeDesktop, desktopSnapshot, serverDesktopSnapshot);
   const [editing, setEditing] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [modes, setModes] = useState<Record<string, RouteMode>>({});
@@ -46,6 +58,11 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
   const ids = trip.days[day - 1] ?? NO_PLACES;
   const stops = useMemo(() => mapStops(ids, places), [ids, places]);
   const pairs = useMemo(() => ids.slice(1).map((toId, index) => [ids[index], toId] as [string, string]), [ids]);
+  const selected = Math.max(0, pairs.findIndex(([from, to]) => `${from}>${to}` === selectedPair));
+  const selectLeg = (index: number) => {
+    const pair = pairs[index];
+    if (pair) setSelectedPair(`${pair[0]}>${pair[1]}`);
+  };
   const modeOf = (from: string, to: string) => modes[`${from}>${to}`] ?? "transit";
   const requests: [string, string, RouteMode][] = pairs.map(([from, to]) => [from, to, modeOf(from, to)]);
   const { stateOf, retry } = useRouteLegs(mounted ? requests : []);
@@ -60,7 +77,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
   const regionLabel = trip.regions.length ? trip.regions.slice(0, 2).map(regionName).join(" · ") + (trip.regions.length > 2 ? ` 외 ${trip.regions.length - 2}곳` : "") : "부산 전체";
   const nights = dayCount(trip.startDate, trip.endDate);
 
-  const pickDay = (n: number) => { setPickedDay(n); setFocus(null); setNotice(null); };
+  const pickDay = (n: number) => { setPickedDay(n); setFocus(null); setSelectedPair(null); setNotice(null); };
   const onTabKey = (event: KeyboardEvent<HTMLButtonElement>) => {
     const next = { ArrowRight: day + 1, ArrowLeft: day - 1, Home: 1, End: total }[event.key];
     if (next === undefined) return;
@@ -160,8 +177,8 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
         {!mounted ? (
           <p role="status" className="py-16 text-sm text-ink-muted">내 여행을 불러오고 있어요</p>
         ) : (
-          <div className="mt-5 grid grid-cols-1 gap-y-5 lg:mt-8 lg:grid-cols-[minmax(0,1fr)_minmax(400px,560px)] lg:grid-rows-[auto_1fr] lg:gap-x-12">
-            <div className="min-w-0 lg:col-start-1">
+          <div className="mt-5 min-w-0 lg:mt-8">
+            <div className="mb-5 min-w-0 lg:mb-7 lg:flex lg:items-center lg:justify-between lg:gap-6">
               <div role="tablist" aria-label="날짜" className="no-scrollbar -mx-gutter flex gap-2 overflow-x-auto px-gutter lg:mx-0 lg:flex-wrap lg:px-0">
                 {dates.map((date, index) => {
                   const n = index + 1;
@@ -179,7 +196,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
                 })}
               </div>
 
-              <section aria-live="polite" className="mt-6">
+              <section aria-live="polite" className="mt-6 lg:mt-0 lg:shrink-0 lg:text-right">
                 {ids.length < 2 ? (
                   <>
                     <p className="font-display text-xl font-extrabold tracking-tight lg:text-[28px]">이동할 구간이 없어요</p>
@@ -189,7 +206,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
                   </>
                 ) : (
                   <>
-                    <p className="flex flex-wrap items-baseline gap-x-2 font-display tracking-tight">
+                    <p className="flex flex-wrap items-baseline gap-x-2 font-display tracking-tight lg:justify-end">
                       <span className="text-base font-bold text-ink-muted">이동</span>
                       <span className="text-3xl font-extrabold lg:text-4xl">{summary.title}</span>
                     </p>
@@ -199,20 +216,16 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
               </section>
             </div>
 
-            {ids.length > 0 && (
-              <section aria-label={`${day}일차 경로 지도`} className="order-2 min-w-0 lg:order-none lg:sticky lg:top-6 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-start">
-                <div className="relative h-60 overflow-hidden bg-line lg:h-140">
-                  <RouteMap stops={stops} legs={mapLegs} focus={focus} label={`${day}일차 경로 지도. 같은 내용을 구간 목록에서도 볼 수 있어요`} />
-                </div>
-                <p className="mt-2 text-xs leading-relaxed text-ink-subtle">
-                  굵은 선은 버스·지하철, 점선은 걷는 길이나 정류장까지 이은 선이에요. 구간을 누르면 지도에서 노랗게 보여요.
-                  {stops.length < ids.length && ` ${ids.flatMap((id, index) => (stops.some((stop) => stop.place.id === id) ? [] : [index + 1])).join(", ")}번 장소는 지도 위치를 확인할 수 없어 지도에서 뺐어요.`}
-                </p>
-              </section>
-            )}
-
-            {ids.length > 1 && (
-              <section id="route-panel" role="tabpanel" aria-labelledby={`route-tab-${day}`} className="order-1 min-w-0 lg:order-none lg:col-start-1">
+            <div id="route-panel" role="tabpanel" aria-labelledby={`route-tab-${day}`}>
+              {pairs.length > 0 && <RouteJourney names={ids.map(nameOf)} states={states} selected={selected} onSelect={selectLeg} />}
+              <div className="grid min-w-0 grid-cols-1 gap-5 lg:grid-cols-[minmax(280px,340px)_minmax(0,1fr)] lg:gap-9">
+                {pairs.length > 0 && <RouteLegDetails index={selected} total={pairs.length}
+                  from={places[pairs[selected][0]]} to={places[pairs[selected][1]]}
+                  fromName={nameOf(pairs[selected][0])} toName={nameOf(pairs[selected][1])}
+                  state={states[selected]} mode={modeOf(...pairs[selected])}
+                  onMode={(mode) => setModes((value) => ({ ...value, [`${pairs[selected][0]}>${pairs[selected][1]}`]: mode }))}
+                  onRetry={() => retry(...pairs[selected], modeOf(...pairs[selected]))} onSelect={selectLeg} />}
+              {ids.length > 1 && <section aria-label="장소와 이동 구간" className="min-w-0 lg:hidden">
                 <ol aria-label={`${day}일차 장소와 이동 구간`}>
                   {ids.map((id, index) => (
                     <Fragment key={id}>
@@ -221,9 +234,20 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
                     </Fragment>
                   ))}
                 </ol>
-                <p className="mt-4 text-xs leading-relaxed text-ink-subtle">카카오맵이 맨 앞에 추천한 경로예요. 다른 경로와 실제 시간은 배차·교통 상황에 따라 다르니 카카오맵에서 확인해주세요.</p>
-              </section>
-            )}
+              </section>}
+              {ids.length > 0 && <section aria-label={`${day}일차 경로 지도`} className={`min-w-0 lg:self-start ${pairs.length === 0 ? "lg:col-span-2" : ""}`}>
+                {ids.length === 1 && <p className="mb-3 text-sm font-semibold">1. {nameOf(ids[0])}</p>}
+                <div className="relative h-60 overflow-hidden bg-line lg:h-[460px]">
+                  <RouteMap stops={stops} legs={mapLegs} focus={desktop && pairs.length > 0 ? selected : focus} label={`${day}일차 경로 지도. 같은 내용을 이동 구간에서도 확인할 수 있어요`} />
+                </div>
+                <p className="mt-2 text-xs leading-relaxed text-ink-subtle">
+                  굵은 선은 버스·지하철, 점선은 걷는 길이나 정류장까지 이은 선이에요. 선택한 구간은 노란색으로 보여요.
+                  {stops.length < ids.length && ` ${ids.flatMap((id, index) => (stops.some((stop) => stop.place.id === id) ? [] : [index + 1])).join(", ")}번 장소는 지도 위치를 확인할 수 없어 지도에서 뺐어요.`}
+                </p>
+              </section>}
+              </div>
+              {pairs.length > 0 && <p className="mt-5 text-xs leading-relaxed text-ink-subtle">카카오맵이 맨 앞에 추천한 경로예요. 다른 경로와 실제 시간은 배차·교통 상황에 따라 다르니 카카오맵에서 확인해주세요.</p>}
+            </div>
           </div>
         )}
         <footer className="pt-10 pb-6 text-xs text-ink-subtle">장소 정보 한국관광공사 TourAPI · 경로 카카오맵</footer>
