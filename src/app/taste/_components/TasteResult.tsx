@@ -13,9 +13,10 @@ import { TasteCoursePicker } from "./TasteCoursePicker";
 
 export type RelatedStory = { id: string; name: string; tastes: string[]; summary: string; narration: string };
 
-function FirstStory({ story, inCourse }: { story: RelatedStory; inCourse: boolean }) {
+function FirstStory({ story, inCourse, suspended }: { story: RelatedStory; inCourse: boolean; suspended: boolean }) {
   const parts = useMemo(() => [{ key: story.id, label: story.name, text: story.narration || story.summary }], [story]);
   const speech = useSpeech(parts);
+  useEffect(() => { if (suspended) speech.stop(); }, [suspended, speech.stop]);
   return <section aria-labelledby="first-story" className="mt-10 bg-room px-5 py-6 text-on-room lg:mt-14 lg:flex lg:items-center lg:gap-7 lg:px-8">
     <div className="min-w-0 flex-1"><p className="text-xs text-on-room-muted">{inCourse ? "이 코스에서 먼저 들을 이야기" : "코스 밖에서 이어 들을 이야기"}</p>
       <h2 id="first-story" className="mt-2 font-display text-xl font-bold">{story.name}</h2>
@@ -28,7 +29,7 @@ function FirstStory({ story, inCourse }: { story: RelatedStory; inCourse: boolea
   </section>;
 }
 
-export function TasteResult({ taste, places, stories, onRestart }: { taste: TasteId; places: Record<string, TastePlace>; stories: RelatedStory[]; onRestart: () => void }) {
+export function TasteResult({ taste, places, stories, onRestart, suspended = false }: { taste: TasteId; places: Record<string, TastePlace>; stories: RelatedStory[]; onRestart: () => void; suspended?: boolean }) {
   const { trip } = useTrip();
   const result = RESULTS[taste];
   const course = useMemo(() => resolveCourse(taste, places), [taste, places]);
@@ -73,8 +74,8 @@ export function TasteResult({ taste, places, stories, onRestart }: { taste: Tast
         <p className="mt-3 text-xs leading-relaxed text-ink-subtle">추천 순서를 제안하는 코스예요. 일정에 담은 뒤 ‘이동 확인’에서 실제 경로와 시간을 확인하세요.</p>
         {notice && <div role="status" className="mt-3 text-sm leading-relaxed"><p>{notice}</p><Link href="/schedule" className="inline-flex min-h-tap items-center font-semibold underline underline-offset-4">내 일정 확인 →</Link></div>}
       </section>
-      {firstStory && <FirstStory key={firstStory.id} story={firstStory} inCourse={!!inCourseStory} />}
-      <div className="mt-6 flex flex-wrap items-center gap-6"><button type="button" onClick={onRestart} className="min-h-tap text-sm text-ink-muted underline underline-offset-4">다른 장면으로 다시 해보기</button><p className="text-xs text-ink-subtle">취향은 저장됐어요. 추천 코스는 직접 담을 때만 일정에 들어가요.</p></div>
+      {firstStory && <FirstStory key={firstStory.id} story={firstStory} inCourse={!!inCourseStory} suspended={suspended} />}
+      <div className="mt-6 flex flex-wrap items-center gap-6"><button type="button" data-taste-restart onClick={onRestart} className="min-h-tap text-sm text-ink-muted underline underline-offset-4">다른 장면으로 다시 해보기</button><p className="text-xs text-ink-subtle">취향은 저장됐어요. 추천 코스는 직접 담을 때만 일정에 들어가요.</p></div>
       <p className="mt-6 text-xs leading-relaxed text-ink-subtle">장소 정보 한국관광공사 TourAPI · 도슨트는 공개 검수된 해설만 연결해요.</p>
     </main>
     {picking && <TasteCoursePicker course={course} onClose={() => setPicking(false)} onNotice={setNotice} />}

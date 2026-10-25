@@ -29,12 +29,15 @@ export function TasteView({ places, stories }: { places: Record<string, TastePla
   };
   if (!mounted) return <p className="p-gutter text-sm text-ink-muted">당신의 이야기를 준비하고 있어요</p>;
   return <>
-    {result ? <TasteResult key={result} taste={result} places={places} stories={stories} onRestart={() => setRetaking(true)} /> : <div className="mx-auto min-h-dvh w-full max-w-page px-gutter lg:box-content lg:px-gutter-wide">
+    {result ? <TasteResult key={result} taste={result} places={places} stories={stories} suspended={retaking} onRestart={() => setRetaking(true)} /> : <div className="mx-auto min-h-dvh w-full max-w-page px-gutter lg:box-content lg:px-gutter-wide">
       <SiteHeader />
       <p className="pt-10 text-sm text-ink-muted">어떤 이야기로 부산을 만나볼까요?</p>
       <Link href="/" className="inline-flex min-h-tap items-center text-sm font-semibold">홈으로 돌아가기 →</Link>
     </div>}
-    {(!result || retaking) && <TasteTestModal onClose={() => result ? setRetaking(false) : router.replace("/")} onComplete={complete} onSaved={(taste) => {
+    {(!result || retaking) && <TasteTestModal onClose={() => {
+      if (result) { setRetaking(false); requestAnimationFrame(() => document.querySelector<HTMLButtonElement>("[data-taste-restart]")?.focus({ preventScroll: true })); }
+      else router.replace("/");
+    }} onComplete={complete} onSaved={(taste) => {
       setFinished(taste);
       setRetaking(false);
       router.replace(`/taste?result=${taste}`);

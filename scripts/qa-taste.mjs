@@ -41,15 +41,22 @@ try {
   const textHas = (text) => `document.body.innerText.includes(${JSON.stringify(text)})`;
   const store = async (trip) => evaluate(`localStorage.setItem('pinday:trip',${JSON.stringify(JSON.stringify(trip))})`);
   const saved = () => evaluate("JSON.parse(localStorage.getItem('pinday:trip'))");
-  const navigate = async () => { await send("Page.navigate", { url: `${base}/taste` }); await waitFor("document.readyState==='complete' && !!document.querySelector('main h1')"); };
+  const navigate = async (path = "/taste") => { await send("Page.navigate", { url: `${base}${path}` }); await waitFor("document.readyState==='complete' && !!document.querySelector('header')"); };
+  const stepIs = (step) => `document.querySelector('dialog[open] [role=group]')?.getAttribute('aria-label') === '${step}번째 장면의 선택지'`;
+  const escape = async () => {
+    await send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27, nativeVirtualKeyCode: 27 });
+    await send("Input.dispatchKeyEvent", { type: "keyUp", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27, nativeVirtualKeyCode: 27 });
+  };
+  const openHomeQuiz = () => evaluate("(() => { const button=[...document.querySelectorAll('button[aria-haspopup=dialog]')].find(el=>el.textContent.includes('나에게 켜지는'));button.scrollIntoView({block:'center'});button.click(); })()");
   const layout = async () => {
     assert.equal(await evaluate("document.documentElement.scrollWidth>innerWidth"), false, "가로 넘침");
-    assert.deepEqual(await evaluate("[...document.querySelectorAll('main button,main a,dialog button')].filter(el=>{const r=el.getBoundingClientRect();return r.width && r.height && (r.width<44 || r.height<44)}).map(el=>el.textContent.trim())"), [], "44px 미만 조작");
+    assert.deepEqual(await evaluate("[...(document.querySelector('dialog[open]')??document.querySelector('main')).querySelectorAll('button,a')].filter(el=>{const r=el.getBoundingClientRect();return r.width && r.height && (r.width<44 || r.height<44)}).map(el=>el.textContent.trim())"), [], "44px 미만 조작");
   };
   const shot = async (name, width) => {
-    await evaluate("document.activeElement?.blur();document.fonts.ready.then(()=>true)");
+    await evaluate("document.fonts.ready.then(()=>true)");
+    const modal = await evaluate("!!document.querySelector('dialog[open]')");
     const height = await evaluate("Math.min(document.documentElement.scrollHeight,2400)");
-    const result = await send("Page.captureScreenshot", { format: "png", captureBeyondViewport: true, clip: { x: 0, y: 0, width, height, scale: 1 } });
+    const result = await send("Page.captureScreenshot", modal ? { format: "png", captureBeyondViewport: false } : { format: "png", captureBeyondViewport: true, clip: { x: 0, y: 0, width, height, scale: 1 } });
     writeFileSync(join(out, `${name}.png`), Buffer.from(result.data, "base64"));
   };
   await send("Page.enable");
@@ -60,21 +67,33 @@ try {
   const names = { alley: "이바구길 골목 산책자", sunset: "광안리 노을 감상가", history: "동래성 시간 여행자", wave: "태종대 파도 탐험가" };
   for (const width of [390, 1440]) {
     await send("Emulation.setDeviceMetricsOverride", { width, height: 900, deviceScaleFactor: 1, mobile: width === 390 });
-    await navigate(); await store(trip); await navigate();
-    await layout(); await shot(`intro-${width}`, width);
-    await click("내 이야기의 첫 장 열기");
-    await waitFor(textHas("장면 1 / 5"));
-    await layout(); await shot(`question-${width}`, width);
+    await navigate("/"); await store(trip); await navigate("/");
+    await waitFor("!![...document.querySelectorAll('button[aria-haspopup=dialog]')].find(el=>!el.disabled && el.textContent.includes('나에게 켜지는'))");
+    await openHomeQuiz(); await waitFor(stepIs(1));
+    assert.equal(await evaluate("location.pathname"), "/", "모달은 원래 홈 위에서 열림");
+    assert.equal(await evaluate("document.body.style.overflow"), "hidden", "배경 스크롤 잠금");
+    const originScroll = await evaluate("window.scrollY");
+    await layout(); await shot(`modal-home-${width}`, width);
+    if (width === 1440) assert(await evaluate("(() => {const d=document.querySelector('dialog[open]');return d.getBoundingClientRect().height-d.firstElementChild.getBoundingClientRect().height<3})()"), "PC 모달 아래 불필요한 빈 공간 없음");
+    await evaluate("[...document.querySelectorAll('dialog[open] button')].at(-1).focus()");
+    await send("Input.dispatchKeyEvent", { type: "keyDown", key: "Tab", code: "Tab", windowsVirtualKeyCode: 9, nativeVirtualKeyCode: 9 });
+    await send("Input.dispatchKeyEvent", { type: "keyUp", key: "Tab", code: "Tab", windowsVirtualKeyCode: 9, nativeVirtualKeyCode: 9 });
+    assert(await evaluate("!!document.activeElement.closest('dialog[open]')"), "키보드 포커스는 열린 모달 안에 유지");
+    await escape(); await waitFor("!document.querySelector('dialog[open]')");
+    await waitFor("document.activeElement.getAttribute('aria-haspopup') === 'dialog'");
+    assert.equal(await evaluate("Math.abs(window.scrollY - " + originScroll + ") < 3"), true, "배경 스크롤 위치 유지");
+    assert.equal(await evaluate("document.body.style.overflow"), "", "배경 스크롤 복구");
+    await openHomeQuiz(); await waitFor(stepIs(1));
     await evaluate("document.querySelector('[data-taste-choice=alley]').focus()");
     await send("Input.dispatchKeyEvent", { type: "keyDown", key: "Enter", code: "Enter", windowsVirtualKeyCode: 13, nativeVirtualKeyCode: 13, text: "\r" });
     await send("Input.dispatchKeyEvent", { type: "keyUp", key: "Enter", code: "Enter", windowsVirtualKeyCode: 13, nativeVirtualKeyCode: 13 });
-    await waitFor(textHas("장면 2 / 5"));
+    await waitFor(stepIs(2));
     await click("← 이전");
-    await waitFor(textHas("장면 1 / 5"));
+    await waitFor(stepIs(1));
     assert.deepEqual(await saved(), trip, "도중에는 저장값 유지");
     for (let i = 1; i <= 5; i++) {
       await evaluate("document.querySelector('[data-taste-choice=alley]').click()");
-      await waitFor(i === 5 ? textHas(names.alley) : textHas(`장면 ${i + 1} / 5`));
+      await waitFor(i === 5 ? textHas(names.alley) : stepIs(i + 1));
     }
     assert.deepEqual(await saved(), { ...trip, taste: "alley" }, "결과에서는 취향만 저장");
     assert.equal(await evaluate("document.querySelector('ol[aria-label=\"추천 코스 순서\"]').children.length"), 3);
@@ -88,8 +107,7 @@ try {
     await waitFor("!!document.querySelector('dialog[open]')");
     assert(await evaluate(textHas("이미 담긴 1곳은 현재 날짜와 순서를 유지해요")));
     await layout(); await shot(`picker-${width}`, width);
-    await send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27, nativeVirtualKeyCode: 27 });
-    await send("Input.dispatchKeyEvent", { type: "keyUp", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27, nativeVirtualKeyCode: 27 });
+    await escape();
     await waitFor("!document.querySelector('dialog[open]')");
     assert.deepEqual((await saved()).days, trip.days, "닫기로 일정 변경 없음");
     await click("이 코스를 내 일정에 담기");
@@ -105,15 +123,27 @@ try {
     await waitFor(textHas("▶ 이야기 듣기"));
     await click("▶ 이야기 듣기");
     assert.equal(await evaluate("window.__qaSpoken"), 1, "명시적 재생 시에만 음성 호출");
-    await click("듣기 멈춤");
+    await click("다른 장면으로 다시 해보기"); await waitFor(stepIs(1));
+    await waitFor("[...document.querySelectorAll('main button')].some(el=>el.textContent.trim()==='▶ 이야기 듣기')");
+    await escape(); await waitFor("!document.querySelector('dialog[open]')");
+    await waitFor("document.activeElement.hasAttribute('data-taste-restart')");
     await navigate();
-    await click("저장된 내 이야기 다시 보기");
+    await waitFor(stepIs(1));
+    await click("저장된 내 이야기 보기");
     await waitFor(textHas(names.alley));
+    await waitFor("location.search==='?result=alley'");
+    await navigate("/taste?result=alley");
+    await waitFor(textHas(names.alley));
+    assert.equal(await evaluate("!!document.querySelector('dialog[open]')"), false, "결과 재진입 시 질문 모달 없음");
+    await click("다른 장면으로 다시 해보기"); await waitFor(stepIs(1));
+    await escape(); await waitFor("!document.querySelector('dialog[open]')");
+    assert(await evaluate(textHas(names.alley)), "재시도 취소 시 원래 결과 유지");
     for (const taste of ["sunset", "history", "wave"]) {
       await click("다른 장면으로 다시 해보기");
+      await waitFor(stepIs(1));
       for (let i = 1; i <= 5; i++) {
         await evaluate(`document.querySelector('[data-taste-choice=${taste}]').click()`);
-        await waitFor(i === 5 ? textHas(names[taste]) : textHas(`장면 ${i + 1} / 5`));
+        await waitFor(i === 5 ? textHas(names[taste]) : stepIs(i + 1));
       }
       assert.equal((await saved()).taste, taste);
       await layout();
@@ -124,14 +154,17 @@ try {
   await send("Page.navigate", { url: `${base}/explore` });
   await waitFor("document.querySelector('select[aria-label=\"장소 정렬\"]')?.value==='taste'");
   assert.equal(await evaluate("document.querySelector('select[aria-label=\"장소 정렬\"]').value"), "taste", "완료 후 탐색은 취향순");
-  await evaluate("localStorage.removeItem('pinday:trip')"); await navigate();
-  await click("내 이야기의 첫 장 열기");
-  assert.equal(await evaluate("[...document.querySelectorAll('a[href=\"/explore\"]')].some(el=>el.textContent.includes('건너뛰기'))"), true);
-  assert.equal(await saved(), null, "건너뛰기 전까지 여행 생성 없음");
-  await evaluate("[...document.querySelectorAll('main a[href=\"/explore\"]')].find(el=>el.textContent.includes('건너뛰기')).click()");
-  await waitFor("location.pathname==='/explore' && !!document.querySelector('select[aria-label=\"장소 정렬\"]')");
+  await evaluate("localStorage.removeItem('pinday:trip')");
+  await send("Page.navigate", { url: `${base}/explore` });
+  await waitFor("!![...document.querySelectorAll('button[aria-haspopup=dialog]')].find(el=>!el.disabled && el.textContent.includes('내 이야기 취향 찾기'))");
+  await click("내 이야기 취향 찾기"); await waitFor(stepIs(1));
+  assert.equal(await evaluate("location.pathname"), "/explore", "탐색에서 질문 모달");
+  await click("지금은 건너뛰기"); await waitFor("!document.querySelector('dialog[open]')");
   assert.equal((await saved())?.taste ?? null, null, "건너뛰기로 취향을 저장하지 않음");
   assert.equal(await evaluate("document.querySelector('select[aria-label=\"장소 정렬\"]').value"), "name", "미완료 탐색은 이름순");
+  await navigate(); await waitFor(stepIs(1));
+  await evaluate("document.querySelector('button[aria-label=\"취향 테스트 닫기\"]').click()");
+  await waitFor("location.pathname==='/' && !document.querySelector('dialog[open]')");
   assert.equal(blocked, 0, "취향 흐름에서 경로/날씨 API 요청 없음");
-  console.log(JSON.stringify({ passed: true, widths: [390, 1440], results: 4, checks: ["다섯 질문", "이전·키보드 선택", "완료 전 저장 없음", "4유형 취향 저장", "대표 장소 3곳", "승인 해설만 연결", "듣기 미지원·명시적 재생", "지역 밖 안내", "일정 취소·중복 방지·기존 순서 보존", "저장 결과 다시 보기", "가로 넘침 없음", "44px 버튼"], routeAndWeatherRequests: blocked }));
+  console.log(JSON.stringify({ passed: true, widths: [390, 1440], results: 4, checks: ["홈·탐색 모달 직접 시작", "닫기·포커스·스크롤 복구", "완료 후 결과·새로고침", "재시도 모달·취소", "다섯 질문", "이전·키보드 선택", "완료 전 저장 없음", "4유형 취향 저장", "대표 장소 3곳", "승인 해설만 연결", "듣기 미지원·명시적 재생", "지역 밖 안내", "일정 취소·중복 방지·기존 순서 보존", "가로 넘침 없음", "44px 버튼"], routeAndWeatherRequests: blocked }));
 } finally { ws?.close(); chrome.kill(); }

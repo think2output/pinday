@@ -31,7 +31,14 @@ export function TasteTestModal({ onClose, onComplete, onSaved }: { onClose: () =
     } else setStep(step + 1);
   };
   return <dialog ref={dialog} aria-labelledby="taste-question-title" aria-describedby="taste-modal-scene" onCancel={onClose}
-    className="fixed inset-0 m-auto h-dvh max-h-dvh w-full max-w-none overflow-hidden bg-bg p-0 text-ink shadow-paper backdrop:bg-room/70 backdrop:backdrop-blur-sm lg:h-auto lg:max-h-[90dvh] lg:w-[calc(100%-4rem)] lg:max-w-[1060px]">
+    onKeyDown={(event) => {
+      if (event.key !== "Tab") return;
+      const controls = [...event.currentTarget.querySelectorAll<HTMLButtonElement>("button:not([disabled])")].filter((button) => button.getClientRects().length);
+      const first = controls[0], last = controls.at(-1);
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === heading.current)) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    }}
+    className="fixed inset-0 m-auto h-dvh max-h-dvh w-full max-w-none overflow-hidden bg-bg p-0 text-ink shadow-paper backdrop:bg-room/70 backdrop:backdrop-blur-sm lg:h-fit lg:max-h-[90dvh] lg:w-[calc(100%-4rem)] lg:max-w-[1060px]">
     <div ref={content} className="max-h-dvh overflow-y-auto px-4 pt-4 pb-5 break-keep lg:max-h-[90dvh] lg:px-8 lg:pt-5 lg:pb-6">
       <div className="flex items-center justify-between gap-3">
         <p className="flex items-center gap-2 text-xs text-ink-muted"><span aria-hidden="true" className="size-2 rounded-full bg-light" />나의 부산 이야기 · 다섯 장면</p>
