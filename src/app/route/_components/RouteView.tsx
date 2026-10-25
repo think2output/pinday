@@ -70,7 +70,7 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
     tabs.current.get(target)?.focus();
   };
 
-  /** 구간 한 칸: 왼쪽 큰 시간, 오른쪽 타는 것과 타고 내리는 곳, 아래 카카오맵 */
+  /** 장소 사이 이동은 짧게 훑고, 승하차가 필요할 때만 펼친다. */
   const legRow = (index: number) => {
     const [fromId, toId] = pairs[index];
     const from = places[fromId], to = places[toId];
@@ -82,61 +82,54 @@ export function RouteView({ places }: { places: Record<string, SchedulePlace> })
     return (
       <li className="flex gap-3">
         <span aria-hidden="true" className="flex w-8 shrink-0 justify-center"><span className={`w-0.5 ${on ? "bg-light" : "bg-line"}`} /></span>
-        <div className={`my-1.5 min-w-0 flex-1 ${on ? "ring-2 ring-room" : "ring-1 ring-line"} ring-inset`}>
-          <div role="group" aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 이동수단`} className="flex gap-2 px-3 pt-3">
-            {(["transit", "walk"] as const).map((option) => (
-              <button key={option} type="button" aria-pressed={mode === option}
-                onClick={() => { setModes((value) => ({ ...value, [`${fromId}>${toId}`]: option })); setFocus(null); }}
-                className={`min-h-tap min-w-tap px-3 text-sm font-semibold ${mode === option ? "bg-room text-on-room" : "text-ink-muted ring-1 ring-line ring-inset"}`}>
-                {option === "transit" ? "대중교통" : "도보"}
-              </button>
-            ))}
+        <div className="min-w-0 flex-1 py-2">
+          <div className="flex flex-wrap items-center gap-x-3">
+            <button type="button" aria-pressed={on} disabled={!leg} onClick={() => setFocus(on ? null : index)}
+              aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지${leg ? ` ${minutesLabel(leg.minutes)}` : ""}. 누르면 지도에서 이 구간을 노랗게 보여줘요`}
+              className={`min-h-tap min-w-14 shrink-0 text-left font-display text-lg font-extrabold tracking-tight ${on ? "underline decoration-light decoration-4 underline-offset-4" : ""} ${leg ? "" : "text-ink-subtle"}`}>
+              {time}
+            </button>
+            <div role="group" aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 이동수단`} className="flex shrink-0 gap-1">
+              {(["transit", "walk"] as const).map((option) => (
+                <button key={option} type="button" aria-pressed={mode === option}
+                  onClick={() => { setModes((value) => ({ ...value, [`${fromId}>${toId}`]: option })); setFocus(null); }}
+                  className={`min-h-tap min-w-tap px-2 text-sm ${mode === option ? "font-bold text-ink underline decoration-2 underline-offset-8" : "text-ink-subtle"}`}>
+                  {option === "transit" ? "대중교통" : "도보"}
+                </button>
+              ))}
+            </div>
+            {leg?.kind === "walk" && <span className="hidden text-sm text-ink-muted lg:inline">{leg.meters.toLocaleString()}m</span>}
+            {from && to && <a href={kakaoRouteUrl(mode === "walk" ? "walk" : "traffic", from, to)} target="_blank" rel="noreferrer"
+              aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 카카오맵에서 길 보기, 새 창`}
+              className="ml-auto inline-flex min-h-tap min-w-tap shrink-0 items-center justify-end gap-1 text-sm font-semibold">
+              길 보기 <span aria-hidden="true">↗</span>
+            </a>}
           </div>
-          <button type="button" aria-pressed={on} disabled={!leg} onClick={() => setFocus(on ? null : index)}
-            aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지${leg ? ` ${minutesLabel(leg.minutes)}` : ""}. 누르면 지도에서 이 구간을 노랗게 보여줘요`}
-            className="flex w-full items-start gap-3 px-3 pt-3 text-left">
-            <span className={`min-w-14 shrink-0 font-display text-xl leading-7 font-extrabold tracking-tight whitespace-nowrap ${leg ? "" : "text-ink-subtle"}`}>{time}</span>
-            <span className="min-w-0 flex-1">
-              {state.kind === "loading" ? (
-                <span role="status" className="block py-1 text-sm text-ink-muted">경로를 찾고 있어요</span>
-              ) : state.kind === "error" ? (
-                <span className="block py-1 text-sm text-ink-muted">{state.message}</span>
-              ) : state.leg.kind === "walk" ? (
-                <>
-                  <span className="flex"><span className="px-2 py-1 text-sm font-bold ring-1 ring-ink ring-inset">걸어서</span></span>
-                  <span className="mt-1.5 block text-xs text-ink-muted">{state.leg.meters.toLocaleString()}m</span>
-                </>
-              ) : (
-                <>
-                  <span className="flex flex-col gap-3">
-                    {state.leg.steps.map((step, stepIndex) => (
-                      <Fragment key={stepIndex}>
-                        <span className="block">
-                          <span className="inline-flex"><Ride step={step} /></span>
-                          {step.type !== "WALKING" && <span className="mt-1 block text-xs leading-relaxed text-ink-muted">
-                            {step.board && step.alight ? `${step.board}에서 타고 ${step.stopCount}정류장 → ${step.alight}에서 내려요` : "승차·하차 정보는 카카오맵에서 확인해주세요"}
-                          </span>}
-                        </span>
-                      </Fragment>
-                    ))}
-                    {state.leg.transfers > 0 && <span className="text-xs text-ink-muted">환승 {state.leg.transfers}번</span>}
-                  </span>
-                </>
-              )}
-            </span>
-          </button>
-          <div className="flex flex-wrap items-center gap-x-4 pr-3 pl-20">
-            {from && to && (
-              <a href={kakaoRouteUrl(mode === "walk" ? "walk" : "traffic", from, to)} target="_blank" rel="noreferrer"
-                aria-label={`${nameOf(fromId)}에서 ${nameOf(toId)}까지 카카오맵에서 길 보기, 새 창`}
-                className="inline-flex min-h-tap items-center gap-1 text-sm font-semibold underline underline-offset-4">
-                카카오맵에서 길 보기 <span aria-hidden="true">↗</span>
-              </a>
-            )}
-            {state.kind === "error" && state.retry && (
-              <button type="button" onClick={() => retry(fromId, toId, mode)} className="min-h-tap text-sm font-semibold text-ink-muted">다시 시도</button>
-            )}
-          </div>
+          {leg?.kind === "walk" && <p className="text-xs text-ink-muted lg:hidden">{leg.meters.toLocaleString()}m</p>}
+          {state.kind === "loading" && <p role="status" className="pb-1 text-sm text-ink-muted">경로를 찾고 있어요</p>}
+          {state.kind === "error" && <div className="flex flex-wrap items-center gap-x-3 pb-1">
+            <p role="status" className="text-sm text-ink-muted">{state.message}</p>
+            {state.retry && <button type="button" onClick={() => retry(fromId, toId, mode)} className="min-h-tap text-sm font-semibold underline underline-offset-4">다시 시도</button>}
+          </div>}
+          {leg?.kind === "transit" && <details key={`${fromId}>${toId}>${mode}`} className="group">
+            <summary className="flex min-h-tap cursor-pointer list-none items-center gap-2 text-sm [&::-webkit-details-marker]:hidden">
+              <span className="min-w-0 flex-1 text-ink-muted">
+                {leg.steps.filter((step) => step.type !== "WALKING").map((step) =>
+                  `${step.type === "BUS" ? "버스 " : ""}${step.names[0] || (step.type === "SUBWAY" ? "지하철" : "정보 확인 필요")}${step.names.length > 1 ? ` 외 ${step.names.length - 1}` : ""}`
+                ).join(" → ")}
+                {leg.transfers > 0 && <span className="ml-2 whitespace-nowrap text-xs">환승 {leg.transfers}번</span>}
+              </span>
+              <span className="shrink-0 text-xs font-semibold">승하차 <span aria-hidden="true" className="inline-block group-open:rotate-180">⌄</span></span>
+            </summary>
+            <ol aria-label="탈 것마다 승차·하차 안내" className="space-y-3 pb-3">
+              {leg.steps.map((step, stepIndex) => <li key={stepIndex}>
+                <span className="inline-flex"><Ride step={step} /></span>
+                {step.type !== "WALKING" && <p className="mt-1 text-sm leading-relaxed text-ink-muted">
+                  {step.board && step.alight ? `${step.board}에서 타고 ${step.stopCount}정류장 → ${step.alight}에서 내려요` : "승차·하차 정보는 카카오맵에서 확인해주세요"}
+                </p>}
+              </li>)}
+            </ol>
+          </details>}
         </div>
       </li>
     );
