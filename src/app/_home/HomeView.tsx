@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import type { StoryCard } from "@/lib/server/home";
 import { tripActions, useTrip } from "@/lib/trip/store";
@@ -8,6 +7,7 @@ import { BusanMap } from "./BusanMap";
 import { StoryShelf } from "./StoryShelf";
 import { TripConditions } from "./TripConditions";
 import { regionName } from "./regions";
+import { TasteLauncher } from "../taste/_components/TasteLauncher";
 
 type Props = {
   regionCounts: Record<string, number>;
@@ -64,21 +64,20 @@ export function HomeView({ regionCounts, weekly, storiesByRegion }: Props) {
         </div>
 
         <section aria-label="여행 시작 도우미" className="grid grid-cols-2 gap-2 px-gutter pt-14 lg:grid-cols-2 lg:gap-4 lg:px-0 lg:pt-26">
-          <Link
-            href="/taste"
-            className="relative flex min-h-42 flex-col justify-end gap-1.5 overflow-hidden rounded-card bg-room p-4 text-on-room lg:min-h-55 lg:p-8"
+          <TasteLauncher
+            className="relative flex min-h-42 flex-col justify-end gap-1.5 overflow-hidden rounded-card bg-room p-4 text-left text-on-room lg:min-h-55 lg:p-8"
           >
             <span
               aria-hidden="true"
               className="absolute -top-7.5 left-1/2 size-37.5 -translate-x-1/2 rounded-full lg:-top-15 lg:left-auto lg:right-10 lg:size-65 lg:translate-x-0"
               style={{ background: "radial-gradient(closest-side, color-mix(in srgb, var(--color-light) 55%, transparent), transparent)" }}
             />
-            <span className="relative text-xs text-on-room-muted lg:text-[13px]">1분 테스트</span>
+            <span className="relative text-xs text-on-room-muted lg:text-[13px]">다섯 장면 · 나의 이야기 취향</span>
             <span className="relative font-display text-[19px] leading-tight font-extrabold tracking-[-0.045em] lg:text-[28px]">
-              나는 어떤
-              <br className="lg:hidden" /> 부산 여행자일까?
+              나에게 켜지는
+              <br className="lg:hidden" /> 부산의 이야기
             </span>
-          </Link>
+          </TasteLauncher>
           {/* 랜덤 뽑기(기획서 6-2)는 다음 작업. 입구만 둔다 */}
           <div className="relative flex min-h-42 flex-col justify-end gap-1.5 overflow-hidden rounded-card bg-room p-4 text-on-room lg:min-h-55 lg:p-8">
             <span aria-hidden="true" className="absolute top-4.5 left-12.5 h-13 w-10 -rotate-8 bg-on-room-subtle lg:top-8.5 lg:right-30 lg:left-auto lg:h-19.5 lg:w-15" />
