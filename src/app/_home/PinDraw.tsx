@@ -7,7 +7,7 @@ import { tripActions, useTrip } from "@/lib/trip/store";
 import { regionName } from "./regions";
 import { choosePin, pinPool, PIN_TRIES, type PinPlace } from "./pinModel";
 
-type Draw = { scope: string; phase: "rolling" | "result" | "empty"; place: PinPlace | null; display: string };
+type Draw = { scope: string | null; phase: "rolling" | "result" | "empty"; place: PinPlace | null; display: string };
 const subscribeMounted = () => () => {};
 const licenseName = (license: string) => license === "Type3" ? "공공누리 제3유형 · 변경금지" : license === "Type1" ? "공공누리 제1유형" : "이용 유형 확인 필요";
 
@@ -25,6 +25,8 @@ export function PinDraw({ places }: { places: PinPlace[] }) {
   const tick = useRef<ReturnType<typeof setInterval> | null>(null);
   const heading = useRef<HTMLHeadingElement>(null);
   const scope = [...trip.regions].sort().join("|");
+  const activeScope = useRef(scope);
+  useEffect(() => { activeScope.current = scope; }, [scope]);
   const current = draw?.scope === scope ? draw : null;
   const eligible = pinPool(places, trip.regions, lastId);
   const available = pinPool(places, trip.regions, null);
@@ -47,6 +49,7 @@ export function PinDraw({ places }: { places: PinPlace[] }) {
     setTries(used.current);
     const finish = () => {
       clearTimers(); busy.current = false;
+      if (activeScope.current !== scope) { setDraw({ scope: null, phase: "empty", place: null, display: "" }); return; }
       last.current = place.id;
       setLastId(place.id);
       setDraw({ scope, phase: "result", place, display: place.name });
