@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { listPlaces } from "@/lib/server/places";
 import type { SchedulePlace } from "../schedule/_components/scheduleModel";
-import { RouteMockView } from "./_components/RouteMockView";
+import { RouteView } from "./_components/RouteView";
 
 export const metadata: Metadata = { title: "어떻게 갈까? · PinDay" };
 
@@ -13,7 +13,7 @@ export default function RoutePage() {
   }]));
   return (
     <Suspense fallback={<div className="min-h-180 bg-bg" />}>
-      <RouteMockView places={places} />
+      <RouteView places={places} />
     </Suspense>
   );
 }
