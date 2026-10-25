@@ -195,7 +195,7 @@ export function ScheduleView({ places, stories }: { places: Record<string, Sched
                 {unmapped.length > 0 && ` ${unmapped.join(", ")}번 장소는 지도 위치를 확인할 수 없어 지도에서 뺐어요.`}
               </p>
               <div className="mt-4 grid grid-cols-2 gap-2 lg:grid-cols-1">
-                <button type="button" disabled className="min-h-12 bg-room px-3 text-sm font-semibold text-on-room opacity-50">이동 확인 · 준비 중</button>
+                <Link href={`/route?day=${day}`} className="flex min-h-12 items-center justify-center bg-room px-3 text-sm font-semibold text-on-room">이동 확인</Link>
                 <Link href={`/weather?day=${day}`} className="flex min-h-12 items-center justify-center px-3 text-sm font-semibold text-ink ring-1 ring-line ring-inset">날씨 확인</Link>
               </div>
             </section>

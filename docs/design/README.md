@@ -1,5 +1,8 @@
 # 디자인 탐색 기록
 
+## PC 경로 화면 구조 재검토 (2026-10-25)
+- 사용자는 PC에서 구간이 반복되는 세로 목록을 선호하지 않는다. A(가로 동선)·B(지도 선택) 비교 후 **A안 채택**. `feat/route-desktop-a`에서 실제 화면 반영·390/1050/1440 검증 완료. 시안 기록 `docs/design/route-desktop-ux/README.md`, 실제 화면 사진 `docs/design/route-ux/qa-a-*.png`.
+
 ## 날씨 대안 화면 (2026-10-25)
 
 - 사진: `docs/design/weather-ux/`(390·1440 목록, 고르는 창, 정한 뒤).
