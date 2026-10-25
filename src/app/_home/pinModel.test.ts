@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { choosePin, pinPool, PIN_TRIES, type PinPlace } from "./pinModel";
+import { choosePin, dealPins, pinPool, PIN_TRIES, type PinPlace } from "./pinModel";
 
 const places: PinPlace[] = [
   { id: "a", name: "A", region: "부산광역시 동구", category: "골목", summary: "승인 해설", image: null },
@@ -24,5 +24,15 @@ describe("오늘의 핀 뽑기", () => {
     expect(choosePin(places, NaN)).toBeNull();
     expect(choosePin(places, 1)).toBeNull();
     expect(choosePin(places, -0.1)).toBeNull();
+  });
+  it("서로 다른 실제 후보를 최대 3장 나눠주고 원본은 바꾸지 않는다", () => {
+    const pool = [...places, { ...places[0], id: "c" }, { ...places[0], id: "d" }];
+    const before = pool.map((place) => place.id);
+    const hand = dealPins(pool, () => 0);
+    expect(hand).toHaveLength(3);
+    expect(new Set(hand.map((place) => place.id)).size).toBe(3);
+    expect(pool.map((place) => place.id)).toEqual(before);
+    expect(dealPins([], () => 0)).toEqual([]);
+    expect(dealPins([places[0]], () => 0)).toEqual([places[0]]);
   });
 });

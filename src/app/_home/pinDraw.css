@@ -1,0 +1,20 @@
+.pin-story-card { perspective: 800px; }
+.pin-story-card-inner { position: relative; display: block; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+.pin-story-card-front,.pin-story-card-back { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; backface-visibility: hidden; }
+.pin-story-card-back { transform: rotateY(180deg); }
+.pin-story-card[data-picked=true] .pin-story-card-inner { transform: rotateY(180deg); }
+.pin-story-card[data-away=true] { opacity: .16; transform: translateY(12px) scale(.9); }
+.pin-story-card { transition: opacity .4s, transform .4s; }
+.pin-story-card:first-child:not(:only-child):not([data-picked=true]):not([data-away=true]) { transform: rotate(-5deg); }
+.pin-story-card:last-child:not(:only-child):not([data-picked=true]):not([data-away=true]) { transform: rotate(5deg); }
+.pin-story-card[data-picked=true] { transform: translateY(-8px) scale(1.04); }
+.pin-story-card:not(:disabled):hover { transform: translateY(-8px) rotate(-2deg); }
+.pin-story-card:focus-visible { outline: 2px solid var(--color-light); outline-offset: 5px; }
+.pin-draw-stamp { animation: pin-draw-stamp .45s cubic-bezier(.2,.9,.3,1.2) both; }
+@keyframes pin-draw-stamp { from { opacity: 0; transform: translateY(-18px) rotate(-14deg) scale(1.4); } to { opacity: 1; transform: translateY(0) rotate(-6deg) scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .pin-story-card,.pin-story-card-inner { transition: none; }
+  .pin-story-card:not(:disabled):hover { transform: none; }
+  .pin-story-card[data-away=true],.pin-story-card[data-picked=true],.pin-story-card:first-child:not(:only-child):not([data-picked=true]):not([data-away=true]),.pin-story-card:last-child:not(:only-child):not([data-picked=true]):not([data-away=true]) { transform: none; }
+  .pin-draw-stamp { animation: none; }
+}
